@@ -34,6 +34,7 @@ The tests run every preset through the physics and check mass flow, outlet tempe
 | `app.js` | UI only: renders the stage cards, gauges, charts and tables, plus drag-to-reorder, the preset picker and saving the last setup in the browser (`localStorage`) |
 | `tests/presets.test.js` | Regression tests for the presets |
 | `MODEL.md` | Equations, assumptions and known limits |
+| `figures/` | Two interactive isometric figures for presenting: the demo rig (Fig 1) and the ideal air cycle (Fig 2). See `figures/README.md` |
 
 `physics.js` must load before `app.js` because both are classic scripts that share globals.
 

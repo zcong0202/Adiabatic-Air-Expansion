@@ -1,0 +1,11 @@
+.ic-chart{margin:10px 0 4px}
+.ic-chart svg{width:100%;height:auto;display:block}
+.ic-chart .ax{stroke:var(--anatomy-faint,#8886);stroke-width:1;fill:none}
+.ic-chart .grid{stroke:var(--anatomy-faint,#8884);stroke-width:.6;stroke-dasharray:2 3}
+.ic-chart .band{fill:var(--anatomy-lo,#8882);opacity:.18}
+.ic-chart .ideal{stroke:var(--anatomy-hi);stroke-width:1.8;fill:none}
+.ic-chart .real{stroke:var(--anatomy-ink,currentColor);stroke-width:1.4;fill:none;stroke-dasharray:4 3;opacity:.75}
+.ic-chart .cur{fill:var(--anatomy-hi)}
+.ic-chart .curline{stroke:var(--anatomy-hi);stroke-width:.8;opacity:.6}
+.ic-chart text{font:10px ui-monospace,SFMono-Regular,Menlo,monospace;fill:currentColor;opacity:.75}
+.ic-chart text.lab{opacity:1}

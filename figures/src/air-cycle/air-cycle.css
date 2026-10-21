@@ -1,0 +1,21 @@
+.ac-wrap{position:relative}
+.ac-chips{position:absolute;inset:0;pointer-events:none}
+.ac-leads{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ac-lead{fill:none;stroke:var(--anatomy-mid);stroke-width:.6;transition:opacity .25s}
+.ac-dot{fill:var(--anatomy-strong);transition:opacity .25s}
+.ac-wrap.off .ac-lead,.ac-wrap.off .ac-dot{opacity:0}
+.ac-chip{position:absolute;transform:translate(-50%,-50%);font:500 10.5px/1.3 var(--anatomy-mono,ui-monospace,SFMono-Regular,Menlo,monospace);color:var(--anatomy-strong);background:var(--anatomy-card);border:1px solid var(--anatomy-lo);border-radius:4px;padding:2px 6px;white-space:nowrap;font-variant-numeric:tabular-nums;transition:opacity .25s}
+.ac-chip b{font-weight:600;color:var(--anatomy-muted);margin-right:5px}
+.ac-chip.hot{border-color:var(--anatomy-mid)}
+.ac-wrap.off .ac-chip{opacity:0}
+.ac-controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:center;padding:10px 16px 4px;font:12px/1.4 var(--anatomy-mono,ui-monospace,monospace);color:var(--anatomy-muted)}
+.ac-label{text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.ac-seg{display:inline-flex;border:1px solid var(--anatomy-lo);border-radius:6px;overflow:hidden}
+.ac-seg button{font:inherit;color:var(--anatomy-text);background:transparent;border:0;padding:5px 10px;cursor:pointer}
+.ac-seg button[aria-pressed="true"]{background:var(--anatomy-strong);color:var(--anatomy-card)}
+.ac-seg button:focus-visible,.ac-toggle input:focus-visible{outline:2px solid var(--anatomy-strong);outline-offset:1px}
+.ac-toggle{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.ac-compare{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin:8px 16px 16px;border:1px solid var(--anatomy-faint);border-radius:6px;overflow:hidden;background:var(--anatomy-faint)}
+.ac-compare div{background:var(--anatomy-card);padding:7px 9px;font:11px/1.35 var(--anatomy-mono,ui-monospace,monospace);color:var(--anatomy-muted)}
+.ac-compare div b{display:block;color:var(--anatomy-strong);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+@media (max-width:600px){.ac-chips{display:none}.ac-compare{grid-template-columns:repeat(2,minmax(0,1fr))}}
