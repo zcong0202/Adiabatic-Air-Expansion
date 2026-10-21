@@ -1,0 +1,209 @@
+Skip to main content
+Enable accessibility for low vision
+Open the accessibility menu
+Skip to Content
+MANUFACTURED IN THE USA
+US & CANADA: 1-800-903-9247
+Worldwide: +1-513-671-3322
+Price List
+International
+Contact
+Shop All Products
+Industries
+Knowledge + Resources
+Company
+Quick Order
+Home
+Products
+Vortex Tubes and Spot Cooling Products
+Vortex Tubes
+Vortex Tubes
+
+Model 3202 Vortex Tube (2 SCFM)
+
+View larger image 1
+View larger image 2
+View larger image 3
+View larger image 4
+View larger image 5
+Vortex Tubes
+Select BTU/Hr 
+Not Applicable
+135
+275
+550
+650
+1,000
+1,700
+2,000
+2,800
+3,400
+5,100
+6,800
+10,200
+Select Flow 
+Select Vortex tube size 
+Select Vortex refrig/cold temp 
+Select Air Inlet 
+Quantity
+Add to Cart
+Overview
+Specifications
+More Info
+Videos
+CADs
+Resources
+Gallery
+PERFORMANCE
+SPECIFICATIONS
+DIMENSIONS
+HOW IT WORKS
+VORTEX TUBE STYLES
+SELECTING THE RIGHT VORTEX TUBE
+Vortex Tube Performance
+
+The Vortex Tube Performance Charts below give approximate temperature drops (and rises) from inlet air temperature produced by a vortex tube set at each cold fraction. Assuming no fluctuation of inlet temperature or pressure, a vortex tube will reliably maintain temperature within ±1°F.
+
+Pressure Supply
+	
+Cold Fraction %
+
+PSIG	20	30	40	50	60	70	80
+20	62	60	56	51	44	36	28
+15	25	36	50	64	83	107
+40	88	85	80	73	63	52	38
+21	35	52	71	92	117	147
+60	104	100	93	84	73	60	46
+24	40	59	80	104	132	166
+80	115	110	102	92	80	66	50
+25	43	63	86	113	143	180
+100	123	118	110	100	86	71	54
+26	45	67	90	119	151	191
+120	129	124	116	104	91	74	55
+26	46	69	94	123	156	195
+Numbers in shaded area show temperature drop of cold air (°F).
+Numbers in unshaded area show temperature rise of hot air (°F).
+Pressure Supply
+	
+Cold Fraction % (METRIC)
+
+BAR	20	30	40	50	60	70	80
+1.4	34.4	33.3	31.1	28.3	24.4	20	15.6
+8.3	13.9	20	28.3	35.6	46.1	59.4
+2	40.9	39.6	37.1	33.8	29.2	24	18.1
+9.8	16.4	24	33.3	42.6	54.6	69.5
+3	50.4	48.7	45.7	41.6	36	29.7	21.9
+12	19.9	29.6	40.3	52.3	66.5	83.5
+4	56.9	54.7	50.9	46.1	40	32.9	25.1
+13.2	21.9	32.4	43.9	57.1	72.5	91.2
+5	61.6	59	54.8	49.4	43	35.4	26.9
+13.7	23.3	34.2	46.5	60.9	77.2	97.1
+6	65.4	62.7	58.2	52.7	45.6	37.6	28.6
+14.1	24.3	35.8	48.6	63.9	81	102.1
+7	68.6	65.8	61.4	55.7	48	39.6	30
+14.4	25.1	37.3	50.2	66.3	84.2	106.3
+8	71.1	68.2	63.8	57.3	50	40.8	30.4
+14.4	25.4	38.1	51.8	67.9	86.1	107.9
+Numbers in shaded area show temperature drop of cold air (°C).
+Numbers in unshaded area show temperature rise of hot air (°C).
+
+Back Pressure: The performance of a vortex tube deteriorates with back pressure on the cold air exhaust. Low back pressure, up to 2 PSIG (.1 BAR), will not change performance. 5 PSIG (.3 BAR) will change performance by approximately 5°F (2.8°C).
+
+Filtration: The use of clean air is essential, and filtration of 25 microns or less is recommended. EXAIR filters contain a five micron element and are properly sized for flow.
+
+Inlet Air Temperature: A vortex tube provides a temperature drop from supply air temperature (see Performance Charts above). Elevated inlet temperatures will produce a corresponding rise in cold air temperatures.
+
+Noise Muffling: EXAIR offers mufflers for both the hot and cold air discharge. Normally, muffling is not required if the cold air is ducted.
+
+Regulation: For best performance, use line pressures of 80 to 110 PSIG (5.5 to 7.6 BAR). Maximum pressure rating is 250 PSIG (17.2 BAR), minimum 20 PSIG (1.4 BAR).
+
+NOT SURE WHERE TO BEGIN?
+Consult with an 
+EXAIR Engineer
+
+Schedule a video call with an Application Engineer to get help on product selection, installation, and optimization.
+
+Book Your Consult
+
+Engineered with Expertise
+Expert Support
+
+Book a consult with one of EXAIR’s engineers or access our library of support and examples.
+
+FAQs
+Engineering Consultation
+Applications
+Knowledge + Insights
+
+Decades of expertise packed into articles, videos, case studies, and much more.
+
+Blog
+Videos
+Case Studies
+Resources & Tools
+
+Book a consult with one of EXAIR’s engineers or access our library of support documentation.
+
+3D Models & CAD Library
+Augmented Reality
+Efficiency Lab
+Catalog
+
+Subscribe to our newsletter for product updates, promotions, compressed
+air insights, and a look inside EXAIR’s problem-solving culture.
+
+11510 Goldcoast Dr
+Cincinnati, OH 45249-1621
+
+Toll Free US & Canada
+800-903-9247
+
+Telephone
++1 513-671-3322
+
+Fax
++1 513-671-3363
+
+US & Canada Orders
+orders@exair.com
+
+International Orders
+internationalorders@exair.com
+
+Product Solutions
+Clean & Dry
+Convey
+Cool
+Control Static
+Coat
+Conserve
+Consider
+Industries
+Automotive
+Semiconductor
+Food & Bev
+Automation
+Knowledge & Resources
+Blog
+Case Studies
+Videos
+FAQs
+Applications
+Application Assistance
+Tools, Libraries & Downloads
+Request a Catalog
+Company
+About Exair
+Sustainability Plan
+Careers
+Application Engineers
+Awards
+Copyright ©2026 EXAIR LLC. All rights reserved.
+MANUFACTURED IN THE USA
+Terms & Conditions
+Privacy Policy
+Back To Top
+
+Vortex Tubes
+
+Add to Cart

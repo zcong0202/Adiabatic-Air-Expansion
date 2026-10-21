@@ -1,0 +1,521 @@
+{
+  "checks": [
+    {
+      "name": "Lean build succeeded",
+      "passed": true
+    },
+    {
+      "name": "new CFD design/error/source proofs present",
+      "passed": true
+    },
+    {
+      "name": "proof source current AAThermo.lean",
+      "passed": true
+    },
+    {
+      "name": "proof source current AAThermo/System.lean",
+      "passed": true
+    },
+    {
+      "name": "proof source current AAThermo/Model.lean",
+      "passed": true
+    },
+    {
+      "name": "proof source current AAThermo/CFDDesign.lean",
+      "passed": true
+    },
+    {
+      "name": "proof source current AAThermo/MotorSeat.lean",
+      "passed": true
+    },
+    {
+      "name": "proof source current AAThermo/Certificates.lean",
+      "passed": true
+    },
+    {
+      "name": "reference hydrostatic test passes",
+      "passed": true
+    },
+    {
+      "name": "uniform source mesh comparison below0.5K",
+      "passed": true
+    },
+    {
+      "name": "continuation exposed three-motor20C failure",
+      "passed": true
+    },
+    {
+      "name": "selected case uses a transferred CAD exit profile",
+      "passed": true
+    },
+    {
+      "name": "selected case numerical screens pass",
+      "passed": true
+    },
+    {
+      "name": "all recorded thermal cases pass numerical screens",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C00_back_control",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C00_back_control",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C00_back_control",
+      "passed": true
+    },
+    {
+      "name": "source pair count C00_back_control",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C01_side_startup",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C01_side_startup",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C01_side_startup",
+      "passed": true
+    },
+    {
+      "name": "source pair count C01_side_startup",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C02_three_motor_refinement",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C02_three_motor_refinement",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C02_three_motor_refinement",
+      "passed": true
+    },
+    {
+      "name": "source pair count C02_three_motor_refinement",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C10_rear_final",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C10_rear_final",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C10_rear_final",
+      "passed": true
+    },
+    {
+      "name": "source pair count C10_rear_final",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C12_three_motor_final",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C12_three_motor_final",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C12_three_motor_final",
+      "passed": true
+    },
+    {
+      "name": "source pair count C12_three_motor_final",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C13_three_motor_fine",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C13_three_motor_fine",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C13_three_motor_fine",
+      "passed": true
+    },
+    {
+      "name": "source pair count C13_three_motor_fine",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C14_four_motor_front05",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C14_four_motor_front05",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C14_four_motor_front05",
+      "passed": true
+    },
+    {
+      "name": "source pair count C14_four_motor_front05",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C20_three_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C20_three_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C20_three_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "source pair count C20_three_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C21_profile_halfCo_continuation",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C21_profile_halfCo_continuation",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C21_profile_halfCo_continuation",
+      "passed": true
+    },
+    {
+      "name": "source pair count C21_profile_halfCo_continuation",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C22_four_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C22_four_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C22_four_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "source pair count C22_four_motor_profile",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C24_four_profile_continued",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C24_four_profile_continued",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C24_four_profile_continued",
+      "passed": true
+    },
+    {
+      "name": "source pair count C24_four_profile_continued",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C23_four_motor_panel500",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C23_four_motor_panel500",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C23_four_motor_panel500",
+      "passed": true
+    },
+    {
+      "name": "source pair count C23_four_motor_panel500",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C15_four_motor_front10",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C15_four_motor_front10",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C15_four_motor_front10",
+      "passed": true
+    },
+    {
+      "name": "source pair count C15_four_motor_front10",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C16_four_motor_side05",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C16_four_motor_side05",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C16_four_motor_side05",
+      "passed": true
+    },
+    {
+      "name": "source pair count C16_four_motor_side05",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C17_four_motor_side10",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C17_four_motor_side10",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C17_four_motor_side10",
+      "passed": true
+    },
+    {
+      "name": "source pair count C17_four_motor_side10",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C18_four_motor_warm8",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C18_four_motor_warm8",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C18_four_motor_warm8",
+      "passed": true
+    },
+    {
+      "name": "source pair count C18_four_motor_warm8",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C19_four_motor_ambient35",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C19_four_motor_ambient35",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C19_four_motor_ambient35",
+      "passed": true
+    },
+    {
+      "name": "source pair count C19_four_motor_ambient35",
+      "passed": true
+    },
+    {
+      "name": "fixed neck volume C26_large_domain_side10",
+      "passed": true
+    },
+    {
+      "name": "fixed torso volume C26_large_domain_side10",
+      "passed": true
+    },
+    {
+      "name": "stored thermal target is consistent C26_large_domain_side10",
+      "passed": true
+    },
+    {
+      "name": "source pair count C26_large_domain_side10",
+      "passed": true
+    },
+    {
+      "name": "all four wind cases completed",
+      "passed": true
+    },
+    {
+      "name": "warm supply and35C ambient cases completed",
+      "passed": true
+    },
+    {
+      "name": "panel heat-load sensitivity completed",
+      "passed": true
+    },
+    {
+      "name": "CAD watertight and normals consistent",
+      "passed": true
+    },
+    {
+      "name": "CAD single component",
+      "passed": true
+    },
+    {
+      "name": "CAD STL height205mm",
+      "passed": true
+    },
+    {
+      "name": "100mm inlet refinement exported",
+      "passed": true
+    },
+    {
+      "name": "CAD exit area matches CFD geometry",
+      "passed": true
+    },
+    {
+      "name": "STEP declares metres",
+      "passed": true
+    },
+    {
+      "name": "refined internal profile no reversal",
+      "passed": true
+    },
+    {
+      "name": "refined internal profile short-window CV stable",
+      "passed": true
+    },
+    {
+      "name": "refined internal profile CV below0.25",
+      "passed": true
+    },
+    {
+      "name": "selected animation exists",
+      "passed": true
+    },
+    {
+      "name": "animation121frames",
+      "passed": true
+    },
+    {
+      "name": "animation is actual transient fields",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 0",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 1",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 2",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 3",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 4",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 5",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 6",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 7",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 8",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 9",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 10",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 11",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 12",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 13",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 14",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 15",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 16",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 17",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 18",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 19",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 20",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 21",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 22",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 23",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 24",
+      "passed": true
+    },
+    {
+      "name": "animation field hash 25",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "checks_count": 127,
+  "performance_failures_preserved": [
+    "C00_back_control",
+    "C10_rear_final",
+    "C21_profile_halfCo_continuation"
+  ],
+  "hardware_validated": false,
+  "physical_error_bound_established": false
+}

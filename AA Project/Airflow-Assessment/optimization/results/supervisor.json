@@ -1,0 +1,215 @@
+{
+  "status": "Stopped after all solver jobs finished",
+  "clean_stop_decisions": [
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 2416.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R13_D24_a3_fine"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 4908.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R08_D24_diffuser_7deg_SST"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 2726.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R12_D24_a3_second_order"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 5018.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R05_D24_diffuser_SST"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 3758.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "A23_D23_o2"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 5211.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R06_D24_fine"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 5493.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R10_D24_domain"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 3484.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R11_D24_lowflow"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 5119.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R07_D24_diffuser_3deg_SST"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 4000.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "R09_D24_SST"
+    },
+    {
+      "reason": "Every predeclared numerical check except final solver exit passed; request clean checkpoint and exit.",
+      "last_iteration": 3459.0,
+      "checks": {
+        "mesh_ok": true,
+        "momentum_residuals": true,
+        "pressure_residual": true,
+        "turbulence_residuals": true,
+        "scalar_residual": true,
+        "mass_balance": true,
+        "scalar_balance": true,
+        "scalar_bounds": true,
+        "objective_stable": true,
+        "full_velocity_field_stable": true,
+        "full_scalar_field_stable": true,
+        "negligible_swirl": true
+      },
+      "case": "A22_D22_o2"
+    }
+  ],
+  "scope": "Owned optimization cases only; all acceptance criteria unchanged"
+}

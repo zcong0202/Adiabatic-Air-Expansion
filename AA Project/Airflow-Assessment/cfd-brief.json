@@ -1,0 +1,82 @@
+{
+  "title": "AA 20 cm delivery CFD brief",
+  "status": "Four concept geometries generated. OpenFOAM screening and refined-mesh spot checks executed; quality and convergence are recorded in results. No validated winner.",
+  "question": "Why did tested extensions remove perceived cooling, and which change improves useful cooling at 20 cm?",
+  "baseline_cases": [
+    "Bare outlet",
+    "One identified representative failed extension"
+  ],
+  "required_inputs": [
+    "Measured geometry including internal passages and open area",
+    "Under-flow source pressure and cold mass flow for both configurations",
+    "Total temperature or a justified recovered-temperature measurement",
+    "Exit velocity profile or a documented inlet-profile assumption",
+    "Ambient temperature and wind; hot-exhaust arrangement",
+    "Temperature/velocity map at 20 cm with uncertainty"
+  ],
+  "unknown_inputs": "Leave unknown. Sensitivity scenarios must be labeled assumptions, not AA predictions.",
+  "model": [
+    "3D energy and variable-density buoyancy",
+    "Passive source-air tracer",
+    "RANS screening with validated mixing and model sensitivity",
+    "Compressible internal region if pressure ratio/Mach require it",
+    "Separate downstream model only with consistent measured exit conditions"
+  ],
+  "outputs": [
+    "Delivery and pressure loss at measured source states; source changes assessed from measurements or a separate validated source map",
+    "Internal pressure loss and separated flow",
+    "Target-plane temperature, velocity and cold-source fraction maps",
+    "Coverage on a specified target area",
+    "Heat removal on a controlled heated patch",
+    "Cold-air use and energy per useful cooling dose"
+  ],
+  "verification": [
+    "Mass and energy balance",
+    "Mesh and domain sensitivity",
+    "Turbulence/thermal-mixing sensitivity",
+    "Independent baseline temperature/velocity validation"
+  ],
+  "decision_logic": [
+    {
+      "finding": "Cold mass flow falls or total temperature rises with extension",
+      "next": "Fix source/attachment interaction before external jet optimization."
+    },
+    {
+      "finding": "Source state remains similar but target delivery falls",
+      "next": "Compare geometry, alignment and wind protection."
+    },
+    {
+      "finding": "Target receives cold flow but heat removal is inadequate",
+      "next": "Evaluate available source capacity and exposure area."
+    }
+  ],
+  "later_candidates": [
+    "Sweep the existing vortex control setting to compare useful cooling and cold flow before adding more extensions.",
+    "Higher cold flow through an appropriately sized outlet, using the measured vortex performance curve",
+    "Short open wind shield, checked for recirculation",
+    "Closer cold-source mounting if installation permits"
+  ],
+  "excluded_claims": [
+    "No claim that all extensions warmed the air; no temperatures were measured.",
+    "No claim of optimum exit speed, comfort or system efficiency.",
+    "No internal vortex simulation in first stage."
+  ],
+  "completion_requirement": "A design ranking must survive input uncertainty and agree with measured baseline behavior.",
+  "product_reference_file": "vortex-reference.json",
+  "source_model_status": "User-confirmed Jeanoko 08 micro + magnetic base, B094HTCQP8. Use vortex-reference.json for provisional specifications; EXAIR data are not its performance map.",
+  "source_coupling_limit": "A downstream model with prescribed cold mass flow/total temperature cannot predict how attachment backpressure changes the vortex split or source flow. Measure both configurations or couple a validated empirical source map.",
+  "rough_study_inputs_file": "rough-study-inputs.json",
+  "required_inputs_for_rough_start": "Enough reference material available. Missing dimensions and source conditions become explicit parameters. Measurements are required later for validation, not to start rough cases.",
+  "required_inputs_label": "For reconstruction and validation of actual AA hardware; not gates for the rough study.",
+  "actual_results": "results/screening-results.json",
+  "actual_source_case": {
+    "mass_flow_kg_s": 0.002,
+    "approx_total_temperature_c": 15,
+    "ambient_c": 35,
+    "crosswind_m_s": [
+      0,
+      1
+    ]
+  },
+  "model_used": "Low-Mach Boussinesq RANS screening. Ideal-gas attempts rejected. First-order final convection, tight pressure/scalar solves."
+}

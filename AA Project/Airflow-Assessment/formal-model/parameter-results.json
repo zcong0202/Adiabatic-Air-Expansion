@@ -1,0 +1,3454 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "status": "Conditional mathematical feasibility; no new hardware measurements or CFD",
+  "default_inputs": {
+    "inputs": {
+      "ambient_c": 34.0,
+      "entrained_c": 34.0,
+      "source_c": 5.0,
+      "cold_mass_g_s": 2.0,
+      "heat_conductance_w_k": 0.0,
+      "alpha_area": 0.3146377977016922,
+      "target_drop_c": 6.0,
+      "capture_fraction": 0.6,
+      "warm_mass_g_s": 5.0,
+      "extra_heat_w": 0.0,
+      "target_width_m": 0.05,
+      "target_height_m": 0.05,
+      "minimum_normal_speed_m_s": 1.0,
+      "supply_fad_lpm": 200.0,
+      "demand_fad_lpm": 200.0,
+      "requested_duty": 1.0,
+      "pulse_s": 3.0,
+      "cold_fraction": 0.5
+    },
+    "cold_path": {
+      "retention": 1.0,
+      "delivery_c": 5.0,
+      "sensible_potential_w": 58.290000000000006
+    },
+    "area_model": {
+      "drop_c": 9.124496133349075,
+      "target_air_c": 24.875503866650924,
+      "strict_pass": true,
+      "required_alpha_strictly_above": 0.20689655172413793,
+      "required_source_temperature_strictly_below_c": 14.93045386209894,
+      "maximum_UA_strictly_below_w_k": 0.8425984530101294,
+      "minimum_cold_mass_at_FIXED_alpha_g_s": 0.0,
+      "possible_at_fixed_alpha_with_zero_line_heat": true,
+      "status": "Conditional area-mean identity. Alpha is an independent measured/assumed input, not predicted by this calculator."
+    },
+    "uniform_mass_mixing_model": {
+      "drop_c": 5.612903225806448,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 2.173913043478263,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 216.64778424999218,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    "target_energy_necessary_bound": {
+      "area_m2": 0.0025000000000000005,
+      "required_cold_deficit_flux_w": 17.324705560838908,
+      "captured_cold_budget_after_extra_load_w": 34.974000000000004,
+      "necessary_budget_pass": true,
+      "status": "Necessary only, assuming local temperature deficits nonnegative and normal speed everywhere >= specified lower bound. Neither velocity assumption nor capture is measured."
+    },
+    "supply": {
+      "maximum_ideal_average_duty": 1,
+      "requested_duty_feasible_ideal_mass_budget": true,
+      "full_flow_continuous_feasible_ideal_mass_budget": true,
+      "minimum_inlet_air_inventory_swing_g_for_pulse": 0.0,
+      "status": "Common free-air basis, no losses. Compressor duty and actual pressure/flow match still require approval/measurement. Inventory is a mass requirement, not a tank design."
+    },
+    "physical_validation": false,
+    "new_CFD": false
+  },
+  "line_heat_sensitivity": {
+    "inputs": {
+      "ambient_c": 34.0,
+      "entrained_c": 34.0,
+      "source_c": 5.0,
+      "cold_mass_g_s": 2.0,
+      "heat_conductance_w_k": 0.2,
+      "alpha_area": 0.3146377977016922,
+      "target_drop_c": 6.0,
+      "capture_fraction": 0.6,
+      "warm_mass_g_s": 5.0,
+      "extra_heat_w": 0.0,
+      "target_width_m": 0.05,
+      "target_height_m": 0.05,
+      "minimum_normal_speed_m_s": 1.0,
+      "supply_fad_lpm": 200.0,
+      "demand_fad_lpm": 200.0,
+      "requested_duty": 1.0,
+      "pulse_s": 3.0,
+      "cold_fraction": 0.5
+    },
+    "cold_path": {
+      "retention": 0.9052876979062595,
+      "delivery_c": 7.746656760718473,
+      "sensible_potential_w": 52.769219910955876
+    },
+    "area_model": {
+      "drop_c": 8.26029409911415,
+      "target_air_c": 25.739705900885852,
+      "strict_pass": true,
+      "required_alpha_strictly_above": 0.22854232107941622,
+      "required_source_temperature_strictly_below_c": 12.935374707946526,
+      "maximum_UA_strictly_below_w_k": 0.8425984530101294,
+      "minimum_cold_mass_at_FIXED_alpha_g_s": 0.4747219729291284,
+      "possible_at_fixed_alpha_with_zero_line_heat": true,
+      "status": "Conditional area-mean identity. Alpha is an independent measured/assumed input, not predicted by this calculator."
+    },
+    "uniform_mass_mixing_model": {
+      "drop_c": 5.081292239860936,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 2.414771308519725,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 240.65123259217597,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    "target_energy_necessary_bound": {
+      "area_m2": 0.0025000000000000005,
+      "required_cold_deficit_flux_w": 17.324705560838908,
+      "captured_cold_budget_after_extra_load_w": 31.661531946573525,
+      "necessary_budget_pass": true,
+      "status": "Necessary only, assuming local temperature deficits nonnegative and normal speed everywhere >= specified lower bound. Neither velocity assumption nor capture is measured."
+    },
+    "supply": {
+      "maximum_ideal_average_duty": 1,
+      "requested_duty_feasible_ideal_mass_budget": true,
+      "full_flow_continuous_feasible_ideal_mass_budget": true,
+      "minimum_inlet_air_inventory_swing_g_for_pulse": 0.0,
+      "status": "Common free-air basis, no losses. Compressor duty and actual pressure/flow match still require approval/measurement. Inventory is a mass requirement, not a tank design."
+    },
+    "physical_validation": false,
+    "new_CFD": false
+  },
+  "dry_CFD_fraction_sensitivity_only": {
+    "inputs": {
+      "ambient_c": 34.0,
+      "entrained_c": 34.0,
+      "source_c": 5.0,
+      "cold_mass_g_s": 2.0,
+      "heat_conductance_w_k": 0,
+      "alpha_area": 0.3146377977016922,
+      "target_drop_c": 6.0,
+      "capture_fraction": 0.6,
+      "warm_mass_g_s": 5.0,
+      "extra_heat_w": 0.0,
+      "target_width_m": 0.05,
+      "target_height_m": 0.05,
+      "minimum_normal_speed_m_s": 1.0,
+      "supply_fad_lpm": 200.0,
+      "demand_fad_lpm": 200.0,
+      "requested_duty": 1.0,
+      "pulse_s": 3.0,
+      "cold_fraction": 0.5
+    },
+    "cold_path": {
+      "retention": 1.0,
+      "delivery_c": 5.0,
+      "sensible_potential_w": 58.290000000000006
+    },
+    "area_model": {
+      "drop_c": 9.124496133349075,
+      "target_air_c": 24.875503866650924,
+      "strict_pass": true,
+      "required_alpha_strictly_above": 0.20689655172413793,
+      "required_source_temperature_strictly_below_c": 14.93045386209894,
+      "maximum_UA_strictly_below_w_k": 0.8425984530101294,
+      "minimum_cold_mass_at_FIXED_alpha_g_s": 0.0,
+      "possible_at_fixed_alpha_with_zero_line_heat": true,
+      "status": "Conditional area-mean identity. Alpha is an independent measured/assumed input, not predicted by this calculator."
+    },
+    "uniform_mass_mixing_model": {
+      "drop_c": 5.612903225806448,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 2.173913043478263,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 216.64778424999218,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    "target_energy_necessary_bound": {
+      "area_m2": 0.0025000000000000005,
+      "required_cold_deficit_flux_w": 17.324705560838908,
+      "captured_cold_budget_after_extra_load_w": 34.974000000000004,
+      "necessary_budget_pass": true,
+      "status": "Necessary only, assuming local temperature deficits nonnegative and normal speed everywhere >= specified lower bound. Neither velocity assumption nor capture is measured."
+    },
+    "supply": {
+      "maximum_ideal_average_duty": 1,
+      "requested_duty_feasible_ideal_mass_budget": true,
+      "full_flow_continuous_feasible_ideal_mass_budget": true,
+      "minimum_inlet_air_inventory_swing_g_for_pulse": 0.0,
+      "status": "Common free-air basis, no losses. Compressor duty and actual pressure/flow match still require approval/measurement. Inventory is a mass requirement, not a tank design."
+    },
+    "physical_validation": false,
+    "new_CFD": false
+  },
+  "parameters": [
+    {
+      "symbol": "mc",
+      "meaning": "Cold source mass flow, g/s",
+      "known": "Unmeasured. Existing CFD assumed 2 g/s. Source map must pair flow and temperature."
+    },
+    {
+      "symbol": "Ts",
+      "meaning": "Cold source temperature after final pressure release, before modeled line heat gain, C",
+      "known": "About 5 C reported at nozzle; measurement location/steady flow must be confirmed. Do not count heat gain twice."
+    },
+    {
+      "symbol": "alpha_A",
+      "meaning": "Area-average cold-origin mass fraction across 50x50 mm target at 200 mm",
+      "known": "Unmeasured. CFD value 0.3146377977 applies only to R07 assumed operating point."
+    },
+    {
+      "symbol": "UA",
+      "meaning": "Total modeled downstream cold-line/nozzle heat conductance to surroundings, W/K",
+      "known": "Unmeasured. Default 0 is an adiabatic screen; 0.2 W/K is an illustrative stress. If Ts is measured at final nozzle exit, exclude upstream heat gain."
+    },
+    {
+      "symbol": "Te",
+      "meaning": "Temperature of entrained air and modeled line surroundings, C",
+      "known": "Ambient 30-34 C discussed; hot exhaust may raise Te. Reference Ta stays separate."
+    },
+    {
+      "symbol": "eta_capture",
+      "meaning": "Fraction of source cold mass reaching target, for uniform mixing / energy screen",
+      "known": "Unmeasured. Independent of area fraction in nonuniform flow."
+    },
+    {
+      "symbol": "mw",
+      "meaning": "Warm mass inflow to a well-mixed target, g/s",
+      "known": "Unmeasured. Default 5 g/s illustrates dependence; not inferred from CFD."
+    },
+    {
+      "symbol": "beta",
+      "meaning": "Vortex cold-branch fraction",
+      "known": "Unmeasured; changes together with source cold temperature. EXAIR curve is not Jeanoko calibration."
+    },
+    {
+      "symbol": "eta_stage",
+      "meaning": "Isentropic efficiency of EACH modeled expansion stage",
+      "known": "No matched turbine specified; 0.6 is an assumption, not overall plant efficiency."
+    },
+    {
+      "symbol": "Pin/Pout",
+      "meaning": "Expansion ratio using absolute pressures",
+      "known": "Use measured states at expander/regulator after line losses. Not gauge pressure."
+    },
+    {
+      "symbol": "duty",
+      "meaning": "Requested on-time / cycle time",
+      "known": "Choose demo requirement; supply and storage must satisfy mean mass and energy budget."
+    }
+  ],
+  "source_lookup": [
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 23.193379487055438,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 23.193379487055438,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -36.88136674055417,
+      "shaft_work_j_kg": 60418.15109674935,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -7.988819362057143,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -36.88136674055417,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -36.88136674055417,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -64.34765097138538,
+      "shaft_work_j_kg": 88048.33679836144,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -23.80130201652588,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -64.34765097138538,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -64.34765097138538,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -90.07521752489544,
+      "shaft_work_j_kg": 113957.75104978634,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -39.600402091708474,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -90.07521752489544,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -90.07521752489544,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 4.858904013014239,
+      "shaft_work_j_kg": 18444.205655525497,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 5.8965376860505785,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 4.858904013014239,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -4.311010031244962,
+      "shaft_work_j_kg": 27666.308483288216,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -3.202349601226274,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -4.311010031244962,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -13.48191285848361,
+      "shaft_work_j_kg": 36888.41131105099,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -12.296143338227353,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -13.48191285848361,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 18.853167597141237,
+      "shaft_work_j_kg": 4367.019751135085,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 20.463751897829184,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 18.853167597141237,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 16.682847466211967,
+      "shaft_work_j_kg": 6550.529626702599,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 18.31825935691711,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 16.682847466211967,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 14.51239521219378,
+      "shaft_work_j_kg": 8734.03950227017,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 16.17307912385303,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 14.51239521219378,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 22.745482809223176,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 22.745482809223176,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -43.6411460920375,
+      "shaft_work_j_kg": 66765.86108926724,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -0.24176075547347864,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -22.98936155009838,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -43.6411460920375,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -43.6411460920375,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -72.7027865085411,
+      "shaft_work_j_kg": 96007.7777684892,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -12.178203755359618,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -44.510387809549,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -72.7027865085411,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -72.7027865085411,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -99.1405128001557,
+      "shaft_work_j_kg": 122647.55012776464,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -24.10355891615501,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -65.02307831521696,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -99.1405128001557,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -99.1405128001557,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -1.1440955147204477,
+      "shaft_work_j_kg": 24030.82171504153,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -0.060614042480835906,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -1.1440955147204477,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -13.092586577130874,
+      "shaft_work_j_kg": 36046.23257256235,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -11.910224324578849,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -13.092586577130874,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -25.041784150938213,
+      "shaft_work_j_kg": 48061.64343008312,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -23.748885953592037,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -25.041784150938213,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 12.045148720147381,
+      "shaft_work_j_kg": 10765.286784694123,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 13.735113477606319,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 12.045148720147381,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 6.693872789979935,
+      "shaft_work_j_kg": 16147.930177041213,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 8.449453167585375,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 6.693872789979935,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 1.3420163472507056,
+      "shaft_work_j_kg": 21530.573569388245,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 3.166269497410383,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 1.3420163472507056,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": -9.834501162645779,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -9.834501162645779,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -122.59393802975887,
+      "shaft_work_j_kg": 113569.8252329515,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -18.749968441129795,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -54.48513973250479,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -81.96692148637482,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -104.02383663665535,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -122.59393802975887,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -122.59393802975887,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -161.42332325558047,
+      "shaft_work_j_kg": 153100.0239228219,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -31.19199569963746,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -76.90704168346025,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -112.03981348959917,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -139.4462999887653,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -161.42332325558047,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -161.42332325558047,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -190.5540785673246,
+      "shaft_work_j_kg": 183638.2927050697,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -43.279127971371736,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -97.0282156032884,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -137.3586285522996,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -167.57873922920447,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -190.5540785673246,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -190.5540785673246,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -96.57116750013319,
+      "shaft_work_j_kg": 87286.10621912702,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -13.795075300212375,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -46.79906748327048,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -72.9723633259868,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -94.19461263192818,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -96.57116750013319,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -130.48125634355125,
+      "shaft_work_j_kg": 121558.33979105495,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -24.813807362493066,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -66.86135087057698,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -100.33201116066616,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -127.0335850365191,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -130.48125634355125,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -158.78612504276953,
+      "shaft_work_j_kg": 150392.32559682993,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -35.5510174937379,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -85.04012452261756,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -123.70949436176329,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -153.6657342823197,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -158.78612504276953,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -86.97631525358128,
+      "shaft_work_j_kg": 77614.01113919099,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -19.495578240184614,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -55.611911733832414,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -83.27083010978478,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -86.97631525358128,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -118.85943703188607,
+      "shaft_work_j_kg": 109791.77578886441,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -32.15463111405643,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -78.38643689390886,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -113.73560467315431,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -118.85943703188607,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 25,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -146.54294754005014,
+      "shaft_work_j_kg": 137878.71049379813,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -44.44723223214859,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -98.7956219066204,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -139.32785799706448,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -146.54294754005014,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 32.304716005029434,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 32.304716005029434,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -29.621265166470437,
+      "shaft_work_j_kg": 62287.02315233485,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": 0.11325101921272562,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -29.621265166470437,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -29.621265166470437,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -57.94218221149646,
+      "shaft_work_j_kg": 90772.41665407014,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -16.193172824698706,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -57.94218221149646,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -57.94218221149646,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -84.47493484782953,
+      "shaft_work_j_kg": 117484.13505590812,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -32.48837775547224,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -84.47493484782953,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -84.47493484782953,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 13.408123009163432,
+      "shaft_work_j_kg": 19014.643420545326,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 14.384399013234997,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 13.408123009163432,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 3.9560805282440015,
+      "shaft_work_j_kg": 28521.96513081796,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 5.00045786112787,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 3.9560805282440015,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -5.497583840824518,
+      "shaft_work_j_kg": 38029.28684109065,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -4.379304782870804,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -5.497583840824518,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 27.831828068474977,
+      "shaft_work_j_kg": 4501.941608956899,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 29.344163315991352,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 27.831828068474977,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 25.595103248947396,
+      "shaft_work_j_kg": 6752.91241343529,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 27.13126491688729,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 25.595103248947396,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 23.358202993892178,
+      "shaft_work_j_kg": 9003.883217913739,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 24.91861596208298,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 23.358202993892178,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 31.88480605707366,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 31.88480605707366,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -36.55871157443684,
+      "shaft_work_j_kg": 68840.73659353796,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": 8.09212005913497,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -15.298944794147701,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -36.55871157443684,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -36.55871157443684,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -66.5305559697589,
+      "shaft_work_j_kg": 98992.37212475156,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -4.221399323229775,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -37.496372348914775,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -66.5305559697589,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -66.5305559697589,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -93.80188015683427,
+      "shaft_work_j_kg": 126461.50641951011,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -16.525390817209313,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -58.65822053098381,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -93.80188015683427,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -93.80188015683427,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 7.2582391817127245,
+      "shaft_work_j_kg": 24778.042215491296,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 8.278202576222043,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 7.2582391817127245,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -5.060485645449717,
+      "shaft_work_j_kg": 37167.063323237,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -3.9457617154881177,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -5.060485645449717,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -17.38090682197017,
+      "shaft_work_j_kg": 49556.08443098265,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -16.160319362919495,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -17.38090682197017,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 20.855227066102884,
+      "shaft_work_j_kg": 11099.734079126501,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 22.443291396553036,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 20.855227066102884,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 15.33894197533101,
+      "shaft_work_j_kg": 16649.601118689752,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 16.989948884149555,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 15.33894197533101,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 9.82183520976156,
+      "shaft_work_j_kg": 22199.468158253003,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 11.538704336519345,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 9.82183520976156,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 1.543090784769845,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 1.543090784769845,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -116.15708923443611,
+      "shaft_work_j_kg": 118501.1041925663,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -10.054096348007306,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -46.12239991607774,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -74.17035314782282,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -96.90278658858142,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -116.15708923443611,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -116.15708923443611,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -156.77085801547298,
+      "shaft_work_j_kg": 159768.21068469365,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -23.218031785414553,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -69.75349240310231,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -105.74522130801148,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -134.0056168025177,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -156.77085801547298,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -156.77085801547298,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -187.35670766698337,
+      "shaft_work_j_kg": 191631.61657527526,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -36.041018321227966,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -91.06096357681224,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -132.46479648112387,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -163.61670955545137,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -187.35670766698337,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -187.35670766698337,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -88.97096439663193,
+      "shaft_work_j_kg": 91065.77543321165,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -5.086355408696306,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -38.35285804913434,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -64.97259343715422,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -86.76276833901872,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -88.97096439663193,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -124.40368247298721,
+      "shaft_work_j_kg": 126843.29475441726,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -16.747142802724284,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -59.5232774802742,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -93.73823117672086,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -121.19926964350049,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -124.40368247298721,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -154.0244127497631,
+      "shaft_work_j_kg": 156957.115534151,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -28.136308000441062,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -78.792367165575,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -118.44410243963989,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -149.27004542855894,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -154.0244127497631,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -78.94972166118245,
+      "shaft_work_j_kg": 80969.78442463261,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -10.801492237253512,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -47.26316289932484,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -75.50676676921631,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -78.94972166118245,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -112.25402059957261,
+      "shaft_work_j_kg": 114556.73934684612,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -24.19438346564101,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -71.26136073347863,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -107.48695037669995,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -112.25402059957261,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -141.20405800170968,
+      "shaft_work_j_kg": 143885.92941739617,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -37.23544707483893,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -92.8703887030741,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -134.4894658353378,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -141.20405800170968,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 38.37467434318944,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 38.37467434318944,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -24.782539057634438,
+      "shaft_work_j_kg": 63532.088654999156,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": 5.513504175151866,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -24.782539057634438,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -24.782539057634438,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -53.67232477151052,
+      "shaft_work_j_kg": 92587.26105641609,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -11.121342446196195,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -53.67232477151052,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -53.67232477151052,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -80.74110847356775,
+      "shaft_work_j_kg": 119833.52186960564,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -27.746474240203526,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -80.74110847356775,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -80.74110847356775,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 19.104506333664006,
+      "shaft_work_j_kg": 19394.582139845705,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 20.04225727703789,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 19.104506333664006,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 9.464896050565699,
+      "shaft_work_j_kg": 29091.8732097685,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 10.468923468432422,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 9.464896050565699,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -0.17679837725518155,
+      "shaft_work_j_kg": 38789.16427969135,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 0.8991320582714479,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -0.17679837725518155,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 33.81364362901877,
+      "shaft_work_j_kg": 4591.791978272435,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 35.264254411251216,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 33.81364362901877,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 31.53279889893622,
+      "shaft_work_j_kg": 6887.687967408623,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 33.00661001596552,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 31.53279889893622,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 29.25174718680273,
+      "shaft_work_j_kg": 9183.58395654487,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 30.749171434884715,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 29.25174718680273,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 37.972323971684204,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 37.972323971684204,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -31.839007379419826,
+      "shaft_work_j_kg": 70222.75685116241,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": 13.646741187253156,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -10.173794195458072,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -31.839007379419826,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -31.839007379419826,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -62.41663581686163,
+      "shaft_work_j_kg": 100980.37961689552,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": 1.0827028688110545,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -32.821085116506254,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -62.41663581686163,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -62.41663581686163,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -90.24279122641138,
+      "shaft_work_j_kg": 129001.9868443344,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -11.472882226895592,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -54.41474588762833,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -90.24279122641138,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -90.24279122641138,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 12.856015109756754,
+      "shaft_work_j_kg": 25275.63665227749,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 13.83612197937748,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 12.856015109756754,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 0.29114953485725437,
+      "shaft_work_j_kg": 37913.45497841621,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 1.3634499860577307,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 0.29114953485725437,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -12.276134545608159,
+      "shaft_work_j_kg": 50551.27330455498,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -11.100877682829719,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -12.276134545608159,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 26.724028172762587,
+      "shaft_work_j_kg": 11322.419659967767,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 28.24811194030258,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 26.724028172762587,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 21.098102787129505,
+      "shaft_work_j_kg": 16983.629489951592,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 22.68345970016844,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 21.098102787129505,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 15.471179711398577,
+      "shaft_work_j_kg": 22644.839319935476,
+      "states": [
+        {
+          "pressure_bar_abs": 7.9,
+          "temperature_c": 17.120644489554195,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 15.471179711398577,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 9.030350161930357,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 9.030350161930357,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -111.91534737079724,
+      "shaft_work_j_kg": 121745.10437398154,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -4.264136923220349,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -40.58031934193585,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -69.01983279085516,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -92.20629671922552,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -111.91534737079724,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -111.91534737079724,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -153.69921112879615,
+      "shaft_work_j_kg": 164155.07323257398,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -17.89872278090047,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -64.99894595363997,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -101.57538808757016,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -130.40898560184826,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -153.69921112879615,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -153.69921112879615,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -185.2589012327769,
+      "shaft_work_j_kg": 196920.12751087087,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -31.201563338234337,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -87.07749942727162,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -129.20590509195713,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -160.98246109052985,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -185.2589012327769,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -185.2589012327769,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -83.9646336263358,
+      "shaft_work_j_kg": 93551.75820682134,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": 0.7155266944977257,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -32.7488123561682,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -59.68223885199728,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -81.85758388816629,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -83.9646336263358,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -120.39732653494133,
+      "shaft_work_j_kg": 130319.48259180342,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -11.364179561200217,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -54.64066117402933,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -89.36487008594133,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -117.33839526088786,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -120.39732653494133,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -150.88099672662096,
+      "shaft_work_j_kg": 161275.5531791668,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -23.178920955627973,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -74.61863011188407,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -114.93430027379469,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -146.34505662713778,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -150.88099672662096,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.4,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -73.6633127773764,
+      "shaft_work_j_kg": 83177.00600276492,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -5.01327666925647,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -41.73130851417835,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -70.37844580300316,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -73.6633127773764,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -107.90119493915154,
+      "shaft_work_j_kg": 117690.93066385406,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -18.8845468853182,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -66.52653906327012,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -103.34825735087725,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -107.90119493915154,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 40,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 7.9,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.8,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -137.6825219233407,
+      "shaft_work_j_kg": 147837.52729888685,
+      "states": [
+        {
+          "pressure_bar_abs": 68.33970011402431,
+          "temperature_c": -32.4136158355017,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 23.235396077983957,
+          "temperature_c": -88.91544274224077,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 7.8999999999999995,
+          "temperature_c": -131.26795400710316,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -137.6825219233407,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    }
+  ],
+  "reconfiguration_thresholds": [
+    {
+      "area_cold_fraction": 0.1,
+      "source_max_c_at_2g_s_UA_0p2": -32.2772731130307,
+      "UA_max_at_2g_s_5C": null,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": null,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": false
+    },
+    {
+      "area_cold_fraction": 0.15,
+      "source_max_c_at_2g_s_UA_0p2": -10.184848742020478,
+      "UA_max_at_2g_s_5C": null,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": null,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": false
+    },
+    {
+      "area_cold_fraction": 0.2,
+      "source_max_c_at_2g_s_UA_0p2": 0.8613634434846489,
+      "UA_max_at_2g_s_5C": null,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": null,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": false
+    },
+    {
+      "area_cold_fraction": 0.25,
+      "source_max_c_at_2g_s_UA_0p2": 7.489090754787718,
+      "UA_max_at_2g_s_5C": 0.380376419273442,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": 1.0515898981436367,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": true
+    },
+    {
+      "area_cold_fraction": 0.3146377977016922,
+      "source_max_c_at_2g_s_UA_0p2": 12.935374707946526,
+      "UA_max_at_2g_s_5C": 0.8425984530101294,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": 0.4747219729291284,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": true
+    },
+    {
+      "area_cold_fraction": 0.4,
+      "source_max_c_at_2g_s_UA_0p2": 17.430681721742324,
+      "UA_max_at_2g_s_5C": 1.325083714057371,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": 0.30186772032327736,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": true
+    },
+    {
+      "area_cold_fraction": 0.5,
+      "source_max_c_at_2g_s_UA_0p2": 20.74454537739386,
+      "UA_max_at_2g_s_5C": 1.7736022521989323,
+      "minimum_mass_g_s_at_FIXED_alpha_and_5C": 0.22552970910139267,
+      "source_5C_possible_at_fixed_alpha_even_with_no_line_heat": true
+    }
+  ],
+  "uniform_mass_thresholds": [
+    {
+      "warm_g_s": 1,
+      "UA_w_K": 0,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 15.818181818181817,
+      "strict_pass": true,
+      "required_source_mass_strictly_above_g_s": 0.4347826086956528,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 43.329556849998454,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 1,
+      "UA_w_K": 0.2,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 14.320005403244465,
+      "strict_pass": true,
+      "required_source_mass_strictly_above_g_s": 0.6509754895300439,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 64.87490280755942,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 5,
+      "UA_w_K": 0,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 5.612903225806448,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 2.173913043478263,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 216.64778424999218,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 5,
+      "UA_w_K": 0.2,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 5.081292239860936,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 2.414771308519725,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 240.65123259217597,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 10,
+      "UA_w_K": 0,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 3.107142857142854,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 4.347826086956526,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 433.29556849998437,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 10,
+      "UA_w_K": 0.2,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 2.812858204208734,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 4.593387613083288,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 457.7677343448928,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 20,
+      "UA_w_K": 0,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 1.6415094339622627,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 8.695652173913052,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 866.5911369999687,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    },
+    {
+      "warm_g_s": 20,
+      "UA_w_K": 0.2,
+      "capture_fraction": 0.6,
+      "source_c": 5,
+      "drop_c": 1.4860382965631018,
+      "strict_pass": false,
+      "required_source_mass_strictly_above_g_s": 8.943800526963846,
+      "equivalent_source_inlet_FAD_lpm_at_chosen_cold_fraction": 891.3211007926888,
+      "status": "Different model: a well-mixed target with fixed incoming warm mass flow and capture fraction. Not automatically equal to the nonuniform CFD area mean."
+    }
+  ],
+  "backend": {
+    "CoolProp": "8.0.0",
+    "EOS": "HEOS::Air, pseudo-pure dry air",
+    "heat_capacity_j_kg_k": 1005.0,
+    "FAD_reference": "101325 Pa, 20 C; common reference for comparison",
+    "rho_reference_kg_m3": 1.2041183163746156,
+    "status": "EOS and floating calculations are not Lean-verified. Single-phase dry-gas screens; no water or frost."
+  },
+  "sources": [
+    {
+      "url": "https://lean-lang.org/doc/reference/latest/Introduction/",
+      "topic": "Lean proof-checking model; actual project pins Lean 4.31.0"
+    },
+    {
+      "url": "https://coolprop.org/coolprop/HighLevelAPI.html",
+      "topic": "Pressure/enthalpy and pressure/entropy state calculations; version 8.0.0"
+    },
+    {
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html",
+      "topic": "Isenthalpic throttling and energy balance"
+    },
+    {
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+      "topic": "Work-producing expansion"
+    },
+    {
+      "url": "https://www.bauer-kompressoren.de/de_de/junior-ii",
+      "topic": "100 L/min cylinder-fill delivery; 90-330 bar; not direct process-supply approval"
+    }
+  ],
+  "limits": [
+    "Formal implications are conditional on dry constant-property mixing and supplied parameter bounds.",
+    "No formal proof of the equations of state, geometry-to-entrainment map, compressor/source map, moisture, turbulence, wind or comfort.",
+    "Do not extend the 2 g/s R07 CFD area fraction to new flows/methods as a prediction.",
+    "A larger compressor supplies more available inlet mass but one small vortex remains flow-limited.",
+    "High-pressure equipment, matched expander selection and subzero drying/icing remain separate engineering work."
+  ],
+  "source_examples": [
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 32.304716005029434,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 32.304716005029434,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 2,
+      "final_source_temperature_c": -57.94218221149646,
+      "shaft_work_j_kg": 90772.41665407014,
+      "states": [
+        {
+          "pressure_bar_abs": 3.0198095966467817,
+          "temperature_c": -16.193172824698706,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -57.94218221149646,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -57.94218221149646,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 9,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": 3.9560805282440015,
+      "shaft_work_j_kg": 28521.96513081796,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": 5.00045786112787,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 3.9560805282440015,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 31.88480605707366,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 31.88480605707366,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 3,
+      "final_source_temperature_c": -66.5305559697589,
+      "shaft_work_j_kg": 98992.37212475156,
+      "states": [
+        {
+          "pressure_bar_abs": 4.967836883745922,
+          "temperature_c": -4.221399323229775,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.243582118500581,
+          "temperature_c": -37.496372348914775,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -66.5305559697589,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -66.5305559697589,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 11,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 1,
+      "final_source_temperature_c": -5.060485645449717,
+      "shaft_work_j_kg": 37167.063323237,
+      "states": [
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -3.9457617154881177,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -5.060485645449717,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_throttle",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 0,
+      "final_source_temperature_c": 1.543090784769845,
+      "shaft_work_j_kg": 0.0,
+      "states": [
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": 1.543090784769845,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 1.01325,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 5,
+      "final_source_temperature_c": -156.77085801547298,
+      "shaft_work_j_kg": 159768.21068469365,
+      "states": [
+        {
+          "pressure_bar_abs": 69.7750519356542,
+          "temperature_c": -23.218031785414553,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 24.221680958324587,
+          "temperature_c": -69.75349240310231,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 8.408303715601717,
+          "temperature_c": -105.74522130801148,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 2.9188548678948454,
+          "temperature_c": -134.0056168025177,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -156.77085801547298,
+          "phase": "gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -156.77085801547298,
+          "phase": "gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    },
+    {
+      "method": "real_expander",
+      "inlet_temperature_c": 34,
+      "inlet_pressure_bar_abs": 201,
+      "expansion_exit_bar_abs": 5,
+      "delivery_bar_abs": 1.01325,
+      "per_stage_isentropic_efficiency": 0.6,
+      "maximum_stage_ratio_ASSUMED": 3.0,
+      "expander_stage_count": 4,
+      "final_source_temperature_c": -124.40368247298721,
+      "shaft_work_j_kg": 126843.29475441726,
+      "states": [
+        {
+          "pressure_bar_abs": 79.82511339564284,
+          "temperature_c": -16.747142802724284,
+          "phase": "supercritical"
+        },
+        {
+          "pressure_bar_abs": 31.701734968294716,
+          "temperature_c": -59.5232774802742,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 12.59002282926737,
+          "temperature_c": -93.73823117672086,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 5.0,
+          "temperature_c": -121.19926964350049,
+          "phase": "supercritical_gas"
+        },
+        {
+          "pressure_bar_abs": 1.01325,
+          "temperature_c": -124.40368247298721,
+          "phase": "supercritical_gas"
+        }
+      ],
+      "status": "Hypothetical dry source thermodynamics, not a matched expander, pressure system, or measured performance. EOS not formally verified in Lean. No water/icing or interstage heat pickup."
+    }
+  ],
+  "exposure_time_toy_model": {
+    "equation": "delta(t)=delta0*exp(-t/tau); pass iff t < tau*ln(delta0/target)",
+    "status": "A separate lumped parcel model, IF a positive fitted tau applies. Not a jet prediction or evidence for 0.5 s reheating.",
+    "ambient_c": 34,
+    "target_drop_c": 6,
+    "tau_ASSUMED_s": 0.5,
+    "rows": [
+      {
+        "initial_c": 5,
+        "strict_pass_time_below_s": 0.7877681803792095
+      },
+      {
+        "initial_c": -40,
+        "strict_pass_time_below_s": 1.2561528119880574
+      },
+      {
+        "initial_c": -100,
+        "strict_pass_time_below_s": 1.553040165361428
+      }
+    ],
+    "extra_time_minus100_vs_minus40_s": 0.2968873533733708
+  }
+}

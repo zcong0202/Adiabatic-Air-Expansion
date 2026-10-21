@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-11",
+  "software_tests": "passed",
+  "hardware_tested_this_release": false,
+  "physical_lab_checks": [
+    "Uno browser upload",
+    "saved EEPROM across power cycle",
+    "relay trigger polarity and OFF at reset",
+    "protected valve actuation",
+    "occupancy / background / lighting performance"
+  ],
+  "verified": [
+    "Compiled Uno firmware",
+    "Actual C++ HoldTimer expiry, retrigger, 3 min continuous ON, clock rollover, no expired-history revival",
+    "Intel HEX checksums and profile patch; rest of flash unchanged",
+    "ZIP CRCs and Unicode contents",
+    "Browser exported 12.3s LOW-trigger HEX identical to Arduino compilation of exported source",
+    "Bootloader emulator page write/readback, bad signature and verification rejection",
+    "Actual SerialLink split STK500 packets over mock Web Serial streams",
+    "Chrome file URL secure context and Web Serial API available",
+    "Browser preview retrigger and expiry; no simulated live values",
+    "Mock USB ACK / no-ACK settings flows; stale readings blank; disconnect without stop",
+    "PNG download buttons, embedded PNG bytes and copies in Mac / browser-exported firmware ZIP checked"
+  ],
+  "package_bytes": 920057,
+  "package_sha256": "b919ffeeb450408337f6bd27bb08b252237981be5b94eebc88f5f0c6584443f2",
+  "diagram_pngs": {
+    "ToF wiring.png": [
+      2120,
+      1140
+    ],
+    "Valve wiring.png": [
+      2120,
+      1360
+    ]
+  }
+}

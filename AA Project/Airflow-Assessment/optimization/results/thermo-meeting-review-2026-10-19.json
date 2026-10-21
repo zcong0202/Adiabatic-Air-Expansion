@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-19",
+  "meeting_date": "2026-10-16",
+  "reference_air": {
+    "pressure_pa": 101325.0,
+    "temperature_c": 20,
+    "density_kg_m3": 1.2041183163746156,
+    "flow_l_min": 100.0,
+    "mass_flow_kg_s": 0.0020068638606243593,
+    "rating_status": "Meeting assumption. Need compressor free-air delivery at working pressure; cold-branch fraction unmeasured."
+  },
+  "dry_cp_j_kg_k": 1005.0,
+  "ambient_c": 34.0,
+  "target_drop_c": 6.0,
+  "scenarios": [
+    {
+      "cold_delivery_temperature_c": 5,
+      "cold_mass_flow_g_s": 2.0068638606243594,
+      "dry_sensible_enthalpy_deficit_w": 58.49004721789696,
+      "cold_mass_fraction_for_6c_drop": 0.20689655172413793,
+      "maximum_warm_to_cold_mass_ratio_for_6c_drop": 3.833333333333333,
+      "status": "Ideal dry mixing at final delivery pressure. Assumes ALL rated air reaches cold branch; not achieved hardware performance."
+    },
+    {
+      "cold_delivery_temperature_c": -40,
+      "cold_mass_flow_g_s": 2.0068638606243594,
+      "dry_sensible_enthalpy_deficit_w": 149.2504653146336,
+      "cold_mass_fraction_for_6c_drop": 0.08108108108108109,
+      "maximum_warm_to_cold_mass_ratio_for_6c_drop": 11.333333333333334,
+      "status": "Ideal dry mixing at final delivery pressure. Assumes ALL rated air reaches cold branch; not achieved hardware performance."
+    },
+    {
+      "cold_delivery_temperature_c": -50,
+      "cold_mass_flow_g_s": 2.0068638606243594,
+      "dry_sensible_enthalpy_deficit_w": 169.41944711390843,
+      "cold_mass_fraction_for_6c_drop": 0.07142857142857142,
+      "maximum_warm_to_cold_mass_ratio_for_6c_drop": 13.0,
+      "status": "Ideal dry mixing at final delivery pressure. Assumes ALL rated air reaches cold branch; not achieved hardware performance."
+    },
+    {
+      "cold_delivery_temperature_c": -100,
+      "cold_mass_flow_g_s": 2.0068638606243594,
+      "dry_sensible_enthalpy_deficit_w": 270.2643561102825,
+      "cold_mass_fraction_for_6c_drop": 0.04477611940298507,
+      "maximum_warm_to_cold_mass_ratio_for_6c_drop": 21.333333333333332,
+      "status": "Ideal dry mixing at final delivery pressure. Assumes ALL rated air reaches cold branch; not achieved hardware performance."
+    }
+  ],
+  "exponential_example": {
+    "equation": "DeltaT(t)=DeltaT(0)*exp(-t/tau)",
+    "tau_s_assumed_not_measured": 0.5,
+    "extra_time_above_same_threshold_minus100_vs_minus50_s": 0.2335115005537989,
+    "capacity_ratio_minus100_to_minus50": 1.5952380952380953,
+    "limitation": "Fixed-capacitance, fixed-conductance toy model. Not a validated jet warming law; no measured 0.5 s decay."
+  },
+  "staging": {
+    "absolute_inlet_bar": 200,
+    "absolute_outlet_bar": 5,
+    "maximum_stage_ratio_if_actual_hardware_limit": 3,
+    "minimum_stages_under_that_limit": 4,
+    "four_equal_ratio_stages_bar": [
+      200.0,
+      79.52707287670506,
+      31.622776601683793,
+      12.574334296829353,
+      4.999999999999999
+    ],
+    "note": "A maximum ratio of 3 is a proposed machine constraint, not a universal thermodynamic law. Use absolute pressures."
+  },
+  "mixing_example": {
+    "warm_temperature_c": 20,
+    "cold_temperature_c": 0,
+    "cold_to_initial_warm_mass_ratio": 0.5,
+    "mixed_temperature_c": 13.333333333333334,
+    "cold_to_initial_warm_mass_ratio_for_10c_mix": 1,
+    "note": "Adding mass to initial warm air. Replacing part of a fixed-volume region is a different problem. Actual volumes require density at their stated pressures and temperatures."
+  },
+  "burst_example": {
+    "cold_production_g_s": 2,
+    "burst_delivery_g_s": 10,
+    "pulse_s": 3,
+    "delivered_mass_per_pulse_g": 30,
+    "minimum_cycle_period_s": 15,
+    "maximum_duty_fraction": 0.2,
+    "buffer_mass_swing_g_with_continuous_production": 24,
+    "note": "Illustrative mass balance only. No heat leak, pressure loss or startup allowance; not a pressure-vessel design."
+  },
+  "meeting_decisions_reported_by_user": {
+    "no_DFF_shower_build": true,
+    "primary_demo_artifact": "Video of existing tests; hose demo remains an option, decision due 19 October."
+  },
+  "recommendation": "Measure installed cold-branch flow, final-pressure delivery temperature, target map, on/off response and wind. Improve delivery/nozzle against the local target. Add a buffer only for a specified peak/duty requirement. Treat expanders as a separate source feasibility project.",
+  "limitations": [
+    "No new CFD",
+    "No source performance measurement",
+    "No demonstrated passive trapping of cold air for 3-4 seconds",
+    "No moist-air, real-gas or turbine efficiency calculation",
+    "No 200 bar pressure-system design"
+  ],
+  "sources": [
+    {
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html",
+      "topic": "Throttling, enthalpy, insulated tank filling"
+    },
+    {
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node129.html",
+      "topic": "Conditions and time constant of lumped exponential heating"
+    },
+    {
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+      "topic": "Ideal work-producing expansion and mass-flow power"
+    }
+  ]
+}

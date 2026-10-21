@@ -1,0 +1,36 @@
+No hardware is required to run these next models.
+
+GATE A - VARIABLE DENSITY AND BUOYANCY
+Map the selected CAD fluid contour into a 3D domain. Use a thermally coupled,
+variable-density low-Mach solver. A horizontal jet with vertical gravity is
+not axisymmetric. Repeat the still-air target and conservation checks.
+Compare with the current dry passive-scalar approximation before accepting
+its margin. Add mesh/domain/turbulence sensitivity for the selected state.
+
+GATE B - WIND AND HOT EXHAUST
+Apply 0.5 and 1.0 m/s crosswind in both transverse directions. Include the
+commercial source/hot-outlet envelopes only when authoritative CAD is known.
+Add its hot branch mass and enthalpy from the paired source point. Keep the
+hot exhaust pointing away. Determine target offset, coverage and air mean.
+Do not model hot recirculation as a universal vacuum or a fixed 0.5 s decay.
+
+GATE C - PULSES
+Export the internal steady nozzle outlet profile to an external transient
+domain. Use a specified stock-valve waveform and source response assumption.
+Compare startup, 3 s release and repeat duty consistent with the compressor.
+Monitor delivered enthalpy and target time series, not animation particles.
+The actual source transient map remains an input uncertainty without tests.
+
+GATE D - WALLS, WATER AND HUMAN HEAT TRANSFER
+Add PLA/insulation conduction and outside heat pickup. Add moisture transport,
+condensation/icing where needed. Introduce a controlled-temperature or heated
+person surface. Report incremental skin heat removal relative to an ambient
+air stream at matched velocity, then assess the full velocity/cooling benefit.
+Choose the target body area and heat-removal objective before comfort claims.
+
+RESOURCE AND STOP POLICY
+Each campaign must declare solver physics, parameter bounds, case budget,
+quality gates and promotion criteria. Numerically rejected solutions cannot
+enter the final comparison. A Lean inequality only certifies the model bounds
+actually supplied to it. New results cannot validate the old source map or
+physical fit. Manufacturer data and later hardware checks close those gaps.

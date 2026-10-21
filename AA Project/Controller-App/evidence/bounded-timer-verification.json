@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-14",
+  "firmware": "AA-BOUNDED-1.1",
+  "maximum_on_ms": 30000,
+  "departure_delay_ms": 3000,
+  "rearm_empty_ms": 3000,
+  "default_active_low": 1,
+  "flashed": false,
+  "app_repackaged": false,
+  "tests": [
+    "30 s total cap with continuous detections",
+    "3 s early-departure expiry",
+    "Late departure cannot extend 30 s deadline",
+    "No reopening while the target stays after cutoff",
+    "Valid empty-zone re-arm; invalid samples do not unlock",
+    "Brief absence refills departure delay without resetting total budget",
+    "Setting changes cannot exceed departure cap or revive expired output",
+    "Both timing limits and re-arm work across uint32 clock wrap"
+  ],
+  "regression_probe": {
+    "previous": 1,
+    "updated": 0
+  },
+  "uno_compile": {
+    "flash_bytes": 12358,
+    "static_ram_bytes": 431
+  },
+  "compiled_hex_sha256": "a8afed4d262805ebcbf3d7f587ff4848545f82e6c4eb7ba0a8352d4afce977bc",
+  "hardware_tested": false
+}

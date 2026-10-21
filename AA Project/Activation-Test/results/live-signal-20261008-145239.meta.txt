@@ -1,0 +1,12 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# Complete stop; ranging register=0 confirmed=0
+# AA LED prototype; outputs disabled at boot; send ? for commands
+2026-10-08T14:52:44.459430+04:00 command=T
+# ToF idle SDA=3.583V SCL=3.587V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=0 errors=0
+2026-10-08T14:52:45.394269+04:00 recording=resumed

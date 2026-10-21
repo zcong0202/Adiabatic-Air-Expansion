@@ -1,0 +1,66 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# ToF idle SDA=3.583V SCL=3.583V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# AA LED prototype; outputs disabled at boot; send ? for commands
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=13 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=18 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+2026-10-08T14:39:52.806671+04:00 command=T
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=18 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=18 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=18 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=14 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=18 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=16 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=17 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=15 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=18 errors=0

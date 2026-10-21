@@ -1,0 +1,15 @@
+{
+  "file": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/AA-outdoor-pass-by-study.zip",
+  "bytes": 199746411,
+  "files": 1314,
+  "sha256": "e23e167dea6fbe3430242d0acc6869997d14c0f6ae840d92ce6237b5413b0c33",
+  "packaged_full_native_cases": [
+    "A00_pitch8_d50",
+    "L00_row4_d35",
+    "R00_wide_d35"
+  ],
+  "other_case_native_fields": "Local workspace; hashes, probe traces/audits and exact replay inputs packaged.",
+  "all_members_hash_verified": true,
+  "body_included": false,
+  "hardware_validated": false
+}

@@ -1,0 +1,20 @@
+[
+  "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+  "--debug",
+  "2",
+  "--load-settings",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/H2S-resolved-machine.json;/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/AA-process.json",
+  "--load-filaments",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/H2S-resolved-PLA.json",
+  "--orient",
+  "0",
+  "--arrange",
+  "1",
+  "--slice",
+  "0",
+  "--export-3mf",
+  "NOZZLE_3-8-MNPT_nominal_H2S_PLA.3mf",
+  "--outputdir",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/milton-mount-slice",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/deliverables/C24-3deg-Milton-mount-reference/NOZZLE_3-8-MNPT_nominal_mm.stl"
+]

@@ -1,0 +1,16 @@
+{
+  "name": "C24_a7",
+  "inlet_bore_mm": 8,
+  "exit_bore_mm": 24,
+  "cone_half_angle_deg": 7,
+  "cone_length_mm": 65.15477142379675,
+  "total_length_mm": 90.15477142379675,
+  "wall_thickness_radial_mm": 2,
+  "inlet_land_mm": 15,
+  "outlet_land_mm": 10,
+  "watertight": true,
+  "winding_consistent": true,
+  "step_units": "metre",
+  "stl_units": "wall.stl metres; wall-mm.stl millimetres",
+  "status": "Flow concept. Real source connector, insulation, mounts and manufacturing tolerances remain undefined."
+}

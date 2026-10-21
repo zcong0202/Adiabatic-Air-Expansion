@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-15",
+  "inventory_scope": "Workspace filenames and AA activation-log headers. Not an audit of external drives or accounts.",
+  "thermal_evidence": "Embedded charts in 1008.pptx, previously extracted. No raw thermal logs identified in workspace inventory.",
+  "controller_csv_count": 14,
+  "controller_csv_headers": [
+    [
+      "host_time_dubai",
+      "ms",
+      "mode",
+      "gt",
+      "raw_mm",
+      "median_mm",
+      "range_status",
+      "tof_valid",
+      "tof_age_ms",
+      "pir_raw",
+      "pir_warm",
+      "state",
+      "command",
+      "feedback",
+      "adc",
+      "feedback_v",
+      "match",
+      "fault"
+    ]
+  ],
+  "geometry": "No STL/STEP/IGES/3MF/OBJ/SolidWorks/Fusion files identified in workspace inventory. Deck contains images, not measured geometry.",
+  "solver_on_current_PATH": {
+    "foamRun": null,
+    "simpleFoam": null,
+    "rhoSimpleFoam": null,
+    "gmsh": null
+  },
+  "status": "Data audit completed; quantified extension failure and measured CFD inputs unavailable."
+}

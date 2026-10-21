@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-15",
+  "python_executable": "Airflow-Assessment/.venv-cfd/bin/python",
+  "solver_image": "microfluidica/openfoam:2506",
+  "solver_digest": "sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37",
+  "architecture": "linux/arm64",
+  "docker_server": "28.4.0",
+  "mesh_generator": "Gmsh 4.15.2, OpenCASCADE",
+  "source_mode": "Prescribed cold branch, not a modeled vortex tube",
+  "executed_study": "Four concepts at one assumed source condition, still air and 1 m/s crosswind; two refined meshes. Completion and quality are recorded separately."
+}

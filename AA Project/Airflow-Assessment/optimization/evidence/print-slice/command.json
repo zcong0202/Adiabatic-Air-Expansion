@@ -1,0 +1,22 @@
+[
+  "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+  "--debug",
+  "2",
+  "--load-settings",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/H2S-resolved-machine.json;/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/AA-process.json",
+  "--load-filaments",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/H2S-resolved-PLA.json",
+  "--orient",
+  "0",
+  "--arrange",
+  "1",
+  "--slice",
+  "0",
+  "--export-3mf",
+  "AA_C24_H2S_PLA_0p4_sliced.3mf",
+  "--outputdir",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice",
+  "--export-settings",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/evidence/print-slice/resolved-settings.json",
+  "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/deliverables/C24-3deg-print-prototype/AA_C24_3deg_PRINT_mm.stl"
+]

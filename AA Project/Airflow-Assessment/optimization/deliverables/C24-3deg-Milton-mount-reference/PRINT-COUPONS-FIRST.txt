@@ -1,0 +1,58 @@
+AA / MILTON-STYLE DIRECT MOUNT / PROVISIONAL PRINT PACKAGE
+
+This revision replaces the smooth inlet exterior with a male 3/8-18 NPT
+prototype. Milton specifies 3/8 NPT; its product photo shows an external
+male thread. On 2026-10-15 the user confirmed that a Milton S-183 tip screws
+directly onto the Jeanoko cold outlet. Reference interface fit is user-confirmed.
+Printed thread fit and tolerance remain untested.
+No nominal thread diameter is treated as an actual flow-bore measurement.
+
+PRINT THE FIT COUPONS FIRST
+Three short, hollow coupons reproduce the same thread, shoulder and lead-in
+used on the full nozzle. The labels describe EXTERNAL DIAMETER reductions:
+nominal = no reduction; minus-0p2 = 0.20 mm smaller; minus-0p4 = 0.40 mm smaller.
+They are approximate printable profiles, not gauged ASME threads.
+Use H2S / 0.4 mm / actual PLA, 0.20 mm layers, 5 walls, no supports.
+Import at 100% in MILLIMETRES. The broad collar/base is down; male thread up.
+An outside brim may help. Keep the central passage open.
+
+Offer each finished coupon to the COLD outlet by hand. Start with the
+nominal coupon. Do not force, use a wrench, or use the coupon as a tap.
+Choose a variant only if it starts and seats without cross-threading.
+If none starts cleanly, stop: the port may be another size or BSP thread.
+The confirmed commercial-tip fit does not establish printed thread tolerance.
+Check available thread depth and clearance from the vortex body.
+
+AFTER A COUPON FITS
+Print the matching NOZZLE STL. Broad 24 mm ID outlet goes on the bed;
+male inlet thread is at the top. Overall size remains 28 x 28 x 177.65 mm.
+The 22 mm hex shoulder has a sloped exterior to avoid a large unsupported
+ledge in this orientation. Do not use the hex to tighten a PLA pipe joint.
+Support the nozzle independently. This printed part has no pressure rating.
+Fit only to the downstream cold-delivery outlet, away from hot exhaust.
+Use your actual filament and bed profile; re-slice in Bambu Studio.
+
+GEOMETRY AND CFD STATUS
+The internal contour is unchanged: 8 mm ID inlet, 15 mm inlet land,
+152.649 mm 3-degree half-angle cone, 24 mm ID outlet with 10 mm land.
+The new exterior adds the thread, hex shoulder, and a support-friendly ramp.
+The saved animation still represents the original R07 prescribed-flow CFD.
+It does not simulate a real threaded source junction or certify this mount.
+Printed thread fit, leaks, actual cold flow/temperature, changed wall heat
+pickup and the >6 C target all require a physical test.
+
+Editable generator: optimization/scripts/milton_mount_reference.py.
+Reference and verification record: mount-reference.json.
+
+NOMINAL H2S PROJECT
+NOZZLE_3-8-MNPT_nominal_H2S_PLA.3mf completed a native Studio slice.
+Estimate: 27.5 g PLA, 2 h 12 min. Only print this nominal nozzle after the
+nominal coupon fits. Select actual PLA and plate, then re-slice.
+The CLI flags T65535 from the unchanged vendor AMS end template; it still
+returns Success. This is not a printer-verified toolpath. See slicing record.
+
+PARAMETRIC SOURCE
+Generator uses Python, numpy, trimesh, lxml, matplotlib and networkx.
+It can run standalone in the extracted package folder. Output goes under
+deliverables/C24-3deg-Milton-mount-reference. Preview helper uses the same
+parameter functions; no source-specific connector dimensions are invented.

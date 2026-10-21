@@ -1,0 +1,15 @@
+FoamFile { version 2.0; format ascii; class volVectorField; object U; }
+dimensions [0 1 -1 0 0 0 0]; internalField uniform (0 0 0);
+boundaryField {
+xmin { type pressureInletOutletVelocity; tangentialVelocity uniform (0 0 0); value uniform (0 0 0); }
+xmax { type pressureInletOutletVelocity; tangentialVelocity uniform (0 0 0); value uniform (0 0 0); }
+ymin { type pressureInletOutletVelocity; tangentialVelocity uniform (0 0 0); value uniform (0 0 0); }
+ymax { type pressureInletOutletVelocity; tangentialVelocity uniform (0 0 0); value uniform (0 0 0); }
+top { type pressureInletOutletVelocity; tangentialVelocity uniform (0 0 0); value uniform (0 0 0); }
+ground { type noSlip; }
+nozzleWalls { type noSlip; }
+jet0 { type flowRateInletVelocity; massFlowRate 0.0194; rho rho; rhoInlet 1.287761182431959; value uniform (0 0 0); }
+jet1 { type flowRateInletVelocity; massFlowRate 0.0194; rho rho; rhoInlet 1.287761182431959; value uniform (0 0 0); }
+jet2 { type flowRateInletVelocity; massFlowRate 0.0194; rho rho; rhoInlet 1.287761182431959; value uniform (0 0 0); }
+jet3 { type flowRateInletVelocity; massFlowRate 0.0194; rho rho; rhoInlet 1.287761182431959; value uniform (0 0 0); }
+}

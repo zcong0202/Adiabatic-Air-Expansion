@@ -1,0 +1,38 @@
+{"case": "S00_stock_b70_D24_a5", "diameter_mm": 24, "half_angle_deg": 5, "length_mm": 116.44041842209077, "mass_g_s": 3.1889066745321073, "beta": 0.7, "nominal_source_c": -5.444444444444443, "cfd_mean_fraction": 0.26147067562586607, "nominal_dry_drop_c": 10.313565538575828, "stressed_dry_drop_c": 4.710189921242958, "stressed_equilibrium_moist_drop_c": 4.586602197463328, "stress_min_drop_c": 4.586602197463328, "stress_source_c": 6.444444444444443, "stress_delivered_c": 7.485266707968538, "stress_UA_w_K": 0.11489654420534687, "backpressure_max_patch_pa": 1678.6228379920224, "backpressure_within_EXAIR_2psig_screen": true, "estimated_Richardson_number": 0.024723693275810962, "numerically_accepted": true, "failed_gates": [], "passes_stress_plus_1C_margin": false, "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.", "audit_sha256": "2e5caa74b45a8f4ce8bae6669e10ff22e527fb5e8e15db2ac6a27943c7d917be"}
+{"case": "S01_stock_b60_D24_a5", "diameter_mm": 24, "half_angle_deg": 5, "length_mm": 116.44041842209077, "mass_g_s": 2.7333485781703777, "beta": 0.6, "nominal_source_c": -13.777777777777779, "cfd_mean_fraction": 0.2614707500828578, "nominal_dry_drop_c": 12.49249139284765, "stressed_dry_drop_c": 6.174777305138912, "stressed_equilibrium_moist_drop_c": 5.998349232611645, "stress_min_drop_c": 5.998349232611645, "stress_source_c": -0.22222222222222143, "stress_delivered_c": 1.2615602635459595, "stress_UA_w_K": 0.11489654420534687, "backpressure_max_patch_pa": 1233.2605549518871, "backpressure_within_EXAIR_2psig_screen": true, "estimated_Richardson_number": 0.04175388269385214, "numerically_accepted": true, "failed_gates": [], "passes_stress_plus_1C_margin": false, "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.", "audit_sha256": "dd873c20f513ad5dae5d11a05e31536c94ecbbbcfb1e0745ca41e04ea80958a9"}
+{"case": "S02_stock_b60_D24_a5_lowflow", "diameter_mm": 24, "half_angle_deg": 5, "length_mm": 116.44041842209077, "mass_g_s": 2.46001372035334, "beta": 0.6, "nominal_source_c": -13.777777777777779, "cfd_mean_fraction": 0.2614678840548286, "nominal_dry_drop_c": 12.492354460397367, "stressed_dry_drop_c": 6.136785380994027, "stressed_equilibrium_moist_drop_c": 5.9676067645321496, "stress_min_drop_c": 5.9676067645321496, "stress_source_c": -0.22222222222222143, "stress_delivered_c": 1.4226266517187725, "stress_UA_w_K": 0.11489654420534687, "backpressure_max_patch_pa": 998.9330099578813, "backpressure_within_EXAIR_2psig_screen": true, "estimated_Richardson_number": 0.051476901913929306, "numerically_accepted": true, "failed_gates": [], "passes_stress_plus_1C_margin": false, "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.", "audit_sha256": "7e2a97c82401b47e7bb54eaeecb0630469e15b221e21f9769b5534510ca4e13f"}
+{"status": "solver ended; audit required", "start_epoch": 1792412299.054076, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 331.26128911972046}
+{"status": "solver ended; audit required", "start_epoch": 1792412630.497888, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 124.16729378700256, "return_code": 0}
+{"status": "solver ended; audit required", "start_epoch": 1792412754.897324, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 117.06303477287292, "return_code": 0}
+{"status": "solver ended; audit required", "start_epoch": 1792412872.271515, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 110.23712611198425, "return_code": 0}
+{"case": "S03_stock_b60_D28_a5_lowflow", "diameter_mm": 28, "half_angle_deg": 5, "length_mm": 139.30052302761345, "mass_g_s": 2.46001372035334, "beta": 0.6, "nominal_source_c": -13.777777777777779, "cfd_mean_fraction": 0.31820169182584757, "nominal_dry_drop_c": 15.202969720568273, "stressed_dry_drop_c": 7.743395221944931, "stressed_equilibrium_moist_drop_c": 7.4663621080978615, "stress_min_drop_c": 7.4663621080978615, "stress_source_c": -0.22222222222222143, "stress_delivered_c": 1.9775702984790797, "stress_UA_w_K": 0.15489738089989072, "backpressure_max_patch_pa": 998.2771431631345, "backpressure_within_EXAIR_2psig_screen": true, "estimated_Richardson_number": 0.08850853700281501, "numerically_accepted": true, "failed_gates": [], "passes_stress_plus_1C_margin": true, "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.", "audit_sha256": "4c1f163a00346606aec82af2b39ade3957b9c1564a85d9cc6b3fe5f84276a36e"}
+{"status": "solver ended; audit required", "start_epoch": 1792413499.793634, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 181.66700100898743, "return_code": 0}
+{"case": "S03_stock_b60_D28_a5_lowflow_fine", "diameter_mm": 28, "half_angle_deg": 5, "length_mm": 139.30052302761345, "mass_g_s": 2.46001372035334, "beta": 0.6, "nominal_source_c": -13.777777777777779, "cfd_mean_fraction": 0.31617987463335495, "nominal_dry_drop_c": 15.10637178803807, "stressed_dry_drop_c": 7.681486801974115, "stressed_equilibrium_moist_drop_c": 7.411758847476243, "stress_min_drop_c": 7.411758847476243, "stress_source_c": -0.22222222222222143, "stress_delivered_c": 1.9775702984790797, "stress_UA_w_K": 0.15489738089989072, "backpressure_max_patch_pa": 998.2935122524009, "backpressure_within_EXAIR_2psig_screen": true, "estimated_Richardson_number": 0.08717715397438908, "numerically_accepted": true, "failed_gates": [], "passes_stress_plus_1C_margin": true, "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.", "audit_sha256": "92f3b2b8a37d2c4ce30f85fec07986591eaf74a378adc7976983ea2d33b79286"}
+{
+  "completed_cases": 5,
+  "selected": {
+    "case": "S03_stock_b60_D28_a5_lowflow",
+    "diameter_mm": 28,
+    "half_angle_deg": 5,
+    "length_mm": 139.30052302761345,
+    "mass_g_s": 2.46001372035334,
+    "beta": 0.6,
+    "nominal_source_c": -13.777777777777779,
+    "cfd_mean_fraction": 0.31820169182584757,
+    "nominal_dry_drop_c": 15.202969720568273,
+    "stressed_dry_drop_c": 7.743395221944931,
+    "stressed_equilibrium_moist_drop_c": 7.4663621080978615,
+    "stress_min_drop_c": 7.4663621080978615,
+    "stress_source_c": -0.22222222222222143,
+    "stress_delivered_c": 1.9775702984790797,
+    "stress_UA_w_K": 0.15489738089989072,
+    "backpressure_max_patch_pa": 998.2771431631345,
+    "backpressure_within_EXAIR_2psig_screen": true,
+    "estimated_Richardson_number": 0.08850853700281501,
+    "numerically_accepted": true,
+    "failed_gates": [],
+    "passes_stress_plus_1C_margin": true,
+    "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+    "audit_sha256": "4c1f163a00346606aec82af2b39ade3957b9c1564a85d9cc6b3fe5f84276a36e"
+  }
+}

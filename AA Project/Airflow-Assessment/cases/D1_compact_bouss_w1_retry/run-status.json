@@ -1,0 +1,7 @@
+{
+  "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37",
+  "case": "D1_compact_bouss_w1_retry",
+  "status": "solver_exited_successfully; convergence requires audit",
+  "started_epoch": 1792059265.498663,
+  "elapsed_s": 146.22
+}

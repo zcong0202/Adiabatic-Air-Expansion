@@ -1,0 +1,16 @@
+{
+  "slice_completed": true,
+  "printer": "Bambu Lab H2S 0.4 nozzle",
+  "filament": "Installed Generic PLA profile; actual material unspecified",
+  "layer_height_mm": 0.2,
+  "wall_loops": 5,
+  "bed_type": "Cool Plate default. Select actual plate and re-slice in Studio.",
+  "estimated_total_time_s": 7913.4453125,
+  "estimated_filament_g": 27.491262435913086,
+  "toolpath_hardware_verified": false,
+  "physical_fit_verified": false,
+  "native_template_diagnostic": "CLI reports Invalid T command (T65535); the same command exists in unchanged H2S manufacturer end template (AMS unload). Exit 0, result Success, no plate warning. Re-slice in GUI for actual setup.",
+  "new_CFD_run": false,
+  "reference_tip_fit_user_confirmed": true,
+  "printed_thread_fit_verified": false
+}

@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-19",
+  "status": "Conditional mathematical viability. No seat CFD, hardware validation, or vendor motor thermal map.",
+  "sources": {
+    "motor": "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249",
+    "motor_manual": "https://picontent.atlascopco.com/cont/external/dir/0e/410867083_B4770001_html5_external/en-US/print-section.html?section=all",
+    "motor_rating_basis": "https://www.atlascopco.com/en-us/itba/industry-solutions/airmotors/technicalguide/catalogue-performance",
+    "motor_consumption": "https://www.atlascopco.com/en-us/itba/industry-solutions/airmotors/technicalguide/performance",
+    "compressor": "https://www.atlascopco.com/en-ae/construction-equipment/products/mobile-air-compressors/ready-to-go-compressor-range/xas-lrc-range",
+    "compressor_brochure": "https://www.atlascopco.com/content/dam/atlas-copco/construction-technique/portable-energy/documents/1_compressors/diesel-range/8-series-lrc/small-air-lrc-range-brochure.pdf"
+  },
+  "environment_sha256": "6fd015b30efc15a9965e9d18289beef882e2586a3d168c62b1fa8637574bf92a",
+  "assumptions": {
+    "motors": "Four in parallel, not series; exhaust all collected.",
+    "mass_basis": "Source document: 19.4 g/s each. 16.2 atmospheric L/s each is confirmed; exact reference temperature/humidity not stated on product page.",
+    "inlet": "6.3 bar gauge,40 C; catalogue output/consumption pair at loaded maximum power.",
+    "motor_heat_w": 0,
+    "duct_gain_k": 4,
+    "cp_j_kg_k": 1006.0,
+    "ambient_pressure_pa": 101325.0,
+    "source_flow_is_coupled_to_load": true,
+    "shaft_sink": "External load extracts power; its dissipated heat is excluded from seat and cold path.",
+    "zone": "Dry, steady, uniform; all source captured unless stated; 100 W net heat to zone; no solar/panel load in baseline."
+  },
+  "baseline": {
+    "ambient_c": 30,
+    "inlet_c": 40,
+    "shaft_fraction": 1,
+    "shaft_w": 3360.0,
+    "motor_exhaust_c": -3.0407247238220165,
+    "supply_c": 0.9592752761779835,
+    "sensible_cooling_w": 2267.0816,
+    "inlet_within_40c": true,
+    "heat_capacity_w_k": 78.0656,
+    "mass_kg_s": 0.0776,
+    "duct_gain_k": 4,
+    "extra_heat_w": 0
+  },
+  "free_air_demand_m3_min": 3.888,
+  "actual_supply_m3_s": 0.06026857322477177,
+  "source_contrast_k": 29.040724723822017,
+  "compressor_screen": [
+    {
+      "model": "XAS 38",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 2,
+      "ideal_four_motor_duty": 0.51440329218107,
+      "spare_fraction_of_demand": -0.48559670781893005,
+      "pass_15pct_engineering_allowance": false
+    },
+    {
+      "model": "XAS 48",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 2.5,
+      "ideal_four_motor_duty": 0.6430041152263375,
+      "spare_fraction_of_demand": -0.3569958847736625,
+      "pass_15pct_engineering_allowance": false
+    },
+    {
+      "model": "XAS 58",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 3,
+      "ideal_four_motor_duty": 0.7716049382716049,
+      "spare_fraction_of_demand": -0.22839506172839508,
+      "pass_15pct_engineering_allowance": false
+    },
+    {
+      "model": "XAS 68",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 3.6,
+      "ideal_four_motor_duty": 0.9259259259259259,
+      "spare_fraction_of_demand": -0.07407407407407407,
+      "pass_15pct_engineering_allowance": false
+    },
+    {
+      "model": "XAS 78",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 4.5,
+      "ideal_four_motor_duty": 1,
+      "spare_fraction_of_demand": 0.15740740740740744,
+      "pass_15pct_engineering_allowance": true
+    },
+    {
+      "model": "XAS 88",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 5,
+      "ideal_four_motor_duty": 1,
+      "spare_fraction_of_demand": 0.286008230452675,
+      "pass_15pct_engineering_allowance": true
+    },
+    {
+      "model": "XAS 98",
+      "pressure_bar_g": 7,
+      "fad_m3_min": 5.4,
+      "ideal_four_motor_duty": 1,
+      "spare_fraction_of_demand": 0.38888888888888906,
+      "pass_15pct_engineering_allowance": true
+    },
+    {
+      "model": "XAHS 38",
+      "pressure_bar_g": 12,
+      "fad_m3_min": 2,
+      "ideal_four_motor_duty": 0.51440329218107,
+      "spare_fraction_of_demand": -0.48559670781893005,
+      "pass_15pct_engineering_allowance": false
+    },
+    {
+      "model": "XATS 68",
+      "pressure_bar_g": 10.3,
+      "fad_m3_min": 3.6,
+      "ideal_four_motor_duty": 0.9259259259259259,
+      "spare_fraction_of_demand": -0.07407407407407407,
+      "pass_15pct_engineering_allowance": false
+    }
+  ],
+  "real_gas_crosscheck": {
+    "backend": "CoolProp 8.0.0 HEOS::Air",
+    "inlet_pa": 731325.0,
+    "inlet_k": 313.15,
+    "isentropic_outlet_c": -95.62359355275413,
+    "effective_shaft_isentropic_efficiency": 0.32031832496662316,
+    "loaded_exhaust_c": -4.320076817609106,
+    "throttle_exhaust_c": 38.71544419703196,
+    "loaded_supply_after_4k_c": -0.320076817609106
+  },
+  "target_20c": {
+    "target_c": 20,
+    "net_heat_w": 100.0,
+    "cold_capture": 1,
+    "shaft_work_return_fraction": 0,
+    "target_headroom_w": 1386.4256,
+    "max_warm_kg_s": 0.13781566600397616,
+    "max_warm_m3_s": 0.11835785873921242,
+    "max_effective_wind_area_m2": 0.11835785873921242,
+    "wind_m_s": 1,
+    "exchange_coefficient": 1,
+    "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+  },
+  "target_delta6": {
+    "target_c": 24,
+    "net_heat_w": 100.0,
+    "cold_capture": 1,
+    "shaft_work_return_fraction": 0,
+    "target_headroom_w": 1698.688,
+    "max_warm_kg_s": 0.28142611000662693,
+    "max_warm_m3_s": 0.2416923470277276,
+    "max_effective_wind_area_m2": 0.2416923470277276,
+    "wind_m_s": 1,
+    "exchange_coefficient": 1,
+    "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+  },
+  "wind_limits": [
+    {
+      "target_c": 20,
+      "net_heat_w": 100.0,
+      "cold_capture": 1,
+      "shaft_work_return_fraction": 0,
+      "target_headroom_w": 1386.4256,
+      "max_warm_kg_s": 0.13781566600397616,
+      "max_warm_m3_s": 0.11835785873921242,
+      "max_effective_wind_area_m2": 0.23671571747842485,
+      "wind_m_s": 0.5,
+      "exchange_coefficient": 1,
+      "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+    },
+    {
+      "target_c": 20,
+      "net_heat_w": 100.0,
+      "cold_capture": 1,
+      "shaft_work_return_fraction": 0,
+      "target_headroom_w": 1386.4256,
+      "max_warm_kg_s": 0.13781566600397616,
+      "max_warm_m3_s": 0.11835785873921242,
+      "max_effective_wind_area_m2": 0.11835785873921242,
+      "wind_m_s": 1,
+      "exchange_coefficient": 1,
+      "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+    }
+  ],
+  "supply_heat_limits": {
+    "total_motor_plus_duct_heat_w_for_supply_1c": 315.44159999999965,
+    "total_motor_plus_duct_heat_w_for_supply_8c": 861.9007999999999,
+    "shaft_w_for_supply_1c": 3356.8208,
+    "shaft_w_for_supply_8c": 2810.3616,
+    "required_shaft_nm_at_1270rpm_for_1c_each": 6.310093977090834
+  },
+  "scenarios": [
+    {
+      "ambient_c": 30,
+      "inlet_c": 40,
+      "shaft_fraction": 0,
+      "shaft_w": 0.0,
+      "motor_exhaust_c": 40.0,
+      "supply_c": 44.0,
+      "sensible_cooling_w": -1092.9184,
+      "inlet_within_40c": true,
+      "heat_capacity_w_k": 78.0656,
+      "mass_kg_s": 0.0776,
+      "duct_gain_k": 4,
+      "extra_heat_w": 0
+    },
+    {
+      "ambient_c": 30,
+      "inlet_c": 40,
+      "shaft_fraction": 0.5,
+      "shaft_w": 1680.0,
+      "motor_exhaust_c": 18.47963763808899,
+      "supply_c": 22.47963763808899,
+      "sensible_cooling_w": 587.0816,
+      "inlet_within_40c": true,
+      "heat_capacity_w_k": 78.0656,
+      "mass_kg_s": 0.0776,
+      "duct_gain_k": 4,
+      "extra_heat_w": 0
+    },
+    {
+      "ambient_c": 30,
+      "inlet_c": 40,
+      "shaft_fraction": 0.75,
+      "shaft_w": 2520.0,
+      "motor_exhaust_c": 7.719456457133489,
+      "supply_c": 11.71945645713349,
+      "sensible_cooling_w": 1427.0816,
+      "inlet_within_40c": true,
+      "heat_capacity_w_k": 78.0656,
+      "mass_kg_s": 0.0776,
+      "duct_gain_k": 4,
+      "extra_heat_w": 0
+    },
+    {
+      "ambient_c": 30,
+      "inlet_c": 40,
+      "shaft_fraction": 1,
+      "shaft_w": 3360.0,
+      "motor_exhaust_c": -3.0407247238220165,
+      "supply_c": 0.9592752761779835,
+      "sensible_cooling_w": 2267.0816,
+      "inlet_within_40c": true,
+      "heat_capacity_w_k": 78.0656,
+      "mass_kg_s": 0.0776,
+      "duct_gain_k": 4,
+      "extra_heat_w": 0
+    },
+    {
+      "ambient_c": 35,
+      "inlet_c": 45,
+      "shaft_fraction": 1,
+      "shaft_w": 3360.0,
+      "motor_exhaust_c": 1.9592752761779835,
+      "supply_c": 5.9592752761779835,
+      "sensible_cooling_w": 2267.0816,
+      "inlet_within_40c": false,
+      "heat_capacity_w_k": 78.0656,
+      "mass_kg_s": 0.0776,
+      "duct_gain_k": 4,
+      "extra_heat_w": 0
+    },
+    {
+      "ambient_c": 35,
+      "inlet_c": 40,
+      "shaft_fraction": 1,
+      "shaft_w": 3360.0,
+      "motor_exhaust_c": -3.0407247238220165,
+      "supply_c": 0.9592752761779835,
+      "sensible_cooling_w": 2657.4096,
+      "inlet_within_40c": true,
+      "heat_capacity_w_k": 78.0656,
+      "mass_kg_s": 0.0776,
+      "duct_gain_k": 4,
+      "extra_heat_w": 0
+    }
+  ],
+  "zone_scenarios": [
+    {
+      "name": "baseline",
+      "target_c": 20,
+      "net_heat_w": 100.0,
+      "cold_capture": 1,
+      "shaft_work_return_fraction": 0,
+      "target_headroom_w": 1386.4256,
+      "max_warm_kg_s": 0.13781566600397616,
+      "max_warm_m3_s": 0.11835785873921242,
+      "max_effective_wind_area_m2": 0.11835785873921242,
+      "wind_m_s": 1,
+      "exchange_coefficient": 1,
+      "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+    },
+    {
+      "name": "50% capture",
+      "target_c": 20,
+      "net_heat_w": 100.0,
+      "cold_capture": 0.5,
+      "shaft_work_return_fraction": 0,
+      "target_headroom_w": 643.2128,
+      "max_warm_kg_s": 0.06393765407554672,
+      "max_warm_m3_s": 0.05491047606280011,
+      "max_effective_wind_area_m2": 0.05491047606280011,
+      "wind_m_s": 1,
+      "exchange_coefficient": 1,
+      "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+    },
+    {
+      "name": "100W occupant + 500W sun/panels",
+      "target_c": 20,
+      "net_heat_w": 600.0,
+      "cold_capture": 1,
+      "shaft_work_return_fraction": 0,
+      "target_headroom_w": 886.4256,
+      "max_warm_kg_s": 0.08811387673956263,
+      "max_warm_m3_s": 0.0756733256711515,
+      "max_effective_wind_area_m2": 0.0756733256711515,
+      "wind_m_s": 1,
+      "exchange_coefficient": 1,
+      "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+    },
+    {
+      "name": "all shaft heat returned",
+      "target_c": 20,
+      "net_heat_w": 3460.0,
+      "cold_capture": 1,
+      "shaft_work_return_fraction": 1,
+      "target_headroom_w": -1973.5744,
+      "max_warm_kg_s": -0.1961803578528827,
+      "max_warm_m3_s": -0.16848220347815698,
+      "max_effective_wind_area_m2": -0.16848220347815698,
+      "wind_m_s": 1,
+      "exchange_coefficient": 1,
+      "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+    }
+  ],
+  "outlets": [
+    {
+      "name": "A perforated open holes",
+      "area_m2": 0.1,
+      "fraction": 1,
+      "speed_m_s": 0.6026857322477177,
+      "dynamic_head_pa": 0.23384206411211447,
+      "archimedes": 0.025836138985995512,
+      "note": "Hole diameter for A/D = assumed 10 mm for Ar only; source document gives no hole pattern."
+    },
+    {
+      "name": "A face average",
+      "area_m2": 0.5,
+      "fraction": 1,
+      "speed_m_s": 0.12053714644954354,
+      "dynamic_head_pa": 0.00935368256448458,
+      "archimedes": null,
+      "note": "Hole diameter for A/D = assumed 10 mm for Ar only; source document gives no hole pattern."
+    },
+    {
+      "name": "B 150 mm duct",
+      "area_m2": 0.017671458676442587,
+      "fraction": 1,
+      "speed_m_s": 3.4105035882020545,
+      "dynamic_head_pa": 7.4882069242332845,
+      "archimedes": 0.012102181731158408,
+      "note": "Hole diameter for A/D = assumed 10 mm for Ar only; source document gives no hole pattern."
+    },
+    {
+      "name": "C four 70 mm nozzles",
+      "area_m2": 0.015393804002589988,
+      "fraction": 1,
+      "speed_m_s": 3.9151189150278682,
+      "dynamic_head_pa": 9.868036118786701,
+      "archimedes": 0.004285658460825377,
+      "note": "Hole diameter for A/D = assumed 10 mm for Ar only; source document gives no hole pattern."
+    },
+    {
+      "name": "D plate holes",
+      "area_m2": 0.1,
+      "fraction": 0.8,
+      "speed_m_s": 0.48214858579817416,
+      "dynamic_head_pa": 0.14965892103175327,
+      "archimedes": 0.04036896716561799,
+      "note": "Hole diameter for A/D = assumed 10 mm for Ar only; source document gives no hole pattern."
+    },
+    {
+      "name": "D two 50 mm neck outlets",
+      "area_m2": 0.003926990816987242,
+      "fraction": 0.2,
+      "speed_m_s": 3.069453229381849,
+      "dynamic_head_pa": 6.065447608628959,
+      "archimedes": 0.00498032170006519,
+      "note": "Hole diameter for A/D = assumed 10 mm for Ar only; source document gives no hole pattern."
+    }
+  ],
+  "exhaust_branch_screens": [
+    {
+      "id_mm": 16.0,
+      "speed_m_s": 74.9378229829553,
+      "dynamic_head_pa": 3615.288501160717,
+      "one_m_straight_loss_pa": 4519.110626450896,
+      "status": "Darcy f=0.02 assumed; incompressible screen, not a compressible network solution. Dynamic head is not all irreversible loss."
+    },
+    {
+      "id_mm": 32.0,
+      "speed_m_s": 18.734455745738824,
+      "dynamic_head_pa": 225.9555313225448,
+      "one_m_straight_loss_pa": 141.2222070765905,
+      "status": "Darcy f=0.02 assumed; incompressible screen, not a compressible network solution. Dynamic head is not all irreversible loss."
+    },
+    {
+      "id_mm": 40.0,
+      "speed_m_s": 11.990051677272845,
+      "dynamic_head_pa": 92.55138562971432,
+      "one_m_straight_loss_pa": 46.27569281485716,
+      "status": "Darcy f=0.02 assumed; incompressible screen, not a compressible network solution. Dynamic head is not all irreversible loss."
+    },
+    {
+      "id_mm": 50.0,
+      "speed_m_s": 7.673633073454622,
+      "dynamic_head_pa": 37.909047553930996,
+      "one_m_straight_loss_pa": 15.163619021572398,
+      "status": "Darcy f=0.02 assumed; incompressible screen, not a compressible network solution. Dynamic head is not all irreversible loss."
+    }
+  ],
+  "humidity_mixing_checks": [
+    {
+      "ambient_c": 30,
+      "ambient_rh": 0.55,
+      "supply_c": -3,
+      "supply_w": 0.0006623136783494057,
+      "ambient_w": 0.01474154135247827,
+      "max_mix_rh": 0.8010895023759352,
+      "cold_dry_mass_fraction_at_peak": 0.6
+    },
+    {
+      "ambient_c": 30,
+      "ambient_rh": 0.55,
+      "supply_c": 1,
+      "supply_w": 0.0006623136783494057,
+      "ambient_w": 0.01474154135247827,
+      "max_mix_rh": 0.6926738950310508,
+      "cold_dry_mass_fraction_at_peak": 0.518
+    },
+    {
+      "ambient_c": 30,
+      "ambient_rh": 0.55,
+      "supply_c": 8,
+      "supply_w": 0.0006623136783494057,
+      "ambient_w": 0.01474154135247827,
+      "max_mix_rh": 0.5785067932169307,
+      "cold_dry_mass_fraction_at_peak": 0.298
+    },
+    {
+      "ambient_c": 35,
+      "ambient_rh": 0.55,
+      "supply_c": -3,
+      "supply_w": 0.0006623136783494057,
+      "ambient_w": 0.01969424845128965,
+      "max_mix_rh": 0.9184344061083767,
+      "cold_dry_mass_fraction_at_peak": 0.649
+    },
+    {
+      "ambient_c": 35,
+      "ambient_rh": 0.55,
+      "supply_c": 1,
+      "supply_w": 0.0006623136783494057,
+      "ambient_w": 0.01969424845128965,
+      "max_mix_rh": 0.7828829087197043,
+      "cold_dry_mass_fraction_at_peak": 0.586
+    },
+    {
+      "ambient_c": 35,
+      "ambient_rh": 0.55,
+      "supply_c": 8,
+      "supply_w": 0.0006623136783494057,
+      "ambient_w": 0.01969424845128965,
+      "max_mix_rh": 0.6282913293238713,
+      "cold_dry_mass_fraction_at_peak": 0.428
+    }
+  ],
+  "historical_nozzle": {
+    "status": "Geometry must be rescaled and re-solved. Prior CFD is not evidence for this source/seat.",
+    "per_branch_28mm_exit_speed_m_s": 24.469493218924175,
+    "per_branch_8mm_throat_incompressible_speed_m_s": 299.75129193182124
+  },
+  "plant_limit": {
+    "xas78_engine_rating_kw": 33,
+    "cooling_over_engine_nameplate": 0.06869944242424242,
+    "interpretation": "Not measured fuel COP. Actual fuel energy, part-load use, drying auxiliaries and load recovery unknown."
+  },
+  "limits": [
+    "No manufacturer exhaust temperature or refrigeration efficiency guarantee found.",
+    "No matched commercial shaft load, load controller, dryer, aftercooler or exhaust collector selected.",
+    "Product web page says 7 bar max; model-specific ATEX manual says 6.3 bar/nameplate. Use stricter 6.3 until supplier resolves.",
+    "A refrigerated dryer is not established as part of compressor rental. Aftercooler and water separator do not establish +3 C pressure dew point.",
+    "35 C plus 10 K inlet rise violates 40 C inlet limit; improve aftercooling, do not accept it as an approved case.",
+    "Moist mixing check supports no fog only for stated dry source, ambient 55% RH and sampled temperatures; not internal motor icing or wet surfaces.",
+    "Wind area = Cd*A exchange model; not seat geometry or a guarantee. Buoyancy and wind exchange need 3D variable-density CFD.",
+    "100 W human load and fixed 34 C skin boundary are different models. Do not impose both as independent fixed conditions.",
+    "Cooling capacity is air enthalpy deficit, not human heat removal or comfort."
+  ]
+}

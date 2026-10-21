@@ -1,0 +1,477 @@
+{
+  "lean_version": "4.31.0",
+  "mathlib_tag": "v4.31.0",
+  "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+  "build_succeeded": true,
+  "printed_axiom_checks": 57,
+  "theorems": [
+    {
+      "name": "mixing_target_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "required_mass_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "source_too_warm",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "required_area_fraction_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "finite_area_average",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "area_fraction_bounds",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "finite_flux_necessary",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "retention_bounds",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "heat_budget_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "exposure_time_budget_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "fixed_mixing_required_mass",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "more_cold_mass_helps",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "scaling_both_flows_preserves_drop",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ideal_gas_throttle_temperature",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ideal_ratio_bounds",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "expander_bounds",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "vortex_hot_temperature",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "vortex_fraction_bound",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "buffer_inventory_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "duty_budget_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "uniform_target_capacity_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "assumed_current_envelope_passes",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "rounded_cfd_fraction_dry_passes",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "poor_delivery_fails",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "hot_entrainment_can_fail",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "assumed_mass_balance_fails",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "half_cold_mass_not_ten_degrees",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "three_stages_at_three_to_one_insufficient",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "bauer_100_vs_200_duty",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "burst_2_to_10_requires_15s",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "robust_area_envelope",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "nozzle_static_kinetic_budget",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "isothermal_receiver_inventory",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "stock_path_retention",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "stock_reference_target_certificate",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "motor_source_target_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "motor_zone_deficit_identity",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "motor_zone_target_iff",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "motor_work_return_cancellation",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "four_motor_supply_requirement",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "motor_seat_reference_certificate",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "finite_region_temperature_bound",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "cfd_region_upper_certificate",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "cad_flow_speed_limit",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "cold_path_heat_allowance",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "refinement_upper_bound_improves",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "three_motor_source_certificate",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "four_motor_warm_source_certificate",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "three_motor_supply_with_allowance",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "strict_cooling_error_budget",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "passby_crossing_upper",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "valve_period_can_exceed_exposure",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "pulse_mass_upper",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "sampled_cooling_dose_lower",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "strict_cold_fraction_threshold",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "reference_passby_crossing",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "nominal_max_pulse_budget",
+      "foundational_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "AAThermo.lean": "9f23463d67c30bee6a087d8d23e4ad04fd6cf9dab979595fdd6fe636a129473c",
+    "AAThermo/PassBy.lean": "4d3705f8fd7f2f16d9ab3721ca265f748d0664a3c12ebe5b59f0976396b71f55",
+    "AAThermo/System.lean": "0aded8d0de1d4084db591def2700bfd1805325a601e78bbece87b91ab442a379",
+    "AAThermo/Model.lean": "c72eeaf9c757609086bdba9e2fbb5575353bee9d2e3d6ebb2ddfdcb37c1edba4",
+    "AAThermo/CFDDesign.lean": "f93f56991abb05f887483d253f2a4b9c29eb4e818f89aaf71df739c0a80746ee",
+    "AAThermo/MotorSeat.lean": "0f77fb718bf2f3fdcad0e6e8fb559b30023c5583dc12efce92ffa8851e3ac95e",
+    "AAThermo/Certificates.lean": "14914b465a97c6077d4c5deed0d463522901daf00067762d80030c1138b5796b"
+  },
+  "new_physics_axioms": false,
+  "EOS_formally_verified": false,
+  "hardware_validated": false
+}

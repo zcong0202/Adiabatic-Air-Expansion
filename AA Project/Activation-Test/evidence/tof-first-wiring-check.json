@@ -1,0 +1,37 @@
+{
+  "latest": {
+    "ms": 106999,
+    "mode": "X",
+    "gt": -1,
+    "raw_mm": 0,
+    "median_mm": 0,
+    "range_status": 255,
+    "tof_valid": 0,
+    "tof_age_ms": 106999,
+    "pir_raw": 0,
+    "pir_warm": 0,
+    "state": 0,
+    "command": 0,
+    "feedback": 0,
+    "adc": 0,
+    "feedback_v": 0.0,
+    "match": 1,
+    "fault": 0,
+    "host_time_dubai": "2026-10-08T14:25:16.480755+04:00",
+    "seq": 2139
+  },
+  "count": 2139,
+  "connected": true,
+  "age_ms": 42,
+  "error": "",
+  "port": "/dev/cu.usbmodem11301",
+  "log": "live-pir-20261008-142327.csv",
+  "last_command": "T",
+  "messages": [
+    "# ToF idle SDA=0.171V SCL=0.171V (ADC estimate)",
+    "# ToF bus idle check failed: needs onboard low-voltage pull-ups",
+    "# AA LED prototype; outputs disabled at boot; send ? for commands",
+    "# ToF idle SDA=0.176V SCL=0.171V (ADC estimate)",
+    "# ToF bus idle check failed: needs onboard low-voltage pull-ups"
+  ]
+}

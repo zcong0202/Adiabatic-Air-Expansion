@@ -1,0 +1,5 @@
+FoamFile { version 2.0; format ascii; class dictionary; object controlDict; }
+application pimpleFoam; startFrom startTime; startTime 0; stopAt endTime; endTime .3; deltaT .001;
+writeControl adjustableRunTime; writeInterval .05; purgeWrite 0; writeFormat ascii; writePrecision 10; writeCompression off; timePrecision 8; runTimeModifiable true; adjustTimeStep yes; maxCo 1; maxDeltaT .01;
+functions { pressure_in { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name inlet; operation areaAverage; fields (p); writeFields false; writeControl writeTime; } }
+

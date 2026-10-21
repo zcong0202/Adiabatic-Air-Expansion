@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/AA-CFD-concepts-v1.zip",
+    "bytes": 1390635,
+    "sha256": "18f3ef481779c1ad22fa587c372ad1a6bf2876dc8425a2234668642373a3dc86",
+    "entries": 32
+  },
+  {
+    "path": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/AA-CFD-study-v1.zip",
+    "bytes": 197628444,
+    "sha256": "5910d6370e1f68d80ab70c0cb785afc512a5ae568d6864012f9d386e299ebf94",
+    "entries": 844
+  }
+]

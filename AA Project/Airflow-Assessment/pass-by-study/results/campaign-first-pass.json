@@ -1,0 +1,19 @@
+{
+  "completed": [
+    "P00_one_d20",
+    "P01_one_d35",
+    "P10_two_d20",
+    "P02_one_d50",
+    "P12_two_d50",
+    "P11_two_d35",
+    "P21_over_d35",
+    "P20_over_d20"
+  ],
+  "failures": [
+    {
+      "case": "P22_over_d50",
+      "error": "Command '['/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/.venv-cfd/bin/python', '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/scripts/open_flow.py', 'P22_over_d50', '--layout', 'overhead', '--distance', '0.5', '--run']' returned non-zero exit status 1."
+    }
+  ],
+  "body_included": false
+}

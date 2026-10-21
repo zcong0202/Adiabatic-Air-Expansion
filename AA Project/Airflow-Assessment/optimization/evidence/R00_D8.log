@@ -1,0 +1,9 @@
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/cases/R00_D8
+Traceback (most recent call last):
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/scripts/round_jet.py", line 117, in <module>
+    if a.run:run(c)
+             ~~~^^^
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/scripts/round_jet.py", line 106, in run
+    if code:raise RuntimeError(f'{args[0]} failed ({code}), see {log}')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: potentialFoam failed (1), see log.potentialFoam

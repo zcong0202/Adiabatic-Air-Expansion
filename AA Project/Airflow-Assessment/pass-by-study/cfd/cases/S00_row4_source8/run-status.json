@@ -1,0 +1,6 @@
+{
+  "status": "solver ended; audit pending",
+  "started": 1792568127.341577,
+  "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37",
+  "elapsed_s": 136.7130410671234
+}

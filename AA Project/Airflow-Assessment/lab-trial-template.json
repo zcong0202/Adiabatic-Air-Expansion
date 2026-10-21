@@ -1,0 +1,68 @@
+{
+  "status": "Blank lab template. Null means not measured; never replace unknowns with zero.",
+  "trial_id": null,
+  "local_time_with_timezone": null,
+  "operator": null,
+  "configuration": "bare outlet OR representative failed extension",
+  "extension_id": null,
+  "repeat_number": null,
+  "source": {
+    "vortex_model": "Jeanoko 08 micro + magnetic base (Amazon ASIN B094HTCQP8; listing model Jeanokoe76c1asi9h-02)",
+    "control_setting": null,
+    "inlet_pressure_under_flow_bar_g": null,
+    "cold_outlet_backpressure_bar_g": null,
+    "cold_flow_value": null,
+    "cold_flow_unit": null,
+    "flow_reference_temperature_c": null,
+    "flow_reference_pressure_pa_abs": null,
+    "flow_meter_pressure_drop": null,
+    "cold_recovered_temperature_c": null,
+    "cold_temperature_probe_method": null,
+    "hot_exhaust_location": null,
+    "vortex_model_status": "Installed product confirmed by user. Performance figures remain listing claims; measured fields remain blank.",
+    "inlet_temperature_c": null,
+    "inlet_mass_flow_kg_s": null,
+    "cold_mass_fraction": null,
+    "control_setting_reference": null
+  },
+  "geometry": {
+    "outlet_open_area_mm2": null,
+    "outlet_shape": null,
+    "extension_length_mm": null,
+    "target_distance_mm": 200,
+    "photo_or_drawing_reference": null
+  },
+  "environment": {
+    "ambient_temperature_c": null,
+    "relative_humidity_percent": null,
+    "crosswind_m_s": null,
+    "wind_direction": null,
+    "solar_exposure": null
+  },
+  "timing": {
+    "valve_open_time": null,
+    "valve_close_time": null,
+    "temperature_probe_response_s": null,
+    "sampling_interval_s": null,
+    "analysis_window_start_s": null,
+    "analysis_window_end_s": null
+  },
+  "samples_schema": {
+    "time_s": "time from logged valve opening",
+    "x_mm": "distance from final outlet",
+    "y_mm": "horizontal displacement from target centre",
+    "z_mm": "vertical displacement from target centre",
+    "temperature_c": "probe reading, method recorded",
+    "speed_m_s": "measured local speed; not inferred from compressor flow"
+  },
+  "samples": [],
+  "target_heat_test": {
+    "heater_setpoint_c": null,
+    "ambient_baseline_heater_power_w": null,
+    "cold_air_heater_power_w": null,
+    "comparison": "Same target setpoint, target-plane velocity and coverage. Define steady or transient storage correction before comparing heater power."
+  },
+  "observations": null,
+  "sensor_models_and_uncertainty": null,
+  "source_reference_file": "vortex-reference.json"
+}

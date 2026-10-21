@@ -1,0 +1,2264 @@
+[
+  {
+    "case": "R05_D24_diffuser_SST",
+    "numerically_accepted": true,
+    "wall_area_m2": 0.0057448272102673436,
+    "heat_pickup": [
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 5,
+        "mean_drop_c": 7.683961790080601,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 10,
+        "mean_drop_c": 6.403301491733834,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 15,
+        "mean_drop_c": 5.122641193387068,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 5,
+        "mean_drop_c": 7.640163674047395,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9943000606679557
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 10,
+        "mean_drop_c": 6.366803061706163,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9943000606679557
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 15,
+        "mean_drop_c": 5.093442449364931,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9943000606679557
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 5,
+        "mean_drop_c": 7.4674534867600535,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9718233498245602
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 10,
+        "mean_drop_c": 6.222877905633378,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9718233498245602
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 15,
+        "mean_drop_c": 4.978302324506703,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9718233498245602
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 5,
+        "mean_drop_c": 7.257045662162248,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9444406232642296
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 10,
+        "mean_drop_c": 6.047538051801873,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9444406232642296
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 15,
+        "mean_drop_c": 4.838030441441499,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9444406232642296
+      }
+    ],
+    "humidity_equilibrium": [
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 7.620190893006438,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 7.6432635470121895,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 7.587022133671731,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 7.610029200893493,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 7.55386217099657,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 7.511157836290195,
+        "exceeds_6c": true
+      }
+    ],
+    "combined_heat_and_humidity": [
+      {
+        "source_temperature_c": 5,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 6.666781302073112,
+        "mean_drop_c": 7.155120921558847,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 10,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 11.388984418394259,
+        "mean_drop_c": 5.971397577554718,
+        "exceeds_6c": false
+      },
+      {
+        "source_temperature_c": 15,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 16.11118753471541,
+        "mean_drop_c": 4.785942448048779,
+        "exceeds_6c": false
+      }
+    ],
+    "hot_entrainment_stress": [
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 7.683961790080602,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.257045662162248,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.196225909419308,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.740848706306398,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 3.964622088427369,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 3.4665532725226242,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 0.24528238677413583,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -0.32393911711699985,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.403301491733835,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 6.047538051801876,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.915565611072541,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.531341095946026,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.683961790080602,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.2570456621622483,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -1.0353779115726311,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -1.5334467274773758,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 5.122641193387068,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.8380304414415,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 3.634905312725774,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 3.3218334855856497,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 1.403301491733835,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 1.0475380518018724,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -2.316038209919398,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -2.7429543378377517,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      }
+    ],
+    "limits": "One-way sensitivities, not coupled moist/conjugate CFD. Combined rows use U=20 W/m2/K and 80% ambient RH, with saturated source air before heating. These are assumed stresses, not statistical confidence bounds. U, RH and paired source performance are unmeasured."
+  },
+  {
+    "case": "R07_D24_diffuser_3deg_SST",
+    "numerically_accepted": true,
+    "wall_area_m2": 0.0088144836707021,
+    "heat_pickup": [
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.439133931050765,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.865944942542305,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.292755954033844,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.35670876364674,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.797257303038951,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.23780584243116,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.034143113547808,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.528452594623174,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.022762075698538,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 5,
+        "mean_drop_c": 8.646528631994716,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.205440526662264,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 15,
+        "mean_drop_c": 5.764352421329811,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      }
+    ],
+    "humidity_equilibrium": [
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.367209629401078,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.393243759569344,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.329761582461504,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.355739670343176,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.29229757627386,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 8.974768440948644,
+        "exceeds_6c": true
+      }
+    ],
+    "combined_heat_and_humidity": [
+      {
+        "source_temperature_c": 5,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 7.519103886582364,
+        "mean_drop_c": 8.499992364969163,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 10,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 12.099253238818637,
+        "mean_drop_c": 7.122119288034391,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 15,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 16.67940259105491,
+        "mean_drop_c": 5.707360484938363,
+        "exceeds_6c": false
+      }
+    ],
+    "hot_entrainment_stress": [
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 9.439133931050769,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 8.64652863199472,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 8.068409526454154,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.2229638741277,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.0123229195592245,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.087616737327167,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.585511908067687,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 1.5287048426596215,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 7.865944942542306,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.205440526662265,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.495220537945691,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.781875768795246,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.439133931050765,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 3.646528631994716,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 1.0123229195592245,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 0.08761673732716702,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.292755954033844,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.764352421329811,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.922031549437229,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.340787663462795,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.8659449425423063,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.205440526662265,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -0.5608660689492311,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -1.3534713680052803,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      }
+    ],
+    "limits": "One-way sensitivities, not coupled moist/conjugate CFD. Combined rows use U=20 W/m2/K and 80% ambient RH, with saturated source air before heating. These are assumed stresses, not statistical confidence bounds. U, RH and paired source performance are unmeasured."
+  },
+  {
+    "case": "R08_D24_diffuser_7deg_SST",
+    "numerically_accepted": true,
+    "wall_area_m2": 0.0044306043241952794,
+    "heat_pickup": [
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 5,
+        "mean_drop_c": 6.750442015379023,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 10,
+        "mean_drop_c": 5.625368346149186,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 15,
+        "mean_drop_c": 4.500294676919348,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 5,
+        "mean_drop_c": 6.720747779017048,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9956011419260656
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 10,
+        "mean_drop_c": 5.600623149180873,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9956011419260656
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 15,
+        "mean_drop_c": 4.480498519344698,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9956011419260656
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 5,
+        "mean_drop_c": 6.603271307688662,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9781983598473889
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 10,
+        "mean_drop_c": 5.502726089740552,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9781983598473889
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 15,
+        "mean_drop_c": 4.402180871792441,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9781983598473889
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 5,
+        "mean_drop_c": 6.459309162808373,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9568720312081218
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 10,
+        "mean_drop_c": 5.382757635673644,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9568720312081218
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 15,
+        "mean_drop_c": 4.306206108538915,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9568720312081218
+      }
+    ],
+    "humidity_equilibrium": [
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 6.692058821979423,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 6.713177345140615,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 6.661708582358401,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 6.682759455297237,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 6.631377356182963,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 6.646128159232745,
+        "exceeds_6c": true
+      }
+    ],
+    "combined_heat_and_humidity": [
+      {
+        "source_temperature_c": 5,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 6.293839063756344,
+        "mean_drop_c": 6.36545757902266,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 10,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 11.078199219796954,
+        "mean_drop_c": 5.312145222265727,
+        "exceeds_6c": false
+      },
+      {
+        "source_temperature_c": 15,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 15.862559375837563,
+        "mean_drop_c": 4.257896156943392,
+        "exceeds_6c": false
+      }
+    ],
+    "hot_entrainment_stress": [
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.750442015379019,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 6.4593091628083705,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 5.200471483070956,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.889929773662264,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.8755156846088568,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.5358606899430995,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -0.9994106461613015,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -1.387587782922168,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 5.625368346149184,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.3827576356736415,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.075397813841121,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 3.8133782465275345,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 1.750442015379022,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 1.459309162808374,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -2.1244843153911432,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -2.4641393100569005,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.500294676919346,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.3062061085389125,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.9503241446112796,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.736826719392809,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 0.6253683461491804,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 0.3827576356736415,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -3.249557984620978,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -3.540690837191626,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      }
+    ],
+    "limits": "One-way sensitivities, not coupled moist/conjugate CFD. Combined rows use U=20 W/m2/K and 80% ambient RH, with saturated source air before heating. These are assumed stresses, not statistical confidence bounds. U, RH and paired source performance are unmeasured."
+  },
+  {
+    "case": "R12_D24_a3_second_order",
+    "numerically_accepted": true,
+    "wall_area_m2": 0.0088144836707021,
+    "heat_pickup": [
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.498623095342126,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.915519246118438,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.332415396894751,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.415678451854674,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.846398709878896,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.2771189679031165,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.091079865143797,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.575899887619831,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.060719910095865,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 5,
+        "mean_drop_c": 8.701022483453547,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.250852069544623,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 15,
+        "mean_drop_c": 5.800681655635699,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      }
+    ],
+    "humidity_equilibrium": [
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.426446479735304,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.45257220903774,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.388865965587598,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.414936036179895,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.351268598690083,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.02288723679371,
+        "exceeds_6c": true
+      }
+    ],
+    "combined_heat_and_humidity": [
+      {
+        "source_temperature_c": 5,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 7.519103886582364,
+        "mean_drop_c": 8.551761686843093,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 10,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 12.099253238818637,
+        "mean_drop_c": 7.167237704893111,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 15,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 16.67940259105491,
+        "mean_drop_c": 5.743489468250228,
+        "exceeds_6c": false
+      }
+    ],
+    "hot_entrainment_stress": [
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 9.498623095342126,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 8.701022483453546,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 8.1318646350316,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.281090649017116,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.0817269445658155,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.1511928973624705,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.6648307937894984,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 1.601363311271399,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 7.915519246118436,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.250852069544621,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.548760785807911,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.8309202351081915,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.498623095342126,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 3.7010224834535492,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 1.0817269445658155,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 0.15119289736247055,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.332415396894749,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.800681655635696,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.9656569365842245,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.380749821199267,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.9155192461184356,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.250852069544621,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -0.5013769046578744,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -1.2989775165464508,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      }
+    ],
+    "limits": "One-way sensitivities, not coupled moist/conjugate CFD. Combined rows use U=20 W/m2/K and 80% ambient RH, with saturated source air before heating. These are assumed stresses, not statistical confidence bounds. U, RH and paired source performance are unmeasured."
+  },
+  {
+    "case": "R13_D24_a3_fine",
+    "numerically_accepted": true,
+    "wall_area_m2": 0.0088144836707021,
+    "heat_pickup": [
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.456444238403344,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.880370198669453,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.304296158935562,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.373867912535866,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.811556593779888,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.2492452750239105,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.050710713404428,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.542258927837024,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.033807142269619,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 5,
+        "mean_drop_c": 8.662385390596302,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.2186544921635845,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 15,
+        "mean_drop_c": 5.774923593730867,
+        "exceeds_6c": false,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      }
+    ],
+    "humidity_equilibrium": [
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.384410605425579,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.410476882914999,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.346916140999944,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.372926451219133,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.30940548997025,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 8.989735353012186,
+        "exceeds_6c": true
+      }
+    ],
+    "combined_heat_and_humidity": [
+      {
+        "source_temperature_c": 5,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 7.519103886582364,
+        "mean_drop_c": 8.515776564758596,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 10,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 12.099253238818637,
+        "mean_drop_c": 7.135214571395064,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 15,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 16.67940259105491,
+        "mean_drop_c": 5.717848706776749,
+        "exceeds_6c": false
+      }
+    ],
+    "hot_entrainment_stress": [
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 9.456444238403346,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 8.662385390596302,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 8.0868738542969,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.239877749969388,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.0325182781372355,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.106116289029018,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.6085923178711283,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 1.5498471874617366,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 7.880370198669453,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.218654492163587,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.510799814563008,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.796146851536669,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.456444238403343,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 3.6623853905963024,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 1.032518278137239,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 0.10611628902901771,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.304296158935564,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.774923593730868,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 4.9347257748291184,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.352415953103954,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 2.8803701986694534,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.218654492163587,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": -0.5435557615966573,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -1.337614609403694,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      }
+    ],
+    "limits": "One-way sensitivities, not coupled moist/conjugate CFD. Combined rows use U=20 W/m2/K and 80% ambient RH, with saturated source air before heating. These are assumed stresses, not statistical confidence bounds. U, RH and paired source performance are unmeasured."
+  },
+  {
+    "case": "R14_D24_a3_kEpsilon",
+    "numerically_accepted": false,
+    "wall_area_m2": 0.0088144836707021,
+    "heat_pickup": [
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 5,
+        "mean_drop_c": 10.074674320116957,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 10,
+        "mean_drop_c": 8.395561933430798,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 0,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.716449546744638,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 1.0
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.986699435615638,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 10,
+        "mean_drop_c": 8.322249529679699,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 2,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.657799623743759,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9912677192625818
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.642415320638387,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 10,
+        "mean_drop_c": 8.03534610053199,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 10,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.428276880425591,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9570944940011171
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 5,
+        "mean_drop_c": 9.228702612255018,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 10,
+        "mean_drop_c": 7.690585510212515,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      },
+      {
+        "assumed_overall_U_w_m2_k": 20,
+        "source_temperature_c": 15,
+        "mean_drop_c": 6.152468408170011,
+        "exceeds_6c": true,
+        "lumped_heat_retention_fraction": 0.9160298704472545
+      }
+    ],
+    "humidity_equilibrium": [
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 10.000734058954489,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.4,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 10.027501418903,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.962222633233882,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.6,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.98893948689608,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 0.1,
+        "mean_drop_c": 9.92368452716692,
+        "exceeds_6c": true
+      },
+      {
+        "assumed_ambient_RH": 0.8,
+        "assumed_cold_RH": 1.0,
+        "mean_drop_c": 9.461238437892384,
+        "exceeds_6c": true
+      }
+    ],
+    "combined_heat_and_humidity": [
+      {
+        "source_temperature_c": 5,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 7.519103886582364,
+        "mean_drop_c": 9.019102384823018,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 10,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 12.099253238818637,
+        "mean_drop_c": 7.604918456552369,
+        "exceeds_6c": true
+      },
+      {
+        "source_temperature_c": 15,
+        "assumed_overall_U_w_m2_k": 20,
+        "ambient_RH": 0.8,
+        "source_RH_before_heating": 1,
+        "effective_cold_temperature_after_lumped_heat_pickup_c": 16.67940259105491,
+        "mean_drop_c": 6.093875018017119,
+        "exceeds_6c": true
+      }
+    ],
+    "hot_entrainment_stress": [
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 10.074674320116955,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 9.228702612255017,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 8.746319274791421,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.843949453072021,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.753786706803115,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 5.766819714297519,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 3.432899093489276,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 5,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.3049368163400246,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 8.395561933430798,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 7.6905855102125145,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 7.067206888105261,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 6.305832351029515,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 5.074674320116955,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.228702612255017,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 1.753786706803119,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 10,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 0.7668197142975188,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 6.716449546744638,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 35,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 6.152468408170009,
+        "exceeds_6c": true,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 5.388094501419104,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 37,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 4.767715248987013,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 3.3955619334307983,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 40,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": 2.6905855102125145,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 0,
+        "mean_drop_relative_to_reference_c": 0.07467432011695507,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      },
+      {
+        "source_temperature_c": 15,
+        "entrained_air_temperature_c": 45,
+        "reference_ambient_c": 35,
+        "overall_U_w_m2_k": 20,
+        "mean_drop_relative_to_reference_c": -0.7712973877449798,
+        "exceeds_6c": false,
+        "note": "Uniform hot-entrainment reservoir stress, not a resolved hot exhaust plume. Wall environment assumed equal to entrained air."
+      }
+    ],
+    "limits": "One-way sensitivities, not coupled moist/conjugate CFD. Combined rows use U=20 W/m2/K and 80% ambient RH, with saturated source air before heating. These are assumed stresses, not statistical confidence bounds. U, RH and paired source performance are unmeasured."
+  }
+]

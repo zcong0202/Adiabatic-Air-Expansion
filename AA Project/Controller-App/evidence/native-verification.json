@@ -1,0 +1,25 @@
+{
+  "version": "1.1",
+  "platform": "arm64 macOS 11+",
+  "package_bytes": 1029548,
+  "package_sha256": "6668f1d53124edd9acdfd510b93c649ec30ed9f5581923196ac9a73ab2e92f8b",
+  "notarized": false,
+  "developer_identity_available": false,
+  "verified": [
+    "Native app compiled, launched and observed with macOS accessibility/screenshot",
+    "Actual WKWebView document-start bridge and Swift reply round-trip",
+    "macOS termios USB transport reads/writes tested on a PTY",
+    "Guided first Save installs full firmware with bootloader page readback in emulator",
+    "Subsequent Save updates duration without reflashing; matching board acknowledgement",
+    "Isolation acknowledgement enforced for first setup/polarity changes",
+    "Native file-save bridge success / cancellation in emulator",
+    "Firmware source / HEX / PNG diagrams included; no recipient build steps",
+    "Ad-hoc bundle signature verified before and after ZIP extraction"
+  ],
+  "pending": [
+    "Physical Uno USB/DTR reset and upload",
+    "Relay trigger and OFF-at-reset",
+    "Valve actuation / pressure / duty checks",
+    "First launch on recipient Mac; Gatekeeper exception may be required"
+  ]
+}

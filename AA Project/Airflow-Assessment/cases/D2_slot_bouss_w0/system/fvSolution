@@ -1,0 +1,16 @@
+FoamFile
+{ version 2.0; format ascii; class dictionary; object fvSolution; }
+
+solvers {
+ T { solver PBiCGStab; preconditioner DILU; tolerance 1e-10; relTol 0; }
+ c { solver PBiCGStab; preconditioner DILU; tolerance 1e-10; relTol 0; }
+ Phi { solver GAMG; tolerance 1e-9; relTol 0.001; smoother DICGaussSeidel; }
+ p_rgh { solver GAMG; tolerance 1e-9; relTol 0; smoother DICGaussSeidel; }
+ "(U|T|h|k|epsilon|omega|c)" { solver PBiCGStab; preconditioner DILU; tolerance 1e-9; relTol 0.05; }
+}
+SIMPLE { momentumPredictor yes; nNonOrthogonalCorrectors 2; pRefCell 0; pRefValue 0;
+ residualControl { p_rgh 1e-5; U 1e-5; T 1e-5; "(k|epsilon|omega)" 1e-4; }
+}
+relaxationFactors { fields { rho 0.5; p_rgh 0.3; } equations { U 0.4; T 1; h 0.6; k 0.5; epsilon 0.5; omega 0.5; c 1; } }
+potentialFlow { PhiRefCell 0; PhiRefValue 0; nNonOrthogonalCorrectors 5; }
+

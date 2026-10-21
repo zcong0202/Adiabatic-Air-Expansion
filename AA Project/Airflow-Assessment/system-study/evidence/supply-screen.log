@@ -1,0 +1,20 @@
+[
+  {
+    "beta": 0.6,
+    "source_sensible_potential_w": 131.24628756181428,
+    "isothermal_compression_lower_bound_w": 825.2831300442543,
+    "cold_potential_over_min_compression_work": 0.15903183136044044
+  },
+  {
+    "beta": 0.7,
+    "source_sensible_potential_w": 126.41357542291027,
+    "isothermal_compression_lower_bound_w": 825.2831300442543,
+    "cold_potential_over_min_compression_work": 0.15317600811267226
+  },
+  {
+    "beta": 0.8,
+    "source_sensible_potential_w": 109.88061284244918,
+    "isothermal_compression_lower_bound_w": 825.2831300442543,
+    "cold_potential_over_min_compression_work": 0.13314292858083387
+  }
+]

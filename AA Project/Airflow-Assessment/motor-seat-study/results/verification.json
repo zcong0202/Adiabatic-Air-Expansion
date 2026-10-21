@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "name": "four motors FAD = 3.888 m3/min",
+      "passed": true
+    },
+    {
+      "name": "torque-speed agrees with catalogue power within 1%",
+      "passed": true
+    },
+    {
+      "name": "nominal source 0.9 to 1.1 C",
+      "passed": true
+    },
+    {
+      "name": "nominal sensible cooling 2.2 to 2.4 kW",
+      "passed": true
+    },
+    {
+      "name": "first-law identity",
+      "passed": true
+    },
+    {
+      "name": "zone boundary closes",
+      "passed": true
+    },
+    {
+      "name": "equal target boundary gives 20 C",
+      "passed": true
+    },
+    {
+      "name": "minimum rated compressor with 15% allowance is XAS78",
+      "passed": true
+    },
+    {
+      "name": "EOS effective eta agrees with assumed 25-40%",
+      "passed": true
+    },
+    {
+      "name": "all shaft heat return prevents net cooling",
+      "passed": true
+    },
+    {
+      "name": "nominal humid mixing remains unsaturated",
+      "passed": true
+    },
+    {
+      "name": "35+10 violates manual inlet temperature",
+      "passed": true
+    },
+    {
+      "name": "all temperature/flow results finite",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "software": {
+    "CoolProp": "8.0.0",
+    "numpy": "2.5.4"
+  },
+  "proof_reference": "../formal-model/proof-verification.json"
+}

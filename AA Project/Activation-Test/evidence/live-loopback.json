@@ -1,0 +1,32 @@
+{
+  "source": "live Uno USB samples; LED-only loopback",
+  "samples": 111,
+  "high_samples": 20,
+  "low_samples": 91,
+  "high_voltage_min": 4.995,
+  "high_voltage_max": 5.0,
+  "low_voltage_max": 0.0,
+  "feedback_follows_command": true,
+  "fault_seen": false,
+  "final": {
+    "ms": 60678,
+    "mode": "X",
+    "gt": -1,
+    "raw_mm": 0,
+    "median_mm": 0,
+    "range_status": 255,
+    "tof_valid": 0,
+    "tof_age_ms": 60678,
+    "pir_raw": 1,
+    "pir_warm": 0,
+    "state": 0,
+    "command": 0,
+    "feedback": 0,
+    "adc": 0,
+    "feedback_v": 0.0,
+    "match": 1,
+    "fault": 0,
+    "host_time_dubai": "2026-10-08T14:00:44.148437+04:00",
+    "seq": 1213
+  }
+}

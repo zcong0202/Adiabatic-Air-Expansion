@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-15",
+  "goal": "Local cooling on a person at about 20 cm; user confirmed",
+  "deck": "../1008.pptx",
+  "status": "Engineering assessment only; no CFD run",
+  "calculator_browser_check": {
+    "inputs_assumed": {
+      "ambient_C": 35,
+      "recovered_cold_C": 5,
+      "cold_actual_L_min": 100,
+      "warm_cold_mass_ratio": 5
+    },
+    "diameter_50mm": {
+      "capacity_W_rounded": 64,
+      "mean_speed_m_s": 0.85,
+      "mixed_C": 30,
+      "cold_mass_percent": 16.7
+    },
+    "diameter_25mm": {
+      "capacity_W_rounded": 64,
+      "mean_speed_m_s": 3.4,
+      "mixed_C": 30
+    },
+    "console_errors": 0,
+    "desktop_document_overflow": false
+  },
+  "missing_local_evidence_links": [],
+  "remaining": "Measured cold mass flow, recovered temperature under load, outlet geometry, pressure, wind and controlled target heat-transfer comparison."
+}

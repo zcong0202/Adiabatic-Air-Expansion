@@ -1,0 +1,44 @@
+{
+  "state": {
+    "latest": {
+      "ms": 16467,
+      "mode": "T",
+      "gt": -1,
+      "raw_mm": 564,
+      "median_mm": 562,
+      "range_status": 0,
+      "tof_valid": 1,
+      "tof_age_ms": 8,
+      "pir_raw": 0,
+      "pir_warm": 0,
+      "state": 2,
+      "command": 1,
+      "feedback": 1,
+      "adc": 1022,
+      "feedback_v": 4.995,
+      "match": 1,
+      "fault": 0,
+      "host_time_dubai": "2026-10-08T14:46:11.791366+04:00",
+      "seq": 238
+    },
+    "count": 238,
+    "connected": true,
+    "age_ms": 8,
+    "error": "",
+    "port": "/dev/cu.usbmodem11301",
+    "log": "live-signal-20261008-144553.csv",
+    "last_command": "T",
+    "messages": [
+      "# ToF idle SDA=3.578V SCL=3.583V (ADC estimate)",
+      "# ToF prior interrupt config=20",
+      "# ToF VHV init=9B timeout=81 count=80",
+      "# ToF init=1",
+      "# ToF mode=40 gpio=3 fw=3 osc=36 errors=0",
+      "# AA LED prototype; outputs disabled at boot; send ? for commands"
+    ]
+  },
+  "valid_near_samples": 0,
+  "near_HIGH_samples": 0,
+  "near_feedback_mismatches": 0,
+  "decision": "No software near cutoff; entry maximum1500mm, retention maximum1600mm; invalid readings close output."
+}

@@ -1,0 +1,11 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# ToF idle SDA=3.578V SCL=3.583V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# AA LED prototype; outputs disabled at boot; send ? for commands
+2026-10-08T14:46:07.795276+04:00 command=T
+2026-10-08T14:48:34.158189+04:00 command=X
+2026-10-08T14:49:29.490366+04:00 command=T

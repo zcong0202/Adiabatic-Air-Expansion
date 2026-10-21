@@ -1,0 +1,102 @@
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/designs/C16_a5/concept.step(418 ents)  Write  Done[0m
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/designs/C24_a3/concept.step(418 ents)  Write  Done[0m
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/designs/C24_a5/concept.step(418 ents)  Write  Done[0m
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/designs/C24_a7/concept.step(418 ents)  Write  Done[0m
+[
+  {
+    "name": "C16_a5",
+    "inlet_bore_mm": 8,
+    "exit_bore_mm": 16,
+    "cone_half_angle_deg": 5,
+    "cone_length_mm": 45.72020921104538,
+    "total_length_mm": 70.72020921104539,
+    "wall_thickness_radial_mm": 2,
+    "inlet_land_mm": 15,
+    "outlet_land_mm": 10,
+    "watertight": true,
+    "winding_consistent": true,
+    "step_units": "metre",
+    "stl_units": "wall.stl metres; wall-mm.stl millimetres",
+    "status": "Flow concept. Real source connector, insulation, mounts and manufacturing tolerances remain undefined."
+  },
+  {
+    "name": "C24_a3",
+    "inlet_bore_mm": 8,
+    "exit_bore_mm": 24,
+    "cone_half_angle_deg": 3,
+    "cone_length_mm": 152.6490935018257,
+    "total_length_mm": 177.64909350182566,
+    "wall_thickness_radial_mm": 2,
+    "inlet_land_mm": 15,
+    "outlet_land_mm": 10,
+    "watertight": true,
+    "winding_consistent": true,
+    "step_units": "metre",
+    "stl_units": "wall.stl metres; wall-mm.stl millimetres",
+    "status": "Flow concept. Real source connector, insulation, mounts and manufacturing tolerances remain undefined."
+  },
+  {
+    "name": "C24_a5",
+    "inlet_bore_mm": 8,
+    "exit_bore_mm": 24,
+    "cone_half_angle_deg": 5,
+    "cone_length_mm": 91.44041842209076,
+    "total_length_mm": 116.44041842209077,
+    "wall_thickness_radial_mm": 2,
+    "inlet_land_mm": 15,
+    "outlet_land_mm": 10,
+    "watertight": true,
+    "winding_consistent": true,
+    "step_units": "metre",
+    "stl_units": "wall.stl metres; wall-mm.stl millimetres",
+    "status": "Flow concept. Real source connector, insulation, mounts and manufacturing tolerances remain undefined."
+  },
+  {
+    "name": "C24_a7",
+    "inlet_bore_mm": 8,
+    "exit_bore_mm": 24,
+    "cone_half_angle_deg": 7,
+    "cone_length_mm": 65.15477142379675,
+    "total_length_mm": 90.15477142379675,
+    "wall_thickness_radial_mm": 2,
+    "inlet_land_mm": 15,
+    "outlet_land_mm": 10,
+    "watertight": true,
+    "winding_consistent": true,
+    "step_units": "metre",
+    "stl_units": "wall.stl metres; wall-mm.stl millimetres",
+    "status": "Flow concept. Real source connector, insulation, mounts and manufacturing tolerances remain undefined."
+  }
+]

@@ -1,0 +1,11 @@
+FoamFile
+{ version 2.0; format ascii; class dictionary; object controlDict; }
+application simpleFoam; startFrom startTime; startTime 0; stopAt endTime; endTime 3200; deltaT 1;
+writeControl timeStep; writeInterval 100; purgeWrite 3; writeFormat ascii; writePrecision 12; writeCompression off; timeFormat general; timePrecision 9; runTimeModifiable true;
+functions { sourceTracer { type scalarTransport; libs (solverFunctionObjects); field theta; phi phi; alphaD 1.4184397163120568; alphaDt 1.1764705882352942; nCorr 1; tolerance 1e-9; executeControl timeStep; executeInterval 1; writeControl writeTime; }
+ranges { type fieldMinMax; libs (fieldFunctionObjects); fields (U theta); executeControl timeStep; executeInterval 20; writeControl timeStep; writeInterval 20; }
+targetProfiles { type sets; libs (sampling); writeControl timeStep; writeInterval 50; setFormat raw; interpolationScheme cellPoint; fields (U theta); sets (
+ target { type uniform; axis y; start (.2 0 0); end (.2 .1 0); nPoints 401; }
+ centerline { type uniform; axis x; start (.00001 0 0); end (.5 0 0); nPoints 401; }
+ ); }
+jetFlux { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name jet; operation sum; fields (phi); writeFields false; writeControl timeStep; writeInterval 50; } }

@@ -1,0 +1,2 @@
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/cases/R08_D24_diffuser_7deg_SST
+{"status": "solver ended; audit required", "start_epoch": 1792065132.106592, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 419.38027906417847}

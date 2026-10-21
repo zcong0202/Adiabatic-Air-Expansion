@@ -1,0 +1,8 @@
+{
+  "geometry": "4 watertight, consistently oriented STL concepts; STEP scale checked independently",
+  "mesh": "All 8 main cases and 2 refinement checks passed native checkMesh",
+  "solver": "8 main cases and 2 refinement checks ended; no nonlinear convergence accepted",
+  "exclusions": "D1 compact 1 m/s original run rejected for conservation failure; separate retry remains diagnostic",
+  "decision": "CAD ready for further CFD work. No validated hardware performance or design ranking.",
+  "refinement": "Two completed spot checks; not grid independence."
+}

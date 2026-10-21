@@ -1,0 +1,21 @@
+{
+  "status": "Animation and printable prototype delivered; hardware fit and performance open",
+  "files": {
+    "AA-C24-3deg-print-prototype.zip": {
+      "bytes": 3875463,
+      "sha256": "964568b9dfca9f03f9c12c087ab0a74d2efc7ba51ea39f640c8557014292fe6f"
+    },
+    "optimization/deliverables/C24-3deg-print-prototype/AA_C24_H2S_PLA_0p4_sliced.3mf": {
+      "bytes": 3116321,
+      "sha256": "f5f4fbdef7218622977ace35ffd5762a2892e05177008e854ee8faa7c92ab391"
+    },
+    "optimization/results/AA-C24-steady-CFD-tracers.mp4": {
+      "bytes": 518481,
+      "sha256": "3a06f1cc9330d72836b8932adee142d727413de515b14685f428e221d980786a"
+    },
+    "optimization/results/AA-C24-steady-CFD-preview.gif": {
+      "bytes": 1708918,
+      "sha256": "d8eff15fe889e7ad8fc35c46d80bbdb399da7815ac1048b9356e8cc2d07e2b0f"
+    }
+  }
+}

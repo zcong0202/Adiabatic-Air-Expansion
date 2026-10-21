@@ -1,0 +1,5 @@
+FoamFile { version 2.0; format ascii; class dictionary; object controlDict; }
+application simpleFoam; startFrom startTime; startTime 0; stopAt endTime; endTime 1200; deltaT 1; writeControl timeStep; writeInterval 100; purgeWrite 2; writeFormat ascii; writePrecision 10; writeCompression off; runTimeModifiable true;
+functions { pressure_in { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name inlet; operation areaAverage; fields (p); writeFields false; writeControl timeStep; writeInterval 20; }
+pressure_out { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name outlet; operation areaAverage; fields (p); writeFields false; writeControl timeStep; writeInterval 20; } }
+

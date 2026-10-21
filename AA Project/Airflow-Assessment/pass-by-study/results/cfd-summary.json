@@ -1,0 +1,4069 @@
+{
+  "status": "Executed unconfined-jet screen; human body, wake, comfort and hardware unvalidated",
+  "controls_expected": 9,
+  "controls_completed": 9,
+  "cases": [
+    {
+      "case": "A00_pitch8_d50",
+      "layout": "one-side",
+      "distance_m": 0.5,
+      "cells": 36944,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761779835,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 20.69889593707864,
+        "minimum_area_temperature_c": 9.301104062921361,
+        "time_above_delta6_s": 0.47368411400533944,
+        "longest_continuous_above_delta6_s": 0.23825997713351407,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.47368411400533944,
+            "longest_s": 0.23825997713351407
+          },
+          "1": {
+            "total_s": 0.43698088297197624,
+            "longest_s": 0.2195629342429678
+          },
+          "2": {
+            "total_s": 0.4073356301013924,
+            "longest_s": 0.20470102033099208
+          },
+          "3": {
+            "total_s": 0.37996351208808626,
+            "longest_s": 0.1908947635605235
+          }
+        },
+        "positive_deficit_dose_k_s": 7.651359391914316,
+        "peak_area_mean_speed_m_s": 1.0080681353022447,
+        "mean_area_temperature_c": 24.261480456064266
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 20.69889593707864,
+          "minimum_area_temperature_c": 9.301104062921361,
+          "time_above_delta6_s": 0.47368411400533944,
+          "longest_continuous_above_delta6_s": 0.23825997713351407,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.47368411400533944,
+              "longest_s": 0.23825997713351407
+            },
+            "1": {
+              "total_s": 0.43698088297197624,
+              "longest_s": 0.2195629342429678
+            },
+            "2": {
+              "total_s": 0.4073356301013924,
+              "longest_s": 0.20470102033099208
+            },
+            "3": {
+              "total_s": 0.37996351208808626,
+              "longest_s": 0.1908947635605235
+            }
+          },
+          "positive_deficit_dose_k_s": 7.651359391914316,
+          "peak_area_mean_speed_m_s": 1.0080681353022447,
+          "mean_area_temperature_c": 24.261480456064266
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.672314684069946,
+          "minimum_area_temperature_c": 10.327685315930053,
+          "time_above_delta6_s": 0.43150726682343327,
+          "longest_continuous_above_delta6_s": 0.21585652014007373,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.43150726682343327,
+              "longest_s": 0.21585652014007373
+            },
+            "1": {
+              "total_s": 0.402273470654263,
+              "longest_s": 0.20122911717167014
+            },
+            "2": {
+              "total_s": 0.37576770341995863,
+              "longest_s": 0.18799139822568658
+            },
+            "3": {
+              "total_s": 0.35111859105879173,
+              "longest_s": 0.1756683013283234
+            }
+          },
+          "positive_deficit_dose_k_s": 6.881605039448434,
+          "peak_area_mean_speed_m_s": 0.9610807118573983,
+          "mean_area_temperature_c": 24.838802230382534
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 7.145235510716077,
+          "minimum_area_temperature_c": 22.854764489283923,
+          "time_above_delta6_s": 0.38150361225784496,
+          "longest_continuous_above_delta6_s": 0.38150361225784496,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.38150361225784496,
+              "longest_s": 0.38150361225784496
+            },
+            "1": {
+              "total_s": 0.07979169583793329,
+              "longest_s": 0.05110104649169723
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 3.235285575290459,
+          "peak_area_mean_speed_m_s": 0.47651066460350033,
+          "mean_area_temperature_c": 27.573535818532157
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.5470542846367081,
+          "minimum_area_temperature_c": 29.452945715363292,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.16809116317890171,
+          "peak_area_mean_speed_m_s": 0.08328290900021049,
+          "mean_area_temperature_c": 29.873938148419835
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.005852348060585655,
+          "minimum_area_temperature_c": 29.994147651939414,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0013874451655039484,
+          "peak_area_mean_speed_m_s": 0.055016746340039446,
+          "mean_area_temperature_c": 29.999090812387024
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 0.000250040382720665,
+        "origin_relative_error": 0.002885824597405722,
+        "energy_relative_error": -0.0003624191125363449
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.143031623811833,
+        "area_above_delta6_m2": 0.17602500000000001,
+        "positive_deficit_area_k_m2": 3.1998121442214043
+      }
+    },
+    {
+      "case": "F00_base_d35",
+      "layout": "one-side",
+      "distance_m": 0.35,
+      "cells": 101504,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 19.873602450007994,
+        "minimum_area_temperature_c": 10.126397549992008,
+        "time_above_delta6_s": 0.3760261254814002,
+        "longest_continuous_above_delta6_s": 0.18811233471384375,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.3760261254814002,
+            "longest_s": 0.18811233471384375
+          },
+          "1": {
+            "total_s": 0.35455304855026964,
+            "longest_s": 0.1772960890270729
+          },
+          "2": {
+            "total_s": 0.3345491673444173,
+            "longest_s": 0.16727873381496136
+          },
+          "3": {
+            "total_s": 0.31548699163688654,
+            "longest_s": 0.15779441939041197
+          }
+        },
+        "positive_deficit_dose_k_s": 6.224501561339043,
+        "peak_area_mean_speed_m_s": 0.9152081446847868,
+        "mean_area_temperature_c": 25.33162382899572
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.873602450007994,
+          "minimum_area_temperature_c": 10.126397549992008,
+          "time_above_delta6_s": 0.3760261254814002,
+          "longest_continuous_above_delta6_s": 0.18811233471384375,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.3760261254814002,
+              "longest_s": 0.18811233471384375
+            },
+            "1": {
+              "total_s": 0.35455304855026964,
+              "longest_s": 0.1772960890270729
+            },
+            "2": {
+              "total_s": 0.3345491673444173,
+              "longest_s": 0.16727873381496136
+            },
+            "3": {
+              "total_s": 0.31548699163688654,
+              "longest_s": 0.15779441939041197
+            }
+          },
+          "positive_deficit_dose_k_s": 6.224501561339043,
+          "peak_area_mean_speed_m_s": 0.9152081446847868,
+          "mean_area_temperature_c": 25.33162382899572
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.269492995064425,
+          "minimum_area_temperature_c": 10.730507004935575,
+          "time_above_delta6_s": 0.35994439057367955,
+          "longest_continuous_above_delta6_s": 0.17999877286440844,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.35994439057367955,
+              "longest_s": 0.17999877286440844
+            },
+            "1": {
+              "total_s": 0.33953671871220514,
+              "longest_s": 0.1697899072627743
+            },
+            "2": {
+              "total_s": 0.32000229970986926,
+              "longest_s": 0.16008274267026817
+            },
+            "3": {
+              "total_s": 0.3018640934095816,
+              "longest_s": 0.15096460230485548
+            }
+          },
+          "positive_deficit_dose_k_s": 5.802502845973535,
+          "peak_area_mean_speed_m_s": 0.885239442354684,
+          "mean_area_temperature_c": 25.648172278512213
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 4.534518745517431,
+          "minimum_area_temperature_c": 25.46548125448257,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 1.7825446971361103,
+          "peak_area_mean_speed_m_s": 0.3751895763253377,
+          "mean_area_temperature_c": 28.66309147714792
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.16363838691729882,
+          "minimum_area_temperature_c": 29.8363616130827,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.04176735188391044,
+          "peak_area_mean_speed_m_s": 0.07109056704859135,
+          "mean_area_temperature_c": 29.96874552160675
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.00010785849045902296,
+          "minimum_area_temperature_c": 30.00010785849046,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.04422494589680406,
+          "mean_area_temperature_c": 30.000587215575766
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 0.0002287502077529588,
+        "origin_relative_error": 0.0023531770634927216,
+        "energy_relative_error": -7.620040621676962e-05
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.83410565462455,
+        "area_above_delta6_m2": 0.13425,
+        "positive_deficit_area_k_m2": 2.42584297528214
+      }
+    },
+    {
+      "case": "F01_wide_d35",
+      "layout": "one-side",
+      "distance_m": 0.35,
+      "cells": 103388,
+      "width_m": 0.28,
+      "height_m": 0.04,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 14.041535916399496,
+        "minimum_area_temperature_c": 15.958464083600504,
+        "time_above_delta6_s": 0.5300474299429984,
+        "longest_continuous_above_delta6_s": 0.26558508902633726,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.5300474299429984,
+            "longest_s": 0.26558508902633726
+          },
+          "1": {
+            "total_s": 0.5033569776863368,
+            "longest_s": 0.2523113569438015
+          },
+          "2": {
+            "total_s": 0.47804223762194753,
+            "longest_s": 0.23974310931085083
+          },
+          "3": {
+            "total_s": 0.45207385671648526,
+            "longest_s": 0.2268494546564663
+          }
+        },
+        "positive_deficit_dose_k_s": 6.9934914802412305,
+        "peak_area_mean_speed_m_s": 0.6470777128017199,
+        "mean_area_temperature_c": 24.75488138981908
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 14.041535916399496,
+          "minimum_area_temperature_c": 15.958464083600504,
+          "time_above_delta6_s": 0.5300474299429984,
+          "longest_continuous_above_delta6_s": 0.26558508902633726,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.5300474299429984,
+              "longest_s": 0.26558508902633726
+            },
+            "1": {
+              "total_s": 0.5033569776863368,
+              "longest_s": 0.2523113569438015
+            },
+            "2": {
+              "total_s": 0.47804223762194753,
+              "longest_s": 0.23974310931085083
+            },
+            "3": {
+              "total_s": 0.45207385671648526,
+              "longest_s": 0.2268494546564663
+            }
+          },
+          "positive_deficit_dose_k_s": 6.9934914802412305,
+          "peak_area_mean_speed_m_s": 0.6470777128017199,
+          "mean_area_temperature_c": 24.75488138981908
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 12.689266017921724,
+          "minimum_area_temperature_c": 17.310733982078276,
+          "time_above_delta6_s": 0.4843358371489035,
+          "longest_continuous_above_delta6_s": 0.24258754098815713,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.4843358371489035,
+              "longest_s": 0.24258754098815713
+            },
+            "1": {
+              "total_s": 0.4563237726136428,
+              "longest_s": 0.2286381914412965
+            },
+            "2": {
+              "total_s": 0.4276605755756303,
+              "longest_s": 0.21441329963280287
+            },
+            "3": {
+              "total_s": 0.3968340925679724,
+              "longest_s": 0.1990552509482243
+            }
+          },
+          "positive_deficit_dose_k_s": 5.93171297163002,
+          "peak_area_mean_speed_m_s": 0.5552832164797316,
+          "mean_area_temperature_c": 25.55132186405475
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 7.608176967297542,
+          "minimum_area_temperature_c": 22.391823032702458,
+          "time_above_delta6_s": 0.28127025561492014,
+          "longest_continuous_above_delta6_s": 0.09734418325881715,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.28127025561492014,
+              "longest_s": 0.09734418325881715
+            },
+            "1": {
+              "total_s": 0.16001361566458575,
+              "longest_s": 0.05775703496934128
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 3.5312390711014876,
+          "peak_area_mean_speed_m_s": 0.5072054008797966,
+          "mean_area_temperature_c": 27.35158117367432
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.01983646529085803,
+          "minimum_area_temperature_c": 29.980163534709142,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.005575328509548722,
+          "peak_area_mean_speed_m_s": 0.04093377029024849,
+          "mean_area_temperature_c": 29.995932670344633
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.00013825194375627348,
+          "minimum_area_temperature_c": 30.000138251943756,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.03366725351268322,
+          "mean_area_temperature_c": 30.000528831501473
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.00026616328646137977,
+        "origin_relative_error": -0.003241674929538261,
+        "energy_relative_error": -0.0001485737143897133
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.54630944671888,
+        "area_above_delta6_m2": 0.1621,
+        "positive_deficit_area_k_m2": 2.748212552282348
+      }
+    },
+    {
+      "case": "L00_row4_d35",
+      "layout": "one-row",
+      "distance_m": 0.35,
+      "cells": 42792,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761779835,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 19.383770492240437,
+        "minimum_area_temperature_c": 10.616229507759565,
+        "time_above_delta6_s": 0.7700423166780411,
+        "longest_continuous_above_delta6_s": 0.19684346084894006,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.7700423166780411,
+            "longest_s": 0.19684346084894006
+          },
+          "1": {
+            "total_s": 0.7221445581414552,
+            "longest_s": 0.1842014528070422
+          },
+          "2": {
+            "total_s": 0.6784327366765779,
+            "longest_s": 0.172728717898149
+          },
+          "3": {
+            "total_s": 0.6349639541934371,
+            "longest_s": 0.16124329678344645
+          }
+        },
+        "positive_deficit_dose_k_s": 12.306375482890818,
+        "peak_area_mean_speed_m_s": 0.9058715148937669,
+        "mean_area_temperature_c": 20.77021838783189
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.383770492240437,
+          "minimum_area_temperature_c": 10.616229507759565,
+          "time_above_delta6_s": 0.7700423166780411,
+          "longest_continuous_above_delta6_s": 0.19684346084894006,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.7700423166780411,
+              "longest_s": 0.19684346084894006
+            },
+            "1": {
+              "total_s": 0.7221445581414552,
+              "longest_s": 0.1842014528070422
+            },
+            "2": {
+              "total_s": 0.6784327366765779,
+              "longest_s": 0.172728717898149
+            },
+            "3": {
+              "total_s": 0.6349639541934371,
+              "longest_s": 0.16124329678344645
+            }
+          },
+          "positive_deficit_dose_k_s": 12.306375482890818,
+          "peak_area_mean_speed_m_s": 0.9058715148937669,
+          "mean_area_temperature_c": 20.77021838783189
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.00032752362075072483,
+          "minimum_area_temperature_c": 30.00032752362075,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.036254972823336666,
+          "mean_area_temperature_c": 30.00081237305794
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.7129230184978077,
+          "minimum_area_temperature_c": 29.287076981502192,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.38541611888926275,
+          "peak_area_mean_speed_m_s": 0.09838908456067533,
+          "mean_area_temperature_c": 29.710937910833056
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.00028434797566845305,
+          "minimum_area_temperature_c": 30.00028434797567,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.03826243171657081,
+          "mean_area_temperature_c": 30.000731314984233
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.000248085438990131,
+          "minimum_area_temperature_c": 30.00024808543899,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.025235486788549446,
+          "mean_area_temperature_c": 30.00056670927917
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 0.0004155874871309167,
+        "origin_relative_error": 0.00464429648207238,
+        "energy_relative_error": -0.0001136727515279798
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.733841472930372,
+        "area_above_delta6_m2": 0.14755000000000001,
+        "positive_deficit_area_k_m2": 2.538557129586084
+      }
+    },
+    {
+      "case": "P00_one_d20",
+      "layout": "one-side",
+      "distance_m": 0.2,
+      "cells": 36968,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 30.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 23.64203921491327,
+        "minimum_area_temperature_c": 6.357960785086728,
+        "time_above_delta6_s": 0.399011491443007,
+        "longest_continuous_above_delta6_s": 0.19956754755010198,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.399011491443007,
+            "longest_s": 0.19956754755010198
+          },
+          "1": {
+            "total_s": 0.3780826412180691,
+            "longest_s": 0.18913797790623205
+          },
+          "2": {
+            "total_s": 0.3591639974893941,
+            "longest_s": 0.17964161699887463
+          },
+          "3": {
+            "total_s": 0.34112749195378633,
+            "longest_s": 0.17066912101716855
+          }
+        },
+        "positive_deficit_dose_k_s": 7.212030026271275,
+        "peak_area_mean_speed_m_s": 1.1190555878034896,
+        "mean_area_temperature_c": 24.590977480296544
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 23.64203921491327,
+          "minimum_area_temperature_c": 6.357960785086728,
+          "time_above_delta6_s": 0.399011491443007,
+          "longest_continuous_above_delta6_s": 0.19956754755010198,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.399011491443007,
+              "longest_s": 0.19956754755010198
+            },
+            "1": {
+              "total_s": 0.3780826412180691,
+              "longest_s": 0.18913797790623205
+            },
+            "2": {
+              "total_s": 0.3591639974893941,
+              "longest_s": 0.17964161699887463
+            },
+            "3": {
+              "total_s": 0.34112749195378633,
+              "longest_s": 0.17066912101716855
+            }
+          },
+          "positive_deficit_dose_k_s": 7.212030026271275,
+          "peak_area_mean_speed_m_s": 1.1190555878034896,
+          "mean_area_temperature_c": 24.590977480296544
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 23.510911538634552,
+          "minimum_area_temperature_c": 6.48908846136545,
+          "time_above_delta6_s": 0.3925507685478061,
+          "longest_continuous_above_delta6_s": 0.19629860140923866,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.3925507685478061,
+              "longest_s": 0.19629860140923866
+            },
+            "1": {
+              "total_s": 0.372623006295241,
+              "longest_s": 0.1863178346147955
+            },
+            "2": {
+              "total_s": 0.3543518727001995,
+              "longest_s": 0.17720394405663728
+            },
+            "3": {
+              "total_s": 0.33654398020924,
+              "longest_s": 0.1682845512261279
+            }
+          },
+          "positive_deficit_dose_k_s": 7.041967043359358,
+          "peak_area_mean_speed_m_s": 1.1101424524253891,
+          "mean_area_temperature_c": 24.718563377626708
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 6.424284282257492,
+          "minimum_area_temperature_c": 23.575715717742508,
+          "time_above_delta6_s": 0.11477730482523153,
+          "longest_continuous_above_delta6_s": 0.05763726635732039,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.11477730482523153,
+              "longest_s": 0.05763726635732039
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 2.5554203876716066,
+          "peak_area_mean_speed_m_s": 0.2921922185141688,
+          "mean_area_temperature_c": 28.083434709246294
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 4.225897754466278,
+          "minimum_area_temperature_c": 25.774102245533722,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 1.3069258627204743,
+          "peak_area_mean_speed_m_s": 0.1789359901765397,
+          "mean_area_temperature_c": 29.019833284114405
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.004422970108734603,
+          "minimum_area_temperature_c": 29.995577029891265,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.000894994470605763,
+          "peak_area_mean_speed_m_s": 0.05532952881646973,
+          "mean_area_temperature_c": 29.999574569976136
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 5.813743223838524e-07,
+        "origin_relative_error": -0.0001422608733983743,
+        "energy_relative_error": -0.0002945560860151822
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.92834431053974,
+        "area_above_delta6_m2": 0.11822500000000001,
+        "positive_deficit_area_k_m2": 2.320283447432061
+      }
+    },
+    {
+      "case": "P01_one_d35",
+      "layout": "one-side",
+      "distance_m": 0.35,
+      "cells": 36968,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 30.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 19.57018190732446,
+        "minimum_area_temperature_c": 10.42981809267554,
+        "time_above_delta6_s": 0.3999260144065864,
+        "longest_continuous_above_delta6_s": 0.19998908399345744,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.3999260144065864,
+            "longest_s": 0.19998908399345744
+          },
+          "1": {
+            "total_s": 0.37418278574398556,
+            "longest_s": 0.18718780453743908
+          },
+          "2": {
+            "total_s": 0.350991039610143,
+            "longest_s": 0.1755638692425253
+          },
+          "3": {
+            "total_s": 0.3284810329121283,
+            "longest_s": 0.16435943514031387
+          }
+        },
+        "positive_deficit_dose_k_s": 6.4051883554586615,
+        "peak_area_mean_speed_m_s": 0.9098118778507635,
+        "mean_area_temperature_c": 25.196108733406003
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.57018190732446,
+          "minimum_area_temperature_c": 10.42981809267554,
+          "time_above_delta6_s": 0.3999260144065864,
+          "longest_continuous_above_delta6_s": 0.19998908399345744,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.3999260144065864,
+              "longest_s": 0.19998908399345744
+            },
+            "1": {
+              "total_s": 0.37418278574398556,
+              "longest_s": 0.18718780453743908
+            },
+            "2": {
+              "total_s": 0.350991039610143,
+              "longest_s": 0.1755638692425253
+            },
+            "3": {
+              "total_s": 0.3284810329121283,
+              "longest_s": 0.16435943514031387
+            }
+          },
+          "positive_deficit_dose_k_s": 6.4051883554586615,
+          "peak_area_mean_speed_m_s": 0.9098118778507635,
+          "mean_area_temperature_c": 25.196108733406003
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 18.751207304811388,
+          "minimum_area_temperature_c": 11.248792695188614,
+          "time_above_delta6_s": 0.37705305502462017,
+          "longest_continuous_above_delta6_s": 0.18853548441115447,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.37705305502462017,
+              "longest_s": 0.18853548441115447
+            },
+            "1": {
+              "total_s": 0.3533832120966101,
+              "longest_s": 0.1767082188581262
+            },
+            "2": {
+              "total_s": 0.3306600180029188,
+              "longest_s": 0.1654027650318199
+            },
+            "3": {
+              "total_s": 0.30773812072870044,
+              "longest_s": 0.15391629138698318
+            }
+          },
+          "positive_deficit_dose_k_s": 5.856430507196878,
+          "peak_area_mean_speed_m_s": 0.878911812489645,
+          "mean_area_temperature_c": 25.60771140900712
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 6.1372283228183875,
+          "minimum_area_temperature_c": 23.862771677181613,
+          "time_above_delta6_s": 0.07576080265469046,
+          "longest_continuous_above_delta6_s": 0.042466161459877014,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.07576080265469046,
+              "longest_s": 0.042466161459877014
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 2.4362820746133274,
+          "peak_area_mean_speed_m_s": 0.4696383372549598,
+          "mean_area_temperature_c": 28.17278844404001
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.5466908916344018,
+          "minimum_area_temperature_c": 29.4533091083656,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.16132381050988354,
+          "peak_area_mean_speed_m_s": 0.08487270467103887,
+          "mean_area_temperature_c": 29.87903901108847
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.0015968173237972394,
+          "minimum_area_temperature_c": 29.998403182676203,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.00023469659072964795,
+          "peak_area_mean_speed_m_s": 0.05355472462145293,
+          "mean_area_temperature_c": 30.000109796185793
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 2.4680457286354693e-06,
+        "origin_relative_error": -3.953676793873584e-05,
+        "energy_relative_error": -0.00016985371274179912
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.571955810460512,
+        "area_above_delta6_m2": 0.151425,
+        "positive_deficit_area_k_m2": 2.7194365368470574
+      }
+    },
+    {
+      "case": "P02_one_d50",
+      "layout": "one-side",
+      "distance_m": 0.5,
+      "cells": 36944,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 11.71966727790856,
+        "minimum_area_temperature_c": 18.28033272209144,
+        "time_above_delta6_s": 0.3290386839289481,
+        "longest_continuous_above_delta6_s": 0.16478148871194218,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.3290386839289481,
+            "longest_s": 0.16478148871194218
+          },
+          "1": {
+            "total_s": 0.28910696857078694,
+            "longest_s": 0.14485001136155656
+          },
+          "2": {
+            "total_s": 0.24745115925362732,
+            "longest_s": 0.12382057000255943
+          },
+          "3": {
+            "total_s": 0.20389465916866714,
+            "longest_s": 0.10203432952855603
+          }
+        },
+        "positive_deficit_dose_k_s": 4.143679401366788,
+        "peak_area_mean_speed_m_s": 0.49853547501115175,
+        "mean_area_temperature_c": 26.892240448974913
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 11.71966727790856,
+          "minimum_area_temperature_c": 18.28033272209144,
+          "time_above_delta6_s": 0.3290386839289481,
+          "longest_continuous_above_delta6_s": 0.16478148871194218,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.3290386839289481,
+              "longest_s": 0.16478148871194218
+            },
+            "1": {
+              "total_s": 0.28910696857078694,
+              "longest_s": 0.14485001136155656
+            },
+            "2": {
+              "total_s": 0.24745115925362732,
+              "longest_s": 0.12382057000255943
+            },
+            "3": {
+              "total_s": 0.20389465916866714,
+              "longest_s": 0.10203432952855603
+            }
+          },
+          "positive_deficit_dose_k_s": 4.143679401366788,
+          "peak_area_mean_speed_m_s": 0.49853547501115175,
+          "mean_area_temperature_c": 26.892240448974913
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 10.530852685661099,
+          "minimum_area_temperature_c": 19.4691473143389,
+          "time_above_delta6_s": 0.27706315436923323,
+          "longest_continuous_above_delta6_s": 0.13858033578361928,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.27706315436923323,
+              "longest_s": 0.13858033578361928
+            },
+            "1": {
+              "total_s": 0.23453944015212574,
+              "longest_s": 0.11740050010931208
+            },
+            "2": {
+              "total_s": 0.19119013195200632,
+              "longest_s": 0.09580632871657216
+            },
+            "3": {
+              "total_s": 0.14579194402272844,
+              "longest_s": 0.0731629973930379
+            }
+          },
+          "positive_deficit_dose_k_s": 3.3709473567546766,
+          "peak_area_mean_speed_m_s": 0.4404381002219296,
+          "mean_area_temperature_c": 27.471819923082453
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 12.627733440057192,
+          "minimum_area_temperature_c": 17.37226655994281,
+          "time_above_delta6_s": 0.4262543461193827,
+          "longest_continuous_above_delta6_s": 0.2146497382959505,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.4262543461193827,
+              "longest_s": 0.2146497382959505
+            },
+            "1": {
+              "total_s": 0.36850308662597836,
+              "longest_s": 0.1856401618388709
+            },
+            "2": {
+              "total_s": 0.3170038117328691,
+              "longest_s": 0.1596012335060875
+            },
+            "3": {
+              "total_s": 0.27006302302352203,
+              "longest_s": 0.13543611411044057
+            }
+          },
+          "positive_deficit_dose_k_s": 4.9354054515339785,
+          "peak_area_mean_speed_m_s": 0.8620828770026442,
+          "mean_area_temperature_c": 26.298445911349514
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.01909020895062241,
+          "minimum_area_temperature_c": 29.980909791049378,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.005732136289426273,
+          "peak_area_mean_speed_m_s": 0.06393295406098233,
+          "mean_area_temperature_c": 29.995749294475694
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.0001438087930267784,
+          "minimum_area_temperature_c": 29.999856191206973,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 5.321277190381088e-06,
+          "peak_area_mean_speed_m_s": 0.04912221637647563,
+          "mean_area_temperature_c": 30.00036481419923
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.0003191042940194856,
+        "origin_relative_error": -0.0033013202929161817,
+        "energy_relative_error": -0.0002319099383425446
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.44968706974082,
+        "area_above_delta6_m2": 0.165225,
+        "positive_deficit_area_k_m2": 2.856375205769437
+      }
+    },
+    {
+      "case": "P10_two_d20",
+      "layout": "two-side",
+      "distance_m": 0.2,
+      "cells": 36866,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 30.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 24.149315833649155,
+        "minimum_area_temperature_c": 5.850684166350844,
+        "time_above_delta6_s": 0.22690476290494602,
+        "longest_continuous_above_delta6_s": 0.22690476290494602,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.22690476290494602,
+            "longest_s": 0.22690476290494602
+          },
+          "1": {
+            "total_s": 0.21432988303870765,
+            "longest_s": 0.21432988303870765
+          },
+          "2": {
+            "total_s": 0.20260062089400108,
+            "longest_s": 0.20260062089400108
+          },
+          "3": {
+            "total_s": 0.19155194949892684,
+            "longest_s": 0.19155194949892684
+          }
+        },
+        "positive_deficit_dose_k_s": 4.282423534889052,
+        "peak_area_mean_speed_m_s": 1.0481887529759146,
+        "mean_area_temperature_c": 26.788182348833214
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 24.149315833649155,
+          "minimum_area_temperature_c": 5.850684166350844,
+          "time_above_delta6_s": 0.22690476290494602,
+          "longest_continuous_above_delta6_s": 0.22690476290494602,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.22690476290494602,
+              "longest_s": 0.22690476290494602
+            },
+            "1": {
+              "total_s": 0.21432988303870765,
+              "longest_s": 0.21432988303870765
+            },
+            "2": {
+              "total_s": 0.20260062089400108,
+              "longest_s": 0.20260062089400108
+            },
+            "3": {
+              "total_s": 0.19155194949892684,
+              "longest_s": 0.19155194949892684
+            }
+          },
+          "positive_deficit_dose_k_s": 4.282423534889052,
+          "peak_area_mean_speed_m_s": 1.0481887529759146,
+          "mean_area_temperature_c": 26.788182348833214
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 23.59317592317679,
+          "minimum_area_temperature_c": 6.406824076823209,
+          "time_above_delta6_s": 0.19627592744582745,
+          "longest_continuous_above_delta6_s": 0.19627592744582745,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.19627592744582745,
+              "longest_s": 0.19627592744582745
+            },
+            "1": {
+              "total_s": 0.18665735753276955,
+              "longest_s": 0.18665735753276955
+            },
+            "2": {
+              "total_s": 0.17761186812252608,
+              "longest_s": 0.17761186812252608
+            },
+            "3": {
+              "total_s": 0.16880025500347665,
+              "longest_s": 0.16880025500347665
+            }
+          },
+          "positive_deficit_dose_k_s": 3.5321934040455463,
+          "peak_area_mean_speed_m_s": 1.1025263510830063,
+          "mean_area_temperature_c": 27.35089313097249
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 24.14949360916178,
+          "minimum_area_temperature_c": 5.850506390838218,
+          "time_above_delta6_s": 0.22689603433339117,
+          "longest_continuous_above_delta6_s": 0.22689603433339117,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.22689603433339117,
+              "longest_s": 0.22689603433339117
+            },
+            "1": {
+              "total_s": 0.21432460669176248,
+              "longest_s": 0.21432460669176248
+            },
+            "2": {
+              "total_s": 0.20259567994765637,
+              "longest_s": 0.20259567994765637
+            },
+            "3": {
+              "total_s": 0.19154801668536078,
+              "longest_s": 0.19154801668536078
+            }
+          },
+          "positive_deficit_dose_k_s": 4.282279709840259,
+          "peak_area_mean_speed_m_s": 1.0481900021912705,
+          "mean_area_temperature_c": 26.78829021761981
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 23.593172997573806,
+          "minimum_area_temperature_c": 6.406827002426195,
+          "time_above_delta6_s": 0.1962735708754328,
+          "longest_continuous_above_delta6_s": 0.1962735708754328,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.1962735708754328,
+              "longest_s": 0.1962735708754328
+            },
+            "1": {
+              "total_s": 0.1866549294267371,
+              "longest_s": 0.1866549294267371
+            },
+            "2": {
+              "total_s": 0.17760908209223739,
+              "longest_s": 0.17760908209223739
+            },
+            "3": {
+              "total_s": 0.1687970372798689,
+              "longest_s": 0.1687970372798689
+            }
+          },
+          "positive_deficit_dose_k_s": 3.532106521390116,
+          "peak_area_mean_speed_m_s": 1.102512026443555,
+          "mean_area_temperature_c": 27.350958483169787
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 13.21774341805957,
+          "minimum_area_temperature_c": 16.78225658194043,
+          "time_above_delta6_s": 0.5082991235808698,
+          "longest_continuous_above_delta6_s": 0.5082991235808698,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.5082991235808698,
+              "longest_s": 0.5082991235808698
+            },
+            "1": {
+              "total_s": 0.4823886183081183,
+              "longest_s": 0.4823886183081183
+            },
+            "2": {
+              "total_s": 0.45200722725907583,
+              "longest_s": 0.45200722725907583
+            },
+            "3": {
+              "total_s": 0.42322371192034186,
+              "longest_s": 0.42322371192034186
+            }
+          },
+          "positive_deficit_dose_k_s": 6.364752929257781,
+          "peak_area_mean_speed_m_s": 0.2926148934603406,
+          "mean_area_temperature_c": 25.226470405309666
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -1.9459856277257096e-06,
+        "origin_relative_error": -1.4484640710613944e-05,
+        "energy_relative_error": 7.926324913165387e-05
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 28.709194962694585,
+        "area_above_delta6_m2": 0.07025,
+        "positive_deficit_area_k_m2": 1.4457257322544934
+      }
+    },
+    {
+      "case": "P11_two_d35",
+      "layout": "two-side",
+      "distance_m": 0.35,
+      "cells": 38950,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 19.437845034032083,
+        "minimum_area_temperature_c": 10.562154965967917,
+        "time_above_delta6_s": 0.22604579011694448,
+        "longest_continuous_above_delta6_s": 0.22604579011694448,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.22604579011694448,
+            "longest_s": 0.22604579011694448
+          },
+          "1": {
+            "total_s": 0.20985914873528383,
+            "longest_s": 0.20985914873528383
+          },
+          "2": {
+            "total_s": 0.19446818229781604,
+            "longest_s": 0.19446818229781604
+          },
+          "3": {
+            "total_s": 0.1809479334333976,
+            "longest_s": 0.1809479334333976
+          }
+        },
+        "positive_deficit_dose_k_s": 3.7497232783804013,
+        "peak_area_mean_speed_m_s": 0.832554893964675,
+        "mean_area_temperature_c": 27.1877075412147
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.437845034032083,
+          "minimum_area_temperature_c": 10.562154965967917,
+          "time_above_delta6_s": 0.22604579011694448,
+          "longest_continuous_above_delta6_s": 0.22604579011694448,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.22604579011694448,
+              "longest_s": 0.22604579011694448
+            },
+            "1": {
+              "total_s": 0.20985914873528383,
+              "longest_s": 0.20985914873528383
+            },
+            "2": {
+              "total_s": 0.19446818229781604,
+              "longest_s": 0.19446818229781604
+            },
+            "3": {
+              "total_s": 0.1809479334333976,
+              "longest_s": 0.1809479334333976
+            }
+          },
+          "positive_deficit_dose_k_s": 3.7497232783804013,
+          "peak_area_mean_speed_m_s": 0.832554893964675,
+          "mean_area_temperature_c": 27.1877075412147
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 18.927673085379205,
+          "minimum_area_temperature_c": 11.072326914620795,
+          "time_above_delta6_s": 0.1902399890967434,
+          "longest_continuous_above_delta6_s": 0.1902399890967434,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.1902399890967434,
+              "longest_s": 0.1902399890967434
+            },
+            "1": {
+              "total_s": 0.17848431921746244,
+              "longest_s": 0.17848431921746244
+            },
+            "2": {
+              "total_s": 0.1672724170409407,
+              "longest_s": 0.1672724170409407
+            },
+            "3": {
+              "total_s": 0.15587720454896753,
+              "longest_s": 0.15587720454896753
+            }
+          },
+          "positive_deficit_dose_k_s": 2.985617746590748,
+          "peak_area_mean_speed_m_s": 0.875501128758351,
+          "mean_area_temperature_c": 27.760812941134443
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 19.430052044172346,
+          "minimum_area_temperature_c": 10.569947955827654,
+          "time_above_delta6_s": 0.22596942949523394,
+          "longest_continuous_above_delta6_s": 0.22596942949523394,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.22596942949523394,
+              "longest_s": 0.22596942949523394
+            },
+            "1": {
+              "total_s": 0.20980055472359796,
+              "longest_s": 0.20980055472359796
+            },
+            "2": {
+              "total_s": 0.19440950118835754,
+              "longest_s": 0.19440950118835754
+            },
+            "3": {
+              "total_s": 0.18089260590155462,
+              "longest_s": 0.18089260590155462
+            }
+          },
+          "positive_deficit_dose_k_s": 3.748047571447541,
+          "peak_area_mean_speed_m_s": 0.8324221358309426,
+          "mean_area_temperature_c": 27.188964321414346
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 18.972974305328307,
+          "minimum_area_temperature_c": 11.027025694671691,
+          "time_above_delta6_s": 0.19020130300561314,
+          "longest_continuous_above_delta6_s": 0.19020130300561314,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.19020130300561314,
+              "longest_s": 0.19020130300561314
+            },
+            "1": {
+              "total_s": 0.1784485061811878,
+              "longest_s": 0.1784485061811878
+            },
+            "2": {
+              "total_s": 0.16723864255768092,
+              "longest_s": 0.16723864255768092
+            },
+            "3": {
+              "total_s": 0.15584854045004756,
+              "longest_s": 0.15584854045004756
+            }
+          },
+          "positive_deficit_dose_k_s": 2.9890900611992364,
+          "peak_area_mean_speed_m_s": 0.8756616930092671,
+          "mean_area_temperature_c": 27.758208925724123
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 10.569448212284343,
+          "minimum_area_temperature_c": 19.430551787715657,
+          "time_above_delta6_s": 0.22810877868742885,
+          "longest_continuous_above_delta6_s": 0.22810877868742885,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.22810877868742885,
+              "longest_s": 0.22810877868742885
+            },
+            "1": {
+              "total_s": 0.20787652290438333,
+              "longest_s": 0.20787652290438333
+            },
+            "2": {
+              "total_s": 0.18339150018991277,
+              "longest_s": 0.18339150018991277
+            },
+            "3": {
+              "total_s": 0.1322404302026743,
+              "longest_s": 0.1322404302026743
+            }
+          },
+          "positive_deficit_dose_k_s": 2.838981173395794,
+          "peak_area_mean_speed_m_s": 0.13539681289587507,
+          "mean_area_temperature_c": 27.87080922806186
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -1.4700341142242755e-05,
+        "origin_relative_error": -0.00020424181457552004,
+        "energy_relative_error": 0.0001742044630266472
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 28.577139948991235,
+        "area_above_delta6_m2": 0.084,
+        "positive_deficit_area_k_m2": 1.5936220765298543
+      }
+    },
+    {
+      "case": "P12_two_d50",
+      "layout": "two-side",
+      "distance_m": 0.5,
+      "cells": 36842,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 11.07611453222902,
+        "minimum_area_temperature_c": 18.92388546777098,
+        "time_above_delta6_s": 0.17908743941562846,
+        "longest_continuous_above_delta6_s": 0.17908743941562846,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.17908743941562846,
+            "longest_s": 0.17908743941562846
+          },
+          "1": {
+            "total_s": 0.15621363489234721,
+            "longest_s": 0.15621363489234721
+          },
+          "2": {
+            "total_s": 0.1318578905217161,
+            "longest_s": 0.1318578905217161
+          },
+          "3": {
+            "total_s": 0.10474005964246086,
+            "longest_s": 0.10474005964246086
+          }
+        },
+        "positive_deficit_dose_k_s": 2.338662842566279,
+        "peak_area_mean_speed_m_s": 0.3787681504355155,
+        "mean_area_temperature_c": 28.246002868075287
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 11.07611453222902,
+          "minimum_area_temperature_c": 18.92388546777098,
+          "time_above_delta6_s": 0.17908743941562846,
+          "longest_continuous_above_delta6_s": 0.17908743941562846,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.17908743941562846,
+              "longest_s": 0.17908743941562846
+            },
+            "1": {
+              "total_s": 0.15621363489234721,
+              "longest_s": 0.15621363489234721
+            },
+            "2": {
+              "total_s": 0.1318578905217161,
+              "longest_s": 0.1318578905217161
+            },
+            "3": {
+              "total_s": 0.10474005964246086,
+              "longest_s": 0.10474005964246086
+            }
+          },
+          "positive_deficit_dose_k_s": 2.338662842566279,
+          "peak_area_mean_speed_m_s": 0.3787681504355155,
+          "mean_area_temperature_c": 28.246002868075287
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 11.082590185657182,
+          "minimum_area_temperature_c": 18.917409814342818,
+          "time_above_delta6_s": 0.15089441647286553,
+          "longest_continuous_above_delta6_s": 0.15089441647286553,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.15089441647286553,
+              "longest_s": 0.15089441647286553
+            },
+            "1": {
+              "total_s": 0.1306940085765133,
+              "longest_s": 0.1306940085765133
+            },
+            "2": {
+              "total_s": 0.10930967393382005,
+              "longest_s": 0.10930967393382005
+            },
+            "3": {
+              "total_s": 0.08717601934719127,
+              "longest_s": 0.08717601934719127
+            }
+          },
+          "positive_deficit_dose_k_s": 1.8600732137386282,
+          "peak_area_mean_speed_m_s": 0.43303902675291633,
+          "mean_area_temperature_c": 28.604963078492638
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 11.074724081302318,
+          "minimum_area_temperature_c": 18.925275918697682,
+          "time_above_delta6_s": 0.1790744095685539,
+          "longest_continuous_above_delta6_s": 0.1790744095685539,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.1790744095685539,
+              "longest_s": 0.1790744095685539
+            },
+            "1": {
+              "total_s": 0.15619975667987296,
+              "longest_s": 0.15619975667987296
+            },
+            "2": {
+              "total_s": 0.13184235567691652,
+              "longest_s": 0.13184235567691652
+            },
+            "3": {
+              "total_s": 0.104718778534891,
+              "longest_s": 0.104718778534891
+            }
+          },
+          "positive_deficit_dose_k_s": 2.338249069013714,
+          "peak_area_mean_speed_m_s": 0.3787163382130273,
+          "mean_area_temperature_c": 28.24631319823971
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 11.079515510320274,
+          "minimum_area_temperature_c": 18.920484489679726,
+          "time_above_delta6_s": 0.1509013472586841,
+          "longest_continuous_above_delta6_s": 0.1509013472586841,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.1509013472586841,
+              "longest_s": 0.1509013472586841
+            },
+            "1": {
+              "total_s": 0.13069375713698947,
+              "longest_s": 0.13069375713698947
+            },
+            "2": {
+              "total_s": 0.10929851430330162,
+              "longest_s": 0.10929851430330162
+            },
+            "3": {
+              "total_s": 0.08714815615789527,
+              "longest_s": 0.08714815615789527
+            }
+          },
+          "positive_deficit_dose_k_s": 1.8600671878940895,
+          "peak_area_mean_speed_m_s": 0.43298908683276965,
+          "mean_area_temperature_c": 28.6049677998846
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 1.0227828117382067,
+          "minimum_area_temperature_c": 28.977217188261793,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.2133798112073825,
+          "peak_area_mean_speed_m_s": 0.0747062427552398,
+          "mean_area_temperature_c": 29.84002298883635
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 2.6822225209350465e-05,
+        "origin_relative_error": 0.00040515981987086135,
+        "energy_relative_error": 0.00022478993826043585
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 28.57320259067662,
+        "area_above_delta6_m2": 0.08965000000000001,
+        "positive_deficit_area_k_m2": 1.598027704077506
+      }
+    },
+    {
+      "case": "P20_over_d20",
+      "layout": "overhead",
+      "distance_m": 0.2,
+      "cells": 39120,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "top1.75",
+      "reference": {
+        "patch": "top1.75",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 15.1084414074987,
+        "minimum_area_temperature_c": 14.8915585925013,
+        "time_above_delta6_s": 0.29865861759984275,
+        "longest_continuous_above_delta6_s": 0.14937470925933244,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.29865861759984275,
+            "longest_s": 0.14937470925933244
+          },
+          "1": {
+            "total_s": 0.27200951995599965,
+            "longest_s": 0.13603220434344335
+          },
+          "2": {
+            "total_s": 0.24620325891417308,
+            "longest_s": 0.12311723732118866
+          },
+          "3": {
+            "total_s": 0.22121551001077847,
+            "longest_s": 0.11060955936071468
+          }
+        },
+        "positive_deficit_dose_k_s": 4.072555806829294,
+        "peak_area_mean_speed_m_s": 0.8228322261185602,
+        "mean_area_temperature_c": 26.945631076383215
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.2631621127412096,
+          "minimum_area_temperature_c": 29.73683788725879,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.07811384022200552,
+          "peak_area_mean_speed_m_s": 0.05741295718700518,
+          "mean_area_temperature_c": 29.941430965771016
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.12559338884925708,
+          "minimum_area_temperature_c": 29.874406611150743,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.03809464896772389,
+          "peak_area_mean_speed_m_s": 0.03803424233678587,
+          "mean_area_temperature_c": 29.971474152588844
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.2628496956722728,
+          "minimum_area_temperature_c": 29.737150304327727,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.07803918715755506,
+          "peak_area_mean_speed_m_s": 0.057416202795863125,
+          "mean_area_temperature_c": 29.94148694711429
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.12551861740231374,
+          "minimum_area_temperature_c": 29.874481382597686,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.03807283013292139,
+          "peak_area_mean_speed_m_s": 0.03803779809518022,
+          "mean_area_temperature_c": 29.971490611633296
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 15.1084414074987,
+          "minimum_area_temperature_c": 14.8915585925013,
+          "time_above_delta6_s": 0.29865861759984275,
+          "longest_continuous_above_delta6_s": 0.14937470925933244,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.29865861759984275,
+              "longest_s": 0.14937470925933244
+            },
+            "1": {
+              "total_s": 0.27200951995599965,
+              "longest_s": 0.13603220434344335
+            },
+            "2": {
+              "total_s": 0.24620325891417308,
+              "longest_s": 0.12311723732118866
+            },
+            "3": {
+              "total_s": 0.22121551001077847,
+              "longest_s": 0.11060955936071468
+            }
+          },
+          "positive_deficit_dose_k_s": 4.072555806829294,
+          "peak_area_mean_speed_m_s": 0.8228322261185602,
+          "mean_area_temperature_c": 26.945631076383215
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.0005715001675265729,
+        "origin_relative_error": -0.005890685847071017,
+        "energy_relative_error": 0.0003905894061554095
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 29.95524245901718,
+        "area_above_delta6_m2": 0.0,
+        "positive_deficit_area_k_m2": 0.05016099732230365
+      }
+    },
+    {
+      "case": "P21_over_d35",
+      "layout": "overhead",
+      "distance_m": 0.35,
+      "cells": 39120,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "top1.75",
+      "reference": {
+        "patch": "top1.75",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 16.275183381163792,
+        "minimum_area_temperature_c": 13.724816618836208,
+        "time_above_delta6_s": 0.31438529605146576,
+        "longest_continuous_above_delta6_s": 0.1573267503366009,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.31438529605146576,
+            "longest_s": 0.1573267503366009
+          },
+          "1": {
+            "total_s": 0.2887215880568603,
+            "longest_s": 0.14447718987794034
+          },
+          "2": {
+            "total_s": 0.2636031336989355,
+            "longest_s": 0.1318982343442998
+          },
+          "3": {
+            "total_s": 0.23939231471144679,
+            "longest_s": 0.11977087084151444
+          }
+        },
+        "positive_deficit_dose_k_s": 4.480372903405743,
+        "peak_area_mean_speed_m_s": 0.9592677589550819,
+        "mean_area_temperature_c": 26.639753591166706
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.3044283656095885,
+          "minimum_area_temperature_c": 29.69557163439041,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.09294937003187867,
+          "peak_area_mean_speed_m_s": 0.06658583794872105,
+          "mean_area_temperature_c": 29.930294279084293
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.1778641350897736,
+          "minimum_area_temperature_c": 29.822135864910226,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.05408891357961105,
+          "peak_area_mean_speed_m_s": 0.04131067232864808,
+          "mean_area_temperature_c": 29.959463321047767
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.3042329696443993,
+          "minimum_area_temperature_c": 29.6957670303556,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0929040695420999,
+          "peak_area_mean_speed_m_s": 0.06658967302861356,
+          "mean_area_temperature_c": 29.930328217045123
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.1778520207440195,
+          "minimum_area_temperature_c": 29.82214797925598,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.054075342932453634,
+          "peak_area_mean_speed_m_s": 0.041311598125164224,
+          "mean_area_temperature_c": 29.959473477711715
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 16.275183381163792,
+          "minimum_area_temperature_c": 13.724816618836208,
+          "time_above_delta6_s": 0.31438529605146576,
+          "longest_continuous_above_delta6_s": 0.1573267503366009,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.31438529605146576,
+              "longest_s": 0.1573267503366009
+            },
+            "1": {
+              "total_s": 0.2887215880568603,
+              "longest_s": 0.14447718987794034
+            },
+            "2": {
+              "total_s": 0.2636031336989355,
+              "longest_s": 0.1318982343442998
+            },
+            "3": {
+              "total_s": 0.23939231471144679,
+              "longest_s": 0.11977087084151444
+            }
+          },
+          "positive_deficit_dose_k_s": 4.480372903405743,
+          "peak_area_mean_speed_m_s": 0.9592677589550819,
+          "mean_area_temperature_c": 26.639753591166706
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.0011052092733695282,
+        "origin_relative_error": -0.0119948207806208,
+        "energy_relative_error": 0.0006569115037501527
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 29.94290451495244,
+        "area_above_delta6_m2": 0.0,
+        "positive_deficit_area_k_m2": 0.06396496621267596
+      }
+    },
+    {
+      "case": "P22_over_d50",
+      "layout": "overhead",
+      "distance_m": 0.5,
+      "cells": 40272,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "top1.75",
+      "reference": {
+        "patch": "top1.75",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 17.04626434655365,
+        "minimum_area_temperature_c": 12.953735653446353,
+        "time_above_delta6_s": 0.3281375299223426,
+        "longest_continuous_above_delta6_s": 0.16425543702072254,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.3281375299223426,
+            "longest_s": 0.16425543702072254
+          },
+          "1": {
+            "total_s": 0.30232524377981473,
+            "longest_s": 0.15133048800911134
+          },
+          "2": {
+            "total_s": 0.2770585665251992,
+            "longest_s": 0.13867229970280323
+          },
+          "3": {
+            "total_s": 0.25283929370485586,
+            "longest_s": 0.12654172627221288
+          }
+        },
+        "positive_deficit_dose_k_s": 4.8000648117342894,
+        "peak_area_mean_speed_m_s": 1.068630958081339,
+        "mean_area_temperature_c": 26.39997595122402
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.3190366420880011,
+          "minimum_area_temperature_c": 29.680963357912,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.11041385065405332,
+          "peak_area_mean_speed_m_s": 0.0826419444391533,
+          "mean_area_temperature_c": 29.917189612009455
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.24221173105539506,
+          "minimum_area_temperature_c": 29.757788268944605,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.07199380317344303,
+          "peak_area_mean_speed_m_s": 0.04654553281903051,
+          "mean_area_temperature_c": 29.946022788348607
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.3188224533538815,
+          "minimum_area_temperature_c": 29.68117754664612,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.11041641976727387,
+          "peak_area_mean_speed_m_s": 0.0826799353975237,
+          "mean_area_temperature_c": 29.917187685174547
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.24198562341170415,
+          "minimum_area_temperature_c": 29.758014376588296,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0719058353543396,
+          "peak_area_mean_speed_m_s": 0.04653880573054034,
+          "mean_area_temperature_c": 29.946088867301945
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 17.04626434655365,
+          "minimum_area_temperature_c": 12.953735653446353,
+          "time_above_delta6_s": 0.3281375299223426,
+          "longest_continuous_above_delta6_s": 0.16425543702072254,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.3281375299223426,
+              "longest_s": 0.16425543702072254
+            },
+            "1": {
+              "total_s": 0.30232524377981473,
+              "longest_s": 0.15133048800911134
+            },
+            "2": {
+              "total_s": 0.2770585665251992,
+              "longest_s": 0.13867229970280323
+            },
+            "3": {
+              "total_s": 0.25283929370485586,
+              "longest_s": 0.12654172627221288
+            }
+          },
+          "positive_deficit_dose_k_s": 4.8000648117342894,
+          "peak_area_mean_speed_m_s": 1.068630958081339,
+          "mean_area_temperature_c": 26.39997595122402
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.0017165588513167575,
+        "origin_relative_error": -0.01835376465656029,
+        "energy_relative_error": 0.0005763811505840781
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 29.929108242967253,
+        "area_above_delta6_m2": 0.0,
+        "positive_deficit_area_k_m2": 0.07940817249328559
+      }
+    },
+    {
+      "case": "R00_wide_d35",
+      "layout": "one-side",
+      "distance_m": 0.35,
+      "cells": 40240,
+      "width_m": 0.28,
+      "height_m": 0.04,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 14.153890182401774,
+        "minimum_area_temperature_c": 15.846109817598226,
+        "time_above_delta6_s": 0.5577583764855168,
+        "longest_continuous_above_delta6_s": 0.2791300905964812,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.5577583764855168,
+            "longest_s": 0.2791300905964812
+          },
+          "1": {
+            "total_s": 0.5199707833850609,
+            "longest_s": 0.2602911435399619
+          },
+          "2": {
+            "total_s": 0.4837015050400888,
+            "longest_s": 0.24221233267373624
+          },
+          "3": {
+            "total_s": 0.44771065268328897,
+            "longest_s": 0.2242878753183613
+          }
+        },
+        "positive_deficit_dose_k_s": 7.147368738001699,
+        "peak_area_mean_speed_m_s": 0.6665904121370567,
+        "mean_area_temperature_c": 24.639473446498723
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 14.153890182401774,
+          "minimum_area_temperature_c": 15.846109817598226,
+          "time_above_delta6_s": 0.5577583764855168,
+          "longest_continuous_above_delta6_s": 0.2791300905964812,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.5577583764855168,
+              "longest_s": 0.2791300905964812
+            },
+            "1": {
+              "total_s": 0.5199707833850609,
+              "longest_s": 0.2602911435399619
+            },
+            "2": {
+              "total_s": 0.4837015050400888,
+              "longest_s": 0.24221233267373624
+            },
+            "3": {
+              "total_s": 0.44771065268328897,
+              "longest_s": 0.2242878753183613
+            }
+          },
+          "positive_deficit_dose_k_s": 7.147368738001699,
+          "peak_area_mean_speed_m_s": 0.6665904121370567,
+          "mean_area_temperature_c": 24.639473446498723
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 12.396512840003407,
+          "minimum_area_temperature_c": 17.603487159996593,
+          "time_above_delta6_s": 0.49611923957248594,
+          "longest_continuous_above_delta6_s": 0.2482361496804584,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.49611923957248594,
+              "longest_s": 0.2482361496804584
+            },
+            "1": {
+              "total_s": 0.45703038263534385,
+              "longest_s": 0.22870086049049543
+            },
+            "2": {
+              "total_s": 0.4188158417383335,
+              "longest_s": 0.20960355925066204
+            },
+            "3": {
+              "total_s": 0.38128268881328786,
+              "longest_s": 0.19083798326327556
+            }
+          },
+          "positive_deficit_dose_k_s": 5.991613452623948,
+          "peak_area_mean_speed_m_s": 0.5577637298135899,
+          "mean_area_temperature_c": 25.506363480478203
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 9.243032903473026,
+          "minimum_area_temperature_c": 20.756967096526974,
+          "time_above_delta6_s": 0.5111539707726639,
+          "longest_continuous_above_delta6_s": 0.5111539707726639,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.5111539707726639,
+              "longest_s": 0.5111539707726639
+            },
+            "1": {
+              "total_s": 0.32972904492821314,
+              "longest_s": 0.16842203720294227
+            },
+            "2": {
+              "total_s": 0.2060918402468076,
+              "longest_s": 0.1077246185590073
+            },
+            "3": {
+              "total_s": 0.05489240111729481,
+              "longest_s": 0.04341442272064336
+            }
+          },
+          "positive_deficit_dose_k_s": 4.539874799432949,
+          "peak_area_mean_speed_m_s": 0.5971660004380037,
+          "mean_area_temperature_c": 26.595093900425287
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.22509099584423353,
+          "minimum_area_temperature_c": 29.774909004155766,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.10024288377246854,
+          "peak_area_mean_speed_m_s": 0.06885756727240654,
+          "mean_area_temperature_c": 29.924846400647564
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.0011362877792215897,
+          "minimum_area_temperature_c": 29.99886371222078,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.000354015356924872,
+          "peak_area_mean_speed_m_s": 0.04338307277351095,
+          "mean_area_temperature_c": 29.99995381085049
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.0010712679936656234,
+        "origin_relative_error": -0.011196397648579826,
+        "energy_relative_error": 0.0001296791391415316
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 27.318031421835965,
+        "area_above_delta6_m2": 0.18460000000000001,
+        "positive_deficit_area_k_m2": 3.0038598277134296
+      }
+    },
+    {
+      "case": "S00_row4_source8",
+      "layout": "one-row",
+      "distance_m": 0.35,
+      "cells": 42792,
+      "width_m": 0.14,
+      "height_m": 0.08,
+      "wind_m_s": 0,
+      "wind_direction": "front",
+      "source_c": 8.0,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 16.084746897829277,
+        "minimum_area_temperature_c": 13.915253102170723,
+        "time_above_delta6_s": 0.7051813081215131,
+        "longest_continuous_above_delta6_s": 0.18091640691286914,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.7051813081215131,
+            "longest_s": 0.18091640691286914
+          },
+          "1": {
+            "total_s": 0.6527388676681082,
+            "longest_s": 0.16701059054007467
+          },
+          "2": {
+            "total_s": 0.6003299056777059,
+            "longest_s": 0.15302656087021765
+          },
+          "3": {
+            "total_s": 0.5479579695126947,
+            "longest_s": 0.13899729165099
+          }
+        },
+        "positive_deficit_dose_k_s": 10.142294090532175,
+        "peak_area_mean_speed_m_s": 1.0173027316779786,
+        "mean_area_temperature_c": 22.39327943210087
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 16.084746897829277,
+          "minimum_area_temperature_c": 13.915253102170723,
+          "time_above_delta6_s": 0.7051813081215131,
+          "longest_continuous_above_delta6_s": 0.18091640691286914,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.7051813081215131,
+              "longest_s": 0.18091640691286914
+            },
+            "1": {
+              "total_s": 0.6527388676681082,
+              "longest_s": 0.16701059054007467
+            },
+            "2": {
+              "total_s": 0.6003299056777059,
+              "longest_s": 0.15302656087021765
+            },
+            "3": {
+              "total_s": 0.5479579695126947,
+              "longest_s": 0.13899729165099
+            }
+          },
+          "positive_deficit_dose_k_s": 10.142294090532175,
+          "peak_area_mean_speed_m_s": 1.0173027316779786,
+          "mean_area_temperature_c": 22.39327943210087
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.0002833193733948747,
+          "minimum_area_temperature_c": 30.000283319373395,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.033786374522055525,
+          "mean_area_temperature_c": 30.000718272076075
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 2.328589026733745,
+          "minimum_area_temperature_c": 27.671410973266255,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 1.3801547120057296,
+          "peak_area_mean_speed_m_s": 0.14468645457399046,
+          "mean_area_temperature_c": 28.964883965995703
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.00025369901277372264,
+          "minimum_area_temperature_c": 30.000253699012774,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.037098263708808525,
+          "mean_area_temperature_c": 30.000686430431553
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": -0.00021938580611546854,
+          "minimum_area_temperature_c": 30.000219385806115,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0,
+          "peak_area_mean_speed_m_s": 0.024197127845018623,
+          "mean_area_temperature_c": 30.000512982769315
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": 1.2174389762898232e-05,
+        "origin_relative_error": 0.00013614696803040805,
+        "energy_relative_error": 0.00013576154922500535
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 28.304478973064345,
+        "area_above_delta6_m2": 0.11195000000000001,
+        "positive_deficit_area_k_m2": 1.8993664082287223
+      }
+    },
+    {
+      "case": "W00_wide_opposed",
+      "layout": "one-side",
+      "distance_m": 0.35,
+      "cells": 40240,
+      "width_m": 0.28,
+      "height_m": 0.04,
+      "wind_m_s": 0.5,
+      "wind_direction": "opposed",
+      "source_c": 0.9592752761782251,
+      "source_mass_kg_s": 0.0776,
+      "duration_s": 10.0,
+      "reference_patch": "left1.15",
+      "reference": {
+        "patch": "left1.15",
+        "walking_speed_m_s": 1.2,
+        "center_crossing_s": 5.0,
+        "complete_path_window_s": [
+          4.333333333333333,
+          5.666666666666667
+        ],
+        "patch_side_m": 0.05,
+        "peak_area_deficit_k": 16.884596159788238,
+        "minimum_area_temperature_c": 13.115403840211762,
+        "time_above_delta6_s": 0.5489237353054897,
+        "longest_continuous_above_delta6_s": 0.5489237353054897,
+        "assumed_upward_temperature_error_k_sensitivity": {
+          "0": {
+            "total_s": 0.5489237353054897,
+            "longest_s": 0.5489237353054897
+          },
+          "1": {
+            "total_s": 0.5116519786805275,
+            "longest_s": 0.5116519786805275
+          },
+          "2": {
+            "total_s": 0.4761878131024605,
+            "longest_s": 0.4761878131024605
+          },
+          "3": {
+            "total_s": 0.43931033958392396,
+            "longest_s": 0.43931033958392396
+          }
+        },
+        "positive_deficit_dose_k_s": 7.601221592068743,
+        "peak_area_mean_speed_m_s": 0.5293624533717635,
+        "mean_area_temperature_c": 24.299083805948445
+      },
+      "all_reference_patches": [
+        {
+          "patch": "left1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 16.884596159788238,
+          "minimum_area_temperature_c": 13.115403840211762,
+          "time_above_delta6_s": 0.5489237353054897,
+          "longest_continuous_above_delta6_s": 0.5489237353054897,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.5489237353054897,
+              "longest_s": 0.5489237353054897
+            },
+            "1": {
+              "total_s": 0.5116519786805275,
+              "longest_s": 0.5116519786805275
+            },
+            "2": {
+              "total_s": 0.4761878131024605,
+              "longest_s": 0.4761878131024605
+            },
+            "3": {
+              "total_s": 0.43931033958392396,
+              "longest_s": 0.43931033958392396
+            }
+          },
+          "positive_deficit_dose_k_s": 7.601221592068743,
+          "peak_area_mean_speed_m_s": 0.5293624533717635,
+          "mean_area_temperature_c": 24.299083805948445
+        },
+        {
+          "patch": "left1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 4.260893632510324,
+          "minimum_area_temperature_c": 25.739106367489676,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 1.2827770793803843,
+          "peak_area_mean_speed_m_s": 0.6296651535125699,
+          "mean_area_temperature_c": 29.03791719046471
+        },
+        {
+          "patch": "right1.15",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.00022350899040191052,
+          "minimum_area_temperature_c": 29.999776491009598,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.00023499226604967174,
+          "peak_area_mean_speed_m_s": 0.49248535359909074,
+          "mean_area_temperature_c": 29.999823755800463
+        },
+        {
+          "patch": "right1.55",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.00042554189675314547,
+          "minimum_area_temperature_c": 29.999574458103247,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0004441243647668653,
+          "peak_area_mean_speed_m_s": 0.5032919303538415,
+          "mean_area_temperature_c": 29.999666906726425
+        },
+        {
+          "patch": "top1.75",
+          "walking_speed_m_s": 1.2,
+          "center_crossing_s": 5.0,
+          "complete_path_window_s": [
+            4.333333333333333,
+            5.666666666666667
+          ],
+          "patch_side_m": 0.05,
+          "peak_area_deficit_k": 0.0007704984581593521,
+          "minimum_area_temperature_c": 29.99922950154184,
+          "time_above_delta6_s": 0.0,
+          "longest_continuous_above_delta6_s": 0.0,
+          "assumed_upward_temperature_error_k_sensitivity": {
+            "0": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "1": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "2": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            },
+            "3": {
+              "total_s": 0.0,
+              "longest_s": 0.0
+            }
+          },
+          "positive_deficit_dose_k_s": 0.0007109917129083941,
+          "peak_area_mean_speed_m_s": 0.5281003752331913,
+          "mean_area_temperature_c": 29.999466756215316
+        }
+      ],
+      "numerical_screens_pass": true,
+      "gates": {
+        "mesh_ok": true,
+        "solver_complete": true,
+        "finite_fields": true,
+        "temperature_bounds": true,
+        "origin_bounds": true,
+        "source_mass": true,
+        "mass_closure": true,
+        "origin_closure": true,
+        "energy_closure": true
+      },
+      "conservation": {
+        "mass_relative_error": -0.0002833662090992211,
+        "origin_relative_error": -0.006089282285300466,
+        "energy_relative_error": 0.002628912274513404
+      },
+      "incident_air_band_snapshot": {
+        "time_s": 5,
+        "plane": "y=-0.2 m; x=-0.8..0.8 m; z=1.0..1.7 m; no body",
+        "area_m2": 1.12,
+        "mean_air_c": 26.784991584062343,
+        "area_above_delta6_m2": 0.229,
+        "positive_deficit_area_k_m2": 3.6008094258501795
+      }
+    }
+  ],
+  "refinement": {
+    "base": {
+      "coarse": "P01_one_d35",
+      "fine": "F00_base_d35",
+      "cells": [
+        36968,
+        101504
+      ],
+      "peak_deficit_change_k": 0.3034205426835328,
+      "total_duration_change_s": -0.02389988892518624
+    },
+    "wide": {
+      "coarse": "R00_wide_d35",
+      "fine": "F01_wide_d35",
+      "cells": [
+        40240,
+        103388
+      ],
+      "peak_deficit_change_k": -0.11235426600227783,
+      "total_duration_change_s": -0.02771094654251849
+    },
+    "wide_minus_base_fine": {
+      "peak_area_deficit_k": -5.832066533608497,
+      "time_above_delta6_s": 0.15402130446159817,
+      "longest_continuous_above_delta6_s": 0.07747275431249351,
+      "positive_deficit_dose_k_s": 0.7689899189021876
+    }
+  },
+  "source": {
+    "active_motors": 4,
+    "mass_kg_s": 0.0776,
+    "supply_c": 0.9592752761779835,
+    "inlet_c": 40,
+    "shaft_work_w": 3360,
+    "ambient_c": 30,
+    "cp_j_kg_k": 1006,
+    "cold_air_power_w": 2267.0816,
+    "free_air_demand_m3_min": 3.888,
+    "nominal_flow_per_four_equal_outlets_kg_s": 0.0194
+  },
+  "reference_passage": "1.2 m/s along x=-0.8 to +0.8 m; centre crossing at 5 s after ideal nozzle activation; moving 5x5 cm square.",
+  "comparison_limit": "Side reference is y=-0.2 m,z=1.15 m; overhead reference is z=1.75 m,y=0. These differ in incident body region. No global comfort/layout ranking.",
+  "error_budget_note": "Duration/error sensitivity uses hypothetical upward temperature bounds. No physical error bound is established.",
+  "body_included": false,
+  "hardware_validated": false,
+  "globally_optimal": false
+}

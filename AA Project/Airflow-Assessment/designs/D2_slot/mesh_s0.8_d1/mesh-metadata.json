@@ -1,0 +1,39 @@
+{
+  "length_unit": "metre",
+  "mesh_scale": 0.8,
+  "domain_scale": 1.0,
+  "patches": {
+    "coldInlet": [
+      8
+    ],
+    "walls": [
+      6
+    ],
+    "upstream": [
+      1
+    ],
+    "downstream": [
+      7
+    ],
+    "windIn": [
+      2
+    ],
+    "windOut": [
+      5
+    ],
+    "top": [
+      3
+    ],
+    "bottom": [
+      4
+    ]
+  },
+  "element_counts": {
+    "Tetrahedron 4": 219772
+  },
+  "nodes": 39837,
+  "target_primary_exit_x_m": 0.2,
+  "target_clearance_x_m": 0.2,
+  "boundary_layer_prisms": false,
+  "status": "Unstructured tetrahedral screening mesh; wall functions required. Not a validated mesh."
+}

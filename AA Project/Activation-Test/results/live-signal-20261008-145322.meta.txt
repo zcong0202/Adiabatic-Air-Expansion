@@ -1,0 +1,34 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# Complete stop; ranging register=0 confirmed=1
+# AA LED prototype; outputs disabled at boot; send ? for commands
+2026-10-08T14:53:49.493647+04:00 command=T
+# ToF idle SDA=3.592V SCL=3.587V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=0 errors=0
+2026-10-08T14:53:50.428101+04:00 recording=resumed
+2026-10-08T14:53:52.603477+04:00 command=S
+# Complete stop; ranging register=0 confirmed=1
+2026-10-08T14:53:52.697042+04:00 recording=paused
+2026-10-08T14:53:53.912634+04:00 command=T
+# ToF idle SDA=3.587V SCL=3.592V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=0 errors=0
+2026-10-08T14:53:54.847444+04:00 recording=resumed
+2026-10-08T14:53:55.852100+04:00 command=S
+# Complete stop; ranging register=0 confirmed=1
+2026-10-08T14:53:55.904001+04:00 recording=paused
+2026-10-08T15:13:56.942806+04:00 command=T
+# ToF idle SDA=3.583V SCL=3.587V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=9 fastosc=48332 budget=32936 directmm=0 errors=0
+2026-10-08T15:13:57.877485+04:00 recording=resumed

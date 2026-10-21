@@ -1,0 +1,8 @@
+{
+  "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37",
+  "case": "D1_compact_w0_m2_T15",
+  "status": "failed",
+  "started_epoch": 1792057008.4512901,
+  "error": "buoyantSimpleFoam failed (133); see /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/cases/D1_compact_w0_m2_T15/log.solver",
+  "elapsed_s": 14.43
+}

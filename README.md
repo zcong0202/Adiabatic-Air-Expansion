@@ -1,5 +1,7 @@
 # Adiabatic Air Expansion — Air-Cycle Bench
 
+> **Engineering project on branch `ege`:** Open [AA Project/project-overview.html](AA%20Project/project-overview.html) for the imported CFD, Lean, CAD, source documents and system calculations. See [AA Project/README.md](AA%20Project/README.md) for scope and evidence, and [native archive instructions](AA%20Project/CFD-Archives/README.md) for large CFD data. Current scope is outdoor pass-by air cooling; the seated calculator below is retained unchanged. The two models have not been harmonised.
+
 A single-page browser calculator for **outdoor seat cooling by expanding compressed air**. You build the gas path from left to right: a source, then coolers, dryers, tanks, regulators and an expander (turbine, vane air motor or vortex tube), then a hose and an outlet. The page shows the temperature, pressure and mass flow between each pair of stages, plus outlet temperature, cooling capacity, airflow and COP compared with air conditioning.
 
 It was built to size the Nov 2026 Dubai demo (a rental compressor feeding 4 × LZB46 vane motors) and to show why a 200–330 bar supply doesn't help.

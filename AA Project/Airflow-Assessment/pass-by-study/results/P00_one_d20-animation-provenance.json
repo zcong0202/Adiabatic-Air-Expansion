@@ -1,0 +1,39 @@
+{
+  "case": "P00_one_d20",
+  "source": "Native transient CFD temperature fields, not particles in a steady field",
+  "native_field_times_s": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0
+  ],
+  "temperature_field_sha256": {
+    "0": "3fa0154384f2a15dbec4675120aa0cee3c1519f287b42631b458c6251b1ce395",
+    "1": "5f2ec185c19e344aa92c529b229429ea44d0e2ea0d15ed791e0c76b3c2152aef",
+    "2": "2043e6ccc61621432d7ed1bd168f8872e98412f28854f4d92340d3eb537bf2ac",
+    "3": "37b8be15298b3650cd01a8813b7ac82d534badd47a2c7fe1ef5a06f630865fee",
+    "4": "c6882f0e68b2d5abe8e4abf6d29a888fc660148a35c0f06700d6a8f5f3257ffb",
+    "5": "99f9851dce72cbe9403f5e7e95dcb9ad11e13893d3b3a9cd269a01eb1985a19e",
+    "6": "16a4edc4206311ad21615ef4fe9a01569acd603d34a8f061ab48f4d2732d62c6",
+    "7": "8846fe165d0089898fc910d12afde750314d35c340453dffafe39e962c2fd0f7",
+    "8": "ace5c3d9ee2eafe54da396aa96a68e5aed690e6e6454d36b070e58f9ed90dd8d",
+    "9": "41894fe3e83e11025d7acac64fdd696b9166111cd1de55d90cea0fcd8fc73302",
+    "10": "e004102984329654f148c6ab287c4f2dc338beaa907a4b39677109809fa6da13"
+  },
+  "display": "Trilinear spatial and linear 1-second temporal interpolation",
+  "probe_trace": "Native approx.25ms cellPoint probes; virtual 5cm square, no human",
+  "frames": 121,
+  "fps": 12,
+  "simulated_interval_s": [
+    0,
+    10
+  ],
+  "body_included": false
+}

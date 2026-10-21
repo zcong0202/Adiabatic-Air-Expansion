@@ -1,0 +1,61 @@
+AA C24 / 3-degree diffuser: PRINTABLE BENCH-TEST PROTOTYPE
+
+PRINT FILE: AA_C24_3deg_PRINT_mm.stl (MILLIMETRES).
+ALTERNATIVE: AA_C24_3deg_GEOMETRY_mm.3mf (geometry only; millimetres).
+EDIT FILE: AA_C24_3deg_EDITABLE.step (units declared as METRES).
+Keep STL scale at 100%. Expected slicer size: 28 x 28 x 177.65 mm.
+This is the same flow geometry as CFD case R07, rotated for printing.
+Mesh checks: closed solid, correct winding, one connected component.
+
+BAMBU H2S / PLA / 0.4 mm NOZZLE
+Import STL into Bambu Studio. Select your installed H2S 0.4 mm profile
+and the profile for your actual PLA. Use 0.20 mm layers as a starting point.
+The supplied orientation puts the 24 mm bore outlet on the bed.
+Do not auto-orient onto its side. Keep the full 2 mm wall in the slice.
+Start with 5 wall loops; inspect the preview for continuous solid walls.
+Keep the bore and both ends OPEN. Do not add internal supports.
+The cone is 3 degrees from vertical, so geometry does not require supports.
+Use an outside-only brim if needed for adhesion. Remove it before testing.
+Use filament-maker temperature and cooling settings.
+If included, AA_C24_H2S_PLA_0p4_sliced.3mf is a Bambu Studio project from
+a completed H2S slice using installed manufacturer presets. It uses Generic
+PLA and the default Cool Plate. Select your ACTUAL PLA and plate in Studio,
+then RE-SLICE. It has not been printed or verified on your printer.
+The CLI reports T65535 as invalid during G-code analysis. That exact command
+comes from the unchanged installed H2S end template for AMS unloading.
+The CLI still returns success. Keep the native manufacturer templates and
+re-slice in Studio; do not hand-edit machine commands or print this blindly.
+See slice-verification.json for the record and estimated time/material.
+
+DIMENSIONS
+Inlet: 8 mm bore; 12 mm outside diameter; 15 mm straight land.
+Cone: 152.649 mm long; 3 degree half angle.
+Outlet: 24 mm bore; 28 mm outside diameter; 10 mm straight land.
+Total length: 177.649 mm. Radial wall: 2 mm.
+Allow for your printer's actual hole-size error. Measure the finished part.
+
+CONNECTION IS STILL OPEN
+The Amazon Jeanoko listing does not establish a verified mating geometry.
+This file includes NO assumed Jeanoko thread or snap fit.
+Measure cold-outlet OD, ID, usable straight length, and any thread.
+A separate measured adapter or flexible sleeve must preserve the 8 mm bore
+and avoid cold-air leaks. Support the long body independently.
+Do not force an interference fit on the vortex assembly.
+Connect only downstream of the vortex cold outlet; no supply-pressure rating.
+Keep the PLA body and mount away from the hot exhaust.
+
+WHAT THE COMPUTATION DOES AND DOES NOT ESTABLISH
+Dry, adiabatic, steady axisymmetric SST CFD: prescribed 2 g/s cold air at
+5 C, ambient 35 C, still air. Predicted mean temperature drop: 9.44 C
+over a 50 x 50 mm target 200 mm FROM THE FINAL OUTLET.
+Source response to this attachment, printed roughness, wall heat pickup,
+hot exhaust, fit, and hardware performance are not validated.
+The video animates tracers in the saved steady mean flow. It is not a
+transient CFD solution and does not resolve turbulence in time.
+
+FIRST BENCH CHECK
+Confirm clear bore and sound walls. Mount without loading the cold port.
+With the attachment installed, measure cold-flow rate and inlet temperature.
+Place the 50 x 50 mm sampling plane 200 mm after the final outlet.
+Compare its area-average air temperature against nearby ambient, with hot
+exhaust routed away. More than 6 C drop remains a physical test target.

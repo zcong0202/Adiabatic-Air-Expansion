@@ -1,0 +1,111 @@
+{
+  "status": "Provisional mounting reference; print coupons before a full nozzle",
+  "reference_product": "Milton S-183, Amazon B00KT9OUD0",
+  "manufacturer_url": "https://miltonindustries.com/products/miltonr-s-183-turbo-blow-gun-nozzle-kit-3-piece-s-183",
+  "manufacturer_thread_statement": "3/8 NPT for S-181 and S-182 guns",
+  "male_gender_basis": "External thread visible in manufacturer product photo",
+  "manufacturer_photo": "https://miltonindustries.com/cdn/shop/products/s-183_fanspraytip_down.jpg?v=1686310893",
+  "thread_construction_reference": "https://github.com/BelfrySCAD/BOSL2/blob/master/threading.scad#pipe-threading",
+  "thread": "Provisional 3/8-18 NPT male, right hand",
+  "thread_pitch_mm": 1.411111111111111,
+  "thread_length_mm": 15.25524,
+  "diametral_taper": "1:16",
+  "approx_base_crest_envelope_diameter_mm": 16.9672,
+  "thread_is_gauge_verified": false,
+  "thread_is_exact_Milton_replica": false,
+  "hex_across_flats_mm": 22.0,
+  "coupon_height_mm": 31.25524,
+  "nozzle_length_mm": 177.64909350182566,
+  "internal_contour_matches_R07": true,
+  "maximum_internal_profile_difference_mm": 1.7763568394002505e-15,
+  "CFD_status": "R07 internal geometry unchanged. No new CFD was run; port fit, source response, wall heat transfer and installation remain unvalidated.",
+  "Jeanoko_fit": "User confirmed on 2026-10-15: a Milton S-183 tip screws directly onto the Jeanoko cold outlet. Printed prototype fit remains untested.",
+  "files": {
+    "NOZZLE_3-8-MNPT_nominal_mm.stl": {
+      "minimum_radial_wall_mm": 1.9999999999999991,
+      "size_mm": [
+        28.0,
+        28.0,
+        177.64909350182566
+      ],
+      "watertight": true,
+      "connected_components": 1,
+      "diameter_undersize_mm": 0,
+      "coupon_only": false,
+      "hardware_fit_verified": false,
+      "sha256": "713ef278086d243c5ed3be8290b915c7751237edbda3cdfdd7ff01a6c28fe35e"
+    },
+    "FIT-COUPON_3-8-MNPT_nominal_mm.stl": {
+      "minimum_radial_wall_mm": 2.0,
+      "size_mm": [
+        22.000000000000007,
+        25.403411844343527,
+        31.25524
+      ],
+      "watertight": true,
+      "connected_components": 1,
+      "diameter_undersize_mm": 0,
+      "coupon_only": true,
+      "hardware_fit_verified": false,
+      "sha256": "467d3965b93107582002bf4c3cc3815b87e3092122adef4a20b9e667bfcfd18c"
+    },
+    "NOZZLE_3-8-MNPT_diameter-minus-0p2_mm.stl": {
+      "minimum_radial_wall_mm": 1.9999999999999991,
+      "size_mm": [
+        28.0,
+        28.0,
+        177.64909350182566
+      ],
+      "watertight": true,
+      "connected_components": 1,
+      "diameter_undersize_mm": 0.2,
+      "coupon_only": false,
+      "hardware_fit_verified": false,
+      "sha256": "cb10d82833967634d129232927888ed98b0d7304b905e686eeb0c13201b82eb8"
+    },
+    "FIT-COUPON_3-8-MNPT_diameter-minus-0p2_mm.stl": {
+      "minimum_radial_wall_mm": 2.0,
+      "size_mm": [
+        22.000000000000007,
+        25.403411844343527,
+        31.25524
+      ],
+      "watertight": true,
+      "connected_components": 1,
+      "diameter_undersize_mm": 0.2,
+      "coupon_only": true,
+      "hardware_fit_verified": false,
+      "sha256": "7cfdcd5b25479ff0e6374e1757ba976d7225b56f1d085fa99a9d7cb97f8e9c6b"
+    },
+    "NOZZLE_3-8-MNPT_diameter-minus-0p4_mm.stl": {
+      "minimum_radial_wall_mm": 1.9999999999999991,
+      "size_mm": [
+        28.0,
+        28.0,
+        177.64909350182566
+      ],
+      "watertight": true,
+      "connected_components": 1,
+      "diameter_undersize_mm": 0.4,
+      "coupon_only": false,
+      "hardware_fit_verified": false,
+      "sha256": "d8b5dd903c513ee877e5c6635a681dab9993adbd6b89a0a979ee47cf7145f356"
+    },
+    "FIT-COUPON_3-8-MNPT_diameter-minus-0p4_mm.stl": {
+      "minimum_radial_wall_mm": 2.0,
+      "size_mm": [
+        22.000000000000007,
+        25.403411844343527,
+        31.25524
+      ],
+      "watertight": true,
+      "connected_components": 1,
+      "diameter_undersize_mm": 0.4,
+      "coupon_only": true,
+      "hardware_fit_verified": false,
+      "sha256": "66eb12ec5eca3545cf695fb1b12616cb3b5192d056aab5d48f349766de204233"
+    }
+  },
+  "reference_tip_fit_user_confirmed": true,
+  "printed_thread_fit_verified": false
+}

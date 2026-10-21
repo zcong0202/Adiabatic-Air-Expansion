@@ -1,0 +1,56 @@
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/motor-seat-study/cad/side-slot-140x80-flow-body.step(1562 ents)  Write  Done[0m
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/motor-seat-study/cad/reference-seat-assembly-envelopes.step(11294 ents)  Write  Done[0m
+{
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "stl_units": "millimetres",
+  "step_units": "metres",
+  "step_reimport_bounds_m": [
+    -0.07240010000000001,
+    -0.05418078646484,
+    -1.0000000000086736e-07,
+    0.07240010000000001,
+    0.05418078646484,
+    0.20500010000000002
+  ],
+  "stl_bounds_mm": [
+    [
+      -72.4,
+      -49.999999999999936,
+      -8.673617379884035e-16
+    ],
+    [
+      72.4,
+      49.99999999341449,
+      205.0
+    ]
+  ],
+  "volume_mm3": 182427.5575021878,
+  "mass_pla_g_at_1_24g_cm3": 226.21017130271287,
+  "exit_open_area_m2": 0.011200000000000002,
+  "inlet_clear_diameter_mm": 95.2,
+  "inlet_spigot_od_mm": 100.0,
+  "overall_length_mm": 205,
+  "nominal_wall_mm": 2.4,
+  "print_setup": "PLA; 0.4 mm nozzle; 0.2 mm layers; 4-6 walls. Orient spigot down; inspect overhangs/supports in slicer. No G-code generated.",
+  "fit_status": "Nominal 100 mm hose slip spigot. Fit, retention and hose/clamp interface require a coupon test. No threaded motor mounting is included.",
+  "cfd_scope": "CFD resolves outlet patches and external flow only. Internal loft separation/loss/velocity uniformity not resolved.",
+  "pressure_scope": "Atmospheric exhaust flow body only. Not a compressed-air pressure component."
+}

@@ -1,0 +1,15 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object epsilon; }
+dimensions [0 2 -3 0 0 0 0]; internalField uniform 1e-06;
+boundaryField {
+xmin { type inletOutlet; inletValue uniform 1e-06; value uniform 1e-06; }
+xmax { type inletOutlet; inletValue uniform 1e-06; value uniform 1e-06; }
+ymin { type inletOutlet; inletValue uniform 1e-06; value uniform 1e-06; }
+ymax { type inletOutlet; inletValue uniform 1e-06; value uniform 1e-06; }
+top { type inletOutlet; inletValue uniform 1e-06; value uniform 1e-06; }
+ground { type epsilonWallFunction; value uniform 1e-5; }
+nozzleWalls { type epsilonWallFunction; value uniform 1e-5; }
+jet0 { type fixedValue; value uniform 0.016397811473179657; }
+jet1 { type fixedValue; value uniform 0.016397811473179657; }
+jet2 { type fixedValue; value uniform 0.016397811473179657; }
+jet3 { type fixedValue; value uniform 0.016397811473179657; }
+}

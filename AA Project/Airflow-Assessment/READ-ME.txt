@@ -1,0 +1,91 @@
+AA concept geometry and rough CFD study
+15 October 2026
+
+Purpose
+Compare proposed delivery geometries at 200 mm from a cold jet.
+Installed source: Jeanoko 08 micro + magnetic base, confirmed by user.
+Milton S-183 and EXAIR small-tube assets are references, not replicas.
+
+Four proposed concepts
+D0_round: 8 mm bore, 40 mm straight passage.
+D1_compact: 8 mm inlet, 6 mm exit; convergence over final 15 mm.
+D2_slot: 8 mm inlet to 16 x 3 mm capsule slot, 40 mm total length.
+D3_shield: D0 plus an open 26 mm ID / 30 mm OD shield, 30 mm long,
+           starting 2 mm beyond the core exit. Mounting supports omitted.
+
+Geometry units
+concept.step and fluid-domain.step explicitly declare METRES.
+wall.stl uses METRES and is intended for CFD.
+wall-mm.stl uses MILLIMETRES for viewers/prototype workflows.
+mesh.msh uses METRES, with named boundary patches.
+Thread geometry is omitted. These are flow concepts, not fitted fabrication
+drawings. A nominal pipe-thread size is not the flow-bore diameter.
+STLs have been checked for watertightness and consistent face winding.
+STEP scale has been independently checked by an OpenCASCADE import.
+
+Assumed screening conditions
+Cold mass flow: 0.002 kg/s.
+Cold approximate total temperature: 15 deg C.
+Ambient: 35 deg C. Crosswind: 0 or 1 m/s.
+Source sensible capacity relative to ambient: 40.2 W.
+These are assumptions, not measured Jeanoko performance or its seller rating.
+Do not apply 6.9 bar at the cold delivery plane.
+
+Reported target
+An assumed 50 x 50 mm square, 200 mm from the primary jet exit.
+The shield also has a sample 232 mm from the jet exit: this leaves 200 mm
+clear of the shield mouth. Values are air fields and advected cooling
+potential. They are not heat removed from skin or a thermal-comfort result.
+
+Model
+OpenFOAM v2506, Linux ARM64, finite volume RANS, k-epsilon.
+The screening solver uses a Boussinesq approximation for buoyancy.
+Constant density is used in continuity. Temperature transport approximates
+total temperature and omits kinetic-energy recovery. Density variation over
+20 K is about 6.7%; this is a model approximation, not validation.
+Final screening convection uses first-order upwind. Numerical mixing is
+mesh-dependent. Baseline and slot refined meshes are supplied separately.
+The model excludes internal vortex physics, source/backpressure coupling,
+condensation, radiation, a human body and compressor electricity.
+
+Read the result status first
+results/study-summary.json gives completion and convergence counts.
+results/screening-results.json includes residuals, native boundary flux
+checks, target metrics and exclusions. A small linear-solver residual does
+not establish nonlinear convergence. Failed or nonconservative cases must
+not be used to select a design. No validated winning geometry is claimed.
+results/refinement-results.json records the finer-mesh checks.
+Early ideal-gas, loose-tolerance and higher-order trials are diagnostics,
+not accepted predictions. Workspace logs retain those attempts.
+
+Files
+designs/: CAD, surface meshes and named fluid volume meshes.
+cases/*bouss*/: OpenFOAM dictionaries, initial fields and solver logs.
+results/: actual sampled-field plots and JSON metrics.
+evidence/: source records, geometry checks and numerical checks.
+scripts/: generators, runner, post-processing and report generation.
+
+Run environment
+Python dependencies are pinned in requirements-cfd.txt.
+Solver image and digest are recorded in evidence/computation-environment.json.
+The scripts use Docker and a mounted work directory. No remote compute or
+paid CFD service is required by this package.
+
+Typical case commands, from this Airflow-Assessment folder
+  python scripts/run_case.py D0_round_bouss_w0
+  python scripts/postprocess.py
+  python scripts/boundary_balance.py
+  python scripts/report_results.py
+
+The runner converts mesh.msh, checks the mesh, initializes flow and runs the
+solver selected by case.json. Initial fields may contain solved warm starts.
+The archive contains final case inputs and diagnostic outputs. Historical
+mid-run numerical changes are recorded in metadata and logs; reproduce a
+clean calculation with final settings, not the discarded startup attempts.
+
+Next use
+Inspect concepts in the continuing project-overview.html in the AA folder.
+Confirm real source flow, temperature and connection geometry before using
+an absolute CFD estimate as an AA hardware prediction. Further iterations,
+mesh/domain/turbulence checks and a physical baseline are needed for a
+validated design ranking.

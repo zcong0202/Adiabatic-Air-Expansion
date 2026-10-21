@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "Screening calculation completed",
+    "Nine proposed layout-distance candidates",
+    "Calculator: 0.30 m / 1.2 m/s = 0.25 s",
+    "Calculator: 0.50 m / 1.2 m/s = 0.416667 s; 1 s pulse = 0.0776 kg",
+    "Exactly one current scope section and two historical-seat warnings",
+    "No desktop or 390 px mobile horizontal overflow",
+    "Historical case explorer remains available; no browser console messages"
+  ],
+  "pass_by_cfd_run": false,
+  "hardware_verified": false
+}

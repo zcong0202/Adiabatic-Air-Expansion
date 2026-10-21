@@ -1,0 +1,13 @@
+{
+  "label": "Rounded slot",
+  "description": "8 mm round inlet to 16 x 3 mm capsule outlet",
+  "bore_mm": 8,
+  "exit_area_mm2": 46.06858347057703,
+  "front_x_m": 0,
+  "name": "D2_slot",
+  "length_unit": "metre",
+  "common_source_bore_mm": 8,
+  "channel_length_mm": 40,
+  "threads": "Omitted, adapter flow passage included as assumed 8 mm bore; not ready for manufacturing.",
+  "geometry_basis": "Proposed design parameters, not measured product dimensions."
+}

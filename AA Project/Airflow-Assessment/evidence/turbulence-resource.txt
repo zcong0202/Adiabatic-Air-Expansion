@@ -1,0 +1,591 @@
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: https://tmbwg.github.io/turbmodels/) ---
+Turbulence Modeling Resource
+for the validation and verification of turbulence models
+Important Note
+As of 02/24/2026, the entire TMR site has been relocated to GitHub; the
+original NASA Langley URL now redirects to a page that points to this new site.  This action has been
+taken to facilitate ongoing maintenance and productivity for the TMR.  Most everything should have
+been carried over relatively seamlessly to the new location.
+New site: https://tmbwg.github.io/turbmodels/index.html
+<- please bookmark this page!
+GitHub repository: https://github.com/TMBWG/turbmodels
+If you have a link to a specific page on the old TMR website, you can find the equivalent page on the new TMR by replacing "turbmodels.larc.nasa.gov/" with  "tmbwg.github.io/turbmodels/" in the hyperlink.
+For instance, the link: "https://turbmodels.larc.nasa.gov/Other_LES_Data/nasa_hump_2009.html" should be changed to "https://tmbwg.github.io/turbmodels//Other_LES_Data/nasa_hump_2009.html" You can also enter your old website below and you will be redirected to the new one:
+Go to New Site
+Purpose
+The purpose of this site is to
+provide a central location where Reynolds-averaged Navier-Stokes (RANS)
+turbulence models are documented.
+This effort is guided by the
+Turbulence Model Benchmarking Working
+Group (TMBWG), a working group of the
+Fluid Dynamics Technical Committee
+of the
+American Institute of Aeronautics and Astronautics (AIAA).
+The objective is to provide a resource for CFD developers to:
+obtain accurate and up-to-date information on widely-used RANS turbulence models, and
+verify that models are implemented correctly.
+This latter capability is made possible through "verification" cases.
+This site provides simple test cases and grids, along with sample
+results (including grid convergence studies) from one or more
+previously-verified codes for some of the turbulence models. Furthermore, by listing various
+published variants of models, this site establishes
+naming conventions in order to help avoid confusion when comparing results
+from different codes.
+The site should also help CFD code users to understand and compare the
+predictions of a variety of models on the fundamental flow problems in
+the validation database.
+Note that it is not the
+intention of this effort to provide validation of turbulence models for a
+wide range of complex flows for diverse applications. While this would
+undoubtedly be valuable, it is beyond the scope of what can be supported.
+Instead, the goal is to provide a set of test cases that illustrate the
+performance of models for flows that capture fundamental phenomena, in order to establish
+a consistent basis of comparison as a starting point from which a more
+thorough validation effort for flows of specific interest to users and
+developers can be conducted.
+The site also serves the turbulence modeling community in other ways.  It
+provides a storehouse of turbulent flow validation databases from
+various sources, including experiment, DNS, and LES.  It includes some information
+about turbulent manufactured solutions.  It provides additional cases and grids
+specifically for use in workshops focused on turbulence model numerical
+analysis.
+Finally, the site should serve as a forum for model developers to help
+disseminate new models to the CFD community.
+If you have any suggestions regarding things that could be added to this website,
+please email the Page Curator(s) listed at the bottom of the page.  Suggestions may
+also be given to the following people in the TMBWG:
+Brian Smith of Lockheed-Martin, or
+George Huang of Wright State University.
+NOTES ON HOW TO USE THIS WEBSITE
+Turbulence Models
+One-Equation Models:
+Spalart-Allmaras
+Nut-92
+Wray-Agarwal
+Two-Equation Models:
+Menter k-omega GEKO
+Menter k-omega SST
+Menter k-omega BSL
+Wilcox k-omega
+Chien k-epsilon
+K-kL
+Explicit Algebraic Stress k-omega
+Explicit Algebraic Stress k-kL
+Three-Equation Models:
+K-e-Rt
+Three-Equation Models plus Elliptic Relaxation:
+K-e-zeta-f
+Seven-Equation Omega-Based Full Reynolds Stress Models:
+Wilcox Stress-omega
+SSG/LRR
+Seven-Equation Epsilon-Based Full Reynolds Stress Models:
+GLVY Stress-epsilon
+Turbulence+Transition Models
+One-Equation Models:
+SA-BCM
+WA-AT
+Two-Equation Models:
+K-gamma
+WA-gamma
+Three-Equation Models:
+SA-AFT
+SA-noft2-Gamma-Retheta
+SST-2003-Menter-Gamma-2015
+Four-Equation Models:
+SST-2003-LM2009
+Nine-Equation Models:
+SSG/LRR-trans
+(Guidelines for submitting a new turbulence model description:
+Guideline-turbmodeldescription.pdf)
+Implementing Turbulence Models into the Compressible RANS Equations
+Notes on running the cases with CFD
+Turbulence Model
+Verification Cases and Grids
+VERIF/2DZP: 2D Zero pressure gradient flat plate
+VERIF/2DCJ: 2D Coflowing jet
+VERIF/2DB:  2D Bump-in-channel
+VERIF/2DANW:  2D Airfoil Near-Wake
+VERIF/2DMEA:  2D Multielement Airfoil
+VERIF/3DB:  3D Bump-in-channel
+Models Currently Applied to Verification Cases:
+(click on number in parentheses in this table to go to the particular validation page)
+MRR
+VERIF/2DZP
+VERIF/2DCJ
+VERIF/2DB
+VERIF/2DANW
+VERIF/2DMEA
+VERIF/3DB
+SA
+4
+(6)
+(3)
+(8)
+(4)
+(3)
+SA-neg*
+4
+(8)
+SA-QCR2000
+3
+(2)
+(2)
+SA-QCR2013
+2
+(3)
+(2)
+SA-QCR2013-V
+1
+(2)
+SA-RC
+3
+(3)
+SA-neg-RC*
+3
+(2)
+SA-RC-QCR2000
+3
+(3)
+(3)
+(2)
+SA-RC-QCR2013
+1
+(3)
+SSTm
+3
+(4)
+(2)
+SST-Vm
+3
+(5)
+(3)
+(3)
+(3)
+SST-2003m
+2
+(3)
+BSLm
+2
+(2)
+(2)
+SSG/LRR-RSM-w2012
+3
+(3)
+(3)
+(3)
+(3)
+Wilcox2006-klim-m
+2
+(2)
+(2)
+(2)
+(2)
+k-kL-MEAH2015m
+3
+(2)
+(2)
+(3)
+*SA-neg results should be essentially
+identical to SA, and SA-neg-RC results should be essentially identical to SA-RC
+(Number of codes included in verification are indicated by the value in parentheses)
+Additional Turbulence Model
+Verification Cases and Grids
+Used in past AIAA-sponsored workshops
+(this section formerly titled "Cases and Grids for Turbulence Model Numerical Analysis")
+Currently includes only SA or SA-QCR2000 verification cases
+2D Finite Flat Plate (SA)
+2D NACA 0012 Airfoil (SA)
+3D Modified Bump (SA-neg)
+3D Modified Supersonic Square Duct (SA-QCR2000)
+2D Hemisphere Cylinder (never completed)
+3D Hemisphere Cylinder (old) (SA-neg)
+3D Hemisphere Cylinder (new) (SA-neg)
+3D ONERA M6 Wing (SA-neg)
+Turbulence Model
+Validation Cases and Grids
+Basic Cases:
+2DZP:
+2D Zero pressure gradient flat plate
+2DML:
+2D Mixing Layer
+2DANW:
+2D Airfoil near-wake
+2DN00:
+2D NACA 0012 airfoil
+ASJ:
+Axisymmetric Subsonic jet
+AHSJ:
+Axisymmetric Hot subsonic jet
+ANSJ:
+Axisymmetric Near-sonic jet
+ASBL:
+Axisymmetric Separated boundary layer
+ATB:
+Axisymmetric Transonic Bump
+Extended Cases:
+2DZPH:
+2D Zero pressure gradient high Mach number flat plate
+2DBFS:
+2D Backward facing step
+2DN44:
+2D NACA 4412 airfoil trailing edge separation
+2DCC:
+2D Convex curvature boundary layer
+2DWMH:
+2D NASA wall-mounted hump separated flow
+ACC-SBLI:
+Axisymmetric Compression Corner Interaction near Mach 7
+ACSSJ:
+Axisymmetric Cold Supersonic Jet
+AHSSJ:
+Axisymmetric Hot Supersonic Jet
+AJM163TM:
+Temperature-Matched Mach 1.63 Axisymmetric Jet
+AJM163H:
+Heated Mach 1.63 Axisymmetric Jet
+AJM163OD:
+Off-Design Mach 1.63 Axisymmetric Jet
+3DSSD:
+3D Supersonic square duct
+AISBLI:
+Axisymmetric Impinging-Shock Boundary-Layer Interaction
+Models Currently Applied to Validation Cases:
+(click on number in parentheses in this table to go to the particular validation page)
+MRR
+2DZP*
+2DML*
+2DANW*
+2DN00*
+ASJ*
+AHSJ*
+ANSJ*
+ASBL*
+ATB*
+2DZPH
+2DBFS
+2DN44
+2DCC
+2DWMH
+ACC-SBLI
+AISBLI
+ACSSJ
+AHSSJ
+AJM163TM
+AJM163H
+AJM163OD
+3DSSD
+SA
+4
+(2)
+(3)
+(2)
+(7)
+(2)
+(2)
+(2)
+(3)
+(2)
+(4)
+(3)
+(2)
+(3)
+(2)
+(2)
+(3)
+(2)
+(2)
+(3)
+SA-QCR2000
+3
+(3)
+SA-RC
+3
+(3)
+(2)
+(2)
+(3)
+(2)
+SSTm
+3
+(2)
+(2)
+(2)
+(3)
+(3)
+(2)
+(2)
+(2)
+(3)
+(2)
+(2)
+SST-Vm
+3
+(2)
+(3)
+(3)
+(2)
+(2)
+(2)
+(4)
+(3)
+(2)
+(3)
+(3)
+(3)
+(3)
+SST-RCm
+2
+(2)
+(3)
+SST-2003m
+2
+(2)
+BSLm
+2
+(2)
+(2)
+(1)
+(2)
+SSG/LRR- RSM-w2012
+3
+(2)
+(2)
+(2)
+(3)
+(2)
+(2)
+(3)
+(2)
+(2)
+Wilcox2006-klim-m
+2
+(2)
+(2)
+(2)
+(2)
+(2)
+(2)
+(2)
+(2)
+(2)
+(2)
+k-kL- MEAH2015m
+3
+(2)
+(2)
+(3)
+(3)
+(3)
+(3)
+(2)
+EASMko 2003-S
+1
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+k-e-Rt
+1
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+(1)
+k-e-Rt-RC
+1
+(1)
+GLVY- RSM-2012
+1
+(1)
+(1)
+(1)
+(1)
+(* indicates "Basic Case")
+(Number of codes included in validation are indicated by the value in parentheses)
+Alternative Validation Case Listing by Flow Physics:
+Free shear flows
+Wall flows
+P- grad- ients
+Curv- ature
+Compressibility
+Secon- dary flows
+Turb Heat Flux
+Higher Mach
+Vortex flows
+Shock
+Separ- ation
+Jet
+Mixing layer
+Wakes
+Law of wall
+Law of wake
+Mixing
+Van Driest I
+Van Driest II
+Boundary layers
+2DZP*
+Y
+Y
+2DZPH
+Y
+Y
+Y
+Y
+ASBL*
+Y
+weak
+weak
+Mixing layer/ wakes
+2DML*
+Y
+2DANW*
+Y
+Jets
+ASJ*
+Y
+ANSJ*
+Y
+Y
+Y
+AHSJ*
+Y
+Y
+ACSSJ
+Y
+Y
+Y
+AHSSJ
+Y
+Y
+Y
+Y
+AJM163TM
+Y
+Y
+Y
+Y
+AJM163H
+Y
+Y
+Y
+Y
+AJM163OD
+Y
+Y
+Y
+Y
+Y
+Airfoils
+2DN00*
+Y
+weak
+2DN44
+Y
+Y
+Bump flows
+ATB*
+Y
+Y
+Y
+Y
+2DWMH
+Y
+Y
+Shock/boundary layer interaction flows
+ACC-SBLI
+Y
+Y
+Y
+Y
+Y
+AISBLI
+Y
+Y
+Y
+Y
+Y
+Internal flows
+2DCC
+Y
+Y
+2DBFS
+strong
+Y
+3DSSD
+Y
+Y
+Y
+Y
+(* indicates "Basic Case")
+"Classical" Turbulence Model Behavior at Very High Reynolds Number
+2DFDC: 2D Fully-Developed Channel Flow
+at High Reynolds Number
+Transition Model
+Verification Cases and Grids
+UNDER CONSTRUCTION
+VERIF/2DTFP: 2D T3A Transitional Flat Plate
+Turbulent Flow Validation Databases
+The data in the following links are publicly available and are provided here as a convenience.  They are provided as-is and accuracy
+is not guaranteed; questions should be directed to the sources of the data provided.
+Data from "Collaborative Testing
+of Turbulence Models"
+Data from Experiments
+Data from Direct Numerical Simulations (DNS)
+Data from Large Eddy Simulations (LES)
+Turbulent Manufactured Solutions
+Information from Lisbon
+"Workshop on CFD Uncertainty Analysis" series
+Related Workshops
+(in reverse chronological order)
+NASA
+High Fidelity CFD Workshop 2025 (concluded)
+Symposium on
+Turbulence Modeling: Roadblocks, and the Potential for Machine Learning 2022 (concluded)
+High
+Fidelity CFD Workshop 2022 (concluded)
+NASA's 40% Challenge
+and CFD Prediction Error Assessment Workshop 2018 (concluded)
+NASA Transition Modeling Workshop 2017 (concluded)
+Model Readiness Rating System (MRR)
+Related External Links to Validation Databases and
+Other Resources
+ERCOFTAC Database
+ERCOFTAC Knowledge Base Wiki
+JAXA DNS Database
+Johns Hopkins Turbulence Databases (JHTDB)
+Kawai Lab - DNS/LES Database
+KTH Boundary Layer DNS/LES Data
+NASA Common Research Model
+NPARC Alliance CFD Verification and Validation
+University of Maryland Wall-Modeled Large Eddy Simulation Resource
+Related External Links to CFD Codes
+CFL3D structured grid code
+FUN3D unstructured grid code
+Recent Significant Site Updates
+07/30/2026 - Added Axisymmetric Impinging SBLI case; renamed Mach 7 compression corner SBLI case
+03/03/2026 - Added the Generalized K-Omega Model by Menter and Matyushenko
+02/24/2026 - Entire TMR site relocated to GitHub; original NASA Langley site now redirects to a page that points to this new site
+----------------- New site: https://tmbwg.github.io/turbmodels/index.html
+----------------- GitHub repository: https://github.com/TMBWG/turbmodels
+06/15/2024 - Renamed "Cases and Grids for Turbulence Model Numerical Analysis" and moved closer to Verification Cases
+07/26/2021 - Added external link to JAXA DNS Database site
+03/24/2021 - clarifications on use of "m" designation when P=mu_t S2 and k term ignored in momentum and energy equations
+in 2-equation models (throughout site)
+11/12/2020 - Added description of SA-AFT 3-eqn turbulence+transition models
+08/28/2020 - introduced SST-Vm variant of SST, and changed SST-V naming to SST-Vm on many of the results pages
+07/20/2020 - Added SA-BCM transition model description
+06/04/2019 - Added NASA Juncture Flow (JF) data
+Page Curators: Ethan Vogel,
+Clark Pederson
+Last Updated: 07/07/2026
+--- END UNTRUSTED EXTERNAL CONTENT ---

@@ -1,0 +1,31 @@
+{
+  "all_passed": true,
+  "desktop": {
+    "count": 16,
+    "results": 1,
+    "scope": 1,
+    "overflow": false,
+    "oldCalculators": true,
+    "body": false
+  },
+  "warm_source_selection": {
+    "supply": 8,
+    "text": "16.08K peak air-area deficit \u00b7 0.705s total / 0.181s continuous above6K \u00b7 10.14K s air-exposure dose.Patch left1.15; 35cm nominal clearance; 10s CFD; 8.00\u00b0C supply; 0m/s wind; 42,792 cells. No body or skin temperature.Native-field audit and all moving patches \u00b7 Temperature/velocity tracesHypothetical upward temperature-error allowances: 0K \u2192 0.705s above6K; 1K \u2192 0.653s above6K; 2K \u2192 0.600s above6K; 3K \u2192 0.548s above6K. These are not established physical error bounds."
+  },
+  "aim_selection": {
+    "duration": 0.47368411400533944,
+    "source": 0.9592752761779835
+  },
+  "media": {
+    "width": 1200,
+    "height": 660,
+    "duration": 10.083333,
+    "error": null
+  },
+  "mobile": {
+    "overflow": false,
+    "details": true
+  },
+  "missing_non_archive_links": [],
+  "archive_link": "Verified by the separate package hash check after archive creation."
+}

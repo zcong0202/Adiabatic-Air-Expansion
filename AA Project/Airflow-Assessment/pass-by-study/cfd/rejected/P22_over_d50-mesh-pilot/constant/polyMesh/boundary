@@ -1,0 +1,15 @@
+FoamFile { version 2.0; format ascii; class polyBoundaryMesh; object boundary; }
+11
+(
+xmin { type patch; nFaces 1260; startFace 117220; }
+xmax { type patch; nFaces 1260; startFace 118480; }
+ymin { type patch; nFaces 1120; startFace 119740; }
+ymax { type patch; nFaces 1120; startFace 120860; }
+top { type patch; nFaces 1152; startFace 121980; }
+ground { type wall; nFaces 1152; startFace 123132; }
+nozzleWalls { type wall; nFaces 104; startFace 124284; }
+jet0 { type patch; nFaces 6; startFace 124388; }
+jet1 { type patch; nFaces 6; startFace 124394; }
+jet2 { type patch; nFaces 6; startFace 124400; }
+jet3 { type patch; nFaces 6; startFace 124406; }
+)

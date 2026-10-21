@@ -1,0 +1,9 @@
+{
+  "package_sha256": "46e7d507b22283b47d8e0c7459474a5a2722ca4f7fb5d2008bba6ff66a6905dc",
+  "fit_verified": false,
+  "mount_reference": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/deliverables/C24-3deg-Milton-mount-reference/mount-reference.json",
+  "slice_reference": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/deliverables/C24-3deg-Milton-mount-reference/mount-slice-verification.json",
+  "no_new_CFD": true,
+  "reference_tip_fit_user_confirmed": true,
+  "printed_thread_fit_verified": false
+}

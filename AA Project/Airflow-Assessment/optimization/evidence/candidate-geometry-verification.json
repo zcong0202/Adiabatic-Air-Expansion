@@ -1,0 +1,30 @@
+[
+  {
+    "candidate": "C24_a7",
+    "independent_step_import_length_mm": 90.1549714238,
+    "expected_length_mm": 90.15477142379675,
+    "watertight": true,
+    "winding_consistent": true
+  },
+  {
+    "candidate": "C16_a5",
+    "independent_step_import_length_mm": 70.72040921105001,
+    "expected_length_mm": 70.72020921104539,
+    "watertight": true,
+    "winding_consistent": true
+  },
+  {
+    "candidate": "C24_a5",
+    "independent_step_import_length_mm": 116.440618422,
+    "expected_length_mm": 116.44041842209077,
+    "watertight": true,
+    "winding_consistent": true
+  },
+  {
+    "candidate": "C24_a3",
+    "independent_step_import_length_mm": 177.649293502,
+    "expected_length_mm": 177.64909350182566,
+    "watertight": true,
+    "winding_consistent": true
+  }
+]

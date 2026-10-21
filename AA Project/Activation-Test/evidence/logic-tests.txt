@@ -1,0 +1,1 @@
+PASS: entry dwell, hysteresis, exit dwell, noise rejection, fault close, maximum-on, re-arm, clock wraparound

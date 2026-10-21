@@ -1,0 +1,297 @@
+AA OUTDOOR COOLING SEAT: MATHEMATICAL VIABILITY
+19 October 2026. Four LZB46-RL-A025-11 motors in parallel.
+Status: conditional feasibility. No seat CFD or hardware validation.
+
+1. EVIDENCE AND SCOPE
+The supplied DOCX defines a proposed environment, not measured boundary conditions.
+It assumes 0.078 kg/s at 1 C, 30/35 C ambient, 55% RH, 0/0.5/1 m/s wind,
+a seated person and about 1 m3 occupied region. It provides no seat geometry.
+The listed A-D outlets are controls. Custom nozzles remain candidates.
+The previous 20 cm / 5x5 cm / >6 K target is a separate historical local target.
+Do not treat previous vortex CFD results as seat predictions.
+
+Manufacturer evidence, retrieved 19 October:
+- Exact motor: 0.84 kW maximum shaft output, 1270 rpm, 6.3 Nm,
+  16.2 atmospheric L/s air use at maximum output, 10 mm inlet hose,
+  16 mm exhaust hose. Lubrication-free vane motor, not a turbine.
+- Manufacturer guide: catalogue data apply at 6.3 bar gauge. Air flow is
+  atmospheric expanded volume, not compressed volume in the motor.
+- Product page says 7 bar maximum; exact ATEX manual says 6.3 bar/nameplate.
+  Use 6.3 bar until the supplier resolves the difference.
+- Exact manual: 40 C maximum surrounding AND compressed-air inlet temperature.
+- Air consumption varies with speed/load and is greatest at free speed.
+  Four full-power motors therefore require the correct external load.
+
+2. MASS AND SHAFT WORK
+FAD_total = 4 * 16.2 * 60 / 1000 = 3.888 m3/min.
+This is a common-reference free-air comparison. Never multiply by supply bar.
+The nominal mass conversion uses the DOCX value 19.4 g/s per motor:
+mdot = 0.0776 kg/s; cp = 1006 J/(kg K); C = mdot cp = 78.0656 W/K.
+The exact catalogue volume reference temperature/humidity must be harmonised
+with the compressor's FAD reference. The page does not state that temperature.
+For example dry air at 20 C and 101325 Pa gives about 0.0780 kg/s total.
+These small reference differences are below the source thermal uncertainty.
+Pshaft = 4 * 840 = 3360 W.
+Pshaft_each = torque * 2 pi * rpm / 60; catalogue rounding closes within 1%.
+
+Steady open-system first law, heat into motor positive:
+mdot * (h01 - h02) = Pshaft - Qmotor.
+h0 = h + V^2/2; ignore elevation. Evaluate bulk states after velocity recovery.
+In a constant-cp approximation:
+Tmotor = Tin - (Pshaft - Qmotor)/C.
+Tsupply = Tin + duct_gain - (Pshaft - Qmotor)/C.
+Qcold = C * (Ta - Tsupply)
+      = Pshaft - C*(Tin-Ta) - Qmotor - C*duct_gain.
+
+At Ta=30 C, Tin=40 C, Qmotor=0, prescribed duct_gain=4 K:
+Tmotor = -3.0407 C; Tsupply = 0.9593 C; Qcold = 2267.1 W.
+The DOCX's -3 C -> 1 C -> about 2.3 kW is internally consistent.
+It is NOT an exhaust temperature guarantee.
+The 4 K gain uses 312.3 W. A 1 C outlet permits only 315.4 W total
+motor-plus-duct heat gain at the catalogue shaft work and chosen mass flow.
+Thus the nominal 1 C value has almost no additional heat-gain margin.
+An 8 C outlet permits 861.9 W total heat gain.
+Every additional 100 W into the collected cold air raises its temperature
+by 1.281 K at the reference flow. Every 1 K of inlet rise costs 78.1 W.
+
+The constant +4 K path is a prescribed heat-budget sensitivity, not a universal
+passive-duct law. For real duct sizing use:
+Ts = Ta + (Tmotor-Ta)*exp(-UA/C).
+Nominal +4 K here corresponds to UA about 10.1 W/K at Ta=30 C.
+This path heats a subambient stream and cools a superambient one.
+No fixed heat-transfer coefficient or 0.5-second warm-up time is universal.
+
+3. EXPANSION METHOD AND LOAD
+Ideal isentropic reference, absolute pressures and kelvin:
+T2s = T1*(p2/p1)^((gamma-1)/gamma), gamma=1.4.
+eta_shaft = Pshaft / [mdot*cp*(T1-T2s)].
+At 6.3 bar gauge -> 1.01325 bar absolute, Tin=313.15 K:
+eta_shaft is about 0.319. This explains the document's assumed 32%.
+It is inferred from the catalogue power/flow pair, NOT an independent measured
+refrigeration efficiency. Motor/body heat exchange remains unmeasured.
+CoolProp HEOS::Air cross-check, same shaft-specific work and Qmotor=0:
+eta_shaft about 0.320; recovered exhaust about -4.32 C;
+with prescribed +4 K path, supply about -0.32 C.
+A real-gas regulator alone gives about 38.72 C from 40 C here.
+The ideal-gas throttle preserves enthalpy and recovered bulk temperature.
+Therefore low-pressure throttling is not a replacement for loaded expansion.
+No 200-bar chain is needed for this specific motor concept.
+
+At fixed rated mass and prescribed +4 K duct rise, 75% shaft work gives
+11.72 C supply; 50% gives 22.48 C. These are energy sensitivities only.
+Actual flow changes with motor load. Do not use them as a motor curve.
+Free running gives zero external shaft power, not the rated cooling mechanism.
+Choose a commercial generator/load or brake with speed control to absorb
+roughly 0.84 kW at 1270 rpm per motor. No matching product is selected here.
+Put its dissipated heat outside the occupied region and cold path.
+If the entire 3.36 kW returns as heat to the cooled zone, it cancels the
+shaft-work cooling term. With the reference heat assumptions, net heat is
+added, even before ambient exchange. A fan powered inside this air stream
+also eventually returns its shaft work as heat to that stream/space.
+
+4. RENTAL COMPRESSOR AND AIR TREATMENT
+Live manufacturer table: XAS 38/48/58/68/78/88/98 provide respectively
+2/2.5/3/3.6/4.5/5/5.4 m3/min at 7 bar gauge.
+The linked brochure gives XAS68 as 3.5 rather than 3.6, and XAHS38 as 2.3
+rather than 2.0. Both versions fail four full-power motors; resolve actual unit.
+XAS78 (4.5 at 7 bar) is the first listed candidate meeting the bare 3.888
+budget and an ASSUMED 15% flow allowance (4.471 m3/min).
+Its bare spare capacity is only 15.7%. A dryer purge, leak or hot-weather
+capacity loss can consume this. XAS88 (5 at 7 bar) has 28.6% bare margin.
+Neither is selected/approved without pressure drops and actual rental options.
+7 bar supply leaves about 0.7 bar above the 6.3 bar motor operating point
+for dryer, filters, regulator, supply hose and distribution, before derating.
+The higher-pressure XATS68/XAHS38 do not solve the four-motor flow deficit.
+
+The compressor's aftercooler and separator are options. They do not establish
+a refrigerated dryer, +3 C pressure dew point, or a guaranteed Tin <=40 C.
+At 35 C ambient, the DOCX +10 K aftercooler assumption produces 45 C inlet,
+which is outside this motor manual's limit. Require inlet approach <=5 K
+at that ambient, or a separately cooled final supply. Derating has no vendor
+map here and cannot silently be assumed to retain the same output.
+
+5. EXHAUST NETWORK AND NOZZLES
+At 1 C/1 atm, actual supply volume is about 0.0603 m3/s.
+V=Q/A, qdynamic=rho*V^2/2, Ar=g*(Ta-Ts)/Ta_kelvin*Dh/V^2.
+Controls: A holes 0.603 m/s (face average 0.121); B 150 mm 3.41 m/s;
+C four 70 mm 3.92 m/s; D plate holes 0.482 and two 50 mm outlets 3.07.
+The document's bulk exit numbers are consistent.
+Hole size, pattern, plate resistance and branch balancing are still unspecified.
+Face average speed alone cannot establish local buoyancy-dominated hole jets.
+
+A motor's 16 mm recommended exhaust hose carries about 15 L/s:
+V about 75 m/s; kinetic head about 3.6 kPa. A 1 m straight length gives
+about 4.5 kPa Darcy loss with an ASSUMED f=0.02.
+This is a screening estimate; use a compressible network for detailed sizing.
+Kinetic head is not all irreversible loss; an efficient diffuser can recover it.
+At 40 mm branch ID: about 12 m/s and 46 Pa/m at the same reference flow.
+Expand promptly into larger branches, then collect into the 150 mm duct.
+Do not infer negligible motor back pressure from the final outlet's 10 Pa.
+The DOCX 1-2 kPa flag is a screening threshold, not a vendor-validated cutoff.
+
+Reuse nozzle concepts, not their old dimensions or CFD predictions.
+A historical 28 mm outlet at this per-motor flow gives about 24.5 m/s.
+The old 8 mm throat gives an incompressible velocity about 300 m/s,
+which flags a compressible/back-pressure constraint, not a valid design state.
+A custom slot with total open area 0.015 m2 gives about 4 m/s; e.g.
+2 x (150 mm x 50 mm) outlets. This is a CAD seed, not an optimal nozzle.
+Include low-loss diffusers, directional slots and hybrid outlets in new tests.
+For an adiabatic passive nozzle: h0 conserved. It can change mixing, reach,
+capture and static temperature, but cannot create extra stagnation cooling.
+
+6. OCCUPIED-ZONE BALANCE
+Let k = fraction of source flow actually entering a chosen uniform zone,
+Cz=k*mdot*cp; mw=ambient exchange mass flow, W=mw*cp.
+L = net heat to zone from occupant, solar-heated panels and other sources,
+    plus any returned shaft-work heat. Do not count one heat source twice.
+Steady balance:
+(Cz+W)*Tz = Cz*Ts + W*Ta + L.
+Delta = Ta-Tz = [Cz*(Ta-Ts)-L]/(Cz+W).
+For target Delta >= d >0:
+W <= [Cz*(Ta-Ts-d)-L]/d.
+Equivalent warm mass limit:
+mw <= [k*mdot*cp*(Ttarget-Ts)-L]/[cp*(Ta-Ttarget)].
+This is a conditional UNIFORM model, not a pointwise torso/neck prediction.
+
+At Ta30, Ts0.9593, k1, target20, L100 W:
+max warm exchange = 0.13782 kg/s = 0.11836 ambient m3/s.
+A 100 W person is only a small part of this system's air-cooling capacity.
+Ambient exchange, source spill and heated panels can dominate the budget.
+At k0.5: allowable warm exchange drops to 0.05491 m3/s.
+At L600 W and k1: it drops to 0.07567 m3/s.
+For only a 6 K zone drop (target24), use the separate threshold in JSON.
+
+A crude wind exchange closure: mw = rho_ambient * Cd * A * Vwind.
+Only the PRODUCT Cd*A is meaningful in this screen.
+With Cd1, 0.5 m/s wind requires effective A <=0.2367 m2;
+at 1 m/s, effective A <=0.1184 m2, before added sun/panel heat or spill.
+One effective m2 at those wind speeds gives about 26.7 / 28.3 C uniform
+zone temperature in the dry baseline. These are illustrative exchange-model
+results, not a prescribed seat opening size. Real exchange needs CFD.
+Shelter direction, buoyancy, wind recirculation and outlet placement set Cd/A/k.
+
+Transient uniform zone, fixed gas mass M, with matched outlet mass flow:
+M*cp*dTz/dt = Cz*(Ts-Tz) + W*(Ta-Tz) + L.
+Tz(t)=Tsteady+(Tinitial-Tsteady)*exp(-t/tau),
+tau=M*cp/(Cz+W).
+Continuous supply renews the cold air. No universal 0.5 s reheating rule follows.
+A buffer changes peak flow and duty; it cannot increase average cold production.
+A pressurised warm receiver can smooth compressor supply. A cold buffer is
+not needed to establish the present continuous-flow concept.
+
+7. MOISTURE, CFD AND SUCCESS CONDITIONS
+At +3 C pressure dew point and 7.31325 bar absolute, humid-air calculation
+gives source water ratio about 0.000662 kg/kg dry air. This supports the DOCX
+0.00065 estimate. At 30 C/55% RH ambient and 1 C source, all 1001 sampled
+enthalpy-conserving mixing ratios remain unsaturated; peak RH about 69.3%.
+Across 30/35 C, supply -3/1/8 C, maximum about 91.8%.
+This supports a no-fog nominal external mixing screen only. It does not
+exclude internal transient icing, liquid carryover, or condensation on cold
+surfaces. Wet motor air can change both reliability and thermal performance.
+
+First correct the source/network, THEN run the seat CFD.
+Use 3D variable-density buoyant flow. Around 30 K contrast at 303 K,
+density changes about 10%; Boussinesq needs an accuracy check.
+The prior constant-density axisymmetric jet solver cannot predict this seat.
+Model person with EITHER a 100 W heat input split between convection/radiation,
+OR fixed skin temperature and predicted heat transfer. Both cannot be imposed
+as independent constraints on the same boundary.
+Include radiation/solar/panel heat, pressure losses and wind two directions.
+Use paired source states from a work/flow/heat budget, not free temperature knobs.
+Include scalar transport to distinguish source capture from cooling utilisation.
+Retain A-D controls; add custom slot/diffuser/hybrid candidates.
+Measure occupied air temperatures separately from cold-zone volume and human
+heat removal. Define torso/neck averaging regions and temporal averaging.
+Do not accept a lower cold pool as proof of upper-body cooling.
+
+Minimum computational gates:
+- Source: coupled catalogue pair, external work sink, motor <=40 C and6.3 bar.
+- Network: pressure-specific FAD, drying/heat budget and exhaust back pressure.
+- Seat: still-air buoyancy, then 0.5/1 m/s front and side wind.
+- Numerics: mesh/time-step sensitivity, mass/enthalpy/scalar closure and stable
+  occupied-region statistics; compare turbulence/scalar diffusivity choices.
+- Claim: target20 C torso/neck and useful person heat removal remain UNPROVED
+  until these cases resolve the capture and warm-exchange rates.
+
+8. FORMAL/Numerical STATUS
+Six new Lean theorems check source target inequality, zone deficit identity,
+zone target inequality, shaft-heat cancellation, four-motor FAD threshold,
+and one concrete reference certificate.
+The reference certificate assumes fully captured source, heat pickup <=312.2624W,
+ambient30, inlet40, shaft3360W, warm thermal flow <=120.72W/K (=0.12 kg/s),
+100W net load, and the steady source/zone balances. It proves Tzone <20 C.
+The equations, catalogue pair, capture, heat and ambient-exchange bounds are
+hypotheses. Lean does not prove that the real seat satisfies them.
+CoolProp EOS and psychrometrics are numerical tools, not kernel-verified physics.
+Run assess.py for calculations; see verification.json and Lean build.log.
+
+OPEN QUESTIONS FOR NEXT CFD STEP
+Seat geometry/openings? Motor-load assembly? Actual rental model/options?
+Cold collector/duct layout? Exact torso/neck temperature sampling regions?
+The current assessment proceeds without hardware; these choose the next cases.
+
+9. EXECUTED CFD/CAD/LEAN LOOP (second phase)
+The user accepted the reference enclosure,0.9 m clear width,0.85 m depth,
+1.8 m height; open front, side panels, roof. All actual hardware is still absent.
+Read results/cfd-cad-loop.json for the latest executed results and checks.
+Read output/pdf/AA-seat-CFD-CAD-Lean-iteration.pdf for the iteration report.
+
+The reference source0.0776 kg/s is four motors. Three active motors give
+0.0582 kg/s and2.52 kW shaft extraction. Per-motor power/flow stays paired.
+The same UA10.074 W/K warms that lower mass more; source is about2.18 C.
+This is more consistent than keeping a fixed4 K rise as mass is reduced.
+The normal three-active mode is a candidate within a four-installed system.
+Do not interpret it as a supplier-approved motor/load assembly or duty scheme.
+
+CFD solves a variable-density perfect-gas energy equation with gravity,
+not the old constant-density axisymmetric jet model. It transports a source
+origin scalar using mass flux. Heat from a100 W block manikin enters the air.
+Solar/radiation, water species and actual motor internals are not resolved.
+
+Two sample air regions have fixed, explicit bounds in every case:
+Torso: x0.42..0.62, y-0.22..0.22, z0.72..1.16 m.
+Neck: x0.42..0.62, y-0.16..0.16, z1.20..1.40 m.
+The mean is a VOLUME mean of air, not skin temperature, not mass-flux mean,
+and not the earlier5x5 cm area target. Weight each cell by its EXACT Cartesian
+intersection volume with that box. Use piecewise-constant cell fields and
+trapezoid time averaging over the last4 saved seconds. A mean <=20 C does
+not imply every point in that region is <=20 C. Fraction below20 is also reported.
+
+The design loop tests rear delivery against four side slots, then reduces
+active source count and tests a finer mesh. Internal CAD-linked RANS rejects
+a50mm spigot feeding a140x80mm slot because of severe reverse flow. A100mm
+spigot reduces expansion and exit nonuniformity. Its short URANS follow-up
+supplies an actual mean velocity/turbulence profile back to the external CFD.
+The CAD and CFD share a205mm flow-body length and140x80mm exit area.
+The final100mm hose spigot has95.2mm clear inlet and2.4mm nominal wall.
+All custom parts are low-pressure exhaust nozzles. Commercial supply parts
+and seat/source envelopes are not complete manufacturing/installation CAD.
+
+For interpreting geometry-to-cooling, define alpha as the volume/time mean
+cold-origin mass fraction in the SAME sampling region. Define an excess term
+E = Tmean - [Ta-(Ta-Ts)*alpha]. This is a diagnostic from the CFD fields.
+Then, by construction:
+Delta = alpha*(Ta-Ts)-E,
+alpha_required_for_target = (Ta-Ttarget+E)/(Ta-Ts), if Ta>Ts.
+Do not treat E and alpha as fixed across a new source, wind or geometry.
+The diagnostics separate source contrast, delivered cold fraction and residual
+warming, but they do not independently validate the flow or thermal model.
+
+An admissible combined upward error e must obey:
+Tcomputed+e <= Ttarget.
+For the older strict6K objective:
+Tcomputed+e < Ta-6.
+The margin from the CFD mean to each threshold is reported. A grid difference
+is NOT a proved bound on e. Lean checks this conditional error-budget logic.
+It does not prove the continuum flow, turbulence, supplier map or hardware.
+
+The source must retain its stated UA/heat budget after the CAD change.
+Use commercial insulated cold-air branches and budget collector, branch and
+nozzle heat pickup together. Increasing a branch diameter reduces speed/loss,
+but can increase exposed area. Nozzle CAD does not establish its thermal UA.
+
+The atmospheric pressure boundary was refined after a no-flow check revealed
+small spurious motion. Final cases use the exact isothermal hydrostatic
+ambient-pressure profile and matching initial pressure. Preliminary cases remain
+in the record with their original boundary assumptions. Initial failed meshes,
+rejected pressure setups and interrupted cases are not accepted designs.

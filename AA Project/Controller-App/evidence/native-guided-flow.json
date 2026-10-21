@@ -1,0 +1,8 @@
+{
+  "passed": [
+    "single Save installs old board firmware; full page readback; settings ACK; isolation acknowledgement enforced",
+    "later Save changes time directly, without build/reinstall",
+    "telemetry HIGH; firmware export through native file bridge; cancellation without false save success"
+  ],
+  "physical_usb": "not tested; native bridge emulated for guided flow"
+}

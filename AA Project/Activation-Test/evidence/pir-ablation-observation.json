@@ -1,0 +1,167 @@
+{
+  "source": "AA Project/Activation-Test/results/live-pir-20261008-135941.csv",
+  "samples": 11726,
+  "pir_edges": [
+    {
+      "ms": 50,
+      "pir": 1
+    },
+    {
+      "ms": 436801,
+      "pir": 0
+    },
+    {
+      "ms": 441903,
+      "pir": 1
+    },
+    {
+      "ms": 444304,
+      "pir": 0
+    },
+    {
+      "ms": 450257,
+      "pir": 1
+    },
+    {
+      "ms": 453558,
+      "pir": 0
+    },
+    {
+      "ms": 458160,
+      "pir": 1
+    },
+    {
+      "ms": 460212,
+      "pir": 0
+    },
+    {
+      "ms": 464314,
+      "pir": 1
+    },
+    {
+      "ms": 467665,
+      "pir": 0
+    },
+    {
+      "ms": 472567,
+      "pir": 1
+    },
+    {
+      "ms": 473868,
+      "pir": 0
+    },
+    {
+      "ms": 478870,
+      "pir": 1
+    },
+    {
+      "ms": 484673,
+      "pir": 0
+    },
+    {
+      "ms": 490726,
+      "pir": 1
+    },
+    {
+      "ms": 495828,
+      "pir": 0
+    },
+    {
+      "ms": 500280,
+      "pir": 1
+    },
+    {
+      "ms": 501530,
+      "pir": 0
+    },
+    {
+      "ms": 508484,
+      "pir": 1
+    },
+    {
+      "ms": 511435,
+      "pir": 0
+    },
+    {
+      "ms": 515437,
+      "pir": 1
+    },
+    {
+      "ms": 527542,
+      "pir": 0
+    },
+    {
+      "ms": 531594,
+      "pir": 1
+    },
+    {
+      "ms": 534496,
+      "pir": 0
+    },
+    {
+      "ms": 538498,
+      "pir": 1
+    },
+    {
+      "ms": 540448,
+      "pir": 0
+    },
+    {
+      "ms": 548052,
+      "pir": 1
+    },
+    {
+      "ms": 556406,
+      "pir": 0
+    },
+    {
+      "ms": 560408,
+      "pir": 1
+    },
+    {
+      "ms": 561658,
+      "pir": 0
+    },
+    {
+      "ms": 565660,
+      "pir": 1
+    },
+    {
+      "ms": 569562,
+      "pir": 0
+    },
+    {
+      "ms": 575664,
+      "pir": 1
+    },
+    {
+      "ms": 578316,
+      "pir": 0
+    }
+  ],
+  "feedback_mismatches": 0,
+  "fault_samples": 0,
+  "ground_truth_labels_available": false,
+  "latest": {
+    "ms": 586570,
+    "mode": "P",
+    "gt": -1,
+    "raw_mm": 0,
+    "median_mm": 0,
+    "range_status": 255,
+    "tof_valid": 0,
+    "tof_age_ms": 586570,
+    "pir_raw": 0,
+    "pir_warm": 0,
+    "state": 0,
+    "command": 0,
+    "feedback": 0,
+    "adc": 0,
+    "feedback_v": 0.0,
+    "match": 1,
+    "fault": 0,
+    "host_time_dubai": "2026-10-08T14:09:32.053152+04:00",
+    "seq": 11726
+  },
+  "interpretation": "Raw PIR transitions recorded. No synchronized occupancy labels; departure delay and still-person accuracy cannot be calculated from this recording."
+}

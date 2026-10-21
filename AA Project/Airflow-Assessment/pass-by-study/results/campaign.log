@@ -1,0 +1,39 @@
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P01_one_d35
+{"case": "P00_one_d20", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": 5.813743223838524e-07, "origin_relative_error": -0.0001422608733983743, "energy_relative_error": -0.0002945560860151822}, "passages": 60}
+{"completed": "P00_one_d20"}
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P02_one_d50
+{"status": "solver ended; audit pending", "started": 1792566024.3177102, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 953.7267966270447}
+{"case": "P01_one_d35", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": 2.4680457286354693e-06, "origin_relative_error": -3.953676793873584e-05, "energy_relative_error": -0.00016985371274179912}, "passages": 60}
+{"completed": "P01_one_d35"}
+{"status": "solver ended; audit pending", "started": 1792566879.667677, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 107.39508008956909}
+{"case": "P10_two_d20", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": -1.9459856277257096e-06, "origin_relative_error": -1.4484640710613944e-05, "energy_relative_error": 7.926324913165387e-05}, "passages": 60}
+{"completed": "P10_two_d20"}
+{"case": "P02_one_d50", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": -0.0003191042940194856, "origin_relative_error": -0.0033013202929161817, "energy_relative_error": -0.0002319099383425446}, "passages": 45}
+{"completed": "P02_one_d50"}
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P11_two_d35
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P12_two_d50
+{"status": "solver ended; audit pending", "started": 1792566990.611647, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 127.24090218544006}
+{"status": "solver ended; audit pending", "started": 1792566989.1207669, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 128.7512903213501}
+{"case": "P12_two_d50", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": 2.6822225209350465e-05, "origin_relative_error": 0.00040515981987086135, "energy_relative_error": 0.00022478993826043585}, "passages": 45}
+{"case": "P11_two_d35", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": -1.4700341142242755e-05, "origin_relative_error": -0.00020424181457552004, "energy_relative_error": 0.0001742044630266472}, "passages": 45}
+{"completed": "P12_two_d50"}
+{"completed": "P11_two_d35"}
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P20_over_d20
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P21_over_d35
+{"status": "solver ended; audit pending", "started": 1792567121.736177, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 133.05045104026794}
+{"status": "solver ended; audit pending", "started": 1792567121.712107, "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37", "elapsed_s": 133.68723797798157}
+{"case": "P21_over_d35", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": -0.0011052092733695282, "origin_relative_error": -0.0119948207806208, "energy_relative_error": 0.0006569115037501527}, "passages": 45}
+{"completed": "P21_over_d35"}
+{"case": "P20_over_d20", "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true}, "conservation": {"mass_relative_error": -0.0005715001675265729, "origin_relative_error": -0.005890685847071017, "energy_relative_error": 0.0003905894061554095}, "passages": 45}
+{"completed": "P20_over_d20"}
+/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cfd/cases/P22_over_d50
+Traceback (most recent call last):
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/scripts/open_flow.py", line 208, in <module>
+    if a.run: run(case)
+              ~~~^^^^^^
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/scripts/open_flow.py", line 198, in run
+    if args[0]=='checkMesh' and 'Mesh OK.' not in (case/log).read_text(): raise RuntimeError('Mesh not accepted')
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Mesh not accepted
+{"case": "P22_over_d50", "error": "Command '['/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/.venv-cfd/bin/python', '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/scripts/open_flow.py', 'P22_over_d50', '--layout', 'overhead', '--distance', '0.5', '--run']' returned non-zero exit status 1."}
+{"completed": ["P00_one_d20", "P01_one_d35", "P10_two_d20", "P02_one_d50", "P12_two_d50", "P11_two_d35", "P21_over_d35", "P20_over_d20"], "failures": [{"case": "P22_over_d50", "error": "Command '['/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/.venv-cfd/bin/python', '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/scripts/open_flow.py', 'P22_over_d50', '--layout', 'overhead', '--distance', '0.5', '--run']' returned non-zero exit status 1."}], "body_included": false}

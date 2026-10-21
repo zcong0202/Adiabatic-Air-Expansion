@@ -1,0 +1,5 @@
+Port                            Protocol Type              Board Name  FQBN            Core
+/dev/cu.Bluetooth-Incoming-Port serial   Serial Port       Unknown
+/dev/cu.debug-console           serial   Serial Port       Unknown
+/dev/cu.usbmodem11301           serial   Serial Port (USB) Arduino UNO arduino:avr:uno arduino:avr
+

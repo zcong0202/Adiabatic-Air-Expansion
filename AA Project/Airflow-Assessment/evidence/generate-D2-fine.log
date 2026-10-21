@@ -1,0 +1,115 @@
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (BSpline)
+Info    : [ 10%] Meshing curve 2 (BSpline)
+Info    : [ 10%] Meshing curve 3 (BSpline)
+Info    : [ 20%] Meshing curve 4 (BSpline)
+Info    : [ 20%] Meshing curve 8 (BSpline)
+Info    : [ 30%] Meshing curve 9 (BSpline)
+Info    : [ 30%] Meshing curve 10 (BSpline)
+Info    : [ 40%] Meshing curve 11 (BSpline)
+Info    : [ 40%] Meshing curve 12 (Line)
+Info    : [ 40%] Meshing curve 13 (Line)
+Info    : [ 50%] Meshing curve 14 (Line)
+Info    : [ 50%] Meshing curve 15 (Line)
+Info    : [ 60%] Meshing curve 16 (BSpline)
+Info    : [ 60%] Meshing curve 17 (Line)
+Info    : [ 70%] Meshing curve 18 (Line)
+Info    : [ 70%] Meshing curve 19 (Line)
+Info    : [ 70%] Meshing curve 20 (Line)
+Info    : [ 80%] Meshing curve 21 (Line)
+Info    : [ 80%] Meshing curve 22 (Line)
+Info    : [ 90%] Meshing curve 23 (Line)
+Info    : [ 90%] Meshing curve 24 (Line)
+Info    : [100%] Meshing curve 25 (BSpline)
+Info    : [100%] Meshing curve 26 (BSpline)
+Info    : Done meshing 1D (Wall 0.0757161s, CPU 0.074455s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 6 (BSpline surface, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 7 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 8 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.232807s, CPU 0.230588s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Input mesh hash 62fa79512a388ed5
+Info    : Creating an empty mesh with 6943 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of       6939 points on   1 threads - mesh.nvert: 4         
+Info    : Recovering 4 missing facet(s)
+Info    : Recover Delaunay
+Info    : All volumes of the BRep were found and colorized accordingly
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      15870 points on   1 threads - mesh.nvert: 6943      
+Info    :           -      14450 points filtered
+Info    :           =       1420 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      14953 points on   1 threads - mesh.nvert: 8363      
+Info    :           -      11571 points filtered
+Info    :           =       3382 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      13041 points on   1 threads - mesh.nvert: 11745     
+Info    :           -       8128 points filtered
+Info    :           =       4913 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      14697 points on   1 threads - mesh.nvert: 16658     
+Info    :           -       8611 points filtered
+Info    :           =       6086 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      15360 points on   1 threads - mesh.nvert: 22744     
+Info    :           -       8756 points filtered
+Info    :           =       6604 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      17091 points on   1 threads - mesh.nvert: 29348     
+Info    :           -      10894 points filtered
+Info    :           =       6197 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       7041 points on   1 threads - mesh.nvert: 35545     
+Info    :           -       4217 points filtered
+Info    :           =       2824 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of        828 points on   1 threads - mesh.nvert: 38369     
+Info    :           -        306 points filtered
+Info    :           =        522 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of         59 points on   1 threads - mesh.nvert: 38891     
+Info    :           -         12 points filtered
+Info    :           =         47 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of          7 points on   1 threads - mesh.nvert: 38938     
+Info    :           -          3 points filtered
+Info    :           =          4 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Improving       7901 tet. on   1 thrd (S & ER)
+Info    : Improving        295 tet. on   1 thrd (S & ER)
+Info    : Improving         75 tet. on   1 thrd (S & ER)
+Info    : Improving         59 tet. on   1 thrd (S & ER)
+Info    : Improving         56 tet. on   1 thrd (S & ER)
+Info    : Improving         56 tet. on   1 thrd (GSC)
+Info    :  	Final tet. mesh contains 238874 tetrahedra
+Info    :  	Final tet. mesh contains 38942 vertices
+Info    : tEmptyMesh  	 = 	    0.019
+Info    : tVerifyBnd  	 = 	    0.004
+Info    : tBndRecovery	 = 	    0.032
+Info    : tConvertMesh	 = 	    0.004
+Info    : tRefine     	 = 	    0.269
+Info    : tOptimize   	 = 	    0.021
+Info    : Done meshing 3D (Wall 0.372205s, CPU 0.341739s)
+Info    : 39837 nodes 234960 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/mesh_s0.8_d1/mesh.msh'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/mesh_s0.8_d1/mesh.msh'
+COMPLETE D2_slot

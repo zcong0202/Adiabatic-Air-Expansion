@@ -1,0 +1,9 @@
+Source: 0714.pptx
+Slide 1: AA | Project | Research Progress Meeting | 07.14 |   | 2026 | Zheng Cong | Matthias  | Fitzky | Martina Mazzarello | Carlo Ratti
+Slide 2: Prototype |   | 1 |   | Compressed Air Tank | (Pin= 150 Atm | ) | 0.5m | 1m  | 2m | Passive Infrared Sensor |   | ( | PIR | ) |   | Sensor
+Slide 3: Prototype |   | 2 | Remote |   | compression |   | & |   | storage | Small |   | diameter |   | high |   | pressure |   | line | Controlled |   | local |   | expansion | Localized |   | comfort |   | zone | MRT |   | & |   | Wind |   | speed |   | constant
+Slide 4: Qatar |   | - |    | Outdoor |   | air |   | conditioning | ID | Air | °C | Ref. | Where | A | Supply | 10 | 2 | Field | B | Supply | 12 | 2 | Seats | C | Local | ≈20 | 1 | People
+Slide 5: Peer-reviewed source: Ghani et al. (2021) | 58 locations | 532 responses | Occupied zone: 21.5-24.8°C | CFD vs. measurement: 1.3°C mean difference
+Slide 6: Dubai |   | - |    | Misting
+Slide 7: 
+Slide 8: UTCI |   | Benchmark |    |          | White

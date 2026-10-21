@@ -1,0 +1,12 @@
+{
+  "isolated_imports_passed": true,
+  "modules": [
+    "open_flow",
+    "analyse",
+    "make_cad",
+    "animate",
+    "summarize",
+    "core_diagnostic"
+  ],
+  "original_workspace_on_sys_path": false
+}

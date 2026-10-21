@@ -1,0 +1,2 @@
+PASS native serial PTY
+Character-device PTY test; physical Uno/DTR/valve still need lab checks.

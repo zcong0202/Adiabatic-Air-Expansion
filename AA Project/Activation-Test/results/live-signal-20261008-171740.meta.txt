@@ -1,0 +1,9 @@
+port=/dev/cu.usbmodem11101
+baud=115200
+# ToF idle SDA=3.573V SCL=3.573V (ADC estimate)
+# ToF prior interrupt config=20
+# ToF VHV init=9B timeout=81 count=80
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# AA LED deployment; automatic start; no continuous-ON cap; keep D8-D7-A0 loopback
+2026-10-08T17:17:42.931035+04:00 recording=resumed

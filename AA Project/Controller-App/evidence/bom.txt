@@ -1,0 +1,329 @@
+9/30/26, 5:50 PM                                            PIR / ToF-Controlled Solenoid — Bench-Test Procurement List
+
+
+
+
+     PIR / ToF-Controlled Solenoid: Bench-Test
+     Procurement List
+     Desktop programming, soldering and control validation before installation · Updated 30 September
+     2026
+
+
+
+          HC-SR501 PIR or VL53L1X ToF sensor → Arduino UNO → 5 V relay → existing 12 V
+          normally-closed solenoid valve
+          Test both sensors one at a time on the desktop before installation. Keep the VL53L1X I²C
+          connection short; the 10 m four-core cable is reserved for PIR testing unless a separate long-
+          distance ToF communication design is validated. The mini UPS supplies 5 V logic power and a
+          separately switched 12 V valve branch. The vortex tube and pneumatic fittings remain in the
+          separate pneumatic procurement document.
+
+
+
+     Required purchases
+                                       SPECIFICATION AND
+               ITEM                                                     EXPECTED DELIVERY                                  PRICE
+                                       ROLE
+
+
+               HiLetgo HC-             Detects a person                 2 Oct 2026                                         AED 16.56
+               SR501 PIR               entering the zone.
+               sensors                 Connect
+               3-pack · motion-        VCC/GND/OUT to
+               detection option        Arduino 5 V/GND/D2;
+                                       the fourth field-cable
+               Open product
+               page   ↗                conductor remains
+                                       spare.
+
+
+               Walfront                Distance-based                   2 Oct 2026                                         AED 41.50
+               VL53L1X ToF             presence option for              Dubai Al Barsha · only 3 left at review            Free delivery
+               sensor                  the fixed standing
+               1 module · 3.3–5        zone. Connect
+               V · I²C · 4 cm–4        VIN/GND/SDA/SCL to
+               m                       Arduino 5
+                                       V/GND/A4/A5.
+               Open product
+               page   ↗                Package includes a
+                                       separate pin header
+                                       that must be soldered
+                                       before Dupont leads
+                                       can be attached.
+
+
+
+file:///Users/cz/Desktop/MIT SCL/AA_Project/03_Research/2026-09-30_Amazon_PIR_ToF_Solenoid_Procurement_bench_review.html                   1/6
+9/30/26, 5:50 PM                                            PIR / ToF-Controlled Solenoid — Bench-Test Procurement List
+
+                                       SPECIFICATION AND
+               ITEM                                                     EXPECTED DELIVERY                                  PRICE
+                                       ROLE
+
+
+               ELEGOO UNO              Runs either sensor               2 Oct 2026                                         AED 39.99
+               R3                      logic and the
+                                       programmable
+               Open product
+               page   ↗                10/20/30 s valve-open
+                                       period.
+
+
+               RobotGCC 1-             Arduino D8 drives the            2 Oct 2026                                         AED 57.00
+               channel 5 V             relay input. Use COM
+               relay                   and NO to switch the
+               Optocoupled             separate 12 V valve
+               relay module            branch; NC remains
+                                       unused.
+               Open product
+               page   ↗
+               MOSWAG                  Connects a USB-C                 2 Oct 2026                                         AED 22.99
+               USB-C to                laptop to the Arduino
+               USB-B data              USB-B port for sketch
+               cable                   upload, serial
+                                       monitoring and bench
+               Open product
+               page   ↗                power. Omit only if an
+                                       equivalent data-
+                                       capable cable is
+                                       already available.
+
+
+               Luocute                 Portable source for              6 Oct 2026*                                        AED 207.93
+               18,000 mAh              both branches. Verify                                                               + AED 35.33 delivery
+               mini UPS                the DC5521 plug fit
+               USB-C 5 V/3.6 A         and center polarity
+               + adjustable            with the multimeter
+               DC2 9/12 V, 2 A         before connecting the
+                                       valve.
+               Open product
+               page   ↗
+               DC 5.5 × 2.1            Converts the mini                2 Oct 2026                                         AED 18.00
+               mm terminal             UPS 12 V barrel
+               adapters                output to screw-
+               5 male + 5              terminal wiring.
+               female                  Confirm fit and polarity
+                                       on the delivered unit.
+               Open product
+               page   ↗
+file:///Users/cz/Desktop/MIT SCL/AA_Project/03_Research/2026-09-30_Amazon_PIR_ToF_Solenoid_Procurement_bench_review.html                          2/6
+9/30/26, 5:50 PM                                            PIR / ToF-Controlled Solenoid — Bench-Test Procurement List
+
+                                       SPECIFICATION AND
+               ITEM                                                     EXPECTED DELIVERY                                  PRICE
+                                       ROLE
+
+
+               Inline fuse             Protects the 12 V                Fastest 3 Oct 2026                                 AED 39.96
+               holders + 1 A           branch. Install one                                                                 + AED 35.88 delivery
+               fuses                   fuse close to the
+               5 × 20 mm · fast-       battery output.
+               blow
+
+               Open product
+               page   ↗
+               12 V inline DC          Manual isolation                 2–6 Oct 2026*                                      AED 29.99
+               switch                  switch for the valve-
+               5.5 × 2.1 mm            power branch.
+               male-to-female ·        “SOLDOUT” is part of
+               only 3 left at          the product title; the
+               review                  reviewed offer
+               Open product            remained orderable.
+               page   ↗
+               1N4007                  One diode across the             2 Oct 2026                                         AED 18.08
+               flyback diodes          solenoid coil: striped
+                                       cathode to valve
+               Open product
+               page   ↗                positive, anode to
+                                       valve negative.
+
+
+               120-piece               Required for direct              2 Oct 2026                                         AED 23.00
+               Dupont                  board and breadboard
+               jumper-wire             connections. Use
+               set                     female ends on the
+               40 male–male +          soldered Walfront
+               40 male–female          header, male ends in
+               + 40 female–            the Arduino UNO
+               female · 20 cm          female headers or
+                                       breadboard, and
+               Open product
+               page   ↗                male–male leads for
+                                       breadboard links.
+
+
+               WAGO 221-               Use four separate                3–5 Oct 2026                                       AED 39.66
+               413 lever               connectors at each                                                                  + AED 35.38 delivery
+               connectors              field-cable end: one
+               Genuine WAGO            each for 5 V, GND,
+               · three-port ·          SDA/OUT and
+               pack of 10              SCL/spare. Each
+                                       connector joins only
+file:///Users/cz/Desktop/MIT SCL/AA_Project/03_Research/2026-09-30_Amazon_PIR_ToF_Solenoid_Procurement_bench_review.html                          3/6
+9/30/26, 5:50 PM                                            PIR / ToF-Controlled Solenoid — Bench-Test Procurement List
+
+                                       SPECIFICATION AND
+               ITEM                                                     EXPECTED DELIVERY                                  PRICE
+                                       ROLE
+
+                                       one signal, using two
+               Open product
+               page   ↗                of its three ports. The
+                                       remaining two
+                                       connectors form the
+                                       three-wire valve/diode
+                                       nodes. One 10-pack
+                                       covers all
+                                       connections; separate
+                                       two-port or four-port
+                                       packs are
+                                       unnecessary.
+
+
+               Duravel 4-core          Long PIR field route             2 Oct 2026                                         AED 102.00
+               flexible cable          with one spare
+               4 × 1.5 mm² · 10        conductor. Do not
+               m                       assume that
+                                       unbuffered VL53L1X
+               Open product
+               page   ↗                I²C will work over 10
+                                       m; keep ToF wiring
+                                       short during the
+                                       desktop test and
+                                       review its installation
+                                       architecture
+                                       separately.
+
+
+               Two-core                Two-conductor 12 V               2 Oct 2026                                         AED 28.50
+               flexible power          run from the
+               cable                   relay/power location to
+               2 × 0.75 mm² ·          the solenoid.
+               10 m
+
+               Open product
+               page   ↗
+               ValueMax wire           Prepares the long                2 Oct 2026                                         AED 29.99
+               stripper and            control and power
+               cutter                  cables.
+
+               Open product
+               page   ↗
+               PESCADOR                Secondary insulation,            2 Oct 2026                                         AED 4.03
+               PVC electrical          labeling and strain
+               tape                    relief. Do not use tape
+
+file:///Users/cz/Desktop/MIT SCL/AA_Project/03_Research/2026-09-30_Amazon_PIR_ToF_Solenoid_Procurement_bench_review.html                4/6
+9/30/26, 5:50 PM                                            PIR / ToF-Controlled Solenoid — Bench-Test Procurement List
+
+                                       SPECIFICATION AND
+               ITEM                                                     EXPECTED DELIVERY                                  PRICE
+                                       ROLE
+
+               Black · single roll     as the primary
+               Open product            connector.
+               page   ↗
+
+                                              Control/power item subtotal                                                          AED 719.18
+
+                                              Listed delivery charges                                                              AED 106.59
+
+                                              Control/power total                                                              AED 825.77
+
+
+     Bench testing, programming and soldering tools
+                                                                                                      EXPECTED
+               ITEM                                   WHY IT IS USEFUL                                                     PRICE
+                                                                                                      DELIVERY
+
+
+               MB-102 solderless                      Temporary 5 V sensor and relay-                 2 Oct 2026           AED 14.00
+               breadboard                             control wiring for desktop
+               830 tie points · single board          programming. Keep the 12 V
+
+               Open product page          ↗           solenoid-current path off the
+                                                      breadboard; use relay screw
+                                                      terminals and WAGO connectors
+                                                      for that branch.
+
+
+               UNI-T UT33D+ multimeter                Required unless an equivalent                   2 Oct 2026           AED 67.00
+
+               Open product page          ↗           meter is available. Verify 5 V/12
+                                                      V, barrel polarity, continuity and
+                                                      coil resistance.
+
+
+               WORKPRO precision                      Required unless suitable tools                  2 Oct 2026           AED 26.98
+               screwdriver set                        are available. Fits relay and DC-
+
+               Open product page          ↗           adapter screw terminals.
+
+
+
+               Fine Boer 40 W soldering               Required only if the lab has no                 2 Oct 2026           AED 29.00
+               kit                                    soldering station. Solder the                                        + AED 10.00 delivery
+               UK plug · stand · solder ·             supplied pin header to the
+               sponge · flux                          Walfront VL53L1X board so the
+
+               Open product page          ↗           existing Dupont leads can
+                                                      connect.
+
+
+
+file:///Users/cz/Desktop/MIT SCL/AA_Project/03_Research/2026-09-30_Amazon_PIR_ToF_Solenoid_Procurement_bench_review.html                          5/6
+9/30/26, 5:50 PM                                            PIR / ToF-Controlled Solenoid — Bench-Test Procurement List
+
+
+                                              Tools including listed delivery                                                      AED 146.98
+
+                                              Main-path total if all tools are                                                 AED
+                                              purchased                                                                        972.75
+
+
+     Optional STEMMA QT quick-connect backup
+                                                                                            EXPECTED
+               ITEM                             COMPATIBILITY                                                              PRICE
+                                                                                            DELIVERY
+
+
+               Adafruit 4209                    Correct male-ended cable for                Fastest 6 Oct 2026*            AED 58.08
+               STEMMA QT to 4 ×                 an Adafruit-style VL53L1X                                                  + AED 33.46 delivery
+               male-header cable                board with a STEMMA QT
+               JST-SH 1.0 mm 4-pin →            socket. The male pins insert
+               four individual 2.54 mm          directly into the Arduino UNO
+               male pins · 150 mm               female headers or a
+                                                breadboard. It does not
+               Open product page
+               ↗                                connect to the selected
+                                                Walfront solder-header board
+                                                and is excluded from the
+                                                main-path total.
+
+
+
+
+     Sensor wiring: HC-SR501 uses 5 V/GND/OUT; VL53L1X uses 5 V/GND/SDA/SCL. The four signals must remain
+     electrically separate; never place different signals in one WAGO connector. Use short Dupont leads and the breadboard
+     for the ToF desktop test. The 10 m cable is not an approved I²C run; reserve it for PIR until a separate long-distance ToF
+     solution is validated.
+     ToF connector check: The selected Walfront listing includes a separate male pin header. Solder that header to the
+     board, then use female-to-male Dupont leads for a direct sensor-to-UNO connection or the listed jumper set and
+     breadboard for bench testing. Adafruit 4209 is the correct STEMMA QT-to-four-male cable, but only for a sensor board
+     with a JST-SH 1.0 mm STEMMA QT socket.
+     Programming setup: Use the existing laptop, the free Arduino IDE and the listed data-capable USB-C-to-USB-B cable.
+     No separate programmer, LED, resistor or extra capacitor is required for the first bench test; the UNO and relay module
+     already provide status indication.
+     Bench gate before installation: Solder and continuity-check the ToF header; read stable ToF distance values; verify PIR
+     triggering; upload and verify the selected 10/20/30 s timing; test relay switching without the valve; then validate the fused
+     12 V valve branch with its flyback diode. Install into the lamp post only after these checks pass.
+     Owned component: U.S. Solid USS-PSV00041, 12 V DC, normally closed, 1/4 in NPT, 0–0.8 MPa, Cv 0.23; excluded
+     from the total.
+     Pricing: The Walfront VL53L1X page showed free delivery to Dubai Al Barsha on 2 October 2026 and only three units
+     remaining at review. Stock and checkout dates can change. Dates marked * still require Dubai-address confirmation.
+
+
+
+
+file:///Users/cz/Desktop/MIT SCL/AA_Project/03_Research/2026-09-30_Amazon_PIR_ToF_Solenoid_Procurement_bench_review.html                          6/6
+

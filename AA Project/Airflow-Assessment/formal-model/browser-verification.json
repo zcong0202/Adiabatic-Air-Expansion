@@ -1,0 +1,90 @@
+{
+  "checks": {
+    "saved_area_fraction_identity": true,
+    "area_and_uniform_models_are_separate": true,
+    "line_heat_sensitivity": true,
+    "required_warm_load_mass": true,
+    "heat_budget_bound": true,
+    "energy_pass_can_coexist_with_area_fail": true,
+    "flow_alone_at_fixed_alpha_no_loss": true,
+    "hot_entrainment_can_fail": true,
+    "ideal_regulator_cannot_make_cold_air": true,
+    "low_pressure_real_regulator_insufficient": true,
+    "bauer_full_duty_fails": true,
+    "source_controls_disable_irrelevant_mass": true,
+    "bauer_half_duty_passes": true,
+    "bank_scales_source_not_assumed_dilution": true,
+    "hp_dry_expander_state": true,
+    "pressure_mismatch_reported": true,
+    "invalid_entrainment_rejected": true,
+    "input_event_updates_results": true,
+    "single_overview_section": true
+  },
+  "count": 19,
+  "passed": true,
+  "observed": {
+    "heat": {
+      "src": {
+        "mass": 2,
+        "tc": 5,
+        "stages": 0,
+        "work": 0,
+        "warnings": [
+          "Manual cold flow and temperature are a candidate operating point, not measured source calibration."
+        ],
+        "provider": {
+          "flow": 200,
+          "maxP": 11,
+          "name": "Assumed current inlet budget"
+        }
+      },
+      "r": 0.9052876979062595,
+      "td": 7.746656760718473,
+      "drop": 8.260294099114143,
+      "alphaRequired": 0.22854232107941622,
+      "maxSource": 12.935374707946508,
+      "maxUA": 0.8425984530101279,
+      "hoseMassMin": 0.47472197292912915,
+      "minMass": 2.414771308519725,
+      "power": 52.769219910955876,
+      "uniformDrop": 5.081292239860936,
+      "energyRequired": 17.324705560838908,
+      "captured": 31.661531946573525,
+      "dutyMax": 1,
+      "supplyPass": true,
+      "inventory": 0
+    },
+    "current": {
+      "src": {
+        "mass": 2,
+        "tc": 5,
+        "stages": 0,
+        "work": 0,
+        "warnings": [
+          "Manual cold flow and temperature are a candidate operating point, not measured source calibration."
+        ],
+        "provider": {
+          "flow": 200,
+          "maxP": 11,
+          "name": "Assumed current inlet budget"
+        }
+      },
+      "r": 1,
+      "td": 5,
+      "drop": 9.124496133349068,
+      "alphaRequired": 0.20689655172413793,
+      "maxSource": 14.930453862098926,
+      "maxUA": 0.8425984530101279,
+      "hoseMassMin": 0,
+      "minMass": 2.173913043478263,
+      "power": 58.290000000000006,
+      "uniformDrop": 5.612903225806448,
+      "energyRequired": 17.324705560838908,
+      "captured": 34.974000000000004,
+      "dutyMax": 1,
+      "supplyPass": true,
+      "inventory": 0
+    }
+  },
+  "scope": "Browser floating-point and UI checks, not Lean proofs or hardware validation"
+}

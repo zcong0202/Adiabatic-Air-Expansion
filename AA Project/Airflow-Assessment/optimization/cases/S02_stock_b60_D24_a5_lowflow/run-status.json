@@ -1,0 +1,8 @@
+{
+  "status": "solver ended; audit required",
+  "start_epoch": 1792412024.028785,
+  "image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37",
+  "initialization_source": "S01_stock_b60_D24_a5",
+  "elapsed_s": 274.74207305908203,
+  "return_code": 0
+}

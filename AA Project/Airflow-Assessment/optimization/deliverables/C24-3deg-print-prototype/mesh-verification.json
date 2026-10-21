@@ -1,0 +1,38 @@
+{
+  "case": "R07_D24_diffuser_3deg_SST",
+  "geometry_changed_from_CFD": false,
+  "transformation": "Rigid rotation only; wide outlet on Z=0, inlet at top",
+  "stl_units": "millimetres",
+  "step_units": "metres, declared within STEP",
+  "bounds_mm": [
+    [
+      -14.0,
+      -14.0,
+      -8.572527703398379e-16
+    ],
+    [
+      14.0,
+      14.0,
+      177.6490936279297
+    ]
+  ],
+  "extents_mm": [
+    28.0,
+    28.0,
+    177.6490936279297
+  ],
+  "watertight": true,
+  "consistent_winding": true,
+  "connected_components": 1,
+  "faces": 12040,
+  "solid_volume_mm3": 19837.922196988482,
+  "nominal_radial_wall_mm": 2,
+  "minimum_analytic_cone_normal_wall_mm": 1.9972590695091477,
+  "stl_sha256": "e65d464df4cb5f37a1893222b75ddd953ea4514a9098d289b639a9a71f81c08b",
+  "hardware_fit_verified": false,
+  "physically_tested": false,
+  "printer_user_supplied": "Bambu H2S, PLA, 0.4 mm nozzle",
+  "slicer_completed": true,
+  "printer_toolpath_verified": false,
+  "connector": "Straight inlet land: 12 mm OD, 8 mm ID, 15 mm long. No inferred thread."
+}

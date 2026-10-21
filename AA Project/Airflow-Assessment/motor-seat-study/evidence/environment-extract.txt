@@ -1,0 +1,89 @@
+CFD inputs: outdoor cooling seat (rental compressor + 4 × LZB46)
+Oct 19, 2026 · @CZ
+Nominal case: 0.078 kg/s of supply air at 1 °C, about 60 L/s, giving about 2.3 kW of sensible cooling. Outlet velocity depends only on the nozzle area; four outlet options are compared below.
+1. Inlet boundary conditions (at the supply outlet)
+Parameter
+Nominal
+Sensitivity range
+Basis
+Mass flow
+0.078 kg/s
+0.070–0.080 kg/s
+4 × LZB46 at 19.4 g/s each (16.2 L/s free air at 6.3 bar g)
+Supply temperature
+1 °C (274.15 K)
+−3 to +8 °C
+Motor exhaust about −3 °C, plus about 4 K gain in the duct. Motor isentropic efficiency 25–40 %
+Supply density
+1.288 kg/m³
+1.256–1.307 kg/m³
+Ideal gas, 101.325 kPa
+Volumetric flow
+60 L/s (about 217 m³/h)
+59–62 L/s
+
+Humidity ratio
+0.00065 kg/kg
+
+Refrigerated dryer at +3 °C pressure dew point, so the atmospheric dew point is about −20 °C
+Cooling capacity (vs 30 °C ambient)
+2.26 kW
+1.7–2.6 kW
+0.078 × 1.006 × ΔT
+Turbulence intensity
+5 %
+5–10 %
+Flow passes through a plenum and duct, which damp the vane-motor exhaust pulsation
+Turbulence length scale
+0.07 × outlet hydraulic diameter
+
+
+2. Ambient and domain conditions
+Parameter
+Suggested value
+Ambient temperature
+30 °C (Dubai, late November, daytime); also run a 35 °C case
+Relative humidity
+55 % (humidity ratio about 0.0147 kg/kg)
+Wind cases
+0, 0.5 and 1.0 m/s, each from two directions: straight into the open front of the enclosure, and from the side
+Occupant
+Seated manikin, about 100 W heat output, skin surface about 34 °C
+Solar radiation
+Recommended for daytime outdoor cases, since the ground and enclosure panels heat up
+Buoyancy
+Must be on. Use the Boussinesq approximation or variable density. Sinking of the cold air is the main mechanism in this design
+Fogging: I checked cold-air and ambient mixtures across all mixing ratios. Because the supply air is very dry, no mixture reaches saturation, so condensation can be ignored. Add an H₂O species only if you want the humidity field.
+3. Outlet options (total flow fixed at 60 L/s)
+Option
+Outlet area
+Outlet velocity
+Behaviour
+A. 0.5 m² perforated plenum, 20 % open
+0.5 m² face, 0.1 m² open
+0.12 m/s face average, about 0.6 m/s through the holes
+Buoyancy-dominated. Cold air sinks and forms a cold pool; sensitive to cross-wind
+B. Open end of the Ø150 mm duct
+0.0177 m²
+3.4 m/s
+Re ≈ 38,000, Ar ≈ 0.012
+C. 4 × Ø70 mm round nozzles (like car vents)
+0.0154 m²
+3.9 m/s
+Re ≈ 20,000, Ar ≈ 0.004. Momentum-dominated near field: cold air stays concentrated, but the jet entrains warm ambient air
+D. Hybrid: 80 % through A, 20 % through 2 × Ø50 mm neck nozzles
+0.1 m² + 0.0039 m²
+Plate about 0.5 m/s, nozzles about 3 m/s
+Whole-body cooling plus a local cold jet at the neck
+Archimedes number: Ar = g·(ΔT/T)·D/V². When Ar ≪ 0.1 the jet is momentum-dominated: it travels forward and only sinks further downstream. When Ar ≫ 1 it is buoyancy-dominated and the cold air drops straight down.
+4. Key outputs to report
+Temperature around the occupant: can torso and neck height reach ≤ 20 °C (ΔT ≥ 10 K)?
+Cold-zone volume: volume below 22 °C, and how it changes as wind goes from 0 to 1 m/s.
+Air speed at the body: above about 0.8–1 m/s at the neck or face feels like an uncomfortable draught; too low and it isn't noticed.
+Jet decay (options B, C, D): distance at which the 1 °C jet warms to 20 °C.
+Cooling utilisation: fraction of the supplied cooling that stays within about 1 m³ around the occupant.
+5. Modelling notes
+Start the domain at the supply outlet. No need to model the motors or the plenum; use the inlet conditions above.
+No inlet pressure needs to be set. The motors exhaust close to atmospheric pressure. Duct and nozzle losses are typically tens of Pa, and outlet dynamic pressure is only about 10 Pa at 4 m/s, so motor operation is essentially unaffected.
+Flag any high-loss design. If an outlet option's total pressure drop exceeds about 1–2 kPa, back pressure on the motors will reduce cooling, and the inlet conditions will need revising.
+Assumptions: motor isentropic efficiency about 32 %, aftercooler outlet 10 K above ambient, about 4 K heat gain in the duct. Once we have measured motor data, the supply temperature is the first value to update.

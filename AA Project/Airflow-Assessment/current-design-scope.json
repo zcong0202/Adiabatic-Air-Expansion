@@ -1,0 +1,64 @@
+{
+  "updated": "2026-10-21",
+  "status": "First outdoor reach screen executed: 16 thermal CFD cases plus hydrostatic rest test. No human body/wake/heat-transfer model.",
+  "confirmed": [
+    "Outdoor installation",
+    "People walk past the nozzles; no seated use",
+    "Air activates when a person passes",
+    "Commercial components except custom nozzles",
+    "Nozzle-to-person study range 0.2 to 0.5 m; not a verified jet reach",
+    "Valve may remain open up to 30 seconds while people walk past"
+  ],
+  "retired": [
+    "Reference seat and stationary seated person as current design",
+    "Enclosure-assisted cooling as current performance evidence",
+    "C24 temperature and speed results as predictions for people walking past"
+  ],
+  "reusable_with_review": [
+    "Loaded-motor first-law source budget, with existing thermal and load assumptions",
+    "Conditional Lean algebra, with hypotheses reviewed",
+    "CFD and CAD tooling",
+    "Nozzle variants as candidates, not selected pass-by designs"
+  ],
+  "open_inputs": [
+    "Nozzle layout and mounting heights",
+    "Walking speed and crowd arrival pattern",
+    "Detection lead distance and valve/line response",
+    "Wind conditions and target body region",
+    "Required cooling duration for each person"
+  ],
+  "proposed_metric": "Moving 5 x 5 cm air-area temperature deficit at the person over exposure; retain >6 K as the investigation target, duration criterion to be agreed. Separately assess added human heat removal.",
+  "required_model_changes": [
+    "Open outdoor domain without assumed seat, side panels or roof",
+    "Moving upright person or validated moving-frame treatment",
+    "Transient valve pulse, cold-line startup and jet travel",
+    "Crosswind, entrainment, body wake and finite exposure"
+  ],
+  "historical_artifacts": "Seat CFD, animations, reports and ZIP remain unchanged historical records. They do not validate pass-by operation.",
+  "assumptions": {
+    "walking_speed_m_s": 1.2,
+    "walking_speed_sensitivity_m_s": [
+      0.6,
+      1.2,
+      1.8
+    ],
+    "distance_sweep_m": [
+      0.2,
+      0.35,
+      0.5
+    ]
+  },
+  "screening_results": "pass-by-study/results/timing-and-energy.json",
+  "lean": "57 printed axiom checks pass; seven new conditional pass-by theorems",
+  "source_input": "pass-by-study/source-input.json",
+  "current_results": "pass-by-study/results/cfd-summary.json",
+  "completed_iteration": [
+    "Nine layout-distance controls at 20/35/50 cm",
+    "140x80 to 280x40 mm outlet comparison and two-grid checks",
+    "Opposing-wind sensitivity at 0.5 m/s",
+    "One-height four-position outlet row and 8 C source sensitivity",
+    "Native cold-core diagnostic followed by 8 degree upward-aim test",
+    "57 printed Lean axiom checks; two watertight parametric CAD variants"
+  ],
+  "next_model": "Add upright moving body/wake and skin heat transfer against ambient baseline; source/valve/line startup and physical thermal state remain unknown."
+}

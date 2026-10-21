@@ -1,0 +1,1 @@
+PASS: virtual UART ingestion, CSV values, Dubai time, metadata, Ctrl-C OFF request. Live Uno not tested.

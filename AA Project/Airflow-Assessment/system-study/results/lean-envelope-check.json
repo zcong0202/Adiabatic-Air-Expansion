@@ -1,0 +1,107 @@
+{
+  "theorem": "AA.stock_reference_target_certificate",
+  "Lean_build_succeeded": true,
+  "theorem_present_in_axiom_audit": true,
+  "conditional_lower_bound_K": 6.5396,
+  "target_strictly_above_K": 6,
+  "cases": [
+    {
+      "case": "S00_stock_b70_D24_a5",
+      "computed_hypotheses_match": false,
+      "conditions": {
+        "area_fraction_at_least_0p27": false,
+        "cold_flow_at_least_2p4_g_s": true,
+        "UA_at_most_0p16_w_K": true,
+        "source_contrast_at_least_36K": false,
+        "hot_offset_at_most_2K": true,
+        "moisture_warming_at_most_0p5K": true,
+        "numerical_case_accepted": true
+      },
+      "effective_area_fraction": 0.23532360806327945,
+      "source_contrast_K": 29.555555555555557,
+      "moisture_warming_K": 0.12358772377962968
+    },
+    {
+      "case": "S01_stock_b60_D24_a5",
+      "computed_hypotheses_match": false,
+      "conditions": {
+        "area_fraction_at_least_0p27": false,
+        "cold_flow_at_least_2p4_g_s": true,
+        "UA_at_most_0p16_w_K": true,
+        "source_contrast_at_least_36K": true,
+        "hot_offset_at_most_2K": true,
+        "moisture_warming_at_most_0p5K": true,
+        "numerical_case_accepted": true
+      },
+      "effective_area_fraction": 0.23532367507457203,
+      "source_contrast_K": 36.22222222222222,
+      "moisture_warming_K": 0.17642807252726733
+    },
+    {
+      "case": "S02_stock_b60_D24_a5_lowflow",
+      "computed_hypotheses_match": false,
+      "conditions": {
+        "area_fraction_at_least_0p27": false,
+        "cold_flow_at_least_2p4_g_s": true,
+        "UA_at_most_0p16_w_K": true,
+        "source_contrast_at_least_36K": true,
+        "hot_offset_at_most_2K": true,
+        "moisture_warming_at_most_0p5K": true,
+        "numerical_case_accepted": true
+      },
+      "effective_area_fraction": 0.23532109564934578,
+      "source_contrast_K": 36.22222222222222,
+      "moisture_warming_K": 0.1691786164618776
+    },
+    {
+      "case": "S03_stock_b60_D28_a5_lowflow",
+      "computed_hypotheses_match": true,
+      "conditions": {
+        "area_fraction_at_least_0p27": true,
+        "cold_flow_at_least_2p4_g_s": true,
+        "UA_at_most_0p16_w_K": true,
+        "source_contrast_at_least_36K": true,
+        "hot_offset_at_most_2K": true,
+        "moisture_warming_at_most_0p5K": true,
+        "numerical_case_accepted": true
+      },
+      "effective_area_fraction": 0.28638152264326283,
+      "source_contrast_K": 36.22222222222222,
+      "moisture_warming_K": 0.27703311384706986
+    },
+    {
+      "case": "S03_stock_b60_D28_a5_lowflow_fine",
+      "computed_hypotheses_match": true,
+      "conditions": {
+        "area_fraction_at_least_0p27": true,
+        "cold_flow_at_least_2p4_g_s": true,
+        "UA_at_most_0p16_w_K": true,
+        "source_contrast_at_least_36K": true,
+        "hot_offset_at_most_2K": true,
+        "moisture_warming_at_most_0p5K": true,
+        "numerical_case_accepted": true
+      },
+      "effective_area_fraction": 0.28456188717001946,
+      "source_contrast_K": 36.22222222222222,
+      "moisture_warming_K": 0.26972795449787235
+    },
+    {
+      "case": "S05_stock_b60_D28_a5_nominal",
+      "computed_hypotheses_match": true,
+      "conditions": {
+        "area_fraction_at_least_0p27": true,
+        "cold_flow_at_least_2p4_g_s": true,
+        "UA_at_most_0p16_w_K": true,
+        "source_contrast_at_least_36K": true,
+        "hot_offset_at_most_2K": true,
+        "moisture_warming_at_most_0p5K": true,
+        "numerical_case_accepted": true
+      },
+      "effective_area_fraction": 0.2859542806432372,
+      "source_contrast_K": 36.22222222222222,
+      "moisture_warming_K": 0.3006575313450135
+    }
+  ],
+  "actual_hardware_hypotheses_established": false,
+  "scope": "Lean proves the implication over reals. This file only checks numerical model outputs against its hypotheses. Supplier/CFD/moisture bounds are still assumptions."
+}

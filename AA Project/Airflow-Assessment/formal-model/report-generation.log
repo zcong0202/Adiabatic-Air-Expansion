@@ -1,0 +1,8 @@
+{
+  "source_states": 90,
+  "source_errors": 0,
+  "proof_checks": 57,
+  "proof_build_success": true,
+  "baseline_area_drop": 9.124496133349075,
+  "baseline_uniform_mass_drop": 5.612903225806448
+}

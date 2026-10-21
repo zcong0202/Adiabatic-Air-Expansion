@@ -1,0 +1,140 @@
+{
+  "large_domain": false,
+  "freestream_tangent": true,
+  "pressure_boundary_revision": "Hydrostatic ambient pressure profile with prghPressure; exact hydrostatic initial p and p_rgh",
+  "case": "F01_wide_d35",
+  "variant": "open-jets",
+  "cells": 103388,
+  "grid_max_h_m": 0.045,
+  "source_mass_kg_s": 0.0776,
+  "source_c": 0.9592752761782251,
+  "ambient_c": 30,
+  "source_mean_speed_m_s": 1.3450808121671087,
+  "source_area_m2": 0.04480000000000004,
+  "patch_areas_m2": {
+    "xmin": 5.940000000000001,
+    "xmax": 5.940000000000001,
+    "ymin": 6.750000000000001,
+    "ymax": 6.750000000000001,
+    "top": 5.5,
+    "ground": 5.5,
+    "nozzleWalls": 0.14720000000000016,
+    "jet0": 0.01120000000000001,
+    "jet1": 0.01120000000000001,
+    "jet2": 0.01120000000000001,
+    "jet3": 0.01120000000000001
+  },
+  "wind_m_s": 0,
+  "wind_direction": "front",
+  "person_heat_w": 0,
+  "additional_panel_heat_w": 0,
+  "solver": "buoyantPimpleFoam",
+  "model": "Dry ideal-gas buoyant URANS k-epsilon; ground and short nozzle blocks only; no body heat or body obstruction.",
+  "geometry": [
+    {
+      "box": [
+        [
+          -0.34,
+          -0.06
+        ],
+        [
+          -0.5900000000000001,
+          -0.55
+        ],
+        [
+          1.13,
+          1.17
+        ]
+      ],
+      "direction": 3,
+      "name": "jet0"
+    },
+    {
+      "box": [
+        [
+          -0.34,
+          -0.06
+        ],
+        [
+          -0.5900000000000001,
+          -0.55
+        ],
+        [
+          1.53,
+          1.57
+        ]
+      ],
+      "direction": 3,
+      "name": "jet1"
+    },
+    {
+      "box": [
+        [
+          0.06,
+          0.34
+        ],
+        [
+          -0.5900000000000001,
+          -0.55
+        ],
+        [
+          1.13,
+          1.17
+        ]
+      ],
+      "direction": 3,
+      "name": "jet2"
+    },
+    {
+      "box": [
+        [
+          0.06,
+          0.34
+        ],
+        [
+          -0.5900000000000001,
+          -0.55
+        ],
+        [
+          1.53,
+          1.57
+        ]
+      ],
+      "direction": 3,
+      "name": "jet3"
+    }
+  ],
+  "source_thermal_status": "Conditional loaded-motor catalogue pair; not measured",
+  "scope": "Unconfined pulsed-jet screen with virtual walking air probes. No person, seat, walls, enclosure or human cooling claim.",
+  "body_regions": {},
+  "limitations": [
+    "No human blockage, wake or heat transfer",
+    "No actual nozzle interior/profile or stock flow-network coupling",
+    "Coarse Cartesian jet screen; grid/domain/turbulence sensitivity needed",
+    "Uniform 5% inlet turbulence hypothesis",
+    "Mounting heights and nominal path are engineering assumptions",
+    "Different layouts target different incident body regions; air-probe results are not body comfort scores"
+  ],
+  "layout": "one-side",
+  "nominal_standoff_m": 0.35,
+  "outlet_width_m": 0.28,
+  "outlet_height_m": 0.04,
+  "pitch_deg": 0,
+  "implied_total_motor_plus_path_heat_w": 312.2624000000187,
+  "source_reference_distance": "Side: nozzle to y=+/-0.2 m plane; overhead: nozzle to z=1.75 m plane.",
+  "domain_m": [
+    [
+      -1.25,
+      1.25
+    ],
+    [
+      -1.1,
+      1.1
+    ],
+    [
+      0,
+      2.7
+    ]
+  ],
+  "valve_model": "Ideal constant nominal cold outlet flow from t=0 to end=10 s, within the 30 s activation limit. Upstream valve delay, line cooling and motor spin-up NOT resolved."
+}

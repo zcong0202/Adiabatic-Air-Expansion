@@ -1,0 +1,16 @@
+FoamFile { version 2.0; format ascii; class dictionary; object controlDict; }
+application buoyantPimpleFoam; startFrom latestTime; startTime 0; stopAt endTime; endTime 25.0; deltaT .005;
+writeControl adjustableRunTime; writeInterval 1; purgeWrite 0; writeFormat ascii; writePrecision 10; writeCompression off; timeFormat general; timePrecision 8; runTimeModifiable true; adjustTimeStep yes; maxCo 0.5; maxDeltaT .04;
+functions { ranges { type fieldMinMax; libs (fieldFunctionObjects); fields (T U origin); executeControl timeStep; executeInterval 20; writeControl writeTime; }
+sourceOrigin { type scalarTransport; libs (solverFunctionObjects); field origin; rho rho; phi phi; schemesField origin; alphaD 1.40845; alphaDt 1.17647; nCorr 1; tolerance 1e-8; executeControl timeStep; executeInterval 1; writeControl writeTime; }
+wallHeat { type wallHeatFlux; libs (fieldFunctionObjects); patches (person panels seat ground); writeControl writeTime; }
+flux_xmin { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name xmin; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_xmax { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name xmax; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_ymin { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name ymin; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_ymax { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name ymax; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_top { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name top; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_jetLeftLower { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name jetLeftLower; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_jetRightLower { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name jetRightLower; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_jetLeftUpper { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name jetLeftUpper; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+flux_jetRightUpper { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name jetRightUpper; operation sum; fields (phi); writeFields false; writeControl writeTime; }
+ }

@@ -1,0 +1,227 @@
+AA SYSTEM FORMULATION - 19 OCTOBER 2026
+Editable source for the technical note and presentation figures.
+No hardware is currently available. All new results are computational.
+
+1. MEETING REQUESTS AND THE ACTUAL DESIGN OBJECTIVE
+The demonstration targets a localized air stream. It does not cool 1 m3 of
+outdoor air or establish whole-body comfort. No shower build is proposed.
+Keep the compressor remote. Use a movable stock pressure hose, a stock cold
+source near the target, and a custom low-pressure nozzle. Minimize the length
+of the COLD path. Route hot exhaust away from the target. A remote compressor
+does not remove vortex exhaust noise. Assess that separately.
+
+Target plane A: 0.05 x 0.05 m, 0.20 m from FINAL nozzle outlet.
+J = Ta - (1/A) integral_A T(y,z) dA. Require J > 6 K.
+Desired screening margin: J >= 7 K under DECLARED stress assumptions.
+Still air first. Crosswind remains a separate three-dimensional problem.
+The target is an area mean, not a mass-flux-weighted temperature or skin load.
+
+2. CONSERVATION LAWS
+Continuity: d(rho)/dt + div(rho*u) = 0.
+Momentum: d(rho*u)/dt + div(rho*u tensor u) = -grad(p)+div(tau)+rho*g.
+Total energy: d(rho*E)/dt + div[u*(rho*E+p)]
+              = div(tau*u - q)+rho*g dot u.
+E = internal energy + |u|^2/2. Fourier heat flux q = -k*grad(T).
+A turbulence closure replaces unresolved fluctuations in a RANS calculation.
+The current screen simplifies to steady, incompressible, constant-density
+RANS with k-omega SST and a passive source scalar theta:
+  div(u) = 0.
+  div(u*theta) = div[(nu/Pr + nu_t/Pr_t)*grad(theta)].
+theta=1 at cold source, theta=0 on incoming ambient boundaries.
+Pr=0.705, Pr_t=0.85. These are modeling choices, not fitted AA data.
+An axisymmetric wedge represents a round nozzle in still air. It cannot
+represent horizontal-jet buoyancy, a body, crosswind, or an offset hot plume.
+
+3. CONTROL-VOLUME ENERGY AND SOURCE METHODS
+Steady device: mdot*(h_out-h_in + (Vout^2-Vin^2)/2 + g*dz)=Qdot-Wdot.
+Low-speed bulk source states below neglect net kinetic and potential changes.
+
+Regulator: Qdot=0, Wdot=0 => h_out=h_in (isenthalpic).
+Ideal gas h=cp*T => T_out=T_in. Real gas T_out=T(Pout,h_in).
+Use absolute pressures and a real-gas EOS for high-pressure throttling.
+Ideal expansion with shaft work: s_out=s_in (isentropic limit).
+T_is/T_in=(Pout/Pin)^[(gamma-1)/gamma], temperatures in KELVIN.
+Real expander: eta_is=(h_in-h_out)/(h_in-h_is).
+Actual work extraction and hardware maps determine the attainable state.
+A limit of 3:1 per stage is an assumed design constraint, not a universal law.
+Under that assumption 200/5=40 requires at least 4 stages, since 3^3=27.
+No matched commercial expander is identified. Turbine chains are excluded
+from the stock-component build shortlist. Their thermodynamic bounds remain
+available in the earlier calculator for explanation only.
+
+Vortex tube: mdot_c=beta*mdot_in; mdot_h=(1-beta)*mdot_in.
+Adiabatic no-work dry balance: T_in=beta*T_c+(1-beta)*T_h.
+T_h=(T_in-beta*T_c)/(1-beta).
+The balance alone does not predict T_c or beta. Use a paired supplier map.
+Current study: approximate EXAIR family curve at 100 psig, candidate 3208,
+227 SLPM inlet. beta=0.6/0.7/0.8 gives nominal drops 86/71/54 F
+(47.78/39.44/30 K). With inlet 34 C, T_c=-13.78/-5.44/+4 C.
+The family curve's applicability to the selected generator and full assembly
+must be confirmed. It is not Jeanoko performance data.
+SLPM-to-mass conversion here ASSUMES 20 C and 101325 Pa. A 10% low-flow
+case is a declared stress. It does not establish the actual reference basis.
+Do not use the catalogue's separate nominal cooling-capacity rating to force
+agreement with the approximate curve. Confirm matched rating conditions.
+
+4. NOZZLE AND DELIVERY
+At assumed rho: V_exit=mdot_c/(rho*A_exit).
+Re=rho*V_exit*D/mu. Ma=V/c_sound.
+Ri ~ g*(Ta-Tdelivery)/(Ta+273.15)*L/V_target^2.
+Ri is a warning about buoyancy significance, not a correction to this solver.
+For an adiabatic passive nozzle h+V^2/2 is conserved. Lower static temperature
+from acceleration does not remove stagnation enthalpy. A temperature sensor
+in fast flow may not read the relevant recovered bulk temperature.
+
+Custom axisymmetric cone: inlet bore 8 mm, outlet bore D, half angle a.
+Cone length=(D-8)/(2*tan(a)); total length=cone length+15+10 mm.
+Wall radial thickness=2 mm. The 8 mm source interface is an abstraction.
+Manufacturer CAD/thread/bore data are still needed for an EXAIR fitted adapter.
+The historical Milton/Jeanoko fit does not prove an EXAIR mounting fit.
+The CFD matches the internal contour. It omits the exterior nozzle body and
+uses a zero-thickness outlet lip. The printed 2 mm wall/lip needs full 3D
+geometry verification. The lumped U uses the inner wetted reference area.
+
+Cold-path heat pickup: mdot_c*cp*dT/dx = U*Pwall*(Tsurround-T).
+For constant surroundings and integrated UA:
+r=exp[-UA/(mdot_c*cp)]; Td=Te-(Te-Ts)*r.
+UA is W/K. U is W/(m2 K). Do not confuse them.
+Cone wall area = pi*(r_in+r_out)*sqrt(Lcone^2+(r_out-r_in)^2)
+                + pi*D_in*L_in + pi*D_out*L_out.
+The current screen uses UA=U*wall_area and Te for both entrainment and wall
+surroundings. This is a one-way lumped correction, not conjugate CFD.
+If Ts already means the measured final outlet, exclude upstream heat pickup.
+
+5. AREA-AVERAGE MIXING AND STRICT FEASIBILITY
+Dry equal-cp local law: T(y,z)=Te-theta(y,z)*(Te-Td).
+alpha_A=(1/A) integral_A theta dA.
+J=Ta-Te+alpha_A*r*(Te-Ts).
+For nonuniform velocity alpha_A differs from cold mass CAPTURE efficiency,
+the mass-flux-weighted source fraction, and the vortex split beta.
+
+Let C=delta+Te-Ta and B=alpha_A*(Te-Ts). With positive denominators:
+  J>delta iff alpha_A > C/[r*(Te-Ts)].
+  J>delta iff Ts < Te-C/(alpha_A*r).
+  J>delta iff UA < mdot_c*cp*ln(B/C).
+  For B>C>0, mdot_c > UA/[cp*ln(B/C)] at FIXED alpha_A.
+The last expression is a heat-retention bound, not an overall flow design.
+If B<=C, mass alone cannot rescue the target at fixed source and dilution.
+The geometry-to-alpha relation must come from CFD or data.
+For the selected 28 mm reference geometry at 90% flow, the saved dry CFD
+gives about 1.485 g/s captured cold-origin air and 3.109 g/s entrained-origin
+air through the target. Source delivery is 2.460 g/s; not all of it crosses
+the 5 x 5 cm target. The calculated source capture is about 60.4%.
+Area source fraction is about 31.62%; mass-flux-weighted fraction is 32.32%.
+These are CFD outputs under the declared model, not measured hardware data.
+
+Alternative UNIFORM target: captured cold m=eta_capture*mdot_c; warm inflow mw.
+Tmix=[m*Td+mw*Te+Q_extra/cp]/(m+mw).
+Pass iff m*(Ta-Td-delta) > mw*(Te-Ta+delta)+Q_extra/cp.
+Scaling both incoming mass flows equally leaves the loss-free Tmix unchanged.
+It raises power, but it does not automatically improve temperature.
+
+6. MOISTURE, STRESSES AND EVIDENCE
+For moist mixing, conserve dry-air mass, water mass and enthalpy.
+With humidity ratios w_i and local transported humid-air fraction f:
+f_dry=[f/(1+w_c)]/[f/(1+w_c)+(1-f)/(1+w_a)].
+w_mix=f_dry*w_c+(1-f_dry)*w_a.
+h_mix=f_dry*h_c+(1-f_dry)*h_a.
+If the resulting state supersaturates, solve for equilibrium temperature,
+including retained liquid-water enthalpy. At target temperatures above 0 C
+the current numerical companion uses liquid water, not ice.
+Source moisture uses an ASSUMED +3 C pressure dew point at the vortex inlet.
+That is a dryer selection requirement, not a verified quoted-dryer rating.
+The bulk outlet check does not exclude colder internal vortex regions or
+surface icing. The supplier's required dew point may demand a stock
+desiccant dryer. A +3 C pressure dew point is a numerical assumption here,
+not confirmation that a refrigerated dryer is sufficient for the assembly.
+This does not simulate droplets, ice, surface wetting, or water separation.
+
+Declared stresses combine: 20% smaller source temperature drop, source inlet
+4 K above ambient, entrained/wall surroundings 2 K above ambient, 10% lower
+source mass (new CFD), additional 10% erosion of calculated area fraction,
+U=20 W/(m2 K), ambient RH=80%, and pressure dew point +3 C.
+These ranges are proposed engineering screens. They are not manufacturer
+bounds, statistical intervals, or experimentally calibrated uncertainty.
+Recompute theta for source flow or geometry changes. Frozen-theta screening
+cannot establish the response of a new operating point.
+
+7. COMPRESSOR, HOSE AND BUFFER
+FAD mass: mdot=P_ref*Q_ref/(R*T_ref). Do not multiply reference L/min by bar.
+Mean supply constraint: duty*N*Q_in <= Q_compressor on a common reference.
+BAUER 100 vs one 227 L/min source: ideal duty <=0.4405.
+A 3 s pulse needs period >=6.81 s under this ideal average mass balance.
+Kaneez quoted 1000-1200 L/min could support 4 such sources by ideal inlet
+flow alone. Pressure-specific FAD, rated duty and dryer capacity are unverified.
+One vortex does not consume the whole compressor output automatically.
+
+Peak inventory swing >=max(0,mdot_demand-mdot_production)*pulse_duration.
+Uniform isothermal ideal-gas receiver inventory swing:
+Delta M=V*(P_high-P_low)/(R*T), with absolute pressures.
+Fast blowdown cools the receiver, changes pressure and delivery, and requires
+a transient gas/wall energy model. This formula is not a pressure-vessel design.
+A stock compressed-air receiver stores feed mass. It is not a cold-air tank.
+Cold buffer energy deficit E=M*cp*(Ta-Tbuffer) needs its own charging,
+withdrawal, heat leakage and pressure balance. A buffer cannot improve the
+average source energy budget or prevent dilution after discharge.
+
+Use a ~10 m COMPRESSED feed hose and place the vortex near the custom nozzle.
+For a smooth turbulent hose: dp=f_D*(L/D)*rho*V^2/2, f_D~0.3164/Re^0.25.
+The companion computes a mean-density screen. Add filters, dryer, fittings
+and regulator headroom. Stock component Cv/flow curves must close the chain.
+An ideal isothermal compression lower bound is Wdot_min=mdot*R*T*ln(P2/P1).
+Actual electrical demand includes compressor inefficiency, cooling, dryer,
+idle cycling and controls. The motor-nameplate conversion is not actual COP.
+Report cold sensible potential Qcold=mdot_c*cp*(Ta-Td), target advected
+deficit integral_A rho*cp*u_normal*(Ta-T)dA, and electrical power separately.
+None of these alone equals heat removed from a person.
+For a person-surface model: Qskin=integral_A h(y,z)*(Tskin-Tair) dA.
+At fixed, uniform h and skin temperature, incremental heat removal is
+Delta Qskin=h*A*Delta Tair. For an ILLUSTRATIVE assumed h=20 W/(m2 K),
+A=0.0025 m2 and Delta Tair=6 K, this is 0.30 W. The chosen h is not an AA
+measurement or a comfort prediction. Higher airspeed changes h as well as
+entrainment. A source enthalpy flow of ~130 W is not ~130 W delivered to skin.
+
+8. WHAT LEAN PROVES
+The pinned project proves dry mixing/area identities, exact strict bounds,
+heat-retention and exposure-time inequalities, source-method implications,
+vortex branch energy balance, supply/duty/inventory bounds, a conservative
+area-envelope theorem, and the nozzle static/kinetic energy identity.
+Given alpha>=amin, r>=rmin, Te-Ts>=spanmin, Ta-Te>=-hot with nonnegative
+lower bounds, it proves J >= -hot+amin*rmin*spanmin.
+The proof does not establish that physical source/CFD errors obey those bounds.
+Concrete stock-reference certificate: alpha_A >=0.27, mc>=0.0024 kg/s,
+UA<=0.16 W/K, Te-Ts>=36 K, Ta-Te>=-2 K and added moisture warming<=0.5 K
+give J>=-2+0.27*0.93*36-0.5=6.5396 K>6 K.
+Lean proves retention>=0.93 from those mass/UA bounds using exp(x)>=1+x.
+No floating exponential is trusted for that implication. Numerical screening
+checks whether a computed case supplies these inputs. That check does not
+prove the empirical source, CFD closure or moisture model physically correct.
+The Lean kernel checks symbolic consequences. Floating EOS, psychrometrics,
+PDE discretization, RANS closure and the hardware remain outside that proof.
+
+9. RECURSIVE COMPUTATIONAL WORKFLOW AND STOP RULE
+Read stock maps and freeze source/installation constraints.
+Generate candidate CAD parameters and source operating point together.
+Reject flow/pressure/duty mismatch and impossible thermal budgets.
+Run a fresh CFD solution for each changed flow or geometry.
+Check mesh, solver end, residuals, native balances, bounded scalar,
+target stability and full-field stability. Failed cases cannot enter ranking.
+Apply declared heat, source, entrainment and moisture stresses.
+Use the result to choose the next paired source state or nozzle dimension.
+Recompute the low-flow corner. Refine a passing mesh and compare the result.
+Stop when the declared model envelope meets the margin and mesh gate, or
+when the six-case campaign budget ends. Preserve failures and next questions.
+The result is a bounded computational shortlist, not a global hardware optimum.
+Next physical models: 3D variable-density/buoyant flow, crosswind, hot exhaust,
+transients, wall heating, moisture transport, and person heat transfer.
+No hardware is required to run those models. Hardware is eventually required
+to establish source maps, mounting fit, noise and actual delivered performance.
+
+PRIMARY REFERENCES
+EXAIR live family data: https://www.exair.com/vt.html
+BAUER JUNIOR II: https://www.bauer-kompressoren.de/de_de/junior-ii
+Thermodynamics: https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node17.html
+Work expansion: https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html
+OpenFOAM runtime: pinned microfluidica/openfoam 2506 image digest in config/results.
+Lean source and dependency pins: ../formal-model/.
+All project inputs and executed-case evidence: config.json and results/campaign.json.

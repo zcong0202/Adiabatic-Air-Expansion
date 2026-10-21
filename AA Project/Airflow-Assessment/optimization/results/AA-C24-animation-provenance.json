@@ -1,0 +1,39 @@
+{
+  "visualization": "Animated deterministic tracer advection through a frozen steady RANS velocity field",
+  "not_transient_cfd": true,
+  "source_case": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/optimization/cases/R07_D24_diffuser_3deg_SST",
+  "saved_iteration": "5124 (solver iteration, not seconds)",
+  "frames": 192,
+  "fps": 24,
+  "playback_duration_s": 8.0,
+  "mean_flow_time_per_video_second_s": 0.024,
+  "path_integration": "Explicit midpoint RK2, 20 microsecond step, linear cell-centre interpolation, mirrored axisymmetric midplane",
+  "temperature_field": "35 - 30*theta in degrees C; unchanged saved passive scalar",
+  "flow_geometry_changed": false,
+  "physical_validation": false,
+  "input_sha256": {
+    "C": "76ed4b6f49415350237cbb3f6fa62e2b3b32f5426273588c863bcd6c555f99fc",
+    "U": "a4b140d5ea5e72de1f4397432aef2fc716979e01d397b783549f5c0d520f8caf",
+    "theta": "0a62d111dd36eb750461a6be0a779ee29ac82e022992251f04d7594c5bb9c675"
+  },
+  "mp4_sha256": "3a06f1cc9330d72836b8932adee142d727413de515b14685f428e221d980786a",
+  "path_time_to_display_exit_s": [
+    0.15188000000000001,
+    0.13854000000000002,
+    0.12940000000000002,
+    0.12288000000000002,
+    0.11810000000000001,
+    0.11464,
+    0.11228,
+    0.11092,
+    0.11056,
+    0.11092,
+    0.11228,
+    0.11464,
+    0.11808,
+    0.12288000000000002,
+    0.12940000000000002,
+    0.13854000000000002,
+    0.15188000000000001
+  ]
+}

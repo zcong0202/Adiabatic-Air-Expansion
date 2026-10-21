@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "name": "one loop section",
+      "passed": true
+    },
+    {
+      "name": "case data matches generated results",
+      "passed": true
+    },
+    {
+      "name": "selected thermal candidate matches",
+      "passed": true
+    },
+    {
+      "name": "earlier calculators remain available",
+      "passed": true
+    },
+    {
+      "name": "desktop no body overflow",
+      "passed": true
+    },
+    {
+      "name": "case selection reports failed continuation",
+      "passed": true
+    },
+    {
+      "name": "selected movie exists",
+      "passed": true
+    },
+    {
+      "name": "supporting file links resolve",
+      "passed": true
+    },
+    {
+      "name": "video metadata decodes",
+      "passed": true
+    },
+    {
+      "name": "mobile no body overflow",
+      "passed": true
+    },
+    {
+      "name": "local page has no browser errors",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "media": {
+    "duration": 10.083333,
+    "width": 1150,
+    "error": null
+  }
+}

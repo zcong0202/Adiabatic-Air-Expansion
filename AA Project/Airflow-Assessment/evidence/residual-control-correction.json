@@ -1,0 +1,17 @@
+{
+  "change": "Correct pressure residual-control field name p_rgT to p_rgh in final input dictionaries and generator.",
+  "effect": "Stopping criterion only. No equation coefficients changed. Completed sampled fields are unchanged. Final velocity residuals exceed the existing U threshold, so no run is newly accepted as converged.",
+  "cases": [
+    "cases/D2_slot_bouss_fine/system/fvSolution",
+    "cases/D0_round_bouss_w1/system/fvSolution",
+    "cases/D0_round_bouss_w0/system/fvSolution",
+    "cases/D1_compact_bouss_w1_retry/system/fvSolution",
+    "cases/D3_shield_bouss_w0/system/fvSolution",
+    "cases/D3_shield_bouss_w1/system/fvSolution",
+    "cases/D2_slot_bouss_w0/system/fvSolution",
+    "cases/D2_slot_bouss_w1/system/fvSolution",
+    "cases/D0_round_bouss_fine/system/fvSolution",
+    "cases/D1_compact_bouss_w0/system/fvSolution",
+    "cases/D1_compact_bouss_w1/system/fvSolution"
+  ]
+}

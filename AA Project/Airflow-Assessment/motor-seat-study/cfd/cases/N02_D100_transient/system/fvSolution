@@ -1,0 +1,9 @@
+FoamFile { version 2.0; format ascii; class dictionary; object fvSolution; }
+solvers {
+p { solver GAMG; smoother GaussSeidel; tolerance 1e-9; relTol .01; }
+pFinal { $p; relTol 0; }
+"(U|k|omega)" { solver PBiCGStab; preconditioner DILU; tolerance 1e-9; relTol .01; }
+"(U|k|omega)Final" { $U; relTol 0; }
+}
+PIMPLE { momentumPredictor yes; nOuterCorrectors 2; nCorrectors 2; nNonOrthogonalCorrectors 1; }
+relaxationFactors { equations { U 1; k 1; omega 1; } }

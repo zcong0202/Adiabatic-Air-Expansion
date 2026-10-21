@@ -1,0 +1,32 @@
+[
+  {
+    "case": "R05_D24_diffuser_SST",
+    "accepted": true,
+    "worst_humidity_mean_drop_c": 7.511157836290195
+  },
+  {
+    "case": "R07_D24_diffuser_3deg_SST",
+    "accepted": true,
+    "worst_humidity_mean_drop_c": 8.974768440948644
+  },
+  {
+    "case": "R08_D24_diffuser_7deg_SST",
+    "accepted": true,
+    "worst_humidity_mean_drop_c": 6.631377356182963
+  },
+  {
+    "case": "R12_D24_a3_second_order",
+    "accepted": true,
+    "worst_humidity_mean_drop_c": 9.02288723679371
+  },
+  {
+    "case": "R13_D24_a3_fine",
+    "accepted": true,
+    "worst_humidity_mean_drop_c": 8.989735353012186
+  },
+  {
+    "case": "R14_D24_a3_kEpsilon",
+    "accepted": false,
+    "worst_humidity_mean_drop_c": 9.449357398721524
+  }
+]

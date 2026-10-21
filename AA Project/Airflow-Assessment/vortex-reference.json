@@ -1,0 +1,83 @@
+{
+  "checked_date": "2026-10-15",
+  "installed_unit": {
+    "brand": "Jeanoko",
+    "variant": "08 micro + magnetic base",
+    "item_model_number_from_listing": "Jeanokoe76c1asi9h-02",
+    "asin": "B094HTCQP8",
+    "identity_basis": "User confirmed the Amazon Jeanoko 08 unit is installed on 15 Oct 2026. Physical label not independently inspected.",
+    "performance_status": "Listing claims only; actual flow and capacity unmeasured."
+  },
+  "amazon": {
+    "url": "https://www.amazon.ae/dp/B094HTCQP8?th=1",
+    "brand": "Jeanoko",
+    "variant": "08 micro + magnetic base",
+    "item_model_number": "Jeanokoe76c1asi9h-02",
+    "asin": "B094HTCQP8",
+    "source_quality": "Product listing claims, not independently measured or a verified manufacturer performance map.",
+    "listed_air_pressure_bar": 6.9,
+    "pressure_basis": "Gauge/absolute not stated in listing.",
+    "listed_air_consumption_m3_min": 0.2,
+    "flow_reference_basis": "Not stated. Do not interpret as measured cold-branch actual flow or multiply by 6.9 without reference conditions.",
+    "listed_capacity_btu_h": 450,
+    "listed_capacity_w_converted": 131.8819815,
+    "capacity_rating_conditions": "Not stated. No guarantee of delivered heat removal at 20 cm.",
+    "gun_length_cm_approx": 13,
+    "flexible_tube_length_cm_approx": 21.2,
+    "claimed_control": "Built-in valve adjusts exhaust volume and temperature.",
+    "cold_fraction_curve": null,
+    "allowable_backpressure": null
+  },
+  "exair": {
+    "url": "https://www.exair.com/vt.html",
+    "page_scope": "Configurable family, not a unique installed model. Default page SKU P3202 does not identify AA hardware.",
+    "reference_model": "3208",
+    "inlet_air_consumption_slpm": 227,
+    "inlet_air_consumption_scfm": 8,
+    "inlet_pressure_for_rating_bar_g": 6.9,
+    "nominal_capacity_w": 162,
+    "nominal_capacity_btu_h": 550,
+    "noise_dba": 76,
+    "noise_conditions": "With hot and cold mufflers installed; not a rating for the Amazon unit.",
+    "cold_end_backpressure_statement": {
+      "up_to_psig": 2,
+      "effect": "Manufacturer states no performance change.",
+      "at_psig": 5,
+      "approx_temperature_penalty_c": 2.8,
+      "applicability": "EXAIR reference only. Not verified for Jeanoko."
+    },
+    "supply_pressure_recommendation_bar_g": [
+      5.5,
+      7.6
+    ],
+    "series_distinction": "3200 optimizes refrigeration; 3400 prioritizes lowest temperature at low cold flow.",
+    "performance_at_100_psig": {
+      "cold_fraction_percent": [
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80
+      ],
+      "cold_temperature_drop_f": [
+        123,
+        118,
+        110,
+        100,
+        86,
+        71,
+        54
+      ],
+      "source": "Published EXAIR performance table, approximate. Do not use as Jeanoko measured data."
+    }
+  },
+  "engineering_consequences": [
+    "Treat 0.2 m3/min as listed inlet air consumption with unspecified reference basis, not cold delivery.",
+    "Do not assign EXAIR 162 W or its backpressure allowance to the Amazon unit.",
+    "A control-setting sweep may increase useful flow at a warmer cold temperature. Measure rather than optimize for the minimum temperature alone.",
+    "Keep pressure, source inlet temperature and downstream attachment effects in the test record.",
+    "Source maps and reference tables cannot replace geometry and measured downstream boundary conditions for validated CFD."
+  ]
+}

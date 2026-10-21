@@ -1,0 +1,1 @@
+PASS: all GPIO writes LOW; release leaves input; nine-clock bus recovery; address/ACK; byte reads; NACK; missing pull-ups; clock timeout; buffer overflow. Mock transport only; live sensor results are separate evidence.

@@ -1,0 +1,40 @@
+{
+  "status": "Crossing bracket evaluated at 1 mm resolution",
+  "fit_case_names": [
+    "R00_D8",
+    "R01_D16",
+    "A22_D22_o2",
+    "A23_D23_o2",
+    "R02_D24"
+  ],
+  "objective": "Minimum diameter with >6 C drop plus 1 C design margin at a 15 C source, nominal 2 g/s, 35 C ambient",
+  "global_optimum_claim": false,
+  "predicted_feasible_diameters_mm": [
+    23.0,
+    24.0
+  ],
+  "sampled_warm_case_drops_c": [
+    {
+      "diameter_mm": 8,
+      "mean_drop_c": 2.4644716682480823
+    },
+    {
+      "diameter_mm": 16.0,
+      "mean_drop_c": 4.969682856315081
+    },
+    {
+      "diameter_mm": 22.0,
+      "mean_drop_c": 6.795718963532639
+    },
+    {
+      "diameter_mm": 23.0,
+      "mean_drop_c": 7.096503920241748
+    },
+    {
+      "diameter_mm": 24.0,
+      "mean_drop_c": 7.396911868576177
+    }
+  ],
+  "predicted_minimum_diameter_mm": 23.0,
+  "next_diameter_mm": null
+}

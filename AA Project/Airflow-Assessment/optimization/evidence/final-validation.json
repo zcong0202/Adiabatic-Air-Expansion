@@ -1,0 +1,61 @@
+{
+  "status": "Conditional still-air screening completed",
+  "case_count": 17,
+  "accepted_count": 14,
+  "accepted_cases": [
+    "A22_D22_o2",
+    "A23_D23_o2",
+    "R00_D8",
+    "R01_D16",
+    "R02_D24",
+    "R05_D24_diffuser_SST",
+    "R06_D24_fine",
+    "R07_D24_diffuser_3deg_SST",
+    "R08_D24_diffuser_7deg_SST",
+    "R09_D24_SST",
+    "R10_D24_domain",
+    "R11_D24_lowflow",
+    "R12_D24_a3_second_order",
+    "R13_D24_a3_fine"
+  ],
+  "rejected_cases": [
+    {
+      "case": "R03_D32",
+      "failed_checks": [
+        "momentum_residuals"
+      ]
+    },
+    {
+      "case": "R04_D24_upwind",
+      "failed_checks": [
+        "momentum_residuals",
+        "full_velocity_field_stable"
+      ]
+    },
+    {
+      "case": "R14_D24_a3_kEpsilon",
+      "failed_checks": [
+        "momentum_residuals",
+        "scalar_residual",
+        "scalar_balance",
+        "full_velocity_field_stable",
+        "full_scalar_field_stable"
+      ]
+    }
+  ],
+  "selected_case": "R07_D24_diffuser_3deg_SST",
+  "selected_mean_drop_c": 9.439133931050765,
+  "finer_mesh_change_c": 0.017310307352579102,
+  "higher_order_change_c": 0.0594891642913602,
+  "internal_alternative_closure_accepted": false,
+  "all_geometry_checks": "passed",
+  "mathematical_objective_checks": "passed; see computation-verification.json",
+  "physical_hardware_validation": false,
+  "wind_validation": false,
+  "hot_exhaust_plume_resolved": false,
+  "major_open_inputs": [
+    "Actual paired cold-branch flow and temperature with the attachment fitted",
+    "Source pressure response, real hot exhaust exposure, humidity and wall heat pickup",
+    "Real installation length, connector dimensions and mounting"
+  ]
+}

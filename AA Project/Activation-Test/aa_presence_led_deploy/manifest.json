@@ -1,0 +1,32 @@
+{
+  "board": "Elegoo Uno R3 / arduino:avr:uno",
+  "sensor": "VL53L1X; 3.3V; low-voltage open-drain software I2C",
+  "boot": "automatic ToF presence mode; no PC commands required",
+  "LED": "D13 mirrors D8",
+  "feedback": "D8 connected directly to D7 and A0; required",
+  "entry_max_mm": 1500,
+  "retain_max_mm": 1600,
+  "entry_min_mm": 0,
+  "entry_dwell_ms": 150,
+  "exit_dwell_ms": 200,
+  "stale_ms": 250,
+  "maximum_continuous_LED_on_ms": null,
+  "PIR_enabled": false,
+  "gate_tests": "PASS: valid presence held beyond 60s and 120s; invalid data closes; departure dwell; millis wrap",
+  "flash_bytes": 13802,
+  "static_ram_bytes": 380,
+  "sha256": {
+    "aa_presence_led_deploy.ino": "a4d96871087ad45a14df982ac3d8e08233748135a4a8dd017a2ee4e9d5df7759",
+    "LICENSE-Pololu.txt": "8a5d285dc3e559642cea15f72bf88ac2660e9ff4497660a76546f39e5fe060e1",
+    "STDefaultConfig.h": "4e75e5dddb3802d3c72b16f081413ad22c41033cb695d1e5f88ebe70882c6440",
+    "VL53L1XSafe.cpp": "c9ff763017c87d2416088494dfc019c31c96af14139c3d2d4f80d5fa416c52e8",
+    "README.txt": "d2cb15ce5a96bcd6e220682fb011c943ee5c38ea92bc0169045461eb058c94b5",
+    "SafeI2C.cpp": "0307ffeecdeba492c1dbff2b1d85ba8b2cde5abe31383eabe04be5c325295ed9",
+    "VL53L1XSafe.h": "0614b018e7dd238a6b213137c0a87834bee196f499dea48fdf4803246abf42f2",
+    "SafeI2C.h": "0b12aff0a109004cfa9fd6c8f0cece7c6fc6b05c68ee9820ce2ac5b471de3f4a",
+    "ActivationLogic.h": "3af34216de58df314f8e1483e4116febc6799eb9e625a213810ef71ce07d3f1e",
+    "firmware/compile.txt": "a802357278ec3438ac9132b2781524ecb1d129b7e7c60bf8dc81d0a47e5429ce",
+    "firmware/aa_presence_led_deploy.ino.hex": "178590dfadc8b2b5771552bcc84e8a18f2322ac9e3dd32c4c792eda280f5378b",
+    "firmware/aa_presence_led_deploy.ino.with_bootloader.hex": "65789a524c0788ac54ccb49cc01a0eababeedf2a3052a3d5fd07ff0ba80a52ab"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_demand_reference_lpm": 227,
+  "common_density_reference_ASSUMED": 1.2041183163746156,
+  "results": [
+    {
+      "id": "kaneez_quote",
+      "name": "Kaneez 10 HP 4-in-1",
+      "ideal_max_single_vortex_duty": 1,
+      "single_vortex_continuous_mass_budget": true,
+      "maximum_whole_vortices_ideal_flow_only": 4,
+      "inlet_inventory_swing_g_3second_pulse": 0.0,
+      "status": "User slide/quote. FAD basis, pressure-specific flow, dryer dew point and electrical input not independently verified. 7.46 kW is shaft-nameplate conversion, not measured total electrical power."
+    },
+    {
+      "id": "bauer",
+      "name": "BAUER JUNIOR II electric",
+      "ideal_max_single_vortex_duty": 0.44052863436123346,
+      "single_vortex_continuous_mass_budget": false,
+      "maximum_whole_vortices_ideal_flow_only": 0,
+      "inlet_inventory_swing_g_3second_pulse": 7.64615130897881,
+      "status": "Manufacturer cylinder-fill rating. Approved continuous process-supply interface and duty remain open."
+    },
+    {
+      "hose_id_mm": 8.0,
+      "upstream_compressed_hose_length_m": 10,
+      "assumed_mean_pressure_bar_abs": 7.9,
+      "darcy_pressure_drop_bar": 0.12795947543044364,
+      "speed_m_s": 10.114743960076613,
+      "Re": 40280.17938972403,
+      "limits": "Smooth turbulent Darcy screen at mean density; fittings, dryer and regulator losses excluded."
+    },
+    {
+      "hose_id_mm": 10.0,
+      "upstream_compressed_hose_length_m": 10,
+      "assumed_mean_pressure_bar_abs": 7.9,
+      "darcy_pressure_drop_bar": 0.044335324268160614,
+      "speed_m_s": 6.473436134449032,
+      "Re": 32224.143511779217,
+      "limits": "Smooth turbulent Darcy screen at mean density; fittings, dryer and regulator losses excluded."
+    },
+    {
+      "hose_id_mm": 12.0,
+      "upstream_compressed_hose_length_m": 10,
+      "assumed_mean_pressure_bar_abs": 7.9,
+      "darcy_pressure_drop_bar": 0.018648288120258042,
+      "speed_m_s": 4.49544176003405,
+      "Re": 26853.452926482685,
+      "limits": "Smooth turbulent Darcy screen at mean density; fittings, dryer and regulator losses excluded."
+    }
+  ],
+  "source_energy_screens": [
+    {
+      "beta": 0.6,
+      "source_sensible_potential_w": 131.24628756181428,
+      "isothermal_compression_lower_bound_w": 825.2831300442543,
+      "cold_potential_over_min_compression_work": 0.15903183136044044
+    },
+    {
+      "beta": 0.7,
+      "source_sensible_potential_w": 126.41357542291027,
+      "isothermal_compression_lower_bound_w": 825.2831300442543,
+      "cold_potential_over_min_compression_work": 0.15317600811267226
+    },
+    {
+      "beta": 0.8,
+      "source_sensible_potential_w": 109.88061284244918,
+      "isothermal_compression_lower_bound_w": 825.2831300442543,
+      "cold_potential_over_min_compression_work": 0.13314292858083387
+    }
+  ],
+  "energy_limits": "Isothermal ideal-gas compression lower bound from atmosphere to source inlet, aftercooled state 34 C. Not total electrical power, actual COP, skin cooling, or a complete plant model. BAUER high-pressure regulation and hose heating are not credited as unmodeled source precooling.",
+  "no_physical_validation": true,
+  "smaller_stock_sources_UNTESTED_CFD": [
+    {
+      "model": "3202",
+      "inlet_reference_lpm": 57,
+      "ideal_BAUER_100Lpm_duty": 1,
+      "cold_mass_g_s_at_beta_0p6_ASSUMED_reference": 0.6863474403335309,
+      "status": "Supplier family catalogue option. Source-map applicability, source port and target CFD are not checked for this model. Smaller flow may change buoyancy and reach."
+    },
+    {
+      "model": "3204",
+      "inlet_reference_lpm": 113,
+      "ideal_BAUER_100Lpm_duty": 0.8849557522123894,
+      "cold_mass_g_s_at_beta_0p6_ASSUMED_reference": 1.3606536975033157,
+      "status": "Supplier family catalogue option. Source-map applicability, source port and target CFD are not checked for this model. Smaller flow may change buoyancy and reach."
+    },
+    {
+      "model": "3208",
+      "inlet_reference_lpm": 227,
+      "ideal_BAUER_100Lpm_duty": 0.44052863436123346,
+      "cold_mass_g_s_at_beta_0p6_ASSUMED_reference": 2.7333485781703777,
+      "status": "Supplier family catalogue option. Source-map applicability, source port and target CFD are not checked for this model. Smaller flow may change buoyancy and reach."
+    }
+  ]
+}

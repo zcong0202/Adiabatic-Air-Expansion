@@ -1,0 +1,91 @@
+{
+  "target": {
+    "distance_from_final_outlet_m": 0.2,
+    "width_m": 0.05,
+    "height_m": 0.05,
+    "mean_temperature_drop_c_strictly_greater_than": 6,
+    "definition_confirmed_by_user": true,
+    "wind_stage": "Still air first; wind checked next",
+    "minimum_mean_drop_design_margin_c": 1
+  },
+  "nominal_source": {
+    "cold_mass_flow_kg_s": 0.002,
+    "cold_temperature_c": 5,
+    "ambient_temperature_c": 35,
+    "status": "Assumed mass flow. Reported nozzle cold temperature is not a measured source map."
+  },
+  "temperature_sensitivity_c": [
+    5,
+    10,
+    15
+  ],
+  "search": {
+    "variable": "final round outlet diameter",
+    "bounds_mm": [
+      8,
+      32
+    ],
+    "initial_diameters_mm": [
+      8,
+      16,
+      24,
+      32
+    ],
+    "step_resolution_mm": 1,
+    "objectives": [
+      "Find minimum outlet size that passes the temperature target with a 1 C margin",
+      "Report the highest temperature drop within the tested design bounds"
+    ],
+    "no_global_hardware_optimum_claim": true,
+    "minimum_reynolds_for_fully_turbulent_screen": 5000,
+    "warm_source_for_margin_c": 15
+  },
+  "quality_gates": {
+    "maximum_native_mass_imbalance_fraction": 0.01,
+    "maximum_native_advective_scalar_imbalance_fraction": 0.02,
+    "maximum_relevant_momentum_initial_residual": 1e-05,
+    "maximum_pressure_initial_residual": 1e-05,
+    "maximum_turbulence_initial_residual": 0.0001,
+    "maximum_scalar_initial_residual": 1e-05,
+    "maximum_thermal_fraction_bound_excursion": 0.005,
+    "maximum_target_mean_drop_change_c": 0.05,
+    "maximum_field_velocity_change_relative_to_exit": 0.001,
+    "maximum_field_scalar_change": 0.002,
+    "maximum_mean_drop_mesh_change_c": 0.5,
+    "maximum_mean_drop_domain_change_c": 0.5,
+    "maximum_mean_drop_turbulence_model_change_c": 1.0
+  },
+  "model_limits": [
+    "Axisymmetric constant-density prescribed-exit RANS, no wind or buoyancy",
+    "Temperature is a passive thermal deficit, with constant properties",
+    "Area mean air cooling, not heat removed from skin",
+    "Candidate diffuser internals require separate simulation",
+    "Source flow, outlet temperature and source backpressure must be measured together",
+    "Numerical acceptance and physical validation are separate"
+  ],
+  "shape_search": {
+    "inlet_bore_mm": 8,
+    "exit_bore_mm": 24,
+    "cone_half_angle_bounds_deg": [
+      3,
+      7
+    ],
+    "initial_half_angles_deg": [
+      3,
+      5,
+      7
+    ],
+    "maximum_proposed_length_mm": 180,
+    "temperature_scenarios_c": [
+      5,
+      10,
+      15
+    ],
+    "thermal_stress": {
+      "overall_U_w_m2_k": 20,
+      "ambient_RH": 0.8,
+      "source_RH_before_heating": 1
+    },
+    "bounds_status": "Proposed prototype bounds. Real installation constraints not measured."
+  }
+}

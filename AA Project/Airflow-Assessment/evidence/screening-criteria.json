@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-15",
+  "scope": "Unvalidated conceptual screening, not measured AA performance",
+  "geometry": [
+    "Four parametric solid concepts; watertight STL and consistent winding required",
+    "All fluid meshes must report Mesh OK"
+  ],
+  "solver_checks": [
+    "Successful termination or documented clean checkpoint",
+    "No NaN, nonphysical density/temperature or fatal errors",
+    "Record nonlinear residuals separately from linear-solver residuals",
+    "Compare last two sampled target metrics; flag changes above 5 percent",
+    "Record exact discretized boundary flux balance, distinct from interpolated cutting-plane flux",
+    "Tracer-temperature relation consistent for low-Mach screening"
+  ],
+  "sensitivity": [
+    "At least still air and 1 m/s crosswind for the same four designs",
+    "Mesh refinement for baseline and promising concepts; flag changes above 10 percent",
+    "Mark model-choice failures; never rank using failed ideal-gas runs"
+  ],
+  "limits": [
+    "Source is prescribed and cannot predict vortex backpressure response",
+    "Adiabatic dry-air model; no human heat transfer or comfort prediction",
+    "Boussinesq linear buoyancy is an approximation over the 20 K source/ambient difference",
+    "Temperature transport neglects kinetic-energy recovery; near-jet static temperature is approximate",
+    "Target flux is cooling potential through a reporting region, not heat extracted from skin"
+  ]
+}

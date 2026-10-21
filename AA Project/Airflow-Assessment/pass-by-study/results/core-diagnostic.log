@@ -1,0 +1,41 @@
+[
+  {
+    "case": "P00_one_d20",
+    "standoff_m": 0.2,
+    "time_s": 5,
+    "path_x_m": -0.2,
+    "side_y_m": -0.2,
+    "coldest_sampled_height_m": 1.13,
+    "coldest_point_c": 1.84675173333336,
+    "temperature_at_original_height_c": 3.7178440800000163,
+    "downward_offset_m": 0.020000000000000018,
+    "geometric_upward_aim_deg": 5.7105931374996475,
+    "native_temperature_sha256": "99f9851dce72cbe9403f5e7e95dcb9ad11e13893d3b3a9cd269a01eb1985a19e"
+  },
+  {
+    "case": "P01_one_d35",
+    "standoff_m": 0.35,
+    "time_s": 5,
+    "path_x_m": -0.2,
+    "side_y_m": -0.2,
+    "coldest_sampled_height_m": 1.13,
+    "coldest_point_c": 3.94068543092787,
+    "temperature_at_original_height_c": 8.863013955670134,
+    "downward_offset_m": 0.020000000000000018,
+    "geometric_upward_aim_deg": 3.2704879231835684,
+    "native_temperature_sha256": "289a5724481ec394293c9450d6d8074778265f265a3d06801b2d49f53a1f9c07"
+  },
+  {
+    "case": "P02_one_d50",
+    "standoff_m": 0.5,
+    "time_s": 5,
+    "path_x_m": -0.2,
+    "side_y_m": -0.2,
+    "coldest_sampled_height_m": 1.082,
+    "coldest_point_c": 7.924483858995964,
+    "temperature_at_original_height_c": 18.233322090298522,
+    "downward_offset_m": 0.06799999999999984,
+    "geometric_upward_aim_deg": 7.744710546422897,
+    "native_temperature_sha256": "f2e7c31e5814d024b0497a64c44b427220b0ec655ed87bfa6d351fe8aadc4619"
+  }
+]

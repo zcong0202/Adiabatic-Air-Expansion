@@ -1,0 +1,16 @@
+[
+  {
+    "file": "AA-iterated-designs-v2.zip",
+    "bytes": 1912598,
+    "entries": 21,
+    "sha256": "a811af394d3e3eb963d886953442c227b810058e9bd894ced24e0bf20be88c93",
+    "integrity": "passed"
+  },
+  {
+    "file": "AA-design-search-v2.zip",
+    "bytes": 225540529,
+    "entries": 4091,
+    "sha256": "ef99595774f29720087363d34ac3215baecf9b44cbe6e44cd76ddf154aa233f3",
+    "integrity": "passed"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "selected_case": "S03_stock_b60_D28_a5_lowflow_fine",
+  "inlet_bore_mm": 8,
+  "outlet_bore_mm": 28,
+  "half_angle_deg": 5,
+  "total_length_mm": 139.30052302761345,
+  "wall_radial_mm": 2,
+  "STL_units": "millimetres",
+  "STEP_units": "metres",
+  "watertight": true,
+  "winding_consistent": true,
+  "connected_components": 1,
+  "volume_mm3": 17187.824872395835,
+  "fitted_adapter_verified": false,
+  "pressure_rating_established": false,
+  "status": "Printable low-pressure flow body. Confirm actual stock source bore/thread, adapter and installation. Not a complete fitted assembly."
+}

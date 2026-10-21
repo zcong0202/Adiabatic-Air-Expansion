@@ -1,0 +1,11 @@
+{
+  "passed": [
+    "offline serial capability; preview retrigger and expiry; live remains blank",
+    "one-click firmware ZIP exported with 12.3 s / LOW trigger",
+    "mock USB connect/HELLO, actual-message rendering, LOW-trigger meaning, acknowledged SET",
+    "missing-ACK timeout preserves board setting and allows retry",
+    "stale readings blank; disconnect does not send output stop"
+  ],
+  "hardware": "USB stream simulated; no physical board",
+  "export": "AA firmware 12.3s LOW-trigger.zip"
+}

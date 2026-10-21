@@ -1,0 +1,20 @@
+{
+  "archives": [
+    {
+      "file": "AA-iterated-designs-v2.zip",
+      "sha256": "passed",
+      "zip_integrity": "passed",
+      "four_metres_STEP_concepts": "passed",
+      "bytes": 1912598
+    },
+    {
+      "file": "AA-design-search-v2.zip",
+      "sha256": "passed",
+      "zip_integrity": "passed",
+      "four_metres_STEP_concepts": "passed",
+      "bytes": 225540529
+    }
+  ],
+  "overview_local_links": "passed",
+  "browser_controls": "Source temperature and entrained-air controls verified; no desktop overflow; rejected/low-Re cases excluded from the interactive selector."
+}

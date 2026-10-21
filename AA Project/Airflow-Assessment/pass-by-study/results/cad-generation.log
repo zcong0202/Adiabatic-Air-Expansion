@@ -1,0 +1,78 @@
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cad/outlet-140x80-metres.step(1562 ents)  Write  Done[0m
+{
+  "stl": "cad/outlet-140x80-print-mm.stl",
+  "step": "cad/outlet-140x80-metres.step",
+  "outlet_width_mm": 140.0,
+  "outlet_height_mm": 80.0,
+  "outlet_area_m2": 0.011200000000000002,
+  "spigot_od_mm": 100,
+  "clear_inlet_mm": 95.2,
+  "length_mm": 205,
+  "nominal_wall_mm": 2.4,
+  "watertight": true,
+  "consistent_normals": true,
+  "components": 1,
+  "step_units": "metres; independently reimported and surface-remeshed; dimensions checked within 0.2 mm",
+  "stl_units": "millimetres",
+  "bounds_mm": [
+    [
+      -72.4,
+      -49.999999999999936,
+      -8.673617379884035e-16
+    ],
+    [
+      72.4,
+      49.99999999341449,
+      205.0
+    ]
+  ],
+  "print": "Bambu H2S; PLA; 0.4 mm nozzle; start 0.2 mm layers and 4-6 walls. Check supports and fit coupon; no G-code.",
+  "limits": "Unfitted near-atmospheric exhaust prototype. Hose/clamps and stock distribution not selected. No pressure rating. External CFD slot dimensions shared; actual internal loft and backpressure not yet validated for pass-by use."
+}
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/pass-by-study/cad/outlet-280x40-metres.step(1554 ents)  Write  Done[0m
+{
+  "stl": "cad/outlet-280x40-print-mm.stl",
+  "step": "cad/outlet-280x40-metres.step",
+  "outlet_width_mm": 280.0,
+  "outlet_height_mm": 40.0,
+  "outlet_area_m2": 0.011200000000000002,
+  "spigot_od_mm": 100,
+  "clear_inlet_mm": 95.2,
+  "length_mm": 205,
+  "nominal_wall_mm": 2.4,
+  "watertight": true,
+  "consistent_normals": true,
+  "components": 1,
+  "step_units": "metres; independently reimported and surface-remeshed; dimensions checked within 0.2 mm",
+  "stl_units": "millimetres",
+  "bounds_mm": [
+    [
+      -142.4,
+      -50.0,
+      -8.673617379884035e-16
+    ],
+    [
+      142.4,
+      50.0,
+      205.0
+    ]
+  ],
+  "print": "Bambu H2S; PLA; 0.4 mm nozzle; start 0.2 mm layers and 4-6 walls. Check supports and fit coupon; no G-code.",
+  "limits": "Unfitted near-atmospheric exhaust prototype. Hose/clamps and stock distribution not selected. No pressure rating. External CFD slot dimensions shared; actual internal loft and backpressure not yet validated for pass-by use."
+}

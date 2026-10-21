@@ -1,0 +1,20 @@
+{
+  "status": "Final audited evidence supersedes the initial unused-epsilon copy error",
+  "checks": [
+    {
+      "case": "R12_D24_a3_second_order",
+      "numerically_accepted": true,
+      "mean_drop_c": 9.498623095342126
+    },
+    {
+      "case": "R13_D24_a3_fine",
+      "numerically_accepted": true,
+      "mean_drop_c": 9.456444238403344
+    },
+    {
+      "case": "R14_D24_a3_kEpsilon",
+      "numerically_accepted": false,
+      "mean_drop_c": 10.074674320116957
+    }
+  ]
+}

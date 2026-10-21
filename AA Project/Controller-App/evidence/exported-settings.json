@@ -1,0 +1,8 @@
+{
+  "firmware": "AA-HOLD-1.0",
+  "board": "Uno R3 / ATmega328P",
+  "hold_ms": 12300,
+  "active_low": 1,
+  "generation": 936595018,
+  "maximum_on_time": null
+}

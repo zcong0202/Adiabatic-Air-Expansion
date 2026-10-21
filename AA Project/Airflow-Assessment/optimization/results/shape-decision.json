@@ -1,0 +1,82 @@
+{
+  "scope": "Bounded still-air 8-to-24 mm cone search: 3..7 degrees, total length <=180 mm. Bounds are proposed prototype limits, not measured installation constraints.",
+  "nominal_flow_kg_s": 0.002,
+  "thermal_stress": "U=20 W/m2/K, ambient RH80%, source RH100% before heating; one-way estimate, no coupled moist/conjugate CFD.",
+  "candidates": [
+    {
+      "case": "R05_D24_diffuser_SST",
+      "angle_deg": 5,
+      "diameter_mm": 24.0,
+      "length_mm": 116.44041842209077,
+      "dry_nominal_drop_c": 7.683961790080601,
+      "stressed_drop_by_source_c": {
+        "5": 7.155120921558847,
+        "10": 5.971397577554718,
+        "15": 4.785942448048779
+      },
+      "status": "Numerically accepted; physical thermal stresses are assumed one-way sensitivities"
+    },
+    {
+      "case": "R07_D24_diffuser_3deg_SST",
+      "angle_deg": 3.0,
+      "diameter_mm": 24.0,
+      "length_mm": 177.64909350182566,
+      "dry_nominal_drop_c": 9.439133931050765,
+      "stressed_drop_by_source_c": {
+        "5": 8.499992364969163,
+        "10": 7.122119288034391,
+        "15": 5.707360484938363
+      },
+      "status": "Numerically accepted; physical thermal stresses are assumed one-way sensitivities"
+    },
+    {
+      "case": "R08_D24_diffuser_7deg_SST",
+      "angle_deg": 7.0,
+      "diameter_mm": 24.0,
+      "length_mm": 90.15477142379675,
+      "dry_nominal_drop_c": 6.750442015379023,
+      "stressed_drop_by_source_c": {
+        "5": 6.36545757902266,
+        "10": 5.312145222265727,
+        "15": 4.257896156943392
+      },
+      "status": "Numerically accepted; physical thermal stresses are assumed one-way sensitivities"
+    }
+  ],
+  "scenarios": [
+    {
+      "source_c": 5,
+      "target": "More than 6 C plus a 1 C design margin",
+      "highest_margin_case": "R07_D24_diffuser_3deg_SST",
+      "shortest_tested_case": "R05_D24_diffuser_SST",
+      "feasible_cases": [
+        "R05_D24_diffuser_SST",
+        "R07_D24_diffuser_3deg_SST"
+      ]
+    },
+    {
+      "source_c": 10,
+      "target": "More than 6 C plus a 1 C design margin",
+      "highest_margin_case": "R07_D24_diffuser_3deg_SST",
+      "shortest_tested_case": "R07_D24_diffuser_3deg_SST",
+      "feasible_cases": [
+        "R07_D24_diffuser_3deg_SST"
+      ]
+    },
+    {
+      "source_c": 15,
+      "target": "More than 6 C plus a 1 C design margin",
+      "highest_margin_case": null,
+      "shortest_tested_case": null,
+      "feasible_cases": []
+    }
+  ],
+  "next_angle_probe_deg": 6.0,
+  "global_hardware_optimum_claim": false,
+  "wind_validated": false,
+  "open_inputs": [
+    "Actual paired source flow, temperature and pressure after fitting the nozzle",
+    "Ambient humidity and real wall/insulation heat transfer",
+    "Actual installation length/diameter and source connector"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "Fit-check coupons. No actual hose fit has been tested.",
+  "items": [
+    {
+      "file": "hose-fit-coupon-OD99.4-mm.stl",
+      "od_mm": 99.4,
+      "wall_mm": 2.4,
+      "watertight": true
+    },
+    {
+      "file": "hose-fit-coupon-OD100-mm.stl",
+      "od_mm": 100,
+      "wall_mm": 2.4,
+      "watertight": true
+    },
+    {
+      "file": "hose-fit-coupon-OD100.6-mm.stl",
+      "od_mm": 100.6,
+      "wall_mm": 2.4,
+      "watertight": true
+    }
+  ]
+}

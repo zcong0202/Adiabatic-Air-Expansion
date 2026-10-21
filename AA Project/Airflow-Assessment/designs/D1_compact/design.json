@@ -1,0 +1,13 @@
+{
+  "label": "Compact smooth outlet",
+  "description": "8 to 6 mm convergence over final 15 mm",
+  "bore_mm": 8,
+  "exit_area_mm2": 28.274333882308138,
+  "front_x_m": 0,
+  "name": "D1_compact",
+  "length_unit": "metre",
+  "common_source_bore_mm": 8,
+  "channel_length_mm": 40,
+  "threads": "Omitted, adapter flow passage included as assumed 8 mm bore; not ready for manufacturing.",
+  "geometry_basis": "Proposed design parameters, not measured product dimensions."
+}

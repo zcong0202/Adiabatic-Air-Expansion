@@ -1,0 +1,9 @@
+{
+  "file": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/AA-seat-CFD-CAD-loop.zip",
+  "files": 1475,
+  "bytes": 184192065,
+  "sha256": "ab93b5c2a15fb8ac10b20d1a2284041fc2e3b03910cf02c36e9dae053cada843",
+  "selected_case": "C24_four_profile_continued",
+  "selected_and_internal_profile_native_fields_packaged": true,
+  "other_case_native_fields": "Local workspace only; hashes, exact initial fields, mesh, dictionaries and audit records packaged for rerun."
+}

@@ -1,0 +1,19 @@
+{
+  "power_w": 2267.0816,
+  "pulse_30s": {
+    "valve_open_s": 30,
+    "cold_air_mass_kg": 2.3280000000000003,
+    "free_air_m3": 1.944,
+    "supply_volume_m3": 1.807788611552594,
+    "available_cold_air_energy_j": 68012.448
+  },
+  "mixing_condition": {
+    "model": "Dry adiabatic two-stream mixing; same cp; no local heat input. Strict greater-than target requires strict inequalities.",
+    "target_delta_k": 6.0,
+    "source_contrast_k": 29.040724723822017,
+    "minimum_cold_mass_fraction_for_delta6": 0.2066064141670066,
+    "maximum_warm_to_cold_mass_ratio_for_delta6": 3.840120787303669,
+    "caveat": "A necessary local enthalpy condition. Not a predicted volume, reach, exposure or comfort result. An area-average sample requires its own resolved field."
+  },
+  "candidate_count": 9
+}

@@ -1,0 +1,251 @@
+AA: LEAN-FORMALIZED THERMAL FEASIBILITY MODEL
+19 October 2026
+
+GOAL AND SCOPE
+Strictly more than 6 C area-average air-temperature drop, relative to
+ambient, across 50 x 50 mm at 200 mm from the FINAL outlet. Still air first.
+This air-temperature goal does not establish human heat removal or comfort.
+Changing the target dimensions in the calculator explores a different goal.
+
+Open the existing AA project-overview.html, section "Lean model & parameters".
+Do not treat a conditional mathematical pass as measured hardware success.
+
+WHAT LEAN CHECKS
+The project pins Lean 4.31.0 and mathlib v4.31.0 (commit in manifest).
+Model.lean contains real-number theorems for dry mixing, area averaging,
+line retention, exact strict target inequalities, ideal work-producing
+expansion bounds, ideal-gas throttling, vortex energy balance, and storage.
+Certificates.lean checks exact rational scenarios and prints theorem axioms.
+No new physics axioms or unproved placeholders are used. Standard mathlib
+foundations include propext, Classical.choice and Quot.sound.
+The physical equations and source/boundary conditions are modeling choices;
+proving their consequences does not prove those choices describe the device.
+
+FILES
+  AAThermo/Model.lean        Symbolic theorems, with assumptions.
+  AAThermo/Certificates.lean Conditional rational example certificates.
+  AAThermo/System.lean       System bounds and stock-reference >6 K certificate.
+  model.py                  Numerical companion; SI internally.
+  verify_numerics.py         Conservation, limit and boundary checks.
+  generate_report.py        Source-state grid and parameter boundaries.
+  viewer.js / update_overview.py  Interactive section in the ONE overview.
+  parameter-results.json    Inputs, source lookup and conditional thresholds.
+  proof-verification.json   Compiler/library pins, axioms and source hashes.
+  numerical-verification.json  Separate floating/EOS check results.
+  browser-verification.json  Separate UI and Python/JavaScript parity checks.
+  cfd-reference-evidence.json  Snapshot and hashes of the existing R07 inputs.
+  build.log                 Actual successful Lean build output.
+
+TEMPERATURE AND FLOW DEFINITIONS
+  Ta: reference ambient temperature, C.
+  Te: entrained-air AND modeled cold-line-surroundings temperature, C.
+      This simplified screen uses one reservoir; different environments
+      require a richer line model. Te may exceed Ta near hot exhaust.
+  Ts: cold source temperature after final pressure release, before the
+      modeled downstream line/nozzle heat gain, C.
+  Td: temperature after that modeled line heat gain, C.
+  mc: cold source mass flow, kg/s (UI uses g/s).
+  cp: 1005 J/(kg K), dry constant-property approximation.
+  UA: total downstream heat conductance, W/K, not U alone.
+  alpha_A: area-average cold-origin mass fraction over the target.
+  capture: fraction of source cold mass reaching the target.
+  mw: incoming warm mass flow for the alternative UNIFORM target model.
+
+alpha_A, capture and the vortex cold fraction beta are DIFFERENT quantities.
+For nonuniform velocity, area averages and mass-flux averages differ.
+Lean proves the finite-cell area identity, not an empirical alpha prediction.
+
+CORE AREA MODEL
+  r = exp[-UA/(mc cp)]
+  Td = Te - (Te - Ts) r
+  delta_A = Ta - Te + alpha_A r (Te - Ts)
+This follows if each cell has dry constant-cp linear source mixing and all
+cold source air has the same Td. Lean proves the weighted finite-cell mean.
+
+Let C = required_delta + Te - Ta, B = alpha_A (Te - Ts).
+With positive denominators:
+  Pass iff alpha_A > C/[r(Te - Ts)].
+  Pass iff Ts < Te - C/(alpha_A r).
+  If B > C > 0: Pass iff UA < mc cp log(B/C).
+  At fixed alpha_A, Ts, Te: mc > UA/[cp log(B/C)].
+The last bound is HOSE RETENTION ONLY. It is not a sufficient mass-flow
+requirement for a finite target heat load or an available source.
+If B <= C, nonnegative line heat leakage cannot be fixed merely by changing
+mass while holding alpha_A and Ts fixed. Change dilution or source state.
+
+CURRENT-SETUP INTERPRETATION
+Reported cold outlet temperature: about 5 C. Cold flow is unmeasured.
+The CFD assumed 2 g/s, with R07 alpha_A about 0.3146377977 at 200 mm.
+At 34 C ambient/entrainment and UA=0 this gives 9.1245 C drop, conditionally.
+With an assumed UA=0.2 W/K it gives 8.2603 C, conditionally.
+The earlier CFD used 35 C ambient and gave 9.4391 C. The 34 C result here is
+a dry scalar sensitivity, not a new CFD run or a calibrated real-flow result.
+That CFD used constant-density passive temperature deficit, still air and
+adiabatic walls. It excluded buoyancy and source backpressure response.
+If 5 C is ALREADY measured at the final nozzle exit, do not also count
+upstream hose/nozzle heating through UA. Record measurement locations.
+Physical extension tests did not show useful felt cooling; no paired flow,
+temperature, target map or sensor dynamics were measured. That discrepancy
+must be resolved before treating the conditional CFD fraction as observed.
+
+RECONFIGURATION EXAMPLES: 34 C AMBIENT
+With 2 g/s source and assumed UA=0.2 W/K, the source must be colder than:
+  alpha_A = 10%       -32.28 C
+  alpha_A = 15%       -10.18 C
+  alpha_A = 20%         0.86 C
+  alpha_A = 25%         7.49 C
+  alpha_A = 31.46%     12.94 C
+These are strict boundaries under the declared dry model, not source
+performance predictions. At a 5 C delivered source and no extra line heat,
+the required area cold fraction is >20.69% for the >6 C goal.
+
+THE EXPONENTIAL ARGUMENT: NO UNIVERSAL 0.5-SECOND LIMIT
+A separate lumped parcel model can have:
+  delta(t) = delta0 exp(-t/tau).
+Lean proves: delta(t) > target iff t < tau log(delta0/target), with positive
+tau, delta0 and target. This does not establish that a jet follows this law
+or supply a measured tau. Tau depends on thermal mass, area and heat transfer;
+turbulent dilution needs a flow model. Reheating "in 0.5 s" does not imply
+tau=0.5 s, and exponential recovery never reaches ambient in finite time.
+
+At 34 C ambient, an ASSUMED tau=0.5 s and a 6 C threshold give:
+  Initially   +5 C: pass while t <0.788 s.
+  Initially  -40 C: pass while t <1.256 s.
+  Initially -100 C: pass while t <1.553 s.
+The latter two differ by 0.297 s under that SAME assumed tau. This supports
+diminishing extra persistence in that model, not a universal cooling limit.
+Colder air also carries more sensible cooling per kg: mc*cp*(Ta-Ts).
+A steady jet replaces parcels continuously. It need not keep one parcel cold
+for the whole demo. Compare transit time (~0.2 m / representative stream
+speed), area dilution and continuous cooling power. Speed also affects
+entrainment, pressure loss and capture, so it cannot be optimized alone.
+
+ALTERNATIVE UNIFORM TARGET: ACTUAL MASS AND EXTRA LOAD
+Captured cold flow m = capture*mc.
+  Tmix = [m Td + mw Te + Q_extra/cp]/(m + mw)
+  delta = Ta - Tmix
+  Pass iff m(Ta - Td - required_delta)
+           > mw(Te - Ta + required_delta) + Q_extra/cp.
+At fixed Td, positive Ta-Td-required_delta:
+  mc > [mw(Te-Ta+required_delta)+Q_extra/cp]
+       /[capture*(Ta-Td-required_delta)].
+When UA is nonzero, Td depends on mc, so the companion numerically solves
+the full monotone boundary; it does not substitute the old Td at a new flow.
+
+Example ASSUMPTIONS: mw=5 g/s, capture=60%, Ts=5 C, Ta=Te=34 C.
+  UA=0:   need mc >2.174 g/s.
+  UA=0.2: need mc >2.415 g/s.
+Neither mw nor capture is measured. The result can differ from the area
+model because it describes a different uniform incoming-flow field.
+If BOTH cold and entrained warm flow scale together, the loss-free mixture
+temperature is unchanged. Lean proves this scale invariance. More source
+mass increases power but does not automatically improve dilution.
+
+ENERGY-LOAD SCREEN
+Cold sensible potential after the modeled line:
+  P_cold = mc cp (Ta - Td).
+For a target whose local temperature deficits are nonnegative and whose
+NORMAL speed everywhere is >= u_min, achieving the area target requires:
+  captured_budget > rho cp A u_min required_delta.
+Lean proves the finite-cell necessary implication. Passing it is NOT
+sufficient: poor distribution can still fail the area-temperature target.
+The entered speed lower bound and capture fraction must be measured.
+
+SOURCE METHODS
+Vortex:
+  mc = beta * inlet_mass_flow.
+  Tin = beta Tc + (1-beta) Th, in the dry constant-cp/no-work balance.
+  Th = (Tin-beta Tc)/(1-beta).
+  If Th <= Th_max, beta <= (Th_max-Tin)/(Th_max-Tc), when denominator >0.
+These identities constrain an operating point but do not provide the
+Jeanoko performance map. Changing beta while holding Tc fixed is not
+automatically achievable. A larger compressor does not make one small
+vortex consume all its available flow. A bank or larger matched unit is
+needed for larger instantaneous demand.
+
+Isenthalpic regulator:
+  h_out = h_in, with negligible net kinetic/potential changes.
+  Ideal gas h=cp*T implies T_out=T_in. Lean proves that implication.
+  Real-gas Air uses CoolProp h(Pin,Tin), then T(Pdelivery,h).
+  This numerical EOS is not formally proved in Lean.
+
+Work-producing expansion:
+  Ideal T_is = Tin * (Pout/Pin)^((gamma-1)/gamma), Tin in KELVIN.
+  T_out = Tin - eta_is*(Tin-T_is).
+  The source calculator uses efficiency for EACH stage, NOT an overall
+  plant or overall expansion efficiency. Each stage ends at equal pressure
+  ratios under an ASSUMED maximum of 3:1. Four stages are needed for
+  201->5 bar(a). Direct 201->1.01325 needs five under that same limit.
+  For real-gas stages: h_is=h(Pout,s_in); h_out=h_in-eta*(h_in-h_is).
+  Any final regulator is isenthalpic. No interstage heat pickup is assumed.
+  All pressures are ABSOLUTE, not gauge. Final delivery is atmospheric.
+
+Real-gas lookup examples: 34 C source inlet, 60% efficiency per stage:
+  Regulator, 9->1.01325 bar(a):            +32.30 C final dry state.
+  Regulator, 201->1.01325 bar(a):           +1.54 C final dry state.
+  Expander, 9->1.01325, 2 stages:          -57.94 C final dry state.
+  Expander, 201->5 then atmospheric,
+            4 stages:                  -124.40 C final dry state.
+These are hypothetical dry thermodynamic states, NOT supplied equipment,
+demonstrated temperatures, safe exposure temperatures, or a pressure design.
+High-speed nozzle static/recovery temperatures are not these bulk states.
+Water/icing, phase behavior of real mixtures, heat pickup, pressure loss,
+rotor loading, performance maps and installation remain separate work.
+Low-pressure supply can also drive work-producing expansion in principle.
+
+SUPPLY AND BUFFER
+Compare free-air flows on the SAME reference basis (here 20 C and 1 atm).
+100 reference L/min is about 2.0069 g/s; do not multiply it by storage bar.
+For a vortex with beta=0.5, only half the inlet mass is cold output.
+Average constraint: demand_inlet * duty <= available inlet supply.
+Thus BAUER 100 against nominal 200 inlet demand is at most 50% ideal duty;
+against the EXAIR reference 227 it is about 44%. Losses and actual approved
+compressor duty make the practical budget stricter. Tank storage does not
+increase average production. The 400 L receiver is compressed-air storage,
+not automatically an insulated cold-air store.
+For a pulse with continuous production:
+  inventory_swing >= max(0, discharge-production)*pulse_time.
+The UI reports inlet-air mass swing. No pressure-vessel volume, wall, relief
+or high-pressure installation design is included.
+
+HOW TO LEARN / RE-ESTABLISH THE SETUP
+1. Start with Current assumptions. Vary alpha_A before changing method.
+2. Increase UA and Te to test line heating and hot-exhaust sensitivity.
+3. Open the uniform-target panel. Vary warm inflow and capture separately.
+4. Try LP one vortex versus LP bank: supply capacity alone changes no source
+   output; a bank changes cold mass but requires a new mixing/source map.
+5. Try BAUER one vortex: distinguish instantaneous thermal pass from average
+   supply failure. Reduce requested duty or change the supply.
+6. Compare regulator with work extraction at the SAME inlet state, mass
+   throughput and final pressure. Select source/expander hardware only after
+   a matched performance map, drying specification and installation review.
+
+MEASURE NEXT
+Paired cold flow and temperature for each nozzle/valve operating point;
+source inlet pressure/temperature under flow; target area temperature and
+normal-speed map at 200 mm; actual wind and hot-exhaust exposure; line heat
+pickup; required pulse duration/duty. Those determine alpha/capture/source
+bounds needed for a statement about the actual hardware.
+
+REPRODUCE
+Lean project: lakefile.toml + lean-toolchain + pinned lake-manifest.json.
+  lake update
+  lake exe cache get
+  lake build
+Use the pinned Lean toolchain. The completed local build reused existing
+cached dependency artifacts through .lake links; caches are NOT in the ZIP.
+The portable dependency declarations contain git revisions, not local paths.
+
+Python: install requirements.txt in a virtual environment, then:
+  python verify_numerics.py
+  python generate_report.py
+The completed numerical run used Python 3.13.3. Browser verification is
+optional, uses gstack browse on the original overview, and is not needed to
+compile Lean or run the independent Python model.
+To regenerate the section inside the existing AA project tree:
+  python update_overview.py
+The generator expects the original project layout for this final command.
+The packaged model and source calculations can run independently.
+
+Trust boundary: numerical floating-point/EOS results are separate from
+symbolic kernel-checked theorems. No physical optimum is established.

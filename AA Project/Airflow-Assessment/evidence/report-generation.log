@@ -1,0 +1,9 @@
+{
+  "status": "Screening calculations; no validated winner",
+  "source_capacity_w": 40.2,
+  "cases_with_samples": 8,
+  "completed_cases": 5,
+  "converged_cases": 0,
+  "rejected_cases": 1,
+  "fine_cases": 2
+}

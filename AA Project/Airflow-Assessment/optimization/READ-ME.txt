@@ -1,0 +1,132 @@
+AA iterative cooling design computation — 15 October 2026
+
+CONFIRMED OBJECTIVE
+Mean air-temperature drop >6 deg C, relative to ambient, across a 50 x 50 mm
+square 200 mm from the FINAL outlet. Still air first; wind next.
+This is not a skin-temperature or heat-removal target.
+
+WHAT IS VERIFIED
+Read results/summary.json and each case/audit.json for current status.
+Numerical acceptance and measured hardware validation are separate.
+The old 3-D CFD screens are NOT used to fit this search.
+
+NOMINAL SOURCE AND TEMPERATURE SENSITIVITY
+Cold-branch flow 0.002 kg/s, source 5 deg C, ambient 35 deg C.
+Mass flow is assumed. The reported 5 deg C nozzle reading does not establish
+that temperature at this flow or with a new diffuser attached.
+Temperature sensitivities use 5, 10 and 15 deg C at the same computed flow.
+Actual paired source flow/temperature/backpressure data remain absent.
+Do not apply the compressor's 6.9 bar directly at this CFD inlet.
+
+COMPUTATION
+1. Structured single-cell 5-degree rotational wedge, OpenFOAM v2506.
+2. SIMPLEC incompressible RANS + passive thermal-deficit field theta.
+3. T = Tamb - theta*(Tamb-Tcold), constant-density dry-air approximation.
+4. Native boundary flux, scalar bounds, residual and full-field checks.
+5. Gauss quadrature integrates the square target using radial CFD profiles.
+6. PCHIP fits ONLY numerically accepted, comparable exit cases. No extrapolation.
+7. CFD evaluations check interpolated threshold crossings. Failed cases never
+   become training data merely because their reported cooling is high.
+8. Internal cone flows test the ideal uniform-exit assumption.
+9. Mesh/domain, turbulence and convection sensitivities are recorded separately.
+10. Heat pickup and equilibrium moist-mixing are ONE-WAY sensitivities. These
+    do not replace conjugate, variable-density or condensing CFD.
+
+GEOMETRY SEARCH
+Round outlet diameters 8,16,24,32 mm, with adaptive 22/23 mm threshold checks.
+The fully turbulent exit-screen search excludes Reynolds number below 5000.
+The 32 mm point and the 1 g/s sensitivity need transition-model caution.
+For a 24 mm exit: 8 mm inlet, cone half angles 3,5,7 deg, 15 mm inlet land,
+10 mm exit land. Proposed wall 2 mm. Proposed prototype length cap 180 mm.
+These are assumed design bounds, not established installation constraints.
+Distance remains 200 mm from the final outlet for EVERY shape.
+
+TWO OPTIMIZATION QUESTIONS
+search.py finds the smallest uniform outlet that exceeds 6 deg C with a
+1 deg C margin at a 15 deg C source, within declared diameter bounds.
+optimize_shapes.py compares accepted INTERNAL diffuser cases at source
+5,10,15 deg C separately. It reports highest margin and shortest feasible
+length. These objectives cannot establish a unique global hardware optimum.
+
+NUMERICAL ACCEPTANCE
+The exact fixed rules are in config.json. They include the last 30 relevant
+initial residuals, source-normalized native mass/scalar flux, bounded theta,
+last three target samples, and full velocity/scalar-field changes.
+The wedge has no physical swirl. The normalized Uz residual can be dominated
+by roundoff, so acceptance uses Ux/Uy and independently limits the absolute
+Uz amplitude and changes of the ENTIRE vector field. Raw Uz residuals remain
+in logs. A solver's printed convergence flag is recorded, not fabricated.
+A supervisor requests clean stopAt writeNow only after all other gates pass.
+Early numerical phases are retained in metadata/logs. Tighter pressure linear
+solves improve the residual floor; the acceptance criteria are not relaxed.
+
+THERMAL PENALTIES
+Heat pickup: source deficit multiplied by exp(-U*A/(mass*cp)), with an
+assumed overall U of 0,2,10,20 W/m2/K. Surface area follows the actual cone.
+This is a lumped mixed-air estimate, not resolved wall heat transfer.
+PsychroLib 2.5.0 supplies ASHRAE moist-air properties. Moist mixing conserves
+humid-air mass and moist enthalpy; equilibrium condensate is retained.
+Ambient RH40/60/80%, source RH10/100% are scenarios, not measurements.
+Combined stresses use U20 and ambient RH80%, with saturated source air before
+heating. The cold-stream humidity ratio remains fixed during heat pickup.
+Uniform entrained-air stresses at 35,37,40,45 deg C test hot recirculation relative to the 35 deg C room reference. These are linear passive-field rescalings, not resolved hot exhaust plumes.
+These stresses are illustrative bounds, not statistical confidence limits.
+
+KNOWN MODEL LIMITS
+Still-air axisymmetry excludes crosswind and gravity-driven jet deflection.
+Constant density excludes the ~11% cold/ambient density difference at 5/35 C.
+A passive thermal field neglects kinetic-energy conversion. A 33 m/s source
+has about 0.55 K kinetic-energy temperature scale, smaller at the target.
+Internal cone flow is included in shape cases. The external body is omitted
+and the external lip is idealized as zero thickness; CAD has a 2 mm wall.
+No source-response curve, external hot exhaust, person, clothing, radiation,
+compressor energy, noise or subjective comfort model is included.
+Wall-function near-wall sensitivity remains a limitation even with a finer grid.
+Results are conditional design screens. No physical hardware optimum is proved.
+
+FILES
+config.json                  Goal, assumptions and fixed numerical gates
+scripts/round_jet.py          Structured CFD and optional internal cone generator
+scripts/audit_round.py        Objective, native balance and acceptance computation
+scripts/search.py             Adaptive diameter search, explicit new-case budget
+scripts/optimize_shapes.py    Shape/heat/humidity scenario and length comparison
+scripts/supervise.py          Clean numerical-check-based stopping
+scripts/thermal_sensitivity.py Heat pickup and moist equilibrium estimate
+scripts/internal_validation.py Warm-started mesh and convection checks
+results/cfd-records.json       Full traceable case metrics and failed checks
+results/search-decision.json   Next diameter or verified crossing bracket
+results/shape-decision.json    Conditional shape choices and next angle probe
+results/sensitivity.json       Exit sensitivity comparisons
+results/internal-validation.json Internal validation-job status
+results/thermal-sensitivity.json Separate and combined thermal stress cases
+designs/*/                    Exact candidate STEP + STL and dimensions
+
+RUN, FROM THE AIRFLOW-ASSESSMENT ROOT
+Use the Python environment with requirements-cfd.txt.
+  python optimization/scripts/verify_computation.py
+  python optimization/scripts/round_jet.py my_D24 --diameter 24 --run
+  python optimization/scripts/search.py --run --budget-new 2
+  python optimization/scripts/optimize_shapes.py --run
+  python optimization/scripts/report_search.py
+  python optimization/scripts/thermal_sensitivity.py
+  python optimization/scripts/update_search_overview.py
+
+Use a NEW case name. Generators refuse to overwrite case directories.
+Do not replay historical mid-run numerical changes as if they were fixed
+settings. Generate clean cases, then assess the final solution with the gates.
+For an existing stopped case, resume() resets stopAt to endTime explicitly.
+The pinned Linux ARM64 solver image is recorded in every run-status.json.
+Python and Docker scripts work locally, without paid remote CFD services.
+
+NEXT PHYSICAL VALIDATION
+Measure paired cold-branch mass flow and temperature with the actual attachment.
+Measure an air-temperature grid at 20 cm, with ambient and wind recorded.
+Check wall/insulation heat pickup, source pressure response and mounting fit.
+Then calibrate source inputs and proceed to 3-D crosswind/aiming and a heated
+surface model if person heat removal becomes the objective.
+
+BATCH OUTCOME
+The internal k-epsilon cross-check R14 did not pass all numerical gates.
+It is excluded from optimization and does not validate the SST candidate.
+The accepted SST candidate passes mesh/order spot checks. This is a conditional
+still-air prototype direction; wind and actual hardware validation remain open.

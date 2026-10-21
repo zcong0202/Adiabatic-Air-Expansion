@@ -1,0 +1,241 @@
+PASSIVE INFRARED MOTION SENSOR
+SEN-HC-SR501
+
+
+
+
+     1. GENERAL INFORMATION
+
+     Dear customer,
+     thank you for choosing our product. In the following, we will show you
+     how to use this device.
+     Should you encounter any unexpected problems during use, please do
+     not hesitate to contact us.
+
+
+
+
+                                                www.joy-it.net
+                                    Pascalstr. 8 47506 Neukirchen-Vluyn
+2. ADJUSTING THE SENSOR
+
+This passive infrared motion sensor has the possibility to adjust the sen-
+sitivity, hold time and pulse rate.
+
+Sensitivity
+The sensitivity of the infrared sensor can be adjusted with one of the po-
+tentiometers. The sensitivity will be lower if you turn the potentiometer
+clockwise.
+
+
+
+
+Hold time
+For this sensor, the hold time sets how long the sensor will remain active
+when motion is detected and the signal output remains set as active. You
+can set this with the second potentiometer. If you turn the potentiometer
+clockwise, the holding time becomes longer.
+
+
+
+
+                                             www.joy-it.net
+                                 Pascalstr. 8 47506 Neukirchen-Vluyn
+Pulse rate
+The pulse rate describes how often the sensor can trigger. The sensor can
+detect a movement only once or several times. The default setting is mul-
+tiple detection of movements. You can set this with a jumper on the back
+of the board.
+
+
+
+
+3. USAGE WITH RASPBERRY PI
+
+
+Connection
+
+
+
+
+                                                    Raspberry Pi       SEN-HC-SR501
+
+                                                          5V              VCC
+                                                         Pin 7            DATA
+                                                        (GPIO4)
+                                                         GND               GND
+
+
+
+                                             www.joy-it.net
+                                 Pascalstr. 8 47506 Neukirchen-Vluyn
+Code example
+This code example shows you on the console of the Raspberry Pi when a
+movement is detected and when it sets the signal back to LOW. The sta-
+tus of the Raspberry Pis is not continuously displayed. You can download
+the code example here or create the file directly on the Raspberry Pi.
+
+Therefore, enter the following command into the console of the Raspber-
+ry Pi and copy the following code into the now opened file. You can save
+with CTRL + O and leave the editor with CTRL + X.
+
+nano detect-movement.py
+
+
+#!/usr/bin/python
+from gpiozero import MotionSensor
+import time
+
+# Declaration of GPIO4 as an input for the PIR sensor
+pir = MotionSensor(4)
+
+# Intermediate variables
+active = False
+
+try:
+       while True:
+           # Monitoring changes from the PIR sensor
+           if pir.motion_detected and not active:
+               print("Motion detected")
+               active = True
+           elif not pir.motion_detected and active:
+               print("No movement")
+               active = False
+
+          time.sleep(0.1)
+
+# Termination condition
+except KeyboardInterrupt:
+    print("Program interrupted by user.")
+
+
+
+
+You can run the program with the following command.
+
+python3 detect-movement.py
+
+
+
+
+  i        These instructions were written under Raspberry Pi OS
+           Bookworm for the Raspberry Pi 4 and 5. It has not been checked
+           with newer operating systems or hardware.
+
+
+
+
+                                             www.joy-it.net
+                                 Pascalstr. 8 47506 Neukirchen-Vluyn
+4. USAGE WITH ARDUINO
+
+Connection
+
+
+
+
+Code example
+This code example will be displayed on the serial monitor of the Arduino
+when the sensor has detected motion or when the data signal is set to
+LOW again. First you should check if the correct board is selected under
+Tools → Board: and the correct COM under Tools → Port: .
+You can download the code sample here or you can copy the following
+code into your Arduino IDE and open the serial monitor at Tools → Serial
+Monitor. There you have to set the baudrate to 9600 to see the output.
+
+
+
+
+                                            www.joy-it.net
+                                Pascalstr. 8 47506 Neukirchen-Vluyn
+boolean active = false; //Declare intermediate variable
+int pin = 7; // Set data pin
+int movement = 0;
+
+void setup() {
+  pinMode(pin, INPUT); // Set Pin7 as input
+  Serial.begin(9600); // Serial monitor at a baud rate of 9600
+}
+
+void loop() {
+  movement = digitalRead(pin); // Read Sensor
+
+    // a new movement was detected
+    if(movement == HIGH && active == false){
+      active = true;
+      Serial.println("Motion detected");
+    }
+
+    // no motion after motion is detected
+    if(movement == LOW && active == true){
+      active = false;
+      Serial.println("No movement");
+    }
+
+    delay(100);
+}
+
+
+
+
+                                       www.joy-it.net
+                           Pascalstr. 8 47506 Neukirchen-Vluyn
+5. FURTHER INFORMATION
+
+Our information and redemption obligation according to
+the Electrical and Electronic Equipment Act
+(ElektroG)
+
+Symbol on electrial and electronic products :
+This crossed-out bin means that electrical and electronic products do not
+belong into the household waste. You must hand over your old appliance
+to a registration office. Before you can hand over the old appliance, you
+must remove used batteries and accumulators which are not enclosed by
+the device.
+
+Return options :
+As the end user, you can hand over with the purchase of a new device y-
+our old appliance (which has essentially the same functions as the new
+one) free of charge for disposal. Small devices which do not have outer
+dimensions greater than 25 cm can be submitted independently of the
+purchase of a new product in normal household quantities.
+Possibility of restitution at our company location during our opening
+hours:
+Simac GmbH, Pascalstr. 8, D-47506 Neukirchen-Vluyn
+Possibility of restitution nearby :
+We send you a parcel stamp with which you can send us your old appli-
+ance free of charge. For this possibility, you must contact us via e-mail at
+service@joy-it.net or via telephone.
+Information about packaging:
+Please package your old appliance safe during transport. Should you not
+have a suitable packaging material or you do not want to use your own
+material, you can contact us and we will send you an appropriate packa-
+ge.
+
+
+
+
+6. SUPPORT
+
+If any questions remain open or problems arise after your purchase, we
+are available by email, telephone and ticket support system to answer
+these.
+
+E-Mail: service@joy-it.net
+Ticket-System: https://support.joy-it.net
+Telephone: +49 (0)2845 9360 – 50 (Mo - Do: 09:00 - 17:00 o‘clock CET,
+                                        Fr: 09:00 - 14:30 o‘clock CET)
+For more information visit our website:
+www.joy-it.net
+
+
+
+
+                                              www.joy-it.net
+                                                www.joy-it.net
+                                       SIMAC Electronics GmbH
+                                  Pascalstr.
+                                   Pascalstr.8,847506
+                                                 47506Neukirchen-Vluyn
+                                                        Neukirchen-Vluyn
+

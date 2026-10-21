@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "name": "single new scope section",
+      "passed": true
+    },
+    {
+      "name": "source matches Python",
+      "passed": true
+    },
+    {
+      "name": "warm exchange matches Python",
+      "passed": true
+    },
+    {
+      "name": "half capture fails 20 C in example",
+      "passed": true
+    },
+    {
+      "name": "returned work causes heating",
+      "passed": true
+    },
+    {
+      "name": "45 C motor inlet flagged",
+      "passed": true
+    },
+    {
+      "name": "wide opening worsens zone",
+      "passed": true
+    },
+    {
+      "name": "input field event wired",
+      "passed": true
+    },
+    {
+      "name": "no new local JS errors",
+      "passed": true
+    },
+    {
+      "name": "all existing artifact links resolve",
+      "passed": true
+    }
+  ],
+  "results": {
+    "baseline": {
+      "mass": 0.0776,
+      "power": 3360,
+      "supply": 0.9592752761779835,
+      "source_cooling": 2267.0816,
+      "zone": 18.898377820178947,
+      "drop": 11.101622179821053,
+      "max_warm_volume": 0.11835785873921242,
+      "motor_limit_ok": true,
+      "passed": true
+    },
+    "half": {
+      "mass": 0.0776,
+      "power": 3360,
+      "supply": 0.9592752761779835,
+      "source_cooling": 2267.0816,
+      "zone": 23.38200336745924,
+      "drop": 6.617996632540759,
+      "max_warm_volume": 0.05491047606280012,
+      "motor_limit_ok": true,
+      "passed": false
+    },
+    "returned": {
+      "mass": 0.0776,
+      "power": 3360,
+      "supply": 0.9592752761779835,
+      "source_cooling": 2267.0816,
+      "zone": 36.11113553276288,
+      "drop": -6.11113553276288,
+      "max_warm_volume": -0.16848220347815698,
+      "motor_limit_ok": true,
+      "passed": false
+    },
+    "invalid": {
+      "mass": 0.0776,
+      "power": 3360,
+      "supply": 5.9592752761779835,
+      "source_cooling": 1876.7536,
+      "zone": 20.897967490547238,
+      "drop": 9.102032509452762,
+      "max_warm_volume": 0.08503592189243225,
+      "motor_limit_ok": false,
+      "passed": false
+    },
+    "wide": {
+      "mass": 0.0776,
+      "power": 3360,
+      "supply": 0.9592752761779835,
+      "source_cooling": 2267.0816,
+      "zone": 26.735132222874412,
+      "drop": 3.2648677771255876,
+      "max_warm_volume": 0.11835785873921242,
+      "motor_limit_ok": true,
+      "passed": false
+    },
+    "sections": 1,
+    "localLinks": [
+      "Airflow-Assessment/motor-seat-study/output/pdf/AA-motor-seat-viability.pdf",
+      "Airflow-Assessment/motor-seat-study/FIRST-PRINCIPLES.txt",
+      "Airflow-Assessment/motor-seat-study/results/assessment.json",
+      "Airflow-Assessment/motor-seat-study/assess.py",
+      "Airflow-Assessment/motor-seat-study/results/verification.json",
+      "Airflow-Assessment/formal-model/AAThermo/MotorSeat.lean",
+      "Airflow-Assessment/formal-model/proof-verification.json",
+      "Airflow-Assessment/AA-motor-seat-viability.zip",
+      "Project-Documents/CFD%20inputs%20outdoor%20cooling%20seat%20(rental%20compressor%20%2B%204%20%C3%97%20LZB46).docx"
+    ]
+  },
+  "all_passed": true
+}

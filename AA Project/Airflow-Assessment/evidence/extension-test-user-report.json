@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-15",
+  "source": "User report in chat",
+  "observation": "Nozzle extensions slowed air too much; it warmed before reaching useful distance.",
+  "quantitative_data_supplied": false,
+  "goal_retained": "Local cooling on a person at about 20 cm",
+  "interpretation": "Qualitative failure of useful cooling. Air warming, mass-flow loss and the dominant mechanism remain unmeasured.",
+  "decision": "Do not repeat the entire extension set. Instrument bare outlet and one representative failed extension first.",
+  "clarification": "User tested all extensions. No exit speed or temperature was measured. User perceived no useful cooling."
+}

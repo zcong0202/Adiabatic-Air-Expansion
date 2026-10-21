@@ -1,0 +1,48 @@
+{
+  "state": {
+    "latest": {
+      "ms": 60617,
+      "mode": "T",
+      "gt": -1,
+      "raw_mm": 92,
+      "median_mm": 91,
+      "range_status": 0,
+      "tof_valid": 1,
+      "tof_age_ms": 7,
+      "pir_raw": 0,
+      "pir_warm": 0,
+      "state": 2,
+      "command": 1,
+      "feedback": 1,
+      "adc": 1023,
+      "feedback_v": 5.0,
+      "match": 1,
+      "fault": 0,
+      "host_time_dubai": "2026-10-08T17:18:42.819776+04:00",
+      "seq": 909
+    },
+    "count": 909,
+    "connected": true,
+    "age_ms": 67,
+    "error": "",
+    "port": "/dev/cu.usbmodem11101",
+    "log": "live-signal-20261008-171740.csv",
+    "last_command": "",
+    "messages": [
+      "# ToF idle SDA=3.573V SCL=3.573V (ADC estimate)",
+      "# ToF prior interrupt config=20",
+      "# ToF VHV init=9B timeout=81 count=80",
+      "# ToF init=1",
+      "# ToF mode=40 gpio=3 fw=3 osc=36 errors=0",
+      "# AA LED deployment; automatic start; no continuous-ON cap; keep D8-D7-A0 loopback"
+    ],
+    "recording": true,
+    "recorded_count": 909,
+    "sensor_stopped": null
+  },
+  "auto_start_verified": true,
+  "stop_button_removed": true,
+  "gate_tests": "PASS: valid presence held beyond 60s and 120s; invalid data closes; departure dwell; millis wrap",
+  "artifact": "aa_presence_led_deploy.zip",
+  "note": "Live range quality and human occupancy performance remain field tests; invalid readings keep LED OFF."
+}

@@ -1,0 +1,428 @@
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/concept.step'...
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/concept.step(310 ents)  Write  Done[0m
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/concept.step'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Circle)
+Info    : [ 20%] Meshing curve 2 (Line)
+Info    : [ 30%] Meshing curve 3 (Circle)
+Info    : [ 40%] Meshing curve 4 (Circle)
+Info    : [ 50%] Meshing curve 5 (Line)
+Info    : [ 60%] Meshing curve 6 (Circle)
+Info    : [ 70%] Meshing curve 7 (Line)
+Info    : [ 80%] Meshing curve 8 (Circle)
+Info    : [ 90%] Meshing curve 9 (Circle)
+Info    : [100%] Meshing curve 10 (Line)
+Info    : Done meshing 1D (Wall 0.00151842s, CPU 0.000393s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 2 (Cone, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 3 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 4 (Cone, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 6 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.0344679s, CPU 0.029119s)
+Info    : 804 nodes 1746 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/wall.stl'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/wall.stl'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Line)
+Info    : [ 10%] Meshing curve 2 (Line)
+Info    : [ 20%] Meshing curve 3 (Line)
+Info    : [ 20%] Meshing curve 4 (Line)
+Info    : [ 30%] Meshing curve 5 (Circle)
+Info    : [ 30%] Meshing curve 6 (Line)
+Info    : [ 40%] Meshing curve 7 (Line)
+Info    : [ 50%] Meshing curve 8 (Line)
+Info    : [ 50%] Meshing curve 9 (Line)
+Info    : [ 60%] Meshing curve 10 (Line)
+Info    : [ 60%] Meshing curve 11 (Line)
+Info    : [ 70%] Meshing curve 12 (Line)
+Info    : [ 80%] Meshing curve 13 (Line)
+Info    : [ 80%] Meshing curve 14 (Line)
+Info    : [ 90%] Meshing curve 15 (Circle)
+Info    : [ 90%] Meshing curve 16 (Line)
+Info    : [100%] Meshing curve 17 (Circle)
+Info    : Done meshing 1D (Wall 0.00128879s, CPU 0.001046s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 6 (Cone, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 7 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 8 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 9 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.115693s, CPU 0.114307s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Input mesh hash 1dfa2898597407ae
+Info    : Creating an empty mesh with 4281 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of       4277 points on   1 threads - mesh.nvert: 4         
+Info    : Recovering 2 missing facet(s)
+Info    : Recover Delaunay
+Info    : All volumes of the BRep were found and colorized accordingly
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      13786 points on   1 threads - mesh.nvert: 4281      
+Info    :           -      12504 points filtered
+Info    :           =       1282 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       5676 points on   1 threads - mesh.nvert: 5563      
+Info    :           -       4177 points filtered
+Info    :           =       1499 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       4772 points on   1 threads - mesh.nvert: 7062      
+Info    :           -       2684 points filtered
+Info    :           =       2088 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       7781 points on   1 threads - mesh.nvert: 9150      
+Info    :           -       4280 points filtered
+Info    :           =       3501 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      11029 points on   1 threads - mesh.nvert: 12651     
+Info    :           -       6792 points filtered
+Info    :           =       4237 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       6998 points on   1 threads - mesh.nvert: 16888     
+Info    :           -       4477 points filtered
+Info    :           =       2521 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       1167 points on   1 threads - mesh.nvert: 19409     
+Info    :           -        550 points filtered
+Info    :           =        617 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of         94 points on   1 threads - mesh.nvert: 20026     
+Info    :           -         30 points filtered
+Info    :           =         64 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of          3 points on   1 threads - mesh.nvert: 20090     
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Improving       4074 tet. on   1 thrd (S & ER)
+Info    : Improving        160 tet. on   1 thrd (S & ER)
+Info    : Improving         42 tet. on   1 thrd (S & ER)
+Info    : Improving         29 tet. on   1 thrd (S & ER)
+Info    : Improving         25 tet. on   1 thrd (S & ER)
+Info    : Improving         25 tet. on   1 thrd (GSC)
+Info    :  	Final tet. mesh contains 121562 tetrahedra
+Info    :  	Final tet. mesh contains 20093 vertices
+Info    : tEmptyMesh  	 = 	    0.015
+Info    : tVerifyBnd  	 = 	    0.003
+Info    : tBndRecovery	 = 	    0.022
+Info    : tConvertMesh	 = 	    0.003
+Info    : tRefine     	 = 	    0.124
+Info    : tOptimize   	 = 	    0.009
+Info    : Done meshing 3D (Wall 0.190393s, CPU 0.176319s)
+Info    : 20093 nodes 119437 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/mesh.msh'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D1_compact/mesh.msh'
+COMPLETE D1_compact
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/concept.step'...
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/concept.step(4471 ents)  Write  Done[0m
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/concept.step'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (BSpline)
+Info    : [ 10%] Meshing curve 2 (BSpline)
+Info    : [ 20%] Meshing curve 3 (BSpline)
+Info    : [ 30%] Meshing curve 4 (BSpline)
+Info    : [ 30%] Meshing curve 5 (BSpline)
+Info    : [ 40%] Meshing curve 6 (BSpline)
+Info    : [ 50%] Meshing curve 7 (BSpline)
+Info    : [ 60%] Meshing curve 8 (BSpline)
+Info    : [ 60%] Meshing curve 9 (BSpline)
+Info    : [ 70%] Meshing curve 10 (BSpline)
+Info    : [ 80%] Meshing curve 11 (BSpline)
+Info    : [ 80%] Meshing curve 12 (BSpline)
+Info    : [ 90%] Meshing curve 13 (BSpline)
+Info    : [100%] Meshing curve 14 (BSpline)
+Info    : Done meshing 1D (Wall 0.0408408s, CPU 0.040229s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (BSpline surface, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 2 (BSpline surface, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.042978s, CPU 0.042624s)
+Info    : 1577 nodes 2638 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/wall.stl'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/wall.stl'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (BSpline)
+Info    : [ 10%] Meshing curve 2 (BSpline)
+Info    : [ 10%] Meshing curve 3 (BSpline)
+Info    : [ 20%] Meshing curve 4 (BSpline)
+Info    : [ 20%] Meshing curve 8 (BSpline)
+Info    : [ 30%] Meshing curve 9 (BSpline)
+Info    : [ 30%] Meshing curve 10 (BSpline)
+Info    : [ 40%] Meshing curve 11 (BSpline)
+Info    : [ 40%] Meshing curve 12 (Line)
+Info    : [ 40%] Meshing curve 13 (Line)
+Info    : [ 50%] Meshing curve 14 (Line)
+Info    : [ 50%] Meshing curve 15 (Line)
+Info    : [ 60%] Meshing curve 16 (BSpline)
+Info    : [ 60%] Meshing curve 17 (Line)
+Info    : [ 70%] Meshing curve 18 (Line)
+Info    : [ 70%] Meshing curve 19 (Line)
+Info    : [ 70%] Meshing curve 20 (Line)
+Info    : [ 80%] Meshing curve 21 (Line)
+Info    : [ 80%] Meshing curve 22 (Line)
+Info    : [ 90%] Meshing curve 23 (Line)
+Info    : [ 90%] Meshing curve 24 (Line)
+Info    : [100%] Meshing curve 25 (BSpline)
+Info    : [100%] Meshing curve 26 (BSpline)
+Info    : Done meshing 1D (Wall 0.0664136s, CPU 0.06556s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 6 (BSpline surface, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 7 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 8 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.141474s, CPU 0.140648s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Input mesh hash b3e4856663612a5f
+Info    : Creating an empty mesh with 4496 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of       4492 points on   1 threads - mesh.nvert: 4         
+Info    : All volumes of the BRep were found and colorized accordingly
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       9124 points on   1 threads - mesh.nvert: 4496      
+Info    :           -       8291 points filtered
+Info    :           =        833 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       7928 points on   1 threads - mesh.nvert: 5329      
+Info    :           -       6197 points filtered
+Info    :           =       1731 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       5649 points on   1 threads - mesh.nvert: 7060      
+Info    :           -       3403 points filtered
+Info    :           =       2246 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       7140 points on   1 threads - mesh.nvert: 9306      
+Info    :           -       3926 points filtered
+Info    :           =       3214 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       9829 points on   1 threads - mesh.nvert: 12520     
+Info    :           -       5773 points filtered
+Info    :           =       4056 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       8695 points on   1 threads - mesh.nvert: 16576     
+Info    :           -       5688 points filtered
+Info    :           =       3007 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       1699 points on   1 threads - mesh.nvert: 19583     
+Info    :           -        872 points filtered
+Info    :           =        827 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of        171 points on   1 threads - mesh.nvert: 20410     
+Info    :           -         55 points filtered
+Info    :           =        116 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of         10 points on   1 threads - mesh.nvert: 20526     
+Info    :           -          2 points filtered
+Info    :           =          8 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Improving       4322 tet. on   1 thrd (S & ER)
+Info    : Improving        167 tet. on   1 thrd (S & ER)
+Info    : Improving         47 tet. on   1 thrd (S & ER)
+Info    : Improving         35 tet. on   1 thrd (S & ER)
+Info    : Improving         33 tet. on   1 thrd (S & ER)
+Info    : Improving         33 tet. on   1 thrd (GSC)
+Info    :  	Final tet. mesh contains 124840 tetrahedra
+Info    :  	Final tet. mesh contains 20534 vertices
+Info    : tEmptyMesh  	 = 	    0.012
+Info    : tVerifyBnd  	 = 	    0.002
+Info    : tBndRecovery	 = 	    0.000 (boundary not altered)
+Info    : tConvertMesh	 = 	    0.000 (nothing to convert)
+Info    : tRefine     	 = 	    0.126
+Info    : tOptimize   	 = 	    0.011
+Info    : Done meshing 3D (Wall 0.162927s, CPU 0.153542s)
+Info    : 21353 nodes 122794 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/mesh.msh'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D2_slot/mesh.msh'
+COMPLETE D2_slot
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/concept.step'...
+[32;1m
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******[0m
+[32;1m
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******[0m
+[32;1m******        Transferring Shape, ShapeType = 0                      ******[0m
+[32;1m** WorkSession : Sending all data[0m
+[32;1m Step File Name : /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/concept.step(430 ents)  Write  Done[0m
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/concept.step'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Circle)
+Info    : [ 10%] Meshing curve 2 (Line)
+Info    : [ 20%] Meshing curve 3 (Circle)
+Info    : [ 30%] Meshing curve 4 (Circle)
+Info    : [ 40%] Meshing curve 5 (Line)
+Info    : [ 50%] Meshing curve 6 (Circle)
+Info    : [ 60%] Meshing curve 10 (Circle)
+Info    : [ 60%] Meshing curve 11 (Line)
+Info    : [ 70%] Meshing curve 12 (Circle)
+Info    : [ 80%] Meshing curve 13 (Circle)
+Info    : [ 90%] Meshing curve 14 (Line)
+Info    : [100%] Meshing curve 15 (Circle)
+Info    : Done meshing 1D (Wall 0.000492125s, CPU 0.000467s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 2 (Cylinder, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 8 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 9 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 10 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 11 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.0896898s, CPU 0.089041s)
+Info    : 2500 nodes 5320 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/wall.stl'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/wall.stl'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Line)
+Info    : [ 10%] Meshing curve 2 (Line)
+Info    : [ 10%] Meshing curve 3 (Line)
+Info    : [ 20%] Meshing curve 4 (Line)
+Info    : [ 20%] Meshing curve 5 (Circle)
+Info    : [ 30%] Meshing curve 6 (Line)
+Info    : [ 30%] Meshing curve 7 (Line)
+Info    : [ 40%] Meshing curve 8 (Line)
+Info    : [ 40%] Meshing curve 9 (Line)
+Info    : [ 50%] Meshing curve 10 (Line)
+Info    : [ 50%] Meshing curve 11 (Line)
+Info    : [ 60%] Meshing curve 12 (Line)
+Info    : [ 60%] Meshing curve 13 (Line)
+Info    : [ 70%] Meshing curve 14 (Line)
+Info    : [ 70%] Meshing curve 15 (Circle)
+Info    : [ 80%] Meshing curve 16 (Circle)
+Info    : [ 80%] Meshing curve 17 (Line)
+Info    : [ 90%] Meshing curve 18 (Circle)
+Info    : [ 90%] Meshing curve 19 (Circle)
+Info    : [100%] Meshing curve 20 (Circle)
+Info    : [100%] Meshing curve 21 (Line)
+Info    : Done meshing 1D (Wall 0.00180542s, CPU 0.001768s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 6 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 7 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 8 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 9 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 10 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 11 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 12 (Cylinder, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.132117s, CPU 0.131332s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Input mesh hash 481ea81656c5fcaa
+Info    : Creating an empty mesh with 4713 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of       4709 points on   1 threads - mesh.nvert: 4         
+Info    : Recovering 5 missing facet(s)
+Info    : Recover Delaunay
+Info    : 1 out of 2 volumes will be refined
+Info    : All volumes of the BRep were found and colorized accordingly
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      15027 points on   1 threads - mesh.nvert: 4713      
+Info    :           -      13178 points filtered
+Info    :           =       1849 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       8018 points on   1 threads - mesh.nvert: 6562      
+Info    :           -       5363 points filtered
+Info    :           =       2655 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       8219 points on   1 threads - mesh.nvert: 9217      
+Info    :           -       4748 points filtered
+Info    :           =       3471 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       9567 points on   1 threads - mesh.nvert: 12688     
+Info    :           -       5640 points filtered
+Info    :           =       3927 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       8071 points on   1 threads - mesh.nvert: 16615     
+Info    :           -       5138 points filtered
+Info    :           =       2933 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       1903 points on   1 threads - mesh.nvert: 19548     
+Info    :           -       1010 points filtered
+Info    :           =        893 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of        218 points on   1 threads - mesh.nvert: 20441     
+Info    :           -         72 points filtered
+Info    :           =        146 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of         16 points on   1 threads - mesh.nvert: 20587     
+Info    :           -          3 points filtered
+Info    :           =         13 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Improving       4209 tet. on   1 thrd (S & ER)
+Info    : Improving        166 tet. on   1 thrd (S & ER)
+Info    : Improving         48 tet. on   1 thrd (S & ER)
+Info    : Improving         36 tet. on   1 thrd (S & ER)
+Info    : Improving         35 tet. on   1 thrd (S & ER)
+Info    : Improving         35 tet. on   1 thrd (GSC)
+Info    : Improving          7 tet. on   1 thrd (S & ER)
+Info    :  	Final tet. mesh contains 124394 tetrahedra
+Info    :  	Final tet. mesh contains 20600 vertices
+Info    : tEmptyMesh  	 = 	    0.018
+Info    : tVerifyBnd  	 = 	    0.003
+Info    : tBndRecovery	 = 	    0.021
+Info    : tConvertMesh	 = 	    0.003
+Info    : tRefine     	 = 	    0.125
+Info    : tOptimize   	 = 	    0.013
+Info    : Done meshing 3D (Wall 0.193351s, CPU 0.185579s)
+Info    : 20600 nodes 122299 elements
+Info    : Writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/mesh.msh'...
+Info    : Done writing '/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/designs/D3_shield/mesh.msh'
+COMPLETE D3_shield

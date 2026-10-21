@@ -1,0 +1,329 @@
+--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node19.html) ---
+Thermodynamics and Propulsion
+Next: 2.6 Muddiest Points on
+Up: 2. The First Law
+Previous: 2.4 Specific Heats
+Contents
+Index
+Subsections
+2.5.1 Conservation of mass
+2.5.2 Conservation of energy
+2.5.3 Stagnation Temperature and Stagnation Enthalpy
+2.5.3.1 Frame dependence of stagnation quantities
+2.5.3.2 Example
+2.5.3.3 Steady Flow Energy Equation in terms of Stagnation Enthalpy
+2.5.4 Example Applications of the First Law of Thermodynamics
+2.5.4.1 Tank Filling
+2.5.4.2 Flow through a rocket nozzle
+2.5.4.3 Power to drive a gas turbine compressor
+2.5 Control volume form of the conservation laws
+[VWB&S, 6.1, 6.2]
+The thermodynamic laws (as well as
+Newton's laws) are for a system, a specific quantity of matter. More
+often, in propulsion and power problems, we are interested in what
+happens in a fixed volume, for example a rocket motor or a jet
+engine through which mass is flowing at a certain rate.  We
+may also be interested in the rates of heat and work into and
+out of a system. For this reason, the control volume form of the
+system laws is of great importance. A schematic of the difference is
+shown in Figure 2.8. Rather than focus on a
+particle of mass which moves through the engine, it is more
+convenient to focus on the volume occupied by the engine. This
+requires us to use the control volume form of the thermodynamic
+laws, developed below.
+Figure 2.8:
+Control volume and system
+for flow through a propulsion device
+2.5.1 Conservation of mass
+For the control volume shown, the rate of change of mass inside the
+volume is given by the difference between the mass flow rate in and
+the mass flow rate out. For a single flow coming in and a single
+flow coming out this is
+If the mass inside the control volume changes with time it is
+because some mass is added or some is taken out. In the special case
+of a steady flow,
+, therefore
+Figure 2.9:
+A control volume used to track mass flows
+2.5.2 Conservation of energy
+The first law of thermodynamics can be written as a rate equation:
+where
+To derive the first law as a rate equation for a control
+volume we proceed as with the mass conservation equation. The
+physical idea is that any rate of change of energy in the control
+volume must be caused by the rates of energy flow into or out of the
+volume. The heat transfer and the work are already included and the
+only other contribution must be associated with the mass flow in and
+out, which carries energy with it.
+Figure 2.10 shows two schematics
+of this idea.  The desired form of the equation will be
+Figure 2.10:
+Schematic diagrams
+illustrating terms in the energy equation for a simple and a more
+general control volume
+[Simple]
+[More General]
+The fluid that enters or leaves has an amount of energy per unit
+mass given by
+where
+is the fluid velocity relative to some coordinate system,
+and we have neglected chemical energy. In addition, whenever fluid
+enters or leaves a control volume there is a work term associated
+with the entry or exit. We saw this in Section 2.3,
+example 1, and the present derivation is essentially an application
+of the ideas presented there. Flow exiting at station ``e'' must
+push back the surrounding fluid, doing work on it. Flow entering the
+volume at station ``i'' is pushed on by, and receives work from the
+surrounding air. The rate of flow work at exit is given by the
+product of the pressure times the exit area times the rate at which
+the external flow is ``pushed back.'' The latter, however, is equal
+to the volume per unit mass times the rate of mass flow. Put another
+way, in a time
+, the work done on the surroundings by the flow
+at the exit station is
+The net rate of flow work is
+Including all possible energy flows (heat, shaft work, shear work,
+piston work, etc.), the first law can then be written as:
+where
+includes the sign associated with the energy flow. If heat is added
+or work is done on the system then the sign is positive, if
+work or heat are extracted from the system then the sign is
+negative. NOTE: this is consistent with
+, where
+is the work done by the system on the environment, thus work
+is flowing out of the system.
+We can then combine the specific internal energy term,
+, in
+and the specific flow work term,
+, to make the enthalpy appear:
+Thus, the first law can be written as:
+For most of the applications in this course, there will be no shear
+work and no piston work. Hence, the first law for a control volume
+will be most often used as:
+(2..10)
+Note how our use of enthalpy has simplified the rate of work term.
+In writing the control volume form of the equation we have assumed
+only one entering and one leaving stream, but this could be
+generalized to any number of inlet and exit streams.
+In the special case of a steady-state flow,
+Applying this to Equation 2.10
+produces a form of the ``Steady Flow Energy Equation'' (SFEE),
+(2..11)
+which has units of Joules per second.  We could also divide by the
+mass flow to produce
+which has units of Joules per second per kilogram. For problems of
+interest in aerospace applications the velocities are high and the
+term that is associated with changes in the elevation is small. From
+now on, we will neglect the
+terms unless explicitly stated.
+Muddy Points
+What is shaft work? (MP 2.5)
+What distinguishes shaft work from other works?
+(MP 2.6)
+Definition of a control volume (MP 2.7)
+2.5.3 Stagnation Temperature and Stagnation Enthalpy
+Suppose that our steady flow control volume is a set of streamlines
+describing the flow up to the nose of a blunt object, as in
+Figure 2.11.
+Figure 2.11:
+Streamlines and a stagnation region; a control
+volume can be drawn between the dashed streamlines and points 1 and
+2
+The streamlines are stationary in space, so there is no external
+work done on the fluid as it flows. If there is also no heat
+transferred to the flow (adiabatic), then the steady flow energy
+equation becomes
+The quantity that is conserved is defined as the stagnation
+temperature,
+or
+where
+is the Mach number2.5. The stagnation temperature is the
+temperature that the fluid would reach if it were brought to zero
+speed by a steady adiabatic process with no external work. Note that
+for any steady, adiabatic flow with no external work, the stagnation
+temperature is constant.
+It is also convenient to define the stagnation enthalpy,
+which allows us to write the Steady Flow Energy Equation in a
+simpler form as
+Note that for a quasi-static adiabatic process
+so we can write
+and define the relationship between stagnation pressure and
+static pressure as
+where, the stagnation pressure is the pressure that the fluid would
+reach if it were brought to zero speed, via a steady, adiabatic,
+quasi-static process with no external work.
+2.5.3.1 Frame dependence of stagnation quantities
+An area of common confusion is the frame dependence of stagnation
+quantities. The stagnation temperature and stagnation pressure are
+the conditions the fluid would reach if it were brought to zero
+speed relative to some reference frame, via a steady
+adiabatic process with no external work (for stagnation temperature)
+or a steady, adiabatic, reversible process with no external work
+(for stagnation pressure).  Depending on the speed of the reference
+frame the stagnation quantities will take on different values.
+For example, consider a high speed reentry vehicle traveling through
+the still atmosphere, which is at temperature,
+. Let's place our
+reference frame on the vehicle and stagnate a fluid particle on the
+nose of the vehicle (carrying it along with the vehicle and thus
+essentially giving it kinetic energy).  The stagnation temperature
+of the air in the vehicle frame is
+where
+is the vehicle speed. The temperature the skin reaches (to
+first approximation) is the stagnation temperature and depends on
+the speed of the vehicle. Since re-entry vehicles travel fast, the
+skin temperature is much hotter than the atmospheric temperature.
+The atmospheric temperature,
+, is not frame dependent, but the
+stagnation temperature,
+, is.
+The confusion comes about because
+is usually referred to as the
+static temperature. In common language this has a similar meaning as
+``stagnation,'' but in fluid mechanics and thermodynamics
+static is used to label the thermodynamic properties
+of the gas (
+,
+, etc.), and these are not frame dependent.
+Thus in our re-entry vehicle example, looking at the still
+atmosphere from the vehicle frame we see a stagnation temperature
+hotter than the atmospheric (static) temperature. If we look
+at the same still atmosphere from a stationary frame, the stagnation
+temperature is the same as the static temperature.
+2.5.3.2 Example
+For the case shown below, a jet engine is sitting motionless on the
+ground prior to take-off. Air is entrained into the engine by the
+compressor. The inlet can be assumed to be frictionless and
+adiabatic.
+Figure 2.12:
+A stationary gas turbine drawing air in from the atmosphere
+Considering the state of the gas within the inlet, prior to passage
+into the compressor, as state (1), and working in the
+reference frame of the motionless airplane:
+Is
+greater than,
+less than, or equal to
+?
+The stagnation temperature of the atmosphere,
+,
+is equal to
+since it is moving the same speed as
+the reference frame (the motionless airplane). The steady flow
+energy equation tells us that if there is no heat or shaft work (the
+case for our adiabatic inlet) the stagnation enthalpy (and thus
+stagnation temperature for constant
+) remains unchanged. Thus
+Is
+greater than, less than, or equal to
+?
+If
+then
+since the flow is moving at station 1 and therefore some of the
+total energy is composed of kinetic energy (at the expense of
+internal energy, thus lowering
+)
+Is
+greater
+than, less than, or equal to
+?
+Equal, by the same argument as 1.
+Is
+greater than, less than, or equal to
+?
+Less than, by the same argument as 2.
+2.5.3.3 Steady Flow Energy Equation in terms of Stagnation Enthalpy
+The form of the ``Steady Flow Energy Equation'' (SFEE) that we will
+most commonly use is Equation 2.11
+written in terms of stagnation quantities, and neglecting chemical
+and potential energies,
+The steady flow energy equation finds much use in the analysis of
+power and propulsion devices and other fluid machinery. Note the
+prominent role of enthalpy.
+Muddy Points
+What is the difference between enthalpy and stagnation enthalpy? (MP
+2.8)
+2.5.4 Example Applications of the First Law of Thermodynamics
+[VW, S& B: 6.4]
+2.5.4.1 Tank Filling
+Using what we have just learned we can attack the tank filling
+problem solved in Section 2.3.3 from an alternate
+point of view using the control volume form of the first law. In
+this problem the shaft work is zero, and the heat transfer, kinetic
+energy changes, and potential energy changes are neglected. In
+addition there is no exit mass flow.
+Figure 2.13:
+A control volume
+approach to the tank filling problem
+The control volume form of the first law is therefore
+The equation of mass conservation is
+Combining we have
+Integrating from the initial time to the final time (the incoming
+enthalpy is constant) and using
+gives the result
+as before.
+2.5.4.2 Flow through a rocket nozzle
+A liquid bi-propellant rocket consists of a thrust chamber and
+nozzle and some means for forcing the liquid propellants into the
+chamber where they react, converting chemical energy to thermal
+energy.
+Figure 2.14:
+Flow through a rocket nozzle
+Once the rocket is operating we can assume that all of the
+flow processes are steady, so it is appropriate to use the
+steady flow energy equation. Also, for now we will assume that the
+gas behaves as a perfect gas with constant specific heats, though in
+general this is a poor approximation. There is no external
+work, and we assume that the flow is adiabatic. We define
+our control volume as going between location
+, in the chamber,
+and location
+, at the exit, and then write the First Law as
+or
+Therefore
+If we assume
+quasi-static, adiabatic expansion then
+so
+and
+, the conditions in the combustion chamber, are set
+by propellants, and
+is the external static pressure.
+2.5.4.3 Power to drive a gas turbine compressor
+Consider for example the PW4084 pictured in
+Figure 2.15. The engine is designed to produce about
+84,000 lbs of thrust at takeoff.  The engine is a two-spool design.
+The fan and low pressure compressor are driven by the low pressure
+turbine. The high pressure compressor is driven by the high pressure
+turbine.  We wish to find the total shaft work required to drive the
+compression system.
+Figure 2.15:
+The Pratt and Whitney 4084 (drawing courtesy of Pratt and
+Whitney)
+We define our control volume to encompass the compression system,
+from the front of the fan to the back of the fan and high pressure
+compressor, with the shaft cutting through the back side of the
+control volume.  Heat transfer from the gas streams is negligible,
+so we write the First Law (steady flow energy equation) as:
+For
+this problem we must consider two streams, the fan stream,
+,  and
+the core stream,
+:
+We obtain the temperature change by assuming that the compression
+process is quasi-static and adiabatic,
+then
+Substituting these values into the expression for the first law
+above, along with estimates of
+, we obtain
+Note that
+. If a car engine has
+, then the
+power needed to drive compressor is equivalent to 1,110 automobile
+engines. All of this power is generated by the low pressure and high
+pressure turbines.
+Next: 2.6 Muddiest Points on
+Up: 2. The First Law
+Previous: 2.4 Specific Heats
+Contents
+Index
+UnifiedTP
+--- END UNTRUSTED EXTERNAL CONTENT ---

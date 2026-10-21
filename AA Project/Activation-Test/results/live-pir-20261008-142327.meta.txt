@@ -1,0 +1,15 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# ToF idle SDA=0.171V SCL=0.171V (ADC estimate)
+# ToF bus idle check failed: needs onboard low-voltage pull-ups
+# AA LED prototype; outputs disabled at boot; send ? for commands
+2026-10-08T14:23:40.214281+04:00 command=R
+# ToF idle SDA=0.176V SCL=0.171V (ADC estimate)
+# ToF bus idle check failed: needs onboard low-voltage pull-ups
+2026-10-08T14:25:16.522031+04:00 command=T
+2026-10-08T14:28:44.849145+04:00 command=T
+2026-10-08T14:29:12.598486+04:00 command=X
+2026-10-08T14:31:39.674817+04:00 command=R
+# ToF idle SDA=3.583V SCL=3.583V (ADC estimate)
+# ToF init=1
+2026-10-08T14:32:44.644198+04:00 command=T

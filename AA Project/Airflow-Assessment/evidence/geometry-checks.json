@@ -1,0 +1,78 @@
+{
+  "D0_round": {
+    "stl_watertight": true,
+    "winding_consistent": true,
+    "triangles": 1592,
+    "solid_volume_mm3": 2510.854289392848,
+    "bounds_mm": [
+      [
+        -39.99999910593033,
+        -5.983862094581127,
+        -6.000000052154064
+      ],
+      [
+        0.0,
+        5.979554262012243,
+        6.000000052154064
+      ]
+    ],
+    "step_exists": true
+  },
+  "D1_compact": {
+    "stl_watertight": true,
+    "winding_consistent": true,
+    "triangles": 1608,
+    "solid_volume_mm3": 2416.233481456111,
+    "bounds_mm": [
+      [
+        -39.99999910593033,
+        -5.985478404909372,
+        -6.000000052154064
+      ],
+      [
+        0.0,
+        5.979506764560938,
+        6.000000052154064
+      ]
+    ],
+    "step_exists": true
+  },
+  "D2_slot": {
+    "stl_watertight": true,
+    "winding_consistent": true,
+    "triangles": 1866,
+    "solid_volume_mm3": 2745.252256530494,
+    "bounds_mm": [
+      [
+        -39.99999910593033,
+        -9.999999776482582,
+        -6.209192331880331
+      ],
+      [
+        0.0,
+        9.999999776482582,
+        6.212377920746803
+      ]
+    ],
+    "step_exists": true
+  },
+  "D3_shield": {
+    "stl_watertight": true,
+    "winding_consistent": true,
+    "triangles": 5000,
+    "solid_volume_mm3": 7789.289552571425,
+    "bounds_mm": [
+      [
+        -39.99999910593033,
+        -14.999999664723873,
+        -14.999999664723873
+      ],
+      [
+        32.00000151991844,
+        14.999999664723873,
+        14.999999664723873
+      ]
+    ],
+    "step_exists": true
+  }
+}

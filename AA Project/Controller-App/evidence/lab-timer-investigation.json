@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-13",
+  "port": "/dev/cu.usbmodem21101",
+  "observed_app": "AA Project/Controller-App/AA Controller/AA Controller.app",
+  "root_cause": "Connected Arduino runs legacy LED firmware; no configurable hold timer.",
+  "observed_ui": {
+    "chosen_seconds": 30,
+    "time_left": "Upgrade",
+    "message": "Existing LED firmware detected. Install timed firmware to configure duration."
+  },
+  "software_timer_test": "PASS expiry, retrigger, continuous hold, rollover, duration changes",
+  "desired_hold_ms": 30000,
+  "state": "Physical Uno running adjustable 30 s LOW-trigger firmware. Countdown, retrigger and output OFF observed.",
+  "user_confirmed_valve_power_off": true,
+  "relay_trigger": "LOW/L",
+  "flash_verified_bytes": 11644,
+  "native_first_setup": "Did not complete; old firmware remained. Direct uploader succeeded.",
+  "physical_telemetry": {
+    "hold_ms": 30000,
+    "active_low": 1,
+    "sensor_ok": 1,
+    "match": 1,
+    "fault": 0,
+    "range_mm": 345
+  },
+  "duration_adjustment": {
+    "20s_acknowledged": true,
+    "30s_acknowledged": true,
+    "final_hold_ms": 30000
+  },
+  "observed_countdown": [
+    {
+      "ms": 53137,
+      "detected": 0,
+      "remaining_ms": 8080,
+      "command": 1,
+      "pin_high": 0,
+      "feedback": 0,
+      "range_mm": 2144,
+      "match": 1,
+      "fault": 0
+    },
+    {
+      "ms": 69704,
+      "detected": 0,
+      "remaining_ms": 16668,
+      "command": 1,
+      "pin_high": 0,
+      "feedback": 0,
+      "range_mm": 2211,
+      "match": 1,
+      "fault": 0
+    },
+    {
+      "ms": 90426,
+      "detected": 0,
+      "remaining_ms": 0,
+      "command": 0,
+      "pin_high": 1,
+      "feedback": 1,
+      "range_mm": 2139,
+      "match": 1,
+      "fault": 0
+    }
+  ],
+  "retrigger_observed": "Remaining time increased after a fresh detection; stayed activated.",
+  "valve_actuation": "Not tested: valve power remained OFF.",
+  "trace_export_issue": "Native CSV export corrupts string data; evidence uses direct serial JSON and observed native UI telemetry.",
+  "persistence_verified": {
+    "reset_observed": true,
+    "post_reset_ms": 20179,
+    "hold_ms": 30000,
+    "active_low": 1,
+    "fault": 0
+  }
+}

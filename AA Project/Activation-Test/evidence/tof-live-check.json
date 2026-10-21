@@ -1,0 +1,48 @@
+{
+  "state": {
+    "latest": {
+      "ms": 134431,
+      "mode": "T",
+      "gt": -1,
+      "raw_mm": 431,
+      "median_mm": 431,
+      "range_status": 0,
+      "tof_valid": 1,
+      "tof_age_ms": 0,
+      "pir_raw": 0,
+      "pir_warm": 0,
+      "state": 2,
+      "command": 1,
+      "feedback": 1,
+      "adc": 1023,
+      "feedback_v": 5.0,
+      "match": 1,
+      "fault": 0,
+      "host_time_dubai": "2026-10-08T14:43:40.282079+04:00",
+      "seq": 2012
+    },
+    "count": 2012,
+    "connected": true,
+    "age_ms": 7,
+    "error": "",
+    "port": "/dev/cu.usbmodem11301",
+    "log": "live-signal-20261008-144123.csv",
+    "last_command": "T",
+    "messages": [
+      "# ToF idle SDA=3.592V SCL=3.587V (ADC estimate)",
+      "# ToF prior interrupt config=20",
+      "# ToF VHV init=9B timeout=81 count=80",
+      "# ToF init=1",
+      "# ToF mode=40 gpio=3 fw=3 osc=36 errors=0",
+      "# AA LED prototype; outputs disabled at boot; send ? for commands"
+    ]
+  },
+  "ToF_samples": 1790,
+  "command_HIGH_samples": 317,
+  "command_LOW_samples": 1473,
+  "feedback_mismatches": 0,
+  "fault_samples": 0,
+  "valid_presence_samples": 1499,
+  "source_csv": "live-signal-20261008-144123.csv",
+  "note": "Actual ToF signal and loopback recorded. Manual occupancy labels absent; still-person detection and entry/exit latency remain unverified. Distance stays internal to front-zone decision."
+}

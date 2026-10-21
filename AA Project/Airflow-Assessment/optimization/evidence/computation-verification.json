@@ -1,0 +1,7 @@
+{
+  "uniform_cold_field_drop_c": 29.999999999999993,
+  "gaussian_square_integration_absolute_error_c": 1.6146947290351932e-06,
+  "temperature_rescaling": "passed for a passive constant-property scalar",
+  "failed_case_exclusion_and_bounded_crossing": "passed",
+  "scope": "Mathematical and software checks. Not validation of the AA hardware or turbulence closure."
+}

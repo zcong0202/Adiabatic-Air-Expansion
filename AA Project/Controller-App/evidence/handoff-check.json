@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-11",
+  "panel_steps": 5,
+  "requested_text_removed": true,
+  "shipped_panel_matches_source": true,
+  "extracted_app_signature": "valid",
+  "visual_check": "five concise steps; no sharing or software-verification sections",
+  "standalone_power": "UPS regulated 12 V to Uno barrel jack; centre positive",
+  "updated_diagram_pngs_embedded": true
+}

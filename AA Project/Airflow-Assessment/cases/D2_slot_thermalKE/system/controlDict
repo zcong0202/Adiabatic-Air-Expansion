@@ -1,0 +1,21 @@
+FoamFile
+{ version 2.0; format ascii; class dictionary; object controlDict; }
+
+application buoyantSimpleFoam;
+startFrom latestTime; startTime 0; stopAt writeNow; endTime 900; deltaT 1;
+writeControl timeStep; writeInterval 100; purgeWrite 1; writeFormat ascii; writePrecision 10; writeCompression off; timeFormat general; timePrecision 8; runTimeModifiable true;
+functions { 
+sourceTracer { type scalarTransport; libs (solverFunctionObjects); field c; phi phi; rho rho; alphaD 1.4184397163120568; alphaDt 1.1764705882352942; nCorr 1; tolerance 1e-7; executeControl timeStep; executeInterval 1; writeControl writeTime; }
+range { type fieldMinMax; libs (fieldFunctionObjects); fields (T U c); executeControl timeStep; executeInterval 50; writeControl writeTime; }
+inletFlux { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name coldInlet; operation sum; fields (phi); writeFields false; writeControl timeStep; writeInterval 50; }
+inletPressure { type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name coldInlet; operation areaAverage; fields (p T); writeFields false; writeControl timeStep; writeInterval 50; }
+wallYPlus { type yPlus; libs (fieldFunctionObjects); writeControl writeTime; }
+cuts { type surfaces; libs (sampling); writeControl writeTime; surfaceFormat vtk; interpolationScheme cellPoint; fields (T U c p rho);
+ surfaces {
+  target { type cuttingPlane; planeType pointAndNormal; pointAndNormalDict { point (.2 0 0); normal (1 0 0); } interpolate true; }
+  clearance { type cuttingPlane; planeType pointAndNormal; pointAndNormalDict { point (0.2 0 0); normal (1 0 0); } interpolate true; }
+  midplane { type cuttingPlane; planeType pointAndNormal; pointAndNormalDict { point (0 0 0); normal (0 0 1); } interpolate true; }
+ }
+}
+ }
+

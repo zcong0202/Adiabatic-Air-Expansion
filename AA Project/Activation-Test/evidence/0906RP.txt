@@ -1,0 +1,576 @@
+Source: 0906RP.docx
+Title: Adiabatic Air Expansion for Localized Outdoor Cooling in Hot-Humid Climates
+Zheng Cong, Matthias Fitzky, Carlo Ratti
+ 
+Abstract:
+With climate change, extreme outdoor temperatures in cities are an increasing global challenge. Urban greenery, particularly trees, provides significant cooling, but when temperatures exceed 40°C, additional solutions are needed. This proposal explores the technical feasibility and comparative performance of a localized cooling system based on compressed air. Controlled pressure reduction can produce cooling at the point of use, with the temperature change depending on the inlet state and release process. Compressed air can be generated during periods of excess energy production and stored at ambient temperature. Using sensors and electrovalves, compressed air can be released in controlled amounts and mixed with ambient air to create localized cooling. Rather than transporting cooled air or water, the system delivers stored pressure energy and generates cooling locally at the point of use. This approach could complement urban greening and other outdoor cooling strategies by providing localized cooling where and when it is needed. This research will evaluate whether controlled air release can improve short-term thermal sensation through localized cooling, using the Universal Thermal Climate Index (UTCI) as a supporting environmental metric, and compare its cooling performance with conventional outdoor air conditioning and misting.
+Introduction:
+Extreme outdoor heat is commonly mitigated through shade and urban vegetation, which reduce solar exposure and mean radiant temperature and can modify local air temperature through evapotranspiration (Rahman et al., 2020). The magnitude of these effects varies with canopy structure, water availability, background climate, and urban form. Active cooling may be needed in selected outdoor spaces where passive measures provide insufficient thermal relief. Two approaches relevant to this study are outdoor air conditioning and high-pressure misting. Outdoor air conditioning delivers cooling through conditioned air or chilled-water infrastructure, whereas misting relies on local water evaporation (Ulpiani, 2019; Farnham et al., 2015; Ghani et al., 2021). Their operating requirements differ: air conditioning requires refrigeration and distribution infrastructure, while the cooling potential of misting is constrained by ambient humidity.
+Compressed air offers another potential pathway for delivering localized cooling. Compressed-air energy storage (CAES) provides an engineering reference for producing, storing, and subsequently releasing compressed air (Budt et al., 2016). In the proposed cooling application, pressure energy would be distributed and cooling generated at the point of use, without maintaining a chilled distribution medium or relying on ambient evaporation. Storage and controlled release could enable cooling to be delivered when and where it is needed. The resulting temperature change, however, depends on the inlet state and the pressure-reduction process (Alami et al., 2023), and subsequent mixing with ambient air determines the airflow conditions reaching the user.
+The human response to this airflow is central to understanding its cooling effect. Localized airflow has been shown to shift whole-body thermal sensation toward cooler ratings under warm indoor conditions, while experiments with vortex-tube-generated cold air demonstrate that cooling intensities can be distinguished during brief stimuli (Parkinson & de Dear, 2017; Xu et al., 2022). These findings connect localized airflow with both whole-body sensation and short-duration perceptual responses, although they were obtained under different experimental conditions. The relationship between local and whole-body sensation also depends on the thermal conditions across the body. In non-uniform indoor and outdoor environments, cooled body regions did not necessarily dominate whole-body sensation when other regions remained warm (Lin et al., 2025). Local cooling therefore cannot be assumed to produce an equivalent change in whole-body thermal sensation.
+For a system intended to deliver brief, localized cooling, short-term thermal sensation is the principal response of interest. Thermal comfort provides complementary information about whether the perceived change is satisfactory. Research on spatial alliesthesia distinguishes thermal sensation from thermal pleasure and relates the pleasantness of local cooling to the person’s existing thermal state (Parkinson & de Dear, 2017). UTCI provides a further environmental reference by expressing thermal conditions as an equivalent temperature based on modeled physiological responses (Bröde et al., 2012). It can support the thermal comfort assessment, but does not directly establish the subjective response to a brief, localized airflow.
+The remaining question is whether controlled compressed-air release can deliver airflow that changes short-term thermal sensation under hot-humid outdoor conditions. Answering this question requires connecting cooling at the release point with the conditions reaching the user and the resulting local and whole-body responses. The proposal examines this connection through compressed-air production, storage, and release; design goals for localized delivery, rapid on/off operation, storage capability, and humid-climate performance, with noise and safety as constraints; benchmarks against outdoor air conditioning and misting; and an evaluation framework centered on short-term thermal sensation.
+A. Compressed-Air Production, Storage, and Release
+Production and Thermodynamic Basis
+Compressed-air cooling requires a supply system connecting air production and storage with controlled release at the point of use. Compressed-air energy storage (CAES) provides an engineering reference: electricity is used to compress air, which is stored for subsequent release, separating production from use (Budt et al., 2016). Compression heat management, moisture removal, storage, and pressure regulation are relevant to the proposed application. Conventional adiabatic CAES recovers compression heat and uses it to reheat air before expansion for electricity generation. The proposed application instead investigates cooling during release. Figure 1 illustrates the possible relationship between these systems; it does not establish the energy efficiency of the cooling application.
+Figure 1. Conceptual integration of point-of-use compressed-air cooling with CAES and alternative pressure-reduction pathways. Developed based on Budt et al. (2016) and Moran et al. (2018).
+The temperature change during release depends on the inlet state and the pressure-reduction process. Reversible adiabatic expansion is isentropic, with specific entropy remaining constant. Throttling is irreversible and can be approximated as isenthalpic under steady-flow conditions when heat transfer, shaft work, and changes in kinetic and potential energy are negligible (Moran et al., 2018; Bridgeman, 1929). For dry air initially at 150 atm absolute and 40°C, calculations using the same CoolProp air-property model give final temperatures of approximately −191.6°C under an isentropic constraint and 14.5°C under an isenthalpic constraint at 1 atm. These calculations describe thermodynamic reference states; the actual release device and operating conditions determine the cooling obtained experimentally.
+Experimental Characterization of Outlet Cooling
+A controlled discharge experiment was conducted to characterize the outlet conditions produced by the available compressed-air apparatus. The experimental configuration consisted of a scuba cylinder initially pressurized to approximately 200 bar, a first-stage regulator that reduced the pressure to approximately 10 bar, a flexible air hose, and a final discharge to the atmosphere at approximately 1 bar (Figure 2). This arrangement created two successive pressure reductions: from the cylinder through the regulator and from the regulated line to ambient pressure. Pressure reduction in the regulator-and-hose assembly was treated as predominantly throttling. A steady-flow isenthalpic calculation was used as a thermodynamic reference, assuming negligible heat transfer, no shaft work, and negligible changes in kinetic and potential energy between the reference states. The actual discharge was transient, and its outlet temperature history was characterized experimentally. Outlet air temperature, relative humidity, and air velocity were recorded using a Kestrel 5400 positioned immediately downstream of the discharge point. Cylinder pressure was monitored using the attached analog pressure gauge. Measurements covered the complete discharge sequence, including the initial condition, release onset, sustained discharge, and cylinder depletion. The experiment was designed to establish whether a measurable outlet cooling effect existed and how it evolved during discharge; it did not quantify occupied-zone cooling, UTCI improvement, mass flow rate, or total system efficiency.
+Figure 2. Experimental configuration for characterizing the outlet temperature, air velocity, and relative humidity produced by the two-stage pressure-reduction system. 
+The discharge experiment demonstrated measurable but transient outlet cooling. Air temperature decreased from 27.6°C to a minimum of 9.1°C, corresponding to a maximum measured reduction of 18.5°C. Peak outlet velocity reached 13.7 m/s, and the effective discharge lasted approximately 3 min 40 s. Relative humidity ranged from 43.5% to 100% (Figure 3). Because relative humidity changes with temperature, these readings alone do not establish the amount of moisture added to or removed from the airflow. The complete measurement record is retained in Supplementary Table S1.
+Figure 3. Measured outlet temperature, air velocity, and relative humidity during a complete compressed-air discharge. The minimum outlet temperature was 9.1°C, the peak velocity was 13.7 m/s, and the effective discharge period was approximately 3 min 40 s. The complete measurement record is reported in Supplementary Table S1.
+The outlet measurements establish cooling at the measurement location. Mass flow rate, delivered cooling capacity, and total system efficiency were not determined by the experiment, and the measurements do not establish thermal sensation improvement.
+CFD Analysis of Airflow Propagation and Mixing
+A transient two-dimensional CFD model was developed to examine airflow propagation and mixing. The model represented a 2.50 m × 2.50 m domain with a 6 mm inlet positioned 1.50 m above the floor (Figure 4). The measured minimum outlet temperature of 9.13°C and peak velocity of 13.7 m/s were prescribed together as constant inlet conditions. These values represent separate experimental extrema rather than a synchronized measured state. Initial ambient temperature was 25°C, with no background wind, and gravity was included. A locally refined region measuring 0.30 m × 0.006 m was specified immediately downstream of the inlet. The upper and lower boundaries were adiabatic no-slip walls, and the downstream boundary was a pressure outlet.
+Figure 4. Computational domain and boundary conditions for the transient two-dimensional CFD model. 
+The preliminary CFD simulation produced a narrow cold-air jet, with the strongest temperature reduction and highest velocity concentrated near its centerline (Figure 5). The jet broadened downstream as it entrained warmer ambient air, progressively weakening the temperature contrast. Elevated turbulence near the outlet and along the jet edges identified the principal regions of mixing. The results indicate that transporting cold air farther downstream does not necessarily produce a proportionately wider cooling region.
+Figure 5. Transient temperature, velocity, and turbulence fields predicted by the preliminary two-dimensional CFD model.
+The CFD results provide a qualitative interpretation of airflow propagation and mixing, but do not establish thermal sensation improvement. The simulation has not been validated for quantitative prediction of cooling-zone dimensions or hot-humid outdoor performance. The constant inlet condition, initially still ambient air, finite two-dimensional domain, and uncalibrated turbulence treatment may overstate jet persistence or produce artificial domain-wide cooling during longer simulations. Subsequent analysis will need to represent the measured discharge history and relevant outdoor conditions before connecting the airflow field to user exposure.
+Expected Results
+• A characterization of the relationship between compressed-air supply conditions and the temperature, velocity, and duration of the released airflow.
+• An assessment of how ambient mixing changes the cooling exposure downstream of the outlet.
+• An identification of the operating conditions and supply requirements that warrant further investigation.
+B. Design Goals and Spatial Configuration
+Four spatial configurations are proposed for further consideration:
+• Overhead cooling above a bench: cooling delivered from above to seated users.
+• Adjustable nozzle: a movable outlet allowing the position and direction of airflow to be adjusted.
+• Inclined poles at different heights: outlets arranged to direct airflow toward different body regions.
+• Cooling portal: a framed passage providing localized airflow as users pass through.
+These configurations are alternatives for investigation; no preferred design has been selected.
+Expected Results
+• A comparison of the four configurations in terms of user position, targeted body regions, and exposure pattern.
+• A shortlist of configurations for subsequent testing against the intended localized, on-demand cooling application.
+• An identification of design constraints, including airflow delivery, noise, and safety, that require further resolution.
+C. Benchmarks against Outdoor Air Conditioning and Misting
+Outdoor air conditioning and high-pressure misting provide the principal benchmarks. Outdoor air conditioning generates cooling mechanically and delivers it through conditioned air or associated chilled-water infrastructure. Misting produces cooling through evaporation, coupling temperature reduction with changes in atmospheric moisture (Ulpiani, 2019; Farnham et al., 2015; Ghani et al., 2021). Comparison with compressed air will examine how each approach supplies cooling to a defined user location and supports the intended duration of exposure.
+The comparison will consider cooling delivery, activation and shutdown response, spatial coverage, humidity effects, and infrastructure requirements. Energy use must be assessed across the relevant supply system, including compression for the compressed-air case; water consumption is an additional consideration for misting. Storage and localized release will be examined as operating characteristics rather than assumed evidence of energy savings.
+The initial comparison will draw on published evidence and available modeling, with conditions and limitations stated explicitly. The existing compressed-air experiment is not a direct comparative trial. Quantitative rankings will require a common basis, including ambient conditions, user location, exposure duration, and the resource or cooling input being compared. Where these cannot be matched, the comparison will identify differences and unresolved questions rather than claim superiority.
+Expected Results
+• An evidence-based comparison of compressed-air cooling, outdoor air conditioning, and misting in terms of cooling delivery, response time, spatial coverage, and humidity dependence.
+• A comparison of their infrastructure, energy, and water requirements where sufficiently comparable data are available.
+• An identification of the conditions under which each approach may be suitable, together with uncertainties that prevent quantitative performance ranking.
+D. Research Objective and Evaluation Framework
+The primary objective is to determine whether localized compressed-air release can shift short-term thermal sensation toward cooler ratings under hot-humid outdoor conditions. Local and whole-body sensation will be distinguished because a perceptible change at the exposed body region need not produce an equivalent whole-body response. Thermal comfort will provide a complementary assessment of whether users consider the resulting change satisfactory. A stronger cooling sensation will not, by itself, be treated as a better outcome.
+Evaluation will connect conditions at the user’s location with responses during and after exposure. Relevant environmental variables include air temperature, humidity, air velocity, and mean radiant temperature. Exposure duration, the body region reached by the airflow, and preceding thermal conditions will also need to be documented. These observations will distinguish cooling at the outlet from the exposure actually experienced by the user.
+Subjective thermal sensation assessment is needed to test the proposed human effect. The existing outlet experiment and preliminary CFD provide evidence about cooling production and transport, but neither establishes a perceptual outcome. The timing of assessments and the distinction between local and whole-body ratings will be developed to capture short-term changes without assuming that indoor findings transfer directly to hot-humid outdoor exposure.
+UTCI will be reported as a supporting environmental metric under stated calculation assumptions (Bröde et al., 2012). It will help characterize the thermal environment and its change relative to the untreated condition, while subjective responses address the brief cooling experience. Small or absent UTCI changes will be reported alongside the sensation findings.
+Expected Results
+• A characterization of local and whole-body thermal sensation during and after brief compressed-air exposure.
+• An assessment of whether perceived cooling is accompanied by improved thermal comfort.
+• A comparison of subjective responses with environmental changes, including UTCI under stated calculation assumptions.
+• An identification of exposure conditions associated with perceptible improvement, no measurable response, or discomfort.
+References
+Alami, A. H., Alrashid, R., Mdallal, A., Yasin, A., Ayoub, M., Alasad, S., Aljaghoub, H., Alashkar, A., Abdelkareem, M. A., Olabi, A. G., & Orhan, M. (2023). Expansion cooling prospects for large scale applications. International Journal of Thermofluids, 20, 100437. https://doi.org/10.1016/j.ijft.2023.100437
+Bridgeman, O. C. (1929). The Joule–Thomson effect and heat capacity at constant pressure for air. Physical Review, 34(4), 527–533. https://doi.org/10.1103/PhysRev.34.527
+Bröde, P., Fiala, D., Błażejczyk, K., Holmér, I., Jendritzky, G., Kampmann, B., Tinz, B., & Havenith, G. (2012). Deriving the operational procedure for the Universal Thermal Climate Index (UTCI). International Journal of Biometeorology, 56(3), 481–494. https://doi.org/10.1007/s00484-011-0454-1
+Budt, M., Wolf, D., Span, R., & Yan, J. (2016). A review on compressed air energy storage: Basic principles, past milestones and recent developments. Applied Energy, 170, 250–268. https://doi.org/10.1016/j.apenergy.2016.02.108
+Dzyuban, Y., Hondula, D. M., Vanos, J. K., Middel, A., Coseo, P. J., Kuras, E. R., & Redman, C. L. (2022). Evidence of alliesthesia during a neighborhood thermal walk in a hot and dry city. Science of the Total Environment, 834, 155294. https://doi.org/10.1016/j.scitotenv.2022.155294
+Farnham, C., Emura, K., & Mizuno, T. (2015). Evaluation of cooling effects: Outdoor water mist fan. Building Research & Information, 43(3), 334–345. https://doi.org/10.1080/09613218.2015.1004844
+Ghani, S., Mahgoub, A. O., Bakochristou, F., & ElBialy, E. A. (2021). Assessment of thermal comfort indices in an open air-conditioned stadium in hot and arid environment. Journal of Building Engineering, 40, 102378. https://doi.org/10.1016/j.jobe.2021.102378
+Jendritzky, G., de Dear, R., & Havenith, G. (2012). UTCI—Why another thermal index? International Journal of Biometeorology, 56(3), 421–428. https://doi.org/10.1007/s00484-011-0513-7
+Lee, L. S. H., Cheung, P. K., Fung, C. K. W., & Jim, C. Y. (2020). Improving street walkability: Biometeorological assessment of artificial-partial shade structures in summer sunny conditions. International Journal of Biometeorology, 64(4), 547–560. https://doi.org/10.1007/s00484-019-01840-9
+Lin, J., Liang, Y., Yang, J., Xie, Y., Zhang, H., & Niu, J. (2025). Thermal sensation and comfort models for non-uniform and transient environments, Part V: Enhancements of whole-body sensation model. Building and Environment, 285, 113562. https://doi.org/10.1016/j.buildenv.2025.113562
+Moran, M. J., Shapiro, H. N., Boettner, D. D., & Bailey, M. B. (2018). Fundamentals of engineering thermodynamics (9th ed.). John Wiley & Sons.
+Nikolopoulou, M., & Steemers, K. (2003). Thermal comfort and psychological adaptation as a guide for designing urban spaces. Energy and Buildings, 35(1), 95–101. https://doi.org/10.1016/S0378-7788(02)00084-1
+Parkinson, T., & de Dear, R. (2017). Thermal pleasure in built environments: spatial alliesthesia from air movement. Building Research & Information, 45(3), 320–335. https://doi.org/10.1080/09613218.2016.1140932
+Peng, Z., Bardhan, R., Ellard, C., & Steemers, K. (2022). Urban climate walk: A stop-and-go assessment of the dynamic thermal sensation and perception in two waterfront districts in Rome, Italy. Building and Environment, 221, 109267. https://doi.org/10.1016/j.buildenv.2022.109267
+Rahman, M. A., Stratopoulos, L. M. F., Moser-Reischl, A., Zölch, T., Häberle, K.-H., Rötzer, T., Pretzsch, H., & Pauleit, S. (2020). Traits of trees for cooling urban heat islands: A meta-analysis. Building and Environment, 170, 106606. https://doi.org/10.1016/j.buildenv.2019.106606
+Ulpiani, G. (2019). Water mist spray for outdoor cooling: A systematic review of technologies, methods and impacts. Applied Energy, 254, 113647. https://doi.org/10.1016/j.apenergy.2019.113647
+Wang, Y., He, B.-J., Kang, C., Yan, L., Chen, X., Yin, M., Liu, X., & Zhou, T. (2022). Assessment of walkability and walkable routes of a 15-min city for heat adaptation: Development of a dynamic attenuation model of heat stress. Frontiers in Public Health, 10, 1011391. https://doi.org/10.3389/fpubh.2022.1011391
+Xu, J., Yoshimoto, S., Ienaga, N., & Kuroda, Y. (2022). Intensity-Adjustable Non-Contact Cold Sensation Presentation Based on the Vortex Effect. IEEE Transactions on Haptics, 15(3), 592–602. https://doi.org/10.1109/TOH.2022.3187759
+Supplementary Table S1. Complete record of outlet air temperature, velocity, and relative humidity measured during the compressed-air discharge experiment. 
+Device Name
+HEAT - 2541491
+Device Model
+5400CL
+Serial Number
+2541491
+FORMATTED DATE_TIME
+Temperature(°C)
+Wind Speed (m/s)
+Relative Humidity(%)
+8/4/26 10:52
+27.6
+0
+87.7
+8/4/26 10:52
+27.7
+0
+81.3
+8/4/26 10:52
+27.8
+0.3
+75.6
+8/4/26 10:52
+27.7
+0
+72
+8/4/26 10:52
+27.4
+0.6
+71
+8/4/26 10:52
+27.1
+0.5
+67.9
+8/4/26 10:52
+26.8
+0
+64
+8/4/26 10:52
+26.7
+0
+61.9
+8/4/26 10:52
+26.5
+0
+60.5
+8/4/26 10:52
+26.4
+0
+59.5
+8/4/26 10:52
+25.9
+0.5
+59
+8/4/26 10:52
+25.8
+1.8
+58.9
+8/4/26 10:53
+22.2
+13.7
+55.8
+8/4/26 10:53
+18.9
+12.8
+50
+8/4/26 10:53
+16.9
+13.5
+45.5
+8/4/26 10:53
+15.9
+13.4
+43.5
+8/4/26 10:53
+14.8
+13
+43.7
+8/4/26 10:53
+14.2
+12.1
+45.4
+8/4/26 10:53
+13.7
+11.2
+47.4
+8/4/26 10:53
+13.4
+12.3
+49.5
+8/4/26 10:53
+12.6
+11.3
+51.9
+8/4/26 10:53
+12
+10.2
+53.6
+8/4/26 10:53
+11.5
+10.1
+54.7
+8/4/26 10:53
+11
+9.8
+55.8
+8/4/26 10:54
+10.3
+10.3
+57.2
+8/4/26 10:54
+9.8
+10.5
+58.8
+8/4/26 10:54
+9.6
+10.5
+61.1
+8/4/26 10:54
+9.6
+11.6
+63.5
+8/4/26 10:54
+9.6
+11.4
+67.3
+8/4/26 10:54
+9.5
+11.3
+70.2
+8/4/26 10:54
+9.4
+11.3
+73
+8/4/26 10:54
+9.5
+11.6
+75.5
+8/4/26 10:54
+9.7
+12.1
+78.2
+8/4/26 10:54
+9.7
+11.7
+80.5
+8/4/26 10:54
+9.8
+11.6
+82.4
+8/4/26 10:54
+9.7
+11.4
+83.9
+8/4/26 10:55
+9.7
+11.2
+85
+8/4/26 10:55
+9.4
+10.7
+85.3
+8/4/26 10:55
+9.4
+10.5
+85.6
+8/4/26 10:55
+9.3
+10.3
+86.4
+8/4/26 10:55
+9.2
+9.8
+86.9
+8/4/26 10:55
+9.1
+9.4
+87.3
+8/4/26 10:55
+9.7
+8.8
+88.7
+8/4/26 10:55
+10.4
+7.1
+91.3
+8/4/26 10:55
+11.1
+6.3
+93
+8/4/26 10:55
+12.3
+5.2
+97
+8/4/26 10:55
+13.2
+4.4
+100
+8/4/26 10:55
+13.5
+3.5
+100
+8/4/26 10:56
+13.9
+2.8
+100
+8/4/26 10:56
+13.8
+2.3
+100
+8/4/26 10:56
+13.4
+1.7
+98.8
+8/4/26 10:56
+13.1
+1.4
+89.7
+8/4/26 10:56
+13.1
+1.1
+81.9
+8/4/26 10:56
+13.3
+0.9
+77.6
+8/4/26 10:56
+13.9
+0.6
+75.6
+8/4/26 10:56
+14.6
+0.4
+75.6
+8/4/26 10:56
+15.2
+0.4
+78.4
+8/4/26 10:56
+15.7
+0
+83
+8/4/26 10:56
+16.6
+0.4
+86.7
+8/4/26 10:56
+17.4
+0
+88.7
+8/4/26 10:57
+18.3
+0
+90.3
+8/4/26 10:57
+19
+0
+89.6
+8/4/26 10:57
+19.4
+0
+87.5
+8/4/26 10:57
+19.7
+0.4
+84.9
+8/4/26 10:57
+20
+0
+83.4
+8/4/26 10:57
+19.9
+0
+83.3
+8/4/26 10:57
+19.9
+0
+82.9
+8/4/26 10:57
+20
+0
+81.6
+8/4/26 10:57
+19.9
+0.8
+79.7
+8/4/26 10:57
+20.1
+0
+77.8
+8/4/26 10:57
+20.5
+0
+76.2
+8/4/26 10:57
+20.6
+0
+75.1
+8/4/26 10:58
+20.7
+0
+74.5
+8/4/26 10:58
+20.6
+0
+73.8
+8/4/26 10:58
+20.4
+0
+73
+8/4/26 10:58
+20.3
+0
+72.2
+8/4/26 10:58
+20.3
+0
+71.6
+8/4/26 10:58
+20.5
+0
+71.1
+8/4/26 10:58
+20.5
+0
+70.7
+8/4/26 10:58
+20.4
+0
+70.5
+8/4/26 10:58
+20.5
+0
+70.4
+8/4/26 10:58
+20.6
+0
+70.5
+8/4/26 10:58
+20.7
+0
+71.4
+8/4/26 10:58
+20.8
+0
+72.8
+8/4/26 10:59
+20.8
+0
+74
+8/4/26 10:59
+20.8
+0
+75
+8/4/26 10:59
+20.8
+0
+75.8
+8/4/26 10:59
+20.9
+0
+76.2
+8/4/26 10:59
+20.9
+0
+75.8
+8/4/26 10:59
+20.9
+0
+75.1
+8/4/26 10:59
+20.9
+0
+74.5
+8/4/26 10:59
+20.9
+0
+74
+8/4/26 10:59
+20.8
+0
+73.8
+8/4/26 10:59
+20.9
+0
+73.6
+8/4/26 10:59
+20.9
+0
+73.4
+8/4/26 10:59
+20.9
+0
+73.1
+8/4/26 11:00
+21
+0
+72.8
+8/4/26 11:00
+21.1
+0
+72.5
+8/4/26 11:00
+21.1
+0
+72.1
+8/4/26 11:00
+21.1
+0
+71.8
+8/4/26 11:00
+21.1
+0
+71.5
+8/4/26 11:00
+21.2
+0
+71.2
+8/4/26 11:00
+21.3
+0
+70.9
+8/4/26 11:00
+21.3
+0
+70.4
+8/4/26 11:00
+21.3
+0
+69.5
+8/4/26 11:00
+21.4
+0
+68.7
+8/4/26 11:00
+21.4
+0
+68.1
+8/4/26 11:00
+21.4
+0
+67.7
+8/4/26 11:01
+21.4
+0
+67.4
+8/4/26 11:01
+21.4
+0
+67.2
+8/4/26 11:01
+21.5
+0
+67
+8/4/26 11:01
+21.5
+0
+66.8
+8/4/26 11:01
+21.5
+0
+66.6
+8/4/26 11:01
+21.5
+0
+66.4
+8/4/26 11:01
+21.5
+0
+66.3
+8/4/26 11:01
+21.5
+0
+66.3
+8/4/26 11:01
+21.5
+0
+66.2
+8/4/26 11:01
+21.6
+0
+66.1
+8/4/26 11:01
+21.6
+0
+65.9
+8/4/26 11:01
+21.6
+0
+65.7
+8/4/26 11:02
+21.6
+0
+65.5

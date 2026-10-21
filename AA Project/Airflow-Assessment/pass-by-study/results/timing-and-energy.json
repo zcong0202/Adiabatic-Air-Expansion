@@ -1,0 +1,293 @@
+{
+  "status": "First-principles and kinematic screen only; no pass-by CFD run",
+  "confirmed": {
+    "outdoor": true,
+    "no_seat_or_enclosure": true,
+    "nozzle_person_distance_m": {
+      "minimum_study": 0.2,
+      "maximum": 0.5
+    },
+    "layout": "undecided; compare",
+    "valve_max_open_s": 30,
+    "person_motion": "walks past; does not stay for the valve duration"
+  },
+  "assumptions": {
+    "walking_speed_m_s": 1.2,
+    "walking_speed_sensitivity_m_s": [
+      0.6,
+      1.2,
+      1.8
+    ],
+    "distance_sweep_m": [
+      0.2,
+      0.35,
+      0.5
+    ],
+    "effective_cooled_widths_m": [
+      0.05,
+      0.14,
+      0.3,
+      0.5
+    ],
+    "width_note": "Hypothetical widths along walking path. Not predicted nozzle reach or observed cooling footprint.",
+    "source_note": "Loaded-motor first-law state calculated from source-input.json. No seat temperature result is used.",
+    "source_requirements": "Sustained catalogue load/flow pair, 40 C inlet, external shaft heat sink, nominal motor heat pickup zero, cold-path UA about 10.074 W/K. No supplier thermal guarantee.",
+    "pulse_note": "Ideal full nominal flow and source temperature throughout valve opening. Motor spin-up, line cooldown, valves and collectors are not resolved."
+  },
+  "source_budget": {
+    "active_motors": 4,
+    "mass_kg_s": 0.0776,
+    "supply_c": 0.9592752761779835,
+    "inlet_c": 40,
+    "shaft_work_w": 3360,
+    "ambient_c": 30,
+    "cp_j_kg_k": 1006,
+    "cold_air_power_w": 2267.0816,
+    "free_air_demand_m3_min": 3.888,
+    "nominal_flow_per_four_equal_outlets_kg_s": 0.0194
+  },
+  "pulse_budgets": [
+    {
+      "valve_open_s": 1,
+      "cold_air_mass_kg": 0.0776,
+      "free_air_m3": 0.0648,
+      "supply_volume_m3": 0.06025962038508647,
+      "available_cold_air_energy_j": 2267.0816
+    },
+    {
+      "valve_open_s": 5,
+      "cold_air_mass_kg": 0.388,
+      "free_air_m3": 0.32399999999999995,
+      "supply_volume_m3": 0.3012981019254323,
+      "available_cold_air_energy_j": 11335.408
+    },
+    {
+      "valve_open_s": 10,
+      "cold_air_mass_kg": 0.776,
+      "free_air_m3": 0.6479999999999999,
+      "supply_volume_m3": 0.6025962038508647,
+      "available_cold_air_energy_j": 22670.816
+    },
+    {
+      "valve_open_s": 30,
+      "cold_air_mass_kg": 2.3280000000000003,
+      "free_air_m3": 1.944,
+      "supply_volume_m3": 1.807788611552594,
+      "available_cold_air_energy_j": 68012.448
+    }
+  ],
+  "crossing_times": [
+    {
+      "effective_cooled_width_m": 0.05,
+      "walking_speed_m_s": 0.6,
+      "ideal_geometric_crossing_s": 0.08333333333333334
+    },
+    {
+      "effective_cooled_width_m": 0.05,
+      "walking_speed_m_s": 1.2,
+      "ideal_geometric_crossing_s": 0.04166666666666667
+    },
+    {
+      "effective_cooled_width_m": 0.05,
+      "walking_speed_m_s": 1.8,
+      "ideal_geometric_crossing_s": 0.02777777777777778
+    },
+    {
+      "effective_cooled_width_m": 0.14,
+      "walking_speed_m_s": 0.6,
+      "ideal_geometric_crossing_s": 0.23333333333333336
+    },
+    {
+      "effective_cooled_width_m": 0.14,
+      "walking_speed_m_s": 1.2,
+      "ideal_geometric_crossing_s": 0.11666666666666668
+    },
+    {
+      "effective_cooled_width_m": 0.14,
+      "walking_speed_m_s": 1.8,
+      "ideal_geometric_crossing_s": 0.07777777777777778
+    },
+    {
+      "effective_cooled_width_m": 0.3,
+      "walking_speed_m_s": 0.6,
+      "ideal_geometric_crossing_s": 0.5
+    },
+    {
+      "effective_cooled_width_m": 0.3,
+      "walking_speed_m_s": 1.2,
+      "ideal_geometric_crossing_s": 0.25
+    },
+    {
+      "effective_cooled_width_m": 0.3,
+      "walking_speed_m_s": 1.8,
+      "ideal_geometric_crossing_s": 0.16666666666666666
+    },
+    {
+      "effective_cooled_width_m": 0.5,
+      "walking_speed_m_s": 0.6,
+      "ideal_geometric_crossing_s": 0.8333333333333334
+    },
+    {
+      "effective_cooled_width_m": 0.5,
+      "walking_speed_m_s": 1.2,
+      "ideal_geometric_crossing_s": 0.4166666666666667
+    },
+    {
+      "effective_cooled_width_m": 0.5,
+      "walking_speed_m_s": 1.8,
+      "ideal_geometric_crossing_s": 0.2777777777777778
+    }
+  ],
+  "jet_travel_scales": [
+    {
+      "distance_m": 0.2,
+      "representative_speed_m_s": 1,
+      "travel_scale_s": 0.2
+    },
+    {
+      "distance_m": 0.2,
+      "representative_speed_m_s": 2,
+      "travel_scale_s": 0.1
+    },
+    {
+      "distance_m": 0.2,
+      "representative_speed_m_s": 5,
+      "travel_scale_s": 0.04
+    },
+    {
+      "distance_m": 0.35,
+      "representative_speed_m_s": 1,
+      "travel_scale_s": 0.35
+    },
+    {
+      "distance_m": 0.35,
+      "representative_speed_m_s": 2,
+      "travel_scale_s": 0.175
+    },
+    {
+      "distance_m": 0.35,
+      "representative_speed_m_s": 5,
+      "travel_scale_s": 0.06999999999999999
+    },
+    {
+      "distance_m": 0.5,
+      "representative_speed_m_s": 1,
+      "travel_scale_s": 0.5
+    },
+    {
+      "distance_m": 0.5,
+      "representative_speed_m_s": 2,
+      "travel_scale_s": 0.25
+    },
+    {
+      "distance_m": 0.5,
+      "representative_speed_m_s": 5,
+      "travel_scale_s": 0.1
+    }
+  ],
+  "mixing_necessary_condition": {
+    "model": "Dry adiabatic two-stream mixing; same cp; no local heat input. Strict greater-than target requires strict inequalities.",
+    "target_delta_k": 6.0,
+    "source_contrast_k": 29.040724723822017,
+    "minimum_cold_mass_fraction_for_delta6": 0.2066064141670066,
+    "maximum_warm_to_cold_mass_ratio_for_delta6": 3.840120787303669,
+    "caveat": "A necessary local enthalpy condition. Not a predicted volume, reach, exposure or comfort result. An area-average sample requires its own resolved field."
+  },
+  "candidate_matrix": [
+    {
+      "layout": "one-side",
+      "distance_m": 0.2,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "one-side",
+      "distance_m": 0.35,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "one-side",
+      "distance_m": 0.5,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "two-side",
+      "distance_m": 0.2,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "two-side",
+      "distance_m": 0.35,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "two-side",
+      "distance_m": 0.5,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "overhead",
+      "distance_m": 0.2,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "overhead",
+      "distance_m": 0.35,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    },
+    {
+      "layout": "overhead",
+      "distance_m": 0.5,
+      "total_mass_kg_s": 0.0776,
+      "total_cold_air_power_w": 2267.0816,
+      "status": "proposed; not simulated",
+      "nozzle": "controls plus custom variants; not selected"
+    }
+  ],
+  "evaluation": {
+    "proposed": [
+      "5 x 5 cm moving air-area deficit versus time",
+      "Longest continuous time above 6 K deficit per passage",
+      "Time integral of positive area-mean deficit, K s",
+      "Air speed at person and free-air use per valve event",
+      "Human heat removal versus ambient baseline, with separate body heat-transfer model"
+    ],
+    "timing": "Sweep person arrival relative to valve opening. Distinguish cold startup, established jet and valve closing. A 30 s activation is not a 30 s personal exposure.",
+    "cfd_stages": [
+      "Unconfined pulsed jets and virtual moving air probes: reach screen only; omits body blockage and wake.",
+      "Retain promising layouts; add upright moving body and thermal boundaries, wind and source/line startup sensitivities.",
+      "Refine nozzle CAD and repeat internal/external CFD. Recheck conditional mathematical constraints."
+    ],
+    "unresolved": [
+      "Exact mounting heights and walking path",
+      "Measured walking speed / crowd arrival pattern",
+      "Valve and line response",
+      "Wind envelope",
+      "Required minimum cooling duration per person",
+      "Supplier motor/load thermal state and balanced commercial distribution"
+    ]
+  }
+}

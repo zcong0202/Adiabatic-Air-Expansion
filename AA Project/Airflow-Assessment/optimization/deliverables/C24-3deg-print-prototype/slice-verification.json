@@ -1,0 +1,30 @@
+{
+  "slice_succeeded": true,
+  "application": "BambuStudio 02.08.02.61",
+  "printer": "Bambu Lab H2S 0.4 nozzle",
+  "filament_profile": "Generic PLA @BBL H2S (actual PLA not yet identified)",
+  "process": "0.20mm Standard @BBL H2S with 5 walls, no supports, 5 mm outer brim",
+  "presets_fully_resolved": true,
+  "bed_type": "Cool Plate (default; select your actual plate and re-slice)",
+  "gcode_files": [
+    "Metadata/plate_1.gcode"
+  ],
+  "physically_printed": false,
+  "source_fit_verified": false,
+  "summary_comments": [
+    "; model printing time: 2h 3m 35s; total estimated time: 2h 9m 14s",
+    "; total layer number: 888",
+    "; total filament length [mm] : 7956.21",
+    "; total filament volume [cm^3] : 19136.93",
+    "; total filament weight [g] : 23.73",
+    "; max_z_height: 177.60",
+    "; brim_type = outer_only",
+    "; curr_bed_type = Cool Plate",
+    "; enable_support = 0",
+    "; layer_height = 0.2",
+    "; nozzle_diameter = 0.4",
+    "; wall_loops = 5"
+  ],
+  "printer_toolpath_verified": false,
+  "cli_diagnostic": "Invalid T command (T65535). Exact command is present in unchanged installed H2S machine_end_gcode AMS unload template. CLI exit 0 and result.json Success; no plate warning. GUI re-slice required for actual filament and plate."
+}

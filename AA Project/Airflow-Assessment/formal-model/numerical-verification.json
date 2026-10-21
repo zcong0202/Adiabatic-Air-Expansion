@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "matches_saved_area_fraction_identity": true,
+    "fixed_area_fraction_poor_delivery_fails": true,
+    "cold_source_too_warm_cannot_pass": true,
+    "warmer_entrained_air_reduces_area_drop": true,
+    "positive_line_heat_reduces_drop": true,
+    "required_mass_root_brackets_strict_target": true,
+    "scaling_both_mass_flows_no_temperature_gain": true,
+    "formal_heat_bound_matches_direct_equation": true,
+    "ideal_gas_regulator_has_no_bulk_temperature_drop": true,
+    "real_regulator_enthalpy_balance": true,
+    "zero_efficiency_expander_equals_throttle": true,
+    "expander_shaft_work_equals_enthalpy_reduction": true,
+    "four_stages_needed_for_201_to_5_at_ratio_3": true,
+    "each_stage_respects_assumed_ratio": true,
+    "bauer_current_vortex_continuous_budget_fails": true,
+    "bauer_50_percent_ideal_duty_bound": true,
+    "oversized_supply_does_not_change_one_vortex_temperature": true,
+    "flow_conversion_is_common_reference_not_compressed_litres": true,
+    "energy_budget_does_not_imply_area_success": true
+  },
+  "passed": true,
+  "count": 19,
+  "EOS_round_trip_energy_residual_j_kg": -0.00013392441906034946,
+  "EOS_round_trip_energy_tolerance_j_kg": 0.001,
+  "not_a_formal_numeric_proof": true,
+  "physical_validation": false
+}

@@ -1,0 +1,58 @@
+{
+  "D0_round": {
+    "declared_step_unit": "metre",
+    "independent_occ_import_unit": "metre",
+    "imported_length_mm": 40.00020000000001,
+    "imported_volume_mm3": 2513.2741228718883,
+    "bounds_m": [
+      -0.040000100000000004,
+      -0.0060001,
+      -0.0060001,
+      1e-07,
+      0.0060001,
+      0.0060001
+    ]
+  },
+  "D1_compact": {
+    "declared_step_unit": "metre",
+    "independent_occ_import_unit": "metre",
+    "imported_length_mm": 40.000200000000035,
+    "imported_volume_mm3": 2419.026343264199,
+    "bounds_m": [
+      -0.040000100000000004,
+      -0.0060001,
+      -0.0060001,
+      1.0000000003295974e-07,
+      0.0060001,
+      0.0060001
+    ]
+  },
+  "D2_slot": {
+    "declared_step_unit": "metre",
+    "independent_occ_import_unit": "metre",
+    "imported_length_mm": 40.00020000000001,
+    "imported_volume_mm3": 2775.98573080498,
+    "bounds_m": [
+      -0.040000100000000004,
+      -0.01002712926084,
+      -0.006939423200929,
+      1e-07,
+      0.01000143293749,
+      0.006939423200929
+    ]
+  },
+  "D3_shield": {
+    "declared_step_unit": "metre",
+    "independent_occ_import_unit": "metre",
+    "imported_length_mm": 72.00020000000002,
+    "imported_volume_mm3": 7791.149780902853,
+    "bounds_m": [
+      -0.040000100000000004,
+      -0.015000099999999999,
+      -0.015000099999999999,
+      0.032000100000000004,
+      0.015000099999999999,
+      0.015000099999999999
+    ]
+  }
+}

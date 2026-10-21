@@ -1,0 +1,11 @@
+D0_round_bouss_fine 150 mass -0.0 tracer -0.0002 thermal 0.0022
+D0_round_bouss_w0 1000 mass -0.0 tracer -0.0003 thermal -0.0002
+D0_round_bouss_w1 1000 mass 0.0 tracer -0.0002 thermal -0.0004
+D1_compact_bouss_w0 1000 mass -0.0 tracer -0.0001 thermal 0.0005
+D1_compact_bouss_w1 746 mass -799.5297 tracer 7.853 thermal 8.9284
+D1_compact_bouss_w1_retry 50 mass 0.0 tracer -0.0001 thermal 0.0005
+D2_slot_bouss_fine 150 mass -0.0 tracer -0.0003 thermal 0.0002
+D2_slot_bouss_w0 1000 mass -0.0 tracer -0.0004 thermal 0.0007
+D2_slot_bouss_w1 1000 mass 0.0 tracer -0.0004 thermal -0.0002
+D3_shield_bouss_w0 1000 mass 0.0 tracer -0.0002 thermal 0.0017
+D3_shield_bouss_w1 1000 mass -0.0 tracer -0.0002 thermal -0.0015

@@ -1,0 +1,19 @@
+{
+  "case": "N02_D100_transient",
+  "spigot_od_mm": 100.0,
+  "inlet_clear_mm": 95.2,
+  "outlet_mm": [
+    140,
+    80
+  ],
+  "length_mm": 205,
+  "nominal_wall_mm": 2.4,
+  "mass_per_nozzle_kg_s": 0.01455,
+  "density_kg_m3": 1.288,
+  "inlet_mean_speed": 1.5870234799165444,
+  "source": "3 active motors feeding a shared collector and four equal branches",
+  "status": "Internal isothermal CFD; thermal/pressure source response not coupled; no hardware validation",
+  "solver": "pimpleFoam",
+  "source_case": "N01_D100",
+  "initialization": "SST candidate iteration1200; 0.3-second URANS follow-up. Short exit-profile stability test, not long-duration convergence."
+}

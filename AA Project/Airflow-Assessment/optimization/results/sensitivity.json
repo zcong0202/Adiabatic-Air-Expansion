@@ -1,0 +1,42 @@
+[
+  {
+    "case": "R06_D24_fine",
+    "check": "Finer mesh",
+    "numerically_accepted": true,
+    "mean_drop_c": 11.107606352061017,
+    "difference_from_parent_c": 0.012238549196752047,
+    "interpretation": "Use only if numerical checks pass; lower-flow case changes Reynolds number and may leave the fully turbulent regime."
+  },
+  {
+    "case": "R09_D24_SST",
+    "check": "Turbulence model",
+    "numerically_accepted": true,
+    "mean_drop_c": 10.346214335917068,
+    "difference_from_parent_c": -0.7491534669471971,
+    "interpretation": "Use only if numerical checks pass; lower-flow case changes Reynolds number and may leave the fully turbulent regime."
+  },
+  {
+    "case": "R10_D24_domain",
+    "check": "Larger domain",
+    "numerically_accepted": true,
+    "mean_drop_c": 11.085714512540118,
+    "difference_from_parent_c": -0.009653290324147079,
+    "interpretation": "Use only if numerical checks pass; lower-flow case changes Reynolds number and may leave the fully turbulent regime."
+  },
+  {
+    "case": "R04_D24_upwind",
+    "check": "Convection order",
+    "numerically_accepted": false,
+    "mean_drop_c": 11.079363628268919,
+    "difference_from_parent_c": -0.016004174595346754,
+    "interpretation": "Use only if numerical checks pass; lower-flow case changes Reynolds number and may leave the fully turbulent regime."
+  },
+  {
+    "case": "R11_D24_lowflow",
+    "check": "Lower source flow",
+    "numerically_accepted": true,
+    "mean_drop_c": 11.093944666366193,
+    "difference_from_parent_c": -0.0014231364980723527,
+    "interpretation": "Use only if numerical checks pass; lower-flow case changes Reynolds number and may leave the fully turbulent regime."
+  }
+]

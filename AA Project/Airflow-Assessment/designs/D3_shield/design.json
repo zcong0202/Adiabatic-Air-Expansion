@@ -1,0 +1,13 @@
+{
+  "label": "Open shield",
+  "description": "8 mm baseline plus 26 mm ID / 30 mm OD, 30 mm long open shield; 2 mm gap",
+  "bore_mm": 8,
+  "exit_area_mm2": 50.26548245743669,
+  "front_x_m": 0.032,
+  "name": "D3_shield",
+  "length_unit": "metre",
+  "common_source_bore_mm": 8,
+  "channel_length_mm": 40,
+  "threads": "Omitted, adapter flow passage included as assumed 8 mm bore; not ready for manufacturing.",
+  "geometry_basis": "Proposed design parameters, not measured product dimensions."
+}

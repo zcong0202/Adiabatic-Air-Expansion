@@ -1,0 +1,31 @@
+{
+  "latest": {
+    "ms": 101647,
+    "mode": "P",
+    "gt": -1,
+    "raw_mm": 0,
+    "median_mm": 0,
+    "range_status": 255,
+    "tof_valid": 0,
+    "tof_age_ms": 101647,
+    "pir_raw": 1,
+    "pir_warm": 0,
+    "state": 2,
+    "command": 1,
+    "feedback": 1,
+    "adc": 1023,
+    "feedback_v": 5.0,
+    "match": 1,
+    "fault": 0,
+    "host_time_dubai": "2026-10-08T14:01:25.274819+04:00",
+    "seq": 2032
+  },
+  "count": 2032,
+  "connected": true,
+  "age_ms": 3,
+  "error": "",
+  "port": "/dev/cu.usbmodem11101",
+  "log": "live-pir-20261008-135941.csv",
+  "last_command": "P",
+  "messages": []
+}

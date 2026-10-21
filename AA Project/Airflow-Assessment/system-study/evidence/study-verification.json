@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "count": 30,
+  "checks": {
+    "case_budget_respected": true,
+    "no_numerical_failures_ranked": true,
+    "S00_stock_b70_D24_a5_audit_hash": true,
+    "S00_stock_b70_D24_a5_paired_source_matches": true,
+    "S00_stock_b70_D24_a5_captured_source_within_feed_budget": true,
+    "S00_stock_b70_D24_a5_independent_area_quadrature": true,
+    "S01_stock_b60_D24_a5_audit_hash": true,
+    "S01_stock_b60_D24_a5_paired_source_matches": true,
+    "S01_stock_b60_D24_a5_captured_source_within_feed_budget": true,
+    "S01_stock_b60_D24_a5_independent_area_quadrature": true,
+    "S02_stock_b60_D24_a5_lowflow_audit_hash": true,
+    "S02_stock_b60_D24_a5_lowflow_paired_source_matches": true,
+    "S02_stock_b60_D24_a5_lowflow_captured_source_within_feed_budget": true,
+    "S02_stock_b60_D24_a5_lowflow_independent_area_quadrature": true,
+    "S03_stock_b60_D28_a5_lowflow_audit_hash": true,
+    "S03_stock_b60_D28_a5_lowflow_paired_source_matches": true,
+    "S03_stock_b60_D28_a5_lowflow_captured_source_within_feed_budget": true,
+    "S03_stock_b60_D28_a5_lowflow_independent_area_quadrature": true,
+    "S03_stock_b60_D28_a5_lowflow_fine_audit_hash": true,
+    "S03_stock_b60_D28_a5_lowflow_fine_paired_source_matches": true,
+    "S03_stock_b60_D28_a5_lowflow_fine_captured_source_within_feed_budget": true,
+    "S03_stock_b60_D28_a5_lowflow_fine_independent_area_quadrature": true,
+    "S05_stock_b60_D28_a5_nominal_audit_hash": true,
+    "S05_stock_b60_D28_a5_nominal_paired_source_matches": true,
+    "S05_stock_b60_D28_a5_nominal_captured_source_within_feed_budget": true,
+    "S05_stock_b60_D28_a5_nominal_independent_area_quadrature": true,
+    "CAD_one_closed_consistent_body": true,
+    "CAD_matches_selected_geometry": true,
+    "Lean_build_succeeded": true,
+    "Lean_sources_match_verified_hashes": true
+  },
+  "independent_integration": [
+    {
+      "case": "S00_stock_b70_D24_a5",
+      "higher_order_area_quadrature_change_c": 2.942802784449632e-06
+    },
+    {
+      "case": "S01_stock_b60_D24_a5",
+      "higher_order_area_quadrature_change_c": 3.5411915756523705e-06
+    },
+    {
+      "case": "S02_stock_b60_D24_a5_lowflow",
+      "higher_order_area_quadrature_change_c": 3.5243141718568595e-06
+    },
+    {
+      "case": "S03_stock_b60_D28_a5_lowflow",
+      "higher_order_area_quadrature_change_c": 4.5016815583862364e-09
+    },
+    {
+      "case": "S03_stock_b60_D28_a5_lowflow_fine",
+      "higher_order_area_quadrature_change_c": 6.938482044471783e-06
+    },
+    {
+      "case": "S05_stock_b60_D28_a5_nominal",
+      "higher_order_area_quadrature_change_c": 4.955854800610855e-09
+    }
+  ],
+  "physical_validation": false,
+  "scope": "Integration/provenance checks. Native CFD conservation and stability gates are in each audit."
+}

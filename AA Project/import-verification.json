@@ -1,0 +1,45 @@
+{
+  "verified_imported_copies": 1421,
+  "intentional_overlays": [
+    {
+      "path": "project-overview.html",
+      "imported_sha256": "db51b5417106c3c872f90db16298b695d4c2881d2a3fa3045a838d8f39627ca6",
+      "repository_sha256": "5658842772abac850bfb03cbd3dad2a42eb8a87af4f67a17d57466f96d3d16bf"
+    }
+  ],
+  "overlay_reason": "Add repository and archive navigation to the existing project overview.",
+  "existing_calculator_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "secret_pattern_scan": "No matches in imported text files.",
+  "overview_local_links": "All resolved before final archive manifest completion.",
+  "executable_bits_match": true,
+  "no_imported_artifacts_ignored": true,
+  "status": "Local import integrity verified; all LFS upload commands succeeded",
+  "native_archive_groups": 4,
+  "native_archive_parts": 21,
+  "native_compressed_bytes": 4895527062,
+  "native_source_files": 51351,
+  "large_asset_unique_objects_uploaded": 207,
+  "native_part_pointers_match_manifest": true,
+  "excluded_replaceable_caches": [
+    ".build",
+    ".git",
+    ".gstack",
+    ".lake",
+    ".swiftpm",
+    ".venv-cfd",
+    "__pycache__",
+    "node_modules",
+    ".DS_Store",
+    "*.pyc",
+    "*.pyo"
+  ],
+  "staged_artifacts_match_hashes": true,
+  "all_staged_lfs_objects_uploaded": true,
+  "staged_lfs_unique_objects": 228,
+  "tracked_files": 1467,
+  "largest_git_blob_bytes": 10982532,
+  "existing_calculator_code_unchanged": true
+}

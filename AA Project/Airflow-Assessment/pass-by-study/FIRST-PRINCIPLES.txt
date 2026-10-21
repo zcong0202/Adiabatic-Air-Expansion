@@ -1,0 +1,150 @@
+AA / OUTDOOR PASS-BY / FIRST PRINCIPLES / 21 OCTOBER 2026
+
+CONFIRMED
+Open outdoor installation. People walk past outlets. No seat or enclosure.
+Compare nearest nominal source-to-person distances 0.2, 0.35, 0.5 m.
+Valve open for at most 30 s. This is not each person's exposure duration.
+Use stock source/control hardware; custom nozzle geometry is allowed.
+
+SOURCE BUDGET (CONDITIONAL)
+Steady control volume, neglect source kinetic and potential energy changes:
+  mdot * (h_in - h_out) = P_shaft - Q_into_air
+With constant cp:
+  T_motor = T_in - (P_shaft - Q_into_air)/(mdot*cp)
+Cold-path heat leak to ambient, constant UA:
+  T_supply = T_ambient + (T_motor-T_ambient)*exp(-UA/(mdot*cp))
+Available sensible cold-air power:
+  Q_cold = mdot*cp*(T_ambient-T_supply)
+
+Nominal hypothesis inherited from the loaded-motor source calculation:
+4 motors; 0.0194 kg/s and 840 W shaft work each; inlet 40 C;
+zero nominal motor heat pickup; UA about 10.074 W/K.
+At ambient 30 C: mdot=0.0776 kg/s, supply about 0.959 C,
+Q_cold about 2267 W. Demand=3.888 m3/min free-air equivalent.
+Motor load, exact flow reference state, heat pickup, treatment, collectors,
+backpressure and commercial interfaces remain unverified.
+Shaft-work dissipation must stay outside the cooled stream and target.
+
+METHOD CHOICE
+An adiabatic regulator/valve with no shaft work approximates throttling:
+  h_out = h_in  (isenthalpic)
+For an ideal gas this does not lower the temperature. Real-air
+Joule-Thomson cooling needs a real-gas state calculation; it is not the
+same process as work extraction.
+For reversible adiabatic ideal-gas expansion:
+  T_out_s/T_in = (P_out/P_in)^((gamma-1)/gamma)  (isentropic)
+Use kelvin and absolute pressures. An actual loaded motor is irreversible:
+  eta_is = (h_in-h_out)/(h_in-h_out_s)
+The rated flow/work pair must determine the actual enthalpy drop.
+Do not choose an independent low source temperature and full rated flow.
+At current nominal mass/cp, 3360 W gives only about 43.04 K of dry
+temperature drop before heat pickup. Inlet 40 C therefore gives about
+-3.04 C motor exhaust, not -40 or -100 C. The nominal path then warms it.
+Additional motors of the same type in parallel scale power and mass
+together; they mainly increase total cooling capacity, not this specific
+enthalpy drop. A different source method needs a new paired state map.
+
+A BUFFER changes timing, not conservation of energy or free-jet mixing.
+Useful stored cold energy cannot exceed integrated source cold power
+minus storage and delivery heat gain. Higher pulse mass flow needs a
+matched flow path and source/storage model. A cold reservoir cannot stop
+ambient entrainment after discharge. This study assumes no cold buffer.
+
+For an ideal 30 s event at full nominal source state:
+  m_air = mdot*t = 2.328 kg
+  V_free_air = 3.888*30/60 = 1.944 m3
+  E_cold = integral Q_cold dt = about 68.0 kJ
+This energy is supplied to the outdoor air. It is not energy removed from
+one human. Cold-line startup and motor/valve transients are not established.
+
+WHY THERE IS NO UNIVERSAL 0.5 SECOND REHEATING TIME
+In the low-speed external flow, temperature is transported by advection
+and molecular/turbulent diffusion. Entrainment mixes ambient mass into the
+cold stream. Geometry, velocity, wind and density change that mixing.
+A parcel-specific exponential needs a known heat-transfer time constant.
+It cannot be imposed as a universal free-jet lifetime.
+
+Ideal dry adiabatic two-stream mixing, equal cp:
+  T_mix = f_cold*T_supply + (1-f_cold)*T_ambient
+  Delta = f_cold*(T_ambient-T_supply)
+For Delta>6 K at nominal source/ambient:
+  f_cold > 6/(30-0.959...) = 0.206606...
+  warm_mass/cold_mass < (30-0.959...)/6 - 1 = 3.84012...
+These are enthalpy conditions, not a footprint or a personal benefit claim.
+For nonzero external heat, moist air or nonuniform cp, use the full
+enthalpy balance. Do not equate a mass fraction with a geometric area.
+
+MOTION AND VALVE TIMING
+Assume a straight path at v=1.2 m/s; sweep 0.6,1.2,1.8 m/s.
+For established cooled width W along the walking path:
+  t_crossing = W/v
+Hypothetical W=0.3 m gives 0.25 s, not 30 s.
+Neither the nozzle slot width nor nozzle-to-person distance is W.
+W must be measured from the resolved temperature field at the target.
+Actual exposure is the intersection of passage, valve/jet arrival and
+the region where the moving patch meets the required temperature.
+
+Screening scales, not trajectory predictions:
+  U_outlet = mdot/(rho_supply*sum(outlet_area))
+  t_jet ~ standoff/representative_jet_speed
+  trigger_lead_distance ~ walking_speed*(valve_delay+line_delay+t_jet)
+Real jets slow, spread and bend; a cold line may need substantial startup.
+Source state can change during valve switching. These upstream dynamics
+are absent from the first external CFD screen.
+
+EVALUATION OF CFD
+Solve buoyant dry ideal-gas URANS with energy and a source-origin scalar.
+Use ground and short nozzle blocks. No walls, seat, roof or human obstacle.
+Nominal cold flow starts at the outlet at t=0. Screening runs last10s;
+selected controls last30s. Valve shutdown is not simulated.
+It is a prescribed ideal outlet event, not a simulated regulator/motor.
+
+For each virtual moving 5 x 5 cm air square A(t):
+  T_area(t) = integral_A T(x,t) dA / area(A)
+  Delta_area(t) = T_ambient - T_area(t)
+Report peak deficit, total and longest continuous time above 6 K,
+integral max(Delta_area,0) dt in K s, and area-mean speed.
+Sample passages with centre crossings at 1.5,5,15,28.5 s after activation.
+Square quadrature is 3x3 Gauss; native probes use cellPoint interpolation.
+Moving traces interpolate fixed probe data in time and along the path.
+K s is an air-exposure metric. It is not joules removed from skin.
+
+For an ASSUMED upward temperature error bound e:
+  T_real <= T_computed + e
+  Delta_computed > 6+e implies Delta_real > 6
+Report duration sensitivity at e=0,1,2,3 K. These e values are hypothetical,
+not established physical error bounds. Grid comparisons alone do not prove e.
+
+LAYOUT DEFINITIONS
+Reference path: x direction, centre y=0. Virtual side planes y=+/-0.2 m.
+Side outlet heights: 1.15 and 1.55 m. These are assumed heights.
+One side: 4 outlets at x=+/-0.2 m and y=-0.2-standoff.
+Two sides: 4 outlets at x=0 and y=+/-(0.2+standoff).
+Overhead: 4 outlets at x=+/-0.2 m,y=+/-0.06 m,z=1.75+standoff.
+Overhead standoff is to a z=1.75 m reference plane, not the torso.
+The layouts do not have identical contact areas or body regions.
+Report the same air probes in all layouts; do not call a head/torso probe
+comparison a global human-comfort ranking.
+
+All controls use 4x140x80 mm ideal slot faces and the same total source.
+An exploratory 280x40 mm slot keeps area/nominal speed unchanged but
+changes spreading, exposure width and entrainment. Internal flow loss and
+actual velocity profile remain separate checks.
+
+FORMAL VALIDATION
+../formal-model/AAThermo/PassBy.lean proves seven conditional facts about
+crossing time, valve/exposure separation, air budget, sampled dose and the
+cold-fraction threshold. Build and axiom checks pass under Lean/mathlib.
+Neither Lean nor virtual probes prove the absent moving-body flow or
+actual hardware. A next stage must include upright human blockage/wake
+and a separate ambient-baseline heat-transfer comparison.
+
+FOLLOW-UP HYPOTHESES
+The wider-slot trend is checked on 0.065 and 0.045m nominal meshes.
+A four-outlet one-height row trades vertical coverage for more encounters.
+An8 C supply case is an explicit total motor/path heat-pickup sensitivity.
+An8 degree upward prescribed-velocity test targets the cold-core fall
+seen at50cm. It is an oblique inlet on a vertical patch, not a resolved
+tilted CAD exit. Total speed rises by1/cos(8 degrees), about1%; actual
+normal source mass is checked. A constant-speed buoyancy scale motivates
+this test, not a validated turbulent-trajectory law.

@@ -1,0 +1,70 @@
+{
+  "cases": 18,
+  "preferred": {
+    "duration_s": 25.0,
+    "initialization_note": "Cold startup except listed continuations",
+    "case": "C24_four_profile_continued",
+    "active_motors": 4,
+    "mass_g_s": 77.60000000000001,
+    "supply_c": 0.9592752761782251,
+    "ambient_c": 30,
+    "panel_heat_w": 0,
+    "wind_m_s": 0,
+    "wind_direction": "front",
+    "variant": "side",
+    "cells": 46492,
+    "profile_transferred": true,
+    "torso_c": 15.718245901503884,
+    "neck_c": 19.30783597239082,
+    "occupied_c": 25.141273425368098,
+    "neck_speed_mean": 0.38653969774004776,
+    "neck_speed_max_last4s": 1.2889182888170019,
+    "neck_fraction_below20": 0.5592013888888893,
+    "cold_volume_below22_m3": 0.18434345555555556,
+    "torso_range_last4s": 0.3356386318517366,
+    "neck_range_last4s": 2.06535796571535,
+    "sustained_mean20_from_s": [
+      1.0,
+      24.0
+    ],
+    "numerical_gates_pass": true,
+    "target20_means_pass": true,
+    "local_speed_screen_pass": false,
+    "legacy_delta6_means_pass": true,
+    "combined_upward_error_budget_for20": 0.6921640276091807,
+    "combined_upward_error_budget_for_delta6": 4.692164027609181,
+    "pressure_revision": "exact hydrostatic atmosphere",
+    "conservation": {
+      "mass_integral_error_relative_injected_mass": -0.00043690327989424796,
+      "origin_integral_error_relative_injected_mass": -0.004715981309969472,
+      "energy_integral_error_relative_source_cooling": 0.00019784267709951837,
+      "window_s": [
+        20.0,
+        25.0
+      ],
+      "note": "Trapezoid at saved 1-s fields; gravity and pressure work included. Open-boundary diffusive heat, exact face kinetic interpolation and wall-flux deviation excluded; not a rigorous residual bound."
+    },
+    "region_mixing_diagnostics": {
+      "torso": {
+        "mean_cold_origin_fraction": 0.4950597484574989,
+        "inferred_temperature_excess_k": 0.0951397783025616,
+        "required_origin_for20_if_excess_fixed": 0.34762010501830326,
+        "note": "Diagnostic identity from the same CFD fields, not an independent prediction. A changed source requires re-solving density/flow."
+      },
+      "neck": {
+        "mean_cold_origin_fraction": 0.3801301114390299,
+        "inferred_temperature_excess_k": 0.34708989792738265,
+        "required_origin_for20_if_excess_fixed": 0.3562958568124088,
+        "note": "Diagnostic identity from the same CFD fields, not an independent prediction. A changed source requires re-solving density/flow."
+      }
+    }
+  },
+  "mesh": {
+    "coarse_cells": 46492,
+    "fine_cells": 118570,
+    "torso_change_c": 0.23556350117166858,
+    "neck_change_c": 0.017996603504542463,
+    "both_changes_below_0_5c": true,
+    "note": "Two-grid sensitivity of uniform-inlet model. Not a rigorous continuum-error bound; profile-transferred case needs its own mesh study."
+  }
+}

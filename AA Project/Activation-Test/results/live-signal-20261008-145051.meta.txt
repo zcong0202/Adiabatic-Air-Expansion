@@ -1,0 +1,8 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# Complete stop; sensor stop unconfirmed (no ACK)
+# AA LED prototype; outputs disabled at boot; send ? for commands
+2026-10-08T14:51:30.041861+04:00 command=T
+# ToF idle SDA=0.029V SCL=3.607V (ADC estimate)
+# ToF bus idle check failed: needs onboard low-voltage pull-ups
+# Start failed; output remains OFF

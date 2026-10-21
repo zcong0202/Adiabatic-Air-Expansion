@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-15",
+  "source": "Direct user reply in AA project chat",
+  "question": "Has a Milton S-183 tip already screwed directly onto your Jeanoko cold outlet?",
+  "answer": "Yes, it fits directly",
+  "reference_tip_fit_user_confirmed": true,
+  "printed_thread_fit_verified": false,
+  "cooling_performance_verified": false,
+  "design_implication": "Keep the Milton-style 3/8-18 NPT male mounting reference. Check printed tolerance with a coupon; no connector geometry change follows from this confirmation."
+}

@@ -1,0 +1,52 @@
+{
+  "case": "S03_stock_b60_D28_a5_lowflow",
+  "diameter_mm": 28,
+  "cold_mass_flow_kg_s": 0.00246001372035334,
+  "cold_temperature_c": -13.777777777777779,
+  "ambient_temperature_c": 34,
+  "density_reference_kg_m3": 1.2,
+  "exit_speed_m_s": 3.3292801332322917,
+  "mesh_scale": 1,
+  "domain_scale": 1,
+  "turbulence_model": "kOmegaSST",
+  "Prt": 0.85,
+  "convection_order": 2,
+  "solver": "simpleFoam + passive thermal deficit",
+  "target": {
+    "distance_m": 0.2,
+    "width_m": 0.05,
+    "height_m": 0.05,
+    "objective": "area mean ambient minus air temperature > 6 C"
+  },
+  "assumptions": [
+    "Prescribed 8 mm source flow into an explicit internal diffuser",
+    "Constant density, dry air, passive temperature deficit",
+    "Axisymmetric still-air jet; wind and buoyancy excluded",
+    "No source backpressure response, wall warming, moisture or skin model",
+    "External body omitted; external lip idealized as zero thickness. CAD has a 2 mm wall."
+  ],
+  "validation_status": "Not calibrated against AA measurements",
+  "inlet_turbulence_intensity": 0.05,
+  "internal_diffuser_modeled": true,
+  "diffuser": {
+    "inlet_bore_mm": 8,
+    "exit_bore_mm": 28,
+    "half_angle_deg": 5,
+    "inlet_land_mm": 15,
+    "exit_land_mm": 10,
+    "cone_length_mm": 114.30052302761345,
+    "total_length_mm": 139.30052302761345,
+    "wall_temperature_model": "Adiabatic; heat pickup must be checked separately"
+  },
+  "system_campaign": {
+    "source": {
+      "beta": 0.6,
+      "mass_kg_s": 0.00246001372035334,
+      "cold_c": -13.777777777777779,
+      "temperature_drop_c": 47.77777777777778,
+      "reference_density_kg_m3_ASSUMED": 1.2041183163746156
+    },
+    "config_sha256": "a6c92dd903d122b6afb94c621f3ec8b2a2742e3a4fe1c36dae0b7c4352ceef28",
+    "source_status": "EXAIR approximate curve and assumed reference-flow conversion; not Jeanoko"
+  }
+}

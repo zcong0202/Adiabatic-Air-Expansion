@@ -1,0 +1,25 @@
+port=/dev/cu.usbmodem11301
+baud=115200
+# ToF idle SDA=3.587V SCL=3.587V (ADC estimate)
+# ToF init=1
+# ToF mode=40 gpio=3 fw=3 osc=36 errors=0
+# AA LED prototype; outputs disabled at boot; send ? for commands
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0
+# ToF waiting; mode=40 gpio=3 mux=11 stream=1 status=7 fastosc=48332 budget=32936 errors=0

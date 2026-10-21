@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-15",
+  "scope": "Rough comparative CAD/CFD study authorized using catalogue and image references. No additional lab measurements required to begin conceptual cases.",
+  "installed_hardware": "Jeanoko 08, confirmed by user; EXAIR is a modeling reference, not the installed tube.",
+  "nozzle_reference": {
+    "url": "https://www.amazon.ae/dp/B00KT9OUD0",
+    "brand": "Milton",
+    "model": "S-183",
+    "nozzle_types": [
+      "Adjustable",
+      "High-volume",
+      "Fan spray"
+    ],
+    "listed_connection": "3/8 NPT, intended for Milton S-181/S-182 guns",
+    "dimensional_limit": "Listing includes package dimensions and inconsistent product dimensions; do not use these as individual nozzle length or bore.",
+    "internal_geometry": "Not published in inspected listing. Simplified equivalents required."
+  },
+  "source_reference": {
+    "url": "https://www.exair.com/vt.html",
+    "selected_surrogate": "EXAIR 3208 / small tube family, reference only",
+    "drawing_url": "https://www.exair.com/media/wysiwyg/store_images/VTSmalldim.jpg",
+    "drawing_values": {
+      "overall_length_mm_rounded": 105,
+      "cold_exit_connection": "1/4 NPT female",
+      "hot_exit_connection": "1/4 NPT male",
+      "compressed_air_inlet_connection": "1/8 NPT"
+    },
+    "cad_access": "Product page indicates login/model selection for CAD downloads. Public dimension drawing inspected; native CAD not obtained.",
+    "internal_cold_bore_mm": null,
+    "adapter_required_in_reference_assembly": "1/4 NPT source cold port to Milton 3/8 NPT interface; connection details simplified, not a fabrication drawing."
+  },
+  "study_approach": [
+    "Represent measured-unknown cold source by prescribed cold mass flow and total temperature at a defined near-atmospheric cold-branch plane.",
+    "Do not apply 6.9 bar compressed-air inlet pressure at the cold delivery plane.",
+    "Build equivalent nozzle concepts, not exact internal replicas of Milton products.",
+    "Compare baseline round outlet, compact smooth outlet, rounded slot and short open shield.",
+    "Use matching cold mass flow and total temperature across geometry cases; separately examine required pressure drop.",
+    "Prescribed-flow downstream CFD cannot predict vortex backpressure response; assess that separately using reference limits or a source map."
+  ],
+  "provisional_scenarios": {
+    "status": "Design assumptions only; not measured source output or a fitted vortex performance map. Some combinations may not be achievable by installed hardware.",
+    "target_distance_mm": 200,
+    "ambient_temperature_c": 35,
+    "cold_mass_flow_kg_s": [
+      0.001,
+      0.002,
+      0.003
+    ],
+    "cold_total_temperature_c": [
+      5,
+      15,
+      25
+    ],
+    "crosswind_m_s": [
+      0,
+      1,
+      2
+    ],
+    "cold_flow_bore_mm_candidates": [
+      6,
+      8,
+      10
+    ],
+    "geometry_status": "Bores and internal passages are proposed parameters, not values derived from nominal pipe threads.",
+    "sensible_source_capacity_w_range_at_35c": [
+      10.05,
+      90.45
+    ],
+    "capacity_note": "Range follows assumed mass flow * 1005 * (ambient-total temperature), before target interception. Not a prediction from the seller rating.",
+    "humidity_status": "Dry-air screening first. Flag below-dew-point regions; moisture/condensation requires a later model if material to ranking.",
+    "target_area": "Keep a mapped target plane at 200 mm; choose and label any heated-patch area before heat-transfer ranking."
+  },
+  "expected_outputs": [
+    "Dimensioned parametric conceptual geometry and mesh-ready fluid surfaces",
+    "Assumption and source register",
+    "CFD case definitions for source and wind sensitivity",
+    "Temperature/velocity/source-fraction maps and pressure loss, only after a solver run"
+  ],
+  "current_status": "Four STEP/STL concepts and fluid meshes generated. CFD screening executed for one source condition and two wind conditions, with two refined-mesh spot checks. Numerical convergence remains a limit; see case audits.",
+  "executed_source_subset": {
+    "mass_flow_kg_s": 0.002,
+    "approx_total_temperature_c": 15,
+    "ambient_c": 35,
+    "wind_m_s": [
+      0,
+      1
+    ]
+  }
+}

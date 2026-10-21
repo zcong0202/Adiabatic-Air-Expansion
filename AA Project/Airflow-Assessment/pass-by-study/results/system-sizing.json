@@ -1,0 +1,168 @@
+{
+  "status": "Conditional first-principles screen; not hardware validation, new CFD or new Lean verification",
+  "reference": {
+    "fad_pressure_pa": 101325.0,
+    "fad_temperature_k_ASSUMED": 293.15,
+    "receiver_temperature_k_ASSUMED": 313.15,
+    "warning": "Motor flow reference temperature is not confirmed. FAD figures require common reference states."
+  },
+  "source": {
+    "mass_kg_s": 0.0776,
+    "fad_m3_min": 3.888,
+    "shaft_w": 3360,
+    "motor_c_ASSUMED": -3.0407247238220165
+  },
+  "receiver_equation": "V=(Qref_load-Qref_compressor)*t*Pref/(Phi-Plo)*Ttank/Tref; clip negative deficit to zero",
+  "receiver_limits": [
+    "Isothermal inventory estimate. Rapid blowdown can cool the receiver and reduce usable inventory.",
+    "A 7 barg source cannot charge a receiver to 9 barg.",
+    "Example 6.8 barg minimum receiver pressure reserves 0.5 bar for losses/regulation above 6.3 barg motor inlet; this is an assumed network budget.",
+    "A 7 to 6.8 barg swing is only an illustrative 0.2 bar allowance, not a validated operating envelope.",
+    "Compressor air/oil separator volume is not assumed usable receiver inventory.",
+    "Final size requires compressor transient delivery, usable operating pressure range, line losses and thermal blowdown model."
+  ],
+  "receiver_examples": [
+    {
+      "purpose": "30s with compressor supplying no flow",
+      "swing_bar": 0.2,
+      "litres": 10520.718364318607
+    },
+    {
+      "purpose": "30s with compressor supplying no flow; needs higher-pressure source",
+      "swing_bar": 2,
+      "litres": 1052.071836431861
+    },
+    {
+      "purpose": "2s with compressor supplying no flow",
+      "swing_bar": 0.2,
+      "litres": 701.3812242879071
+    },
+    {
+      "purpose": "30s deficit with 3.6m3/min compressor",
+      "swing_bar": 0.2,
+      "litres": 779.3124714310067
+    },
+    {
+      "purpose": "30s with fully established 5m3/min compressor",
+      "swing_bar": 0.2,
+      "inventory_deficit_litres": 0.0
+    }
+  ],
+  "receiver_300l_no_compressor_seconds_at_0_2bar": 0.8554548927498927,
+  "compressor_candidates": [
+    {
+      "model": "XAS 68",
+      "fad_m3_min": 3.6,
+      "working_pressure_bar_g": 7,
+      "margin_of_motor_demand_percent": -7.4074074074074066
+    },
+    {
+      "model": "XAS 78",
+      "fad_m3_min": 4.5,
+      "working_pressure_bar_g": 7,
+      "margin_of_motor_demand_percent": 15.740740740740744
+    },
+    {
+      "model": "XAS 88",
+      "fad_m3_min": 5,
+      "working_pressure_bar_g": 7,
+      "margin_of_motor_demand_percent": 28.600823045267497
+    }
+  ],
+  "compressed_main_10m": [
+    {
+      "id_mm": 25.0,
+      "length_m": 10,
+      "speed_m_s": 17.73344439808633,
+      "straight_loss_pa": 11213.59615582494,
+      "fraction_of_absolute_pressure": 0.013993817933828272
+    },
+    {
+      "id_mm": 32.0,
+      "length_m": 10,
+      "speed_m_s": 10.823635496878866,
+      "straight_loss_pa": 3263.5860132941,
+      "fraction_of_absolute_pressure": 0.004072737045885378
+    },
+    {
+      "id_mm": 40.0,
+      "length_m": 10,
+      "speed_m_s": 6.927126718002474,
+      "straight_loss_pa": 1069.4118648362107,
+      "fraction_of_absolute_pressure": 0.0013345544751957204
+    }
+  ],
+  "cold_branch_10m_each_of_four": [
+    {
+      "id_mm": 32.0,
+      "length_m": 10,
+      "speed_m_s": 18.731672760002787,
+      "straight_loss_pa": 1412.0122865088977,
+      "fraction_of_absolute_pressure": 0.01393547778444508
+    },
+    {
+      "id_mm": 50.0,
+      "length_m": 10,
+      "speed_m_s": 7.67249316249714,
+      "straight_loss_pa": 151.61366480264738,
+      "fraction_of_absolute_pressure": 0.0014963105334581533
+    },
+    {
+      "id_mm": 100.0,
+      "length_m": 10,
+      "speed_m_s": 1.918123290624285,
+      "straight_loss_pa": 4.737927025082731,
+      "fraction_of_absolute_pressure": 4.675970417056729e-05
+    }
+  ],
+  "hose_assumptions": "Darcy f=0.02, smooth straight hose. Local density approximation. No bends, couplers, pulsation or flexible-hose roughness. Thermal and pressure tables are separate sensitivities, not a coupled network solution.",
+  "thermal_equation": "T(L)=Ta+(Tmotor-Ta)*exp(-UA_per_length*L/(mdot_branch*cp))",
+  "cold_branch_heat_sensitivity": [
+    {
+      "length_m": 1,
+      "ua_w_m_k_ASSUMED": 0.5,
+      "nozzle_c": -2.2049898280994142
+    },
+    {
+      "length_m": 1,
+      "ua_w_m_k_ASSUMED": 1.5,
+      "nozzle_c": -0.5964027893886055
+    },
+    {
+      "length_m": 3,
+      "ua_w_m_k_ASSUMED": 0.5,
+      "nozzle_c": -0.5964027893886055
+    },
+    {
+      "length_m": 3,
+      "ua_w_m_k_ASSUMED": 1.5,
+      "nozzle_c": 3.7631326575938466
+    },
+    {
+      "length_m": 5,
+      "ua_w_m_k_ASSUMED": 0.5,
+      "nozzle_c": 0.931837934203962
+    },
+    {
+      "length_m": 5,
+      "ua_w_m_k_ASSUMED": 1.5,
+      "nozzle_c": 7.5014986996523945
+    },
+    {
+      "length_m": 10,
+      "ua_w_m_k_ASSUMED": 0.5,
+      "nozzle_c": 4.426770207186831
+    },
+    {
+      "length_m": 10,
+      "ua_w_m_k_ASSUMED": 1.5,
+      "nozzle_c": 14.680040616760731
+    }
+  ],
+  "heat_sensitivity_limits": "UA values 0.5 and 1.5 W/(m K) are illustrative low/high heat-leak cases, not rated insulated/bare hose products. Start at motor -3.04C; do not add the existing 4K duct allowance again.",
+  "sources": [
+    "https://www.atlascopco.com/en-ae/construction-equipment/products/mobile-air-compressors/ready-to-go-compressor-range/xas-lrc-range",
+    "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249",
+    "https://www.atlascopco.com/en-us/itba/industry-solutions/airmotors/technicalguide/performance"
+  ]
+}

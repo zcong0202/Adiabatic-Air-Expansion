@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-19",
+  "basis": "User-supplied screenshot of 0929 slide 4; BAUER manufacturer product page checked separately.",
+  "low_pressure": {
+    "name": "Kaneez 10 HP 4-in-1",
+    "price_aed_from_user_slide": 16500,
+    "listed_supply_bar": [
+      8,
+      10
+    ],
+    "listed_flow_l_min": [
+      1000,
+      1200
+    ],
+    "flow_verified_as_FAD": false,
+    "listed_receiver_l": 400,
+    "listed_electrical": "380 V three phase",
+    "nominal_motor_power_kw_10hp_conversion": 7.457,
+    "dryer_and_filters": "Listed in screenshot; pressure dew point, oil carryover and outlet temperature unverified.",
+    "supplier_primary_datasheet": "Exact manufacturer/model and FAD table not yet available."
+  },
+  "high_pressure": {
+    "name": "BAUER JUNIOR II",
+    "price_aed_from_user_slide": 23500,
+    "manufacturer_pressure_bar": [
+      90,
+      330
+    ],
+    "manufacturer_delivery_l_min": 100,
+    "manufacturer_delivery_basis": "Cylinder filling 0 to 200 bar, +/-5 percent. Not 100 actual litres per minute at 200/330 bar.",
+    "manufacturer_electric_models": {
+      "II-E": "400 V three phase, 2.2 kW",
+      "II-W": "230 V single phase, 2.2 kW"
+    },
+    "purification": "P21",
+    "source_url": "https://www.bauer-kompressoren.de/de_de/junior-ii",
+    "direct_process_supply_approved": false,
+    "subzero_cooling_achieved": false
+  },
+  "vortex_demand": {
+    "Jeanoko_listing_l_min": 200,
+    "Jeanoko_flow_reference_basis": "Unstated; unmeasured.",
+    "EXAIR_3208_reference_SLPM": 227,
+    "EXAIR_is_installed_unit": false,
+    "note": "Compare on a common reference basis and measure the installed unit."
+  },
+  "conditional_flow_ratios": {
+    "Kaneez_vs_BAUER": [
+      10,
+      12
+    ],
+    "Kaneez_vs_EXAIR_reference": [
+      4.405286343612334,
+      5.286343612334802
+    ],
+    "BAUER_maximum_average_vortex_duty_if_demand_200_lpm": 0.5,
+    "BAUER_maximum_average_vortex_duty_if_demand_227_lpm": 0.44052863436123346,
+    "assumptions": "Comparable free-air conditions, quoted delivery maintained, compressor duty permits replenishment, zero losses. Not a commissioning or duty rating."
+  },
+  "illustrative_capacity_not_hardware_predictions": {
+    "ambient_c": 34,
+    "cold_delivery_c": 5,
+    "assumed_vortex_cold_fraction": 0.5,
+    "one_200_lpm_vortex_potential_w": 58.49004721789696,
+    "matched_larger_vortex_or_bank_on_1000_to_1200_lpm_potential_w": [
+      292.4502360894848,
+      350.9402833073817
+    ],
+    "BAUER_100_lpm_all_flow_at_minus50_potential_w": 169.41944711390843,
+    "note": "Illustrates mass-flow leverage only. Larger cold throughput requires a matched converter/bank and measured cold delivery. A single existing vortex cannot consume the whole larger compressor output. No -50 C result is established."
+  },
+  "recommendation": "Prefer a verified low-pressure continuous dry-air supply for existing vortex/nozzle tests and repeated demos. Rent or borrow an appropriately sized supply before purchase where practical. Consider BAUER for a separately validated cylinder-charging/expander experiment, not as a continuous replacement supply for the current nominal 200-227 L/min vortex.",
+  "open_inputs": [
+    "Kaneez exact model and supplier datasheet: FAD at 8-10 bar, duty and dryer/filters losses",
+    "Actual vortex inlet pressure and temperature while flowing through the intended hose",
+    "Pressure dew point and oil carryover for intended cold minimum",
+    "Venue three-phase power, noise and heat location",
+    "Matched high-pressure expander flow/efficiency and approved supply arrangement if pursued"
+  ],
+  "not_established": [
+    "Equipment purchase authorization",
+    "Achieved cooling power",
+    "Energy efficiency from motor nameplates",
+    "Pressure-vessel or high-pressure line design",
+    "Kaneez verified FAD",
+    "BAUER approved direct continuous process supply"
+  ]
+}

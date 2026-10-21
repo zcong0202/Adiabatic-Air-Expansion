@@ -1,0 +1,91 @@
+{
+  "cases": 17,
+  "numerically_accepted_cases": 14,
+  "hardware_validated_cases": 0,
+  "numerically_accepted_above_6c_at_case_conditions": [
+    {
+      "case": "A22_D22_o2",
+      "mean_drop_c": 10.193578445298959
+    },
+    {
+      "case": "A23_D23_o2",
+      "mean_drop_c": 10.644755880362622
+    },
+    {
+      "case": "R01_D16",
+      "mean_drop_c": 7.454524284472621
+    },
+    {
+      "case": "R02_D24",
+      "mean_drop_c": 11.095367802864265
+    },
+    {
+      "case": "R05_D24_diffuser_SST",
+      "mean_drop_c": 7.683961790080601
+    },
+    {
+      "case": "R06_D24_fine",
+      "mean_drop_c": 11.107606352061017
+    },
+    {
+      "case": "R07_D24_diffuser_3deg_SST",
+      "mean_drop_c": 9.439133931050765
+    },
+    {
+      "case": "R08_D24_diffuser_7deg_SST",
+      "mean_drop_c": 6.750442015379023
+    },
+    {
+      "case": "R09_D24_SST",
+      "mean_drop_c": 10.346214335917068
+    },
+    {
+      "case": "R10_D24_domain",
+      "mean_drop_c": 11.085714512540118
+    },
+    {
+      "case": "R11_D24_lowflow",
+      "mean_drop_c": 11.093944666366193
+    },
+    {
+      "case": "R12_D24_a3_second_order",
+      "mean_drop_c": 9.498623095342126
+    },
+    {
+      "case": "R13_D24_a3_fine",
+      "mean_drop_c": 9.456444238403344
+    }
+  ],
+  "internal_sensitivity": [
+    {
+      "case": "R12_D24_a3_second_order",
+      "check": "Convection order",
+      "numerically_accepted": true,
+      "mean_drop_c": 9.498623095342126,
+      "difference_from_parent_c": 0.0594891642913602,
+      "acceptance_tolerance_c": 0.5,
+      "sensitivity_within_tolerance": true
+    },
+    {
+      "case": "R13_D24_a3_fine",
+      "check": "Finer internal mesh",
+      "numerically_accepted": true,
+      "mean_drop_c": 9.456444238403344,
+      "difference_from_parent_c": 0.017310307352579102,
+      "acceptance_tolerance_c": 0.5,
+      "sensitivity_within_tolerance": true
+    },
+    {
+      "case": "R14_D24_a3_kEpsilon",
+      "check": "Internal turbulence model",
+      "numerically_accepted": false,
+      "mean_drop_c": 10.074674320116957,
+      "difference_from_parent_c": 0.6355403890661915,
+      "acceptance_tolerance_c": 1.0,
+      "sensitivity_within_tolerance": false
+    }
+  ],
+  "status": "Conditional design search. No physically validated hardware optimum.",
+  "source_assumption": "2 g/s nominal; 5\u00b0C source and 35\u00b0C ambient. Paired real source measurements absent.",
+  "model_limits": "Still-air, constant-density prescribed source. No wind, buoyancy, wall warming or person model. Internal diffuser cases include passage flow but not source backpressure response."
+}

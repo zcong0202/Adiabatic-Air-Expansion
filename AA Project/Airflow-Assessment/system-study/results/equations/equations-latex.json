@@ -1,0 +1,15 @@
+{
+  "continuity": "\\frac{\\partial\\rho}{\\partial t}+\\nabla\\cdot(\\rho\\mathbf{u})=0",
+  "energy": "\\dot m\\left[h_{out}-h_{in}+\\frac{V_{out}^{2}-V_{in}^{2}}{2}\\right]=\\dot Q-\\dot W",
+  "target": "J=T_a-\\frac{1}{A}\\int_A T(y,z)\\,dA>6\\,\\mathrm{K}",
+  "vortex": "\\dot m_c=\\beta\\dot m_{in},\\qquad T_c=T_{in}-\\Delta T_{map}(\\beta,p_{in})",
+  "regulator": "h_{out}=h_{in};\\qquad h=c_p T\\ \\Longrightarrow\\ T_{out}=T_{in}",
+  "expander": "T_{is}=T_{in}\\left(\\frac{p_{out}}{p_{in}}\\right)^{(\\gamma-1)/\\gamma},\\quad \\eta_s=\\frac{h_{in}-h_{out}}{h_{in}-h_{is}}",
+  "line": "r=\\exp\\!\\left[-\\frac{UA}{\\dot m_c c_p}\\right],\\qquad T_d=T_e-(T_e-T_s)r",
+  "area": "J=T_a-T_e+\\alpha_A\\,r\\,(T_e-T_s)",
+  "threshold": "\\alpha_A>\\frac{\\delta+T_e-T_a}{r(T_e-T_s)}",
+  "uniform": "\\eta_c\\dot m_c(T_a-T_d-\\delta)>\\dot m_w(T_e-T_a+\\delta)+\\dot Q/c_p",
+  "duty": "d\\,N\\,Q_{in}\\leq Q_{supply},\\qquad \\Delta M=\\frac{V(p_{high}-p_{low})}{RT}",
+  "exposure": "\\Delta T(t)=\\Delta T_0 e^{-t/\\tau};\\qquad t<\\tau\\ln(\\Delta T_0/\\delta)",
+  "robust": "J\\geq-H+\\alpha_{min}r_{min}S_{min}"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "case": "R12_D24_a3_second_order",
+    "check": "Convection order",
+    "numerically_accepted": true,
+    "mean_drop_c": 9.498623095342126,
+    "difference_from_parent_c": 0.0594891642913602,
+    "acceptance_tolerance_c": 0.5,
+    "sensitivity_within_tolerance": true
+  },
+  {
+    "case": "R13_D24_a3_fine",
+    "check": "Finer internal mesh",
+    "numerically_accepted": true,
+    "mean_drop_c": 9.456444238403344,
+    "difference_from_parent_c": 0.017310307352579102,
+    "acceptance_tolerance_c": 0.5,
+    "sensitivity_within_tolerance": true
+  },
+  {
+    "case": "R14_D24_a3_kEpsilon",
+    "check": "Internal turbulence model",
+    "numerically_accepted": false,
+    "mean_drop_c": 10.074674320116957,
+    "difference_from_parent_c": 0.6355403890661915,
+    "acceptance_tolerance_c": 1.0,
+    "sensitivity_within_tolerance": false
+  }
+]

@@ -1,0 +1,415 @@
+{
+  "date": "2026-10-19",
+  "config": {
+    "date": "2026-10-19",
+    "hardware_access": false,
+    "target": {
+      "ambient_c": 34,
+      "distance_m": 0.2,
+      "width_m": 0.05,
+      "height_m": 0.05,
+      "strict_drop_c": 6,
+      "desired_margin_c": 1,
+      "wind_first_stage_m_s": 0
+    },
+    "scope": {
+      "custom_parts": [
+        "low-pressure nozzle and its non-pressure-bearing mounting"
+      ],
+      "stock_only": [
+        "compressor",
+        "certified receiver or cylinder",
+        "dryer",
+        "filters",
+        "regulators",
+        "valves",
+        "pressure hoses",
+        "vortex tube"
+      ],
+      "excluded_from_build_shortlist": [
+        "unmatched hypothetical turbines",
+        "custom pressure vessels",
+        "shower construction"
+      ]
+    },
+    "source": {
+      "model": "EXAIR 3208 reference candidate",
+      "inlet_slpm": 227,
+      "inlet_pressure_psig": 100,
+      "cold_fractions": [
+        0.6,
+        0.7,
+        0.8
+      ],
+      "temperature_drop_f": [
+        86,
+        71,
+        54
+      ],
+      "source_url": "https://www.exair.com/vt.html",
+      "curve_status": "Manufacturer approximate performance table, live checked 19 October 2026. Not Jeanoko calibration or an installation guarantee.",
+      "flow_conversion_reference_ASSUMED": {
+        "pressure_pa": 101325,
+        "temperature_k": 293.15
+      },
+      "selected_beta": 0.7,
+      "inlet_temperature_c": 34,
+      "port_bore_ASSUMED_mm": 8,
+      "port_geometry_status": "8 mm interface abstraction. Confirm EXAIR outlet geometry/thread before a fitted adapter."
+    },
+    "geometry": {
+      "diameters_mm": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "half_angles_deg": [
+        3,
+        5,
+        7
+      ],
+      "maximum_length_mm": 180,
+      "inlet_bore_mm": 8,
+      "wall_mm": 2
+    },
+    "stress_ASSUMPTIONS": {
+      "source_drop_retained_fraction": 0.8,
+      "inlet_air_above_ambient_c": 4,
+      "entrained_air_above_ambient_c": 2,
+      "mass_factor": 0.9,
+      "area_fraction_factor": 0.9,
+      "overall_U_w_m2_k": 20,
+      "ambient_RH": 0.8,
+      "source_pressure_dewpoint_c": 3
+    },
+    "search": {
+      "max_new_cases": 6,
+      "max_iterations_per_case": 6500,
+      "initial_case": "S00_stock_b70_D24_a5",
+      "decision": "Evaluate beta=0.7 baseline. If margin fails, test beta=0.6 at the same geometry; otherwise test a smaller outlet. Recompute the chosen source at 90% flow. Increase outlet diameter if needed, then refine a passing mesh. At most six cases. All candidates use paired EXAIR temperature/flow points. Never rank numerical failures.",
+      "stop": "Declared still-air model envelope passes with >=1 C margin, or case budget exhausted. No global or physical optimum claim."
+    },
+    "pending_physics": [
+      "variable density and buoyancy",
+      "3D crosswind at 0.5 and 1 m/s",
+      "resolved hot exhaust plume",
+      "transient valve turn-on and repeated pulses",
+      "conjugate wall heating",
+      "condensation/icing CFD",
+      "person/skin heat removal and comfort"
+    ],
+    "compression_options": [
+      {
+        "id": "kaneez_quote",
+        "name": "Kaneez 10 HP 4-in-1",
+        "flow_lpm": 1100,
+        "flow_range_lpm": [
+          1000,
+          1200
+        ],
+        "power_kw": 7.46,
+        "pressure_bar_g": [
+          8,
+          10
+        ],
+        "receiver_l": 400,
+        "status": "User slide/quote. FAD basis, pressure-specific flow, dryer dew point and electrical input not independently verified. 7.46 kW is shaft-nameplate conversion, not measured total electrical power."
+      },
+      {
+        "id": "bauer",
+        "name": "BAUER JUNIOR II electric",
+        "flow_lpm": 100,
+        "power_kw": 2.2,
+        "status": "Manufacturer cylinder-fill rating. Approved continuous process-supply interface and duty remain open.",
+        "source_url": "https://www.bauer-kompressoren.de/de_de/junior-ii"
+      }
+    ]
+  },
+  "solver_image": "microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37",
+  "cases": [
+    {
+      "case": "S00_stock_b70_D24_a5",
+      "target_plane_flow": {
+        "total_g_s": 7.848603675066507,
+        "captured_cold_origin_g_s": 2.1144277827050604,
+        "entrained_origin_g_s": 5.7341758923614465,
+        "source_mass_capture_fraction": 0.6630572790328836,
+        "mass_flux_weighted_source_fraction": 0.26940177772285634,
+        "area_mean_source_fraction": 0.26147067562586607,
+        "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+      },
+      "diameter_mm": 24,
+      "half_angle_deg": 5,
+      "length_mm": 116.44041842209077,
+      "mass_g_s": 3.1889066745321073,
+      "nominal_target_mean_speed_m_s": 2.617346371628304,
+      "nominal_target_advected_deficit_w": 83.82198089666629,
+      "beta": 0.7,
+      "nominal_source_c": -5.444444444444443,
+      "cfd_mean_fraction": 0.26147067562586607,
+      "nominal_dry_drop_c": 10.313565538575828,
+      "stressed_dry_drop_c": 4.710189921242958,
+      "stressed_equilibrium_moist_drop_c": 4.586602197463328,
+      "stress_min_drop_c": 4.586602197463328,
+      "stress_source_c": 6.444444444444443,
+      "stress_delivered_c": 7.485266707968538,
+      "stress_UA_w_K": 0.11489654420534687,
+      "attachment_pressure_conservative_bound_pa": 1678.6228379920224,
+      "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+      "backpressure_within_EXAIR_2psig_screen": true,
+      "estimated_Richardson_number": 0.024723693275810962,
+      "numerically_accepted": true,
+      "failed_gates": [],
+      "passes_stress_plus_1C_margin": false,
+      "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+      "audit_sha256": "2e5caa74b45a8f4ce8bae6669e10ff22e527fb5e8e15db2ac6a27943c7d917be"
+    },
+    {
+      "case": "S01_stock_b60_D24_a5",
+      "target_plane_flow": {
+        "total_g_s": 6.710984807400446,
+        "captured_cold_origin_g_s": 1.8074872044934642,
+        "entrained_origin_g_s": 4.903497602906981,
+        "source_mass_capture_fraction": 0.6612721183565041,
+        "mass_flux_weighted_source_fraction": 0.2693326324476674,
+        "area_mean_source_fraction": 0.2614707500828578,
+        "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+      },
+      "diameter_mm": 24,
+      "half_angle_deg": 5,
+      "length_mm": 116.44041842209077,
+      "mass_g_s": 2.7333485781703777,
+      "nominal_target_mean_speed_m_s": 2.237972765640354,
+      "nominal_target_advected_deficit_w": 86.79212570426793,
+      "beta": 0.6,
+      "nominal_source_c": -13.777777777777779,
+      "cfd_mean_fraction": 0.2614707500828578,
+      "nominal_dry_drop_c": 12.49249139284765,
+      "stressed_dry_drop_c": 6.174777305138912,
+      "stressed_equilibrium_moist_drop_c": 5.998349232611645,
+      "stress_min_drop_c": 5.998349232611645,
+      "stress_source_c": -0.22222222222222143,
+      "stress_delivered_c": 1.2615602635459595,
+      "stress_UA_w_K": 0.11489654420534687,
+      "attachment_pressure_conservative_bound_pa": 1233.2605549518871,
+      "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+      "backpressure_within_EXAIR_2psig_screen": true,
+      "estimated_Richardson_number": 0.04175388269385214,
+      "numerically_accepted": true,
+      "failed_gates": [],
+      "passes_stress_plus_1C_margin": false,
+      "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+      "audit_sha256": "dd873c20f513ad5dae5d11a05e31536c94ecbbbcfb1e0745ca41e04ea80958a9"
+    },
+    {
+      "case": "S02_stock_b60_D24_a5_lowflow",
+      "target_plane_flow": {
+        "total_g_s": 6.029172783327596,
+        "captured_cold_origin_g_s": 1.6235344725710688,
+        "entrained_origin_g_s": 4.405638310756527,
+        "source_mass_capture_fraction": 0.6599696819324549,
+        "mass_flux_weighted_source_fraction": 0.269279805193278,
+        "area_mean_source_fraction": 0.2614678840548286,
+        "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+      },
+      "diameter_mm": 24,
+      "half_angle_deg": 5,
+      "length_mm": 116.44041842209077,
+      "mass_g_s": 2.46001372035334,
+      "nominal_target_mean_speed_m_s": 2.0106018299747443,
+      "nominal_target_advected_deficit_w": 77.95905318377162,
+      "beta": 0.6,
+      "nominal_source_c": -13.777777777777779,
+      "cfd_mean_fraction": 0.2614678840548286,
+      "nominal_dry_drop_c": 12.492354460397367,
+      "stressed_dry_drop_c": 6.136785380994027,
+      "stressed_equilibrium_moist_drop_c": 5.9676067645321496,
+      "stress_min_drop_c": 5.9676067645321496,
+      "stress_source_c": -0.22222222222222143,
+      "stress_delivered_c": 1.4226266517187725,
+      "stress_UA_w_K": 0.11489654420534687,
+      "attachment_pressure_conservative_bound_pa": 998.9330099578813,
+      "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+      "backpressure_within_EXAIR_2psig_screen": true,
+      "estimated_Richardson_number": 0.051476901913929306,
+      "numerically_accepted": true,
+      "failed_gates": [],
+      "passes_stress_plus_1C_margin": false,
+      "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+      "audit_sha256": "7e2a97c82401b47e7bb54eaeecb0630469e15b221e21f9769b5534510ca4e13f"
+    },
+    {
+      "case": "S03_stock_b60_D28_a5_lowflow",
+      "target_plane_flow": {
+        "total_g_s": 4.55884395966443,
+        "captured_cold_origin_g_s": 1.482809645516987,
+        "entrained_origin_g_s": 3.0760343141474435,
+        "source_mass_capture_fraction": 0.6027647867362326,
+        "mass_flux_weighted_source_fraction": 0.3252600129849881,
+        "area_mean_source_fraction": 0.31820169182584757,
+        "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+      },
+      "diameter_mm": 28,
+      "half_angle_deg": 5,
+      "length_mm": 139.30052302761345,
+      "mass_g_s": 2.46001372035334,
+      "nominal_target_mean_speed_m_s": 1.5202282584869296,
+      "nominal_target_advected_deficit_w": 71.20083487036946,
+      "beta": 0.6,
+      "nominal_source_c": -13.777777777777779,
+      "cfd_mean_fraction": 0.31820169182584757,
+      "nominal_dry_drop_c": 15.202969720568273,
+      "stressed_dry_drop_c": 7.743395221944931,
+      "stressed_equilibrium_moist_drop_c": 7.4663621080978615,
+      "stress_min_drop_c": 7.4663621080978615,
+      "stress_source_c": -0.22222222222222143,
+      "stress_delivered_c": 1.9775702984790797,
+      "stress_UA_w_K": 0.15489738089989072,
+      "attachment_pressure_conservative_bound_pa": 998.2771431631345,
+      "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+      "backpressure_within_EXAIR_2psig_screen": true,
+      "estimated_Richardson_number": 0.08850853700281501,
+      "numerically_accepted": true,
+      "failed_gates": [],
+      "passes_stress_plus_1C_margin": true,
+      "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+      "audit_sha256": "4c1f163a00346606aec82af2b39ade3957b9c1564a85d9cc6b3fe5f84276a36e"
+    },
+    {
+      "case": "S03_stock_b60_D28_a5_lowflow_fine",
+      "target_plane_flow": {
+        "total_g_s": 4.59351925248958,
+        "captured_cold_origin_g_s": 1.4846186512422517,
+        "entrained_origin_g_s": 3.1089006012473286,
+        "source_mass_capture_fraction": 0.60350015081583,
+        "mass_flux_weighted_source_fraction": 0.32319852593142456,
+        "area_mean_source_fraction": 0.31617987463335495,
+        "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+      },
+      "diameter_mm": 28,
+      "half_angle_deg": 5,
+      "length_mm": 139.30052302761345,
+      "mass_g_s": 2.46001372035334,
+      "nominal_target_mean_speed_m_s": 1.5317928527021922,
+      "nominal_target_advected_deficit_w": 71.2874735939718,
+      "beta": 0.6,
+      "nominal_source_c": -13.777777777777779,
+      "cfd_mean_fraction": 0.31617987463335495,
+      "nominal_dry_drop_c": 15.10637178803807,
+      "stressed_dry_drop_c": 7.681486801974115,
+      "stressed_equilibrium_moist_drop_c": 7.411758847476243,
+      "stress_min_drop_c": 7.411758847476243,
+      "stress_source_c": -0.22222222222222143,
+      "stress_delivered_c": 1.9775702984790797,
+      "stress_UA_w_K": 0.15489738089989072,
+      "attachment_pressure_conservative_bound_pa": 998.2935122524009,
+      "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+      "backpressure_within_EXAIR_2psig_screen": true,
+      "estimated_Richardson_number": 0.08717715397438908,
+      "numerically_accepted": true,
+      "failed_gates": [],
+      "passes_stress_plus_1C_margin": true,
+      "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+      "audit_sha256": "92f3b2b8a37d2c4ce30f85fec07986591eaf74a378adc7976983ea2d33b79286"
+    },
+    {
+      "case": "S05_stock_b60_D28_a5_nominal",
+      "target_plane_flow": {
+        "total_g_s": 5.078227758868093,
+        "captured_cold_origin_g_s": 1.6493814077195583,
+        "entrained_origin_g_s": 3.4288463511485343,
+        "source_mass_capture_fraction": 0.6034288567847447,
+        "mass_flux_weighted_source_fraction": 0.3247946894148749,
+        "area_mean_source_fraction": 0.31772697849248577,
+        "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+      },
+      "diameter_mm": 28,
+      "half_angle_deg": 5,
+      "length_mm": 139.30052302761345,
+      "mass_g_s": 2.7333485781703777,
+      "nominal_target_mean_speed_m_s": 1.6934262716549502,
+      "nominal_target_advected_deficit_w": 79.1991992279146,
+      "beta": 0.6,
+      "nominal_source_c": -13.777777777777779,
+      "cfd_mean_fraction": 0.31772697849248577,
+      "nominal_dry_drop_c": 15.180288972418765,
+      "stressed_dry_drop_c": 7.790004785574862,
+      "stressed_equilibrium_moist_drop_c": 7.489347254229848,
+      "stress_min_drop_c": 7.489347254229848,
+      "stress_source_c": -0.22222222222222143,
+      "stress_delivered_c": 1.763741100315663,
+      "stress_UA_w_K": 0.15489738089989072,
+      "attachment_pressure_conservative_bound_pa": 1232.4468336991772,
+      "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+      "backpressure_within_EXAIR_2psig_screen": true,
+      "estimated_Richardson_number": 0.0718059665242767,
+      "numerically_accepted": true,
+      "failed_gates": [],
+      "passes_stress_plus_1C_margin": true,
+      "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+      "audit_sha256": "6a06083d0320cff1560f089aae7477afd3e3ea18f30753eeb2e8927363a907b7"
+    }
+  ],
+  "mesh_comparisons": [
+    {
+      "coarse": "S03_stock_b60_D28_a5_lowflow",
+      "fine": "S03_stock_b60_D28_a5_lowflow_fine",
+      "stress_drop_change_c": 0.05460326062161869,
+      "passes_0p5C_gate": true
+    }
+  ],
+  "ranked_case_names": [
+    "S03_stock_b60_D28_a5_lowflow_fine",
+    "S02_stock_b60_D24_a5_lowflow",
+    "S00_stock_b70_D24_a5"
+  ],
+  "selected_case": {
+    "case": "S03_stock_b60_D28_a5_lowflow_fine",
+    "target_plane_flow": {
+      "total_g_s": 4.59351925248958,
+      "captured_cold_origin_g_s": 1.4846186512422517,
+      "entrained_origin_g_s": 3.1089006012473286,
+      "source_mass_capture_fraction": 0.60350015081583,
+      "mass_flux_weighted_source_fraction": 0.32319852593142456,
+      "area_mean_source_fraction": 0.31617987463335495,
+      "scope": "Nominal dry constant-density CFD target-plane flows. Distinct from area temperature average and heat removed from skin."
+    },
+    "diameter_mm": 28,
+    "half_angle_deg": 5,
+    "length_mm": 139.30052302761345,
+    "mass_g_s": 2.46001372035334,
+    "nominal_target_mean_speed_m_s": 1.5317928527021922,
+    "nominal_target_advected_deficit_w": 71.2874735939718,
+    "beta": 0.6,
+    "nominal_source_c": -13.777777777777779,
+    "cfd_mean_fraction": 0.31617987463335495,
+    "nominal_dry_drop_c": 15.10637178803807,
+    "stressed_dry_drop_c": 7.681486801974115,
+    "stressed_equilibrium_moist_drop_c": 7.411758847476243,
+    "stress_min_drop_c": 7.411758847476243,
+    "stress_source_c": -0.22222222222222143,
+    "stress_delivered_c": 1.9775702984790797,
+    "stress_UA_w_K": 0.15489738089989072,
+    "attachment_pressure_conservative_bound_pa": 998.2935122524009,
+    "pressure_screen_method": "Maximum internal kinematic static p times rho plus inlet kinetic head. Conservative attachment bound, not sampled patch pressure.",
+    "backpressure_within_EXAIR_2psig_screen": true,
+    "estimated_Richardson_number": 0.08717715397438908,
+    "numerically_accepted": true,
+    "failed_gates": [],
+    "passes_stress_plus_1C_margin": true,
+    "status": "Conditional still-air forced-flow screen. Moisture/heat are one-way calculations; stress ranges are assumptions, not confidence intervals.",
+    "audit_sha256": "92f3b2b8a37d2c4ce30f85fec07986591eaf74a378adc7976983ea2d33b79286"
+  },
+  "hardware_validated": false,
+  "global_optimum_established": false,
+  "next_required_physics": [
+    "variable density and buoyancy",
+    "3D crosswind at 0.5 and 1 m/s",
+    "resolved hot exhaust plume",
+    "transient valve turn-on and repeated pulses",
+    "conjugate wall heating",
+    "condensation/icing CFD",
+    "person/skin heat removal and comfort"
+  ]
+}

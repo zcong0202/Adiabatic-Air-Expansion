@@ -1,0 +1,20 @@
+{
+  "status": "Sensitivity jobs finished; comparisons require audit",
+  "results": [
+    {
+      "case": "R09_D24_SST",
+      "numerically_accepted": true,
+      "mean_drop_c": 10.346214335917068
+    },
+    {
+      "case": "R10_D24_domain",
+      "numerically_accepted": false,
+      "mean_drop_c": 11.085714855192446
+    },
+    {
+      "case": "R11_D24_lowflow",
+      "numerically_accepted": true,
+      "mean_drop_c": 11.093944666366193
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-13",
+  "hold_ms": 10000,
+  "active_low": 1,
+  "arduino_acknowledged": true,
+  "observed_sample_ms": 1038823,
+  "feedback_match": true,
+  "fault": false
+}

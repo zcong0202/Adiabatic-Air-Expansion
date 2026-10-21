@@ -1,3 +1,19 @@
 node_modules/
 .DS_Store
 *.log
+
+# Local runtimes and generated caches. Native CFD is preserved in LFS archives.
+**/.venv-cfd/
+**/.lake/
+**/__pycache__/
+**/.build/
+**/.swiftpm/
+*.pyc
+*.pyo
+!AA Project/**/*.log
+
+# Generated native cases are archived in LFS. Selected tracked replay files remain versioned.
+AA Project/Airflow-Assessment/cases/
+AA Project/Airflow-Assessment/optimization/cases/
+AA Project/Airflow-Assessment/motor-seat-study/cfd/cases/
+AA Project/Airflow-Assessment/pass-by-study/cfd/cases/

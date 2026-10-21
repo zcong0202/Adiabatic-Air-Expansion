@@ -1,0 +1,757 @@
+{
+  "checks": [
+    {
+      "name": "nine layout-distance controls completed",
+      "passed": true
+    },
+    {
+      "name": "current scenario excludes human obstacle and hardware validation",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "A00_pitch8_d50: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "F00_base_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "F01_wide_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "L00_row4_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P00_one_d20: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P01_one_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P02_one_d50: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P10_two_d20: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P11_two_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P12_two_d50: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P20_over_d20: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P21_over_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "P22_over_d50: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "R00_wide_d35: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "S00_row4_source8: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: solver/mesh/conservation screens",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: no seat/enclosure/body geometry",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: same total nominal flow/area",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: activation within 30 second limit",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: preserves pulse versus passage distinction",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: continuous duration does not exceed total",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: 5cm area and three walking speeds",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: preserves hypothetical error-budget sensitivity",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: resolved probe interval, not oversampled trace interval",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: bounded fixed air-band coverage",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: temperature provenance matches native fields",
+      "passed": true
+    },
+    {
+      "name": "W00_wide_opposed: opposing cross-path wind prescribed",
+      "passed": true
+    },
+    {
+      "name": "140x80: watertight consistently oriented single-part STL",
+      "passed": true
+    },
+    {
+      "name": "140x80: millimetre dimensions and equal area",
+      "passed": true
+    },
+    {
+      "name": "280x40: watertight consistently oriented single-part STL",
+      "passed": true
+    },
+    {
+      "name": "280x40: millimetre dimensions and equal area",
+      "passed": true
+    },
+    {
+      "name": "57 printed Lean checks build successfully",
+      "passed": true
+    },
+    {
+      "name": "all recorded Lean source hashes match",
+      "passed": true
+    },
+    {
+      "name": "no new physics axioms or hardware proof claim",
+      "passed": true
+    },
+    {
+      "name": "hydrostatic rest test passed",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "checks_count": 187,
+  "body_included": false,
+  "hardware_validated": false,
+  "performance_failures_preserved": []
+}

@@ -1,0 +1,11 @@
+{
+  "calculation_checks": "Continuity scaling and illustrative mixing-energy balance passed",
+  "source_capacity_w": 63.7699480257855,
+  "flow_for_2_m_s_l_min": [
+    37.69911184307752,
+    150.79644737231007
+  ],
+  "missing_local_links": [],
+  "extension_failure": "User-perceived, no speed or temperature measurements",
+  "CFD_run": false
+}

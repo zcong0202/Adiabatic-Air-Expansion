@@ -1,0 +1,54 @@
+[
+  {
+    "design": "D0_round",
+    "label": "Round baseline",
+    "inlet_bore_mm": 8,
+    "channel_length_mm": 40,
+    "core_exit_area_mm2": 50.26548245743669,
+    "nominal_core_mean_exit_speed_m_s": 32.48027540425957,
+    "speed_basis": "Continuity estimate only: 2 g/s, constant density at 15 C and 1 atm. Not CFD or a measured nozzle speed.",
+    "overall_length_mm": 40,
+    "step_unit": "metre",
+    "stl_CFD_unit": "metre",
+    "stl_viewer_unit": "millimetre"
+  },
+  {
+    "design": "D1_compact",
+    "label": "Compact smooth outlet",
+    "inlet_bore_mm": 8,
+    "channel_length_mm": 40,
+    "core_exit_area_mm2": 28.274333882308138,
+    "nominal_core_mean_exit_speed_m_s": 57.74271182979479,
+    "speed_basis": "Continuity estimate only: 2 g/s, constant density at 15 C and 1 atm. Not CFD or a measured nozzle speed.",
+    "overall_length_mm": 40,
+    "step_unit": "metre",
+    "stl_CFD_unit": "metre",
+    "stl_viewer_unit": "millimetre"
+  },
+  {
+    "design": "D2_slot",
+    "label": "Rounded slot",
+    "inlet_bore_mm": 8,
+    "channel_length_mm": 40,
+    "core_exit_area_mm2": 46.06858347057703,
+    "nominal_core_mean_exit_speed_m_s": 35.43926447376551,
+    "speed_basis": "Continuity estimate only: 2 g/s, constant density at 15 C and 1 atm. Not CFD or a measured nozzle speed.",
+    "overall_length_mm": 40,
+    "step_unit": "metre",
+    "stl_CFD_unit": "metre",
+    "stl_viewer_unit": "millimetre"
+  },
+  {
+    "design": "D3_shield",
+    "label": "Open shield",
+    "inlet_bore_mm": 8,
+    "channel_length_mm": 40,
+    "core_exit_area_mm2": 50.26548245743669,
+    "nominal_core_mean_exit_speed_m_s": 32.48027540425957,
+    "speed_basis": "Continuity estimate only: 2 g/s, constant density at 15 C and 1 atm. Not CFD or a measured nozzle speed.",
+    "overall_length_mm": 72,
+    "step_unit": "metre",
+    "stl_CFD_unit": "metre",
+    "stl_viewer_unit": "millimetre"
+  }
+]

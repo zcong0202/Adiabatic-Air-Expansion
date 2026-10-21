@@ -1,0 +1,45 @@
+{
+  "status": "Assumed inputs; no measured AA performance inferred",
+  "inputs": {
+    "ambient_c": 35,
+    "recovered_cold_c": 5,
+    "actual_cold_l_min": 100,
+    "cold_pressure_pa": 101325.0
+  },
+  "cold_mass_flow_kg_s": 0.002115089486759055,
+  "source_sensible_capacity_w": 63.7699480257855,
+  "outlets": [
+    {
+      "equivalent_diameter_mm": 10,
+      "mean_exit_speed_m_s": 21.22065907891938,
+      "actual_flow_for_2_m_s_l_min": 9.42477796076938
+    },
+    {
+      "equivalent_diameter_mm": 20,
+      "mean_exit_speed_m_s": 5.305164769729845,
+      "actual_flow_for_2_m_s_l_min": 37.69911184307752
+    },
+    {
+      "equivalent_diameter_mm": 30,
+      "mean_exit_speed_m_s": 2.35785100876882,
+      "actual_flow_for_2_m_s_l_min": 84.82300164692441
+    },
+    {
+      "equivalent_diameter_mm": 40,
+      "mean_exit_speed_m_s": 1.3262911924324612,
+      "actual_flow_for_2_m_s_l_min": 150.79644737231007
+    },
+    {
+      "equivalent_diameter_mm": 50,
+      "mean_exit_speed_m_s": 0.8488263631567752,
+      "actual_flow_for_2_m_s_l_min": 235.6194490192345
+    }
+  ],
+  "limitations": [
+    "Near-atmospheric dry air, constant cp, recovered cold temperature.",
+    "Actual cold-branch L/min; inlet SLPM is not interchangeable.",
+    "2 m/s is an illustration, not a comfort limit or required speed.",
+    "No prediction of reach, entrainment, skin cooling, source response or wind.",
+    "More source flow can change vortex cold temperature; these are not independent measured controls."
+  ]
+}

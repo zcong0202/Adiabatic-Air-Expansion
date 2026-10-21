@@ -1,0 +1,1 @@
+PASS: compiled ELF contains no TwoWire, twi_init or twi_readFrom symbols. Transport mock asserts every digitalWrite on A4/A5 is LOW. Hardware sensor link remains pending.

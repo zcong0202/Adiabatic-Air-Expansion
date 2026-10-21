@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-19",
+  "hardware_access": false,
+  "target": {
+    "ambient_c": 34,
+    "distance_m": 0.2,
+    "width_m": 0.05,
+    "height_m": 0.05,
+    "strict_drop_c": 6,
+    "desired_margin_c": 1,
+    "wind_first_stage_m_s": 0
+  },
+  "scope": {
+    "custom_parts": [
+      "low-pressure nozzle and its non-pressure-bearing mounting"
+    ],
+    "stock_only": [
+      "compressor",
+      "certified receiver or cylinder",
+      "dryer",
+      "filters",
+      "regulators",
+      "valves",
+      "pressure hoses",
+      "vortex tube"
+    ],
+    "excluded_from_build_shortlist": [
+      "unmatched hypothetical turbines",
+      "custom pressure vessels",
+      "shower construction"
+    ]
+  },
+  "source": {
+    "model": "EXAIR 3208 reference candidate",
+    "inlet_slpm": 227,
+    "inlet_pressure_psig": 100,
+    "cold_fractions": [
+      0.6,
+      0.7,
+      0.8
+    ],
+    "temperature_drop_f": [
+      86,
+      71,
+      54
+    ],
+    "source_url": "https://www.exair.com/vt.html",
+    "curve_status": "Manufacturer approximate performance table, live checked 19 October 2026. Not Jeanoko calibration or an installation guarantee.",
+    "flow_conversion_reference_ASSUMED": {
+      "pressure_pa": 101325,
+      "temperature_k": 293.15
+    },
+    "selected_beta": 0.7,
+    "inlet_temperature_c": 34,
+    "port_bore_ASSUMED_mm": 8,
+    "port_geometry_status": "8 mm interface abstraction. Confirm EXAIR outlet geometry/thread before a fitted adapter."
+  },
+  "geometry": {
+    "diameters_mm": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "half_angles_deg": [
+      3,
+      5,
+      7
+    ],
+    "maximum_length_mm": 180,
+    "inlet_bore_mm": 8,
+    "wall_mm": 2
+  },
+  "stress_ASSUMPTIONS": {
+    "source_drop_retained_fraction": 0.8,
+    "inlet_air_above_ambient_c": 4,
+    "entrained_air_above_ambient_c": 2,
+    "mass_factor": 0.9,
+    "area_fraction_factor": 0.9,
+    "overall_U_w_m2_k": 20,
+    "ambient_RH": 0.8,
+    "source_pressure_dewpoint_c": 3
+  },
+  "search": {
+    "max_new_cases": 6,
+    "max_iterations_per_case": 6500,
+    "initial_case": "S00_stock_b70_D24_a5",
+    "decision": "Evaluate beta=0.7 baseline. If margin fails, test beta=0.6 at the same geometry; otherwise test a smaller outlet. Recompute the chosen source at 90% flow. Increase outlet diameter if needed, then refine a passing mesh. At most six cases. All candidates use paired EXAIR temperature/flow points. Never rank numerical failures.",
+    "stop": "Declared still-air model envelope passes with >=1 C margin, or case budget exhausted. No global or physical optimum claim."
+  },
+  "pending_physics": [
+    "variable density and buoyancy",
+    "3D crosswind at 0.5 and 1 m/s",
+    "resolved hot exhaust plume",
+    "transient valve turn-on and repeated pulses",
+    "conjugate wall heating",
+    "condensation/icing CFD",
+    "person/skin heat removal and comfort"
+  ],
+  "compression_options": [
+    {
+      "id": "kaneez_quote",
+      "name": "Kaneez 10 HP 4-in-1",
+      "flow_lpm": 1100,
+      "flow_range_lpm": [
+        1000,
+        1200
+      ],
+      "power_kw": 7.46,
+      "pressure_bar_g": [
+        8,
+        10
+      ],
+      "receiver_l": 400,
+      "status": "User slide/quote. FAD basis, pressure-specific flow, dryer dew point and electrical input not independently verified. 7.46 kW is shaft-nameplate conversion, not measured total electrical power."
+    },
+    {
+      "id": "bauer",
+      "name": "BAUER JUNIOR II electric",
+      "flow_lpm": 100,
+      "power_kw": 2.2,
+      "status": "Manufacturer cylinder-fill rating. Approved continuous process-supply interface and duty remain open.",
+      "source_url": "https://www.bauer-kompressoren.de/de_de/junior-ii"
+    }
+  ]
+}

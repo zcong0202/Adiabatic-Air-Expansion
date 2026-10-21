@@ -1,0 +1,37 @@
+{
+  "baseline": {
+    "ambient_c": 30,
+    "inlet_c": 40,
+    "shaft_fraction": 1,
+    "shaft_w": 3360.0,
+    "motor_exhaust_c": -3.0407247238220165,
+    "supply_c": 0.9592752761779835,
+    "sensible_cooling_w": 2267.0816,
+    "inlet_within_40c": true,
+    "heat_capacity_w_k": 78.0656,
+    "mass_kg_s": 0.0776,
+    "duct_gain_k": 4,
+    "extra_heat_w": 0
+  },
+  "zone": {
+    "target_c": 20,
+    "net_heat_w": 100.0,
+    "cold_capture": 1,
+    "shaft_work_return_fraction": 0,
+    "target_headroom_w": 1386.4256,
+    "max_warm_kg_s": 0.13781566600397616,
+    "max_warm_m3_s": 0.11835785873921242,
+    "max_effective_wind_area_m2": 0.11835785873921242,
+    "wind_m_s": 1,
+    "exchange_coefficient": 1,
+    "interpretation": "Negative bound means impossible even with zero warm inflow in this uniform dry model."
+  },
+  "source_heat_limits": {
+    "total_motor_plus_duct_heat_w_for_supply_1c": 315.44159999999965,
+    "total_motor_plus_duct_heat_w_for_supply_8c": 861.9007999999999,
+    "shaft_w_for_supply_1c": 3356.8208,
+    "shaft_w_for_supply_8c": 2810.3616,
+    "required_shaft_nm_at_1270rpm_for_1c_each": 6.310093977090834
+  },
+  "checks": 13
+}

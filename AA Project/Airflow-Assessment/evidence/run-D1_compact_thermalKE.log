@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/scripts/run_case.py", line 56, in <module>
+    p.add_argument("--resume-prepared",action="store_true")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/scripts/run_case.py", line 40, in run
+    info=json.loads((case/"case.json").read_text())
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/scripts/run_case.py", line 21, in execute
+    raise RuntimeError(f"{args[0]} failed ({result.returncode}); see {case/log}")
+RuntimeError: buoyantSimpleFoam failed (137); see /Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/Airflow-Assessment/cases/D1_compact_thermalKE/log.solver

@@ -1,0 +1,34 @@
+{
+  "case": "A22_D22_o2",
+  "diameter_mm": 22.0,
+  "cold_mass_flow_kg_s": 0.002,
+  "cold_temperature_c": 5,
+  "ambient_temperature_c": 35,
+  "density_reference_kg_m3": 1.2,
+  "exit_speed_m_s": 4.384433693991608,
+  "mesh_scale": 1,
+  "domain_scale": 1,
+  "turbulence_model": "kEpsilon",
+  "Prt": 0.85,
+  "convection_order": 2,
+  "solver": "simpleFoam + passive thermal deficit",
+  "target": {
+    "distance_m": 0.2,
+    "width_m": 0.05,
+    "height_m": 0.05,
+    "objective": "area mean ambient minus air temperature > 6 C"
+  },
+  "assumptions": [
+    "Prescribed uniform exit; cold source flow independent of diameter",
+    "Constant density, dry air, passive temperature deficit",
+    "Axisymmetric still-air jet; wind and buoyancy excluded",
+    "No diffuser/source backpressure, wall warming, moisture or skin model"
+  ],
+  "validation_status": "Not calibrated against AA measurements",
+  "internal_diffuser_modeled": false,
+  "linear_solve_precision": {
+    "p_tolerance": 1e-12,
+    "velocity_tolerance": 1e-11,
+    "reason": "Tighter linear solves; numerical acceptance gates unchanged."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "archives": [
+    {
+      "archive": "AA-CFD-concepts-v1.zip",
+      "bytes": 1390635,
+      "entries": 32,
+      "integrity": "passed",
+      "four_concepts": true
+    },
+    {
+      "archive": "AA-CFD-study-v1.zip",
+      "bytes": 197628444,
+      "entries": 844,
+      "integrity": "passed",
+      "four_concepts": true
+    }
+  ],
+  "overview_local_links": "passed"
+}

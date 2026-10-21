@@ -1,0 +1,31 @@
+AA CONTROLLER — READY-TO-RUN MAC APP
+Apple Silicon Mac. macOS 11 or newer.
+
+1. Unzip the attachment. Double-click AA Controller.app.
+2. Plug in the Uno with the USB data cable. Click Connect Arduino.
+3. Choose seconds, then click Save time to Arduino.
+
+First setup installs the firmware automatically. Turn OFF the valve 12 V switch
+and tick the app's box before first setup. Keep USB connected until setup ends.
+Later time changes save directly. Each detection restarts the full interval.
+Arduino keeps the saved time when the app closes and the board remains powered.
+
+No browser, Arduino IDE, Python, Terminal, build or Internet needed.
+PNG wiring diagrams are inside the app. Use their Download PNG buttons to save copies.
+Save files / advanced → Save firmware file creates a complete shareable firmware ZIP.
+
+FIRST MAC LAUNCH
+This privately built app is not Apple-notarized. If macOS blocks it:
+After trying to open it, go to System Settings → Privacy & Security → Open Anyway.
+Confirm Open. Future launches are normal double-clicks. No Terminal commands needed.
+Only approve the exact AA Controller app shared by Ege; do not disable Gatekeeper.
+Apple's guide: https://support.apple.com/en-us/102445
+If the Mac is managed and blocks this exception, ask its administrator.
+
+LAB CHECKS
+Standalone power: UPS regulated 12 V → Uno barrel jack, centre positive.
+Keep ToF at 3.3 V and retain D8 → D7/A0 loopback.
+Connect the valve through the BoM relay, fused 12 V supply and striped-positive flyback diode.
+Check the relay's HIGH/LOW trigger setting and OFF-at-reset behavior with 12 V isolated.
+Start valve tests without pressure. Verify valve rating / continuous duty before air tests.
+Software tests pass. Physical Uno upload, relay switching and valve tests still need lab checks.

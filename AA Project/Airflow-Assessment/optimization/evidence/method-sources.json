@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "url": "https://doc.openfoam.com/2312/tools/processing/boundary-conditions/rtm/derived/inletOutlet/totalPressure/",
+      "use": "Incompressible pressure boundary removes incoming dynamic pressure from specified ambient total pressure."
+    },
+    {
+      "url": "https://doc.openfoam.com/2312/tools/processing/boundary-conditions/rtm/constraint/wedge/",
+      "use": "Single-cell rotational wedge construction and matching wedge fields."
+    },
+    {
+      "url": "https://doc.openfoam.com/2312/tools/post-processing/function-objects/solvers/scalarTransport/",
+      "use": "Passive scalar transport. Runtime v2506 source confirms alphaD*nu + alphaDt*nut."
+    },
+    {
+      "url": "https://tmbwg.github.io/turbmodels/jetsubsonic_val.html",
+      "use": "Primary reference for axisymmetric jet validation, grid/domain sensitivity and comparison against experiment. This different-Mach experiment has NOT been run as an AA validation."
+    },
+    {
+      "url": "https://github.com/psychrometrics/psychrolib",
+      "use": "PsychroLib 2.5.0, ASHRAE moist-air properties, one-way equilibrium mixing sensitivity only."
+    }
+  ],
+  "local_runtime_source": "OpenFOAM-scalarTransport.C",
+  "status": "Methods references, not AA experimental validation"
+}
