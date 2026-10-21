@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Air-Cycle Bench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Air-Cycle Bench</h1>
+      <p class="lead">Build the gas path from left to right. Drag cards to reorder, use the title menu to swap a stage (turbine, vane motor, vortex tube…), and edit any parameter. Everything recalculates instantly.</p>
+    </div>
+    <div class="controls">
+      <label class="field"><span>Preset</span>
+        <select id="preset">
+          <option value="rental">Rental compressor + 4 × LZB46</option>
+          <option value="workshopVortex">Workshop compressor + vortex tube</option>
+          <option value="workshopBurst">Workshop compressor + receiver burst + LZB46</option>
+          <option value="scuba">Scuba tank → 2 regulators → vortex tube</option>
+          <option value="junior">Bauer Junior II → regulator → turbine</option>
+        </select>
+      </label>
+      <label class="field" style="width:92px"><span>Ambient °C</span><input id="amb" type="number" step="1" value="30"></label>
+      <label class="field" style="width:170px"><span>Shaft work recovered as power (%)</span><input id="rec" type="number" step="5" min="0" max="100" value="0"></label>
+      <div class="field"><span>Operating mode</span>
+        <div class="seg" role="group" aria-label="Operating mode">
+          <button id="m-cont" type="button" aria-pressed="true">Continuous</button>
+          <button id="m-burst" type="button" aria-pressed="false">Burst from storage</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="chain-wrap" aria-label="Gas path">
+    <div class="chain-head">
+      <h2>Gas path</h2>
+      <span class="muted" style="font-size:12px">Gauges between cards show temperature · pressure · mass flow at that point</span>
+    </div>
+    <div class="chain" id="chain"></div>
+  </section>
+
+  <section class="results" id="results" aria-label="Key results"></section>
+
+  <section class="two">
+    <div class="panel">
+      <h2>Temperature along the path</h2>
+      <div class="chart" id="chart"></div>
+    </div>
+    <div class="panel">
+      <h2>Outlet and seat</h2>
+      <table class="kv" id="detail"></table>
+      <div class="warns" id="warns"></div>
+      <h2 style="margin-top:6px">COP compared with air conditioning</h2>
+      <div id="copcmp" class="chart"></div>
+    </div>
+  </section>
+
+  <p class="foot">Model: ideal-gas air (cp 1.005 kJ/kg·K, γ 1.4). Regulators are isenthalpic with an approximate Joule–Thomson coefficient μ ≈ 0.22 − 0.0006·P K/bar. Turbines use isentropic efficiency. Vane motors take their rated shaft power and air use, scaled with supply pressure. Vortex tubes scale a reference cold ΔT with pressure ratio and cold fraction. Tank blow-down cooling, moisture and heat-exchanger sizing are not modelled. COP is cooling divided by the compressor energy that went into the air actually used (compressor power ÷ its delivery × the flow drawn); for a storage tank it uses the energy needed to fill it. Treat results as first estimates for design and CFD inputs, not as measurements.</p>
+</div>
+
+<script src="physics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
