@@ -60,5 +60,7 @@
     "Native cold-core diagnostic followed by 8 degree upward-aim test",
     "57 printed Lean axiom checks; two watertight parametric CAD variants"
   ],
-  "next_model": "Add upright moving body/wake and skin heat transfer against ambient baseline; source/valve/line startup and physical thermal state remain unknown."
+  "next_model": "Extract cooled mass, volume and persistence from native outdoor fields. Reconcile source, receiver and pressure-flow/heat-gain models before design refinement.",
+  "evaluation_priority": "Cooled air mass, 3D volume and persistence below ambient minus 6 K; report volume below 22 C separately. Required minimum volume remains unspecified.",
+  "human_heat_transfer_stage": "Later extension; not the current air-mass success metric."
 }

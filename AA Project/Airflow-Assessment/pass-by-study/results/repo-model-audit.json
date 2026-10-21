@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-21",
+  "scope": "Code and first-principles comparison. No supplier validation, new CFD or new Lean build.",
+  "agreement": {
+    "repository_nominal": {
+      "mass_kg_s": 0.0780192,
+      "supply_c": 0.7660330796807693,
+      "cold_power_w": 2292.2147655095187,
+      "shaft_w": 3372,
+      "allocated_compressor_w": 23327.999999999996,
+      "cop_allocated": 0.09826023514701299,
+      "runtime_s": null,
+      "warnings": []
+    },
+    "imported_source": {
+      "active_motors": 4,
+      "mass_per_motor_kg_s": 0.0194,
+      "shaft_work_per_motor_w": 840,
+      "inlet_c": 40,
+      "inlet_pressure_bar_g": 6.3,
+      "motor_heat_into_air_w": 0,
+      "cold_path_ua_w_k": 10.073720659304273,
+      "free_air_per_motor_l_s": 16.2,
+      "cp_j_kg_k": 1006,
+      "ambient_c": 30,
+      "mass_basis": "Source DOCX nominal conversion; exact reference air state requires supplier confirmation.",
+      "heat_basis": "UA reproduces a 4 K cold-path rise at four motors and 30 C ambient. Motor heat pickup zero is a nominal hypothesis, not a vendor thermal guarantee.",
+      "load": "Sustained loaded catalogue point. Extracted shaft heat stays outside cold stream and target.",
+      "source_document_sha256": "6fd015b30efc15a9965e9d18289beef882e2586a3d168c62b1fa8637574bf92a"
+    },
+    "note": "Near-1C agreement shares the same loaded-motor assumptions; it is not independent validation."
+  },
+  "findings": {
+    "receiver": {
+      "preset": "workshopBurst",
+      "motor_set_pressure_bar_g": 6.3,
+      "configured_minimum_bar_g": 4,
+      "reported": {
+        "mass_kg_s": 0.0195048,
+        "supply_c": 0.6526017572807676,
+        "cold_power_w": 575.277208910813,
+        "shaft_w": 843,
+        "allocated_compressor_w": 8224.615384615385,
+        "cop_allocated": 0.06994578858810857,
+        "runtime_s": 91.10047980989062,
+        "warnings": []
+      },
+      "independent_inventory_bounds": [
+        {
+          "receiver_minimum_bar_g": 6.3,
+          "inventory_kg": 0.5339877204517546,
+          "constant_temperature_runtime_s": 37.3745558194423
+        },
+        {
+          "receiver_minimum_bar_g": 6.8,
+          "inventory_kg": 0.3671165578105813,
+          "constant_temperature_runtime_s": 25.69500712586658
+        }
+      ],
+      "limitation": "6.3 bar gives zero regulator headroom. 6.8 bar reserves an assumed 0.5 bar; neither is a transient hardware prediction."
+    },
+    "cold_hose_backpressure": {
+      "nominal": {
+        "mass_kg_s": 0.0780192,
+        "supply_c": 0.7660330796807693,
+        "cold_power_w": 2292.2147655095187,
+        "shaft_w": 3372,
+        "allocated_compressor_w": 23327.999999999996,
+        "cop_allocated": 0.09826023514701299,
+        "runtime_s": null,
+        "warnings": []
+      },
+      "entered_downstream_loss_bar": 0.5,
+      "output": {
+        "mass_kg_s": 0.0780192,
+        "supply_c": 0.7660330796807693,
+        "cold_power_w": 2292.2147655095187,
+        "shaft_w": 3372,
+        "allocated_compressor_w": 23327.999999999996,
+        "cop_allocated": 0.09826023514701299,
+        "runtime_s": null,
+        "warnings": []
+      },
+      "issue": "Positive exhaust loss is clipped at atmospheric pressure. Motor exhaust pressure is not coupled back to the motor model."
+    },
+    "wind_metric": {
+      "reported_for_10k_m_s": 0.19587894459548957,
+      "uniform_adiabatic_mixing_bounds": [
+        {
+          "target_drop_k": 10,
+          "maximum_added_warm_mass_kg_s": 0.150061871194977,
+          "maximum_total_mixed_mass_kg_s": 0.228081071194977,
+          "uniform_wind_exchange_bound_m_s": 0.12887505657393514
+        },
+        {
+          "target_drop_k": 6,
+          "maximum_added_warm_mass_kg_s": 0.30211591865829496,
+          "maximum_total_mixed_mass_kg_s": 0.38013511865829497,
+          "uniform_wind_exchange_bound_m_s": 0.2594610196375948
+        }
+      ],
+      "issue": "The wind expression counts total cooled mixture capacity as added warm-air capacity. Even the corrected bound is not a wind-tolerance prediction."
+    },
+    "vortex_tank_mass_balance": {
+      "reported_runtime_s": 816.064534218435,
+      "constant_temperature_inventory_runtime_s": 652.8516273747481,
+      "source_draw_kg_s": 0.004013333333333333,
+      "cold_exit_kg_s": 0.003210666666666667,
+      "inventory_kg": 2.620111197863989,
+      "implied_total_draw_kg_at_reported_runtime": 3.275138997329986,
+      "issue": "Storage depletion uses cold outlet flow instead of total tank draw, omitting hot vortex exhaust."
+    },
+    "reduced_flow_and_heat_gain": {
+      "compressor_fad_l_min": 2000,
+      "reported": {
+        "mass_kg_s": 0.04013333333333333,
+        "supply_c": 0.7660330796807755,
+        "cold_power_w": 1179.1228217641558,
+        "shaft_w": 1734.567901234568,
+        "allocated_compressor_w": 23999.999999999996,
+        "cop_allocated": 0.0491301175735065,
+        "runtime_s": null,
+        "warnings": [
+          "Expander wants 78.0 g/s but the compressor supplies 40.1 g/s. Motors run at 51 % load. Try burst mode with a receiver, or a bigger compressor."
+        ]
+      },
+      "ua_w_k_calibrated_to_nominal_12_percent": 10.023324665396531,
+      "supply_c_if_same_ua_and_same_motor_state": 4.0892852203272945,
+      "limitation": "Motor power/flow scaling is assumed. The fixed-UA result only isolates the hose assumption; it is not a new source prediction."
+    },
+    "system_energy": {
+      "declared_compressor_kw": 24,
+      "allocated_used_air_kw": 23.327999999999996,
+      "issue": "Allocated air-energy COP is not measured complete-plant COP. Part-load fuel/electricity, treatment and auxiliary consumption are not resolved."
+    },
+    "schematic_figures": {
+      "nature": "Parameterized illustrative animations, not CFD.",
+      "ideal_cycle": "Hypothetical compressor/expander work recovery. Its 80% expander efficiency is not the four-motor catalogue point."
+    },
+    "shared_limits": [
+      "No complete pressure-flow network in either the calculator or prescribed-inlet outdoor CFD.",
+      "No reported 3D cooled-air mass/volume/persistence from the current CFD campaign.",
+      "Source exhaust temperature, load, treatment, heat pickup and transients remain conditional."
+    ]
+  },
+  "existing_test_scope": "The six supplied tests lock prior preset outputs and a JT approximation. They do not check these pressure, mixing and storage constraints."
+}
