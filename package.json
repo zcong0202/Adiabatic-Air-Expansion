@@ -1,6 +1,6 @@
 {
   "name": "air-cycle-bench",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "description": "Outdoor cooling computation panel: stock compressors, expansion, receivers, pipe losses, nozzle designs and saved CFD mass/volume evidence.",
   "scripts": {

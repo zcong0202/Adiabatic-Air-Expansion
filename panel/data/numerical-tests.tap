@@ -2,152 +2,152 @@ TAP version 13
 # Subtest: Reference source reproduces independently specified motor energy balance
 ok 1 - Reference source reproduces independently specified motor energy balance
   ---
-  duration_ms: 3.477792
+  duration_ms: 3.754625
   ...
 # Subtest: Ideal-gas throttle removes no work and preserves total temperature
 ok 2 - Ideal-gas throttle removes no work and preserves total temperature
   ---
-  duration_ms: 0.366583
+  duration_ms: 0.397333
   ...
 # Subtest: Reversible expansion bounds shaft extraction and real turbine lies between throttle and bound
 ok 3 - Reversible expansion bounds shaft extraction and real turbine lies between throttle and bound
   ---
-  duration_ms: 4.862041
+  duration_ms: 5.411917
   ...
 # Subtest: Mixing inequality, dilution limit and colder-source leverage
 ok 4 - Mixing inequality, dilution limit and colder-source leverage
   ---
-  duration_ms: 0.26725
+  duration_ms: 0.28325
   ...
 # Subtest: Nozzle equal area preserves budget; geometry alone does not invent added flow
 ok 5 - Nozzle equal area preserves budget; geometry alone does not invent added flow
   ---
-  duration_ms: 2.7215
+  duration_ms: 2.751791
   ...
 # Subtest: Darcy losses increase with length and drop with larger bore
 ok 6 - Darcy losses increase with length and drop with larger bore
   ---
-  duration_ms: 0.115083
+  duration_ms: 0.116166
   ...
 # Subtest: Pipe heat leak respects zero UA, ambient relaxation and insulation
 ok 7 - Pipe heat leak respects zero UA, ambient relaxation and insulation
   ---
-  duration_ms: 0.121208
+  duration_ms: 0.111542
   ...
 # Subtest: Cold hose length changes enthalpy and cannot ignore backpressure
 ok 8 - Cold hose length changes enthalpy and cannot ignore backpressure
   ---
-  duration_ms: 1.684792
+  duration_ms: 1.709583
   ...
 # Subtest: Receiver fixed-T inventory matches analytic deficit duration
 ok 9 - Receiver fixed-T inventory matches analytic deficit duration
   ---
-  duration_ms: 0.652292
+  duration_ms: 0.589708
   ...
 # Subtest: Receiver energy ODE conserves mass and energy; adiabatic blowdown cools faster
 ok 10 - Receiver energy ODE conserves mass and energy; adiabatic blowdown cools faster
   ---
-  duration_ms: 5.526917
+  duration_ms: 6.003917
   ...
 # Subtest: Receiver cutoff preserves motor pressure and longer pipe raises floor
 ok 11 - Receiver cutoff preserves motor pressure and longer pipe raises floor
   ---
-  duration_ms: 12.815541
+  duration_ms: 13.0065
   ...
 # Subtest: Storage changes burst duration, not continuous flow capacity
 ok 12 - Storage changes burst duration, not continuous flow capacity
   ---
-  duration_ms: 43.818625
+  duration_ms: 45.618292
   ...
 # Subtest: Supply response needs a receiver even with excess steady flow
 ok 13 - Supply response needs a receiver even with excess steady flow
   ---
-  duration_ms: 21.747
+  duration_ms: 22.542875
   ...
 # Subtest: Whole-plant ratio uses full entered power, not a flow fraction
 ok 14 - Whole-plant ratio uses full entered power, not a flow fraction
   ---
-  duration_ms: 0.932416
+  duration_ms: 0.916666
   ...
 # Subtest: Cold tank is a finite initial mass and loses sensible budget while held
 ok 15 - Cold tank is a finite initial mass and loses sensible budget while held
   ---
-  duration_ms: 0.180333
+  duration_ms: 0.183459
   ...
 # Subtest: Invalid or unsupported states do not produce an approved result
 ok 16 - Invalid or unsupported states do not produce an approved result
   ---
-  duration_ms: 0.922209
+  duration_ms: 0.870583
   ...
 # Subtest: Real-air grid matches independent CoolProp states and inverse temperatures
 ok 17 - Real-air grid matches independent CoolProp states and inverse temperatures
   ---
-  duration_ms: 1.010292
+  duration_ms: 1.021375
   ...
 # Subtest: Real-air stage energy closes for motor, regulator and turbine
 ok 18 - Real-air stage energy closes for motor, regulator and turbine
   ---
-  duration_ms: 5.445625
+  duration_ms: 5.636167
   ...
 # Subtest: CFD dataset has complete cases, monotone thresholds and conserved subregion measures
 ok 19 - CFD dataset has complete cases, monotone thresholds and conserved subregion measures
   ---
-  duration_ms: 8.40425
+  duration_ms: 8.70375
   ...
 # Subtest: CFD independent high-resolution geometry comparison is retained, not scaled to inputs
 ok 20 - CFD independent high-resolution geometry comparison is retained, not scaled to inputs
   ---
-  duration_ms: 0.190791
+  duration_ms: 0.178792
   ...
 # Subtest: Compressible ideal mean-density Darcy solve matches independent squared-pressure result
 ok 21 - Compressible ideal mean-density Darcy solve matches independent squared-pressure result
   ---
-  duration_ms: 0.083583
+  duration_ms: 0.081292
   ...
 # Subtest: Adiabatic zero-inflow tank matches blowdown law; time-step refinement converges
 ok 22 - Adiabatic zero-inflow tank matches blowdown law; time-step refinement converges
   ---
-  duration_ms: 0.13475
+  duration_ms: 0.126375
   ...
 # Subtest: Receiver pressure controller never overcharges the selected pressure
 ok 23 - Receiver pressure controller never overcharges the selected pressure
   ---
-  duration_ms: 47.496208
+  duration_ms: 44.874583
   ...
 # Subtest: Warm source cannot claim any cumulative mixed mass at the colder target
 ok 24 - Warm source cannot claim any cumulative mixed mass at the colder target
   ---
-  duration_ms: 0.691042
+  duration_ms: 0.681333
   ...
 # Subtest: preset rental
 ok 25 - preset rental
   ---
-  duration_ms: 1.552375
+  duration_ms: 2.112917
   ...
 # Subtest: preset workshopVortex
 ok 26 - preset workshopVortex
   ---
-  duration_ms: 0.141625
+  duration_ms: 0.121458
   ...
 # Subtest: preset workshopBurst
 ok 27 - preset workshopBurst
   ---
-  duration_ms: 0.08875
+  duration_ms: 0.086417
   ...
 # Subtest: preset scuba
 ok 28 - preset scuba
   ---
-  duration_ms: 0.082583
+  duration_ms: 0.075792
   ...
 # Subtest: preset junior
 ok 29 - preset junior
   ---
-  duration_ms: 0.184417
+  duration_ms: 0.166291
   ...
 # Subtest: Joule-Thomson drop from 200 to 6.3 bar(g) is about 30 K
 ok 30 - Joule-Thomson drop from 200 to 6.3 bar(g) is about 30 K
   ---
-  duration_ms: 0.050792
+  duration_ms: 0.050167
   ...
 1..30
 # tests 30
@@ -157,4 +157,4 @@ ok 30 - Joule-Thomson drop from 200 to 6.3 bar(g) is about 30 K
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 254.82475
+# duration_ms 263.982417

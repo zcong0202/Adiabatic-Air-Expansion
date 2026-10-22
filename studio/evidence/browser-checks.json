@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-22",
+  "tool": "gstack /browse",
+  "checks": [
+    {
+      "name": "same reference thermodynamics",
+      "passed": true,
+      "cooling_w": 2267.081600000123
+    },
+    {
+      "name": "drawing component opens editor",
+      "passed": true
+    },
+    {
+      "name": "load changes source cooling",
+      "passed": true,
+      "nozzle_c": 19.87329643537612
+    },
+    {
+      "name": "active slider survives live updates",
+      "passed": true
+    },
+    {
+      "name": "insufficient supply is clear",
+      "passed": true
+    },
+    {
+      "name": "receiver supports finite burst",
+      "passed": true,
+      "seconds": 11.182128648491602
+    },
+    {
+      "name": "long cold hose warms the source",
+      "passed": true
+    },
+    {
+      "name": "equal area preserves energy budget",
+      "passed": true
+    },
+    {
+      "name": "overhead arrangement changes illustration",
+      "passed": true
+    },
+    {
+      "name": "unmatched wind marks CFD as reference",
+      "passed": true
+    },
+    {
+      "name": "both-side arrangement renders",
+      "passed": true
+    },
+    {
+      "name": "comparison choices rendered",
+      "passed": true
+    },
+    {
+      "name": "comparison applies selected compressor",
+      "passed": true
+    },
+    {
+      "name": "baseline stays pinned",
+      "passed": true
+    },
+    {
+      "name": "native CFD volume retained",
+      "passed": true,
+      "m3": 0.07613037
+    },
+    {
+      "name": "whole-domain region uses native integral",
+      "passed": true
+    },
+    {
+      "name": "animation and numbers use same case",
+      "passed": true
+    },
+    {
+      "name": "time control uses saved snapshot",
+      "passed": true
+    },
+    {
+      "name": "throttle preset uses real air and loses motor cooling",
+      "passed": true,
+      "nozzle_c": 37.58898275594106
+    },
+    {
+      "name": "invalid input clears result",
+      "passed": true
+    },
+    {
+      "name": "drawing values can be hidden",
+      "passed": true
+    },
+    {
+      "name": "flow can be paused",
+      "passed": true
+    },
+    {
+      "name": "dark theme available",
+      "passed": true
+    },
+    {
+      "name": "scenario download runs",
+      "passed": true
+    }
+  ],
+  "additional_checks": {
+    "old_scenario_links_restored": true,
+    "visual_to_engineering_inputs_preserved": true,
+    "engineering_to_visual_inputs_preserved": true,
+    "mobile_390px_no_horizontal_overflow": true,
+    "mobile_walking_figure_visible": true,
+    "console_errors": 0,
+    "reset_clears_old_scenario_and_survives_reload": true
+  },
+  "model_changed": false,
+  "screenshots": [
+    "studio/evidence/desktop.png",
+    "studio/evidence/mobile.png",
+    "studio/evidence/dark.png"
+  ]
+}

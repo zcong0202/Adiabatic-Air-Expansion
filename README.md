@@ -1,6 +1,8 @@
 # Adiabatic Air Expansion
 
-Open **[the computation panel](index.html)**. It compares stock supply, expansion, receivers, pipes and nozzles for outdoor pass-by cooling.
+Open **[the visual designer](index.html)**. Select a component in the isometric drawing. Change its settings. See live source results. The style follows the air-cycle seat figure; the system uses outdoor nozzles and a walking path.
+
+Open **[the full computation panel](engineering.html)** for all inputs, calculations, comparison tables, Lean references and exports. Both views use the same model and share input state.
 
 Open **[the project overview](AA%20Project/project-overview.html)** for the full research record: design documents, Lean proofs, CFD, CAD and decisions.
 
@@ -8,12 +10,13 @@ Open **[the project overview](AA%20Project/project-overview.html)** for the full
 
 Open `index.html` directly, or run `npm start` and visit `http://localhost:8080`. No build step. No runtime dependencies or external fonts.
 
-- **System:** mass, enthalpy, pipe losses, motor work, receiver discharge, cold-storage budget and mixing limits.
+- **Visual designer:** click-to-edit source, receiver, pipes, expansion and nozzles. Four live results. Light/dark themes.
+- **Full system panel:** mass, enthalpy, pipe losses, motor work, receiver discharge, cold-storage budget and mixing limits.
 - **Comparisons:** stock compressors, capacity-matched motor banks, nozzles, tank sizes, pipe lengths and expansion methods.
 - **CFD evidence:** native-field cooled volume/mass for 16 executed outdoor cases. Time, region and temperature threshold controls. Animations and CAD.
 - **Equations & limits:** first principles, supplier sources, numerical checks and conditional Lean coverage.
 
-Inputs save locally. Export/import JSON scenarios, copy a scenario link, or export comparison CSV. The original calculator is preserved at [legacy.html](legacy.html). Its documented model disagreements remain; see [the audit](AA%20Project/Airflow-Assessment/pass-by-study/results/repo-model-audit.json) and [legacy documentation](LEGACY-CALCULATOR.md). The colleague’s [animated figures](figures/README.md) remain intact.
+Inputs save locally and carry between the two views. Save a scenario in the designer. Import/export JSON, copy scenario links and export comparison CSV in the engineering view. The original calculator is preserved at [legacy.html](legacy.html). Its documented model disagreements remain; see [the audit](AA%20Project/Airflow-Assessment/pass-by-study/results/repo-model-audit.json) and [legacy documentation](LEGACY-CALCULATOR.md). The colleague’s [animated figures](figures/README.md) remain intact.
 
 ## Evidence limits
 
@@ -35,3 +38,7 @@ node tools/validate_panel.cjs
 ```
 
 [Native archive instructions](AA%20Project/CFD-Archives/README.md). Do not treat a passed numerical screen as hardware validation.
+
+## Visual interface sources
+
+`studio/app.js` controls the designer. `studio/style.css` defines its layout. `studio/artwork.js` and `studio/diagram.css` adapt the existing air-cycle artwork. The seat and enclosure are removed. Illustration is not CFD. Attribution: [ANATOMY-LICENSE](studio/ANATOMY-LICENSE). Rebuild with `python studio/build-artwork.py` from the repo root. Numerical equations remain in `panel/model.js`.

@@ -252,9 +252,14 @@
     }
   },
   "sha256": {
-    "index.html": "abe2a0629087ba5ff7e9918fd3634f323e9a8eef54f8c17327a45793a4ce3a12",
+    "index.html": "7f7768096e780427f9cc67fefe2f9e70f77cd21a59b77942b1aff0729ca1ad24",
+    "engineering.html": "b0a7c60cc0dc4704958cc90a37882a62d53eb68d598a77dbf699de478766c578",
+    "panel/view-links.js": "fd265171198149415b85c296272b32f34ffda1f41d0ff6e1918272c4d36dabe3",
+    "studio/app.js": "a37e61f53e49c7ddba11b10609ea32f76c6b7a38f4c4a2d589c81cc98265f403",
+    "studio/style.css": "069cc87ddc5e931bdb3de4186ddbaf5f2d842fca4bee410c20cd40b9ee977d84",
+    "studio/artwork.js": "06fc4fae37fd3a746e2a8a84359069bb00b05dd08b7a369ea28d8b1768b86f21",
     "panel/model.js": "f35132bb91938b81288079a12046eeca96d15e8a307a730b298c501a8ba70788",
-    "panel/panel.js": "09198902f3e3e2b3dc6b2672f502b05dcbb1d3f54461eb2dec05060296bd3496",
+    "panel/panel.js": "fbbc2970d7df4b8be05d9d5cc157a59834f2c61b384b52caa35959eca5fb93ec",
     "panel/panel.css": "79f2455cd1686d0cc22e62a6fb0832abe202bdce84b4ba69febe139702f3f034",
     "panel/MODEL.md": "23b735d57e4a329cb0bb5d37b805b9b886fd13e611406678960fa76ee9d2e0ef",
     "panel/data/air.json": "e6aa3a17e9c708976c6aeb3b00c9880eaf38beb8319fb30a195d430205478959",
@@ -263,5 +268,11 @@
     "tools/build_cfd_panel.py": "80206d2ee5641aa65d0ab8f8a46cccfec3fda96977d0333a8f69cddbc28d3f23",
     "tools/build_air_table.py": "67f79786e037924dc72578229257be85ae4ee8bdff1e6d7daf1a231d34a60565"
   },
-  "numerical_tests_succeeded": true
+  "numerical_tests_succeeded": true,
+  "interface_variants": {
+    "visual": "index.html",
+    "engineering": "engineering.html",
+    "shared_model": "panel/model.js",
+    "illustration_is_cfd": false
+  }
 }

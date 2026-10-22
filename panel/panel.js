@@ -10,6 +10,7 @@ try{if(location.hash.startsWith('#scenario='))stored=JSON.parse(decodeURICompone
 function escapeDecode(s){return atob(s.replace(/-/g,'+').replace(/_/g,'/'));}
 function accept(s){if(s&&s.inputs){const known={};for(const k in M.defaults)if(Object.hasOwn(s.inputs,k))known[k]=s.inputs[k];state=M.config(known);if(s.cfd&&D.cases.some(c=>c.id===s.cfd.id))cf={...cf,...s.cfd};if(['system','compare','cfd','basis'].includes(s.tab))tab=s.tab;}}
 accept(stored);
+if(["system","compare","cfd","basis"].includes(location.hash.slice(1)))tab=location.hash.slice(1);
 const groups=[
  {id:'supply',title:'01 · Compressor & air state',open:true,help:'Pressure and flow stay paired to the listed model. Engine rating is not plant input power.',fields:[
  ['source','Compressor','select',M.sources.map(s=>[s.id,`${s.name} · ${s.fad} m³/min @ ${s.bar} barg`])],
