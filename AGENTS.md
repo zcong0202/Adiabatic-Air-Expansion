@@ -11,5 +11,8 @@
 - Use diagrams when they clarify the system. End plans with unresolved questions, if any.
 - Use gstack `/browse` for web browsing. Do not use Claude-in-Chrome tools.
 - `/graphify` is an explicit trigger for the graphify skill.
-- Preserve the existing browser calculator. Its model and the imported engineering studies have not been harmonised.
+- Preserve the original browser calculator at legacy.html with physics.js/app.js/styles.css.
+- index.html is the new computation panel; equations in panel/model.js, evidence in panel/data.
+- Never rescale saved CFD when inputs change. Distinguish budgets, CFD, conditional Lean algebra and hardware validation.
+- New panel receiver/EOS calculations are numerically tested, not Lean-verified.
 - Large artifacts use Git LFS. Native solver output is stored in the split archives described in `AA Project/CFD-Archives/README.md`.

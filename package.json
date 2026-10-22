@@ -1,10 +1,11 @@
 {
   "name": "air-cycle-bench",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Browser calculator for open-air cooling by expanding compressed air (compressor → coolers → regulator → turbine / vane motor / vortex tube → seat).",
+  "description": "Outdoor cooling computation panel: stock compressors, expansion, receivers, pipe losses, nozzle designs and saved CFD mass/volume evidence.",
   "scripts": {
     "start": "npx --yes serve -l 8080 .",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "validate": "node tools/validate_panel.cjs"
   }
 }

@@ -1,3 +1,5 @@
+> Historical calculator specification, retained for comparison. Current equations: [panel/MODEL.md](panel/MODEL.md). Known disagreements: [model audit](AA%20Project/Airflow-Assessment/pass-by-study/results/repo-model-audit.json).
+
 # Model
 
 All of this lives in `compute(S)` in `physics.js`. Air is treated as an ideal gas with cp = 1005 J/kg·K, γ = 1.4 and R = 287.05 J/kg·K. Atmospheric pressure is 1.01325 bar. Free-air delivery (FAD) is converted to mass flow at ρ = 1.204 kg/m³ (20 °C, 1.013 bar).

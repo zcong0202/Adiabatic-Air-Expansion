@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-22",
+  "scope": "Numerical validation, not hardware validation. New panel is not Lean-verified.",
+  "native_cfd_provenance": [
+    {
+      "case": "A00_pitch8_d50",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "F00_base_d35",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "F01_wide_d35",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "L00_row4_d35",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P00_one_d20",
+      "native_audit_temperature_hashes_matched": 31,
+      "extracted_snapshots": 31,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P01_one_d35",
+      "native_audit_temperature_hashes_matched": 31,
+      "extracted_snapshots": 31,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P02_one_d50",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P10_two_d20",
+      "native_audit_temperature_hashes_matched": 31,
+      "extracted_snapshots": 31,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P11_two_d35",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P12_two_d50",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P20_over_d20",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P21_over_d35",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "P22_over_d50",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "R00_wide_d35",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "S00_row4_source8",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    },
+    {
+      "case": "W00_wide_opposed",
+      "native_audit_temperature_hashes_matched": 11,
+      "extracted_snapshots": 11,
+      "recorded_numerical_screens_pass": true
+    }
+  ],
+  "total_saved_snapshots": 236,
+  "native_integration_method": "ASCII cell fields, exact rectilinear cell/region intersection, rho=p/RT. Threshold classifies cell-constant T.",
+  "formal_coverage": "Existing conditional algebraic Lean proofs; no claim for new JS/ODE/interpolation.",
+  "hardware_validated": false,
+  "tests": {
+    "command": "node --test tests/panel.test.js tests/presets.test.js",
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "panel_physics_checks": 24,
+    "legacy_regressions": 6,
+    "hardware_validation": false
+  },
+  "independent_eos_reference_errors": [
+    {
+      "pressure_bar": 1.2,
+      "temperature_k": 290,
+      "enthalpy_error_j_kg": 0.0006295051425695419,
+      "entropy_error_j_kg_k": 0.27502260142591695,
+      "density_relative_error": 9.389244528534846e-7,
+      "throttle_temperature_error_k": -5.92728838455514e-7,
+      "isentropic_temperature_error_k": 0.07665373956382382
+    },
+    {
+      "pressure_bar": 7.31325,
+      "temperature_k": 313.15,
+      "enthalpy_error_j_kg": -0.010331553989090025,
+      "entropy_error_j_kg_k": 0.0026000699599535437,
+      "density_relative_error": 0.000010556924426641245,
+      "throttle_temperature_error_k": -0.000015918203644105233,
+      "isentropic_temperature_error_k": 0.0015623234482973203
+    },
+    {
+      "pressure_bar": 11.71325,
+      "temperature_k": 313.15,
+      "enthalpy_error_j_kg": -0.03462535858852789,
+      "entropy_error_j_kg_k": -0.002123349419434817,
+      "density_relative_error": 0.000010834117280866806,
+      "throttle_temperature_error_k": -0.00005680651042894169,
+      "isentropic_temperature_error_k": null
+    },
+    {
+      "pressure_bar": 201.01325,
+      "temperature_k": 313.15,
+      "enthalpy_error_j_kg": 1.2590440993662924,
+      "entropy_error_j_kg_k": 0.02161047239542313,
+      "density_relative_error": -0.000013250243862339417,
+      "throttle_temperature_error_k": 0.0012528731905376844,
+      "isentropic_temperature_error_k": null
+    },
+    {
+      "pressure_bar": 9.45,
+      "temperature_k": 325.3,
+      "enthalpy_error_j_kg": -0.011096310976427048,
+      "entropy_error_j_kg_k": -0.003393774007236061,
+      "density_relative_error": 0.000009132679420043033,
+      "throttle_temperature_error_k": -0.000022971222165324434,
+      "isentropic_temperature_error_k": -0.02017067276386797
+    },
+    {
+      "pressure_bar": 5.66,
+      "temperature_k": 298.4,
+      "enthalpy_error_j_kg": -0.007366086298134178,
+      "entropy_error_j_kg_k": 0.008334663408732013,
+      "density_relative_error": 0.000007619528738178616,
+      "throttle_temperature_error_k": -0.000021863332563043514,
+      "isentropic_temperature_error_k": 0.0016680238118169655
+    },
+    {
+      "pressure_bar": 330.4,
+      "temperature_k": 310.7,
+      "enthalpy_error_j_kg": 0.9551255232654512,
+      "entropy_error_j_kg_k": 0.007153809790906962,
+      "density_relative_error": -0.000010111711443050453,
+      "throttle_temperature_error_k": 0.0009862166713219267,
+      "isentropic_temperature_error_k": null
+    }
+  ],
+  "reference_system": {
+    "mass_kg_s": 0.07759999999999999,
+    "nozzle_c": 0.9583760562356929,
+    "source_cooling_w": 2267.081600000123,
+    "exhaust_backpressure_bar": 0.04911891329499762,
+    "motor_pressure_floor_bar_g": 6.472832515860272,
+    "energy_residual_w": -1.1368683772161603e-12
+  },
+  "undersupplied_receiver_example": {
+    "source": "XAS 68",
+    "tank_l": 500,
+    "duration_s": 11.182128648491602,
+    "minimum_volume_l_for_30_s": 1341.3429260253906,
+    "thermal_model": "energy",
+    "assumptions": {
+      "source": "xas68",
+      "eos": "ideal",
+      "ambient": 30,
+      "sourceTemp": 40,
+      "fadDensity": 1.1975308641975309,
+      "method": "motor",
+      "motors": 4,
+      "motorLoad": 1,
+      "motorHeat": 0,
+      "motorPin": 6.3,
+      "turbineEta": 0.65,
+      "processFad": 3888,
+      "purge": 0.03,
+      "treatmentDrop": 0.3,
+      "regHead": 0.1,
+      "activation": 30,
+      "plantKW": 0,
+      "mainL": 10,
+      "mainD": 38,
+      "branchL": 2,
+      "branchD": 19,
+      "coldL": 1,
+      "coldD": 50,
+      "inletPortD": 10,
+      "outletPortD": 15,
+      "portL": 0.05,
+      "portK": 1,
+      "roughness": 0.01,
+      "fittingK": 2,
+      "wall": 3,
+      "wallK": 0.2,
+      "insulation": 20,
+      "insulationK": 0.035,
+      "hOutside": 8,
+      "warmUAperM": 0,
+      "coldMode": "reference",
+      "coldReferenceUA": 2.518430164825,
+      "tankL": 500,
+      "tankUA": 20,
+      "ramp": 0,
+      "tankMode": "energy",
+      "nozzle": "wide",
+      "outlets": 4,
+      "customArea": 112,
+      "cd": 0.9,
+      "distance": 0.35,
+      "layout": "one-side",
+      "pitch": 0,
+      "wind": 0,
+      "windDirection": "opposed",
+      "delta": 6,
+      "targetVolume": 0.1,
+      "exchange": 0.05,
+      "coldTankL": 0,
+      "coldTankTemp": 1,
+      "coldHold": 30,
+      "coldTankUA": 1
+    }
+  },
+  "sha256": {
+    "index.html": "abe2a0629087ba5ff7e9918fd3634f323e9a8eef54f8c17327a45793a4ce3a12",
+    "panel/model.js": "f35132bb91938b81288079a12046eeca96d15e8a307a730b298c501a8ba70788",
+    "panel/panel.js": "09198902f3e3e2b3dc6b2672f502b05dcbb1d3f54461eb2dec05060296bd3496",
+    "panel/panel.css": "79f2455cd1686d0cc22e62a6fb0832abe202bdce84b4ba69febe139702f3f034",
+    "panel/MODEL.md": "23b735d57e4a329cb0bb5d37b805b9b886fd13e611406678960fa76ee9d2e0ef",
+    "panel/data/air.json": "e6aa3a17e9c708976c6aeb3b00c9880eaf38beb8319fb30a195d430205478959",
+    "panel/data/cfd.json": "328b8c31b20b6a5e4f7e8ba7db6452f2f553e4847f507f101df8c8fe964238ac",
+    "tests/panel.test.js": "317f530f559dbca1eab676e5eaaa2f49c4a4c46488454db0b2f82db4dea753ea",
+    "tools/build_cfd_panel.py": "80206d2ee5641aa65d0ab8f8a46cccfec3fda96977d0333a8f69cddbc28d3f23",
+    "tools/build_air_table.py": "67f79786e037924dc72578229257be85ae4ee8bdff1e6d7daf1a231d34a60565"
+  },
+  "numerical_tests_succeeded": true
+}

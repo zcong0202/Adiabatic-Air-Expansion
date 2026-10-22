@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-22",
+  "tool": "gstack /browse",
+  "checks": [
+    {
+      "name": "reference first-law result",
+      "pass": true,
+      "cooling": 2267.081600000123,
+      "temperature": 0.9583760562356929
+    },
+    {
+      "name": "comparison tables populate",
+      "pass": true,
+      "rows": 59
+    },
+    {
+      "name": "native field analysis populates",
+      "pass": true,
+      "volume": 0.07613037,
+      "mass": 0.09250575
+    },
+    {
+      "name": "region control changes actual integration",
+      "pass": true,
+      "volume": 0.49777557
+    },
+    {
+      "name": "longer hose warms delivery and disclaims CFD match",
+      "pass": true,
+      "temperature": 12.667408953391202
+    },
+    {
+      "name": "undersupply uses finite tank interval",
+      "pass": true,
+      "served": 11.182128648491602
+    },
+    {
+      "name": "tank history renders",
+      "pass": true
+    },
+    {
+      "name": "real throttle does not inherit motor cooling",
+      "pass": true,
+      "temperature": 37.58898275594106,
+      "mixedMass": 0
+    },
+    {
+      "name": "invalid input clears outputs",
+      "pass": true
+    },
+    {
+      "name": "animation links to explicit saved case",
+      "pass": true
+    },
+    {
+      "name": "scenario includes numerical inputs and provenance",
+      "pass": true,
+      "schema": "AA-computation-panel/2"
+    },
+    {
+      "name": "export action runs",
+      "pass": true
+    },
+    {
+      "name": "CSV action runs",
+      "pass": true
+    },
+    {
+      "name": "scenario link encodes inputs",
+      "pass": true
+    },
+    {
+      "name": "local artifact links resolve",
+      "pass": true,
+      "links": 23,
+      "broken": []
+    }
+  ],
+  "additional_checks": {
+    "scenario_json_import": true,
+    "scenario_url_reload_restores_state": true,
+    "direct_file_url": true,
+    "mobile_390px_no_horizontal_overflow": true,
+    "mobile_input_toggle": true,
+    "http_console_errors": 0,
+    "file_console_errors": 0
+  },
+  "screenshots": [
+    "panel/evidence/cfd-desktop.png",
+    "panel/evidence/system-mobile.png"
+  ]
+}

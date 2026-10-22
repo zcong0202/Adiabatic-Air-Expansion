@@ -1,69 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Air-Cycle Bench</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css">
-</head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AA · Cooling computation panel</title><link rel="stylesheet" href="panel/panel.css"></head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div>
-      <h1>Air-Cycle Bench</h1>
-      <p class="lead">Build the gas path from left to right. Drag cards to reorder, use the title menu to swap a stage (turbine, vane motor, vortex tube…), and edit any parameter. Everything recalculates instantly.</p>
-    </div>
-    <div class="controls">
-      <label class="field"><span>Preset</span>
-        <select id="preset">
-          <option value="rental">Rental compressor + 4 × LZB46</option>
-          <option value="workshopVortex">Workshop compressor + vortex tube</option>
-          <option value="workshopBurst">Workshop compressor + receiver burst + LZB46</option>
-          <option value="scuba">Scuba tank → 2 regulators → vortex tube</option>
-          <option value="junior">Bauer Junior II → regulator → turbine</option>
-        </select>
-      </label>
-      <label class="field" style="width:92px"><span>Ambient °C</span><input id="amb" type="number" step="1" value="30"></label>
-      <label class="field" style="width:170px"><span>Shaft work recovered as power (%)</span><input id="rec" type="number" step="5" min="0" max="100" value="0"></label>
-      <div class="field"><span>Operating mode</span>
-        <div class="seg" role="group" aria-label="Operating mode">
-          <button id="m-cont" type="button" aria-pressed="true">Continuous</button>
-          <button id="m-burst" type="button" aria-pressed="false">Burst from storage</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="chain-wrap" aria-label="Gas path">
-    <div class="chain-head">
-      <h2>Gas path</h2>
-      <span class="muted" style="font-size:12px">Gauges between cards show temperature · pressure · mass flow at that point</span>
-    </div>
-    <div class="chain" id="chain"></div>
-  </section>
-
-  <section class="results" id="results" aria-label="Key results"></section>
-
-  <section class="two">
-    <div class="panel">
-      <h2>Temperature along the path</h2>
-      <div class="chart" id="chart"></div>
-    </div>
-    <div class="panel">
-      <h2>Outlet and seat</h2>
-      <table class="kv" id="detail"></table>
-      <div class="warns" id="warns"></div>
-      <h2 style="margin-top:6px">COP compared with air conditioning</h2>
-      <div id="copcmp" class="chart"></div>
-    </div>
-  </section>
-
-  <p class="foot">Model: ideal-gas air (cp 1.005 kJ/kg·K, γ 1.4). Regulators are isenthalpic with an approximate Joule–Thomson coefficient μ ≈ 0.22 − 0.0006·P K/bar. Turbines use isentropic efficiency. Vane motors take their rated shaft power and air use, scaled with supply pressure. Vortex tubes scale a reference cold ΔT with pressure ratio and cold fraction. Tank blow-down cooling, moisture and heat-exchanger sizing are not modelled. COP is cooling divided by the compressor energy that went into the air actually used (compressor power ÷ its delivery × the flow drawn); for a storage tank it uses the energy needed to fill it. Treat results as first estimates for design and CFD inputs, not as measurements.</p>
-</div>
-
-<script src="physics.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<header class="top"><a class="brand" href="index.html"><span class="mark">AA</span><span>Cooling computation panel<small>Source → delivery → cooled air mass</small></span></a><div class="actions"><a href="AA%20Project/project-overview.html">Project overview ↗</a><button id="export" class="primary">Export scenario ↓</button></div></header>
+<div class="intro"><div><p class="eyebrow">OUTDOOR AIR EXPANSION · ENGINEERING SCREEN · v2</p><h1>What makes enough cold air?</h1><p>Compare stock supply, expansion, storage and delivery. Keep calculated budgets separate from actual CFD.</p></div><div class="intro-actions"><button id="reset">Load reference boundary</button><button id="share">Copy scenario link</button><label class="import">Import JSON<input id="import" type="file" accept="application/json,.json"></label></div></div>
+<div id="notice" role="status" aria-live="polite"></div>
+<div class="workspace">
+<aside><div class="aside-head"><h2>System inputs</h2><span class="desktop-only">SI calculations</span><button id="mobileInputs" class="mobile-only" aria-expanded="false" aria-controls="inputs">Edit inputs</button></div><form id="inputs"></form><p class="aside-note">Values update the calculation. They do not run a new CFD case. Inputs save on this browser.</p></aside>
+<main id="main"><nav class="tabs" aria-label="Computation views"><button class="active" data-tab="system" aria-selected="true">System</button><button data-tab="compare" aria-selected="false">Comparisons</button><button data-tab="cfd" aria-selected="false">CFD evidence <span>16</span></button><button data-tab="basis" aria-selected="false">Equations & limits</button></nav>
+<section id="system" class="view"><div id="summary"></div><div id="flow"></div><div id="balance"></div><div id="storage"></div><div id="limits"></div></section>
+<section id="compare" class="view" hidden><div class="section-head"><div><p class="eyebrow">ONE CHANGE AT A TIME</p><h2>Which lever changes the result?</h2></div><button id="csv">Export comparisons CSV ↓</button></div><p class="muted">All other inputs stay fixed. Unsupported operating points remain visible. Cooling is a steady source budget, not a predicted cold-cloud volume.</p><div id="comparisons"></div></section>
+<section id="cfd" class="view" hidden><div class="section-head"><div><p class="eyebrow">SAVED SOLVER FIELDS · NO LIVE RERUN</p><h2>Cooled air mass and volume</h2></div><a href="panel/data/cfd.json" download>Field integration data ↓</a></div><div class="callout">These are executed outdoor jet cases. Supply is prescribed. No body, source hardware, solar load, humidity or post-valve shutoff is simulated.</div><div class="cfd-controls"><label>Case<select id="cfdCase"></select></label><label>Analysis region<select id="cfdRegion"><option value="domain">Whole simulated domain</option><option value="corridor">Walking corridor</option></select></label><label>Saved time <output id="cfdTimeLabel">10 s</output><input id="cfdTime" type="range" min="0" max="10" step="1" value="10"></label></div><div id="cfdOutput"></div><div class="card"><h3>Volume over saved simulation time</h3><div id="cfdChart"></div><p class="caption">Volume above the selected temperature drop at each saved snapshot. This is an Eulerian volume, not the lifetime of the same air parcel. No shutoff decay was run.</p></div><div class="card"><h3>Same-time comparison · 10 s</h3><p class="muted">Same threshold and region. Compare finer F00/F01 together. Grid changes can change the threshold volume.</p><div id="cfdTable" class="table-wrap"></div></div><div class="two"><div class="card"><h3>Executed cooling animations</h3><label>Animation<select id="animation"><option value="R00_wide_d35">Wide slot · R00 · coarse grid</option><option value="P00_one_d20">Standard slot · P00 · coarse grid</option></select></label><button id="playAnimation">Load animation</button><div id="animationView"></div><p class="caption">Selected animation has its own case ID. It does not change with system inputs.</p></div><div class="card"><h3>CAD and geometry</h3><img class="evidence-img" src="AA%20Project/Airflow-Assessment/pass-by-study/results/outdoor-nozzle-assembly.png" alt="Reference outdoor nozzle assembly"><p>Custom outlet faces: 140 × 80 mm and 280 × 40 mm. Same area, different shape. CFD prescribes the exit; it does not resolve the inside of these CAD nozzles.</p><div class="link-row"><a href="AA%20Project/Airflow-Assessment/pass-by-study/cad/outlet-140x80-print-mm.stl">Standard STL</a><a href="AA%20Project/Airflow-Assessment/pass-by-study/cad/outlet-280x40-print-mm.stl">Wide STL</a><a href="AA%20Project/Airflow-Assessment/pass-by-study/cad/outlet-280x40-metres.step">Wide STEP · metres</a></div><p class="caption">Prototype geometry. Connector fit and internal pressure loss need checks. These are not certified pressure parts.</p></div></div></section>
+<section id="basis" class="view" hidden><p class="eyebrow">FIRST PRINCIPLES & EVIDENCE</p><h2>What the calculation proves—and assumes</h2><div id="equations"></div></section>
+<footer>AA research · 22 Oct 2026 · <a href="legacy.html">Original calculator</a> · <a href="figures/README.md">Colleague’s animated figures</a> · <a href="panel/MODEL.md">Full calculation specification</a> · <a href="panel/data/validation.json">Validation record</a></footer></main></div>
+<script src="panel/data/air.js"></script><script src="panel/data/cfd.js"></script><script src="panel/model.js"></script><script src="panel/panel.js"></script>
+</body></html>
