@@ -1,0 +1,33 @@
+(async()=>{
+const checks=[],near=(a,b,t=.001)=>Math.abs(a-b)<t,assert=(name,ok,detail)=>{checks.push({name,pass:!!ok,detail});if(!ok)throw Error(name+': '+JSON.stringify(detail));};
+const delay=()=>new Promise(r=>setTimeout(r,80)),set=async(inputs={},d={})=>{AA_Lab.setState({inputs,d});await delay();return AA_Lab.getResults();};
+const reset=async()=>{document.querySelector('#reset').click();await delay();};
+await reset();let x=AA_Lab.getResults();
+assert('No isometric artwork loaded',!document.querySelector('#scene')&&!document.querySelector('script[src*="artwork"]'));
+assert('Reference output and source budget',x.result.valid&&near(x.result.m,.0776,1e-8)&&near(x.result.cooling,2267.0816),x.result.m);
+assert('Pressure input shows real source rating',document.querySelector('#input-chargeBar').value==='7');
+assert('Reference default lab cooling is labelled conditional',document.querySelector('#simulationScope').textContent.includes('Not spatial CFD'));
+let el=document.querySelector('#input-source');el.value='xas68';el.dispatchEvent(new Event('change',{bubbles:true}));await delay();x=AA_Lab.getResults();assert('Source selector recalculates deficit without imaginary partial flow',!x.result.valid&&near(x.simulation.deliveredMass,0));
+el=document.querySelector('#input-tankL');el.value='500';el.dispatchEvent(new Event('change',{bubbles:true}));await delay();x=AA_Lab.getResults();assert('Receiver input supports finite rated burst',x.result.valid&&near(x.result.receiver.served,11.1821,.003),x.result.receiver.served);
+el=document.querySelector('#input-chargeBar');el.value='6.6';el.dispatchEvent(new Event('change',{bubbles:true}));await delay();x=AA_Lab.getResults();assert('Insufficient pressure removes supported output',!x.result.valid&&near(x.simulation.deliveredMass,0));
+x=await set({source:'xas68',tankL:1343,chargeBar:0});assert('Sized receiver supports 30 second request',x.result.valid&&x.result.receiver.full,x.result.receiver.served);
+await reset();document.querySelector('[data-tab="components"]').click();assert('Component tab and 11 source rows',!document.querySelector('#components').hidden&&document.querySelectorAll('#componentTable tbody tr').length===11);
+x=AA_Lab.getResults();let first=x.comparison.find(z=>z.source.id==='xas38'),last=x.comparison.find(z=>z.source.id==='xas98');assert('Matched integer motor banks drive dot quantities',first.n===1&&near(first.z.m,.0194)&&last.n===5&&near(last.z.m,.097));
+el=document.querySelector('#bankMode');el.value='fixed';el.dispatchEvent(new Event('change',{bubbles:true}));x=AA_Lab.getResults();assert('Fixed bank comparison exposes undersupply',!x.comparison.find(z=>z.source.id==='xas38').z.valid&&x.comparison.find(z=>z.source.id==='xas78').z.valid);
+assert('BAUER unsupported and listing quality explicit',!x.comparison.find(z=>z.source.id==='bauer').z.valid&&document.querySelector('#componentTable').textContent.includes('FAD unconfirmed'));
+await reset();document.querySelector('[data-tab="cooling"]').click();x=AA_Lab.getResults();const original=x.simulation;assert('Cooling volume has calculated mass and time window',original.targetMass>0&&original.firstReached>0&&original.duration>30&&original.windows[0][1]>30);
+x=await set({}, {capture:.05});assert('Low capture fails target',x.simulation.firstReached===null&&x.simulation.maximumDrop<6);
+x=await set({}, {capture:.5,volume:1});assert('Larger volume delays first target crossing',x.simulation.firstReached>original.firstReached);
+x=await set({}, {volume:.1,ambientExchange:0});assert('No implicit fixed reheating time',x.simulation.clipped&&x.simulation.duration>80);
+x=await set({source:'xas38'},{ambientExchange:.05});assert('Invalid direct source cannot claim cold mass',!x.result.valid&&x.simulation.deliveredMass===0);
+await reset();el=document.querySelector('#delivery');el.value='cold';el.dispatchEvent(new Event('change',{bubbles:true}));await delay();assert('Cold tank settings exposed with charging caveat',!document.querySelector('#coldControls').hidden&&document.querySelector('#deliveryNote').textContent.includes('Charging is not established'));
+x=await set({}, {delivery:'cold',horizon:2,coldPressureBarG:0,coldHoldS:0});assert('Atmospheric cold tank has no forced initial discharge',near(x.simulation.deliveredMass,0));
+x=await set({}, {delivery:'cold',horizon:2,coldPressureBarG:.05,coldUA:0});assert('Cold burst uses actual discharged mass, not inventory',near(x.simulation.deliveredMass,x.simulation.cold.massOut,1e-8)&&x.simulation.cold.massOut<x.simulation.cold.initialMass*.05);
+x=await set({}, {delivery:'cold',horizon:2,coldPressureBarG:1});assert('Unsupported cold charge pressure flagged',!x.simulation.cold.chargeCompatible&&document.querySelector('#deliveryNote').textContent.includes('not an achievable stock-system result'));
+await reset();document.querySelector('[data-tab="cooling"]').click();document.querySelector('#scrub').value='32';document.querySelector('#scrub').dispatchEvent(new Event('input'));assert('Time scrubber updates mean temperature and threshold mass',document.querySelector('#inspectTime').value==='32.0 s'&&document.querySelector('#timeReadout').textContent.includes('0 g'));
+const before=JSON.stringify(AA_CFD.cases.find(x=>x.id==='F01_wide_d35').snapshots.at(-1));await set({nozzle:'round70',coldL:5});assert('Input changes do not rescale saved CFD',before===JSON.stringify(AA_CFD.cases.find(x=>x.id==='F01_wide_d35').snapshots.at(-1)));
+await reset();await set({}, {capture:.3});document.querySelector('[data-tab="cooling"]').click();let a=document.querySelector('header a[href*="engineering"]');a.dispatchEvent(new Event('pointerdown',{bubbles:true}));const url=new URL(a.href),payload=JSON.parse(decodeURIComponent(atob(url.hash.slice(10).replace(/-/g,'+').replace(/_/g,'/'))));assert('Engineering link carries source and transient scenario state',payload.inputs.source==='xas78'&&payload.lab.d.capture===.3);
+const real=URL.createObjectURL;let captured;URL.createObjectURL=b=>{captured=b;return real(b);};document.querySelector('#export').click();const data=JSON.parse(await captured.text());assert('Scenario JSON exports transient assumptions and scope',data.schema===3&&data.d.capture===.3&&data.scope.includes('Not spatial CFD'));
+document.querySelector('#csv').click();const csv=await captured.text();assert('Time series CSV exports real simulated columns',csv.startsWith('time_s,mean_temperature_c,drop_c,output_g_s')&&csv.split('\n').length>100);URL.createObjectURL=real;
+await reset();return {checks,passed:checks.filter(c=>c.pass).length,failed:checks.filter(c=>!c.pass).length,scope:'Browser interactions and exports. Not hardware validation.'};
+})()

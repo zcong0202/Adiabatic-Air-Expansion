@@ -5,10 +5,10 @@ const M=AA_Model,D=AA_CFD,$=s=>document.querySelector(s),escape=s=>String(s).rep
 const f=(n,d=2)=>Number.isFinite(n)?n.toLocaleString('en-GB',{maximumFractionDigits:d,minimumFractionDigits:d}):'—';
 const path='AA%20Project/Airflow-Assessment/',study=path+'pass-by-study/';
 let state=M.config(),current,tab='system',compareRows=[],cf={id:'F01_wide_d35',region:'corridor',time:10};
-let stored;try{stored=JSON.parse(localStorage.getItem('aa-panel-v2'));}catch{}
+let lab=null,stored;try{stored=JSON.parse(localStorage.getItem('aa-panel-v2'));}catch{}
 try{if(location.hash.startsWith('#scenario='))stored=JSON.parse(decodeURIComponent(escapeDecode(location.hash.slice(10))));}catch{notice('Scenario link could not be read. Reference inputs loaded.');}
 function escapeDecode(s){return atob(s.replace(/-/g,'+').replace(/_/g,'/'));}
-function accept(s){if(s&&s.inputs){const known={};for(const k in M.defaults)if(Object.hasOwn(s.inputs,k))known[k]=s.inputs[k];state=M.config(known);if(s.cfd&&D.cases.some(c=>c.id===s.cfd.id))cf={...cf,...s.cfd};if(['system','compare','cfd','basis'].includes(s.tab))tab=s.tab;}}
+function accept(s){if(s&&s.inputs){if(s.lab)lab=s.lab;else if(s.d)lab={d:s.d,tab:s.labTab||'cooling',bank:'matched'};const known={};for(const k in M.defaults)if(Object.hasOwn(s.inputs,k))known[k]=s.inputs[k];state=M.config(known);if(s.cfd&&D.cases.some(c=>c.id===s.cfd.id))cf={...cf,...s.cfd};if(['system','compare','cfd','basis'].includes(s.tab))tab=s.tab;}}
 accept(stored);
 if(["system","compare","cfd","basis"].includes(location.hash.slice(1)))tab=location.hash.slice(1);
 const groups=[
@@ -55,7 +55,7 @@ function fillInputs(){for(const k in state){const el=$(`#inputs [name="${k}"]`);
 fillInputs();
 $('#mobileInputs').addEventListener('click',()=>{const open=$('#inputs').classList.toggle('mobile-open');$('#mobileInputs').textContent=open?'Close inputs':'Edit inputs';$('#mobileInputs').setAttribute('aria-expanded',String(open));});
 function readInputs(){for(const k in M.defaults){const e=$(`#inputs [name="${k}"]`);if(e)state[k]=typeof M.defaults[k]==='number'?(e.value===''?NaN:Number(e.value)):e.value;}}
-function save(){try{localStorage.setItem('aa-panel-v2',JSON.stringify({inputs:state,cfd:cf,tab}));}catch{}}
+function save(){try{localStorage.setItem('aa-panel-v2',JSON.stringify({inputs:state,cfd:cf,tab,lab}));}catch{}}
 let timer;$('#inputs').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{readInputs();render();save();},100);});$('#inputs').addEventListener('submit',e=>e.preventDefault());
 function notice(t){const e=$('#notice');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),4000);}
 function metric(label,value,unit,note){return `<div class="metric"><span>${label}</span><b>${value} <small>${unit}</small></b><p>${note}</p></div>`;}
@@ -122,12 +122,12 @@ function renderBasis(){
 function render(){current=M.calculate(state);renderSystem(current);if(tab==='compare')renderCompare();if(tab==='cfd')renderCFD();}
 function setTab(id){tab=id;for(const e of document.querySelectorAll('.view'))e.hidden=e.id!==id;for(const b of document.querySelectorAll('[data-tab]')){b.classList.toggle('active',b.dataset.tab===id);b.setAttribute('aria-selected',String(b.dataset.tab===id));}if(id==='compare')renderCompare();if(id==='cfd')renderCFD();if(id==='system')renderSystem(current);save();}
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
-function scenario(){const c=selectedCFD(),v=cfdValues(c);return {schema:'AA-computation-panel/2',generated:new Date().toISOString(),inputs:state,cfd:cf,tab,result:current,selectedCFDEvidence:{case:c.id,time:v.snapshot.time_s,region:v.region,threshold_k:v.threshold,columns:v.snapshot.regions[v.region].columns,values:v.values,T_sha256:v.snapshot.T_sha256,mesh_sha256:c.mesh_sha256,numerical_screens_pass:c.numerical_screens_pass,hardware_validated:false},scope:'Calculated steady budget + ideal-gas receiver. Saved prescribed-source CFD is independent. No new CFD run.'};}
+function scenario(){const c=selectedCFD(),v=cfdValues(c);return {schema:'AA-computation-panel/2',generated:new Date().toISOString(),inputs:state,cfd:cf,tab,lab,result:current,selectedCFDEvidence:{case:c.id,time:v.snapshot.time_s,region:v.region,threshold_k:v.threshold,columns:v.snapshot.regions[v.region].columns,values:v.values,T_sha256:v.snapshot.T_sha256,mesh_sha256:c.mesh_sha256,numerical_screens_pass:c.numerical_screens_pass,hardware_validated:false},scope:'Calculated steady budget + ideal-gas receiver. Saved prescribed-source CFD is independent. No new CFD run.'};}
 function download(text,name,type){const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
 $('#export').addEventListener('click',()=>{download(JSON.stringify(scenario(),null,2),'AA-cooling-scenario.json','application/json');notice('Scenario exported with inputs, outputs and CFD provenance.');});
 $('#csv').addEventListener('click',()=>{renderCompare();const keys=['comparison','option','motors','valid','steady','nozzle_c','cooling_w','flow_g_s','served_s','reason'];const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';download([keys.map(q).join(','),...compareRows.map(r=>keys.map(k=>q(r[k])).join(','))].join('\r\n'),'AA-cooling-comparisons.csv','text/csv');notice('Comparison tables exported. Unsupported points are labelled.');});
 $('#reset').addEventListener('click',()=>{state=M.config();cf={id:'F01_wide_d35',region:'corridor',time:10};fillInputs();history.replaceState(null,'',location.pathname+location.search);render();save();notice('Reference boundary loaded. Hardware delivery remains conditional.');});
-$('#share').addEventListener('click',async()=>{const data={inputs:state,cfd:cf,tab};const hash=btoa(encodeURIComponent(JSON.stringify(data))).replace(/\+/g,'-').replace(/\//g,'_');const url=location.href.split('#')[0]+'#scenario='+hash;history.replaceState(null,'','#scenario='+hash);try{await navigator.clipboard.writeText(url);notice('Scenario link copied.');}catch{notice('Scenario saved in the address bar. Copy its link.');}});
+$('#share').addEventListener('click',async()=>{const data={inputs:state,cfd:cf,tab,lab};const hash=btoa(encodeURIComponent(JSON.stringify(data))).replace(/\+/g,'-').replace(/\//g,'_');const url=location.href.split('#')[0]+'#scenario='+hash;history.replaceState(null,'','#scenario='+hash);try{await navigator.clipboard.writeText(url);notice('Scenario link copied.');}catch{notice('Scenario saved in the address bar. Copy its link.');}});
 $('#import').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;if(file.size>5e6){notice('Import limited to 5 MB.');return;}try{const parsed=JSON.parse(await file.text());if(!parsed.inputs)throw Error('No inputs found.');const test=M.calculate(parsed.inputs);if(!test.ok)throw Error(test.error);accept(parsed);fillInputs();render();setTab(tab);save();notice('Scenario imported.');}catch(err){notice('Import failed: '+err.message);}e.target.value='';});
 renderBasis();render();setTab(tab);
 // Small read-only test interface. UI state changes still go through actual controls.

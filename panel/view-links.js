@@ -10,7 +10,7 @@
   if(!a.dataset.targetTab){const hash=url.hash.slice(1);a.dataset.targetTab=known.includes(hash)?hash:'auto';}
   let saved={};try{saved=JSON.parse(localStorage.getItem('aa-panel-v2'))||{};}catch{}
   const tab=a.dataset.targetTab==='auto'?(saved.tab||'system'):a.dataset.targetTab;
-  const payload={inputs:provider.getState(),cfd:saved.cfd||{id:'F01_wide_d35',region:'corridor',time:10},tab};
+  const payload={inputs:provider.getState(),lab:globalThis.AA_Lab?.getState()||saved.lab,cfd:saved.cfd||{id:'F01_wide_d35',region:'corridor',time:10},tab};
   url.hash='scenario='+btoa(encodeURIComponent(JSON.stringify(payload))).replace(/\+/g,'-').replace(/\//g,'_');
   a.href=url.href;
  }

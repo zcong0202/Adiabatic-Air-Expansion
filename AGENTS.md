@@ -12,8 +12,8 @@
 - Use gstack `/browse` for web browsing. Do not use Claude-in-Chrome tools.
 - `/graphify` is an explicit trigger for the graphify skill.
 - Preserve the original browser calculator at legacy.html with physics.js/app.js/styles.css.
-- index.html is the visual designer (studio/). engineering.html retains the full computation panel.
-- Both views use panel/model.js and shared aa-panel-v2 input state. Preserve the original figures.
+- index.html is the focused numerical lab (lab/). engineering.html retains the full computation panel. Isometric studio sources are retained but not loaded.
+- Both views use panel/model.js and shared aa-panel-v2 input state. panel/dynamics.js provides conditional mixing and precharged-tank transients. Preserve the original figures.
 - Illustration is not CFD. Keep saved-case source, time, region and hardware limits explicit.
 - Never rescale saved CFD when inputs change. Distinguish budgets, CFD, conditional Lean algebra and hardware validation.
 - New panel receiver/EOS calculations are numerically tested, not Lean-verified.

@@ -104,12 +104,13 @@
   "formal_coverage": "Existing conditional algebraic Lean proofs; no claim for new JS/ODE/interpolation.",
   "hardware_validated": false,
   "tests": {
-    "command": "node --test tests/panel.test.js tests/presets.test.js",
-    "total": 30,
-    "passed": 30,
+    "command": "node --test tests/panel.test.js tests/presets.test.js tests/dynamics.test.js",
+    "total": 45,
+    "passed": 45,
     "failed": 0,
     "panel_physics_checks": 24,
     "legacy_regressions": 6,
+    "transient_checks": 15,
     "hardware_validation": false
   },
   "independent_eos_reference_errors": [
@@ -193,6 +194,7 @@
     "thermal_model": "energy",
     "assumptions": {
       "source": "xas68",
+      "chargeBar": 0,
       "eos": "ideal",
       "ambient": 30,
       "sourceTemp": 40,
@@ -252,16 +254,21 @@
     }
   },
   "sha256": {
-    "index.html": "7f7768096e780427f9cc67fefe2f9e70f77cd21a59b77942b1aff0729ca1ad24",
-    "engineering.html": "b0a7c60cc0dc4704958cc90a37882a62d53eb68d598a77dbf699de478766c578",
-    "panel/view-links.js": "fd265171198149415b85c296272b32f34ffda1f41d0ff6e1918272c4d36dabe3",
+    "lab/app.js": "2689d14629a32100a8de47c6c42147bf8e3fcb75e7c71e5b57006e0059fb1400",
+    "lab/style.css": "9b9b89062b72df2b11e3d7d3226470cd3015602e460e6e4b92cef8c7ba9d7bc5",
+    "panel/dynamics.js": "193c3687fa9c527a0f22db5c137e5f6610b6e075a4aadb555a3323f2ff1d2a0d",
+    "panel/TRANSIENT.md": "cf3eca57458cb3cfbd8d4d3630420c979e91016783b532e0e3de2a2be161ab7b",
+    "tests/dynamics.test.js": "07d2e11e00b4108d64166ee4f95f34f962a64d9ecbdf42ce168a5078070df88d",
+    "index.html": "f760afde90e0a92f4b7ee3d1d2e54145d2c75361fb9f56bef285a03e915a0d38",
+    "engineering.html": "0666647e87031857731c1cd4847a205926725198fe8068acfc6b3b5371fae9ca",
+    "panel/view-links.js": "06eac5f8abed6659b47c1841312f02f6cfe54dd76de0f1b213bed739a42ad880",
     "studio/app.js": "a37e61f53e49c7ddba11b10609ea32f76c6b7a38f4c4a2d589c81cc98265f403",
     "studio/style.css": "069cc87ddc5e931bdb3de4186ddbaf5f2d842fca4bee410c20cd40b9ee977d84",
     "studio/artwork.js": "06fc4fae37fd3a746e2a8a84359069bb00b05dd08b7a369ea28d8b1768b86f21",
-    "panel/model.js": "f35132bb91938b81288079a12046eeca96d15e8a307a730b298c501a8ba70788",
-    "panel/panel.js": "fbbc2970d7df4b8be05d9d5cc157a59834f2c61b384b52caa35959eca5fb93ec",
+    "panel/model.js": "f7f844c76e59df557e3c3f738da6aa5bdb88b2517add9c5427a39d7337e87eec",
+    "panel/panel.js": "024d4e382f6a551cbcee388edd59f16be36e7ad83ec82bee2743ba7367ba94bf",
     "panel/panel.css": "79f2455cd1686d0cc22e62a6fb0832abe202bdce84b4ba69febe139702f3f034",
-    "panel/MODEL.md": "23b735d57e4a329cb0bb5d37b805b9b886fd13e611406678960fa76ee9d2e0ef",
+    "panel/MODEL.md": "62baeef55422df08f0a094c14159a23a5731eac1e34de80b682dee1fc7a6fad3",
     "panel/data/air.json": "e6aa3a17e9c708976c6aeb3b00c9880eaf38beb8319fb30a195d430205478959",
     "panel/data/cfd.json": "328b8c31b20b6a5e4f7e8ba7db6452f2f553e4847f507f101df8c8fe964238ac",
     "tests/panel.test.js": "317f530f559dbca1eab676e5eaaa2f49c4a4c46488454db0b2f82db4dea753ea",
@@ -270,9 +277,51 @@
   },
   "numerical_tests_succeeded": true,
   "interface_variants": {
-    "visual": "index.html",
+    "focused_numerical": "index.html",
+    "isometric_sources_retained": "studio/",
     "engineering": "engineering.html",
     "shared_model": "panel/model.js",
     "illustration_is_cfd": false
+  },
+  "transient_example": {
+    "assumptions": {
+      "capture": 0.5,
+      "volume": 0.1,
+      "ambientExchange": 0.05,
+      "heatW": 0,
+      "horizon": 120,
+      "delivery": "direct",
+      "coldVolumeL": 500,
+      "coldPressureBarG": 0.05,
+      "coldInitialC": 1,
+      "coldUA": 2,
+      "coldHoldS": 0,
+      "burstGS": 77.6,
+      "minimumHeadBar": 0.001
+    },
+    "scope": "Well-mixed isobaric control-volume budget with fixed ambient-density inventory. Capture and ambient exchange are assumed. Not spatial CFD, a person model or a validated outdoor pocket.",
+    "target_mass_kg": 0.11643981014191608,
+    "maximum_drop_k": 12.688965305786319,
+    "first_reached_s": 0.8397213726790981,
+    "time_at_target_s": 30.90453958098708,
+    "delivered_mass_kg": 2.3280000000000123,
+    "captured_mass_kg": 1.1640000000000061,
+    "energy_residual_j": 3.055902197957039e-10
+  },
+  "isolated_cold_tank_example": {
+    "initial_mass_kg": 0.6755532603299528,
+    "discharged_mass_kg": 0.022398793394355465,
+    "supported_s": 0.28864424477262235,
+    "charge_pressure_screen_pass": false,
+    "mass_residual_kg": -3.1086244689504383e-15,
+    "energy_residual_j": 0,
+    "scope": "Precharged isolated cold tank, ideal gas, explicit valve flow cap, direct orifice outlets. No downstream hose or regulator thermal inertia. Charging is not established by the stock motor model."
+  },
+  "numerical_test_generated_utc": "2026-10-22T16:04:31.648Z",
+  "browser_interaction_checks": {
+    "passed": 26,
+    "failed": 0,
+    "scenario_round_trip": true,
+    "scope": "UI interactions, downloads and exact scenario transfer; not hardware validation."
   }
 }

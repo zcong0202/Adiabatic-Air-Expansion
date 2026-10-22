@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "source": "xas68",
+  "tankL": 500,
+  "capture": 0.32,
+  "volume": 0.2,
+  "scope": "Exact file URL scenario round trip through full engineering panel"
+}

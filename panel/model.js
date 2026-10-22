@@ -18,7 +18,7 @@ const nozzles=[
  {id:'perforated',name:'Control · 0.5 m² face, 20% open (total)',area:.1,dh:.01,total:true},
  {id:'custom',name:'Custom open area per outlet',area:.0112,dh:.07}
 ];
-const defaults={source:'xas78',eos:'ideal',ambient:30,sourceTemp:40,fadDensity:19.4/16.2,
+const defaults={source:'xas78',chargeBar:0,eos:'ideal',ambient:30,sourceTemp:40,fadDensity:19.4/16.2,
  method:'motor',motors:4,motorLoad:1,motorHeat:0,motorPin:6.3,turbineEta:.65,processFad:3888,
  purge:.03,treatmentDrop:.3,regHead:.1,activation:30,plantKW:0,
  mainL:10,mainD:38,branchL:2,branchD:19,coldL:1,coldD:50,
@@ -99,7 +99,7 @@ function validate(c){const numeric=Object.keys(defaults).filter(k=>typeof defaul
  if(!['ideal','real'].includes(c.eos)||!['motor','throttle','turbine','isentropic'].includes(c.method))throw Error('Select a valid model.');
  for(const k of ['motors','outlets'])if(c[k]<1||c[k]>16||!Number.isInteger(c[k]))throw Error(k+' must be an integer from 1 to 16.');
  for(const k of ['mainD','branchD','coldD','inletPortD','outletPortD','wall','wallK','insulationK','hOutside','fadDensity','customArea','delta','targetVolume','processFad'])if(c[k]<=0)throw Error(k+' must be positive.');
- for(const k of ['mainL','branchL','coldL','portL','portK','roughness','fittingK','insulation','warmUAperM','coldReferenceUA','tankL','tankUA','ramp','plantKW','coldTankL','coldHold','coldTankUA','exchange','wind','regHead','motorHeat','treatmentDrop'])if(c[k]<0)throw Error(k+' cannot be negative.');
+ for(const k of ['mainL','branchL','coldL','portL','portK','roughness','fittingK','insulation','warmUAperM','coldReferenceUA','tankL','tankUA','ramp','plantKW','coldTankL','coldHold','coldTankUA','exchange','wind','regHead','motorHeat','treatmentDrop','chargeBar'])if(c[k]<0)throw Error(k+' cannot be negative.');
  if(c.motorLoad<0||c.motorLoad>1||c.turbineEta<0||c.turbineEta>1||c.purge<0||c.purge>=1||c.cd<=0||c.cd>1)throw Error('Efficiency, load, purge and Cd must stay within their stated bounds.');
  if(c.activation<=0||c.activation>30)throw Error('Activation must be >0 and ≤30 s.');
  if(c.ambient< -10||c.ambient>60||c.sourceTemp< -10||c.sourceTemp>100||c.coldTankTemp<=-100||c.coldTankTemp>100)throw Error('Temperature outside the declared design range.');
@@ -108,7 +108,7 @@ function validate(c){const numeric=Object.keys(defaults).filter(k=>typeof defaul
 }
 function calculate(input={},airTable,boundary){
  const c=config(input),warnings=[],blocks=[];try{validate(c);
- const source=sources.find(s=>s.id===c.source),nozzle=nozzles.find(n=>n.id===c.nozzle),eos=properties(c.eos,airTable);
+ const listed=sources.find(s=>s.id===c.source);if(c.chargeBar>listed.bar)throw Error('Supply pressure setting exceeds the selected compressor rating.');const source={...listed,bar:c.chargeBar||listed.bar},nozzle=nozzles.find(n=>n.id===c.nozzle),eos=properties(c.eos,airTable);
  const Ta=c.ambient+C.T0,Ts=c.sourceTemp+C.T0;
  const requiredFad=c.method==='motor'?c.motors*16.2*60:c.processFad;
  const m=requiredFad/1000/60*c.fadDensity;
@@ -161,6 +161,7 @@ function calculate(input={},airTable,boundary){
  const receiverResult=receiver(c,{mout:m,minP,source,availableFad});
  const steady=availableFad*1000>=requiredFad-1e-6&&Ps>=minP;
  if(!steady)warnings.push('Rated-flow continuous operation unavailable. Tank results only cover a finite burst.');
+ if(c.chargeBar>0&&c.chargeBar<listed.bar)warnings.push('Lower supply pressure is a downstream regulation assumption. FAD stays at the listed source point; this is not a compressor pressure/flow map. Source temperature is specified after regulation.');
  if(source.id==='kaneez')warnings.push('Kaneez flow and FAD basis are unverified; 1.1 m³/min is the listing midpoint.');
  if(source.id==='bauer'){blocks.push('JUNIOR II is a cylinder-filling unit; direct process supply is not approved.');warnings.push('100 L/min is a filling rating. Continuous process flow is a hypothetical bound only.');}
  if(c.method==='motor'){
@@ -189,7 +190,7 @@ function calculate(input={},airTable,boundary){
   maximumRatedMotors:Math.floor(availableFad*1000/(16.2*60)),
   scope:'Conditional source/network screen + ideal-gas receiver transient. Not a new CFD run.'};
  if(!boundary){
-  const history=valid&&c.tankL>0?receiverResult.points.map(p=>{const z=calculate({...c,sourceTemp:p.T,tankL:0,ramp:0},airTable,{p:C.pa+p.p*1e5});return {t:p.t,T:z.ok?z.Tnozzle:null,cooling:z.ok?z.cooling:null,targetCooling:z.ok&&c.ambient-z.Tnozzle>=c.delta?Math.max(0,z.cooling):0};}):[];
+  const history=valid&&c.tankL>0?receiverResult.points.map(p=>{const z=calculate({...c,sourceTemp:p.T,tankL:0,ramp:0},airTable,{p:C.pa+p.p*1e5});return {t:p.t,T:z.ok?z.Tnozzle:null,totalT:z.ok?z.Ttotal:null,cooling:z.ok?z.cooling:null,targetCooling:z.ok&&c.ambient-z.Tnozzle>=c.delta?Math.max(0,z.cooling):0};}):[];
   result.sourceHistory=history;result.deliveredColdEnergyJ=valid?cooling*receiverResult.served:0;
   if(history.length>1&&history.every(p=>p.cooling!==null)){result.deliveredColdEnergyJ=0;for(let i=1;i<history.length;i++)result.deliveredColdEnergyJ+=(history[i].t-history[i-1].t)*(history[i].cooling+history[i-1].cooling)/2;}
   let targetEnergy=valid&&mix.canReach?Math.max(0,result.deliveredColdEnergyJ):0;

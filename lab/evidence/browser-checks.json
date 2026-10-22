@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "name": "No isometric artwork loaded",
+      "pass": true
+    },
+    {
+      "name": "Reference output and source budget",
+      "pass": true,
+      "detail": 0.07759999999999999
+    },
+    {
+      "name": "Pressure input shows real source rating",
+      "pass": true
+    },
+    {
+      "name": "Reference default lab cooling is labelled conditional",
+      "pass": true
+    },
+    {
+      "name": "Source selector recalculates deficit without imaginary partial flow",
+      "pass": true
+    },
+    {
+      "name": "Receiver input supports finite rated burst",
+      "pass": true,
+      "detail": 11.182128648491602
+    },
+    {
+      "name": "Insufficient pressure removes supported output",
+      "pass": true
+    },
+    {
+      "name": "Sized receiver supports 30 second request",
+      "pass": true,
+      "detail": 29.999999999999364
+    },
+    {
+      "name": "Component tab and 11 source rows",
+      "pass": true
+    },
+    {
+      "name": "Matched integer motor banks drive dot quantities",
+      "pass": true
+    },
+    {
+      "name": "Fixed bank comparison exposes undersupply",
+      "pass": true
+    },
+    {
+      "name": "BAUER unsupported and listing quality explicit",
+      "pass": true
+    },
+    {
+      "name": "Cooling volume has calculated mass and time window",
+      "pass": true
+    },
+    {
+      "name": "Low capture fails target",
+      "pass": true
+    },
+    {
+      "name": "Larger volume delays first target crossing",
+      "pass": true
+    },
+    {
+      "name": "No implicit fixed reheating time",
+      "pass": true
+    },
+    {
+      "name": "Invalid direct source cannot claim cold mass",
+      "pass": true
+    },
+    {
+      "name": "Cold tank settings exposed with charging caveat",
+      "pass": true
+    },
+    {
+      "name": "Atmospheric cold tank has no forced initial discharge",
+      "pass": true
+    },
+    {
+      "name": "Cold burst uses actual discharged mass, not inventory",
+      "pass": true
+    },
+    {
+      "name": "Unsupported cold charge pressure flagged",
+      "pass": true
+    },
+    {
+      "name": "Time scrubber updates mean temperature and threshold mass",
+      "pass": true
+    },
+    {
+      "name": "Input changes do not rescale saved CFD",
+      "pass": true
+    },
+    {
+      "name": "Engineering link carries source and transient scenario state",
+      "pass": true
+    },
+    {
+      "name": "Scenario JSON exports transient assumptions and scope",
+      "pass": true
+    },
+    {
+      "name": "Time series CSV exports real simulated columns",
+      "pass": true
+    }
+  ],
+  "passed": 26,
+  "failed": 0,
+  "scope": "Browser interactions and exports. Not hardware validation."
+}

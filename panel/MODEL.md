@@ -140,3 +140,7 @@ Seven independent CoolProp reference states check enthalpy, entropy, density and
 Existing Lean proofs cover conditional algebraic mixing, energy, pipe retention and pass-by bounds. They do not prove source hypotheses or turbulence. The new JS/EOS table/receiver ODE are numerically tested, not Lean-verified. `tests/panel.test.js` checks first-law closure, mixing inequalities, analytic Darcy and tank limits, ODE step refinement, no-overcharge, pressure floors, source capacity, energy retention, EOS references and CFD integration invariants. Six original tests are retained as historical regressions; their assumptions are not adopted.
 
 Rebuild commands are in the root README. `panel/data/validation.json` records numerical checks and source hashes. No hardware performance is validated by these checks.
+
+## Focused lab transients
+
+The active `index.html` now uses `panel/dynamics.js` for target-volume cooling/recovery and an isolated precharged cold-tank discharge. See [TRANSIENT.md](TRANSIENT.md). These are separate numerical budgets, not new CFD or Lean proofs. The full panel retains the sealed hold-only `coldStore` calculation. `chargeBar` optionally caps regulated supply pressure before treatment below the listed compressor pressure; FAD remains at the listed source point. It is not an off-design compressor map.
