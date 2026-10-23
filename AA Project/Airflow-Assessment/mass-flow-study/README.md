@@ -155,3 +155,37 @@ sampled case, fields, mesh, dictionary, log and acceptance audit under
 `archives/catalogue-*.zip`. `results/nozzle-catalogue/legacy-ranges.json`
 records hashes and checks the new 20 cm extraction against the older target.
 No flow solve or source change occurs in this postprocessing.
+
+### Commercial component shortlist
+
+`results/index.html#components` adds the four-loaded-motor research-rig BOM.
+`results/components/bom.json` records 23 component lines, 13 manufacturer
+sources, quantities, acquisition mode, sizing requirements and unresolved fit.
+CSV and a quotation brief are downloadable. No enquiries or orders were sent.
+
+Preferred listed source: XAS 88 at 5 m³/min / 7 bar gauge. Four motors need
+3.888 m³/min by the document conversion; 15% assumed allowance gives
+4.4712 m³/min. This is not a hot-weather or installed-delivery guarantee.
+Magtrol HD-810-5C is a research-load candidate; quote complete stations and
+verify the duty/operating envelope. HD-715 torque capacity is too small for
+840 W at 1270 rpm. Start with one instrumented motor/load station.
+
+The local sizing panel reuses `panel/model.js` friction/heat functions for
+conditional warm/cold hose and receiver screens. It leaves all saved CFD
+unchanged. Warm pressure-loss inputs are assumptions; regulator droop and
+unknown motor restrictions are not resolved. The 16 mm exhaust-neck input
+is a recommended-hose proxy, not a measured bore. Its estimated loss can
+exceed the document's 2 kPa flag, so supplier drawings/adapters and a test
+are required. The flag is not a manufacturer motor limit. Heat estimates
+cover the hose shell only. Receiver inventory is an optimistic isothermal
+screen, not a transient compressor/receiver validation or a Lean proof.
+
+Regenerate through `python scripts/report.py`; the curated BOM builder is
+`scripts/components.py`. No exact dryer/filter size, regulator/valve code,
+shaft coupling, stock cold adapter, installed electrical load or price is
+claimed. Manufacturer model identification does not establish compatibility.
+
+UI: four focused views (CFD, Components, Nozzles, Source/evidence). Black/white
+layout, serif introductions and flat grid reference https://senseable.mit.edu/
+read on 23 Oct 2026. Scientific image and CFD colour scales stay intact.
+The page uses local fonts/assets; no SCL logo or external runtime dependency.

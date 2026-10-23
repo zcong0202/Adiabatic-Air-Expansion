@@ -1,0 +1,97 @@
+AA outdoor cooling research rig — quotation brief — 23 October 2026
+No order or supplier enquiry has been sent.
+Four loaded LZB46 motors. Nominal 77.6 g/s; 3.888 m3/min free air at the document reference state. Supply 6.3 bar gauge at running motor; inlet reference 40 C. Required shaft work 4 x 840 W at 1270 rpm.
+Planning flow allowance 15%; corrected delivery target 4.471 m3/min. Preferred XAS88 nominal 5 m3/min at 7 bar; total pressure loss must fit the 0.7 bar source-to-motor head.
+Please quote exact ordering codes, actual dimensions, full-flow pressure losses including loaded filters, hot-weather correction, complete electrical demand, lead time, rental/purchase cost and local support. Do not treat 0.96 C exhaust as a guaranteed motor specification.
+
+P01: 1 — Atlas Copco XAS 88 · 7 bar / 5.0 m³/min
+Request pressure-specific FAD with actual ambient derating and installed treatment. Nominal motor demand 3.888 m³/min; planning target 4.471 m³/min including 15% allowance.
+Resolve: The 7 bar source leaves only 0.7 bar above 6.3 bar at the motor. More FAD does not cure a pressure shortfall. No price, availability or rental date confirmed.
+
+P02: 1 package — Matched aftercooler + separator + automatic drain; Atlas TD if separate
+Deliver motor inlet ≤40°C at the chosen ambient and 3.888 m³/min or higher. At 35°C ambient this needs ≤5 K approach or extra cooling.
+Resolve: An aftercooler alone does not provide +3°C pressure dew point. Quote drains and connections as a complete package.
+
+P03: 1 — Atlas Copco FD / FD+ / FD VSD refrigerated dryer
++3°C pressure dew point at ≥4.471 m³/min corrected capacity, actual inlet/ambient temperature and operating pressure.
+Resolve: No exact FD size or electrical suffix selected. Require the correction table and total installed pressure loss, not just nameplate flow.
+
+P04: 1 DD stage + 1 PD stage — Atlas Copco DD(+) + PD(+) coalescing filter housings and drains
+Both stages sized for ≥4.471 m³/min at operating pressure; matched to dryer sequence.
+Resolve: Include dirty-element pressure drop in the total treatment budget. No airline oil lubricator is specified.
+
+P05: 1 package — Atlas Copco QD+ / QDT carbon stage + required dust post-filter
+Dry-air oil-vapour stage sized at full flow; supplier to specify filter sequence, consumables and achieved air quality.
+Resolve: Motor exhaust cleanliness must also be checked; lubrication-free does not certify the final delivered air.
+
+P06: 10 m starting length — Commercial compressed-air hose assembly · 38 mm clear ID
+38 mm clear ID main hose, working-pressure rating ≥10 bar and above actual source maximum, temperature rating covering inlet service. Factory-assembled compatible couplings.
+Resolve: Quote actual clear bore, coupling losses and hose material. Length changes are screened below. Small quick couplers can dominate pressure loss.
+
+P07: 1 kit — Stock isolation / dump set, normally closed pulse valve, 4-way distribution manifold
+Full-flow main path ≥3.888 m³/min at actual pressure; 24 VDC control; commanded spray ≤10 s. Document flow curve, minimum differential pressure and response time.
+Resolve: Supplier selects valve code, seals, manifold ports and stop circuit. Include valve loss in warm pressure budget. Valve startup and motor acceleration are outside saved CFD.
+
+P08: 4 sets — Industrial pressure regulators + gauges + 19 mm ID branch hoses
+6.3 bar gauge at each running motor; 16.2 L/s free air each; branch hose starts at 2 m × 19 mm clear ID.
+Resolve: Regulator flow curve must show pressure droop at the actual inlet/output differential. Motor port threads and fitting reducers need the manufacturer drawing.
+
+P09: 4 — Atlas Copco LZB46-RL-A025-11 · SKU 8411047249
+Nominal 840 W each at 1270 rpm, 6.3 bar gauge, with the 16.2 L/s catalogue free-air point.
+Resolve: Not a guaranteed refrigeration product. Confirm exhaust thermal state, backpressure response, exact port dimensions and declared flow reference state.
+
+P10: 4 matched stations — Magtrol HD-810-5C load stations with controller, brake supply and blower
+Each holds about 6.3 N·m at 1270 rpm and absorbs 840 W. Request 240 V / 50 Hz blower version, speed control and calibrated torque/speed logging.
+Resolve: HD-810 ratings: 14 N·m / 12000 rpm / 3000 W continuous with vendor duty limits. Quote the full station, not a bare brake. This is research equipment, not a cost-optimised demo load.
+
+P11: 4 kits — Stock motor feet / dynamometer fixtures, keyed couplings and guards
+Motor foot reference 4430 0575 80; coupling and fixture matched to both shaft drawings and allowable shaft loads.
+Resolve: Exact coupling bore, key, alignment and mounting arrangement remain unspecified. No custom turbine or custom shaft load is proposed.
+
+P12: 4 sets — Stock full-flow motor exhaust adapters / transitions
+Short exhaust neck; expand promptly to ≥50 mm clear ID cold branch. Quote complete port-to-hose path and its loss.
+Resolve: The recommended 16 mm hose size is not a measured motor port bore. The 100 mm printed nozzle inlet is not a motor connection. Get exact exhaust drawing and a supported adapter.
+
+P13: 4 × ≤1 m starting length — Commercial low-temperature flexible cold-air hose · 50 mm clear ID
+Low-temperature material rated to at least −10°C for this nominal study; supplier confirms minimum actual exhaust temperature. Use oversized low-loss bends.
+Resolve: This is near-atmospheric service. Confirm pressure loss, wall heat gain and suitable air-contact material. Do not substitute a long 16 mm hose.
+
+P14: 4 sets — Stock 50-to-100 mm transitions, 100 mm cuffs and clamps
+Match the 50 mm ID hose to the printed 100 mm OD nozzle spigot. Source nozzle clear inlet is 95.2 mm.
+Resolve: Supplier confirms real inner/outer diameters, seal engagement and low-loss transition. Print the hose fit coupon before the nozzle set. No attached fit is verified.
+
+P15: ≈4 m plus fittings — Closed-cell cold-pipe insulation · 19 mm starting thickness
+Vapour-sealed insulation around cold branches and transitions; supplier selects material and low-temperature rating. Screening conductivity 0.035 W/(m·K) is assumed.
+Resolve: Thermal result below covers only the hose shell. It excludes motor conduction, connectors, solar load and startup cooldown.
+
+P16: 4 custom prints — 280 × 40 mm wide slot · 100 mm spigot · opposed banks
+Use the matched STL/STEP and fit coupon. Total flow 77 g/s in selected CFD; nominal motor calculation is 77.6 g/s.
+Resolve: Nozzle interior, stock fitting, manifold balance and actual 0.96°C boundary are unvalidated. Smaller flows need diversion or a separately characterised motor point.
+
+P17: 1 stock panel — 24 VDC supply + timer/PLC + valve interface + stop + trigger input
+Hard maximum 10 s valve-on, manual test input, presence input and loss-of-control shutdown. Interface to selected valve and motor load controls.
+Resolve: Keep existing trigger electronics if suitable. Exact PLC, power supply and presence-sensor codes are not selected; avoid buying replacements before interface definition.
+
+P18: 1 kit — Alicat MQ-series mass-flow meter · 5000 standard L/min candidate
+Dry air, pressure rating above actual source maximum; MQ family maximum 320 PSIA. Declare standard reference state and installed pressure loss.
+Resolve: Final MQ gas/range/connection code to quote. Specify g/s output or reference-state conversion. Branch balance needs sequential tests or four smaller meters. Full range does not guarantee accuracy at the 2 g/s endpoint.
+
+P19: 1 kit — NI-9213 + cDAQ-9171 + 8 exposed-junction thermocouples
+Fast fine-wire Type T or K probes covering −20…60°C; cold-junction compensation, logging software and target ≥10 samples/s on used channels.
+Resolve: Confirm scan mode, probe response, total calibrated uncertainty and computer compatibility. Air probes need radiation/conduction error checks.
+
+P20: 1 — Testo 512-1 · 0563 1512 differential pressure meter
+0–200 hPa range; connect exhaust pressure to atmospheric reference. Add static taps and suitable sample tubing.
+Resolve: The flag is not a vendor-approved motor limit. Use separate ≥0–10 bar instruments for compressed supply; never apply main pressure to this low-pressure meter.
+
+P21: 1 kit — Calibrated low-speed air-velocity probe and pressure-dewpoint check
+Velocity coverage approximately 0.1–10 m/s; dewpoint measurement at operating pressure to confirm +3°C PDP.
+Resolve: Exact instrument/probe codes need availability and uncertainty review. Standard room-humidity probes do not verify pressure dewpoint.
+
+P22: 2 stands + utilities — Stock extrusion stands / clamps, electrical distribution and condensate handling
+Match CFD opposed nozzle banks 1.1 m apart, outlets at 1.15 and 1.55 m. Provide independently supported hoses. Utilities sized from full vendor load schedule.
+Resolve: Dryer plus four brake blowers/controllers need external electricity. Confirm 230/240 V, 50 Hz, starting current and connector ratings. No total electrical demand or installation price is verified.
+
+P23: 0 initially; quote 100–250 L if needed — Stock warm-side receiver, isolation, drain, gauge and relief package
+Pressure rating above actual source maximum. Size using usable pressure swing and measured compressor response.
+Resolve: At 7→6.7 bar gauge, a small tank stores little usable free air. It is not a ten-second standalone supply. No pressurised cold buffer is specified.

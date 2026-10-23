@@ -1,0 +1,36 @@
+/* Procurement sizing only. Saved CFD remains unchanged. */
+(()=>{
+ const data=window.AA_COMPONENTS,model=window.AA_Model,$=id=>document.getElementById(id);
+ function calculate(c){
+  for(const k of ['factor','treatment','mainLength','mainID','coldLength','coldID','neck','tank'])if(!Number.isFinite(c[k]))throw Error('Enter finite sizing values.');
+  if(c.factor<=0||c.factor>1||c.treatment<0||c.mainLength<0||c.mainLength>50||c.coldLength<0||c.coldLength>10||Math.min(c.mainID,c.coldID,c.neck)<=0||c.tank<0)throw Error('Check input ranges.');
+  const s=data.source_inputs,n=s.active_motors,m=n*s.mass_per_motor_kg_s,free=n*s.free_air_per_motor_l_s*60/1000,density=m/(free/60),source=data.compressors.find(x=>x.id===c.compressor);
+  if(!source)throw Error('Choose a listed compressor.');
+  const pa=101325,R=287.05,T=s.inlet_c+273.15,p=(s.inlet_pressure_bar_g+pa/1e5)*1e5;
+  const main=model.pipeLoss(m,T,p,c.mainLength,c.mainID/1000,2),branch=model.pipeLoss(m/n,T,p,2,.019,2),regulatorHead=.1;
+  const warmLossBar=(main.dp+branch.dp)/1e5+c.treatment+regulatorHead,minimumBar=s.inlet_pressure_bar_g+warmLossBar,headBar=source.pressure_bar_g-minimumBar;
+  const motorC=s.inlet_c-(n*s.shaft_work_per_motor_w-s.motor_heat_into_air_w)/(m*s.cp_j_kg_k),coldT=motorC+273.15;
+  const hose=model.pipeLoss(m/n,coldT,pa,c.coldLength,c.coldID/1000,2),neck=model.pipeLoss(m/n,coldT,pa,.05,c.neck/1000,1);
+  const ua=n*model.thermalUA(c.coldLength,c.coldID/1000,{wall:3,wallK:.2,insulation:19,insulationK:.035,hOutside:8}),hoseOutC=s.ambient_c+(motorC-s.ambient_c)*Math.exp(-ua/(m*s.cp_j_kg_k));
+  const available=source.fad_m3_min*c.factor,deficit=Math.max(0,m-available/60*density),storedMass=c.tank/1000*Math.max(0,headBar)*1e5/(R*T),bridge=deficit>0?storedMass/deficit:null;
+  return {m,free,target:free*(1+data.planning_allowance),available,flowMargin:available/free-1,mainPa:main.dp,branchPa:branch.dp,warmLossBar,minimumBar,headBar,pressurePass:headBar>=0,flowPass:available>=free,planningPass:available>=free*(1+data.planning_allowance),neckPa:neck.dp,hosePa:hose.dp,exhaustPa:neck.dp+hose.dp,motorC,ua,hoseOutC,hoseRise: hoseOutC-motorC,hoseLitres:n*Math.PI*(c.coldID/1000)**2/4*c.coldLength*1000,hoseTransitS:n*Math.PI*(c.coldID/1000)**2/4*c.coldLength/(m/(pa/(R*coldT))),storedMass,bridgeS:bridge,receiverEquivalentS:storedMass/m,receiverRequiredL:headBar>0?deficit*10*R*T/(headBar*1e5)*1000:null,source,torqueNm:s.shaft_work_per_motor_w/(1270*2*Math.PI/60),shaftW:n*s.shaft_work_per_motor_w};
+ }
+ const defaultInputs={compressor:'xas88',factor:1,treatment:.3,mainLength:10,mainID:38,coldLength:1,coldID:50,neck:16,tank:0};
+ function read(){return {compressor:$('plantCompressor').value,factor:+$('plantFactor').value,treatment:+$('plantTreatment').value,mainLength:+$('plantMainLength').value,mainID:+$('plantMainID').value,coldLength:+$('plantColdLength').value,coldID:+$('plantColdID').value,neck:+$('plantNeck').value,tank:+$('plantTank').value};}
+ function render(){try{
+  const c=read(),r=calculate(c);$('plantFactorValue').textContent=(100*c.factor).toFixed(0)+'%';
+  $('plantMetrics').innerHTML=[['Motor demand',r.free.toFixed(3)+' m³/min','77.6 g/s · document reference'],['Delivered FAD margin',(100*r.flowMargin).toFixed(1)+'%','15% planning allowance'],['Required source pressure',r.minimumBar.toFixed(2)+' bar g','Source '+r.source.pressure_bar_g.toFixed(1)+' bar g'],['Shaft work extraction',(r.shaftW/1000).toFixed(2)+' kW','4 × '+r.torqueNm.toFixed(2)+' N·m at 1270 rpm']].map(a=>`<div><small>${a[0]}</small><strong>${a[1]}</strong><small>${a[2]}</small></div>`).join('');
+  const flow=r.flowPass?(r.planningPass?'Continuous nominal flow and 15% allowance pass this screen.':'Nominal continuous flow passes, but the 15% allowance does not.'):'Continuous nominal flow fails this screen.';
+  const pressure=r.pressurePass?'Warm pressure budget passes the assumed losses.':'Warm pressure budget fails: the selected source cannot sustain the assumed motor inlet.';
+  $('plantAssessment').textContent=flow+' '+pressure+' '+(r.exhaustPa>2000?'The exhaust screen fails with the assumed neck. ':'')+'Component sizes, actual operating curves and exhaust temperature remain unqualified.';
+  $('plantAssessment').classList.toggle('warn',!r.planningPass||!r.pressurePass||r.exhaustPa>2000);
+  $('plantLosses').textContent=`Warm losses: main ${(r.mainPa/1000).toFixed(2)} kPa; each branch ${(r.branchPa/1000).toFixed(2)} kPa; entered treatment/valve/meter ${(c.treatment*100).toFixed(0)} kPa; regulator allowance 10 kPa. Cold exhaust estimate: neck ${(r.neckPa/1000).toFixed(2)} + hose ${(r.hosePa/1000).toFixed(2)} = ${(r.exhaustPa/1000).toFixed(2)} kPa. ${r.exhaustPa>2000?'Exceeds the provisional 2 kPa screen; qualify the neck/transition.':'Below the provisional 2 kPa screen; supplier backpressure response still needed.'}`;
+  $('plantThermal').textContent=`Hose-only estimate: ${r.hoseLitres.toFixed(1)} L resident volume, ${r.hoseTransitS.toFixed(2)} s nominal transit, UA ${r.ua.toFixed(2)} W/K, +${r.hoseRise.toFixed(2)} K warming from assumed ${r.motorC.toFixed(2)}°C air. This omits other cold-path heat gains and startup. It does not update the 0.96°C CFD boundary.`;
+  $('plantStorage').textContent=`Warm receiver: ${c.tank} L; usable pressure swing ${Math.max(0,r.headBar).toFixed(2)} bar above the calculated floor. ${r.flowPass?'No receiver is needed for the steady-flow deficit in this screen.':r.pressurePass?`Ideal deficit bridging: ${(r.bridgeS??0).toFixed(1)} s. Optimistic volume to bridge a 10 s pulse: ${r.receiverRequiredL.toFixed(0)} L. Refill and repeated duty still need testing.`:'No usable pressure head under these assumptions.'} Stored air alone equals ${r.receiverEquivalentS.toFixed(2)} s at full motor demand. No cold buffer is included.`;
+  $('plantCompressorRows').innerHTML=data.compressors.map(s=>{const a=s.fad_m3_min*c.factor,state=a<r.free?'Below demand':a<r.target?'Below 15% margin':'Flow margin passes';return `<tr class="${s.id===c.compressor?'selected-plant':''}"><td>${s.name}</td><td>${s.pressure_bar_g}</td><td>${s.fad_m3_min.toFixed(1)}</td><td>${a.toFixed(2)}</td><td>${state}</td></tr>`;}).join('');
+ }catch(e){$('plantAssessment').textContent=e.message;}}
+ $('plantCompressor').innerHTML=data.compressors.map(s=>`<option value="${s.id}">${s.name} · ${s.fad_m3_min} m³/min at ${s.pressure_bar_g} bar g</option>`).join('');$('plantCompressor').value=data.selected_compressor;
+ for(const id of ['plantCompressor','plantFactor','plantTreatment','plantMainLength','plantMainID','plantColdLength','plantColdID','plantNeck','plantTank'])$(id).addEventListener('input',render);
+ const rows=[...document.querySelectorAll('[data-component]')];function filter(){let n=0;const stage=$('componentStage').value,q=$('componentSearch').value.trim().toLowerCase();for(const row of rows){row.hidden=!(stage==='all'||row.dataset.stage===stage)||!row.textContent.toLowerCase().includes(q);if(!row.hidden)n++;}$('componentCount').textContent=`${n} of ${rows.length} items shown`;}
+ $('componentStage').addEventListener('change',filter);$('componentSearch').addEventListener('input',filter);filter();render();window.AA_Procurement={calculate,defaultInputs,read,render};
+})();

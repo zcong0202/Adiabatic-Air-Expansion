@@ -1,0 +1,14 @@
+{
+  "checks": 31,
+  "failed": [],
+  "status": "passed",
+  "viewport": 1440,
+  "pageWidth": 1440,
+  "reference": "https://senseable.mit.edu/",
+  "native_dashboard_checks": 2892,
+  "mobile": {
+    "viewport_width": 390,
+    "page_width": 390,
+    "horizontal_overflow": false
+  }
+}

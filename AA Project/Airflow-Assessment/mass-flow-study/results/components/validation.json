@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checks": 60,
+  "failures": [],
+  "nominal": {
+    "m": 0.0776,
+    "free": 3.888,
+    "target": 4.4712,
+    "available": 5,
+    "flowMargin": 0.286008230452675,
+    "mainPa": 1972.518408062357,
+    "branchPa": 1230.634805723602,
+    "warmLossBar": 0.4320315321378596,
+    "minimumBar": 6.732031532137859,
+    "headBar": 0.2679684678621408,
+    "pressurePass": true,
+    "flowPass": true,
+    "planningPass": true,
+    "neckPa": 3797.8000241078353,
+    "hosePa": 92.74256805787296,
+    "exhaustPa": 3890.5425921657084,
+    "motorC": -3.0407247238220165,
+    "ua": 1.3943584029257852,
+    "hoseOutC": -2.4558114096287866,
+    "hoseRise": 0.5849133141932299,
+    "hoseLitres": 7.853981633974484,
+    "hoseTransitS": 0.13226584890297124,
+    "storedMass": 0,
+    "bridgeS": null,
+    "receiverEquivalentS": 0,
+    "receiverRequiredL": 0,
+    "source": {
+      "id": "xas88",
+      "name": "XAS 88",
+      "fad_m3_min": 5,
+      "pressure_bar_g": 7
+    },
+    "torqueNm": 6.316070182544509,
+    "shaftW": 3360
+  },
+  "scope": "Procurement arithmetic, input limits, source identity, filters and no saved-CFD mutation. No Lean proof, vendor qualification or hardware validation."
+}

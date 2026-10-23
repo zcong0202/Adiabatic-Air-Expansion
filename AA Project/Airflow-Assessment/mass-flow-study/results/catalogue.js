@@ -5,7 +5,7 @@
  group.addEventListener('change',filter);search.addEventListener('input',filter);filter();
  let ticket=0;
  document.querySelectorAll('.catalogue-load').forEach(button=>button.addEventListener('click',async()=>{
-  const request=++ticket;button.disabled=true;
+  const request=++ticket;window.AA_DashboardUI?.show("cfd");button.disabled=true;
   try{await AA_SweepViewer.selectCase(button.dataset.cfd);if(request!==ticket)return;AA_SweepViewer.pause();AA_SweepViewer.setTime(10);const distance=document.getElementById('distance');distance.value=button.dataset.range;distance.dispatchEvent(new Event('change',{bubbles:true}));document.querySelector('.viewer').scrollIntoView({behavior:'smooth',block:'start'});}
   finally{button.disabled=false;}
  }));

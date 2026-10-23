@@ -5,6 +5,7 @@
   "verified_pngs": 165,
   "local_links_checked": [
     "dashboard.css",
+    "scl-theme.css",
     "../../../../index.html",
     "../../../project-overview.html#mass-flow-sweep",
     "source-provenance.json",
@@ -18,6 +19,11 @@
     "timeline-validation.json",
     "../cad/manifest.json",
     "../README.md",
+    "components/bom.csv",
+    "components/quotation-brief.txt",
+    "components/bom.json",
+    "../cad/outlet-280x40-print-mm.stl",
+    "../../pass-by-study/cad/hose-fit-coupon-OD100-mm.stl",
     "nozzle-catalogue/all-nozzle-cad.zip",
     "nozzle-catalogue/outlet-140x80-cad.png",
     "../cad/outlet-140x80-print-mm.stl",
@@ -161,13 +167,17 @@
     "nozzle-catalogue/legacy-ranges.json",
     "data.js",
     "viewer.js",
-    "catalogue.js"
+    "catalogue.js",
+    "../../../../panel/model.js",
+    "components/data.js",
+    "components.js",
+    "dashboard-ui.js"
   ],
   "sha256": {
-    "index.html": "d68d28399b3ece9419d077135a073a31f7dbdd00c83ce17194c45b0ee877e693",
-    "dashboard.css": "4915067e5185a71edd6d43d67b85c33c7d8566d65356875a62a18f9511b32e93",
+    "index.html": "41565d13b2cde219d54d64fca3b73718fceccbd2fcf9fdf5fa31408a11c68216",
+    "dashboard.css": "f30326a38557833c70c4ece9414e5c9b68b706106efee8bf6667dea6c54964f1",
     "viewer.js": "c5d7a2d02907ab7964f9e2b27e2e2a8112724e7070046e7c81dfb2d7467ad0ea",
-    "catalogue.js": "54083ffe3f956abd9bac4144fbcc5cc3b42b5b3941eb88e69bc91ddbb20fda0f",
+    "catalogue.js": "843a1b50114bf32473e8b97df05849dd0e0d28a1dc24793a10d35db7178a43e9",
     "data.js": "c5ae8e2e9512cf9b15f1773abe43f33a976f8db4e97e805683a1d95c5b756fe8",
     "comparison.csv": "2fb837592f0f4dbf4c8f5cb6e1d71356907b5e24a3482273b7d0f72110b97f4c",
     "calculations.json": "7d70b0aa44e13bbde67f1b73ccee110b4d31edba7b77e9bf8babf354fd1908ab",
@@ -175,7 +185,14 @@
     "source-provenance.json": "66f570bf2a9f1b2fba3a8f510ec54fe5b2d289bcfdf55e7c6282683bd5e6f934",
     "timeline-validation.json": "77918dc92bd9a204e4d037c8c1c8c571f0bdc2dd92d374f68e034a6969646ced",
     "nozzle-catalogue/catalogue.json": "99cb237d5a7d91cebeb1810ed144fd3a3813e9cd10219d1b2b6088d5001fb212",
-    "nozzle-catalogue/legacy-ranges.json": "5c42408a22d62d7e4d457b60af4b863b13c380cccb688d2cbd031333f4492205"
+    "nozzle-catalogue/legacy-ranges.json": "5c42408a22d62d7e4d457b60af4b863b13c380cccb688d2cbd031333f4492205",
+    "components.js": "8718329b546a0773afd73dcd631a048b6858183f980cfc93b02b17ce8f375201",
+    "dashboard-ui.js": "819312a18ad5ad3855edeeaacae715852aa604b125f2c3697a918b9f40c18add",
+    "scl-theme.css": "e253f74c2303e0ee86662dd978e2f9014a8ca503044ae44a12c72b55178e6930",
+    "components/data.js": "341416a6d7e0e7e468ea13ad419fc7682336ff3b113bea219401f59dd2334514",
+    "components/bom.json": "38b44d823e0f16363f885fb21e145ecb01c489f8e0cf4b6246679ade8f0f0a29",
+    "components/bom.csv": "5d9cf2e0c15292b134a813a05409fe222dee555c06bf603c5807e293ac1f6741",
+    "components/quotation-brief.txt": "d432cbe3ca043880255b9084d91dc59f6b1e7ceb97bd45c29d15dcc714192230"
   },
   "status": "passed",
   "scope": "Artifact integrity and links; physical and continuum accuracy not established"
