@@ -189,3 +189,7 @@ UI: four focused views (CFD, Components, Nozzles, Source/evidence). Black/white
 layout, serif introductions and flat grid reference https://senseable.mit.edu/
 read on 23 Oct 2026. Scientific image and CFD colour scales stay intact.
 The page uses local fonts/assets; no SCL logo or external runtime dependency.
+
+Compact internal UI: no branding or hero. Configuration and time controls lead;
+3D/2D results share a row. History, files, component sizing and detailed
+assumptions use disclosures. Report generation uses lxml via compact_ui.py.

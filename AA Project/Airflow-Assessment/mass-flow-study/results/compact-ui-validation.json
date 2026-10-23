@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": 20,
+  "failed": [],
+  "visible_words": 216,
+  "native_checks": 2892,
+  "component_checks": 60,
+  "mobile": {
+    "viewport": 390,
+    "page_width": 390
+  }
+}

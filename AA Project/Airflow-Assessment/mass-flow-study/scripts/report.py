@@ -41,9 +41,10 @@ def main():
     body=''.join(row(r) for r in sorted(rows,key=lambda x:(x['inputs']['total_g_s'],x['case'])))
     html=(STUDY/'dashboard.html').read_text()
     from nozzle_catalogue import build as build_catalogue
-    html=html.replace('NOZZLE_CATALOGUE',build_catalogue())
+    from compact_ui import compact_section
+    html=html.replace('NOZZLE_CATALOGUE',compact_section(build_catalogue(),'nozzles'))
     from components import build as build_components
-    html=html.replace('COMPONENTS_SECTION',build_components())
+    html=html.replace('COMPONENTS_SECTION',compact_section(build_components(),'components'))
     html=html.replace('CASE_COUNT',str(len(rows))).replace('TABLE_BODY',body).replace('COMPLETION_TEXT',f'{len(rows)} audited cases available')
     (OUT/'index.html').write_text(html)
     print(json.dumps(dict(completed=len(rows),best=best)))
