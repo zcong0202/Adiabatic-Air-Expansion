@@ -1,0 +1,17 @@
+{
+  "checks": 453,
+  "failures": [],
+  "status": "passed",
+  "designs": 23,
+  "range_buttons": 110,
+  "mobile": {
+    "viewport_width": 390,
+    "page_width": 390,
+    "horizontal_overflow": false
+  },
+  "native_dashboard_regression": {
+    "passed": 2892,
+    "cases": 55,
+    "frames": 605
+  }
+}

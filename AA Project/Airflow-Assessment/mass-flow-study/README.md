@@ -124,3 +124,34 @@ The same result page now has a flow slider, nozzle/count/layout selectors, camer
 `python scripts/timeline.py` extracts temperature fields at 0–10 s from every native archive. It verifies every temperature hash and mesh hash. All 1,210 whole/band mesh volumes are checked against native metrics. The 605 frames contain their own 20/35/50 cm sections and patch means. Playback has one saved frame per second, with no temporal interpolation or new CFD. It ends at 10 s; valve-off persistence is absent. Frame bundles use Git LFS.
 
 [Supply-temperature provenance](results/source-provenance.json) traces the fixed 0.959275°C boundary to the original 1°C document assumption, four loaded motors, 40°C inlet, 3.36 kW shaft work, 77.6 g/s and 4 K nominal cold-path warming. It is an assumed source state, separate from the earlier 5°C vortex-tube test.
+
+### Full nozzle catalogue
+
+Dashboard `results/index.html#nozzle-catalogue` contains all 23 flow designs:
+14 current slots, four early concepts and five conical designs. Repeated
+seat/pass-by bodies and thread tolerances are grouped with their flow design.
+The rejected 50 mm inlet is linked as history. Download individual STL (mm),
+STEP (metres), or the all-CAD ZIP. The C24 3° card also has the actual threaded
+STL/3MF, three thread tolerances, fit coupons and guide. Smooth STEP files
+have no thread. No printed attachment fit or pressure rating is verified.
+Only the commercial Milton reference tip fit was user-confirmed. The slots
+have an unfitted 100 mm hose spigot. Other connectors remain unspecified.
+
+Each current slot maps to its exact exit-size runs. Tables show the best
+sampled 5 × 5 cm area mean drop at 20/50 cm, at 10 s. Open either distance
+in the native 3D/2D viewer. This does not solve the internal CAD passage.
+
+Five earlier accepted steady fields were sampled at 20 and 50 cm using
+OpenFOAM `cellPoint` sets. These fixed centred patches, source conditions
+and gravity-free axisymmetric models differ from the current sweep. C16
+uses a prescribed 16 mm uniform exit, without its internal 5° cone. Four
+early D0–D3 solves never converged; their values are withheld. These gaps
+need new named solves, not interpolation or transplantation of slot results.
+
+Rebuild the catalogue via `python scripts/report.py`. Native sampling is
+separate: `python scripts/legacy_ranges.py --native-root PATH`, where PATH
+contains the original `optimization/cases` fields. Replay ZIPs preserve each
+sampled case, fields, mesh, dictionary, log and acceptance audit under
+`archives/catalogue-*.zip`. `results/nozzle-catalogue/legacy-ranges.json`
+records hashes and checks the new 20 cm extraction against the older target.
+No flow solve or source change occurs in this postprocessing.

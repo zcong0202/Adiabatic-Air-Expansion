@@ -16,4 +16,5 @@ if __name__=='__main__':
         print('FIGURES '+name,flush=True);subprocess.run([sys.executable,str(STUDY/'scripts/render.py'),name],check=True,stdout=subprocess.DEVNULL)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:list(pool.map(figures,data['completed']))
     subprocess.run([sys.executable,str(STUDY/'scripts/validate_delivery.py')],check=True)
+    subprocess.run([sys.executable,str(STUDY/'scripts/validate_catalogue.py')],check=True)
     (OUT/'finished.json').write_text(json.dumps(dict(status='complete',cases=len(data['completed']),native_archive_verified=True,all_case_figures_rendered=True,scope='External CFD delivery screen only; stock source and nozzle interiors unvalidated'),indent=2))

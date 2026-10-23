@@ -40,6 +40,8 @@ def main():
         c=r['inputs'];v=r['final']['regions'].get('range20to50',r['final']['regions']['walking_corridor'])['6'];s=r['final']['sections'];return '<tr><td><button class="pick" data-case="'+r['case']+'">'+r['case']+'</button></td><td>'+str(c['total_g_s'])+'</td><td>'+str(c['outlets'])+'</td><td>'+f"{c['per_outlet_g_s']:.2f}"+'</td><td>'+f"{v['volume_m3']:.4f}"+'</td><td>'+f"{v['mass_kg']*1000:.1f}"+'</td>'+''.join('<td>'+f"{p['area_ge6_m2']:.4f}"+'</td>' for p in s)+''.join('<td>'+f"{p.get('best_sampled_5cm_mean_drop_k',0):.2f}"+'</td>' for p in s)+'</tr>'
     body=''.join(row(r) for r in sorted(rows,key=lambda x:(x['inputs']['total_g_s'],x['case'])))
     html=(STUDY/'dashboard.html').read_text()
+    from nozzle_catalogue import build as build_catalogue
+    html=html.replace('NOZZLE_CATALOGUE',build_catalogue())
     html=html.replace('CASE_COUNT',str(len(rows))).replace('TABLE_BODY',body).replace('COMPLETION_TEXT',f'{len(rows)} audited cases available')
     (OUT/'index.html').write_text(html)
     print(json.dumps(dict(completed=len(rows),best=best)))

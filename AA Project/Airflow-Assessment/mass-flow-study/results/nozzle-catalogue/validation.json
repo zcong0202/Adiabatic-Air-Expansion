@@ -1,0 +1,8 @@
+{
+  "checks": 484,
+  "status": "passed",
+  "designs": 23,
+  "current_case_mappings": 55,
+  "legacy_native_cases": 5,
+  "limits": "Integrity, identities and postprocessing. Hardware attachment and CFD physical accuracy not established."
+}
