@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": 13,
+  "items": [
+    "Four-motor first law agrees with source boundary",
+    "Thermal source rate linear in mass at fixed temperatures",
+    "Continuity matches declared exit-speed calculation",
+    "Native inlet speed agrees within gas-constant rounding",
+    "Entrainment boundary gives exactly 6 K",
+    "No ambient entrainment retains source temperature",
+    "Four warm masses to one cold mass misses 6 K",
+    "Mixing energy conserved",
+    "Same hose UA warms the small flow more",
+    "Zero UA preserves duct inlet temperature",
+    "Source-off threshold inversion is exact",
+    "Nozzle static-temperature change is negligible at selected speed",
+    "Rated-work source lies above isentropic limit"
+  ],
+  "scope": "Algebra, limits and agreement with current inputs. No hardware, turbulence, transient-zone or new Lean validation."
+}

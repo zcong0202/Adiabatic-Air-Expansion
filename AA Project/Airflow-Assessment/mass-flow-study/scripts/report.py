@@ -45,6 +45,8 @@ def main():
     html=html.replace('NOZZLE_CATALOGUE',compact_section(build_catalogue(),'nozzles'))
     from components import build as build_components
     html=html.replace('COMPONENTS_SECTION',compact_section(build_components(),'components'))
+    from formulas import build as build_formulas
+    html=html.replace('FORMULAS_SECTION',build_formulas())
     html=html.replace('CASE_COUNT',str(len(rows))).replace('TABLE_BODY',body).replace('COMPLETION_TEXT',f'{len(rows)} audited cases available')
     (OUT/'index.html').write_text(html)
     print(json.dumps(dict(completed=len(rows),best=best)))

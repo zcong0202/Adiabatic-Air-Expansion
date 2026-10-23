@@ -1,0 +1,168 @@
+{
+  "desktop": {
+    "status": "passed",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "checks": 18,
+    "items": [
+      {
+        "name": "Formula tab selected",
+        "pass": true
+      },
+      {
+        "name": "Six formula cards",
+        "pass": true
+      },
+      {
+        "name": "Presentation notes downloadable",
+        "pass": true
+      },
+      {
+        "name": "Assumptions collapsed",
+        "pass": true
+      },
+      {
+        "name": "Physics distinction stated",
+        "pass": true
+      },
+      {
+        "name": "Hypothetical lifetime labelled",
+        "pass": true
+      },
+      {
+        "name": "No new proof claim",
+        "pass": true
+      },
+      {
+        "name": "MIT foundations linked",
+        "pass": true
+      },
+      {
+        "name": "cfd navigation",
+        "pass": true
+      },
+      {
+        "name": "cfd formula visibility",
+        "pass": true
+      },
+      {
+        "name": "components navigation",
+        "pass": true
+      },
+      {
+        "name": "components formula visibility",
+        "pass": true
+      },
+      {
+        "name": "nozzles navigation",
+        "pass": true
+      },
+      {
+        "name": "nozzles formula visibility",
+        "pass": true
+      },
+      {
+        "name": "evidence navigation",
+        "pass": true
+      },
+      {
+        "name": "evidence formula visibility",
+        "pass": true
+      },
+      {
+        "name": "No branding",
+        "pass": true
+      },
+      {
+        "name": "No horizontal overflow",
+        "pass": true
+      }
+    ],
+    "scope": "Formula UI and navigation; no new CFD or hardware validation"
+  },
+  "mobile": {
+    "status": "passed",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "checks": 18,
+    "items": [
+      {
+        "name": "Formula tab selected",
+        "pass": true
+      },
+      {
+        "name": "Six formula cards",
+        "pass": true
+      },
+      {
+        "name": "Presentation notes downloadable",
+        "pass": true
+      },
+      {
+        "name": "Assumptions collapsed",
+        "pass": true
+      },
+      {
+        "name": "Physics distinction stated",
+        "pass": true
+      },
+      {
+        "name": "Hypothetical lifetime labelled",
+        "pass": true
+      },
+      {
+        "name": "No new proof claim",
+        "pass": true
+      },
+      {
+        "name": "MIT foundations linked",
+        "pass": true
+      },
+      {
+        "name": "cfd navigation",
+        "pass": true
+      },
+      {
+        "name": "cfd formula visibility",
+        "pass": true
+      },
+      {
+        "name": "components navigation",
+        "pass": true
+      },
+      {
+        "name": "components formula visibility",
+        "pass": true
+      },
+      {
+        "name": "nozzles navigation",
+        "pass": true
+      },
+      {
+        "name": "nozzles formula visibility",
+        "pass": true
+      },
+      {
+        "name": "evidence navigation",
+        "pass": true
+      },
+      {
+        "name": "evidence formula visibility",
+        "pass": true
+      },
+      {
+        "name": "No branding",
+        "pass": true
+      },
+      {
+        "name": "No horizontal overflow",
+        "pass": true
+      }
+    ],
+    "scope": "Formula UI and navigation; no new CFD or hardware validation"
+  }
+}

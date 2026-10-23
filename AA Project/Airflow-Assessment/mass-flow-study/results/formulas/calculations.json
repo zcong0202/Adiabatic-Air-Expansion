@@ -1,0 +1,132 @@
+{
+  "assumptions": {
+    "ambient_c": 30.0,
+    "cold_source_c": 0.9592752761779835,
+    "cp_j_kg_k": 1006.0,
+    "gas_j_kg_k": 287.0520496514152,
+    "pressure_pa": 101325.0,
+    "dry_air": true,
+    "constant_cp": true,
+    "hardware_validated": false,
+    "new_lean_proof": false
+  },
+  "flows": [
+    {
+      "g_s": 2,
+      "power_w": 58.429938144329896,
+      "injected_g_at_10s": 20,
+      "ideal_total_mixed_g_s_at_6k": 9.680241574607338
+    },
+    {
+      "g_s": 27,
+      "power_w": 788.8041649484536,
+      "injected_g_at_10s": 270,
+      "ideal_total_mixed_g_s_at_6k": 130.68326125719906
+    },
+    {
+      "g_s": 52,
+      "power_w": 1519.1783917525772,
+      "injected_g_at_10s": 520,
+      "ideal_total_mixed_g_s_at_6k": 251.6862809397908
+    },
+    {
+      "g_s": 77,
+      "power_w": 2249.552618556701,
+      "injected_g_at_10s": 770,
+      "ideal_total_mixed_g_s_at_6k": 372.6893006223825
+    }
+  ],
+  "vortex_example": {
+    "g_s": 2,
+    "source_c": 5,
+    "ambient_c": 30,
+    "power_w": 50.3,
+    "status": "Illustration using reported 5 C nozzle and assumed 2 g/s; no measured thermal field"
+  },
+  "mixing": {
+    "source_deficit_k": 29.040724723822017,
+    "minimum_cold_mass_fraction_for_6k": 0.2066064141670066,
+    "maximum_warm_to_cold_ratio_at_6k": 3.840120787303669,
+    "examples": [
+      {
+        "warm_to_cold_ratio": 0,
+        "drop_k": 29.040724723822017,
+        "mixed_c": 0.9592752761779835
+      },
+      {
+        "warm_to_cold_ratio": 1,
+        "drop_k": 14.520362361911008,
+        "mixed_c": 15.479637638088992
+      },
+      {
+        "warm_to_cold_ratio": 4,
+        "drop_k": 5.808144944764403,
+        "mixed_c": 24.191855055235596
+      },
+      {
+        "warm_to_cold_ratio": 9,
+        "drop_k": 2.9040724723822016,
+        "mixed_c": 27.0959275276178
+      }
+    ]
+  },
+  "nozzle": {
+    "total_g_s": 77,
+    "outlets": 4,
+    "area_each_m2": 0.011200000000000002,
+    "density_kg_m3": 1.2877519873694854,
+    "exit_speed_m_s": 1.3346902329468906,
+    "static_temperature_to_stagnation_difference_k": 0.0008853866888289389,
+    "travel_at_exit_speed_s": [
+      0.14984750398481286,
+      0.37461875996203214
+    ],
+    "hydraulic_diameter_m": 0.07,
+    "Richardson_exit": 0.03692801471798014
+  },
+  "source": {
+    "total_mass_kg_s": 0.0776,
+    "shaft_power_w": 3360,
+    "inlet_c": 40,
+    "motor_exhaust_c": -3.0407247238220165,
+    "cold_path_ua_w_k": 10.073720659304273,
+    "delivered_c": 0.9592752761779835,
+    "ideal_isentropic_exhaust_c": -95.1184214993483,
+    "inferred_adiabatic_temperature_efficiency": 0.31854076036574785,
+    "source_pressure_bar_g": 7,
+    "motor_pressure_bar_g": 6.3,
+    "available_pressure_head_bar": 0.7000000000000002
+  },
+  "hose_example": {
+    "ua_w_k": 1,
+    "ambient_c": 30,
+    "inlet_c": 5,
+    "status": "Illustrative fixed UA, not measured hardware",
+    "outlets": [
+      {
+        "g_s": 2,
+        "outlet_c": 14.791447528372279
+      },
+      {
+        "g_s": 77,
+        "outlet_c": 5.320664619059876
+      }
+    ]
+  },
+  "warmup_example": {
+    "tau_s": 0.5,
+    "initial_deficit_k": 29.040724723822017,
+    "time_to_6k_s": 0.7884698382358102,
+    "status": "Hypothetical well-mixed source-off zone; tau is assumed, not a CFD or measurement result"
+  },
+  "references": [
+    {
+      "title": "MIT: control-volume conservation and stagnation temperature",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node19.html"
+    },
+    {
+      "title": "MIT: ideal-gas heat capacity and reversible adiabatic expansion",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node18.html"
+    }
+  ]
+}

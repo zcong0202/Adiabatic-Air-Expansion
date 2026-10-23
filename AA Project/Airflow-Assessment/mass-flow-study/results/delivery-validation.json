@@ -6,6 +6,12 @@
   "local_links_checked": [
     "dashboard.css",
     "scl-theme.css",
+    "formulas/first-principles.txt",
+    "formulas/calculations.json",
+    "formulas/validation.json",
+    "source-provenance.json",
+    "../../motor-seat-study/FIRST-PRINCIPLES.txt",
+    "../../formal-model/AAThermo.lean",
     "source-provenance.json",
     "../../pass-by-study/source-input.json",
     "../../pass-by-study/scripts/screen.py",
@@ -172,7 +178,7 @@
     "dashboard-ui.js"
   ],
   "sha256": {
-    "index.html": "944fe21e568a1f9179151d818c9ba734b50383986823333b1c585429b0180da6",
+    "index.html": "64de0e4db47be7d4989e368e24b5d26d23d3e57241841232de41f1e143950bd4",
     "dashboard.css": "f30326a38557833c70c4ece9414e5c9b68b706106efee8bf6667dea6c54964f1",
     "viewer.js": "c82816227c1d781e631a2a00fd85b981bce6250a83a73aa40d2a81c3681a4a5f",
     "catalogue.js": "843a1b50114bf32473e8b97df05849dd0e0d28a1dc24793a10d35db7178a43e9",
@@ -185,12 +191,15 @@
     "nozzle-catalogue/catalogue.json": "99cb237d5a7d91cebeb1810ed144fd3a3813e9cd10219d1b2b6088d5001fb212",
     "nozzle-catalogue/legacy-ranges.json": "5c42408a22d62d7e4d457b60af4b863b13c380cccb688d2cbd031333f4492205",
     "components.js": "8718329b546a0773afd73dcd631a048b6858183f980cfc93b02b17ce8f375201",
-    "dashboard-ui.js": "5b5bdf93a0ac6deb67397f1655e19915722e992dcffb68bd59e1ba5de1b366ed",
-    "scl-theme.css": "ad59aeb4de7188428ff90f63ce426464dc283d4de4f37f3e1e2e69062806f49f",
+    "dashboard-ui.js": "0171b1b5f5f436078fbfc5afa8946ed155f28b895ebf01b9d6e7082d430a9391",
+    "scl-theme.css": "68a1bbfd9a9fc585b4ec38c246b756f49842511b7ed0f924d4813751d13ac201",
     "components/data.js": "341416a6d7e0e7e468ea13ad419fc7682336ff3b113bea219401f59dd2334514",
     "components/bom.json": "38b44d823e0f16363f885fb21e145ecb01c489f8e0cf4b6246679ade8f0f0a29",
     "components/bom.csv": "d750097b1dc42c148337378beb0eba5f31017d4743c322bc5fba3990bf321bcf",
-    "components/quotation-brief.txt": "d432cbe3ca043880255b9084d91dc59f6b1e7ceb97bd45c29d15dcc714192230"
+    "components/quotation-brief.txt": "d432cbe3ca043880255b9084d91dc59f6b1e7ceb97bd45c29d15dcc714192230",
+    "formulas/calculations.json": "ec075b186945a7fed0e3d6f9b8e941eced3c075e2b48c6989fcd639431af57fb",
+    "formulas/validation.json": "711fd1599c19bc6844b7ff4dfba2cf2877f5bb7372dbefd392bf20228aaf31be",
+    "formulas/first-principles.txt": "c31ba2787e490e99f534bbcd3f6fc50cb64ed79ab7fc8565d6fe6a2533e5c621"
   },
   "status": "passed",
   "scope": "Artifact integrity and links; physical and continuum accuracy not established"

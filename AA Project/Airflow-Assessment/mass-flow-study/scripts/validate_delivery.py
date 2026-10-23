@@ -28,7 +28,7 @@ def main():
         url=urlsplit(link)
         if url.scheme or not url.path:continue
         path=(OUT/unquote(url.path)).resolve();assert path.exists(),link;checked.append(link)
-    files=['index.html','dashboard.css','viewer.js','catalogue.js','data.js','comparison.csv','calculations.json','validation.json','source-provenance.json','timeline-validation.json','nozzle-catalogue/catalogue.json','nozzle-catalogue/legacy-ranges.json','components.js','dashboard-ui.js','scl-theme.css','components/data.js','components/bom.json','components/bom.csv','components/quotation-brief.txt']
+    files=['index.html','dashboard.css','viewer.js','catalogue.js','data.js','comparison.csv','calculations.json','validation.json','source-provenance.json','timeline-validation.json','nozzle-catalogue/catalogue.json','nozzle-catalogue/legacy-ranges.json','components.js','dashboard-ui.js','scl-theme.css','components/data.js','components/bom.json','components/bom.csv','components/quotation-brief.txt','formulas/calculations.json','formulas/validation.json','formulas/first-principles.txt']
     result=dict(cases=len(names),native_frames=len(names)*11,native_bundle_hashes_verified=len(names),verified_pngs=count,local_links_checked=checked,sha256={f:hashlib.sha256((OUT/f).read_bytes()).hexdigest() for f in files},status='passed',scope='Artifact integrity and links; physical and continuum accuracy not established')
     (OUT/'delivery-validation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
 if __name__=='__main__':main()
