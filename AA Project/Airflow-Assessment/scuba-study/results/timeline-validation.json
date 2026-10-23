@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "cases": 3,
+  "native_frames": 33,
+  "native_temperature_hashes_verified": 33,
+  "volume_checks": 66,
+  "new_cfd_runs": true,
+  "scope": "Each frame extracted from its native source-specific solver archive; fixed source boundaries, no post-shutoff decay"
+}

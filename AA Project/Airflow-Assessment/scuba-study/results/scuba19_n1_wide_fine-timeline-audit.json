@@ -1,0 +1,24 @@
+{
+  "case": "scuba19_n1_wide_fine",
+  "frames": 11,
+  "times_s": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "field_signature": "acd0d7a0906ebacfdd2d84273af2f4471e975141f6e516767f481928b1d17d3b",
+  "file_sha256": "5b9f701a946bdd038b553446abbcd1892f6934ccd36626028dc7321b8a541ee0",
+  "bytes": 1979002,
+  "native_temperature_hashes_verified": 11,
+  "mesh_hash_verified": true,
+  "volume_checks": 22,
+  "scope": "Native saved temperature fields at integer seconds 0\u201310. No temporal interpolation; spray ON only. Mesh volume checked against original native regional metrics."
+}

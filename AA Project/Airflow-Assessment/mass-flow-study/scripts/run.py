@@ -6,7 +6,7 @@ def run(case,ranks=2):
     state=dict(status='running',started=time.time(),image=IMAGE,mpi_ranks=ranks,mpi_binding='none')
     (case/'run-status.json').write_text(json.dumps(state,indent=2))
     base_decomp=case/'system/decomposeParDict';base_decomp.write_text(f'FoamFile {{ version 2.0; format ascii; class dictionary; object decomposeParDict; }}\nnumberOfSubdomains {ranks}; method scotch;\n')
-    mount=str(ROOT);work='/work/mass-flow-study/cfd/cases/'+case.name
+    mount=str(ROOT);work='/work/'+case.resolve().relative_to(ROOT.resolve()).as_posix()
     solver = f'decomposePar -force > log.decomposePar 2>&1\nmpirun --allow-run-as-root --bind-to none -np {ranks} buoyantPimpleFoam -parallel > log.solver 2>&1\nreconstructPar > log.reconstructPar 2>&1' if ranks > 1 else 'buoyantPimpleFoam > log.solver 2>&1'
     script=f'''source /usr/lib/openfoam/openfoam2506/etc/bashrc
 set -e

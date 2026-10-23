@@ -13,7 +13,7 @@ AMBIENT_C=30.
 IMAGE=base.IMAGE
 
 def spec(mass_g=77,count=4,design='wide',layout='side',h=.065,closure='auto',pitch=0):
-    assert mass_g in [2,27,52,77] and count in [1,2,4]
+    assert math.isfinite(mass_g) and 0<mass_g<=1000 and count in [1,2,4]
     assert design in ['base','wide','adaptive'] and layout in ['side','opposed','overhead']
     assert closure in ['auto','laminar','kEpsilon'] and .01<h<=.1
     width,height={'base':(.14,.08),'wide':(.28,.04)}.get(design,(.28,.04))

@@ -1,0 +1,9 @@
+{
+  "archive": "archives/scuba19_n1_wide_fine.zip",
+  "bytes": 76379607,
+  "sha256": "637ee6d0b50353f33299c36bf23b4deb01d84a40ac57cc701b9b9a6545737110",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into scuba-study/cfd/cases; it contains scuba19_n1_wide_fine/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

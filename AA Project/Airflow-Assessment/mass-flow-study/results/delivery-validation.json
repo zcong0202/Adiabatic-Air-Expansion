@@ -6,6 +6,7 @@
   "local_links_checked": [
     "dashboard.css",
     "scl-theme.css",
+    "../../scuba-study/results/index.html",
     "formulas/first-principles.txt",
     "formulas/calculations.json",
     "formulas/validation.json",
@@ -25,6 +26,7 @@
     "../README.md",
     "components/bom.csv",
     "components/quotation-brief.txt",
+    "../../scuba-study/results/index.html",
     "components/bom.json",
     "../cad/outlet-280x40-print-mm.stl",
     "../../pass-by-study/cad/hose-fit-coupon-OD100-mm.stl",
@@ -178,7 +180,7 @@
     "dashboard-ui.js"
   ],
   "sha256": {
-    "index.html": "64de0e4db47be7d4989e368e24b5d26d23d3e57241841232de41f1e143950bd4",
+    "index.html": "393b34b0f557e83d54f4bdc92afa7d96489bc5ac83c8404e3302e075cd40857b",
     "dashboard.css": "f30326a38557833c70c4ece9414e5c9b68b706106efee8bf6667dea6c54964f1",
     "viewer.js": "c82816227c1d781e631a2a00fd85b981bce6250a83a73aa40d2a81c3681a4a5f",
     "catalogue.js": "843a1b50114bf32473e8b97df05849dd0e0d28a1dc24793a10d35db7178a43e9",

@@ -15,7 +15,7 @@ def archive(name):
         assert z.testzip() is None
         for t,fields in result['field_sha256'].items():
             for fld,digest in fields.items():assert hashlib.sha256(z.read(f'{name}/{t}/{fld}')).hexdigest()==digest
-    temp.replace(dest);record=dict(archive=str(dest.relative_to(STUDY)),bytes=dest.stat().st_size,sha256=hashlib.sha256(dest.read_bytes()).hexdigest(),native_fields_checked=sum(map(len,result['field_sha256'].values())),processor_subdomains_excluded='Redundant; complete reconstructed native fields retained',restore=f'Unzip this archive into mass-flow-study/cfd/cases; it contains {name}/.',scope='Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched.')
+    temp.replace(dest);record=dict(archive=str(dest.relative_to(STUDY)),bytes=dest.stat().st_size,sha256=hashlib.sha256(dest.read_bytes()).hexdigest(),native_fields_checked=sum(map(len,result['field_sha256'].values())),processor_subdomains_excluded='Redundant; complete reconstructed native fields retained',restore=f'Unzip this archive into {STUDY.name}/cfd/cases; it contains {name}/.',scope='Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched.')
     info.write_text(json.dumps(record,indent=2));(STUDY/'results'/(name+'-archive.json')).write_text(json.dumps(record,indent=2))
     for p in list(case.iterdir()):
         if p.is_dir() and (p.name.startswith('processor') or (p.name.replace('.','').isdigit() and float(p.name)>0)):shutil.rmtree(p)

@@ -1,0 +1,378 @@
+{
+  "desktop": {
+    "status": "passed",
+    "checks": 44,
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "cases": 3,
+    "items": [
+      {
+        "name": "Nominal motor delivery",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide native identity",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide source temperature",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide range 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide range 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide range 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide whole 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide whole 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide whole 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide section 0",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide section 1",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide section 2",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide source-labelled scenario",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide archive link",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine native identity",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine source temperature",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine range 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine range 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine range 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine whole 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine whole 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine whole 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine section 0",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine section 1",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine section 2",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine source-labelled scenario",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine archive link",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm native identity",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm source temperature",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm range 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm range 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm range 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm whole 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm whole 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm whole 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm section 0",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm section 1",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm section 2",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm source-labelled scenario",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm archive link",
+        "pass": true
+      },
+      {
+        "name": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "Tank pressure distinction stated",
+        "pass": true
+      },
+      {
+        "name": "CFD temperature is conditional",
+        "pass": true
+      },
+      {
+        "name": "CAD link retained",
+        "pass": true
+      }
+    ],
+    "scope": "Saved frame identity, source, geometry and interface checks. No physical validation."
+  },
+  "mobile": {
+    "status": "passed",
+    "checks": 44,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "cases": 3,
+    "items": [
+      {
+        "name": "Nominal motor delivery",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide native identity",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide source temperature",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide range 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide range 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide range 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide whole 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide whole 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide whole 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide section 0",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide section 1",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide section 2",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide source-labelled scenario",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide archive link",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine native identity",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine source temperature",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine range 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine range 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine range 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine whole 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine whole 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine whole 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine section 0",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine section 1",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine section 2",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine source-labelled scenario",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_fine archive link",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm native identity",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm source temperature",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm range 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm range 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm range 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm whole 0s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm whole 5s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm whole 10s native mesh",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm section 0",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm section 1",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm section 2",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm source-labelled scenario",
+        "pass": true
+      },
+      {
+        "name": "scuba19_n1_wide_warm archive link",
+        "pass": true
+      },
+      {
+        "name": "No horizontal overflow",
+        "pass": true
+      },
+      {
+        "name": "Tank pressure distinction stated",
+        "pass": true
+      },
+      {
+        "name": "CFD temperature is conditional",
+        "pass": true
+      },
+      {
+        "name": "CAD link retained",
+        "pass": true
+      }
+    ],
+    "scope": "Saved frame identity, source, geometry and interface checks. No physical validation."
+  }
+}

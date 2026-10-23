@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": 10,
+  "items": [
+    "Positive usable inventory and adiabatic less than isothermal at same cutoff",
+    "Four motors consume inventory four times faster",
+    "30 C nozzle sensible budget agrees extracted shaft work minus path gain",
+    "40 C sensitivity warms nozzle 10 K times path retention",
+    "10 s pulse injects 194 g",
+    "Initial trajectory returns 200 bar",
+    "Fast blowdown lowers both pressure and temperature",
+    "Tank and motor pressure are incompatible without reduction",
+    "Nominal temperature source is within dry CFD range",
+    "Inventory scales linearly with vessel volume"
+  ],
+  "scope": "Numerical balances, EOS scenarios and arithmetic; not Lean or hardware validation"
+}

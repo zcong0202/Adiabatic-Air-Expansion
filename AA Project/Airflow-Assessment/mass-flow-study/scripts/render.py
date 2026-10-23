@@ -34,7 +34,7 @@ def render(name):
         ax.set(xlim=(-.8,.8),ylim=(-.2,.2) if cfg['layout']=='overhead' else (1,1.7),xlabel=s['axes'][0]+' (m)',ylabel=s['axes'][1]+' (m)',title=f"{s['distance_m']*100:g} cm · {s['description']}\narea ≥6 K drop: {s['area_ge6_m2']:.4f} m²\nbest sampled 5 cm mean: {s['best_sampled_5cm_mean_drop_k']:.2f} K drop",aspect='equal')
     fig.colorbar(im,ax=axs,label='Air temperature (°C)',shrink=.78)
     fig.suptitle(f"{name} · native 3D CFD sections at 10 s\n{cfg['total_g_s']:g} g/s total ÷ {cfg['outlets']} outlets = {cfg['per_outlet_g_s']:g} g/s each · {cfg['width_m']*1000:.1f} × {cfg['height_m']*1000:.1f} mm · {cfg['closure']}",fontsize=12)
-    fig.supxlabel('Still air · gravity −9.81 m/s² · source 0.96°C · ambient 30°C · no person · native cell containing each plane',fontsize=9)
+    fig.supxlabel(f"Still air · gravity −9.81 m/s² · source {cfg['source_c']:.2f}°C · ambient {cfg['ambient_c']:g}°C · no person · native cell containing each plane",fontsize=9)
     fig.savefig(out/(name+'-sections.png'),dpi=120);plt.close(fig)
     volume_figure(name,data,read_js(out/(name+'-volume.js')),False);volume_figure(name,data,read_js(out/(name+'-range-volume.js')),True);return name
 if __name__=='__main__':

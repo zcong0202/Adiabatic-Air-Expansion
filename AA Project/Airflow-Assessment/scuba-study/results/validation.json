@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "cases": 3,
+  "numerical_screens_pass": true,
+  "native_frames": 33,
+  "grid_pairs": [
+    {
+      "coarse": "scuba19_n1_wide",
+      "fine": "scuba19_n1_wide_fine",
+      "coarse_cells": 37955,
+      "fine_cells": 103572,
+      "coarse_volume_m3": 0.010679333333333336,
+      "fine_volume_m3": 0.009519409722222226,
+      "relative_change": -0.10861385958341122
+    }
+  ],
+  "scope": "Numerical integrity and two-grid sensitivity, not continuum accuracy or hardware validation",
+  "local_links_checked": [
+    "dashboard.css",
+    "scl-theme.css",
+    "../../mass-flow-study/results/index.html",
+    "calculations.json",
+    "calculation-validation.json",
+    "../README.md",
+    "../../mass-flow-study/cad/outlet-280x40-print-mm.stl",
+    "../../mass-flow-study/cad/outlet-280x40-metres.step",
+    "comparison.csv",
+    "calculations.json",
+    "calculation-validation.json",
+    "timeline-validation.json",
+    "../../mass-flow-study/cad/manifest.json",
+    "../README.md",
+    "comparison.csv",
+    "validation.json",
+    "scuba19_n1_wide_fine-cooling.gif",
+    "scuba19_n1_wide_fine-cooling.gif",
+    "data.js",
+    "viewer.js"
+  ]
+}

@@ -20,6 +20,7 @@ def compact_section(markup,kind):
         remaining=[n for n in list(root) if n not in [header,filters,table,calculator]]
         for n in list(root):root.remove(n)
         root.append(header);p=html.Element('p',{'class':'compact-context'});p.text='4 loaded motors · 77.6 g/s nominal · source and fittings unverified';root.append(p)
+        notice=html.fragment_fromstring('<p class="compact-context">Current logistics: scuba tank. <a href="../../scuba-study/results/index.html">Tank / one-motor calculations and CFD ↗</a>. Compressor list below is the earlier four-motor option.</p>');root.append(notice)
         root.extend([filters,table,disclosure('Sizing calculator',[calculator]),disclosure('System layout, assumptions and next steps',remaining)])
     elif kind=='nozzles':
         root.find('.//h2').text='Nozzles'

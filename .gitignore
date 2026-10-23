@@ -22,3 +22,7 @@ AA Project/Airflow-Assessment/pass-by-study/cfd/cases/
 AA Project/Airflow-Assessment/mass-flow-study/cfd/cases/
 AA Project/Airflow-Assessment/mass-flow-study/cfd/rejected/
 AA Project/Airflow-Assessment/mass-flow-study/archives/*.tmp
+
+# Scuba source study; reconstructed native fields retained in LFS archives.
+AA Project/Airflow-Assessment/scuba-study/cfd/cases/
+AA Project/Airflow-Assessment/scuba-study/archives/*.tmp

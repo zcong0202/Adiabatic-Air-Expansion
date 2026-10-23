@@ -1,0 +1,420 @@
+{
+  "status": "Conditional engineering screen; no hardware qualification",
+  "assumptions": {
+    "reference_tank_l": 12,
+    "fill_bar_g": 200,
+    "initial_tank_c": 30,
+    "operational_cutoff_bar_g": 20,
+    "cutoff_status": "Planning reserve/dropout assumption; verify regulator flow curve",
+    "motor_inlet_bar_g": 6.3,
+    "motor_max_working_bar_g": 7,
+    "motor_inlet_c_for_cfd": 30,
+    "motor_g_s": 19.400000000000002,
+    "motor_free_air_l_s": 16.2,
+    "motor_shaft_work_w": 840,
+    "motor_rpm": 1270,
+    "ambient_c": 30,
+    "cp_j_kg_k": 1006.0,
+    "cold_path_ua_w_k": 10.073720659304273,
+    "ua_status": "Conservative reuse of full prior four-motor-path UA for one motor; not measured",
+    "shaft_heat_return_w": 0,
+    "regulator_flow_verified": false,
+    "motor_cooling_verified": false,
+    "moisture_model": false
+  },
+  "nominal": {
+    "volume_l": 12,
+    "fill_bar_g": 200,
+    "cutoff_bar_g": 20,
+    "initial_real_mass_kg": 2.6775500430509345,
+    "usable_isothermal_kg": 2.3863724919994107,
+    "usable_adiabatic_kg": 2.0277288360804695,
+    "isothermal_one_motor_s": 123.00889134017581,
+    "adiabatic_one_motor_s": 104.52210495260152,
+    "isothermal_four_motor_s": 30.752222835043952,
+    "adiabatic_four_motor_s": 26.13052623815038,
+    "complete_10s_pulses_isothermal": 12,
+    "complete_10s_pulses_adiabatic": 10,
+    "adiabatic_final_tank_c": -118.69842132011814
+  },
+  "motor": {
+    "mass_g_s": 19.400000000000002,
+    "free_air_l_min": 972.0,
+    "shaft_load_w": 840,
+    "shaft_torque_nm": 6.316070182544509,
+    "mass_10s_g": 194.0,
+    "flow_77g_requires_motors": 3.9690721649484533,
+    "flow_77g_status": "One motor cannot reproduce 77 g/s at its rated loaded point",
+    "continuous_operation": false
+  },
+  "sources": [
+    {
+      "motor_inlet_c": 30,
+      "motor_exhaust_c": -13.040724723822017,
+      "nozzle_c": 4.313134164596022,
+      "sensible_w": 501.3151483900782,
+      "mass_g_s": 19.400000000000002,
+      "cold_path_ua_w_k": 10.073720659304273
+    },
+    {
+      "motor_inlet_c": 40,
+      "motor_exhaust_c": -3.0407247238220165,
+      "nozzle_c": 10.281171645430287,
+      "sensible_w": 384.84054169912434,
+      "mass_g_s": 19.400000000000002,
+      "cold_path_ua_w_k": 10.073720659304273
+    }
+  ],
+  "inventory": [
+    {
+      "volume_l": 10,
+      "fill_bar_g": 200,
+      "cutoff_bar_g": 10,
+      "initial_real_mass_kg": 2.2312917025424457,
+      "usable_isothermal_kg": 2.1043742541921766,
+      "usable_adiabatic_kg": 1.88823595139127,
+      "isothermal_one_motor_s": 108.47289970062765,
+      "adiabatic_one_motor_s": 97.33175007171495,
+      "isothermal_four_motor_s": 27.118224925156913,
+      "adiabatic_four_motor_s": 24.332937517928737,
+      "complete_10s_pulses_isothermal": 10,
+      "complete_10s_pulses_adiabatic": 9,
+      "adiabatic_final_tank_c": -145.89382816926297
+    },
+    {
+      "volume_l": 10,
+      "fill_bar_g": 200,
+      "cutoff_bar_g": 20,
+      "initial_real_mass_kg": 2.2312917025424457,
+      "usable_isothermal_kg": 1.9886437433328428,
+      "usable_adiabatic_kg": 1.6897740300670585,
+      "isothermal_one_motor_s": 102.50740945014653,
+      "adiabatic_one_motor_s": 87.10175412716796,
+      "isothermal_four_motor_s": 25.62685236253663,
+      "adiabatic_four_motor_s": 21.77543853179199,
+      "complete_10s_pulses_isothermal": 10,
+      "complete_10s_pulses_adiabatic": 8,
+      "adiabatic_final_tank_c": -118.69842132011814
+    },
+    {
+      "volume_l": 12,
+      "fill_bar_g": 200,
+      "cutoff_bar_g": 10,
+      "initial_real_mass_kg": 2.6775500430509345,
+      "usable_isothermal_kg": 2.5252491050306114,
+      "usable_adiabatic_kg": 2.2658831416695238,
+      "isothermal_one_motor_s": 130.16747964075316,
+      "adiabatic_one_motor_s": 116.79810008605793,
+      "isothermal_four_motor_s": 32.54186991018829,
+      "adiabatic_four_motor_s": 29.199525021514482,
+      "complete_10s_pulses_isothermal": 13,
+      "complete_10s_pulses_adiabatic": 11,
+      "adiabatic_final_tank_c": -145.89382816926297
+    },
+    {
+      "volume_l": 12,
+      "fill_bar_g": 200,
+      "cutoff_bar_g": 20,
+      "initial_real_mass_kg": 2.6775500430509345,
+      "usable_isothermal_kg": 2.3863724919994107,
+      "usable_adiabatic_kg": 2.0277288360804695,
+      "isothermal_one_motor_s": 123.00889134017581,
+      "adiabatic_one_motor_s": 104.52210495260152,
+      "isothermal_four_motor_s": 30.752222835043952,
+      "adiabatic_four_motor_s": 26.13052623815038,
+      "complete_10s_pulses_isothermal": 12,
+      "complete_10s_pulses_adiabatic": 10,
+      "adiabatic_final_tank_c": -118.69842132011814
+    },
+    {
+      "volume_l": 15,
+      "fill_bar_g": 200,
+      "cutoff_bar_g": 10,
+      "initial_real_mass_kg": 3.346937553813668,
+      "usable_isothermal_kg": 3.156561381288264,
+      "usable_adiabatic_kg": 2.8323539270869045,
+      "isothermal_one_motor_s": 162.70934955094145,
+      "adiabatic_one_motor_s": 145.9976251075724,
+      "isothermal_four_motor_s": 40.67733738773536,
+      "adiabatic_four_motor_s": 36.4994062768931,
+      "complete_10s_pulses_isothermal": 16,
+      "complete_10s_pulses_adiabatic": 14,
+      "adiabatic_final_tank_c": -145.89382816926297
+    },
+    {
+      "volume_l": 15,
+      "fill_bar_g": 200,
+      "cutoff_bar_g": 20,
+      "initial_real_mass_kg": 3.346937553813668,
+      "usable_isothermal_kg": 2.982965614999263,
+      "usable_adiabatic_kg": 2.534661045100587,
+      "isothermal_one_motor_s": 153.76111417521975,
+      "adiabatic_one_motor_s": 130.65263119075192,
+      "isothermal_four_motor_s": 38.440278543804936,
+      "adiabatic_four_motor_s": 32.66315779768798,
+      "complete_10s_pulses_isothermal": 15,
+      "complete_10s_pulses_adiabatic": 13,
+      "adiabatic_final_tank_c": -118.69842132011814
+    },
+    {
+      "volume_l": 12,
+      "fill_bar_g": 232,
+      "cutoff_bar_g": 10,
+      "initial_real_mass_kg": 3.041883733286223,
+      "usable_isothermal_kg": 2.8895827952659,
+      "usable_adiabatic_kg": 2.6025695523665413,
+      "isothermal_one_motor_s": 148.9475667662835,
+      "adiabatic_one_motor_s": 134.15306970961552,
+      "isothermal_four_motor_s": 37.236891691570875,
+      "adiabatic_four_motor_s": 33.53826742740388,
+      "complete_10s_pulses_isothermal": 14,
+      "complete_10s_pulses_adiabatic": 13,
+      "adiabatic_final_tank_c": -151.20981866271032
+    },
+    {
+      "volume_l": 12,
+      "fill_bar_g": 232,
+      "cutoff_bar_g": 20,
+      "initial_real_mass_kg": 3.041883733286223,
+      "usable_isothermal_kg": 2.7507061822346994,
+      "usable_adiabatic_kg": 2.347694734654687,
+      "isothermal_one_motor_s": 141.78897846570615,
+      "adiabatic_one_motor_s": 121.01519250797355,
+      "isothermal_four_motor_s": 35.44724461642654,
+      "adiabatic_four_motor_s": 30.253798126993388,
+      "complete_10s_pulses_isothermal": 14,
+      "complete_10s_pulses_adiabatic": 12,
+      "adiabatic_final_tank_c": -125.08188525850309
+    },
+    {
+      "volume_l": 12,
+      "fill_bar_g": 300,
+      "cutoff_bar_g": 10,
+      "initial_real_mass_kg": 3.7361217335548274,
+      "usable_isothermal_kg": 3.5838207955345043,
+      "usable_adiabatic_kg": 3.24243166561395,
+      "isothermal_one_motor_s": 184.73303069765484,
+      "adiabatic_one_motor_s": 167.13565286669845,
+      "isothermal_four_motor_s": 46.18325767441371,
+      "adiabatic_four_motor_s": 41.78391321667461,
+      "complete_10s_pulses_isothermal": 18,
+      "complete_10s_pulses_adiabatic": 16,
+      "adiabatic_final_tank_c": -159.31952589659502
+    },
+    {
+      "volume_l": 12,
+      "fill_bar_g": 300,
+      "cutoff_bar_g": 20,
+      "initial_real_mass_kg": 3.7361217335548274,
+      "usable_isothermal_kg": 3.4449441825033036,
+      "usable_adiabatic_kg": 2.954068479314449,
+      "isothermal_one_motor_s": 177.5744423970775,
+      "adiabatic_one_motor_s": 152.27157109868293,
+      "isothermal_four_motor_s": 44.39361059926937,
+      "adiabatic_four_motor_s": 38.06789277467073,
+      "complete_10s_pulses_isothermal": 17,
+      "complete_10s_pulses_adiabatic": 15,
+      "adiabatic_final_tank_c": -134.87680518659852
+    }
+  ],
+  "trajectory": [
+    {
+      "time_s": 0,
+      "mass_kg": 2.6775500430509345,
+      "isothermal_bar_g": 200.00000000000003,
+      "adiabatic_bar_g": 200.00000006711937,
+      "adiabatic_tank_c": 30.000000072344108
+    },
+    {
+      "time_s": 10,
+      "mass_kg": 2.4835500430509345,
+      "isothermal_bar_g": 183.7602954652014,
+      "adiabatic_bar_g": 173.56851972109294,
+      "adiabatic_tank_c": 17.85586483880752
+    },
+    {
+      "time_s": 30,
+      "mass_kg": 2.0955500430509346,
+      "isothermal_bar_g": 152.62679938544667,
+      "adiabatic_bar_g": 127.70427041102286,
+      "adiabatic_tank_c": -6.993819323913044
+    },
+    {
+      "time_s": 60,
+      "mass_kg": 1.5135500430509343,
+      "isothermal_bar_g": 108.418350367753,
+      "adiabatic_bar_g": 73.78927913729486,
+      "adiabatic_tank_c": -46.666520127677785
+    },
+    {
+      "time_s": 90,
+      "mass_kg": 0.9315500430509345,
+      "isothermal_bar_g": 65.98681583399619,
+      "adiabatic_bar_g": 34.48611869991979,
+      "adiabatic_tank_c": -92.21723178461471
+    },
+    {
+      "time_s": 100,
+      "mass_kg": 0.7375500430509345,
+      "isothermal_bar_g": 52.03517911608274,
+      "adiabatic_bar_g": 24.20597507342604,
+      "adiabatic_tank_c": -109.9651664124091
+    }
+  ],
+  "regulator_ideal_throttle": [
+    {
+      "tank_bar_g": 200,
+      "tank_c": 30,
+      "adiabatic_isenthalpic_outlet_c": -1.7614800510506257
+    },
+    {
+      "tank_bar_g": 100,
+      "tank_c": 30,
+      "adiabatic_isenthalpic_outlet_c": 11.894707880502153
+    },
+    {
+      "tank_bar_g": 50,
+      "tank_c": 30,
+      "adiabatic_isenthalpic_outlet_c": 21.02538247667826
+    },
+    {
+      "tank_bar_g": 20,
+      "tank_c": 30,
+      "adiabatic_isenthalpic_outlet_c": 27.09434115688589
+    },
+    {
+      "tank_bar_g": 10,
+      "tank_c": 30,
+      "adiabatic_isenthalpic_outlet_c": 29.206942410540478
+    }
+  ],
+  "regulator": {
+    "required_inlet_rating_bar_g": "At least cylinder maximum; use certified compatible tank-valve connection",
+    "target_motor_running_bar_g": 6.3,
+    "required_flow_free_air_l_min": 972,
+    "planning_flow_with_15pct_l_min": 1117.8,
+    "maximum_downstream_bar_g": 7,
+    "flow_curve_required_at_min_inlet_bar_g": 20,
+    "screen_cd": 0.7,
+    "ideal_choked_throat_mm": 2.6897053505105593,
+    "throat_status": "Screen only; not a regulator selection, assembly instruction or proven capacity"
+  },
+  "equations": {
+    "ideal_inventory": "M=p_abs V/(R T)",
+    "real_inventory": "M=rho(P,T) V",
+    "usable_inventory": "M_use=V [rho_initial-rho_at_cutoff]",
+    "runtime": "t=M_use/(N mdot_motor)",
+    "adiabatic_tank": "d(Mu)=h dM; rigid, well-mixed, adiabatic tank; s_remaining=s_initial",
+    "motor": "T_exhaust=T_in-Wshaft/(mdot cp), Qmotor=0",
+    "path": "T_nozzle=Ta+(T_exhaust-Ta) exp[-UA/(mdot cp)]",
+    "throttle": "h_out=h_in; real air, no wall heat transfer",
+    "pulse": "M_pulse=mdot t_pulse"
+  },
+  "references": [
+    {
+      "title": "Atlas Copco LZB46-RL-A025-11",
+      "url": "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249",
+      "checked": "2026-10-23"
+    },
+    {
+      "title": "CoolProp Air equation of state",
+      "url": "https://coolprop.org/fluid_properties/fluids/Air.html"
+    },
+    {
+      "title": "MIT control-volume conservation",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node19.html"
+    }
+  ],
+  "limits": [
+    "Tank size and fill are assumptions, not a measured cylinder",
+    "Adiabatic and isothermal cases are thermal scenarios, not guaranteed device bounds under every installation",
+    "Mass reference inherited from DOCX; manufacturer air-consumption reference conditions require confirmation",
+    "Motor 840 W needs an external sustained shaft load; free spinning does not give this cooling",
+    "Regulator droop/icing, tank wall heat, hoses and real-air throttling couple the inlet state; fixed CFD inlet is conditional",
+    "Manufacturer does not guarantee subzero exhaust or rated performance at every inlet density/temperature",
+    "Exhaust collection loss, cold hose and nozzle backpressure can lower power and flow",
+    "No direct tank-to-motor connection; no cold receiver initially; cold nozzle printed parts see only near-atmospheric exhaust"
+  ],
+  "motor_count_options": [
+    {
+      "motors": 1,
+      "total_g_s": 19.400000000000002,
+      "shaft_load_w": 840,
+      "free_air_l_min": 972,
+      "adiabatic_s": 104.52210495260152,
+      "isothermal_s": 123.00889134017581,
+      "complete_10s_pulses_adiabatic": 10,
+      "complete_10s_pulses_isothermal": 12,
+      "minimum_tank_l_for_10s_adiabatic": 1.1480825042168579,
+      "minimum_tank_l_for_10s_isothermal": 0.9755392369820256
+    },
+    {
+      "motors": 2,
+      "total_g_s": 38.800000000000004,
+      "shaft_load_w": 1680,
+      "free_air_l_min": 1944,
+      "adiabatic_s": 52.26105247630076,
+      "isothermal_s": 61.504445670087904,
+      "complete_10s_pulses_adiabatic": 5,
+      "complete_10s_pulses_isothermal": 6,
+      "minimum_tank_l_for_10s_adiabatic": 2.2961650084337157,
+      "minimum_tank_l_for_10s_isothermal": 1.9510784739640512
+    },
+    {
+      "motors": 3,
+      "total_g_s": 58.2,
+      "shaft_load_w": 2520,
+      "free_air_l_min": 2916,
+      "adiabatic_s": 34.840701650867175,
+      "isothermal_s": 41.0029637800586,
+      "complete_10s_pulses_adiabatic": 3,
+      "complete_10s_pulses_isothermal": 4,
+      "minimum_tank_l_for_10s_adiabatic": 3.444247512650574,
+      "minimum_tank_l_for_10s_isothermal": 2.926617710946077
+    },
+    {
+      "motors": 4,
+      "total_g_s": 77.60000000000001,
+      "shaft_load_w": 3360,
+      "free_air_l_min": 3888,
+      "adiabatic_s": 26.13052623815038,
+      "isothermal_s": 30.752222835043952,
+      "complete_10s_pulses_adiabatic": 2,
+      "complete_10s_pulses_isothermal": 3,
+      "minimum_tank_l_for_10s_adiabatic": 4.5923300168674315,
+      "minimum_tank_l_for_10s_isothermal": 3.9021569479281024
+    }
+  ],
+  "load_sensitivity": [
+    {
+      "shaft_load_w": 0,
+      "motor_inlet_c": 30,
+      "nozzle_c": 30.0,
+      "scope": "First-law sensitivity at fixed mass flow; not a motor speed/flow map"
+    },
+    {
+      "shaft_load_w": 420,
+      "motor_inlet_c": 30,
+      "nozzle_c": 17.15656708229801,
+      "scope": "First-law sensitivity at fixed mass flow; not a motor speed/flow map"
+    },
+    {
+      "shaft_load_w": 840,
+      "motor_inlet_c": 30,
+      "nozzle_c": 4.313134164596022,
+      "scope": "First-law sensitivity at fixed mass flow; not a motor speed/flow map"
+    }
+  ],
+  "source_mixing_limits": [
+    {
+      "motor_inlet_c": 30,
+      "nozzle_c": 4.313134164596022,
+      "maximum_warm_to_cold_ratio_at_6k": 3.2811443059006633
+    },
+    {
+      "motor_inlet_c": 40,
+      "nozzle_c": 10.281171645430287,
+      "maximum_warm_to_cold_ratio_at_6k": 2.2864713924282856
+    }
+  ]
+}
