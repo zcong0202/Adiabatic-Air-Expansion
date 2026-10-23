@@ -1,0 +1,1902 @@
+[
+  {
+    "glb": "cad/assembly-2668093be0da.glb",
+    "units": "metres",
+    "outlets": 2,
+    "layout": "side",
+    "prototype": "cad/outlet-280x40-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.35
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-88608a6c8c6b.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "overhead",
+    "prototype": "cad/outlet-280x40-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -0.08
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            2.305
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.08,
+          2.1
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            0.08
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            2.305
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          0.08,
+          2.1
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -0.08
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            2.305
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.08,
+          2.1
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            0.08
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            2.305
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          0.08,
+          2.1
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-5704cb3a417c.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "opposed",
+    "prototype": "cad/outlet-280x40-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.755
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.755
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-48dd9fdef5fe.glb",
+    "units": "metres",
+    "outlets": 1,
+    "layout": "side",
+    "prototype": "cad/outlet-280x40-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-2881cd4d8b3b.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-280x40-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-c09fde00b2f3.glb",
+    "units": "metres",
+    "outlets": 2,
+    "layout": "side",
+    "prototype": "cad/outlet-140x80-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.35
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-e77e1c24ddd6.glb",
+    "units": "metres",
+    "outlets": 1,
+    "layout": "side",
+    "prototype": "cad/outlet-46x23-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-c4d9fea1e8a5.glb",
+    "units": "metres",
+    "outlets": 2,
+    "layout": "side",
+    "prototype": "cad/outlet-118x59-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.35
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-2343b6981021.glb",
+    "units": "metres",
+    "outlets": 1,
+    "layout": "side",
+    "prototype": "cad/outlet-140x80-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-c1a5b9d0f313.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-140x80-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-d6d4a916165f.glb",
+    "units": "metres",
+    "outlets": 1,
+    "layout": "side",
+    "prototype": "cad/outlet-232x116-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-c46666794d03.glb",
+    "units": "metres",
+    "outlets": 2,
+    "layout": "side",
+    "prototype": "cad/outlet-200x100-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.35
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-287fa608f170.glb",
+    "units": "metres",
+    "outlets": 2,
+    "layout": "side",
+    "prototype": "cad/outlet-164x82-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.35
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-e3edfd491d71.glb",
+    "units": "metres",
+    "outlets": 1,
+    "layout": "side",
+    "prototype": "cad/outlet-282x141-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-465038c88d3f.glb",
+    "units": "metres",
+    "outlets": 2,
+    "layout": "side",
+    "prototype": "cad/outlet-32x16-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.35
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-9b50a7a6c9db.glb",
+    "units": "metres",
+    "outlets": 1,
+    "layout": "side",
+    "prototype": "cad/outlet-167x84-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.0,
+          -0.55,
+          1.35
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-3d2a64a9e281.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-141x71-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-bcda33e5b64c.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-84x42-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-5397ffda2ec9.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-23x11-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  },
+  {
+    "glb": "cad/assembly-ddacbe683f36.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-116x58-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  }
+]

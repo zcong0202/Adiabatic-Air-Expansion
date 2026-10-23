@@ -1,0 +1,2166 @@
+{
+  "case": "m27_n4_wide",
+  "inputs": {
+    "large_domain": false,
+    "freestream_tangent": true,
+    "pressure_boundary_revision": "Hydrostatic ambient pressure profile with prghPressure; exact hydrostatic initial p and p_rgh",
+    "case": "m27_n4_wide",
+    "variant": "outdoor-mass-sweep",
+    "cells": 40240,
+    "grid_max_h_m": 0.065,
+    "source_mass_kg_s": 0.027,
+    "source_c": 0.9592752761779835,
+    "ambient_c": 30.0,
+    "source_mean_speed_m_s": 0.4680049217591739,
+    "source_area_m2": 0.04480000000000005,
+    "patch_areas_m2": {
+      "xmin": 5.940000000000001,
+      "xmax": 5.940000000000001,
+      "ymin": 6.75,
+      "ymax": 6.75,
+      "top": 5.500000000000001,
+      "ground": 5.500000000000001,
+      "nozzleWalls": 0.1471999999999999,
+      "jet0": 0.011200000000000012,
+      "jet1": 0.011200000000000012,
+      "jet2": 0.011200000000000012,
+      "jet3": 0.011200000000000012
+    },
+    "wind_m_s": 0,
+    "wind_direction": "front",
+    "person_heat_w": 0,
+    "additional_panel_heat_w": 0,
+    "solver": "buoyantPimpleFoam",
+    "model": "Perfect-gas variable-density buoyant transient kEpsilon",
+    "geometry": [
+      {
+        "box": [
+          [
+            -0.34,
+            -0.06
+          ],
+          [
+            -0.59,
+            -0.55
+          ],
+          [
+            1.13,
+            1.17
+          ]
+        ],
+        "direction": 3,
+        "name": "jet0"
+      },
+      {
+        "box": [
+          [
+            0.06,
+            0.34
+          ],
+          [
+            -0.59,
+            -0.55
+          ],
+          [
+            1.13,
+            1.17
+          ]
+        ],
+        "direction": 3,
+        "name": "jet1"
+      },
+      {
+        "box": [
+          [
+            -0.34,
+            -0.06
+          ],
+          [
+            -0.59,
+            -0.55
+          ],
+          [
+            1.53,
+            1.57
+          ]
+        ],
+        "direction": 3,
+        "name": "jet2"
+      },
+      {
+        "box": [
+          [
+            0.06,
+            0.34
+          ],
+          [
+            -0.59,
+            -0.55
+          ],
+          [
+            1.53,
+            1.57
+          ]
+        ],
+        "direction": 3,
+        "name": "jet3"
+      }
+    ],
+    "source_thermal_status": "Fixed at previous CFD 0.959275 C. Changing mass flow does not predict the motor/vortex state.",
+    "scope": "Prescribed cold-air source; total flow split equally across outlets. No person, enclosure, motor internals or measured source qualification.",
+    "body_regions": {},
+    "limitations": [
+      "No internal CAD flow or commercial manifold coupling",
+      "No human heat transfer or wake",
+      "Cold-air volume may be disconnected",
+      "Laminar/URANS regime screen; outlet disturbances and transition are unknown",
+      "10 seconds ON only; no post-shutoff decay claim",
+      "Uniform prescribed boundary; valve startup and pipe cooldown absent"
+    ],
+    "total_g_s": 27.0,
+    "outlets": 4,
+    "per_outlet_g_s": 6.75,
+    "design": "wide",
+    "layout": "side",
+    "width_m": 0.28,
+    "height_m": 0.04,
+    "exit_speed_m_s": 0.4680082635008578,
+    "hydraulic_reynolds": 2343.75,
+    "closure": "kEpsilon",
+    "transition": true,
+    "h_m": 0.065,
+    "pitch_deg": 0,
+    "gravity_m_s2": [
+      0,
+      0,
+      -9.81
+    ],
+    "spray_s": 10,
+    "sampling_distances_m": [
+      0.2,
+      0.35,
+      0.5
+    ],
+    "domain_m": [
+      [
+        -1.25,
+        1.25
+      ],
+      [
+        -1.1,
+        1.1
+      ],
+      [
+        0,
+        2.7
+      ]
+    ]
+  },
+  "source_cooling_w": 788.8041649484536,
+  "source_mass_10s_kg": 0.27,
+  "history": [
+    {
+      "time_s": 0.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "6": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "6": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "6": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "6": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.0,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 0.0,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.0,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 0.0,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.0,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 0.0,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 30.0,
+      "max_speed_m_s": 0.0,
+      "cold_centroid_z_m": null
+    },
+    {
+      "time_s": 1.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.056971366666666697,
+            "mass_kg": 0.06865043485398842,
+            "source_mass_kg": 0.02430471366747714,
+            "deficit_j": 708.5440252349338
+          },
+          "6": {
+            "volume_m3": 0.03618066666666669,
+            "mass_kg": 0.04416888080049454,
+            "source_mass_kg": 0.021396351964557213,
+            "deficit_j": 624.1613960098339
+          },
+          "10": {
+            "volume_m3": 0.024108000000000025,
+            "mass_kg": 0.02972107910121436,
+            "source_mass_kg": 0.017287532725958715,
+            "deficit_j": 504.46397298492025
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "6": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.017046000000000013,
+            "mass_kg": 0.020530284563157326,
+            "source_mass_kg": 0.007152198015254279,
+            "deficit_j": 208.91428645955241
+          },
+          "6": {
+            "volume_m3": 0.012349333333333344,
+            "mass_kg": 0.014994827975004552,
+            "source_mass_kg": 0.006448020569566823,
+            "deficit_j": 188.31962833659708
+          },
+          "10": {
+            "volume_m3": 0.008092000000000005,
+            "mass_kg": 0.00989836366361789,
+            "source_mass_kg": 0.0049885150253473065,
+            "deficit_j": 145.6282541109927
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.007506000000000002,
+            "mass_kg": 0.009007991943102114,
+            "source_mass_kg": 0.0028053490721520417,
+            "deficit_j": 82.1563205174491
+          },
+          "6": {
+            "volume_m3": 0.005133333333333334,
+            "mass_kg": 0.00621322188735069,
+            "source_mass_kg": 0.0024683131152918062,
+            "deficit_j": 72.2504216531841
+          },
+          "10": {
+            "volume_m3": 0.003304000000000001,
+            "mass_kg": 0.004023453152968375,
+            "source_mass_kg": 0.0018482969038768338,
+            "deficit_j": 53.94341395641892
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.59009253527736,
+          "area_ge6_m2": 0.11480000000000007,
+          "area_ge2_m2": 0.14678000000000008,
+          "area_ge10_m2": 0.09912000000000004,
+          "peak_cell_drop_k": 18.350137099999984,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.030189544578398318,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 0.8617921000000024,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": -1.5614741985424575e-05,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 1.9299999962640868e-05,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 2.0926620000000185,
+      "max_speed_m_s": 0.47711725161549334,
+      "cold_centroid_z_m": 1.2961238003095898
+    },
+    {
+      "time_s": 2.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.15761250000000004,
+            "mass_kg": 0.18822979082647123,
+            "source_mass_kg": 0.04949103921275151,
+            "deficit_j": 1443.0058964398836
+          },
+          "6": {
+            "volume_m3": 0.08744866666666669,
+            "mass_kg": 0.10550469007130109,
+            "source_mass_kg": 0.038608276893524224,
+            "deficit_j": 1126.599315315615
+          },
+          "10": {
+            "volume_m3": 0.03913466666666668,
+            "mass_kg": 0.04772818674630108,
+            "source_mass_kg": 0.022624248724374497,
+            "deficit_j": 660.7444091629284
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.003168,
+            "mass_kg": 0.00371833693194321,
+            "source_mass_kg": 0.00031650375427720297,
+            "deficit_j": 9.172414189125583
+          },
+          "6": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.06755266666666668,
+            "mass_kg": 0.08053603145165737,
+            "source_mass_kg": 0.019773060682275266,
+            "deficit_j": 576.325814489753
+          },
+          "6": {
+            "volume_m3": 0.039326,
+            "mass_kg": 0.047272301073824796,
+            "source_mass_kg": 0.015563844746443959,
+            "deficit_j": 453.8736682464811
+          },
+          "10": {
+            "volume_m3": 0.016534,
+            "mass_kg": 0.020013613586404848,
+            "source_mass_kg": 0.00798707061308239,
+            "deficit_j": 233.13189971883816
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.04844016666666666,
+            "mass_kg": 0.057651761243762534,
+            "source_mass_kg": 0.013152208068434222,
+            "deficit_j": 383.2544376594426
+          },
+          "6": {
+            "volume_m3": 0.026627999999999992,
+            "mass_kg": 0.031951710634028505,
+            "source_mass_kg": 0.009947851863627418,
+            "deficit_j": 290.00522197932116
+          },
+          "10": {
+            "volume_m3": 0.008399999999999993,
+            "mass_kg": 0.010153184235196405,
+            "source_mass_kg": 0.0039063540869634,
+            "deficit_j": 113.99312254884853
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.6379775605452127,
+          "area_ge6_m2": 0.22456000000000004,
+          "area_ge2_m2": 0.37470000000000003,
+          "area_ge10_m2": 0.12263999999999999,
+          "peak_cell_drop_k": 12.687706300000002,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.4323547439586073,
+          "area_ge6_m2": 0.14391999999999996,
+          "area_ge2_m2": 0.22645999999999997,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.544313499999987,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.0010402530734886853,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 0.01785759999995662,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.7028468000000316,
+      "max_speed_m_s": 0.4875237722478543,
+      "cold_centroid_z_m": 1.2006093365532622
+    },
+    {
+      "time_s": 3.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.2555818000000001,
+            "mass_kg": 0.3046297586634528,
+            "source_mass_kg": 0.07388477605036695,
+            "deficit_j": 2155.064844839764
+          },
+          "6": {
+            "volume_m3": 0.133662,
+            "mass_kg": 0.16089033086873883,
+            "source_mass_kg": 0.05507936615397229,
+            "deficit_j": 1608.2406494438183
+          },
+          "10": {
+            "volume_m3": 0.04413266666666668,
+            "mass_kg": 0.05389273503756523,
+            "source_mass_kg": 0.026215725156978613,
+            "deficit_j": 765.9691219799702
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.018720000000000007,
+            "mass_kg": 0.022186342106629793,
+            "source_mass_kg": 0.004106682824957157,
+            "deficit_j": 119.52239963943202
+          },
+          "6": {
+            "volume_m3": 0.007872000000000006,
+            "mass_kg": 0.009389380512268437,
+            "source_mass_kg": 0.0023477643970200293,
+            "deficit_j": 68.46663445929437
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.08943466666666668,
+            "mass_kg": 0.10651998119851264,
+            "source_mass_kg": 0.025059500633218292,
+            "deficit_j": 731.2016264478232
+          },
+          "6": {
+            "volume_m3": 0.04961966666666667,
+            "mass_kg": 0.05958520609758829,
+            "source_mass_kg": 0.018964691305769332,
+            "deficit_j": 553.9676566871973
+          },
+          "10": {
+            "volume_m3": 0.013892666666666668,
+            "mass_kg": 0.01687510264199662,
+            "source_mass_kg": 0.007313263453552038,
+            "deficit_j": 213.74701719011398
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.06990666666666667,
+            "mass_kg": 0.08312716948873097,
+            "source_mass_kg": 0.018190172415917825,
+            "deficit_j": 530.5777650242724
+          },
+          "6": {
+            "volume_m3": 0.03762666666666667,
+            "mass_kg": 0.04507381521430253,
+            "source_mass_kg": 0.01323810075669997,
+            "deficit_j": 386.5846442359666
+          },
+          "10": {
+            "volume_m3": 0.006164666666666661,
+            "mass_kg": 0.007460280684697876,
+            "source_mass_kg": 0.002956686407437908,
+            "deficit_j": 86.36194318632687
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.8647390471571192,
+          "area_ge6_m2": 0.24975999999999998,
+          "area_ge2_m2": 0.3906800000000001,
+          "area_ge10_m2": 0.1467199999999999,
+          "peak_cell_drop_k": 13.420668999999975,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.714059016515009,
+          "area_ge6_m2": 0.16912000000000005,
+          "area_ge2_m2": 0.28524,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.522800700000005,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.06886288500206114,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 1.1645566999999915,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.5645635000000198,
+      "max_speed_m_s": 0.6083006005321544,
+      "cold_centroid_z_m": 1.01391994727298
+    },
+    {
+      "time_s": 4.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.3654199047619048,
+            "mass_kg": 0.43476204132272794,
+            "source_mass_kg": 0.09730513319624168,
+            "deficit_j": 2838.648603783981
+          },
+          "6": {
+            "volume_m3": 0.1845271666666667,
+            "mass_kg": 0.22149820439369805,
+            "source_mass_kg": 0.06949943945466952,
+            "deficit_j": 2029.8513277827465
+          },
+          "10": {
+            "volume_m3": 0.03158866666666668,
+            "mass_kg": 0.038697173043677285,
+            "source_mass_kg": 0.020043781042487444,
+            "deficit_j": 585.8606327141315
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.017321142857142854,
+            "mass_kg": 0.020446350933814725,
+            "source_mass_kg": 0.002935226302544763,
+            "deficit_j": 85.47837913131936
+          },
+          "6": {
+            "volume_m3": 0.002495999999999999,
+            "mass_kg": 0.002973287011739244,
+            "source_mass_kg": 0.0007030484356488958,
+            "deficit_j": 20.530373412568707
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.07971447619047618,
+            "mass_kg": 0.09496019081846498,
+            "source_mass_kg": 0.02250177430580188,
+            "deficit_j": 656.9579899625296
+          },
+          "6": {
+            "volume_m3": 0.041696,
+            "mass_kg": 0.0501364023242686,
+            "source_mass_kg": 0.016619223031221958,
+            "deficit_j": 485.7376776056915
+          },
+          "10": {
+            "volume_m3": 0.017108,
+            "mass_kg": 0.020741353300128166,
+            "source_mass_kg": 0.008595374202202063,
+            "deficit_j": 251.25875537235277
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.060726476190476185,
+            "mass_kg": 0.07222442157814075,
+            "source_mass_kg": 0.015928782496344614,
+            "deficit_j": 464.9917156832912
+          },
+          "6": {
+            "volume_m3": 0.03077599999999999,
+            "mass_kg": 0.03690703680908793,
+            "source_mass_kg": 0.011235353333575353,
+            "deficit_j": 328.3517345260715
+          },
+          "10": {
+            "volume_m3": 0.008917999999999994,
+            "mass_kg": 0.01077935367804665,
+            "source_mass_kg": 0.004140456950055682,
+            "deficit_j": 121.02594792418984
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.797911628662922,
+          "area_ge6_m2": 0.24080000000000001,
+          "area_ge2_m2": 0.36216,
+          "area_ge10_m2": 0.17247999999999997,
+          "peak_cell_drop_k": 13.225377299999991,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.375927437565157,
+          "area_ge6_m2": 0.12992000000000004,
+          "area_ge2_m2": 0.24023999999999998,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 8.5131978,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.25851333042066155,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.05823999999999996,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 5.274080799999979,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.7004296000000068,
+      "max_speed_m_s": 0.7567201367085957,
+      "cold_centroid_z_m": 0.7964633790071071
+    },
+    {
+      "time_s": 5.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.5102535357142859,
+            "mass_kg": 0.6056942929697433,
+            "source_mass_kg": 0.12122215699916554,
+            "deficit_j": 3536.711389933678
+          },
+          "6": {
+            "volume_m3": 0.192020380952381,
+            "mass_kg": 0.23022143274361898,
+            "source_mass_kg": 0.06944431190010456,
+            "deficit_j": 2028.610407605413
+          },
+          "10": {
+            "volume_m3": 0.040996666666666674,
+            "mass_kg": 0.05007290985320005,
+            "source_mass_kg": 0.02445227119409621,
+            "deficit_j": 714.6743160601081
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.010345142857142858,
+            "mass_kg": 0.012222542582257058,
+            "source_mass_kg": 0.0018645356003070765,
+            "deficit_j": 54.367587362261176
+          },
+          "6": {
+            "volume_m3": 0.002495999999999999,
+            "mass_kg": 0.002972971884561617,
+            "source_mass_kg": 0.0006995119372753141,
+            "deficit_j": 20.43411678069038
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.0736424761904762,
+            "mass_kg": 0.08789494892252392,
+            "source_mass_kg": 0.022536835413880227,
+            "deficit_j": 658.2071847332729
+          },
+          "6": {
+            "volume_m3": 0.043917333333333336,
+            "mass_kg": 0.052865670193249004,
+            "source_mass_kg": 0.01811169410487383,
+            "deficit_j": 529.3940673879302
+          },
+          "10": {
+            "volume_m3": 0.01974,
+            "mass_kg": 0.023938486003930125,
+            "source_mass_kg": 0.009982689564656018,
+            "deficit_j": 291.77305942086446
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.056727333333333324,
+            "mass_kg": 0.06758963732068207,
+            "source_mass_kg": 0.016142415887181825,
+            "deficit_j": 471.46523907993685
+          },
+          "6": {
+            "volume_m3": 0.03288533333333333,
+            "mass_kg": 0.039490747238454874,
+            "source_mass_kg": 0.012569311923567372,
+            "deficit_j": 367.38403548266257
+          },
+          "10": {
+            "volume_m3": 0.011367999999999993,
+            "mass_kg": 0.013745423399891231,
+            "source_mass_kg": 0.005327449702496081,
+            "deficit_j": 155.694402320219
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.8138320875004217,
+          "area_ge6_m2": 0.24528,
+          "area_ge2_m2": 0.3644,
+          "area_ge10_m2": 0.17247999999999997,
+          "peak_cell_drop_k": 13.359428699999967,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.5418952294678336,
+          "area_ge6_m2": 0.15008000000000005,
+          "area_ge2_m2": 0.25768,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.406597399999953,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.06992381657080966,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.007799999999999994,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 2.7652296999999635,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.6891171999999983,
+      "max_speed_m_s": 0.7366589905798164,
+      "cold_centroid_z_m": 0.679939916353277
+    },
+    {
+      "time_s": 6.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.6465414047619048,
+            "mass_kg": 0.76621668740883,
+            "source_mass_kg": 0.1403587147142466,
+            "deficit_j": 4094.771817467392
+          },
+          "6": {
+            "volume_m3": 0.14841352380952383,
+            "mass_kg": 0.17844434251057248,
+            "source_mass_kg": 0.05897117658861293,
+            "deficit_j": 1723.1981757496792
+          },
+          "10": {
+            "volume_m3": 0.04429600000000001,
+            "mass_kg": 0.05406243342784418,
+            "source_mass_kg": 0.02599863739009386,
+            "deficit_j": 759.8591747389803
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.011355428571428572,
+            "mass_kg": 0.013450569386501632,
+            "source_mass_kg": 0.0024041591607237528,
+            "deficit_j": 70.17005727228403
+          },
+          "6": {
+            "volume_m3": 0.004736000000000001,
+            "mass_kg": 0.005649267066558831,
+            "source_mass_kg": 0.0014131492478044322,
+            "deficit_j": 41.29267483442054
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.07378476190476192,
+            "mass_kg": 0.08810712566039272,
+            "source_mass_kg": 0.0230252849440947,
+            "deficit_j": 672.393806688921
+          },
+          "6": {
+            "volume_m3": 0.046843333333333334,
+            "mass_kg": 0.0563741500381506,
+            "source_mass_kg": 0.019176274121606513,
+            "deficit_j": 560.4751260038483
+          },
+          "10": {
+            "volume_m3": 0.020015333333333333,
+            "mass_kg": 0.024275490302283688,
+            "source_mass_kg": 0.01015436068920404,
+            "deficit_j": 296.7872245023523
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.0573247619047619,
+            "mass_kg": 0.06834291595567882,
+            "source_mass_kg": 0.01674656760035139,
+            "deficit_j": 489.06954650834996
+          },
+          "6": {
+            "volume_m3": 0.03586733333333333,
+            "mass_kg": 0.04306540151685051,
+            "source_mass_kg": 0.013643919516234075,
+            "deficit_j": 398.7629986600133
+          },
+          "10": {
+            "volume_m3": 0.011461333333333327,
+            "mass_kg": 0.013862035956029143,
+            "source_mass_kg": 0.005410543115346677,
+            "deficit_j": 158.11660214168344
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.773347264646851,
+          "area_ge6_m2": 0.24303999999999998,
+          "area_ge2_m2": 0.35960000000000003,
+          "area_ge10_m2": 0.18703999999999998,
+          "peak_cell_drop_k": 13.378944599999954,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.6042697122874785,
+          "area_ge6_m2": 0.15680000000000005,
+          "area_ge2_m2": 0.25048,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.55347119999999,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.030003042231970953,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 0.6943651999999929,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.678355300000021,
+      "max_speed_m_s": 0.7948495375178718,
+      "cold_centroid_z_m": 0.8892755802580201
+    },
+    {
+      "time_s": 7.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.7623165833333334,
+            "mass_kg": 0.9025154932734163,
+            "source_mass_kg": 0.1559233747141743,
+            "deficit_j": 4549.507821260381
+          },
+          "6": {
+            "volume_m3": 0.17163580952380955,
+            "mass_kg": 0.20625845086366715,
+            "source_mass_kg": 0.06704370412929253,
+            "deficit_j": 1959.5607220154102
+          },
+          "10": {
+            "volume_m3": 0.04468733333333334,
+            "mass_kg": 0.05453545060963754,
+            "source_mass_kg": 0.02618211341384431,
+            "deficit_j": 765.163474378509
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.011581714285714289,
+            "mass_kg": 0.013727634662058598,
+            "source_mass_kg": 0.002545892822149054,
+            "deficit_j": 74.3222033221158
+          },
+          "6": {
+            "volume_m3": 0.004864000000000001,
+            "mass_kg": 0.005804797166017166,
+            "source_mass_kg": 0.0014810143308078183,
+            "deficit_j": 43.2773320697585
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.07431238095238096,
+            "mass_kg": 0.08873503815976959,
+            "source_mass_kg": 0.023170181409040723,
+            "deficit_j": 676.5542875028973
+          },
+          "6": {
+            "volume_m3": 0.04697133333333334,
+            "mass_kg": 0.0565378893678138,
+            "source_mass_kg": 0.01933061390739363,
+            "deficit_j": 564.9632603012217
+          },
+          "10": {
+            "volume_m3": 0.02019733333333333,
+            "mass_kg": 0.024497409130184517,
+            "source_mass_kg": 0.010259746827177018,
+            "deficit_j": 299.8443532037793
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.057788380952380945,
+            "mass_kg": 0.06889571249490341,
+            "source_mass_kg": 0.016884255379434512,
+            "deficit_j": 493.04697235408753
+          },
+          "6": {
+            "volume_m3": 0.03599533333333333,
+            "mass_kg": 0.043227034953436154,
+            "source_mass_kg": 0.013776061082338757,
+            "deficit_j": 402.6089248778044
+          },
+          "10": {
+            "volume_m3": 0.011461333333333327,
+            "mass_kg": 0.013863435118556384,
+            "source_mass_kg": 0.005425650408584695,
+            "deficit_j": 158.54327545923434
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.768557426234948,
+          "area_ge6_m2": 0.24303999999999998,
+          "area_ge2_m2": 0.35496,
+          "area_ge10_m2": 0.18703999999999998,
+          "peak_cell_drop_k": 13.373802399999988,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.590620948222448,
+          "area_ge6_m2": 0.15680000000000005,
+          "area_ge2_m2": 0.25048,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.5793094,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.03842201005756828,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 1.2311694999999645,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.6616816000000085,
+      "max_speed_m_s": 0.7798877025353063,
+      "cold_centroid_z_m": 0.8028733187918906
+    },
+    {
+      "time_s": 8.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.8485600357142858,
+            "mass_kg": 1.00385137460349,
+            "source_mass_kg": 0.16544896529599376,
+            "deficit_j": 4828.672694570549
+          },
+          "6": {
+            "volume_m3": 0.18387333333333333,
+            "mass_kg": 0.22097041914173282,
+            "source_mass_kg": 0.07185302339942229,
+            "deficit_j": 2100.6902506307533
+          },
+          "10": {
+            "volume_m3": 0.04388733333333335,
+            "mass_kg": 0.05358261290629034,
+            "source_mass_kg": 0.025958455495306624,
+            "deficit_j": 758.6376709714621
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.011581714285714287,
+            "mass_kg": 0.013728008259793395,
+            "source_mass_kg": 0.0025503337237245587,
+            "deficit_j": 74.43611667507872
+          },
+          "6": {
+            "volume_m3": 0.004864000000000001,
+            "mass_kg": 0.005805092559376944,
+            "source_mass_kg": 0.0014842455326456673,
+            "deficit_j": 43.36740796079224
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.07347238095238097,
+            "mass_kg": 0.08775943830736824,
+            "source_mass_kg": 0.02319545070483093,
+            "deficit_j": 677.2705179136923
+          },
+          "6": {
+            "volume_m3": 0.046579333333333334,
+            "mass_kg": 0.05608206661826185,
+            "source_mass_kg": 0.019337470269070525,
+            "deficit_j": 565.132886907817
+          },
+          "10": {
+            "volume_m3": 0.02019733333333333,
+            "mass_kg": 0.024504337816486005,
+            "source_mass_kg": 0.010332063686194002,
+            "deficit_j": 301.9573862732791
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.056948380952380945,
+            "mass_kg": 0.0679189537526585,
+            "source_mass_kg": 0.01689730479420975,
+            "deficit_j": 493.4097729823219
+          },
+          "6": {
+            "volume_m3": 0.03577133333333333,
+            "mass_kg": 0.04296863469136972,
+            "source_mass_kg": 0.013801795357900985,
+            "deficit_j": 403.3370923196616
+          },
+          "10": {
+            "volume_m3": 0.011461333333333327,
+            "mass_kg": 0.013867367220876696,
+            "source_mass_kg": 0.0054667405880541795,
+            "deficit_j": 159.74244340216785
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.7738793748109885,
+          "area_ge6_m2": 0.23631999999999997,
+          "area_ge2_m2": 0.35496,
+          "area_ge10_m2": 0.18703999999999998,
+          "peak_cell_drop_k": 13.380354499999953,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.600534315161137,
+          "area_ge6_m2": 0.15680000000000005,
+          "area_ge2_m2": 0.24327999999999997,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.630962499999953,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.039783928434649354,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 1.3072419999999738,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.6441493000000378,
+      "max_speed_m_s": 0.8034184651791181,
+      "cold_centroid_z_m": 0.752649791071195
+    },
+    {
+      "time_s": 9.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.932974285714286,
+            "mass_kg": 1.102757874524336,
+            "source_mass_kg": 0.1718501609020609,
+            "deficit_j": 5016.677147738355
+          },
+          "6": {
+            "volume_m3": 0.19137714285714288,
+            "mass_kg": 0.22992827696195298,
+            "source_mass_kg": 0.07415731236447556,
+            "deficit_j": 2167.97972499741
+          },
+          "10": {
+            "volume_m3": 0.04506266666666668,
+            "mass_kg": 0.05500223661048548,
+            "source_mass_kg": 0.026492714524410526,
+            "deficit_j": 774.2450915221104
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.011709714285714289,
+            "mass_kg": 0.013883522821632925,
+            "source_mass_kg": 0.002618386108596277,
+            "deficit_j": 76.41594675815747
+          },
+          "6": {
+            "volume_m3": 0.004864000000000001,
+            "mass_kg": 0.005806613259118186,
+            "source_mass_kg": 0.0015001672113087786,
+            "deficit_j": 43.83114244585899
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.07360038095238096,
+            "mass_kg": 0.0879172916331035,
+            "source_mass_kg": 0.023288816941776518,
+            "deficit_j": 679.9634090600227
+          },
+          "6": {
+            "volume_m3": 0.04657933333333334,
+            "mass_kg": 0.056088758000383855,
+            "source_mass_kg": 0.019407606033747755,
+            "deficit_j": 567.1733856272294
+          },
+          "10": {
+            "volume_m3": 0.020015333333333333,
+            "mass_kg": 0.024289803831371182,
+            "source_mass_kg": 0.010304264369178761,
+            "deficit_j": 301.15230552095517
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.05707638095238095,
+            "mass_kg": 0.06807754696332667,
+            "source_mass_kg": 0.01699821539485794,
+            "deficit_j": 496.32834485014337
+          },
+          "6": {
+            "volume_m3": 0.03577133333333333,
+            "mass_kg": 0.0429745191556379,
+            "source_mass_kg": 0.013863478204023432,
+            "deficit_j": 405.1315332919015
+          },
+          "10": {
+            "volume_m3": 0.011461333333333327,
+            "mass_kg": 0.01387009682178406,
+            "source_mass_kg": 0.005495075020593363,
+            "deficit_j": 160.5748555000389
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.7696253822767636,
+          "area_ge6_m2": 0.23631999999999997,
+          "area_ge2_m2": 0.35496,
+          "area_ge10_m2": 0.18703999999999998,
+          "peak_cell_drop_k": 13.398997299999962,
+          "cell_containing_plane_index": 12
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.6110268977206637,
+          "area_ge6_m2": 0.15680000000000005,
+          "area_ge2_m2": 0.24327999999999997,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.631505299999958,
+          "cell_containing_plane_index": 14
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.041923136617685645,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 1.4497233999999821,
+          "cell_containing_plane_index": 17
+        }
+      ],
+      "min_c": 1.6339720000000284,
+      "max_speed_m_s": 0.8099246018747464,
+      "cold_centroid_z_m": 0.7294824097218391
+    },
+    {
+      "time_s": 10.0,
+      "regions": {
+        "domain": {
+          "2": {
+            "volume_m3": 0.9623450952380954,
+            "mass_kg": 1.1371301871348947,
+            "source_mass_kg": 0.17361268171119337,
+            "deficit_j": 5069.456201473837
+          },
+          "6": {
+            "volume_m3": 0.1922861904761905,
+            "mass_kg": 0.23104187970583295,
+            "source_mass_kg": 0.07472484056322953,
+            "deficit_j": 2184.779815893315
+          },
+          "10": {
+            "volume_m3": 0.04506266666666668,
+            "mass_kg": 0.05500519477402565,
+            "source_mass_kg": 0.026523716726854628,
+            "deficit_j": 775.1472683505446
+          }
+        },
+        "walking_corridor": {
+          "2": {
+            "volume_m3": 0.011264000000000003,
+            "mass_kg": 0.013363810030247624,
+            "source_mass_kg": 0.0026098305870164203,
+            "deficit_j": 76.17558868175882
+          },
+          "6": {
+            "volume_m3": 0.004864000000000001,
+            "mass_kg": 0.005807322198352461,
+            "source_mass_kg": 0.0015075584613485913,
+            "deficit_j": 44.04733429263449
+          },
+          "10": {
+            "volume_m3": 0.0,
+            "mass_kg": 0.0,
+            "source_mass_kg": 0.0,
+            "deficit_j": 0.0
+          }
+        },
+        "upper_body_band": {
+          "2": {
+            "volume_m3": 0.07354666666666668,
+            "mass_kg": 0.08785954068961818,
+            "source_mass_kg": 0.023339195203230044,
+            "deficit_j": 681.4283954855186
+          },
+          "6": {
+            "volume_m3": 0.046579333333333334,
+            "mass_kg": 0.05609333241023598,
+            "source_mass_kg": 0.0194550756905187,
+            "deficit_j": 568.5683873634491
+          },
+          "10": {
+            "volume_m3": 0.020015333333333333,
+            "mass_kg": 0.0242920512857535,
+            "source_mass_kg": 0.010327739513162433,
+            "deficit_j": 301.8377002174314
+          }
+        },
+        "range20to50": {
+          "2": {
+            "volume_m3": 0.05702266666666666,
+            "mass_kg": 0.06801944517376471,
+            "source_mass_kg": 0.017044915281316703,
+            "deficit_j": 497.68634058272175
+          },
+          "6": {
+            "volume_m3": 0.03577133333333333,
+            "mass_kg": 0.04297812739904493,
+            "source_mass_kg": 0.013901014787556577,
+            "deficit_j": 406.23188813961343
+          },
+          "10": {
+            "volume_m3": 0.011461333333333327,
+            "mass_kg": 0.01387123869327278,
+            "source_mass_kg": 0.005506982374371359,
+            "deficit_j": 160.92308331613563
+          }
+        }
+      },
+      "sections": [
+        {
+          "distance_m": 0.2,
+          "normal_axis": "y",
+          "coordinate_m": -0.35000000000000003,
+          "description": "y=-0.350 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 2.7703447093121807,
+          "area_ge6_m2": 0.23631999999999997,
+          "area_ge2_m2": 0.35496,
+          "area_ge10_m2": 0.18703999999999998,
+          "peak_cell_drop_k": 13.418402999999955,
+          "cell_containing_plane_index": 12,
+          "best_sampled_5cm_mean_drop_k": 13.418402999999929,
+          "best_sampled_5cm_mean_c": 16.581597000000073,
+          "best_sampled_5cm_center_m": [
+            -0.14499999999999946,
+            1.025
+          ],
+          "patch_side_m": 0.05,
+          "patch_center_step_m": 0.01,
+          "patch_scope": "Best among sampled patch centres inside the section bounds at 10 s. Exact cell/patch area overlap; not a body or a continuous-position optimum."
+        },
+        {
+          "distance_m": 0.35,
+          "normal_axis": "y",
+          "coordinate_m": -0.20000000000000007,
+          "description": "y=-0.200 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 1.6150728010708086,
+          "area_ge6_m2": 0.15680000000000005,
+          "area_ge2_m2": 0.24999999999999994,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 9.63807989999998,
+          "cell_containing_plane_index": 14,
+          "best_sampled_5cm_mean_drop_k": 9.626967527999964,
+          "best_sampled_5cm_mean_c": 20.373032472000034,
+          "best_sampled_5cm_center_m": [
+            -0.1949999999999995,
+            1.025
+          ],
+          "patch_side_m": 0.05,
+          "patch_center_step_m": 0.01,
+          "patch_scope": "Best among sampled patch centres inside the section bounds at 10 s. Exact cell/patch area overlap; not a body or a continuous-position optimum."
+        },
+        {
+          "distance_m": 0.5,
+          "normal_axis": "y",
+          "coordinate_m": -0.050000000000000044,
+          "description": "y=-0.050 m",
+          "axes": [
+            "x",
+            "z"
+          ],
+          "area_m2": 1.12,
+          "mean_drop_k": 0.04312735967497901,
+          "area_ge6_m2": 0.0,
+          "area_ge2_m2": 0.0,
+          "area_ge10_m2": 0.0,
+          "peak_cell_drop_k": 1.5118216999999845,
+          "cell_containing_plane_index": 17,
+          "best_sampled_5cm_mean_drop_k": 1.5077582519999844,
+          "best_sampled_5cm_mean_c": 28.492241748000016,
+          "best_sampled_5cm_center_m": [
+            -0.1949999999999995,
+            1.025
+          ],
+          "patch_side_m": 0.05,
+          "patch_center_step_m": 0.01,
+          "patch_scope": "Best among sampled patch centres inside the section bounds at 10 s. Exact cell/patch area overlap; not a body or a continuous-position optimum."
+        }
+      ],
+      "min_c": 1.6284272999999985,
+      "max_speed_m_s": 0.8054390092542243,
+      "cold_centroid_z_m": 0.724822746223276
+    }
+  ],
+  "final": {
+    "time_s": 10.0,
+    "regions": {
+      "domain": {
+        "2": {
+          "volume_m3": 0.9623450952380954,
+          "mass_kg": 1.1371301871348947,
+          "source_mass_kg": 0.17361268171119337,
+          "deficit_j": 5069.456201473837
+        },
+        "6": {
+          "volume_m3": 0.1922861904761905,
+          "mass_kg": 0.23104187970583295,
+          "source_mass_kg": 0.07472484056322953,
+          "deficit_j": 2184.779815893315
+        },
+        "10": {
+          "volume_m3": 0.04506266666666668,
+          "mass_kg": 0.05500519477402565,
+          "source_mass_kg": 0.026523716726854628,
+          "deficit_j": 775.1472683505446
+        }
+      },
+      "walking_corridor": {
+        "2": {
+          "volume_m3": 0.011264000000000003,
+          "mass_kg": 0.013363810030247624,
+          "source_mass_kg": 0.0026098305870164203,
+          "deficit_j": 76.17558868175882
+        },
+        "6": {
+          "volume_m3": 0.004864000000000001,
+          "mass_kg": 0.005807322198352461,
+          "source_mass_kg": 0.0015075584613485913,
+          "deficit_j": 44.04733429263449
+        },
+        "10": {
+          "volume_m3": 0.0,
+          "mass_kg": 0.0,
+          "source_mass_kg": 0.0,
+          "deficit_j": 0.0
+        }
+      },
+      "upper_body_band": {
+        "2": {
+          "volume_m3": 0.07354666666666668,
+          "mass_kg": 0.08785954068961818,
+          "source_mass_kg": 0.023339195203230044,
+          "deficit_j": 681.4283954855186
+        },
+        "6": {
+          "volume_m3": 0.046579333333333334,
+          "mass_kg": 0.05609333241023598,
+          "source_mass_kg": 0.0194550756905187,
+          "deficit_j": 568.5683873634491
+        },
+        "10": {
+          "volume_m3": 0.020015333333333333,
+          "mass_kg": 0.0242920512857535,
+          "source_mass_kg": 0.010327739513162433,
+          "deficit_j": 301.8377002174314
+        }
+      },
+      "range20to50": {
+        "2": {
+          "volume_m3": 0.05702266666666666,
+          "mass_kg": 0.06801944517376471,
+          "source_mass_kg": 0.017044915281316703,
+          "deficit_j": 497.68634058272175
+        },
+        "6": {
+          "volume_m3": 0.03577133333333333,
+          "mass_kg": 0.04297812739904493,
+          "source_mass_kg": 0.013901014787556577,
+          "deficit_j": 406.23188813961343
+        },
+        "10": {
+          "volume_m3": 0.011461333333333327,
+          "mass_kg": 0.01387123869327278,
+          "source_mass_kg": 0.005506982374371359,
+          "deficit_j": 160.92308331613563
+        }
+      }
+    },
+    "sections": [
+      {
+        "distance_m": 0.2,
+        "normal_axis": "y",
+        "coordinate_m": -0.35000000000000003,
+        "description": "y=-0.350 m",
+        "axes": [
+          "x",
+          "z"
+        ],
+        "area_m2": 1.12,
+        "mean_drop_k": 2.7703447093121807,
+        "area_ge6_m2": 0.23631999999999997,
+        "area_ge2_m2": 0.35496,
+        "area_ge10_m2": 0.18703999999999998,
+        "peak_cell_drop_k": 13.418402999999955,
+        "cell_containing_plane_index": 12,
+        "best_sampled_5cm_mean_drop_k": 13.418402999999929,
+        "best_sampled_5cm_mean_c": 16.581597000000073,
+        "best_sampled_5cm_center_m": [
+          -0.14499999999999946,
+          1.025
+        ],
+        "patch_side_m": 0.05,
+        "patch_center_step_m": 0.01,
+        "patch_scope": "Best among sampled patch centres inside the section bounds at 10 s. Exact cell/patch area overlap; not a body or a continuous-position optimum."
+      },
+      {
+        "distance_m": 0.35,
+        "normal_axis": "y",
+        "coordinate_m": -0.20000000000000007,
+        "description": "y=-0.200 m",
+        "axes": [
+          "x",
+          "z"
+        ],
+        "area_m2": 1.12,
+        "mean_drop_k": 1.6150728010708086,
+        "area_ge6_m2": 0.15680000000000005,
+        "area_ge2_m2": 0.24999999999999994,
+        "area_ge10_m2": 0.0,
+        "peak_cell_drop_k": 9.63807989999998,
+        "cell_containing_plane_index": 14,
+        "best_sampled_5cm_mean_drop_k": 9.626967527999964,
+        "best_sampled_5cm_mean_c": 20.373032472000034,
+        "best_sampled_5cm_center_m": [
+          -0.1949999999999995,
+          1.025
+        ],
+        "patch_side_m": 0.05,
+        "patch_center_step_m": 0.01,
+        "patch_scope": "Best among sampled patch centres inside the section bounds at 10 s. Exact cell/patch area overlap; not a body or a continuous-position optimum."
+      },
+      {
+        "distance_m": 0.5,
+        "normal_axis": "y",
+        "coordinate_m": -0.050000000000000044,
+        "description": "y=-0.050 m",
+        "axes": [
+          "x",
+          "z"
+        ],
+        "area_m2": 1.12,
+        "mean_drop_k": 0.04312735967497901,
+        "area_ge6_m2": 0.0,
+        "area_ge2_m2": 0.0,
+        "area_ge10_m2": 0.0,
+        "peak_cell_drop_k": 1.5118216999999845,
+        "cell_containing_plane_index": 17,
+        "best_sampled_5cm_mean_drop_k": 1.5077582519999844,
+        "best_sampled_5cm_mean_c": 28.492241748000016,
+        "best_sampled_5cm_center_m": [
+          -0.1949999999999995,
+          1.025
+        ],
+        "patch_side_m": 0.05,
+        "patch_center_step_m": 0.01,
+        "patch_scope": "Best among sampled patch centres inside the section bounds at 10 s. Exact cell/patch area overlap; not a body or a continuous-position optimum."
+      }
+    ],
+    "min_c": 1.6284272999999985,
+    "max_speed_m_s": 0.8054390092542243,
+    "cold_centroid_z_m": 0.724822746223276
+  },
+  "field_sha256": {
+    "0": {
+      "T": "181dab490c15e1e840dbd03ece7f3534ac054dcb2010767f0c9b57d9834c1163",
+      "p": "ee0a50b82850477ca1cc23a0c4840428a13955ccca9b63541ce69f7451065141",
+      "U": "4d69be56d72598457d45c353f23f1fc553d0fc7b8076296f0ea0c25c88d32955",
+      "origin": "099245e5fdc35d7cef87cf37ecfe9de15d6e45a04a61675fe313875105761679"
+    },
+    "1": {
+      "T": "2e148807eeaa5c61cae9734e396e6a6b321eb4524a986ec311506ce6c92b5208",
+      "p": "1c10242a30733354de265d01b2c2d709f485265e7d9827117ae71a0962f2f38e",
+      "U": "424c5be27550129662a97e45c2cff55a7a57139135a6c69cb5e950cc5c14a795",
+      "origin": "7624e7477dc8ded11d76d1994441be69b06b65687b0e270094ca6199eb1ec864"
+    },
+    "2": {
+      "T": "a845c9b61a8589949d24b7548a95f4d03674a93b2834fe5ece94b07ba5a41e85",
+      "p": "1edb499acc8b84ae9b1f217a4691fed1ac4e729a242c2c920cabb6a8d44dd7dd",
+      "U": "0f9cb5d7f1776d1d1d5eaaf4d24c991911d6c7953a07c19569b581aab2f3a412",
+      "origin": "0da45f730abdc81563c8c8fb4f435ae179b8083429b2bdd12c46626f2691ad7b"
+    },
+    "3": {
+      "T": "143a0d8e9966af820fb4ff2b8fc34a886e8d1e5e07d6d62f05406193aa1e153a",
+      "p": "c9dc539c6a998b59ccb6b22e43724fe5aa9c00063895b10251a9e0e29b2ef56c",
+      "U": "56dfd4f5f0bd4e75780922855940471d6602d6f9d67cd487716fedb6b22d87a7",
+      "origin": "bb9500e11ee068c827a465a96759e5a7bc075fbafb245f344d4c35fcc4fea438"
+    },
+    "4": {
+      "T": "ea21c241a4621803bcea90902154e96c9585e332ae30d2e668a552a07132c7bf",
+      "p": "079bda68d051540836fb33c4e720e42f5300011dcf59a78ddbd275d1365fed6f",
+      "U": "6a4e4206ae9ba03890b5fcf836e55aca11bcca1bc83a08b4d3491cc4c78aebfe",
+      "origin": "56865876bc6cf0f1814a1eb0ff4836ec151d113e043a89e8b45a97c018c73f1a"
+    },
+    "5": {
+      "T": "e14bce5dcd7155f3d77f2bbe3268c00505e7285a5c5dc276fc1e8eb1fab06209",
+      "p": "22caa17851081106d69e6604269620a2ca86ea3d624e68dedd7018d1270dcc06",
+      "U": "57c9651cb021b94477deb1033f6b5d98a4e3212ea2dbcd7f4ead2f9fe61c0f0f",
+      "origin": "6932113a33348ef62e1fe43a9ac7f084c3bf6bdcfc46852116845ac8d30a0c48"
+    },
+    "6": {
+      "T": "5243272df5971a48135962310852212cf68245e485fe4f5d66f40ac353fe8e6f",
+      "p": "339333a7e07e529ac3613ccec60f3283de20c3db057dfc9adbb6e524c6173279",
+      "U": "5050c461451bc594e762fd04d0591a31b0bf7de7ccccc6b4eaf85a0988672db4",
+      "origin": "4df63681058a378ceea419b5ffbfd8fbbd5613ddb62f0a6bc04dc652bf666f85"
+    },
+    "7": {
+      "T": "4f145495da0b16f9d899ee624c67aa485a2d9233cee45fac272cf566eb2bb30f",
+      "p": "d4bbf7dca03aeb4aa2f7a153e0cb2c0dca94dce8d55aae704f53721fa9d064e1",
+      "U": "981d36f3de8bf62f550056c6cd33c48638a6c8a11dd677d45a7207d290362dd4",
+      "origin": "1811bad82bce2f2db337353860292c48ff76472ab67feba8871b61a0b9a4631c"
+    },
+    "8": {
+      "T": "23507047e2f15ca25c4c31197c44c8539a4d44ac9e9fd9646af89bbba4f15548",
+      "p": "e892ed9162e3c38d835f9b5a390f23839bc1e90ec06c429e5a7915b505f709d0",
+      "U": "0e2d52b1e668f7b5284cabedb4d584d727b74821c608fada7965412a6d5a80ba",
+      "origin": "984584862bbed2127c2b8c1ed2e0706478f3a4b2500cae3d6080472b2f9850e8"
+    },
+    "9": {
+      "T": "a528bb30f499f5b5d9544b5eaa7cb3d9b0a88220ae48f294d5b6202e75814260",
+      "p": "a8d2d083e224bc3933c9533adfd099ccaffa1648382e6c9b67f633cbb5d4fef2",
+      "U": "f97ff6b209ad3766ff0089f85e9e4cc5d8f37d1832df0b1c7b84db5bde085f2f",
+      "origin": "179aedcf23a4fbb4d76094c3c1dd4b8d30a935cb2e6584630b6f8c4b091101d8"
+    },
+    "10": {
+      "T": "d4d9e45b2d9e80d752324667b9975653c68b932fc23d3f16efffb90d9b2f0444",
+      "p": "7769948e692bf1976666aa6333257bc3851c84e731ae5b09285c73bd8674e221",
+      "U": "a80c3459c8ad150368d0ff8a4b8117c9a5d267004c800bd08318f4503ab15185",
+      "origin": "ed9edb27df4b53362f957600cf80e42acab5712d2a17810eed2de6aba6aa62e1"
+    }
+  },
+  "mesh_sha256": "1d0ad6431c21d47d7d7fb00c718503eb92ccc01d1fe7dd6d7d6260084323b24d",
+  "gates": {
+    "mesh_ok": true,
+    "solver_complete": true,
+    "finite_fields": true,
+    "temperature_bounds": true,
+    "origin_bounds": true,
+    "source_mass": true,
+    "mass_closure": true,
+    "origin_closure": true,
+    "energy_closure": true,
+    "source_mass_relative_0_5pct": true
+  },
+  "conservation": {
+    "mass_relative_error": -0.00034420535238392726,
+    "origin_relative_error": -0.00311635127986448,
+    "energy_relative_error": 0.00024121595943617726
+  },
+  "numerical_screens_pass": true,
+  "voxel_mesh_volume_check_m3": 0.19228619047619047,
+  "scope": "Prescribed cold-air source; total flow split equally across outlets. No person, enclosure, motor internals or measured source qualification.",
+  "range_region": {
+    "boxes_m": [
+      [
+        [
+          -0.8,
+          0.8
+        ],
+        [
+          -0.35,
+          -0.05
+        ],
+        [
+          1,
+          1.7
+        ]
+      ]
+    ],
+    "fluid_volume_m3": 0.33599999999999997,
+    "scope": "20\u201350 cm downstream. Side: upper-body-height slab; opposed: union of both slabs; overhead: horizontal-target slab. Sample volumes differ by layout; not equivalent body coverage."
+  },
+  "range_voxel_volume_check_m3": 0.03577133333333333,
+  "range_analysis_revision": "native-band-v1",
+  "cad_assembly": {
+    "glb": "cad/assembly-2881cd4d8b3b.glb",
+    "units": "metres",
+    "outlets": 4,
+    "layout": "side",
+    "prototype": "cad/outlet-280x40-print-mm.stl",
+    "placements": [
+      {
+        "name": "jet0",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet1",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.15
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.15
+        ]
+      },
+      {
+        "name": "jet2",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          -0.2,
+          -0.55,
+          1.55
+        ]
+      },
+      {
+        "name": "jet3",
+        "transform_m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.755
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "outlet_center_m": [
+          0.2,
+          -0.55,
+          1.55
+        ]
+      }
+    ],
+    "scope": "Prototype bodies placed at CFD exit faces. The external CFD uses short blocks, not these full bodies. No manifold, mount, clamps or fitted stock interfaces are included."
+  }
+}

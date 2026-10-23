@@ -259,7 +259,7 @@
     "panel/dynamics.js": "193c3687fa9c527a0f22db5c137e5f6610b6e075a4aadb555a3323f2ff1d2a0d",
     "panel/TRANSIENT.md": "cf3eca57458cb3cfbd8d4d3630420c979e91016783b532e0e3de2a2be161ab7b",
     "tests/dynamics.test.js": "07d2e11e00b4108d64166ee4f95f34f962a64d9ecbdf42ce168a5078070df88d",
-    "index.html": "f760afde90e0a92f4b7ee3d1d2e54145d2c75361fb9f56bef285a03e915a0d38",
+    "index.html": "af2d69e663af68ac6b5f47fbbcc32f38f832eaedd20f5ec494c8f64588b59e61",
     "engineering.html": "0666647e87031857731c1cd4847a205926725198fe8068acfc6b3b5371fae9ca",
     "panel/view-links.js": "06eac5f8abed6659b47c1841312f02f6cfe54dd76de0f1b213bed739a42ad880",
     "studio/app.js": "a37e61f53e49c7ddba11b10609ea32f76c6b7a38f4c4a2d589c81cc98265f403",
@@ -317,7 +317,7 @@
     "energy_residual_j": 0,
     "scope": "Precharged isolated cold tank, ideal gas, explicit valve flow cap, direct orifice outlets. No downstream hose or regulator thermal inertia. Charging is not established by the stock motor model."
   },
-  "numerical_test_generated_utc": "2026-10-22T16:04:31.648Z",
+  "numerical_test_generated_utc": "2026-10-23T00:44:17.237Z",
   "browser_interaction_checks": {
     "passed": 26,
     "failed": 0,

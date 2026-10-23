@@ -1,0 +1,9 @@
+{
+  "archive": "archives/m02_n2_adaptive_fine.zip",
+  "bytes": 245179078,
+  "sha256": "558aae2477d2ce23e5f1fa3d1b58cf0d67a36c48349fe5b70e4108ed26f66ac4",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into mass-flow-study/cfd/cases; it contains m02_n2_adaptive_fine/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

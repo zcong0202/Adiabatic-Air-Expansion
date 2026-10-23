@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "selected": [
+    {
+      "name": "m02_n2_adaptive_fine",
+      "mass_g": 2,
+      "count": 2,
+      "design": "adaptive",
+      "layout": "side",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 4,
+      "phase": "grid-refinement",
+      "parent": "m02_n2_adaptive",
+      "actual_mpi_ranks": 4
+    },
+    {
+      "name": "m27_n4_wide_fine",
+      "mass_g": 27,
+      "count": 4,
+      "design": "wide",
+      "layout": "side",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "grid-refinement",
+      "parent": "m27_n4_wide",
+      "actual_mpi_ranks": 4
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine",
+      "mass_g": 52,
+      "count": 4,
+      "design": "wide",
+      "layout": "opposed",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "grid-refinement",
+      "parent": "m52_n4_wide_opposed",
+      "actual_mpi_ranks": 1
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine",
+      "mass_g": 77,
+      "count": 4,
+      "design": "wide",
+      "layout": "opposed",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "grid-refinement",
+      "parent": "m77_n4_wide_opposed",
+      "actual_mpi_ranks": 2
+    }
+  ],
+  "total_cases": 55,
+  "failed": [],
+  "audit_handoff_repaired": true
+}

@@ -1,0 +1,16 @@
+from pathlib import Path
+import json
+from build import STUDY,ROOT
+out=STUDY/'results';status=json.loads((out/'campaign-status.json').read_text());summary=json.loads((out/'summary.json').read_text());overview=ROOT.parent/'project-overview.html';html=overview.read_text()
+rows=[]
+for d in (summary.get('selected_refined_results') or summary['best_results']):
+ c=d['inputs'];v=d['final']['regions'].get('range20to50',d['final']['regions']['walking_corridor'])['6'];rows.append(f"<tr><td>{c['total_g_s']:g} g/s</td><td>{d['case']}</td><td>{c['outlets']} × {c['per_outlet_g_s']:g} g/s</td><td>{v['volume_m3']:.4f} m³ / {v['mass_kg']*1000:.1f} g</td></tr>")
+section='''<!-- mass-flow-sweep-start -->
+<section id="mass-flow-sweep"><div class="eyebrow">23 Oct 2026 · Actual new 3D CFD · Fixed source flow sweep</div><h2>2–77 g/s: nozzle area, flow split and cooled air volume</h2><p>Still air, gravity, 0.959°C fixed nozzle source, 30°C ambient and a 10-second spray. Total flows: 2, 27, 52, 77 g/s. One, two and four outlets; equal total source across each configuration. Sample sections at 20, 35, 50 cm. No seat or human body.</p><p><a href="Airflow-Assessment/mass-flow-study/results/index.html"><strong>Open 2D sections and interactive 3D cold-air volumes →</strong></a> · <a href="Airflow-Assessment/mass-flow-study/results/comparison.csv">Result CSV</a> · <a href="Airflow-Assessment/mass-flow-study/cad/manifest.json">CAD dimensions and checks</a> · <a href="Airflow-Assessment/mass-flow-study/README.md">Method and assumptions</a></p><p>PROGRESS</p><div class="scroll"><table><thead><tr><th>Total flow</th><th>Selected candidate (fine when available)</th><th>Split</th><th>20–50 cm band air ≥6°C below ambient at 10 s</th></tr></thead><tbody>ROWS</tbody></table></div><p class="sub">Ranking applies only to the tested numerical designs and defined range bands. New source mass flow is prescribed, not a validated motor/vortex operating point. CAD shares exit dimensions; internal loft flow and stock manifold balance are not resolved. Whole-domain cold volume can include a layer near the ground. No post-shutoff decay or comfort result.</p><p>Next: check source backpressure, internal nozzle flow, wind and physical delivery. Grid/model sensitivity remains a limit on design ranking. Required minimum cooled volume remains open.</p></section>
+<!-- mass-flow-sweep-end -->'''
+section=section.replace('PROGRESS',f"Progress: {summary['completed']} audited cases available; campaign {len(status['completed'])}/{status['total']}; failed cases {len(status['failed'])}. Calculation, external CFD and verified CAD remain separate evidence levels.").replace('ROWS',''.join(rows))
+start='<!-- mass-flow-sweep-start -->';end='<!-- mass-flow-sweep-end -->'
+if start in html:html=html[:html.index(start)]+section+html[html.index(end)+len(end):]
+else:html=html.replace('<!-- computation-panel-start -->',section+'\n\n<!-- computation-panel-start -->',1)
+if 'href="#mass-flow-sweep"' not in html:html=html.replace('<nav aria-label="Sections">','<nav aria-label="Sections"><a href="#mass-flow-sweep">Flow sweep CFD</a>',1)
+html=html.replace('Updated 22 Oct 2026','Updated 23 Oct 2026');overview.write_text(html)

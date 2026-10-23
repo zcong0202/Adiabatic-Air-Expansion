@@ -1,0 +1,2681 @@
+{
+  "status": "passed",
+  "passed": 667,
+  "failed": 0,
+  "cases": 55,
+  "regions": [
+    "range",
+    "whole"
+  ],
+  "checks": [
+    {
+      "name": "55 audited native CFD cases",
+      "pass": true
+    },
+    {
+      "name": "Flow 2 filters cases",
+      "pass": true
+    },
+    {
+      "name": "Flow 27 filters cases",
+      "pass": true
+    },
+    {
+      "name": "Flow 52 filters cases",
+      "pass": true
+    },
+    {
+      "name": "Flow 77 filters cases",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range native sections match m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range geometry belongs to pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range volume equals native field pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range nozzle count pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range finite mesh pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range no GLB link for empty mesh pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "range native sections match pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n1_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n2_adaptive_fine",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n2_adaptive_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n4_wide_RAS",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m02_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_base_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide_fine",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide_opposed_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m27_n4_wide_overhead_laminar",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m52_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n1_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n1_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n1_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n2_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n2_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n2_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n4_adaptive",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n4_base",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n4_wide_opposed",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n4_wide_opposed_fine",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match m77_n4_wide_overhead",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match pilot_m02_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole geometry belongs to pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole volume equals native field pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole nozzle count pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole finite mesh pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole no GLB link for empty mesh pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "whole native sections match pilot_m77_n4_wide",
+      "pass": true
+    },
+    {
+      "name": "3D zoom redraws actual geometry",
+      "pass": true
+    },
+    {
+      "name": "No horizontal document overflow",
+      "pass": true
+    }
+  ],
+  "scope": "Browser data identity, filtering, geometry, links and zoom. Physical accuracy and pointer drag not established."
+}

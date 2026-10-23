@@ -1,0 +1,122 @@
+{"case": "m02_n4_wide_RAS", "elapsed_s": 220.10696005821228, "pass_": true, "gates": {"mesh_ok": true, "solver_complete": true, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true, "source_mass_relative_0_5pct": true}, "conservation": {"mass_relative_error": 0.00037662330159426863, "origin_relative_error": 0.02573636633108143, "energy_relative_error": -0.020347806586813334}}
+{
+  "time_s": 10.0,
+  "regions": {
+    "domain": {
+      "2": {
+        "volume_m3": 0.056611333333333354,
+        "mass_kg": 0.06668036378139139,
+        "source_mass_kg": 0.008000510387975977,
+        "deficit_j": 234.26500101482497
+      },
+      "6": {
+        "volume_m3": 0.0020906666666666695,
+        "mass_kg": 0.0024882278227903285,
+        "source_mass_kg": 0.0005669400714246243,
+        "deficit_j": 16.553595608353547
+      },
+      "10": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      }
+    },
+    "walking_corridor": {
+      "2": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      },
+      "6": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      },
+      "10": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      }
+    },
+    "upper_body_band": {
+      "2": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      },
+      "6": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      },
+      "10": {
+        "volume_m3": 0.0,
+        "mass_kg": 0.0,
+        "source_mass_kg": 0.0,
+        "deficit_j": 0.0
+      }
+    }
+  },
+  "sections": [
+    {
+      "distance_m": 0.2,
+      "normal_axis": "y",
+      "coordinate_m": -0.35000000000000003,
+      "description": "y=-0.350 m",
+      "axes": [
+        "x",
+        "z"
+      ],
+      "area_m2": 1.12,
+      "mean_drop_k": 0.0011348071340549425,
+      "area_ge6_m2": 0.0,
+      "area_ge2_m2": 0.0,
+      "area_ge10_m2": 0.0,
+      "peak_cell_drop_k": 0.019578999999964708,
+      "cell_containing_plane_index": 12
+    },
+    {
+      "distance_m": 0.35,
+      "normal_axis": "y",
+      "coordinate_m": -0.20000000000000007,
+      "description": "y=-0.200 m",
+      "axes": [
+        "x",
+        "z"
+      ],
+      "area_m2": 1.12,
+      "mean_drop_k": 4.454900057330872e-05,
+      "area_ge6_m2": 0.0,
+      "area_ge2_m2": 0.0,
+      "area_ge10_m2": 0.0,
+      "peak_cell_drop_k": 0.00038359999996373517,
+      "cell_containing_plane_index": 14
+    },
+    {
+      "distance_m": 0.5,
+      "normal_axis": "y",
+      "coordinate_m": -0.050000000000000044,
+      "description": "y=-0.050 m",
+      "axes": [
+        "x",
+        "z"
+      ],
+      "area_m2": 1.12,
+      "mean_drop_k": 4.851256530251704e-05,
+      "area_ge6_m2": 0.0,
+      "area_ge2_m2": 0.0,
+      "area_ge10_m2": 0.0,
+      "peak_cell_drop_k": 0.00023419999996576735,
+      "cell_containing_plane_index": 17
+    }
+  ],
+  "min_c": 22.345314700000017,
+  "max_speed_m_s": 0.4097095092695292,
+  "cold_centroid_z_m": 1.4676291117866849
+}

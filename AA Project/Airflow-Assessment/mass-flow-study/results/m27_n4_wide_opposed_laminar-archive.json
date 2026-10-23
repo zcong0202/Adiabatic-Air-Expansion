@@ -1,0 +1,9 @@
+{
+  "archive": "archives/m27_n4_wide_opposed_laminar.zip",
+  "bytes": 22038505,
+  "sha256": "8511cd3d363116447498a52a7cf1a7b601cbd4fbffdcc92e03f5caa5fa91fe2b",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into mass-flow-study/cfd/cases; it contains m27_n4_wide_opposed_laminar/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

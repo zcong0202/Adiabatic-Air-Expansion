@@ -1,0 +1,9 @@
+{
+  "archive": "archives/m02_n1_adaptive_laminar.zip",
+  "bytes": 21099682,
+  "sha256": "ae23316e9ef0ff7057f14a3e868ccc2159d4d0acc6de86ef11c87a35f4484147",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into mass-flow-study/cfd/cases; it contains m02_n1_adaptive_laminar/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

@@ -1,0 +1,9 @@
+{
+  "archive": "archives/pilot_m02_n4_wide.zip",
+  "bytes": 21403900,
+  "sha256": "44efc687c243207523ad77c174dc3addaba049675736b710abd3734dfe5c38de",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into mass-flow-study/cfd/cases; it contains pilot_m02_n4_wide/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

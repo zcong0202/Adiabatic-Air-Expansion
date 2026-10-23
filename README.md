@@ -6,6 +6,8 @@ Open **[the full computation panel](engineering.html)** for all source/network i
 
 Open **[the project overview](AA%20Project/project-overview.html)** for the full research record: design documents, Lean proofs, CFD, CAD and decisions.
 
+Open **[the new 2–77 g/s CFD sweep](AA%20Project/Airflow-Assessment/mass-flow-study/results/index.html)** for native 2D sections, rotatable 3D cold-air volumes, 1/2/4-nozzle comparisons, mesh/model checks, CAD and source budgets. This is a separate prescribed-source study. It does not rescale the panel’s earlier CFD.
+
 ## Use
 
 Open `index.html` directly, or run `npm start` and visit `http://localhost:8080`. No build step. No runtime dependencies or external fonts.

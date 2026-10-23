@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/Adiabatic-Air-Expansion/AA Project/Airflow-Assessment/mass-flow-study/scripts/run.py", line 33, in <module>
+    if __name__=='__main__':run(STUDY/'cfd/cases'/sys.argv[1],int(sys.argv[2]) if len(sys.argv)>2 else 2)
+                            ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/Adiabatic-Air-Expansion/AA Project/Airflow-Assessment/mass-flow-study/scripts/run.py", line 20, in run
+    with (case/'log.container').open('w') as out:subprocess.run(command,check=True,stdout=out,stderr=subprocess.STDOUT)
+                                                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--cpus', '1', '--memory', '1500m', '--name', 'aa-flow-m77-n4-wide-opposed-fine', '--entrypoint', '/bin/bash', '-v', '/Users/egedoganay/Desktop/Ege Doganay SCL/Adiabatic-Air-Expansion/AA Project/Airflow-Assessment:/work', '-w', '/work/mass-flow-study/cfd/cases/m77_n4_wide_opposed_fine', 'microfluidica/openfoam:2506@sha256:9ab54b92553d58a2e21adaf4ef98a8d0c118a09a1b388bd95480720ed7809b37', '-c', "source /usr/lib/openfoam/openfoam2506/etc/bashrc\nset -e\ncheckMesh -allGeometry -allTopology > log.checkMesh 2>&1\ngrep -q 'Mesh OK.' log.checkMesh\ndecomposePar -force > log.decomposePar 2>&1\nmpirun --allow-run-as-root --bind-to none -np 1 buoyantPimpleFoam -parallel > log.solver 2>&1\nreconstructPar > log.reconstructPar 2>&1\n"]' returned non-zero exit status 134.

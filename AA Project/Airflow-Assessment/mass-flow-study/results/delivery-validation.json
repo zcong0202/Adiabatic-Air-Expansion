@@ -1,0 +1,25 @@
+{
+  "cases": 55,
+  "verified_pngs": 165,
+  "local_links_checked": [
+    "../../../project-overview.html#mass-flow-sweep",
+    "../../../../index.html",
+    "comparison.csv",
+    "calculations.json",
+    "../cad/manifest.json",
+    "../README.md",
+    "validation.json",
+    "data.js",
+    "viewer.js"
+  ],
+  "sha256": {
+    "index.html": "5f171cc80ce65358d25c9def146e6e991333aaec15ddd0bf12bd8d987dff6ac1",
+    "viewer.js": "e01450dfbd124c0c96b40b6ccba37cd3b13d69a9d2a8b034e8b76fc127731aa8",
+    "data.js": "c5ae8e2e9512cf9b15f1773abe43f33a976f8db4e97e805683a1d95c5b756fe8",
+    "comparison.csv": "2fb837592f0f4dbf4c8f5cb6e1d71356907b5e24a3482273b7d0f72110b97f4c",
+    "calculations.json": "7d70b0aa44e13bbde67f1b73ccee110b4d31edba7b77e9bf8babf354fd1908ab",
+    "validation.json": "7f7d10f18d622a89d1ca70f60c3833790e6df31ef6aa2f773c62b6de1ef007b3"
+  },
+  "status": "passed",
+  "scope": "Artifact integrity and links; physical and continuum accuracy not established"
+}

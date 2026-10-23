@@ -1,0 +1,4036 @@
+{
+  "runtime_python": "3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy": "2.5.4",
+  "checks": [
+    {
+      "name": "Every planned case has a unique ID",
+      "pass_": true
+    },
+    {
+      "name": "All planned cases completed without failures",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: completed solver and every numerical gate",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: total flow split conserves mass",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: fixed source, still air, gravity and 10 s",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: actual exit areas equal declared CAD dimensions",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: independent source energy equation",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: source mass across full event",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: native voxel volume independently matches rendered mesh",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: clipped range mesh conserves cold-cell overlap",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: all native saved times retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: physically bounded source/ambient temperature",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: every region and threshold has finite nonnegative metrics",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: cooled threshold volumes are nested",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: native ZIP hash verified",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: final native T retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: final native p retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: final native U retained",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: final native origin retained",
+      "pass_": true
+    },
+    {
+      "name": "14 dimension-checked CAD variants",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m02_n4_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_base: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "pilot_m77_n4_wide: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_opposed: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_overhead: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_overhead: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_overhead: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n1_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n2_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n1_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n2_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n1_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n2_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_adaptive: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_base_laminar: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_laminar: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_opposed_laminar: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_overhead_laminar: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n1_adaptive_laminar: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_laminar: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n4_wide_RAS: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m02_n2_adaptive_fine: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m27_n4_wide_fine: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine: a verified CAD exit matches this CFD",
+      "pass_": true
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine: a verified CAD exit matches this CFD",
+      "pass_": true
+    }
+  ],
+  "passed": 993,
+  "failed": 0,
+  "cases": 55,
+  "native_snapshots": 605,
+  "cad_variants": 14,
+  "grid_pairs": [
+    {
+      "coarse": "m02_n2_adaptive",
+      "fine": "m02_n2_adaptive_fine",
+      "region": "range20to50",
+      "coarse_volume_m3": 0.0018585146250297605,
+      "fine_volume_m3": 0.001974393212991834,
+      "relative_change": 0.062350108200099674,
+      "coarse_cells": 116408,
+      "fine_cells": 353222,
+      "coarse_best_5cm_drop_50_k": 5.515183584708123,
+      "fine_best_5cm_drop_50_k": 6.070353451162098
+    },
+    {
+      "coarse": "m27_n4_wide",
+      "fine": "m27_n4_wide_fine",
+      "region": "range20to50",
+      "coarse_volume_m3": 0.03577133333333333,
+      "fine_volume_m3": 0.03540277777777777,
+      "relative_change": -0.010303098073566108,
+      "coarse_cells": 40240,
+      "fine_cells": 109728,
+      "coarse_best_5cm_drop_50_k": 1.5077582519999844,
+      "fine_best_5cm_drop_50_k": 0.40474930266665154
+    },
+    {
+      "coarse": "m52_n4_wide_opposed",
+      "fine": "m52_n4_wide_opposed_fine",
+      "region": "range20to50",
+      "coarse_volume_m3": 0.06862069047619049,
+      "fine_volume_m3": 0.059219259259259256,
+      "relative_change": -0.13700577991405194,
+      "coarse_cells": 41212,
+      "fine_cells": 114408,
+      "coarse_best_5cm_drop_50_k": 13.571081443999947,
+      "fine_best_5cm_drop_50_k": 14.58213999599994
+    },
+    {
+      "coarse": "m77_n4_wide_opposed",
+      "fine": "m77_n4_wide_opposed_fine",
+      "region": "range20to50",
+      "coarse_volume_m3": 0.08774847619047621,
+      "fine_volume_m3": 0.08380180691721131,
+      "relative_change": -0.04497706905699239,
+      "coarse_cells": 41212,
+      "fine_cells": 114408,
+      "coarse_best_5cm_drop_50_k": 18.01853403199994,
+      "fine_best_5cm_drop_50_k": 18.1766814199999
+    }
+  ],
+  "hardware_validated": false,
+  "new_lean_proof": false,
+  "scope": "Executed prescribed-source external CFD; numerical consistency checks only. Grid and closure sensitivity are not a physical uncertainty bound."
+}

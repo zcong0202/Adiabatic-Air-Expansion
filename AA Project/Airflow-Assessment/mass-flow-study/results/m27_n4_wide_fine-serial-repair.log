@@ -1,0 +1,9 @@
+{"case": "m27_n4_wide_fine", "elapsed_s": 749.7529129981995, "pass_": false, "gates": {"mesh_ok": true, "solver_complete": false, "finite_fields": true, "temperature_bounds": true, "origin_bounds": true, "source_mass": true, "mass_closure": true, "origin_closure": true, "energy_closure": true, "source_mass_relative_0_5pct": true}, "conservation": {"mass_relative_error": -0.0011295985021663544, "origin_relative_error": -0.011279926670836306, "energy_relative_error": 0.00011095756030063267}}
+Traceback (most recent call last):
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/Adiabatic-Air-Expansion/AA Project/Airflow-Assessment/mass-flow-study/scripts/run.py", line 32, in <module>
+    if __name__=='__main__':run(STUDY/'cfd/cases'/sys.argv[1],int(sys.argv[2]) if len(sys.argv)>2 else 2)
+                            ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/egedoganay/Desktop/Ege Doganay SCL/Adiabatic-Air-Expansion/AA Project/Airflow-Assessment/mass-flow-study/scripts/run.py", line 30, in run
+    if not a['numerical_screens_pass']:raise RuntimeError('Numerical screens failed')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Numerical screens failed

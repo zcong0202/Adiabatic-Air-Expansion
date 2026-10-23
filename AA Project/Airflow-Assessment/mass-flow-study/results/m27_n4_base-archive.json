@@ -1,0 +1,9 @@
+{
+  "archive": "archives/m27_n4_base.zip",
+  "bytes": 28682150,
+  "sha256": "baea695cbc2fd9c7405746fd290981986b280fd7bfd202a6ff761ac29c61ffac",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into mass-flow-study/cfd/cases; it contains m27_n4_base/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

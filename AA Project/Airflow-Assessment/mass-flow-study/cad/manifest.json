@@ -1,0 +1,558 @@
+[
+  {
+    "stl": "cad/outlet-140x80-print-mm.stl",
+    "step": "cad/outlet-140x80-metres.step",
+    "outlet_width_mm": 140.0,
+    "outlet_height_mm": 80.0,
+    "outlet_area_m2": 0.011200000000000002,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported and surface-remeshed; dimensions checked within 0.2 mm",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -72.4,
+        -49.999999999999936,
+        -8.673617379884035e-16
+      ],
+      [
+        72.4,
+        49.99999999341449,
+        205.0
+      ]
+    ],
+    "print": "Bambu H2S; PLA; 0.4 mm nozzle; start 0.2 mm layers and 4-6 walls. Check supports and fit coupon; no G-code.",
+    "limits": "Unfitted near-atmospheric exhaust prototype. Hose/clamps and stock distribution not selected. No pressure rating. External CFD slot dimensions shared; actual internal loft and backpressure not yet validated for pass-by use.",
+    "design": "base",
+    "applies_to_total_g_s": [
+      2,
+      27,
+      52,
+      77
+    ],
+    "outlet_count_for_area": [
+      1,
+      2,
+      4
+    ],
+    "exact_exit_width_m": 0.14,
+    "exact_exit_height_m": 0.08
+  },
+  {
+    "stl": "cad/outlet-280x40-print-mm.stl",
+    "step": "cad/outlet-280x40-metres.step",
+    "outlet_width_mm": 280.0,
+    "outlet_height_mm": 40.0,
+    "outlet_area_m2": 0.011200000000000002,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported and surface-remeshed; dimensions checked within 0.2 mm",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -142.4,
+        -50.0,
+        -8.673617379884035e-16
+      ],
+      [
+        142.4,
+        50.0,
+        205.0
+      ]
+    ],
+    "print": "Bambu H2S; PLA; 0.4 mm nozzle; start 0.2 mm layers and 4-6 walls. Check supports and fit coupon; no G-code.",
+    "limits": "Unfitted near-atmospheric exhaust prototype. Hose/clamps and stock distribution not selected. No pressure rating. External CFD slot dimensions shared; actual internal loft and backpressure not yet validated for pass-by use.",
+    "design": "wide",
+    "applies_to_total_g_s": [
+      2,
+      27,
+      52,
+      77
+    ],
+    "outlet_count_for_area": [
+      1,
+      2,
+      4
+    ],
+    "exact_exit_width_m": 0.28,
+    "exact_exit_height_m": 0.04
+  },
+  {
+    "stl": "cad/outlet-46x23-print-mm.stl",
+    "step": "cad/outlet-46x23-metres.step",
+    "outlet_width_mm": 45.5059569616593,
+    "outlet_height_mm": 22.752978480829647,
+    "outlet_area_m2": 0.0010353960594981942,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ],
+      [
+        50.0,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00011658062027716465,
+    "stl_volume_m3": 0.00011658062027711102,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 2,
+    "outlet_count_for_area": 1,
+    "exact_exit_width_m": 0.0455059569616593,
+    "exact_exit_height_m": 0.022752978480829647
+  },
+  {
+    "stl": "cad/outlet-32x16-print-mm.stl",
+    "step": "cad/outlet-32x16-metres.step",
+    "outlet_width_mm": 32.177570751972475,
+    "outlet_height_mm": 16.088785375986234,
+    "outlet_area_m2": 0.0005176980297490971,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ],
+      [
+        50.0,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00010787886838340282,
+    "stl_volume_m3": 0.00010787886838289104,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 2,
+    "outlet_count_for_area": 2,
+    "exact_exit_width_m": 0.03217757075197247,
+    "exact_exit_height_m": 0.016088785375986233
+  },
+  {
+    "stl": "cad/outlet-23x11-print-mm.stl",
+    "step": "cad/outlet-23x11-metres.step",
+    "outlet_width_mm": 22.75297848082965,
+    "outlet_height_mm": 11.376489240414823,
+    "outlet_area_m2": 0.00025884901487454855,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ],
+      [
+        50.0,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.0001016754084216466,
+    "stl_volume_m3": 0.00010167540842230039,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 2,
+    "outlet_count_for_area": 4,
+    "exact_exit_width_m": 0.02275297848082965,
+    "exact_exit_height_m": 0.011376489240414824
+  },
+  {
+    "stl": "cad/outlet-167x84-print-mm.stl",
+    "step": "cad/outlet-167x84-metres.step",
+    "outlet_width_mm": 167.1995622196758,
+    "outlet_height_mm": 83.5997811098379,
+    "outlet_area_m2": 0.01397784680322562,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -85.9997811098379,
+        -50.0,
+        0.0
+      ],
+      [
+        85.9997811098379,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00019538300710938202,
+    "stl_volume_m3": 0.00019538300710855022,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 27,
+    "outlet_count_for_area": 1,
+    "exact_exit_width_m": 0.1671995622196758,
+    "exact_exit_height_m": 0.0835997811098379
+  },
+  {
+    "stl": "cad/outlet-118x59-print-mm.stl",
+    "step": "cad/outlet-118x59-metres.step",
+    "outlet_width_mm": 118.22794425695483,
+    "outlet_height_mm": 59.113972128477414,
+    "outlet_area_m2": 0.00698892340161281,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -61.51397212847742,
+        -50.0,
+        0.0
+      ],
+      [
+        61.51397212847742,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00016371551392522986,
+    "stl_volume_m3": 0.00016371551392538536,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 27,
+    "outlet_count_for_area": 2,
+    "exact_exit_width_m": 0.11822794425695483,
+    "exact_exit_height_m": 0.05911397212847742
+  },
+  {
+    "stl": "cad/outlet-84x42-print-mm.stl",
+    "step": "cad/outlet-84x42-metres.step",
+    "outlet_width_mm": 83.5997811098379,
+    "outlet_height_mm": 41.79989055491895,
+    "outlet_area_m2": 0.003494461700806405,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ],
+      [
+        50.0,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00014130255067965573,
+    "stl_volume_m3": 0.0001413025506796983,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 27,
+    "outlet_count_for_area": 4,
+    "exact_exit_width_m": 0.0835997811098379,
+    "exact_exit_height_m": 0.04179989055491895
+  },
+  {
+    "stl": "cad/outlet-232x116-print-mm.stl",
+    "step": "cad/outlet-232x116-metres.step",
+    "outlet_width_mm": 232.03576253221416,
+    "outlet_height_mm": 116.0178812661071,
+    "outlet_area_m2": 0.026920297546953045,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -118.4178812661071,
+        -60.408940633053554,
+        0.0
+      ],
+      [
+        118.4178812661071,
+        60.408940633053554,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00023728950913964807,
+    "stl_volume_m3": 0.00023728950913993324,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 52,
+    "outlet_count_for_area": 1,
+    "exact_exit_width_m": 0.23203576253221417,
+    "exact_exit_height_m": 0.1160178812661071
+  },
+  {
+    "stl": "cad/outlet-164x82-print-mm.stl",
+    "step": "cad/outlet-164x82-metres.step",
+    "outlet_width_mm": 164.07406116432009,
+    "outlet_height_mm": 82.03703058216004,
+    "outlet_area_m2": 0.013460148773476522,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -84.43703058216003,
+        -50.0,
+        0.0
+      ],
+      [
+        84.43703058216003,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.00019336244085743106,
+    "stl_volume_m3": 0.00019336244085701947,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 52,
+    "outlet_count_for_area": 2,
+    "exact_exit_width_m": 0.16407406116432008,
+    "exact_exit_height_m": 0.08203703058216004
+  },
+  {
+    "stl": "cad/outlet-116x58-print-mm.stl",
+    "step": "cad/outlet-116x58-metres.step",
+    "outlet_width_mm": 116.01788126610708,
+    "outlet_height_mm": 58.00894063305355,
+    "outlet_area_m2": 0.006730074386738261,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -60.40894063305355,
+        -50.0,
+        0.0
+      ],
+      [
+        60.40894063305355,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.0001622857839963253,
+    "stl_volume_m3": 0.0001622857839964261,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 52,
+    "outlet_count_for_area": 4,
+    "exact_exit_width_m": 0.11601788126610708,
+    "exact_exit_height_m": 0.05800894063305355
+  },
+  {
+    "stl": "cad/outlet-282x141-print-mm.stl",
+    "step": "cad/outlet-282x141-metres.step",
+    "outlet_width_mm": 282.35703742134876,
+    "outlet_height_mm": 141.17851871067435,
+    "outlet_area_m2": 0.03986274829068047,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -143.5785187106744,
+        -72.98925935533718,
+        0.0
+      ],
+      [
+        143.5785187106744,
+        72.98925935533718,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.0002698076677873449,
+    "stl_volume_m3": 0.0002698076677847081,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 77,
+    "outlet_count_for_area": 1,
+    "exact_exit_width_m": 0.28235703742134877,
+    "exact_exit_height_m": 0.14117851871067436
+  },
+  {
+    "stl": "cad/outlet-200x100-print-mm.stl",
+    "step": "cad/outlet-200x100-metres.step",
+    "outlet_width_mm": 199.65657587637946,
+    "outlet_height_mm": 99.82828793818972,
+    "outlet_area_m2": 0.019931374145340235,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -102.22828793818974,
+        -52.314143969094864,
+        0.0
+      ],
+      [
+        102.22828793818974,
+        52.31414396909486,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.0002163631148216801,
+    "stl_volume_m3": 0.00021636311482145973,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 77,
+    "outlet_count_for_area": 2,
+    "exact_exit_width_m": 0.19965657587637947,
+    "exact_exit_height_m": 0.09982828793818972
+  },
+  {
+    "stl": "cad/outlet-141x71-print-mm.stl",
+    "step": "cad/outlet-141x71-metres.step",
+    "outlet_width_mm": 141.17851871067438,
+    "outlet_height_mm": 70.58925935533718,
+    "outlet_area_m2": 0.009965687072670117,
+    "spigot_od_mm": 100,
+    "clear_inlet_mm": 95.2,
+    "length_mm": 205,
+    "nominal_wall_mm": 2.4,
+    "watertight": true,
+    "consistent_normals": true,
+    "components": 1,
+    "step_units": "metres; independently reimported closed BRep; dimensions and solid volume checked",
+    "stl_units": "millimetres",
+    "bounds_mm": [
+      [
+        -72.9892593553372,
+        -50.0,
+        0.0
+      ],
+      [
+        72.9892593553372,
+        50.0,
+        205.0
+      ]
+    ],
+    "step_volume_m3": 0.0001785590960646124,
+    "stl_volume_m3": 0.00017855909606441135,
+    "circular_faceting_max_radial_error_mm": 0.06022718974137975,
+    "geometry": "Faceted ruled shell, 64 circle segments plus exact inner/outer rectangle corners. STEP and STL represent the same closed solid.",
+    "print": "Bambu H2S / PLA / 0.4 mm nozzle; start 0.2 mm layers, 4\u20136 walls; inspect supports, bridging and fit. No G-code.",
+    "limits": "Near-atmospheric unfitted outlet prototype, no pressure rating or stock motor fitting. External CFD shares the exact exit dimensions; interior flow and solar/wall heat are not resolved.",
+    "design": "adaptive",
+    "applies_to_total_g_s": 77,
+    "outlet_count_for_area": 4,
+    "exact_exit_width_m": 0.14117851871067438,
+    "exact_exit_height_m": 0.07058925935533718
+  }
+]

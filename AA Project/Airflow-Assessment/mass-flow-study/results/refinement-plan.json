@@ -1,0 +1,86 @@
+{
+  "selection": "Maximum 10 s >=6 K cold air mass in the defined 20\u201350 cm band among primary coarse cases. Band sample volumes differ by layout. Not a global optimum.",
+  "cases": [
+    {
+      "name": "m02_n1_adaptive_laminar",
+      "mass_g": 2,
+      "count": 1,
+      "design": "adaptive",
+      "layout": "side",
+      "h": 0.065,
+      "closure": "laminar",
+      "ranks": 1,
+      "phase": "transition-sensitivity"
+    },
+    {
+      "name": "m02_n2_adaptive_laminar",
+      "mass_g": 2,
+      "count": 2,
+      "design": "adaptive",
+      "layout": "side",
+      "h": 0.065,
+      "closure": "laminar",
+      "ranks": 2,
+      "phase": "transition-sensitivity"
+    },
+    {
+      "name": "m02_n4_wide_RAS",
+      "mass_g": 2,
+      "count": 4,
+      "design": "wide",
+      "layout": "side",
+      "h": 0.065,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "low-flow-closure-sensitivity"
+    },
+    {
+      "name": "m02_n2_adaptive_fine",
+      "mass_g": 2,
+      "count": 2,
+      "design": "adaptive",
+      "layout": "side",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 4,
+      "phase": "grid-refinement",
+      "parent": "m02_n2_adaptive"
+    },
+    {
+      "name": "m27_n4_wide_fine",
+      "mass_g": 27,
+      "count": 4,
+      "design": "wide",
+      "layout": "side",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "grid-refinement",
+      "parent": "m27_n4_wide"
+    },
+    {
+      "name": "m52_n4_wide_opposed_fine",
+      "mass_g": 52,
+      "count": 4,
+      "design": "wide",
+      "layout": "opposed",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "grid-refinement",
+      "parent": "m52_n4_wide_opposed"
+    },
+    {
+      "name": "m77_n4_wide_opposed_fine",
+      "mass_g": 77,
+      "count": 4,
+      "design": "wide",
+      "layout": "opposed",
+      "h": 0.045,
+      "closure": "kEpsilon",
+      "ranks": 1,
+      "phase": "grid-refinement",
+      "parent": "m77_n4_wide_opposed"
+    }
+  ]
+}

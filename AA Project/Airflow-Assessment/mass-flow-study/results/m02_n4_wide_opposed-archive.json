@@ -1,0 +1,9 @@
+{
+  "archive": "archives/m02_n4_wide_opposed.zip",
+  "bytes": 21596016,
+  "sha256": "81cad91ce2ee8aa02f85d75e22783b5e944d22c92a86b2d6ae8f337634cb445a",
+  "native_fields_checked": 44,
+  "processor_subdomains_excluded": "Redundant; complete reconstructed native fields retained",
+  "restore": "Unzip this archive into mass-flow-study/cfd/cases; it contains m02_n4_wide_opposed/.",
+  "scope": "Native OpenFOAM replay inputs, mesh, reconstructed fields, solver logs and audit. Original pre-existing studies untouched."
+}

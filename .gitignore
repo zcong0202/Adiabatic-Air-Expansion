@@ -17,3 +17,8 @@ AA Project/Airflow-Assessment/cases/
 AA Project/Airflow-Assessment/optimization/cases/
 AA Project/Airflow-Assessment/motor-seat-study/cfd/cases/
 AA Project/Airflow-Assessment/pass-by-study/cfd/cases/
+
+# New prescribed-source sweep; complete native fields are retained in per-case LFS archives.
+AA Project/Airflow-Assessment/mass-flow-study/cfd/cases/
+AA Project/Airflow-Assessment/mass-flow-study/cfd/rejected/
+AA Project/Airflow-Assessment/mass-flow-study/archives/*.tmp

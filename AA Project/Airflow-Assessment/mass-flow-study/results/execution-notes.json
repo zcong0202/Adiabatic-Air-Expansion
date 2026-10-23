@@ -1,0 +1,27 @@
+{
+  "serial_launch_repair": {
+    "initial_problem": "Five one-rank checks were initially launched with buoyantPimpleFoam -parallel. OpenFOAM rejected that launch before time integration. Final successful jobs used the serial executable, four MPI ranks for the 27 g/s fine case, and two MPI ranks for the 77 g/s fine case.",
+    "affected_cases": [
+      "m02_n1_adaptive_laminar",
+      "m02_n4_wide_RAS",
+      "m27_n4_wide_fine",
+      "m52_n4_wide_opposed_fine",
+      "m77_n4_wide_opposed_fine"
+    ],
+    "old_logs": "*-run.log retains the first launch error; *-serial-repair.log retains recovery attempts. For 27 g/s fine, *-clean-recovery.log is the final accepted run. Native archives contain the final successful solver log.",
+    "result_policy": "Only completed 10-second runs passing every numerical screen enter the comparison."
+  },
+  "mesh_repair": {
+    "initial_problem": "Two compact low-flow meshes failed small cell-determinant checks in the far field. No CFD result from a rejected mesh was accepted.",
+    "affected_cases": [
+      "m02_n2_adaptive",
+      "m02_n4_adaptive"
+    ],
+    "change": "Capped far-field cell spacing; rebuilt, passed full checkMesh, then reran. Rejected native mesh attempts retained as results/*-rejected-mesh.zip."
+  },
+  "audit_handoff_repair": {
+    "problem": "The earlier scheduler waited only for running status; it could relaunch while status was solver ended; audit pending. This occurred on the 27 g/s fine case.",
+    "change": "Scheduler now waits through the audit-pending state. Duplicate case stopped. Entire 27 g/s fine simulation rerun from time zero with four MPI ranks. The successful clean-recovery log and native archive are the accepted run.",
+    "acceptance": "No partial or concurrently overwritten history accepted."
+  }
+}
