@@ -116,3 +116,11 @@ For serial runs, launch the solver directly. For parallel runs, use `mpirun --bi
 This campaign adds numerical and geometric consistency checks. It does not add a Lean proof of the Navier–Stokes solution or certify the source hardware. Existing Lean algebra remains supporting first-principles evidence. The simulated air volume is resident air below a temperature threshold at each saved time; it is not the cumulative delivered volume.
 
 [Execution repairs and retained attempt logs](results/execution-notes.json). Failed launches and rejected meshes are separate from accepted CFD fields.
+
+## CFD dashboard
+
+The same result page now has a flow slider, nozzle/count/layout selectors, camera controls and native time playback. Flow snaps to 2, 27, 52 and 77 g/s. The chosen geometry family and layout stay fixed as flow changes. Compact exits use different CAD dimensions at each flow/count to hold 1.5 m/s; this is explicit in the controls. Main controls prefer a finer run when one exists. Exact model/grid alternatives remain available.
+
+`python scripts/timeline.py` extracts temperature fields at 0–10 s from every native archive. It verifies every temperature hash and mesh hash. All 1,210 whole/band mesh volumes are checked against native metrics. The 605 frames contain their own 20/35/50 cm sections and patch means. Playback has one saved frame per second, with no temporal interpolation or new CFD. It ends at 10 s; valve-off persistence is absent. Frame bundles use Git LFS.
+
+[Supply-temperature provenance](results/source-provenance.json) traces the fixed 0.959275°C boundary to the original 1°C document assumption, four loaded motors, 40°C inlet, 3.36 kW shaft work, 77.6 g/s and 4 K nominal cold-path warming. It is an assumed source state, separate from the earlier 5°C vortex-tube test.

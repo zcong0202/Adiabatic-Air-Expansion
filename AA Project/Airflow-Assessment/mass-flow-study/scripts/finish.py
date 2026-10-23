@@ -9,7 +9,7 @@ if __name__=='__main__':
         time.sleep(15)
     from archive import archive
     for name in json.loads((OUT/'campaign-status.json').read_text())['completed']:archive(name)
-    for script in ['range_metrics.py','patch.py','calculation.py','assembly.py','verify.py','report.py','update_overview.py']:
+    for script in ['range_metrics.py','patch.py','calculation.py','assembly.py','verify.py','timeline.py','report.py','update_overview.py']:
         print('FINALISE '+script,flush=True);subprocess.run([sys.executable,str(STUDY/'scripts'/script)],check=True)
     data=json.loads((OUT/'campaign-status.json').read_text())
     def figures(name):

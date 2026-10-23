@@ -1,0 +1,24 @@
+{
+  "case": "m27_n4_adaptive",
+  "frames": 11,
+  "times_s": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "field_signature": "461ab9b07655bde3043967a8ef2dd34e36b532d3879b020d0e02e905fdb45bda",
+  "file_sha256": "2b9d8b3f75c46aa8426882f68c328c31efc5b5cbc37205364ccf0650db057a71",
+  "bytes": 1526114,
+  "native_temperature_hashes_verified": 11,
+  "mesh_hash_verified": true,
+  "volume_checks": 22,
+  "scope": "Native saved temperature fields at integer seconds 0\u201310. No temporal interpolation; spray ON only. Mesh volume checked against original native regional metrics."
+}

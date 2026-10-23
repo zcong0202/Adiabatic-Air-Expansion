@@ -13,6 +13,7 @@ def main():
     names=json.loads((OUT/'campaign-status.json').read_text())['completed'];count=0
     for name in names:
         d=json.loads((OUT/(name+'.json')).read_text())
+        frame_audit=json.loads((OUT/(name+'-timeline-audit.json')).read_text());assert frame_audit['file_sha256']==hashlib.sha256((OUT/(name+'-timeline.js')).read_bytes()).hexdigest();assert frame_audit['frames']==11 and frame_audit['times_s']==list(range(11));assert frame_audit['field_signature']==hashlib.sha256(json.dumps(d['field_sha256'],sort_keys=True).encode()).hexdigest()
         for suffix in ['-sections.png','-volume.png','-range-volume.png']:
             p=OUT/(name+suffix)
             with Image.open(p) as im:assert min(im.size)>400;im.verify()
@@ -27,7 +28,7 @@ def main():
         url=urlsplit(link)
         if url.scheme or not url.path:continue
         path=(OUT/unquote(url.path)).resolve();assert path.exists(),link;checked.append(link)
-    files=['index.html','viewer.js','data.js','comparison.csv','calculations.json','validation.json']
-    result=dict(cases=len(names),verified_pngs=count,local_links_checked=checked,sha256={f:hashlib.sha256((OUT/f).read_bytes()).hexdigest() for f in files},status='passed',scope='Artifact integrity and links; physical and continuum accuracy not established')
+    files=['index.html','dashboard.css','viewer.js','data.js','comparison.csv','calculations.json','validation.json','source-provenance.json','timeline-validation.json']
+    result=dict(cases=len(names),native_frames=len(names)*11,native_bundle_hashes_verified=len(names),verified_pngs=count,local_links_checked=checked,sha256={f:hashlib.sha256((OUT/f).read_bytes()).hexdigest() for f in files},status='passed',scope='Artifact integrity and links; physical and continuum accuracy not established')
     (OUT/'delivery-validation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

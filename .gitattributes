@@ -21,3 +21,6 @@
 
 # Native cold-air meshes and assembled nozzle models.
 *.glb filter=lfs diff=lfs merge=lfs -text
+
+# Native time-frame bundles for the CFD dashboard.
+*-timeline.js filter=lfs diff=lfs merge=lfs -text

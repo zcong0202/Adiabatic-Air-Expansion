@@ -1,0 +1,24 @@
+{
+  "case": "pilot_m77_n4_wide",
+  "frames": 11,
+  "times_s": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "field_signature": "ad44feaa47323267cd949bfaa25cb42895f523acf39f0f6d009d69ca44957502",
+  "file_sha256": "2dc07fe4b82761c55e53fd96f40ea1a873629bada57e9585820ae29e43909d3b",
+  "bytes": 2010262,
+  "native_temperature_hashes_verified": 11,
+  "mesh_hash_verified": true,
+  "volume_checks": 22,
+  "scope": "Native saved temperature fields at integer seconds 0\u201310. No temporal interpolation; spray ON only. Mesh volume checked against original native regional metrics."
+}

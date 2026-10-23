@@ -1,0 +1,24 @@
+{
+  "case": "m02_n1_adaptive_laminar",
+  "frames": 11,
+  "times_s": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "field_signature": "a7fdb7ea64ff9b84d175117aba86663a1de9839db387af7fc745be66be06e1c3",
+  "file_sha256": "0bee5a56177a2b25e26a270c0d7b80348218cc638ad807390b253f0410da11d3",
+  "bytes": 813961,
+  "native_temperature_hashes_verified": 11,
+  "mesh_hash_verified": true,
+  "volume_checks": 22,
+  "scope": "Native saved temperature fields at integer seconds 0\u201310. No temporal interpolation; spray ON only. Mesh volume checked against original native regional metrics."
+}

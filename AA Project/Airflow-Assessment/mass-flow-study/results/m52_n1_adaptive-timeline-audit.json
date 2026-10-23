@@ -1,0 +1,24 @@
+{
+  "case": "m52_n1_adaptive",
+  "frames": 11,
+  "times_s": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "field_signature": "48dba1f6774375e343147da7ccb50574958f079af64aa718e9c6be0c0d383f92",
+  "file_sha256": "39f624f984fe844fe21d01fa56702bb4dfc6dbdebaa96f7fba3249519476c351",
+  "bytes": 1110010,
+  "native_temperature_hashes_verified": 11,
+  "mesh_hash_verified": true,
+  "volume_checks": 22,
+  "scope": "Native saved temperature fields at integer seconds 0\u201310. No temporal interpolation; spray ON only. Mesh volume checked against original native regional metrics."
+}

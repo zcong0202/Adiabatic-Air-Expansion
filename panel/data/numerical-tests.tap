@@ -2,227 +2,227 @@ TAP version 13
 # Subtest: Reduced charge pressure changes support, not invented rated motor flow
 ok 1 - Reduced charge pressure changes support, not invented rated motor flow
   ---
-  duration_ms: 12.483916
+  duration_ms: 6.501333
   ...
 # Subtest: Pressure head extends finite receiver support and respects catalogue pressure cap
 ok 2 - Pressure head extends finite receiver support and respects catalogue pressure cap
   ---
-  duration_ms: 15.06025
+  duration_ms: 13.251791
   ...
 # Subtest: Well-mixed transient matches independent exponential heating/cooling and energy balance
 ok 3 - Well-mixed transient matches independent exponential heating/cooling and energy balance
   ---
-  duration_ms: 3.183542
+  duration_ms: 2.769209
   ...
 # Subtest: Capture, ambient exchange and volume have separate physical effects
 ok 4 - Capture, ambient exchange and volume have separate physical effects
   ---
-  duration_ms: 20.037791
+  duration_ms: 11.0145
   ...
 # Subtest: Unsupported source produces no direct cooling or delivered mass
 ok 5 - Unsupported source produces no direct cooling or delivered mass
   ---
-  duration_ms: 3.7645
+  duration_ms: 2.564041
   ...
 # Subtest: Warm valve output cannot claim cooling; longer observation cannot invent a pulse
 ok 6 - Warm valve output cannot claim cooling; longer observation cannot invent a pulse
   ---
-  duration_ms: 4.940375
+  duration_ms: 2.328167
   ...
 # Subtest: Receiver cutoff and temperature history drive the target model
 ok 7 - Receiver cutoff and temperature history drive the target model
   ---
-  duration_ms: 20.828333
+  duration_ms: 10.005083
   ...
 # Subtest: No ambient mixing or heat produces no assumed universal reheating time
 ok 8 - No ambient mixing or heat produces no assumed universal reheating time
   ---
-  duration_ms: 15.2965
+  duration_ms: 5.922
   ...
 # Subtest: Compressible orifice recovers low-pressure Bernoulli limit and choked plateau
 ok 9 - Compressible orifice recovers low-pressure Bernoulli limit and choked plateau
   ---
-  duration_ms: 0.291583
+  duration_ms: 0.28175
   ...
 # Subtest: Precharged cold tank obeys independent adiabatic blowdown and conserves mass/energy
 ok 10 - Precharged cold tank obeys independent adiabatic blowdown and conserves mass/energy
   ---
-  duration_ms: 6.232459
+  duration_ms: 1.303167
   ...
 # Subtest: Cold reservoir size and burst rate change duration; atmospheric tank cannot force flow
 ok 11 - Cold reservoir size and burst rate change duration; atmospheric tank cannot force flow
   ---
-  duration_ms: 1.684125
+  duration_ms: 1.795292
   ...
 # Subtest: Cold hold warms storage and changes pressure; not a free charging process
 ok 12 - Cold hold warms storage and changes pressure; not a free charging process
   ---
-  duration_ms: 0.598417
+  duration_ms: 0.735666
   ...
 # Subtest: Cold burst cooling integrates the actual discharged mass, not total inventory
 ok 13 - Cold burst cooling integrates the actual discharged mass, not total inventory
   ---
-  duration_ms: 9.546667
+  duration_ms: 2.453
   ...
 # Subtest: Transient input validation rejects invalid states
 ok 14 - Transient input validation rejects invalid states
   ---
-  duration_ms: 0.262416
+  duration_ms: 0.208958
   ...
 # Subtest: Adaptive cold-tank steps preserve fast tiny-tank bursts and long horizons
 ok 15 - Adaptive cold-tank steps preserve fast tiny-tank bursts and long horizons
   ---
-  duration_ms: 560.710083
+  duration_ms: 299.928
   ...
 # Subtest: Reference source reproduces independently specified motor energy balance
 ok 16 - Reference source reproduces independently specified motor energy balance
   ---
-  duration_ms: 7.9065
+  duration_ms: 3.534333
   ...
 # Subtest: Ideal-gas throttle removes no work and preserves total temperature
 ok 17 - Ideal-gas throttle removes no work and preserves total temperature
   ---
-  duration_ms: 1.155125
+  duration_ms: 0.3895
   ...
 # Subtest: Reversible expansion bounds shaft extraction and real turbine lies between throttle and bound
 ok 18 - Reversible expansion bounds shaft extraction and real turbine lies between throttle and bound
   ---
-  duration_ms: 5.503125
+  duration_ms: 2.228375
   ...
 # Subtest: Mixing inequality, dilution limit and colder-source leverage
 ok 19 - Mixing inequality, dilution limit and colder-source leverage
   ---
-  duration_ms: 0.816208
+  duration_ms: 0.260833
   ...
 # Subtest: Nozzle equal area preserves budget; geometry alone does not invent added flow
 ok 20 - Nozzle equal area preserves budget; geometry alone does not invent added flow
   ---
-  duration_ms: 1.69025
+  duration_ms: 1.902917
   ...
 # Subtest: Darcy losses increase with length and drop with larger bore
 ok 21 - Darcy losses increase with length and drop with larger bore
   ---
-  duration_ms: 0.097833
+  duration_ms: 0.095291
   ...
 # Subtest: Pipe heat leak respects zero UA, ambient relaxation and insulation
 ok 22 - Pipe heat leak respects zero UA, ambient relaxation and insulation
   ---
-  duration_ms: 0.107208
+  duration_ms: 0.098791
   ...
 # Subtest: Cold hose length changes enthalpy and cannot ignore backpressure
 ok 23 - Cold hose length changes enthalpy and cannot ignore backpressure
   ---
-  duration_ms: 1.261041
+  duration_ms: 1.51525
   ...
 # Subtest: Receiver fixed-T inventory matches analytic deficit duration
 ok 24 - Receiver fixed-T inventory matches analytic deficit duration
   ---
-  duration_ms: 1.046042
+  duration_ms: 0.559666
   ...
 # Subtest: Receiver energy ODE conserves mass and energy; adiabatic blowdown cools faster
 ok 25 - Receiver energy ODE conserves mass and energy; adiabatic blowdown cools faster
   ---
-  duration_ms: 5.324375
+  duration_ms: 5.196667
   ...
 # Subtest: Receiver cutoff preserves motor pressure and longer pipe raises floor
 ok 26 - Receiver cutoff preserves motor pressure and longer pipe raises floor
   ---
-  duration_ms: 14.692958
+  duration_ms: 13.635458
   ...
 # Subtest: Storage changes burst duration, not continuous flow capacity
 ok 27 - Storage changes burst duration, not continuous flow capacity
   ---
-  duration_ms: 95.643666
+  duration_ms: 46.658542
   ...
 # Subtest: Supply response needs a receiver even with excess steady flow
 ok 28 - Supply response needs a receiver even with excess steady flow
   ---
-  duration_ms: 38.973583
+  duration_ms: 25.301958
   ...
 # Subtest: Whole-plant ratio uses full entered power, not a flow fraction
 ok 29 - Whole-plant ratio uses full entered power, not a flow fraction
   ---
-  duration_ms: 0.941791
+  duration_ms: 0.954666
   ...
 # Subtest: Cold tank is a finite initial mass and loses sensible budget while held
 ok 30 - Cold tank is a finite initial mass and loses sensible budget while held
   ---
-  duration_ms: 0.179958
+  duration_ms: 0.178375
   ...
 # Subtest: Invalid or unsupported states do not produce an approved result
 ok 31 - Invalid or unsupported states do not produce an approved result
   ---
-  duration_ms: 2.187084
+  duration_ms: 1.005083
   ...
 # Subtest: Real-air grid matches independent CoolProp states and inverse temperatures
 ok 32 - Real-air grid matches independent CoolProp states and inverse temperatures
   ---
-  duration_ms: 3.721709
+  duration_ms: 1.143958
   ...
 # Subtest: Real-air stage energy closes for motor, regulator and turbine
 ok 33 - Real-air stage energy closes for motor, regulator and turbine
   ---
-  duration_ms: 15.382125
+  duration_ms: 5.823834
   ...
 # Subtest: CFD dataset has complete cases, monotone thresholds and conserved subregion measures
 ok 34 - CFD dataset has complete cases, monotone thresholds and conserved subregion measures
   ---
-  duration_ms: 18.971292
+  duration_ms: 8.85925
   ...
 # Subtest: CFD independent high-resolution geometry comparison is retained, not scaled to inputs
 ok 35 - CFD independent high-resolution geometry comparison is retained, not scaled to inputs
   ---
-  duration_ms: 0.220959
+  duration_ms: 0.223875
   ...
 # Subtest: Compressible ideal mean-density Darcy solve matches independent squared-pressure result
 ok 36 - Compressible ideal mean-density Darcy solve matches independent squared-pressure result
   ---
-  duration_ms: 0.085375
+  duration_ms: 0.088375
   ...
 # Subtest: Adiabatic zero-inflow tank matches blowdown law; time-step refinement converges
 ok 37 - Adiabatic zero-inflow tank matches blowdown law; time-step refinement converges
   ---
-  duration_ms: 0.142167
+  duration_ms: 0.144583
   ...
 # Subtest: Receiver pressure controller never overcharges the selected pressure
 ok 38 - Receiver pressure controller never overcharges the selected pressure
   ---
-  duration_ms: 59.00625
+  duration_ms: 45.800459
   ...
 # Subtest: Warm source cannot claim any cumulative mixed mass at the colder target
 ok 39 - Warm source cannot claim any cumulative mixed mass at the colder target
   ---
-  duration_ms: 2.22525
+  duration_ms: 0.673667
   ...
 # Subtest: preset rental
 ok 40 - preset rental
   ---
-  duration_ms: 1.589667
+  duration_ms: 1.599125
   ...
 # Subtest: preset workshopVortex
 ok 41 - preset workshopVortex
   ---
-  duration_ms: 0.119
+  duration_ms: 0.140458
   ...
 # Subtest: preset workshopBurst
 ok 42 - preset workshopBurst
   ---
-  duration_ms: 0.089167
+  duration_ms: 0.145208
   ...
 # Subtest: preset scuba
 ok 43 - preset scuba
   ---
-  duration_ms: 0.081917
+  duration_ms: 0.106167
   ...
 # Subtest: preset junior
 ok 44 - preset junior
   ---
-  duration_ms: 0.173291
+  duration_ms: 0.18875
   ...
 # Subtest: Joule-Thomson drop from 200 to 6.3 bar(g) is about 30 K
 ok 45 - Joule-Thomson drop from 200 to 6.3 bar(g) is about 30 K
   ---
-  duration_ms: 0.054042
+  duration_ms: 0.063375
   ...
 1..45
 # tests 45
@@ -232,4 +232,4 @@ ok 45 - Joule-Thomson drop from 200 to 6.3 bar(g) is about 30 K
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 777.289042
+# duration_ms 423.729458

@@ -1,24 +1,36 @@
 {
   "cases": 55,
+  "native_frames": 605,
+  "native_bundle_hashes_verified": 55,
   "verified_pngs": 165,
   "local_links_checked": [
-    "../../../project-overview.html#mass-flow-sweep",
+    "dashboard.css",
     "../../../../index.html",
+    "../../../project-overview.html#mass-flow-sweep",
+    "source-provenance.json",
+    "../../pass-by-study/source-input.json",
+    "../../pass-by-study/scripts/screen.py",
+    "../../pass-by-study/results/timing-and-energy.json",
+    "../../motor-seat-study/evidence/environment-extract.txt",
     "comparison.csv",
     "calculations.json",
+    "validation.json",
+    "timeline-validation.json",
     "../cad/manifest.json",
     "../README.md",
-    "validation.json",
     "data.js",
     "viewer.js"
   ],
   "sha256": {
-    "index.html": "5f171cc80ce65358d25c9def146e6e991333aaec15ddd0bf12bd8d987dff6ac1",
-    "viewer.js": "e01450dfbd124c0c96b40b6ccba37cd3b13d69a9d2a8b034e8b76fc127731aa8",
+    "index.html": "759cdf9bc36ed6c54aff3555d7778e3a38801c56642662b2cea99ad35f1c5909",
+    "dashboard.css": "2bcd6aaf4e4e4fbe9eb8b6d0701acac1e25609a10d17ef7d2130ac634d66d05f",
+    "viewer.js": "c5d7a2d02907ab7964f9e2b27e2e2a8112724e7070046e7c81dfb2d7467ad0ea",
     "data.js": "c5ae8e2e9512cf9b15f1773abe43f33a976f8db4e97e805683a1d95c5b756fe8",
     "comparison.csv": "2fb837592f0f4dbf4c8f5cb6e1d71356907b5e24a3482273b7d0f72110b97f4c",
     "calculations.json": "7d70b0aa44e13bbde67f1b73ccee110b4d31edba7b77e9bf8babf354fd1908ab",
-    "validation.json": "7f7d10f18d622a89d1ca70f60c3833790e6df31ef6aa2f773c62b6de1ef007b3"
+    "validation.json": "7f7d10f18d622a89d1ca70f60c3833790e6df31ef6aa2f773c62b6de1ef007b3",
+    "source-provenance.json": "66f570bf2a9f1b2fba3a8f510ec54fe5b2d289bcfdf55e7c6282683bd5e6f934",
+    "timeline-validation.json": "77918dc92bd9a204e4d037c8c1c8c571f0bdc2dd92d374f68e034a6969646ced"
   },
   "status": "passed",
   "scope": "Artifact integrity and links; physical and continuum accuracy not established"

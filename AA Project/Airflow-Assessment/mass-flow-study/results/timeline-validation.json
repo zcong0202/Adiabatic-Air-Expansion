@@ -1,0 +1,9 @@
+{
+  "cases": 55,
+  "native_frames": 605,
+  "native_temperature_hashes_verified": 605,
+  "volume_checks": 1210,
+  "temporal_interpolation": false,
+  "new_cfd_runs": false,
+  "scope": "Native archive re-extraction only; source, CFD fields and physical uncertainty unchanged."
+}
