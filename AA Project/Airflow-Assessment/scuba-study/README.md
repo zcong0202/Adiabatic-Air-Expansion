@@ -102,3 +102,36 @@ that slab and is not the presentation's target-zone mass.
 Ten numerical calculation checks and 44 browser checks each at desktop/mobile
 pass. All 33 time frames are tied to native temperature/mesh hashes. The
 inherited geometry/analysis suite also passes all 12 tests. No new Lean proof.
+
+## Shaft load and 22°C sensitivity
+
+[Configuration sketch](results/shaft-load-configuration.png) separates the
+regulated air path from the mechanical shaft coupling. A brake or a generator
+and controlled load bank absorbs shaft power. No air passes through that load.
+Its heat is rejected away from the cold air.
+
+The 19.4 g/s point already assumes 840 W external shaft load at 1270 rpm.
+Published free speed is 2400 rpm. Adding load changes speed and air consumption;
+there is no free-speed mass-flow value in the data used here. Extra load may
+stall the rotor; torque alone is not power. Wshaft=torque×angular speed.
+Free-running external shaft work tends to zero after spin-up. Regulator cooling,
+internal losses and housing heat transfer can still affect the exhaust, so no
+exact unloaded temperature is claimed. The manual notes high no-load housing
+hotspots; this is not an exhaust-temperature measurement.
+
+If measured motor inlet temperature is 22°C, the fixed 840 W / 19.4 g/s first
+law gives a 43.04 K bulk temperature reduction: −21.04°C motor exhaust.
+Inherited cold-path UA=10.0737 W/K and 30°C ambient give −0.46°C at the nozzle.
+These are conditional calculations, not hardware ratings or new CFD. A fast
+exhaust port's local static temperature can differ from stagnation temperature.
+
+If only the tank is known to be 22°C, motor inlet temperature is not fixed.
+CoolProp's initial heat-free, isenthalpic 200→6.3 bar gauge calculation gives
+−11.81°C after reduction. This ignores regulator/hose wall heat and blowdown.
+Do not extrapolate the fixed motor power/flow pair to that cold inlet without
+a supplier map/test. See [calculations](results/load22-calculations.json) and
+[eight algebra/EOS checks](results/load22-validation.json).
+
+The product page lists 7 bar maximum working pressure; the product manual says
+6.3 bar or the nameplate. Keep the 6.3 bar running target and confirm the actual
+nameplate and pressure-reduction package. No cylinder-pressure parts are printed.

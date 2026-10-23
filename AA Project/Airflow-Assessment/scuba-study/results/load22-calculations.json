@@ -1,0 +1,89 @@
+{
+  "status": "Conditional first-law and real-air sensitivity; no new CFD or motor-map validation",
+  "inputs": {
+    "tank_c": 22,
+    "tank_bar_g": 200,
+    "motor_running_bar_g": 6.3,
+    "motor_inlet_c_in_conditional_case": 22,
+    "ambient_c": 30.0,
+    "loaded_mass_g_s": 19.400000000000002,
+    "shaft_load_w": 840.0,
+    "loaded_rpm": 1270,
+    "free_rpm": 2400,
+    "cp_j_kg_k": 1006.0,
+    "path_ua_w_k": 10.073720659304273,
+    "path_retention": 0.5968037480834264
+  },
+  "conditional_motor_inlet22": {
+    "motor_temperature_drop_k": 43.04072472382202,
+    "motor_exhaust_c": -21.040724723822017,
+    "nozzle_c": -0.46129582007138836,
+    "nozzle_drop_vs_30c_ambient_k": 30.46129582007139,
+    "source_sensible_w": 594.4948337428413,
+    "required_load_torque_nm": 6.316070182544509
+  },
+  "tank22_real_throttle": [
+    {
+      "tank_bar_g": 200,
+      "tank_c": 22,
+      "heat_free_throttle_outlet_c": -11.806153905203189
+    },
+    {
+      "tank_bar_g": 100,
+      "tank_c": 22,
+      "heat_free_throttle_outlet_c": 2.7359579425070706
+    },
+    {
+      "tank_bar_g": 50,
+      "tank_c": 22,
+      "heat_free_throttle_outlet_c": 12.473317334028991
+    },
+    {
+      "tank_bar_g": 20,
+      "tank_c": 22,
+      "heat_free_throttle_outlet_c": 18.922134185274786
+    }
+  ],
+  "no_load": {
+    "external_shaft_work_w": 0,
+    "nominal_free_rpm": 2400,
+    "mass_flow_g_s": null,
+    "exhaust_c": null,
+    "reason": "Free-running airflow and motor heat transfer are not published in the available point data. No external 840 W shaft extraction. Startup stores rotational energy; internal losses and casing heat transfer may still alter exhaust temperature."
+  },
+  "equations": {
+    "rotor": "I domega/dt = torque_air - torque_friction - torque_load",
+    "shaft": "Wshaft = torque_load * omega",
+    "energy": "T0_out = T0_in - (Wshaft - Q_into_motor)/(mdot cp), negligible potential-energy change",
+    "flow": "mdot = rho A U; mdot depends on inlet pressure, exhaust pressure, speed, temperature and leakage",
+    "cold_path": "Tout = Ta + (Tmotor - Ta) exp[-UA/(mdot cp)]",
+    "regulator": "hout=hin only for negligible heat/shaft-work/kinetic changes"
+  },
+  "limits": [
+    "22 C in the tank is not automatically 22 C at the motor inlet",
+    "At a hypothetical heat-free initial 200-to-6.3 bar throttle, real-air EOS gives about -11.8 C; walls, hoses and blowdown change this",
+    "Do not extrapolate the 840 W / 19.4 g/s motor pair to that subzero inlet without a supplier map or test",
+    "The motor-inlet22 result assumes sustained catalogue power/flow and zero net heat into the motor",
+    "No-load means zero external shaft work, not necessarily exactly zero exhaust cooling; regulator cooling and casing heat remain possible",
+    "The 19.4 g/s value is already the loaded catalogue-point conversion; it is not free-running airflow",
+    "Too much load can stall the rotor; shaft power then tends to zero even if leakage continues",
+    "Path UA is inherited and unmeasured; no steady or startup thermal guarantee",
+    "Bulk energy calculation uses stagnation temperature; high-speed port static temperature may differ before diffuser recovery",
+    "Product page lists 7 bar maximum; manual says 6.3 bar or nameplate. Keep 6.3 bar running target and confirm the nameplate/pressure-reduction package",
+    "Existing saved CFD remains at 4.313/10.281 C source. No CFD at -0.461 C was run"
+  ],
+  "references": [
+    {
+      "title": "LZB46 product ratings",
+      "url": "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249"
+    },
+    {
+      "title": "Atlas Copco B4770001 manual: no-load hotspots, load and speed",
+      "url": "https://picontent.atlascopco.com/cont/external/dir/0e/410867083_B4770001_html5_external/en-US/print-section.html?section=all"
+    },
+    {
+      "title": "CoolProp Air EOS",
+      "url": "https://coolprop.org/fluid_properties/fluids/Air.html"
+    }
+  ]
+}

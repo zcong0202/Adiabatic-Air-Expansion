@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": 8,
+  "items": [
+    "Loaded energy balance",
+    "Path warms motor exhaust toward 30 C",
+    "22 C motor inlet drop is 43.0407 K",
+    "Zero path UA would preserve exhaust",
+    "Half load at fixed mass halves enthalpy extraction",
+    "No-load flow is not invented",
+    "Initial real-air throttle differs from tank temperature",
+    "Throttle conserves specific enthalpy"
+  ],
+  "scope": "Algebra/EOS only; no new CFD, Lean or hardware validation"
+}
