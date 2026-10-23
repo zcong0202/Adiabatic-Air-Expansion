@@ -191,7 +191,7 @@
     "scl-theme.css": "e253f74c2303e0ee86662dd978e2f9014a8ca503044ae44a12c72b55178e6930",
     "components/data.js": "341416a6d7e0e7e468ea13ad419fc7682336ff3b113bea219401f59dd2334514",
     "components/bom.json": "38b44d823e0f16363f885fb21e145ecb01c489f8e0cf4b6246679ade8f0f0a29",
-    "components/bom.csv": "5d9cf2e0c15292b134a813a05409fe222dee555c06bf603c5807e293ac1f6741",
+    "components/bom.csv": "d750097b1dc42c148337378beb0eba5f31017d4743c322bc5fba3990bf321bcf",
     "components/quotation-brief.txt": "d432cbe3ca043880255b9084d91dc59f6b1e7ceb97bd45c29d15dcc714192230"
   },
   "status": "passed",
