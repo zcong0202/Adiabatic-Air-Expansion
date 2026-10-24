@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-23T16:49:58.249251</dc:date>
+    <dc:date>2026-10-24T13:31:27.995402</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 33.745714 85.637143 33.745714 92.622857
 L 33.745714 226.748571 
 Q 33.745714 233.734286 40.86 233.734286 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p32750885b6)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 62.914286 89.828571 
@@ -48,7 +48,7 @@ L 91.371429 89.828571
 L 91.371429 75.857143 
 L 62.914286 75.857143 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #162b35"/>
+" clip-path="url(#p32750885b6)" style="fill: #162b35"/>
    </g>
    <g id="patch_4">
     <path d="M 183.145714 198.805714 
@@ -61,7 +61,7 @@ Q 176.031429 113.58 176.031429 120.565714
 L 176.031429 191.82 
 Q 176.031429 198.805714 183.145714 198.805714 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p32750885b6)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 382.345714 184.834286 
@@ -74,7 +74,7 @@ Q 375.231429 127.551429 375.231429 134.537143
 L 375.231429 177.848571 
 Q 375.231429 184.834286 382.345714 184.834286 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p32750885b6)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 471.274286 202.298571 
@@ -87,7 +87,7 @@ Q 464.16 110.087143 464.16 117.072857
 L 464.16 195.312857 
 Q 464.16 202.298571 471.274286 202.298571 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p32750885b6)" style="fill: #f1f4f4; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 735.214286 170.164286 
@@ -95,7 +95,7 @@ L 735.214286 142.221429
 L 820.585714 128.25 
 L 820.585714 184.135714 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #e9f1f3; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p32750885b6)" style="fill: #e9f1f3; stroke: #162b35; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 432.145714 355.984286 
@@ -108,7 +108,7 @@ Q 425.031429 267.265714 425.031429 274.251429
 L 425.031429 348.998571 
 Q 425.031429 355.984286 432.145714 355.984286 
 z
-" clip-path="url(#pac63d1ef94)" style="fill: #fcf4e8; stroke: #b46b16; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p32750885b6)" style="fill: #fcf4e8; stroke: #b46b16; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- One motor: the air path and shaft load are separate -->
@@ -2545,7 +2545,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pac63d1ef94">
+  <clipPath id="p32750885b6">
    <rect x="6" y="6" width="996" height="391.2"/>
   </clipPath>
  </defs>

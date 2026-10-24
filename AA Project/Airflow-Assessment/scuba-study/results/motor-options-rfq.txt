@@ -1,0 +1,15 @@
+Motor POC enquiry brief — 24 October 2026. Draft only; not sent.
+
+Delivery options: Dubai / Ankara / San Francisco.
+
+Please confirm a unit physically available now, exact model/suffix/condition, quantity, ship-from location, earliest dispatch and dated freight estimate. No substitutions without a matched power/airflow curve.
+
+Priority: Gast 2AM-NCC-16. Alternatives: 1AM-NRV-39A and 4AM-NRV-50C. Please state lubrication requirement and approve exhaust collection, backpressure and the intended cold operating state.
+
+2AM target A: 5.6 bar g, about 1000 rpm / 200 W / 7 L/s free air. Target B: 6.3 bar g, about 3000 rpm / 600 W / 13 L/s free air. Point values read from Gast curve, not a thermal guarantee.
+
+Need complete guarded load fixture/coupling, inlet treatment, exhaust adapter and measuring instruments. Standard Gast rig is a contained bench demonstration, not an outlet aimed at people.
+
+Please quote stocked oil-free LL/NLP equivalents separately with correct <=5.5 bar curves; do not substitute the standard-model curve.
+
+The source is a 12 L / 200 bar scuba cylinder with rated pressure reduction. Tank and motor inlet temperatures are separate measured states.

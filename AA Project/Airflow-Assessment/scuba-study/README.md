@@ -135,3 +135,56 @@ a supplier map/test. See [calculations](results/load22-calculations.json) and
 The product page lists 7 bar maximum working pressure; the product manual says
 6.3 bar or the nameplate. Keep the 6.3 bar running target and confirm the actual
 nameplate and pressure-reduction package. No cylinder-pressure parts are printed.
+
+## Alternative motor shortlist — 24 October 2026
+
+[Open alternatives and bench POC plan](results/index.html#motor-options).
+Three standard Gast models are compared with LZB46. Manufacturer PDFs and
+observed supplier pages are retained in `evidence/motor-options/`.
+
+- 1AM-NRV-39A: about 270 W / 7.4 L/s free air at 6.3 bar / 8000 rpm.
+- 2AM-NCC-16: about 600 W / 13 L/s at 6.3 bar / 3000 rpm.
+- 2AM-NCC-16 low duty: about 200 W / 7 L/s at 5.6 bar / 1000 rpm.
+- 4AM-NRV-50C: about 1100 W / 30.5 L/s at 6.3 bar / 3000 rpm.
+
+These are paired approximate manufacturer-curve reads. The 6.3 bar estimates
+interpolate between 7 and 5.6 bar curves at the same rpm. They are not power
+ratings arbitrarily paired with no-load flow. Free-air conversion uses an
+assumed 1.2 kg/m³. Script: `scripts/motor_options.py`; JSON/CSV include sources,
+30 numerical balance checks, assumptions and sensitivities. No new CFD or
+Lean proof was generated. Existing saved source-specific CFD stays unchanged.
+
+All thermal comparisons assume 22°C measured motor inlet and 30°C ambient.
+A 22°C cylinder does not establish 22°C motor inlet. Heat pickup in the motor
+is zero in the nominal calculation. Old-path UA=10.0737 W/K and short-path
+UA=1 W/K are comparison assumptions, not measured conductance. Separate
+scenarios return 25% of shaft work as heat and vary power/flow by ±10%.
+Inventory runtimes use a 12 L / 200 bar / 22°C tank to a 20 bar cutoff and
+exclude conditioning, leakage, regulator dropout and temperature limits.
+
+Gast's standard models require lubrication. They are candidates for a
+contained, instrumented bench POC, not direct person-facing exhaust.
+LL/NLP model families have different <=5.5 bar limits and require their own
+curves. Zoro marks its 4AM-NRV-50CLL listing discontinued; this does not mean
+Gast has globally discontinued the model. 2AM-NCC-96 retailer power fields
+conflict, so it is excluded from the calculation.
+
+Procurement status: exact-model Zoro US listings/prices observed. Physical
+stock, ship-from warehouse and delivery to San Francisco remain unconfirmed.
+Gast's locator identifies TAHAS Istanbul; its contact page confirms the
+phone/address, but no Ankara stock or dispatch date is published. UAE RS
+Delivers was unavailable during research, and no Dubai ready-stock unit was
+verified. No alternative is confirmed faster than the reported four-week
+LZB46 lead. A public listing named 'Stock 40/Skid' is not an inventory count.
+No supplier inquiry, message, purchase or order was sent. The stock enquiry
+brief is a downloadable draft only.
+
+For the POC, first compare a rated regulator-only bypass with a loaded motor
+at comparable measured flow and motor-inlet conditions. Use calibrated bulk
+inlet/exhaust temperatures, pressures, mass flow, shaft torque and rpm.
+Cold housing, free-jet sensation or an IR image alone does not establish air
+cooling. Precondition to repeatable source conditions before the up-to-ten-
+second demonstration interval. Warm motor/nozzle metal may absorb the first
+pulse's budget; no fixed warmup duration is predicted. Report whether the
+measurement proves throttling, incremental motor expansion, or outdoor
+20–50 cm cooling. These are different claims.

@@ -1,0 +1,331 @@
+{
+  "checked": "2026-10-24",
+  "status": "Engineering shortlist; no alternative has confirmed immediate delivery",
+  "recommendation": "Seek a physically stocked Gast 2AM-NCC-16 for a contained bench POC. Start with the lower-duty point if a 200 W rated load is easier to obtain; move toward 600 W only after measurements. This is a procurement/demonstration tradeoff, not a claim of colder air than LZB46.",
+  "assumptions": {
+    "tank_l": 12,
+    "tank_initial_c": 22,
+    "tank_fill_bar_g": 200,
+    "tank_cutoff_bar_g": 20,
+    "motor_inlet_c": 22,
+    "motor_inlet_status": "Separate controlled/measured assumption; a 22 C cylinder does not establish 22 C motor inlet",
+    "ambient_c": 30,
+    "cp_j_kg_k": 1006.0,
+    "free_air_density_kg_m3": 1.2,
+    "free_air_reference_status": "Assumed 1.2 kg/m3 conversion; manufacturer reference conditions need confirmation",
+    "nominal_motor_heat_into_air_w": 0,
+    "comparison_ua_w_k": [
+      10.073720659304273,
+      1
+    ],
+    "curve_read_sensitivity": "Power and flow independently +/-10%; scenario sensitivity, not a certified error bound",
+    "inventory_mass_kg": 2.768324054212818,
+    "usable_isothermal_kg": 2.46882300895497,
+    "usable_adiabatic_kg": 2.0910645120008624
+  },
+  "motors": [
+    {
+      "id": "lzb46",
+      "name": "Atlas LZB46-RL-A025-11",
+      "family": "baseline",
+      "pressure_bar_g": 6.3,
+      "rpm": 1270,
+      "power_w": 840,
+      "free_air_l_s": 16.2,
+      "mass_kg_s": 0.0194,
+      "price_usd": null,
+      "availability": "User reports four-week lead time",
+      "supplier_url": "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249",
+      "lubrication": "Lubrication-free reference",
+      "basis": "Existing DOCX loaded-point pair; exact reference air state unresolved",
+      "mass_g_s": 19.400000000000002,
+      "motor_drop_k": 43.04072472382202,
+      "motor_exhaust_c": -21.040724723822017,
+      "load_torque_nm": 6.316070182544509,
+      "tank_runtime_adiabatic_s": 107.78683051550837,
+      "tank_runtime_isothermal_s": 127.25891798736959,
+      "full_10s_pulses_adiabatic": 10,
+      "full_10s_pulses_isothermal": 12,
+      "source_mass_10s_g": 194.0,
+      "nozzle_c_inherited_ua": -0.46129582007138836,
+      "nozzle_c_short_path": -18.4913232591611,
+      "nozzle_c_short_path_25pct_heat_return": -8.268595686303392,
+      "motor_drop_sensitivity_k": [
+        35.21513841039983,
+        52.605330218004696
+      ],
+      "heat_capacity_w_k": 19.5164,
+      "work_removed_at_nozzle_w_short_path": 798.0433616116803,
+      "curve_source": null,
+      "manufacturer_url": "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249"
+    },
+    {
+      "id": "1am",
+      "name": "Gast 1AM-NRV-39A",
+      "family": "1AM",
+      "pressure_bar_g": 6.3,
+      "rpm": 8000,
+      "power_w": 270,
+      "free_air_l_s": 7.4,
+      "price_usd": 256.99,
+      "availability": "US Zoro listing; actual stock/dispatch not confirmed",
+      "supplier_url": "https://www.zoro.com/gast-stock-36skid-1am-nrv-39a-air-motor-1am-nrv-39a/i/G0602738/",
+      "lubrication": "Standard lubricated model: contained bench exhaust",
+      "basis": "Approximate paired curve read/interpolation; not exact rated thermal output",
+      "mass_kg_s": 0.00888,
+      "mass_g_s": 8.88,
+      "motor_drop_k": 30.224061039170383,
+      "motor_exhaust_c": -8.224061039170383,
+      "load_torque_nm": 0.32228875976108806,
+      "tank_runtime_adiabatic_s": 235.48023783793494,
+      "tank_runtime_isothermal_s": 278.02060911655065,
+      "full_10s_pulses_adiabatic": 23,
+      "full_10s_pulses_isothermal": 27,
+      "source_mass_10s_g": 88.80000000000001,
+      "nozzle_c_inherited_ua": 17.623454896998382,
+      "nozzle_c_short_path": -4.17601973027093,
+      "nozzle_c_short_path_25pct_heat_return": 2.5797911276144276,
+      "motor_drop_sensitivity_k": [
+        24.728777213866678,
+        36.940519047874915
+      ],
+      "heat_capacity_w_k": 8.93328,
+      "work_removed_at_nozzle_w_short_path": 241.40620008212048,
+      "curve_source": {
+        "file": "Gast-1AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/1AM-STD111_J.pdf",
+        "page": 1,
+        "revision": "STD111 J",
+        "read_points": "At 8000 rpm: about 300 W / 8.3 L/s at 7 bar and 240 W / 6.5 L/s at 5.6 bar. Linear interpolation to 6.3 bar.",
+        "sha256": "2a2ddde7a9262303bf78eb9df537f17ed3d7d32feef97c847c6d645571aa62e2"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/1am-nrv-39a/"
+    },
+    {
+      "id": "2am",
+      "name": "Gast 2AM-NCC-16",
+      "family": "2AM",
+      "pressure_bar_g": 6.3,
+      "rpm": 3000,
+      "power_w": 600,
+      "free_air_l_s": 13.0,
+      "price_usd": 313.99,
+      "availability": "US Zoro listing; actual stock/dispatch not confirmed",
+      "supplier_url": "https://www.zoro.com/gast-stock-40skid-2am-ncc-16-air-motor-2am-ncc-16/i/G0602747/",
+      "lubrication": "Standard lubricated model: contained bench exhaust",
+      "basis": "Approximate paired curve read/interpolation; not exact rated thermal output",
+      "mass_kg_s": 0.015600000000000001,
+      "mass_g_s": 15.600000000000001,
+      "motor_drop_k": 38.2321455880104,
+      "motor_exhaust_c": -16.232145588010397,
+      "load_torque_nm": 1.909859317102744,
+      "tank_runtime_adiabatic_s": 134.0425969231322,
+      "tank_runtime_isothermal_s": 158.25788518942116,
+      "full_10s_pulses_adiabatic": 13,
+      "full_10s_pulses_isothermal": 15,
+      "source_mass_10s_g": 156.0,
+      "nozzle_c_inherited_ua": 5.668412013656194,
+      "nozzle_c_short_path": -13.378117350570093,
+      "nozzle_c_short_path_25pct_heat_return": -4.410122913000201,
+      "motor_drop_sensitivity_k": [
+        31.28084639019032,
+        46.728177940901595
+      ],
+      "heat_capacity_w_k": 15.693600000000002,
+      "work_removed_at_nozzle_w_short_path": 562.9604700217878,
+      "curve_source": {
+        "file": "Gast-2AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/2AM_STD113_K.pdf",
+        "page": 1,
+        "revision": "STD113 K",
+        "read_points": "At 3000 rpm: about 700 W / 14 L/s at 7 bar and 500 W / 12 L/s at 5.6 bar. Interpolate to 6.3 bar. Separate lower-duty point at 5.6 bar / 1000 rpm: about 200 W / 7 L/s.",
+        "sha256": "31b2df43fb408b37e0f2f735f853b5c3c46bb198198d69276c6e1fb25676d215"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/2am-ncc-16/"
+    },
+    {
+      "id": "2am-poc",
+      "name": "Gast 2AM-NCC-16 \u00b7 low-duty POC",
+      "family": "2AM",
+      "pressure_bar_g": 5.6,
+      "rpm": 1000,
+      "power_w": 200,
+      "free_air_l_s": 7.0,
+      "price_usd": 313.99,
+      "availability": "Same motor as above; an operating point, not another SKU",
+      "supplier_url": "https://www.zoro.com/gast-stock-40skid-2am-ncc-16-air-motor-2am-ncc-16/i/G0602747/",
+      "lubrication": "Standard lubricated model: contained bench exhaust",
+      "basis": "Approximate 5.6 bar / 1000 rpm curve read; verify the loaded point",
+      "mass_kg_s": 0.0084,
+      "mass_g_s": 8.4,
+      "motor_drop_k": 23.66751869733977,
+      "motor_exhaust_c": -1.6675186973397693,
+      "load_torque_nm": 1.9098593171027443,
+      "tank_runtime_adiabatic_s": 248.9362514286741,
+      "tank_runtime_isothermal_s": 293.9075010660679,
+      "full_10s_pulses_adiabatic": 24,
+      "full_10s_pulses_isothermal": 29,
+      "source_mass_10s_g": 84.0,
+      "nozzle_c_inherited_ua": 20.386276119236836,
+      "nozzle_c_short_path": 1.8667003596400207,
+      "nozzle_c_short_path_25pct_heat_return": 7.123233099226091,
+      "motor_drop_sensitivity_k": [
+        19.36433347964163,
+        28.92696729674861
+      ],
+      "heat_capacity_w_k": 8.4504,
+      "work_removed_at_nozzle_w_short_path": 177.6792170503925,
+      "curve_source": {
+        "file": "Gast-2AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/2AM_STD113_K.pdf",
+        "page": 1,
+        "revision": "STD113 K",
+        "read_points": "At 3000 rpm: about 700 W / 14 L/s at 7 bar and 500 W / 12 L/s at 5.6 bar. Interpolate to 6.3 bar. Separate lower-duty point at 5.6 bar / 1000 rpm: about 200 W / 7 L/s.",
+        "sha256": "31b2df43fb408b37e0f2f735f853b5c3c46bb198198d69276c6e1fb25676d215"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/2am-ncc-16/"
+    },
+    {
+      "id": "4am",
+      "name": "Gast 4AM-NRV-50C",
+      "family": "4AM",
+      "pressure_bar_g": 6.3,
+      "rpm": 3000,
+      "power_w": 1100,
+      "free_air_l_s": 30.5,
+      "price_usd": 477.99,
+      "availability": "US Zoro listing; actual stock/dispatch not confirmed",
+      "supplier_url": "https://www.zoro.com/gast-flanged-air-motor-cast-iron-17-hp-11-lb-4am-nrv-50c/i/G0602546/",
+      "lubrication": "Standard lubricated model: contained bench exhaust",
+      "basis": "Approximate paired curve read/interpolation; not exact rated thermal output",
+      "mass_kg_s": 0.0366,
+      "mass_g_s": 36.6,
+      "motor_drop_k": 29.875392454019053,
+      "motor_exhaust_c": -7.875392454019053,
+      "load_torque_nm": 3.5014087480216975,
+      "tank_runtime_adiabatic_s": 57.13291016395799,
+      "tank_runtime_isothermal_s": 67.45418057254017,
+      "full_10s_pulses_adiabatic": 5,
+      "full_10s_pulses_isothermal": 6,
+      "source_mass_10s_g": 366.0,
+      "nozzle_c_inherited_ua": 1.1905074186496272,
+      "nozzle_c_short_path": -6.8605612225050265,
+      "nozzle_c_short_path_25pct_heat_return": 0.4081669757217341,
+      "motor_drop_sensitivity_k": [
+        24.44350291692468,
+        36.514368554912174
+      ],
+      "heat_capacity_w_k": 36.8196,
+      "work_removed_at_nozzle_w_short_path": 1070.5266590697208,
+      "curve_source": {
+        "file": "Gast-4AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/4AM_STD124_K.pdf",
+        "page": 1,
+        "revision": "STD124 K",
+        "read_points": "At 3000 rpm: about 1250 W / 33 L/s at 7 bar and 950 W / 28 L/s at 5.6 bar. Linear interpolation to 6.3 bar.",
+        "sha256": "e8d9cab131755e76c7b4cb5ae01cd1d879c3bf1e3ea7124d1c1bca8fe6aba17a"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/4am-nrv-50c/"
+    }
+  ],
+  "procurement": [
+    {
+      "destination": "San Francisco",
+      "name": "Zoro US",
+      "url": "https://www.zoro.com/search?q=gast%20air%20motor",
+      "phone": "+1 855 289 9676",
+      "status": "Exact-model US listings and prices observed. Stock, ship-from location and arrival date not confirmed. ZIP/shipping widget unavailable in this session.",
+      "next": "Ask exact model, quantity physically on shelf, earliest dispatch and delivery to SF; get written confirmation."
+    },
+    {
+      "destination": "Ankara",
+      "name": "TAHAS \u00b7 Istanbul",
+      "url": "https://www.tahas.com/iletisim/",
+      "authority": "Gast manufacturer distributor locator: https://gastmfg.com/find-distributor/",
+      "phone": "+90 212 284 93 33",
+      "status": "Manufacturer-listed Turkish distributor and Istanbul contact verified. No Ankara stock, inventory count or dispatch date published.",
+      "next": "Ask Istanbul stock for 1AM-NRV-39A / 2AM-NCC-16 / 4AM-NRV-50C and dispatch to Ankara."
+    },
+    {
+      "destination": "Dubai",
+      "name": "No ready-stock alternative verified",
+      "url": "https://gastmfg.com/find-distributor/",
+      "phone": null,
+      "status": "UAE RS Delivers was in maintenance. No exact-model UAE warehouse stock or promised delivery verified.",
+      "next": "Obtain a local supplier stock confirmation or compare an already-stocked Turkish/US unit with actual freight and customs time."
+    }
+  ],
+  "exclusions": [
+    {
+      "model": "Gast 4AM-NRV-50CLL",
+      "status": "Zoro search marks its listing Discontinued; manufacturer still lists the model",
+      "reason": "No matched curve/stock qualification. Do not use lubricated 7-bar curves: operation manual limits LL/NLP families to 5.5 bar.",
+      "url": "https://www.zoro.com/search?q=4AM-NRV-50CLL"
+    },
+    {
+      "model": "Gast 2AM-NCC-96",
+      "status": "Zoro listing title says 0.95 hp but key feature says 0.75 hp",
+      "reason": "No matching primary performance curve obtained; excluded from numerical ranking.",
+      "url": "https://www.zoro.com/gast-air-motor-095-hp-30-cfm-14-innpt-2am-ncc-96/i/G0402954/"
+    }
+  ],
+  "poc": [
+    "Bench-only first: standard Gast exhaust is lubricated. Collect/vent it away from people; do not use it as the person-facing cooling outlet.",
+    "Use the existing rated cylinder pressure-reduction package. Set motor running pressure to its chosen curve point, not cylinder pressure.",
+    "Use a guarded, rated brake or generator/load with torque and rpm measurement. For the lower-duty 2AM target: about 200 W and 1.91 Nm at 1000 rpm. This is a target, not a purchased complete load station.",
+    "Record tank pressure/temperature, motor inlet pressure/temperature, exhaust pressure, low-speed bulk exhaust temperature, actual mass flow and shaft torque/rpm simultaneously.",
+    "Use a short insulated, low-mass collection section; its UA=1 W/K calculation is a design sensitivity, not measured conductance. Keep exhaust pressure loss low and measure it.",
+    "Run a regulator-only bypass at comparable measured flow; it separates Joule-Thomson/line cooling from incremental motor cooling. Record any flow change rather than treating unlike cases as a controlled comparison.",
+    "Precondition until the measured source state is repeatable, with exhaust away from the target. Then record repeated up-to-10 s demonstration pulses. Do not promise first-pulse cooling: warm motor/nozzle metal can absorb much of the nominal cooling budget.",
+    "Show cooling with calibrated simultaneous temperatures, not a cold housing, IR image or skin sensation. Use a predeclared demonstration screen such as a repeatable >=5 K bulk drop across the motor with sensor uncertainty much smaller than that drop; this is a test criterion, not a predicted result.",
+    "Check steady first-law closure: Q_into_motor = Wshaft - mdot cp (Tin-Tout), with kinetic-temperature correction if required. During startup include motor/fixture thermal storage; do not interpret it as steady heat leak.",
+    "A regulator-only measured cold-air result is a legitimate throttling POC. It does not validate a motor expander or prove outdoor 20-50 cm cooling."
+  ],
+  "sources": {
+    "1AM": {
+      "file": "Gast-1AM.pdf",
+      "url": "https://gastmfg.com/wp-content/uploads/2026/07/1AM-STD111_J.pdf",
+      "page": 1,
+      "revision": "STD111 J",
+      "read_points": "At 8000 rpm: about 300 W / 8.3 L/s at 7 bar and 240 W / 6.5 L/s at 5.6 bar. Linear interpolation to 6.3 bar.",
+      "sha256": "2a2ddde7a9262303bf78eb9df537f17ed3d7d32feef97c847c6d645571aa62e2"
+    },
+    "2AM": {
+      "file": "Gast-2AM.pdf",
+      "url": "https://gastmfg.com/wp-content/uploads/2026/07/2AM_STD113_K.pdf",
+      "page": 1,
+      "revision": "STD113 K",
+      "read_points": "At 3000 rpm: about 700 W / 14 L/s at 7 bar and 500 W / 12 L/s at 5.6 bar. Interpolate to 6.3 bar. Separate lower-duty point at 5.6 bar / 1000 rpm: about 200 W / 7 L/s.",
+      "sha256": "31b2df43fb408b37e0f2f735f853b5c3c46bb198198d69276c6e1fb25676d215"
+    },
+    "4AM": {
+      "file": "Gast-4AM.pdf",
+      "url": "https://gastmfg.com/wp-content/uploads/2026/07/4AM_STD124_K.pdf",
+      "page": 1,
+      "revision": "STD124 K",
+      "read_points": "At 3000 rpm: about 1250 W / 33 L/s at 7 bar and 950 W / 28 L/s at 5.6 bar. Linear interpolation to 6.3 bar.",
+      "sha256": "e8d9cab131755e76c7b4cb5ae01cd1d879c3bf1e3ea7124d1c1bca8fe6aba17a"
+    },
+    "manual": {
+      "file": "Gast-operation-manual.pdf",
+      "url": "https://gastmfg.com/wp-content/uploads/2026/07/OM_AM_45-200.pdf",
+      "pages": [
+        7,
+        9
+      ],
+      "read_points": "Standard models use lubricated air. LL/NLP can run without lubrication; manual limits these families to 5.5 bar. Model-specific nameplate and air-temperature limits require confirmation.",
+      "sha256": "823697e6da5e18ff0d4b3f5c417273b27dde74115e3d933838fa560fe45f52bf"
+    }
+  },
+  "limits": [
+    "No new CFD, CAD fit, Lean proof or hardware temperature guarantee",
+    "Power and flow must refer to the same operating point; supplier headline maximum values are not arbitrarily paired",
+    "Gast point estimates read from curves and interpolate pressure; motor inlet-temperature dependence, leakage, casing heat and exhaust backpressure are unresolved",
+    "Negative calculated exhaust temperatures do not establish approved continuous subzero operation",
+    "Short-path UA=1 W/K is an assumption; motor metal and nozzle wall startup are not represented in the steady calculation",
+    "Gas inventory runtimes exclude startup conditioning, leaks, regulator dropout and cold operating limits",
+    "Prices are public US listings in USD before taxes/freight; no offer, payment, inquiry or order sent",
+    "Stock 40/Skid and Stock 36/Skid are product-description text, not live inventory counts",
+    "No delivery date to Dubai, Ankara or San Francisco is confirmed"
+  ]
+}

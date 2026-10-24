@@ -50,6 +50,8 @@ def report():
     main.insert(0,H.fragment_fromstring(block))
     from load22 import build as load22_section
     main.insert(1,H.fragment_fromstring(load22_section()))
+    from motor_options import build as motor_options_section
+    main.insert(1,H.fragment_fromstring(motor_options_section()))
     summary=f'''<section class="card"><h2>New single-nozzle CFD · at 10 s</h2><div class="table"><table><thead><tr><th>Saved scenario</th><th>Cells</th><th>20 cm best 5 cm ΔT K</th><th>50 cm best 5 cm ΔT K</th><th>20–50 cm cold air L</th><th>Cold air g</th></tr></thead><tbody>{result_rows}</tbody></table></div><p class="note">Cold air = native cells ≥6 K below ambient. Best sampled 5 × 5 cm means are local patches, not whole-section or human cooling. Native frames at integer seconds 0–10; no post-shutoff decay. Fixed source boundary; tank transient is not coupled to CFD.</p><a href="comparison.csv">Result CSV</a> · <a href="validation.json">CFD / mesh checks</a></section>'''
     main.append(H.fragment_fromstring(summary))
     animation=OUT/(default['case']+'-cooling.gif')
