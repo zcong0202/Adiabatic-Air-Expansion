@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checks": 20,
+  "items": [
+    "lzb46 UA=10.073720659304273 heat=0.0: energy/mixing closure",
+    "lzb46 UA=10.073720659304273 heat=0.25: energy/mixing closure",
+    "lzb46 UA=1 heat=0.0: energy/mixing closure",
+    "lzb46 UA=1 heat=0.25: energy/mixing closure",
+    "1am UA=10.073720659304273 heat=0.0: energy/mixing closure",
+    "1am UA=10.073720659304273 heat=0.25: energy/mixing closure",
+    "1am UA=1 heat=0.0: energy/mixing closure",
+    "1am UA=1 heat=0.25: energy/mixing closure",
+    "2am UA=10.073720659304273 heat=0.0: energy/mixing closure",
+    "2am UA=10.073720659304273 heat=0.25: energy/mixing closure",
+    "2am UA=1 heat=0.0: energy/mixing closure",
+    "2am UA=1 heat=0.25: energy/mixing closure",
+    "2am-poc UA=10.073720659304273 heat=0.0: energy/mixing closure",
+    "2am-poc UA=10.073720659304273 heat=0.25: energy/mixing closure",
+    "2am-poc UA=1 heat=0.0: energy/mixing closure",
+    "2am-poc UA=1 heat=0.25: energy/mixing closure",
+    "4am UA=10.073720659304273 heat=0.0: energy/mixing closure",
+    "4am UA=10.073720659304273 heat=0.25: energy/mixing closure",
+    "4am UA=1 heat=0.0: energy/mixing closure",
+    "4am UA=1 heat=0.25: energy/mixing closure"
+  ],
+  "scope": "Steady energy and ideal mixing closure only"
+}

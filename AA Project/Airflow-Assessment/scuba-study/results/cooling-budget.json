@@ -1,0 +1,390 @@
+{
+  "status": "Conditional steady budgets; not hardware validation",
+  "assumptions": {
+    "tank_l": 12,
+    "tank_initial_c": 22,
+    "tank_fill_bar_g": 200,
+    "tank_cutoff_bar_g": 20,
+    "motor_inlet_c": 22,
+    "motor_inlet_status": "Separate controlled/measured assumption; a 22 C cylinder does not establish 22 C motor inlet",
+    "ambient_c": 30,
+    "cp_j_kg_k": 1006.0,
+    "free_air_density_kg_m3": 1.2,
+    "free_air_reference_status": "Assumed 1.2 kg/m3 conversion; manufacturer reference conditions need confirmation",
+    "nominal_motor_heat_into_air_w": 0,
+    "comparison_ua_w_k": [
+      10.073720659304273,
+      1
+    ],
+    "curve_read_sensitivity": "Power and flow independently +/-10%; scenario sensitivity, not a certified error bound",
+    "inventory_mass_kg": 2.768324054212818,
+    "usable_isothermal_kg": 2.46882300895497,
+    "usable_adiabatic_kg": 2.0910645120008624
+  },
+  "target_drop_k": 6.0,
+  "motors": [
+    {
+      "id": "lzb46",
+      "name": "Atlas LZB46-RL-A025-11",
+      "mass_g_s": 19.400000000000002,
+      "shaft_power_w": 840,
+      "rpm": 1270,
+      "pressure_bar_g": 6.3,
+      "curve_source": null,
+      "manufacturer_url": "https://www.atlascopco.com/en-us/itba/products/air-motors/lzb46-rl-a025-11-sku8411047249",
+      "source_mass_10s_g": 194.0,
+      "tank_inventory_10s_possible": true,
+      "heat_into_motor_limit_for_6k_motor_drop_w": 722.9016,
+      "shaft_energy_10s_j": 8400,
+      "scenarios": [
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -21.040724723822017,
+          "nozzle_c": -0.46129582007138836,
+          "sensible_cooling_vs_ambient_w": 594.4948337428413,
+          "max_total_mixed_g_s_at_6k": 98.49152315156417,
+          "max_ambient_per_source_mass_ratio_at_6k": 4.076882636678564,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 984.9152315156416
+        },
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 210.0,
+          "motor_exhaust_c": -10.28054354286651,
+          "nozzle_c": 5.960420638779606,
+          "sensible_cooling_vs_ambient_w": 469.1660466453217,
+          "max_total_mixed_g_s_at_6k": 77.72797326794596,
+          "max_ambient_per_source_mass_ratio_at_6k": 3.0065965602033993,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 777.2797326794595
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -21.040724723822017,
+          "nozzle_c": -18.4913232591611,
+          "sensible_cooling_vs_ambient_w": 946.3760612550917,
+          "max_total_mixed_g_s_at_6k": 156.78861187128757,
+          "max_ambient_per_source_mass_ratio_at_6k": 7.081887209860183,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 1567.8861187128757
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 210.0,
+          "motor_exhaust_c": -10.28054354286651,
+          "nozzle_c": -8.268595686303392,
+          "sensible_cooling_vs_ambient_w": 746.8652208521715,
+          "max_total_mixed_g_s_at_6k": 123.73512605238098,
+          "max_ambient_per_source_mass_ratio_at_6k": 5.378099281050566,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 1237.3512605238097
+        }
+      ]
+    },
+    {
+      "id": "1am",
+      "name": "Gast 1AM-NRV-39A",
+      "mass_g_s": 8.88,
+      "shaft_power_w": 270,
+      "rpm": 8000,
+      "pressure_bar_g": 6.3,
+      "curve_source": {
+        "file": "Gast-1AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/1AM-STD111_J.pdf",
+        "page": 1,
+        "revision": "STD111 J",
+        "read_points": "At 8000 rpm: about 300 W / 8.3 L/s at 7 bar and 240 W / 6.5 L/s at 5.6 bar. Linear interpolation to 6.3 bar.",
+        "sha256": "2a2ddde7a9262303bf78eb9df537f17ed3d7d32feef97c847c6d645571aa62e2"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/1am-nrv-39a/",
+      "source_mass_10s_g": 88.80000000000001,
+      "tank_inventory_10s_possible": true,
+      "heat_into_motor_limit_for_6k_motor_drop_w": 216.40032,
+      "shaft_energy_10s_j": 2700,
+      "scenarios": [
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -8.224061039170383,
+          "nozzle_c": 17.623454896998382,
+          "sensible_cooling_vs_ambient_w": 110.56314283774229,
+          "max_total_mixed_g_s_at_6k": 18.317286752442396,
+          "max_ambient_per_source_mass_ratio_at_6k": 1.0627575171669363,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 183.17286752442396
+        },
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 67.5,
+          "motor_exhaust_c": -0.6680457793777883,
+          "nozzle_c": 20.07001240866515,
+          "sensible_cooling_vs_ambient_w": 88.70735954991979,
+          "max_total_mixed_g_s_at_6k": 14.696381635175577,
+          "max_ambient_per_source_mass_ratio_at_6k": 0.6549979318891415,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 146.96381635175578
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -8.224061039170383,
+          "nozzle_c": -4.17601973027093,
+          "sensible_cooling_vs_ambient_w": 305.30395353603467,
+          "max_total_mixed_g_s_at_6k": 50.580509200800975,
+          "max_ambient_per_source_mass_ratio_at_6k": 4.6960032883784875,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 505.80509200800975
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 67.5,
+          "motor_exhaust_c": -0.6680457793777883,
+          "nozzle_c": 2.5797911276144276,
+          "sensible_cooling_vs_ambient_w": 244.95240351550459,
+          "max_total_mixed_g_s_at_6k": 40.58190913113065,
+          "max_ambient_per_source_mass_ratio_at_6k": 3.5700348120642618,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 405.81909131130647
+        }
+      ]
+    },
+    {
+      "id": "2am",
+      "name": "Gast 2AM-NCC-16",
+      "mass_g_s": 15.600000000000001,
+      "shaft_power_w": 600,
+      "rpm": 3000,
+      "pressure_bar_g": 6.3,
+      "curve_source": {
+        "file": "Gast-2AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/2AM_STD113_K.pdf",
+        "page": 1,
+        "revision": "STD113 K",
+        "read_points": "At 3000 rpm: about 700 W / 14 L/s at 7 bar and 500 W / 12 L/s at 5.6 bar. Interpolate to 6.3 bar. Separate lower-duty point at 5.6 bar / 1000 rpm: about 200 W / 7 L/s.",
+        "sha256": "31b2df43fb408b37e0f2f735f853b5c3c46bb198198d69276c6e1fb25676d215"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/2am-ncc-16/",
+      "source_mass_10s_g": 156.0,
+      "tank_inventory_10s_possible": true,
+      "heat_into_motor_limit_for_6k_motor_drop_w": 505.8384,
+      "shaft_energy_10s_j": 6000,
+      "scenarios": [
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -16.232145588010397,
+          "nozzle_c": 5.668412013656194,
+          "sensible_cooling_vs_ambient_w": 381.8502092224852,
+          "max_total_mixed_g_s_at_6k": 63.2621287644939,
+          "max_ambient_per_source_mass_ratio_at_6k": 3.0552646643906343,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 632.621287644939
+        },
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 150.0,
+          "motor_exhaust_c": -6.674109191007798,
+          "nozzle_c": 10.698725891856487,
+          "sensible_cooling_vs_ambient_w": 302.90647534356106,
+          "max_total_mixed_g_s_at_6k": 50.18331268117314,
+          "max_ambient_per_source_mass_ratio_at_6k": 2.216879018023919,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 501.8331268117314
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -16.232145588010397,
+          "nozzle_c": -13.378117350570093,
+          "sensible_cooling_vs_ambient_w": 680.7588224529069,
+          "max_total_mixed_g_s_at_6k": 112.78310511148224,
+          "max_ambient_per_source_mass_ratio_at_6k": 6.229686225095016,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 1127.8310511148225
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 150.0,
+          "motor_exhaust_c": -6.674109191007798,
+          "nozzle_c": -4.410122913000201,
+          "sensible_cooling_vs_ambient_w": 540.01870494746,
+          "max_total_mixed_g_s_at_6k": 89.46631957380053,
+          "max_ambient_per_source_mass_ratio_at_6k": 4.735020485500034,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 894.6631957380054
+        }
+      ]
+    },
+    {
+      "id": "2am-poc",
+      "name": "Gast 2AM-NCC-16 \u00b7 low-duty POC",
+      "mass_g_s": 8.4,
+      "shaft_power_w": 200,
+      "rpm": 1000,
+      "pressure_bar_g": 5.6,
+      "curve_source": {
+        "file": "Gast-2AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/2AM_STD113_K.pdf",
+        "page": 1,
+        "revision": "STD113 K",
+        "read_points": "At 3000 rpm: about 700 W / 14 L/s at 7 bar and 500 W / 12 L/s at 5.6 bar. Interpolate to 6.3 bar. Separate lower-duty point at 5.6 bar / 1000 rpm: about 200 W / 7 L/s.",
+        "sha256": "31b2df43fb408b37e0f2f735f853b5c3c46bb198198d69276c6e1fb25676d215"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/2am-ncc-16/",
+      "source_mass_10s_g": 84.0,
+      "tank_inventory_10s_possible": true,
+      "heat_into_motor_limit_for_6k_motor_drop_w": 149.2976,
+      "shaft_energy_10s_j": 2000,
+      "scenarios": [
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -1.6675186973397693,
+          "nozzle_c": 20.386276119236836,
+          "sensible_cooling_vs_ambient_w": 81.23981228200104,
+          "max_total_mixed_g_s_at_6k": 13.45921343306843,
+          "max_ambient_per_source_mass_ratio_at_6k": 0.6022873134605273,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 134.5921343306843
+        },
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 50.0,
+          "motor_exhaust_c": 4.24936097699517,
+          "nozzle_c": 22.182540865092484,
+          "sensible_cooling_vs_ambient_w": 66.06065667362247,
+          "max_total_mixed_g_s_at_6k": 10.944442788870523,
+          "max_ambient_per_source_mass_ratio_at_6k": 0.3029098558179195,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 109.44442788870523
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -1.6675186973397693,
+          "nozzle_c": 1.8667003596400207,
+          "sensible_cooling_vs_ambient_w": 237.73763528089796,
+          "max_total_mixed_g_s_at_6k": 39.38661949650397,
+          "max_ambient_per_source_mass_ratio_at_6k": 3.68888327339333,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 393.86619496503965
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 50.0,
+          "motor_exhaust_c": 4.24936097699517,
+          "nozzle_c": 7.123233099226088,
+          "sensible_cooling_vs_ambient_w": 193.31783101829987,
+          "max_total_mixed_g_s_at_6k": 32.027473661083484,
+          "max_ambient_per_source_mass_ratio_at_6k": 2.8127944834623193,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 320.2747366108348
+        }
+      ]
+    },
+    {
+      "id": "4am",
+      "name": "Gast 4AM-NRV-50C",
+      "mass_g_s": 36.6,
+      "shaft_power_w": 1100,
+      "rpm": 3000,
+      "pressure_bar_g": 6.3,
+      "curve_source": {
+        "file": "Gast-4AM.pdf",
+        "url": "https://gastmfg.com/wp-content/uploads/2026/07/4AM_STD124_K.pdf",
+        "page": 1,
+        "revision": "STD124 K",
+        "read_points": "At 3000 rpm: about 1250 W / 33 L/s at 7 bar and 950 W / 28 L/s at 5.6 bar. Linear interpolation to 6.3 bar.",
+        "sha256": "e8d9cab131755e76c7b4cb5ae01cd1d879c3bf1e3ea7124d1c1bca8fe6aba17a"
+      },
+      "manufacturer_url": "https://gastmfg.com/products-sku/4am-nrv-50c/",
+      "source_mass_10s_g": 366.0,
+      "tank_inventory_10s_possible": true,
+      "heat_into_motor_limit_for_6k_motor_drop_w": 879.0824,
+      "shaft_energy_10s_j": 11000,
+      "scenarios": [
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -7.875392454019053,
+          "nozzle_c": 1.1905074186496272,
+          "sensible_cooling_vs_ambient_w": 1060.7539930482883,
+          "max_total_mixed_g_s_at_6k": 175.7379047462373,
+          "max_ambient_per_source_mass_ratio_at_6k": 3.801582096891729,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 1757.379047462373
+        },
+        {
+          "ua_w_k": 10.073720659304273,
+          "heat_into_motor_w": 275.0,
+          "motor_exhaust_c": -0.4065443405142908,
+          "nozzle_c": 6.871602989566025,
+          "sensible_cooling_vs_ambient_w": 851.5783265653748,
+          "max_total_mixed_g_s_at_6k": 141.08322176364726,
+          "max_ambient_per_source_mass_ratio_at_6k": 2.8547328350723298,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 1410.8322176364727
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 0.0,
+          "motor_exhaust_c": -7.875392454019053,
+          "nozzle_c": -6.8605612225050265,
+          "sensible_cooling_vs_ambient_w": 1357.191119988146,
+          "max_total_mixed_g_s_at_6k": 224.84942345728064,
+          "max_ambient_per_source_mass_ratio_at_6k": 5.143426870417504,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 2248.4942345728064
+        },
+        {
+          "ua_w_k": 1,
+          "heat_into_motor_w": 275.0,
+          "motor_exhaust_c": -0.4065443405142908,
+          "nozzle_c": 0.4081669757217341,
+          "sensible_cooling_vs_ambient_w": 1089.559455220716,
+          "max_total_mixed_g_s_at_6k": 180.5101814480974,
+          "max_ambient_per_source_mass_ratio_at_6k": 3.9319721707130437,
+          "target_possible_before_mixing": true,
+          "ideal_total_mixed_mass_10s_g": 1805.101814480974
+        }
+      ]
+    }
+  ],
+  "globe": {
+    "name": "GLOBE V1",
+    "listed_max_shaft_w": 520,
+    "status": "Not qualified: no paired loaded power/airflow curve obtained",
+    "source": "https://mechatronics.ae/product/v1-vane-motor/",
+    "hypothetical_flow_sweep": [
+      {
+        "assumed_g_s": 10,
+        "ideal_motor_drop_k": 51.68986083499006
+      },
+      {
+        "assumed_g_s": 20,
+        "ideal_motor_drop_k": 25.84493041749503
+      },
+      {
+        "assumed_g_s": 30,
+        "ideal_motor_drop_k": 17.229953611663355
+      },
+      {
+        "assumed_g_s": 40,
+        "ideal_motor_drop_k": 12.922465208747514
+      }
+    ],
+    "warning": "520 W at every swept flow is hypothetical, not a motor map or predicted V1 output"
+  },
+  "limits": [
+    "22 C is motor inlet, not cylinder temperature.",
+    "Requires sustained measured shaft load and the paired airflow operating point.",
+    "Cooling includes inlet air already 8 K below 30 C ambient; it is not all motor-generated.",
+    "UA and 25% heat return are sensitivity assumptions, not uncertainty bounds.",
+    "Mixed mass is a calorimetric ceiling for ideal mixing, not an achieved outdoor cold volume.",
+    "No distance, velocity, area-average target, startup conditioning or post-shutoff persistence is predicted.",
+    "Source mass is released during 10 s. Mixed mass includes entrained ambient air.",
+    "New motors have no source-specific CFD results. Standard Gast exhaust requires lubrication containment."
+  ]
+}

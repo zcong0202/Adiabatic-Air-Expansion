@@ -23,6 +23,8 @@
     "calculation-validation.json",
     "../README.md",
     "motor-options-rfq.txt",
+    "cooling-budget.json",
+    "cooling-budget-validation.json",
     "../evidence/motor-options/Gast-1AM.pdf",
     "../evidence/motor-options/Gast-2AM.pdf",
     "../evidence/motor-options/Gast-4AM.pdf",

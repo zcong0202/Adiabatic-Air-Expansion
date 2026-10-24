@@ -188,3 +188,32 @@ second demonstration interval. Warm motor/nozzle metal may absorb the first
 pulse's budget; no fixed warmup duration is predicted. Report whether the
 measurement proves throttling, incremental motor expansion, or outdoor
 20–50 cm cooling. These are different claims.
+
+### Local suppliers and steady cooling budget · 24 October
+
+Goodwin Dubai explicitly offers Gast motors. Mechatronics Dubai lists GLOBE
+V1/V2/V4. These are local supply leads; exact stock and dispatch remain
+unconfirmed. The V1 listing gives 520 W maximum power but no paired airflow.
+Do not derive a V1 temperature prediction from that rating alone.
+
+`scripts/cooling_budget.py` runs with the report generator. It writes
+`results/cooling-budget.json` and 20 energy/mixing balance checks. The model is:
+
+```
+Tmotor = Tin - (Pshaft - Qinto)/(mdot cp)
+Tnozzle = Tamb + (Tmotor - Tamb) exp(-UA/(mdot cp))
+Qcold = mdot cp (Tamb - Tnozzle)
+mdot_mixed,max = Qcold/(cp * 6 K)
+```
+
+At 22 C motor inlet, 30 C ambient, UA=1 W/K and zero motor heat pickup,
+the 600 W / 15.6 g/s 2AM point gives -13.38 C at the nozzle and 680.8 W
+of sensible cooling relative to ambient. The latter includes the inlet's
+existing 8 K deficit. The 112.8 g/s total mixed-flow ceiling includes entrained
+ambient air. It is not a spatial CFD prediction or achieved cold air mass.
+With 150 W motor heat pickup and inherited UA=10.0737 W/K, nozzle temperature
+is +10.70 C. Neither UA nor the 25% heat-return scenario is measured.
+
+These steady budgets support conditional bench POC potential. They do not
+establish startup performance, approved subzero operation, or a >6 K area
+average at 20–50 cm. Existing CFD retains its original source and motor.
