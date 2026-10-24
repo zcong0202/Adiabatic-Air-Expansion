@@ -248,11 +248,19 @@
     },
     {
       "destination": "Dubai",
-      "name": "No ready-stock alternative verified",
-      "url": "https://gastmfg.com/find-distributor/",
-      "phone": null,
-      "status": "UAE RS Delivers was in maintenance. No exact-model UAE warehouse stock or promised delivery verified.",
-      "next": "Obtain a local supplier stock confirmation or compare an already-stocked Turkish/US unit with actual freight and customs time."
+      "name": "Goodwin Trading LLC \u00b7 Gast supply",
+      "url": "https://goodwinllc.com/air-motors/",
+      "phone": "+971 4 340 6690 / +971 55 878 2818",
+      "status": "Supplier site explicitly offers Gast air motors; Al Quoz Dubai address and enquiry@goodwinllc.com verified. Exact model, local stock and dispatch unconfirmed. Supplier claim, not verified manufacturer authorization.",
+      "next": "Ask physically stocked 2AM-NCC-16, 1AM-NRV-39A or 4AM-NRV-50C, exact suffix and dispatch date."
+    },
+    {
+      "destination": "Dubai",
+      "name": "Mechatronics \u00b7 GLOBE V1 / V2 / V4",
+      "url": "https://mechatronics.ae/product-category/fa/globe-air-motors/vane-air-motors/",
+      "phone": "+971 4 267 4311 / +971 4 267 0704",
+      "status": "Dubai supplier lists GLOBE vane motors. V1 page lists 0.52 kW maximum power. Stock, price, dispatch and paired power/airflow curve unconfirmed. Not yet thermally ranked.",
+      "next": "Request stocked exact variants, matched loaded power/air-use curves, exhaust collection limits and lubrication requirements. Contact mechtron@mechatronics.ae."
     }
   ],
   "exclusions": [
