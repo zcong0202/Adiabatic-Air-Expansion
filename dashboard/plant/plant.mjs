@@ -24,29 +24,6 @@ export function sizes(spec) {
   return { fc, fd, ft, raw, capped: raw.fc > 1.9 || raw.fd > 1.6 || raw.ft > 1.6 };
 }
 
-// Particles riding each flow path at a steady screen speed (px/s), spaced gap px apart:
-// red compression heat, yellow shaft work and electricity, blue cooling. SMIL animateMotion,
-// so the drawing animates on its own once it is on the page.
-const DENSITY = 0.45; // share of each flow's gap actually used: smaller is denser
-function flowSvg(flows, at) {
-  const groups = { heat: [], work: [], cold: [] };
-  flows.forEach(([kind, points, { gap = 20, speed = 55, fade = false } = {}], index) => {
-    const xy = points.map(at);
-    let L = 0;
-    for (let i = 1; i < xy.length; i++) L += Math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]);
-    if (L < 4) return;
-    const id = `flow${index}`, n = Math.max(3, Math.round(L / (gap * DENSITY))), dur = (L / speed).toFixed(2);
-    const out = groups[kind];
-    out.push(`<path id="${id}" d="M${xy.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L")}" fill="none" stroke="none"/>`);
-    for (let j = 0; j < n; j++) {
-      const begin = `-${(dur * j / n).toFixed(2)}s`;
-      const fadeAnim = fade ? `<animate attributeName="opacity" values="1;1;0" keyTimes="0;0.4;1" dur="${dur}s" begin="${begin}" repeatCount="indefinite"/>` : "";
-      out.push(`<g class="fp"><circle r="2.4" class="fh"/><circle r="1"/><animateMotion dur="${dur}s" begin="${begin}" repeatCount="indefinite"><mpath href="#${id}"/></animateMotion>${fadeAnim}</g>`);
-    }
-  });
-  return Object.entries(groups).map(([kind, out]) => `<g class="flow" data-flow="${kind}" aria-hidden="true">${out.join("")}</g>`).join("");
-}
-
 export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
   const { fc, fd, ft, raw, capped } = sizes(spec);
   const iso = spec.nComp === "iso";
@@ -129,9 +106,6 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
   const DOWN = (x0, y0, z0) => G.frameOf([x0, y0, z0], [0, 0, -1], [1, 0, 0], [0, -1, 0]);
   const seg = (a, b) => { const [x0, y0] = at(a), [x1, y1] = at(b); return `M${x0.toFixed(2)} ${y0.toFixed(2)}L${x1.toFixed(2)} ${y1.toFixed(2)}`; };
   const calls = [];
-  // energy flows drawn as moving particles over the drawing: [kind, world points, options]
-  const flows = [];
-  const flow = (kind, points, opts = {}) => { flows.push([kind, points, opts]); };
   const call = (key, p) => { const [sx, sy] = at(p); calls.push({ key, sx: f2(sx / W * 100), sy: f2(sy / H * 100) }); };
 
   // ---------- floors ----------
@@ -185,18 +159,10 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
     }
   }
   call("coolers", [(coolX(0)[0] + coolX(nC - 1)[1]) / 2, CY0 + CD, CH * 0.5]);
-  // compression heat leaves each cooler's front face (to the hot-water loop or the sea)
-  for (let i = 0; i < nC; i++) {
-    const [x0, x1] = coolX(i);
-    for (const u of [0.3, 0.7]) {
-      const cx = x0 + (x1 - x0) * u;
-      flow("heat", [[cx, CY0 + CD, CH * 0.6], [cx, CY0 + CD + 40, CH * 0.35], [cx, CY0 + CD + 110, 4]], { gap: 26, speed: 34, fade: true });
-    }
-  }
   const STAGE_TOP = CASE_H + BAR_H + 2;
   for (let i = 0; i < nC; i++) {
     const out = outX(i), lift = Math.max(STAGE_TOP, CH) + 24 + (nC - i) * 32 * fc;
-    flow("heat", pipe(`p.s${i}`, [[out, 0, STAGE_TOP], [out, 0, lift], [out, CY0 + CD / 2, lift], [out, CY0 + CD / 2, CH + 2]], 2.4, { bend: 9 }));
+    pipe(`p.s${i}`, [[out, 0, STAGE_TOP], [out, 0, lift], [out, CY0 + CD / 2, lift], [out, CY0 + CD / 2, CH + 2]], 2.4, { bend: 9 });
     if (i < nC - 1) {
       const inn = inX(i + 1), l2 = lift - 6;
       pipe(`p.i${i}`, [[inn, CY0 + CD / 2, CH + 2], [inn, CY0 + CD / 2, l2], [inn, 0, l2], [inn, 0, STAGE_TOP]], 2.4, { bend: 9 });
@@ -231,7 +197,7 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
       turned("hr.expander", XF(bx0 + 0.2 * b, by0 + 0.3 * b, 1.1 * b + 0.12 * b), [[0, 0.1 * b], [0.25 * b, 0.12 * b], [0.4 * b, 0.08 * b]], { tone: "hi", crease: "lo" });
     }
     const hx = CASE.x + 10 * fc;
-    flow("heat", pipe("p.hr", [[hx, CASE.y, CASE_H * 0.6], [hx, (by1 + CASE.y) / 2, CASE_H * 0.6], [hx, (by1 + CASE.y) / 2, 20], [hx, by1, 20]], 2.6, { tone: "mid", bend: 8 }));
+    pipe("p.hr", [[hx, CASE.y, CASE_H * 0.6], [hx, (by1 + CASE.y) / 2, CASE_H * 0.6], [hx, (by1 + CASE.y) / 2, 20], [hx, by1, 20]], 2.6, { tone: "mid", bend: 8 });
     call(spec.heat === "absorption" ? "absorber" : "orc", [bx0 + b / 2, (by0 + by1) / 2, 1.1 * b + 0.25 * b]);
   }
 
@@ -298,8 +264,6 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
     box("turb.foot", [caseEnd + 14 * ft, -tt.rt, 0], [tt.end, tt.rt, AX - tt.rt + 0.5], { tone: "lo" }, { r: 1 });
     turbIn = [tt.port(0), 0, tt.top]; turbOut = [tt.end, 0, AX];
     call("turbShaft", [tt.port(nE - 1), 0, tt.top + 6]);
-    // turbine work goes back down the shaft into the compressor
-    flow("work", [[tt.end, 0, AX], [caseEnd - 10, 0, AX]], { gap: 16 });
   } else {
     const len = 22 * ft;
     const x0 = Math.max(GAP1 + 70, H1 - (nE - 1) * (len + 8 * ft) - len / 2);
@@ -315,9 +279,6 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
       turned("generator", F, [[0, gr * 0.85], [2, gr], [gl - 2, gr], [gl, gr * 0.85]], { tone: "mid" }, { extra: k.fadedSvg(G.ribsOf(F, 4, gl - 4, gr, 16, P, { fade: [0.1, 0.55], seams: true }), { tone: "lo" }) });
       box("generator.terminal", [gx - 7, TS.y - 7, TZ + gr - 0.4], [gx + 7, TS.y + 7, TZ + gr + 9], { tone: "mid" }, { r: 1 });
       call("generator", [gx + 12, TS.y, TZ + gr]);
-      // shaft work into the generator, then as electricity back to the motor in the compressor room
-      flow("work", [[tt.port(0), TS.y, TZ], [gx, TS.y, TZ]], { gap: 16 });
-      flow("work", [[gx, TS.y, TZ + gr + 9], [gx, TS.y - RT - 30, 2], [GAP1 - 20, TS.y - RT - 30, 2], [MOT.len / 2, TS.y - RT - 30, 2], [MOT.len / 2, -14 * fc, AX + MOT.r]], { gap: 22, speed: 70 });
     }
     turbIn = [x0, TS.y, TZ]; turbOut = coldStart;
     call("turbSeat", [tt.port(0), TS.y, TZ + RT]);
@@ -355,9 +316,8 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
   const cold = atPlant
     ? [turbOut, [tt.end + 60, 0, AX], [tt.end + 60, LY, AX], [H1, LY, AX], [H1, HEADER_Y, AX], [SEATX(nN - 1) + TW, HEADER_Y, AX]]
     : [coldStart, [coldStart[0], HEADER_Y, HZ], [SEATX(nN - 1) + TW, HEADER_Y, HZ]];
-  flow("cold", [turbIn, [tt.port(nE - 1), turbIn[1], turbIn[2]]], { gap: 14 });
-  flow("cold", pipe("cold", cold, hr, { tone: "hi", bend: atPlant ? 28 : 16, rings, maxLength: 40, touch: atPlant ? cradles : [] }));
-  for (let i = nN - 1; i > 0; i--) flow("cold", pipe(`header${i}`, [[SEATX(i) - TW, HEADER_Y, HZ], [SEATX(i - 1) + TW, HEADER_Y, HZ]], hr, { tone: "hi", rings }));
+  pipe("cold", cold, hr, { tone: "hi", bend: atPlant ? 28 : 16, rings, maxLength: 40, touch: atPlant ? cradles : [] });
+  for (let i = nN - 1; i > 0; i--) pipe(`header${i}`, [[SEATX(i) - TW, HEADER_Y, HZ], [SEATX(i - 1) + TW, HEADER_Y, HZ]], hr, { tone: "hi", rings });
   pipe("header0", [[SEATX(0) - TW, HEADER_Y, HZ], [H0 + 3, HEADER_Y, HZ]], hr, { tone: "hi", rings });
   turned("header.cap", XF(H0, HEADER_Y, HZ), [[0, hr + 1], [3, hr + 1]], { tone: "mid" });
   const SH = 238, ARM = 50, rR = 3.5, CZ = 112, CL = 22;   // shower arm height and reach, riser radius, reheat coil
@@ -372,17 +332,12 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
       turned(`coil${i}`, Fc, [[0, 7.5], [CL, 7.5]], { tone: "mid" }, { extra: k.fadedSvg(G.ribsOf(Fc, 2, CL - 2, 7.5, 18, P, { fade: [0.1, 0.55], seams: true }), { tone: "lo" }) });
       rz = CZ + CL;
     }
-    flow("cold", [[nx, HEADER_Y, tz], ...pipe(`riser${i}`, [[nx, HEADER_Y, rz], [nx, HEADER_Y, SH], [nx, HEADER_Y + ARM, SH]], rR, { tone: "hi", bend: 14 })], { gap: 16 });
-    // cold air falling from the shower head over the standing place
-    for (const [dx, dy] of [[-8, -6], [0, 0], [8, 6], [-4, 9], [5, -9]])
-      flow("cold", [[nx + dx * 0.4, HEADER_Y + ARM + 6 + dy * 0.4, SH - 18], [nx + dx * 2.2, HEADER_Y + ARM + 6 + dy * 2.2, 70]], { gap: 30, speed: 45, fade: true });
+    pipe(`riser${i}`, [[nx, HEADER_Y, rz], [nx, HEADER_Y, SH], [nx, HEADER_Y + ARM, SH]], rR, { tone: "hi", bend: 14 });
     box(`shower${i}.hub`, [nx - 6, HEADER_Y + ARM, SH - 8], [nx + 6, HEADER_Y + ARM + 12, SH + 6], { tone: "mid" }, { r: 1.5 });
     const F = DOWN(nx, HEADER_Y + ARM + 6, SH - 8);
     turned(`shower${i}`, F, [[0, 4], [3, 4], [7, 16], [10, 16]], { tone: "hi", crease: "lo" },
       { extra: Dots(G.dotsOf(F, 10, 11, 14, P, { fade: [0.05, 0.5] }), { size: 0.4 }) });
   }
-  // motor power into the compressor
-  flow("work", [[MOT.x0 + 4, 0, AX], [CASE.x + 12, 0, AX]], { gap: 14 });
   call("nozzles", [SEATX(nN - 1), HEADER_Y + ARM + 6, SH + 6]);
   if (coil) call("coils", [SEATX(nN - 1), HEADER_Y, 112]);
   call("header", [(H0 + H1) / 2, HEADER_Y, HZ + hr]);
@@ -414,7 +369,7 @@ export function buildPlant(spec, { width = 1200, height = 640 } = {}) {
   const svg = k.figureSvg({
     width: W, height: H,
     label: "The air-cycle plant at true scale: motor and staged piston compressor with a cooler after every stage, dryer, the air line to the seats, the expansion turbine, and the cold-air header on the floor with a shower-head outlet over each standing place. A 175 cm person gives the scale.",
-    body: [...back, `<g>${groups.join("")}</g>`, flowSvg(flows, at)],
+    body: [...back, `<g>${groups.join("")}</g>`],
   });
   // judged by eye: pipe ends on the cooler tops sit in front of the long crankcase, and the stage
   // pipes leave the heads right above their own barrels; the crowding check treats both as rods
