@@ -27,6 +27,7 @@ export function sizes(spec) {
 // Particles riding each flow path at a steady screen speed (px/s), spaced gap px apart:
 // red compression heat, yellow shaft work and electricity, blue cooling. SMIL animateMotion,
 // so the drawing animates on its own once it is on the page.
+const DENSITY = 0.45; // share of each flow's gap actually used: smaller is denser
 function flowSvg(flows, at) {
   const groups = { heat: [], work: [], cold: [] };
   flows.forEach(([kind, points, { gap = 20, speed = 55, fade = false } = {}], index) => {
@@ -34,13 +35,13 @@ function flowSvg(flows, at) {
     let L = 0;
     for (let i = 1; i < xy.length; i++) L += Math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]);
     if (L < 4) return;
-    const id = `flow${index}`, n = Math.max(2, Math.round(L / gap)), dur = (L / speed).toFixed(2);
+    const id = `flow${index}`, n = Math.max(3, Math.round(L / (gap * DENSITY))), dur = (L / speed).toFixed(2);
     const out = groups[kind];
     out.push(`<path id="${id}" d="M${xy.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L")}" fill="none" stroke="none"/>`);
     for (let j = 0; j < n; j++) {
       const begin = `-${(dur * j / n).toFixed(2)}s`;
       const fadeAnim = fade ? `<animate attributeName="opacity" values="1;1;0" keyTimes="0;0.4;1" dur="${dur}s" begin="${begin}" repeatCount="indefinite"/>` : "";
-      out.push(`<g class="fp"><circle r="4.2" class="fh"/><circle r="1.7"/><animateMotion dur="${dur}s" begin="${begin}" repeatCount="indefinite"><mpath href="#${id}"/></animateMotion>${fadeAnim}</g>`);
+      out.push(`<g class="fp"><circle r="2.4" class="fh"/><circle r="1"/><animateMotion dur="${dur}s" begin="${begin}" repeatCount="indefinite"><mpath href="#${id}"/></animateMotion>${fadeAnim}</g>`);
     }
   });
   return Object.entries(groups).map(([kind, out]) => `<g class="flow" data-flow="${kind}" aria-hidden="true">${out.join("")}</g>`).join("");

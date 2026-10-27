@@ -157,11 +157,11 @@ details.adv > summary { cursor: pointer; font: 600 13px var(--f-body); color: va
 .plant .fig > svg { width: 100%; height: 100%; display: block; }
 /* numbered markers on the parts, named in a legend under the drawing: no lines across it */
 /* energy-flow particles over the drawing: red heat, yellow work, blue cooling */
-.plant .flow { pointer-events: none; }
+.plant .flow { pointer-events: none; opacity: .6; }
 .plant .flow[data-flow="heat"] { fill: #ff4d3d; }
 .plant .flow[data-flow="work"] { fill: #ffd23f; }
 .plant .flow[data-flow="cold"] { fill: #3fb2ff; }
-.plant .flow .fh { opacity: .28; }
+.plant .flow .fh { opacity: .22; }
 .plant .flowkey { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 10px; font: 600 12px var(--f-mono); color: var(--muted); }
 .plant .flowkey i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 0; box-shadow: 0 0 6px currentColor; }
 @media (prefers-reduced-motion: reduce) { .plant .flow { display: none; } .plant .flowkey { display: none; } }
