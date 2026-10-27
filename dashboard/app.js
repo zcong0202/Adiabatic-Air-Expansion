@@ -190,6 +190,9 @@ const T = {
   qAir: { zh: "冷风冷量", en: "Cooling by air" },
   qAbs: { zh: "吸收式冷量（7 °C 冷水）", en: "Absorption cooling (7 °C water)" },
   qTot: { zh: "总冷量", en: "Total cooling" },
+  flowHeat: { zh: "热能（压缩热）", en: "Heat (compression heat)" },
+  flowWork: { zh: "动能（轴功与电）", en: "Work (shaft power and electricity)" },
+  flowCold: { zh: "冷量（冷风）", en: "Cooling (cold air)" },
 };
 // the public site is English only (no language toggle)
 const lang = "en";
@@ -649,7 +652,7 @@ function showPlant(data) {
   const calls = data.calls.filter(c => !NOT_NUMBERED.includes(c.key)).sort((a, b) => CALL_ORDER.indexOf(a.key) - CALL_ORDER.indexOf(b.key));
   const notes = plantNotes(r).map(([k, d, text]) => ({ c: data.calls.find(c => c.key === k), d, text })).filter(n => n.c);
   st.innerHTML = `<div class="iso plant" data-theme="${isDark() ? "dark" : "light"}"><div class="fig">${data.svg}<div class="marks"><svg aria-hidden="true"></svg>${notes.map(n => `<div class="onfig" data-sx="${n.c.sx}" data-sy="${n.c.sy}" data-dx="${n.d[0]}" data-dy="${n.d[1]}"${n.c.key === "gap" ? "" : ' data-numbered="1"'}>${n.text}</div>`).join("")}${calls.map((c, i) =>
-    `<div class="mk" data-k="${c.key}" data-sx="${c.sx}" data-sy="${c.sy}">${i + 1}</div>`).join("")}</div></div><div class="legend">${calls.map((c, i) => {
+    `<div class="mk" data-k="${c.key}" data-sx="${c.sx}" data-sy="${c.sy}">${i + 1}</div>`).join("")}</div></div><div class="flowkey"><span><i style="color:#ff4d3d;background:#ff4d3d"></i>${t("flowHeat")}</span><span><i style="color:#ffd23f;background:#ffd23f"></i>${t("flowWork")}</span><span><i style="color:#3fb2ff;background:#3fb2ff"></i>${t("flowCold")}</span></div><div class="legend">${calls.map((c, i) => {
     const [a, b] = callText(c.key, r);
     return `<div class="lg" data-k="${c.key}"><i>${i + 1}</i><b>${a}</b>${b ? `<span>${b}</span>` : ""}</div>`;
   }).join("")}</div></div>`;
@@ -897,12 +900,12 @@ function drawWhy(r, c) {
   const pts = WHY.designPoints(s);
   const cold = pts.find(p => p.key === "p200");
   const spot = c.ac.find(a => a.key === "spot").cop;
-  const PW = 560, rowH = 46, PH = 34 + pts.length * rowH + 10, lx = 196, rx = PW - 70;
+  const PW = 560, rowH = 46, PH = 34 + pts.length * rowH + 10, lx = 250, rx = PW - 70;
   const vmax = Math.max(5, ...pts.map(p => isFinite(p.copIdeal) ? p.copIdeal : 0), QATAR.hi) * 1.05;
   const px = v => lx + (rx - lx) * Math.min(v, vmax) / vmax;
   let ps = `<svg viewBox="0 0 ${PW} ${PH}" role="img" aria-label="${t("wpTitle")}">`;
   ps += `<rect x="${lx}" y="10" width="10" height="8" fill="var(--cold)"/><text x="${lx + 14}" y="18">${t("wpNow")}</text>`;
-  ps += `<rect x="${lx + 130}" y="10" width="10" height="8" fill="none" stroke="var(--muted)"/><text x="${lx + 144}" y="18">${t("wpIdeal")}</text>`;
+  ps += `<rect x="${lx + 170}" y="10" width="10" height="8" fill="none" stroke="var(--muted)"/><text x="${lx + 184}" y="18">${t("wpIdeal")}</text>`;
   if (SHOW_AC) ps += `<line x1="${px(spot)}" x2="${px(spot)}" y1="26" y2="${PH - 6}" stroke="var(--ac)" stroke-dasharray="5 4"/><text x="${px(spot) + 4}" y="${PH - 6}">${t("spot")} ${fmt(spot)}</text>`;
   pts.forEach((p, i) => {
     const y = 34 + i * rowH;
