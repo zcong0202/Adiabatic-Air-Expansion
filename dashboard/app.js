@@ -191,8 +191,8 @@ const T = {
   qAbs: { zh: "吸收式冷量（7 °C 冷水）", en: "Absorption cooling (7 °C water)" },
   qTot: { zh: "总冷量", en: "Total cooling" },
 };
-let lang = "zh";
-try { lang = localStorage.getItem("explorer-lang") || "zh"; } catch (e) {}
+// the public site is English only (no language toggle)
+const lang = "en";
 const t = (k, vars = {}) => (T[k] ? T[k][lang] : k).replace(/\{(\w+)\}/g, (_, v) => vars[v]);
 const L = o => (o ? o[lang] || o.en : "");
 
@@ -226,10 +226,6 @@ function buildHeader() {
   }
   document.querySelectorAll("#lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
 }
-document.querySelectorAll("#lang button").forEach(b => b.onclick = () => {
-  lang = b.dataset.lang; try { localStorage.setItem("explorer-lang", lang); } catch (e) {}
-  buildRail(); schedule();
-});
 
 // ---- parameter rail ----
 const refs = {};
@@ -901,12 +897,12 @@ function drawWhy(r, c) {
   const pts = WHY.designPoints(s);
   const cold = pts.find(p => p.key === "p200");
   const spot = c.ac.find(a => a.key === "spot").cop;
-  const PW = 560, rowH = 46, PH = 34 + pts.length * rowH + 10, lx = 196, rx = PW - 70;
+  const PW = 560, rowH = 46, PH = 34 + pts.length * rowH + 10, lx = 250, rx = PW - 70;
   const vmax = Math.max(5, ...pts.map(p => isFinite(p.copIdeal) ? p.copIdeal : 0), QATAR.hi) * 1.05;
   const px = v => lx + (rx - lx) * Math.min(v, vmax) / vmax;
   let ps = `<svg viewBox="0 0 ${PW} ${PH}" role="img" aria-label="${t("wpTitle")}">`;
   ps += `<rect x="${lx}" y="10" width="10" height="8" fill="var(--cold)"/><text x="${lx + 14}" y="18">${t("wpNow")}</text>`;
-  ps += `<rect x="${lx + 130}" y="10" width="10" height="8" fill="none" stroke="var(--muted)"/><text x="${lx + 144}" y="18">${t("wpIdeal")}</text>`;
+  ps += `<rect x="${lx + 170}" y="10" width="10" height="8" fill="none" stroke="var(--muted)"/><text x="${lx + 184}" y="18">${t("wpIdeal")}</text>`;
   if (SHOW_AC) ps += `<line x1="${px(spot)}" x2="${px(spot)}" y1="26" y2="${PH - 6}" stroke="var(--ac)" stroke-dasharray="5 4"/><text x="${px(spot) + 4}" y="${PH - 6}">${t("spot")} ${fmt(spot)}</text>`;
   pts.forEach((p, i) => {
     const y = 34 + i * rowH;
