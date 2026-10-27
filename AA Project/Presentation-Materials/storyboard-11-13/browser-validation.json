@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "videos": 3,
+  "configuration_buttons": 5,
+  "selected_case_switch": "m77_n4_adaptive",
+  "selected_button_count": 1,
+  "mobile_width": 390,
+  "mobile_document_width": 390,
+  "mobile_horizontal_overflow": false,
+  "visual_checks": [
+    "Full-HD posters reviewed",
+    "Desktop gallery reviewed",
+    "Final orbit frame decoded and reviewed"
+  ],
+  "clip_decoding": "All three clips decoded without errors"
+}

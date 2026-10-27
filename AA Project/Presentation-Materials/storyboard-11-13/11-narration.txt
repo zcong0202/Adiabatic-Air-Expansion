@@ -1,0 +1,1 @@
+Cold air leaves the nozzle, mixes with warm air and sinks. The simulation shows how much cooling remains at twenty and fifty centimetres. These are simulated air temperatures, not measurements.

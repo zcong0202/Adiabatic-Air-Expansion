@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-27",
+  "new_cfd": false,
+  "field_interpolation": false,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "physical_times_s": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "spray_off_simulated": false,
+  "hardware_validated": false,
+  "measured_points_overlaid": false,
+  "sources": [
+    {
+      "case": "scuba19_n1_wide_fine",
+      "study": "scuba-study",
+      "result": "Airflow-Assessment/scuba-study/results/scuba19_n1_wide_fine.json",
+      "archive_sha256": "637ee6d0b50353f33299c36bf23b4deb01d84a40ac57cc701b9b9a6545737110",
+      "timeline_sha256": "5b9f701a946bdd038b553446abbcd1892f6934ccd36626028dc7321b8a541ee0",
+      "native_T_hashes_verified": 11,
+      "source_c": 4.313134164596022,
+      "total_g_s": 19.4,
+      "cells": 103572
+    },
+    {
+      "case": "m77_n4_wide_opposed_fine",
+      "study": "mass-flow-study",
+      "result": "Airflow-Assessment/mass-flow-study/results/m77_n4_wide_opposed_fine.json",
+      "archive_sha256": "4c80ec785e18f33b62f8f5565d6af5bb189b8ac10d005298f85ca14439987d39",
+      "timeline_sha256": "f112f4007a0ffa79fe1f37d318964a3549bcb11e35284732e000a34915f78f9f",
+      "native_T_hashes_verified": 11,
+      "source_c": 0.9592752761779835,
+      "total_g_s": 77.0,
+      "cells": 114408
+    },
+    {
+      "case": "m77_n1_wide",
+      "result": "Airflow-Assessment/mass-flow-study/results/m77_n1_wide.json",
+      "field_T_sha256": "a8408952a5cfe99c96575f08b4ef88d43be04802a0507f5f71443a89d300c425",
+      "volume_file_sha256": "0d4c0706421f8f654286f757c08b5a06eb9fd4645a6e3245b49148c0ef50086c",
+      "volume_m3": 0.08535459666666673,
+      "source_c": 0.9592752761779835,
+      "total_g_s": 77
+    },
+    {
+      "case": "m77_n2_wide",
+      "result": "Airflow-Assessment/mass-flow-study/results/m77_n2_wide.json",
+      "field_T_sha256": "ab52d638e5d3a0e507736830413a24bf7dd2b295b373d9533ea64475341a0296",
+      "volume_file_sha256": "c311ec2f2129b3ea8e1ed98edebe92d2b412dcc8a68712cc667140918b21c261",
+      "volume_m3": 0.19608836190476198,
+      "source_c": 0.9592752761779835,
+      "total_g_s": 77
+    },
+    {
+      "case": "m77_n4_base",
+      "result": "Airflow-Assessment/mass-flow-study/results/m77_n4_base.json",
+      "field_T_sha256": "545996cfd7e082ce21abfbc81c3d03703a1e716107bcda70a2803bde773d2f39",
+      "volume_file_sha256": "5160958bf4edc2c0f4d4994df342ddf4db2ee964b7161f6add6d26b8c76d8f7f",
+      "volume_m3": 0.45250254920634925,
+      "source_c": 0.9592752761779835,
+      "total_g_s": 77
+    },
+    {
+      "case": "m77_n4_adaptive",
+      "result": "Airflow-Assessment/mass-flow-study/results/m77_n4_adaptive.json",
+      "field_T_sha256": "21f107b81b9c5a739c4c896148ba0c71d301f8e016b9235eb072b827b9f96875",
+      "volume_file_sha256": "49f87e46e035b85914bef4cdc1c9820b3d7ddc627c5a23550c0d83b3f665687c",
+      "volume_m3": 0.4098413571922963,
+      "source_c": 0.9592752761779835,
+      "total_g_s": 77
+    },
+    {
+      "case": "m77_n4_wide_opposed",
+      "result": "Airflow-Assessment/mass-flow-study/results/m77_n4_wide_opposed.json",
+      "field_T_sha256": "0961d1500aca3e49be9b15d3d4d27b937ab11b11c2070c7f995e644a92d7671a",
+      "volume_file_sha256": "b6186d98f620b3dee262390f1022dfb7ce437ed1e57c58f85e92bd88c201108a",
+      "volume_m3": 0.5352040178571429,
+      "source_c": 0.9592752761779835,
+      "total_g_s": 77
+    }
+  ],
+  "notes": [
+    "Shot 11 uses current scuba reference; shots 12\u201313 use historical 77 g/s fixed-source study.",
+    "No 14 October deck/measurement linkage verified. No measured probes are shown.",
+    "Cold-cell surfaces are grid boundaries, not smoothed continuum isosurfaces.",
+    "No simulated people, wind, solar load or pedestrian comfort.",
+    "Layout-specific 20\u201350 cm analysis regions differ; volume is not equal body coverage.",
+    "Video duration differs from simulated time. Native fields are held between saved times; only camera rotates continuously.",
+    "Shot 11 does not claim that all cooling disappears by 50 cm. Shot 13 does not claim an occupied room is cooled."
+  ],
+  "exports": [
+    {
+      "file": "exports/11-cold-dispersion-14s.mp4",
+      "bytes": 211498,
+      "sha256": "9a3e1b37c85fae8a52780b1ed73f783bc3f51f0b1d570ad569a8df57959c9f25"
+    },
+    {
+      "file": "exports/11-cold-dispersion.png",
+      "bytes": 107986,
+      "sha256": "938a3b932817f7dac30cbefd526ef312979380bb374f41462463ad470287635e"
+    },
+    {
+      "file": "exports/11-cold-dispersion.svg",
+      "bytes": 87665,
+      "sha256": "675513900085d9fba8ea81b2b9452996cbf37294ba21fcb82acdb9889b6ff8f6"
+    },
+    {
+      "file": "exports/12-01-m77_n1_wide.png",
+      "bytes": 130176,
+      "sha256": "32fb3752cce8b734442545e0c0c6533da1af75bd4cbd72c27a4dc8e5b93ca5ac"
+    },
+    {
+      "file": "exports/12-01-m77_n1_wide.svg",
+      "bytes": 275776,
+      "sha256": "15ef464f4b07fd258d64ec6d7074ccc2b6511137d9b90704c8b53c2277f520ca"
+    },
+    {
+      "file": "exports/12-02-m77_n2_wide.png",
+      "bytes": 144695,
+      "sha256": "cec3b81d5511a7430535f1faef0aeebacd156525f744613e8c67a16aaf830bea"
+    },
+    {
+      "file": "exports/12-02-m77_n2_wide.svg",
+      "bytes": 459485,
+      "sha256": "5f3e88d2c8dd97ac3928994586be107eaa666488194dfc05fd41cf308cae321b"
+    },
+    {
+      "file": "exports/12-03-m77_n4_base.png",
+      "bytes": 173466,
+      "sha256": "e2c27f486ae2c23045f3d0f984552006b2bd84aab5dd224adc2415220b66e62d"
+    },
+    {
+      "file": "exports/12-03-m77_n4_base.svg",
+      "bytes": 726526,
+      "sha256": "5e58dee9dc6f0ca5746af1cf994815478e078cb68ea6b289af86dd701ab7dd1f"
+    },
+    {
+      "file": "exports/12-04-m77_n4_adaptive.png",
+      "bytes": 169108,
+      "sha256": "3229247c0fe29d0d91ab541d471cba1f8f9dd709004c1bc81b1324f401b02832"
+    },
+    {
+      "file": "exports/12-04-m77_n4_adaptive.svg",
+      "bytes": 718548,
+      "sha256": "ee3532ea25d9eff658b0329f4fc4c7fc125979c094a9d100a6569791ec32235f"
+    },
+    {
+      "file": "exports/12-05-m77_n4_wide_opposed.png",
+      "bytes": 218965,
+      "sha256": "cdb8a5731aae7c2f07bfa300d3a9cb460a74beae1f3e127464fda4253049691d"
+    },
+    {
+      "file": "exports/12-05-m77_n4_wide_opposed.svg",
+      "bytes": 958926,
+      "sha256": "3576250dd1e600e787af4d8f4b4e5942059c60fa38b7482a20fca7a0030d2d33"
+    },
+    {
+      "file": "exports/12-nozzle-comparison-contact-sheet.png",
+      "bytes": 185089,
+      "sha256": "80fcc69df3bcdd2257ab56f142a276b78f6bb594643fe5d56fa8b95fc573a85c"
+    },
+    {
+      "file": "exports/12-nozzle-setup-14s.mp4",
+      "bytes": 254596,
+      "sha256": "339411612f2e3016aa1304576f929bef74239aa4d5bdfdac58d8bae1299c7926"
+    },
+    {
+      "file": "exports/13-localized-cold-volume-16s.mp4",
+      "bytes": 1053680,
+      "sha256": "d16259127c117116559e6d43f464a186093c27eb38a57c276685e2e8fa019c61"
+    },
+    {
+      "file": "exports/13-localized-cold-volume.png",
+      "bytes": 233523,
+      "sha256": "987684128b508f2822ecb8c9d2bc137d6ae96d22e32e48261691e73bffa456d1"
+    },
+    {
+      "file": "exports/13-localized-cold-volume.svg",
+      "bytes": 2318148,
+      "sha256": "397eb677bad07724fc2794f2e0174a0316e5743ddd4752a64f1476b4858ff984"
+    }
+  ]
+}

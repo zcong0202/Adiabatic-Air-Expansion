@@ -1,0 +1,28 @@
+11. Cold dispersion / 14 seconds
+VOICE: Cold air leaves the nozzle, mixes with warm air and sinks. The simulation shows how much cooling remains at twenty and fifty centimetres. These are simulated air temperatures, not measurements.
+SOURCE: scuba19_n1_wide_fine · 19.4 g/s · 4.31°C assumed source
+
+12. Nozzle setup / 14 seconds
+VOICE: Cooling power depends on air mass flow and temperature drop. With the same supply, changing nozzle number, size and spacing changes where the colder air goes and how much remains cold.
+SOURCE: Five saved cases · 77 g/s total · 0.96°C assumed source
+
+13. A localized cold volume / 16 seconds
+VOICE: The simulation maps the air that remains at least six degrees below ambient. Four opposed outlets create a localized cold volume. This result does not yet establish cooling or comfort for passing pedestrians.
+SOURCE: m77_n4_wide_opposed_fine · 77 g/s · 0.96°C assumed source
+
+EDITOR NOTES
+No voice recording is included. Text is ready for recording.
+Movies are silent H.264 / 1920 x 1080 / 30 fps. All source fields stop at 10 s.
+Shots 11 and 13 hold native saved fields between times; no temperature interpolation.
+Shot 12 cuts between five separate 10 s configurations at 2.8 s each.
+Shot 13 rotates the camera; no synthetic particle trajectories are shown.
+Shot 11 uses the current scuba reference. Shots 12–13 use the historical 77 g/s study.
+Do not cut away the source-temperature labels and imply that all three clips describe one motor.
+Original wording “warms within half a metre” is too strong: cold air remains at 50 cm in this case.
+No verified measurements from the cited 14 October deck were matched. Values shown are simulated.
+Cooling power is mass flow times specific heat times temperature difference, not mass alone.
+The whole-domain cold volume is used for the controlled nozzle comparison. Range-band volumes
+are also provided in CSV; side and opposed range bands have different sampling volumes.
+The saved domain has no people, solar load or wind. Do not claim an occupied room is cooled.
+Use shot 13 as a local CFD demonstration, not a pedestrian-comfort or room-scale result.
+No new CFD, CAD-to-flow coupling, motor-source validation or valve-off decay was performed.

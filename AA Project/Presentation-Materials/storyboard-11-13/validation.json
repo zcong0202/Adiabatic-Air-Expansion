@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "videos": [
+    {
+      "shot": 11,
+      "file": "11-cold-dispersion-14s.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "30/1",
+            "nb_read_frames": "420"
+          }
+        ],
+        "format": {
+          "duration": "14.000000"
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "shot": 12,
+      "file": "12-nozzle-setup-14s.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "30/1",
+            "nb_read_frames": "420"
+          }
+        ],
+        "format": {
+          "duration": "14.000000"
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "shot": 13,
+      "file": "13-localized-cold-volume-16s.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "30/1",
+            "nb_read_frames": "480"
+          }
+        ],
+        "format": {
+          "duration": "16.000000"
+        }
+      },
+      "status": "passed"
+    }
+  ],
+  "local_links_checked": [
+    "../../Airflow-Assessment/mass-flow-study/results/index.html",
+    "../../Airflow-Assessment/scuba-study/results/index.html",
+    "11-caption.srt",
+    "11-narration.txt",
+    "12-caption.srt",
+    "12-narration.txt",
+    "13-caption.srt",
+    "13-narration.txt",
+    "README.md",
+    "data/11-simulated-patches.csv",
+    "data/12-configurations.csv",
+    "exports/11-cold-dispersion-14s.mp4",
+    "exports/11-cold-dispersion.png",
+    "exports/11-cold-dispersion.svg",
+    "exports/12-01-m77_n1_wide.png",
+    "exports/12-05-m77_n4_wide_opposed.png",
+    "exports/12-05-m77_n4_wide_opposed.svg",
+    "exports/12-nozzle-setup-14s.mp4",
+    "exports/13-localized-cold-volume-16s.mp4",
+    "exports/13-localized-cold-volume.png",
+    "exports/13-localized-cold-volume.svg",
+    "manifest.json",
+    "narration-and-edit-notes.txt",
+    "storyboard-11-13-editor-pack.zip",
+    "validation.json"
+  ],
+  "native_T_fields_verified": 22,
+  "new_cfd": false,
+  "measured_probes": false,
+  "field_interpolation": false
+}

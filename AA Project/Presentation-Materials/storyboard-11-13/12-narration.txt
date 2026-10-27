@@ -1,0 +1,1 @@
+Cooling power depends on air mass flow and temperature drop. With the same supply, changing nozzle number, size and spacing changes where the colder air goes and how much remains cold.
