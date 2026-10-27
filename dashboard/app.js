@@ -191,8 +191,8 @@ const T = {
   qAbs: { zh: "吸收式冷量（7 °C 冷水）", en: "Absorption cooling (7 °C water)" },
   qTot: { zh: "总冷量", en: "Total cooling" },
 };
-let lang = "zh";
-try { lang = localStorage.getItem("explorer-lang") || "zh"; } catch (e) {}
+// the public site is English only (no language toggle)
+const lang = "en";
 const t = (k, vars = {}) => (T[k] ? T[k][lang] : k).replace(/\{(\w+)\}/g, (_, v) => vars[v]);
 const L = o => (o ? o[lang] || o.en : "");
 
@@ -226,10 +226,6 @@ function buildHeader() {
   }
   document.querySelectorAll("#lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
 }
-document.querySelectorAll("#lang button").forEach(b => b.onclick = () => {
-  lang = b.dataset.lang; try { localStorage.setItem("explorer-lang", lang); } catch (e) {}
-  buildRail(); schedule();
-});
 
 // ---- parameter rail ----
 const refs = {};
