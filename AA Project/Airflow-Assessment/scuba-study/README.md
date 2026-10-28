@@ -229,17 +229,15 @@ The 6 K target screen also assumes a short path UA=1 W/K and retained
 temperature-deficit fraction f=0.25; neither is measured or guaranteed.
 A warm 30 C motor inlet needs more work than a controlled 22 C motor inlet.
 
-Hirdavatburada lists WUFU WFD-1050S at $39 + VAT / 2,340 TL and WFD-3050
-at $44 + VAT / 2,640 TL. Both showed enabled cart links on 28 October.
-They are complete pneumatic drills, not bare motor replacements. No shaft
-power is listed. Their 141/113 L/min air ratings have no established
-continuous free-air basis; conversions to 2.82/2.26 g/s are conditional only.
-No outdoor temperature prediction or motor qualification is made for them.
-Exhaust capture, backpressure, lubrication and temperature limits remain open.
+Scope correction: standalone pneumatic motors only. WUFU WFD-1050S and
+WFD-3050 are complete air drills. They are excluded from purchase candidates
+and the dashboard shortlist. Their earlier listing records remain only in
+`excluded_air_tools` and the evidence folder to prevent reuse as motors.
+No tool conversion or donor purchase is proposed.
 
 No qualified bare motor under $100, or qualified Turkish bare-motor online
 checkout, was verified in this search. Several marketplaces blocked browsing;
 this is a search limitation, not proof that no product exists. RS Turkey
 home/search was accessible; a generic online store/cart does not establish
-that it sells a suitable stocked pneumatic motor. Cheap donor prices do not
-include the load fixture, coupling, regulator, collector or sensors.
+that it sells a suitable stocked pneumatic motor. The motor budget excludes
+the load fixture, coupling, regulator, collector and sensors.

@@ -18,3 +18,4 @@
 - Never rescale saved CFD when inputs change. Distinguish budgets, CFD, conditional Lean algebra and hardware validation.
 - New panel receiver/EOS calculations are numerically tested, not Lean-verified.
 - Large artifacts use Git LFS. Native solver output is stored in the split archives described in `AA Project/CFD-Archives/README.md`.
+- Motor procurement: standalone pneumatic motors only. Do not offer complete air drills or other air tools as substitutes. Distinguish the under-$100 budget, Turkish online purchase route, stock and delivery evidence.

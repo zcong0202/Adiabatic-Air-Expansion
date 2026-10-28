@@ -1,6 +1,5 @@
-"""Coupled power/flow shopping screen. Cheap air tools remain unqualified donors."""
+"""Coupled power/flow shopping screen. Standalone pneumatic motors only; complete air tools are excluded."""
 from pathlib import Path
-from html import escape
 import csv,json,math
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -35,7 +34,7 @@ def build():
         listed_usd_ex_vat=44,listed_tl=2640,listed_rpm=1800,listed_air_l_min=113,listed_inlet='1/4 inch; thread standard not specified',
         listed_weight_kg=.92,conditional_g_s_if_free_continuous=2.26)]
     for p in products:
-        p.update(checked=DATE,category='Complete pneumatic drill; experimental motor donor, not a bare expander',
+        p.update(checked=DATE,category='Excluded complete air drill; not a standalone motor',selection_status='excluded_by_user_scope',
             cart_status='Sepete Ekle and Hemen Al visible; add-to-cart control enabled; no purchase made',
             stock_status='Physical inventory and delivery date not confirmed; checkout not completed',
             technical_status='Retail listing only. Shaft power absent; pressure and continuous/average airflow basis unresolved. No thermal qualification.',
@@ -48,10 +47,11 @@ def build():
             heat_return_fraction=alpha,path_ua_w_k=ua,retained_temperature_fraction_at_target=f,free_air_reference_density_kg_m3=1.2),
         preferred_shopping_band=dict(continuous_g_s=[10,20],free_l_min=[500,1000],paired_shaft_w_approx=[300,800],
             pressure_bar_g=[5.5,6.3],scope='Practical design band, not a proven minimum or guarantee. Match power to flow; prefer upper drop band for warm inlet.'),
-        rows=rows,turkey_online_donor_listings=products,
+        rows=rows,turkey_online_motor_listings=[],excluded_air_tools=products,
         qualified_bare_motor_below_100_usd_found=False,
         qualified_bare_motor_turkey_online_checkout_found=False,
-        requirements=['Continuous rotary vane or piston motor; not impact wrench, cylinder, oscillating actuator or electric compressor motor',
+        requirements=['Complete standalone continuous rotary pneumatic motor with its own shaft and inlet/exhaust ports; no drills or other complete air tools',
+            'Vane or piston motor; not impact wrench, cylinder, oscillating actuator or electric compressor motor',
             'Loaded power, rpm and continuous free-air use at the same running inlet/exhaust pressures; no arbitrary pairing of headline maxima',
             'Suitable guarded shaft coupling and controlled load rated for the selected power/speed; all calculations require shaft extraction',
             'Collectable exhaust with low manufacturer-approved backpressure',
@@ -60,8 +60,7 @@ def build():
         limits=['No motor wattage alone establishes the outdoor area-temperature target; nozzle dilution, area, distance, startup and heat pickup matter',
             '20/30 K motor drops, alpha=25%, UA and f are design assumptions, not measured bounds',
             'Motor inlet temperature differs from cylinder temperature',
-            'Cheap drill air use might be averaged/intermittent. Conditional 2.82/2.26 g/s conversions are not continuous-flow ratings',
-            'No shaft-power data for the WUFU donors; no exhaust-temperature or outdoor cooling prediction is justified',
+            'Complete air drills are excluded from motor candidates. Their listing records are retained only as exclusions',
             'Visible cart controls do not establish dispatch date or final checkout availability',
             'Budget excludes load, coupling, regulator, collector, sensors and any added freight/tax',
             'No new CFD, Lean proof or motor/CAD fit verification'])
@@ -71,7 +70,6 @@ def build():
     with (OUT/'motor-shopping-spec.csv').open('w') as file:
         w=csv.DictWriter(file,fieldnames=rows[0].keys(),lineterminator='\n');w.writeheader();w.writerows(rows)
     body=''.join(f'<tr><td>{r["flow_g_s"]:g}</td><td>{r["free_l_min_assumed_rho1_2"]:.0f}</td><td>{r["shaft_power_for20k_with25pct_heat_return_w"]:.0f}–{r["shaft_power_for30k_with25pct_heat_return_w"]:.0f}</td></tr>' for r in rows if r['flow_g_s']>=10)
-    listings=''.join(f'<li><a href="{p["url"]}">{escape(p["name"])}</a>: ${p["listed_usd_ex_vat"]} + VAT / ₺{p["listed_tl"]:,}. Complete air drill; unqualified experimental donor.</li>' for p in products)
-    return f'''<details class="compact-details" id="motor-shopping"><summary>Broader motor specification / Turkey under-$100 search</summary><p>Checked 28 Oct 2026. Search for continuous rotary pneumatic motors at about 5.5–6.3 bar running pressure. Practical band: 10–20 g/s with <strong>matched</strong> loaded shaft power of about 0.3–0.8 kW. This is a design starting point, not proof of the 20–50 cm target.</p><div class="formula-equation">ΔTmotor = (Pshaft − Qinto)/(ṁ cp)<br>Pshaft = ṁ cp ΔTmotor/(1 − α)</div><div class="table"><table><thead><tr><th>g/s</th><th>Free L/min</th><th>Shaft W for 20–30 K motor drop</th></tr></thead><tbody>{body}</tbody></table></div><p class="note">Table assumes cp=1006 J/kg K and heat pickup equal to 25% of shaft power. Air conversion uses assumed 1.2 kg/m³ free-air density. Prefer the upper drop band for warm motor inlet. A nozzle mixing/path screen is in the JSON; it assumes UA=1 W/K and 25% temperature-deficit retention. Neither is verified.</p><ul>{listings}</ul><p><strong>No qualified bare motor under $100 found.</strong> Both Turkish listings show enabled cart controls. Shaft power is missing. Listed air use is 141/113 L/min; if continuous free air, that is only 2.82/2.26 g/s. Exhaust collection and lubrication are unresolved. Do not buy these expecting the outdoor target to be established.</p><div class="links"><a href="motor-shopping-spec.json">Requirements / listing record</a><a href="motor-shopping-spec.csv">Calculation CSV</a><a href="motor-shopping-validation.json">20 balance checks</a></div></details>'''
+    return f'''<details class="compact-details" id="motor-shopping"><summary>Broader motor specification / Turkey under-$100 search</summary><p>Checked 28 Oct 2026. Search for continuous rotary pneumatic motors at about 5.5–6.3 bar running pressure. Practical band: 10–20 g/s with <strong>matched</strong> loaded shaft power of about 0.3–0.8 kW. This is a design starting point, not proof of the 20–50 cm target.</p><div class="formula-equation">ΔTmotor = (Pshaft − Qinto)/(ṁ cp)<br>Pshaft = ṁ cp ΔTmotor/(1 − α)</div><div class="table"><table><thead><tr><th>g/s</th><th>Free L/min</th><th>Shaft W for 20–30 K motor drop</th></tr></thead><tbody>{body}</tbody></table></div><p class="note">Table assumes cp=1006 J/kg K and heat pickup equal to 25% of shaft power. Air conversion uses assumed 1.2 kg/m³ free-air density. Prefer the upper drop band for warm motor inlet. A nozzle mixing/path screen is in the JSON; it assumes UA=1 W/K and 25% temperature-deficit retention. Neither is verified.</p><p><strong>Standalone pneumatic motors only.</strong> Air drills and other complete air tools are excluded. No suitable standalone motor under $100 or qualified Turkish motor checkout listing has been verified. The Gast 1AM/2AM/4AM models above remain the valid standalone alternatives; stock and delivery remain unconfirmed.</p><div class="links"><a href="motor-shopping-spec.json">Requirements / listing record</a><a href="motor-shopping-spec.csv">Calculation CSV</a><a href="motor-shopping-validation.json">20 balance checks</a></div></details>'''
 
 if __name__=='__main__':build()

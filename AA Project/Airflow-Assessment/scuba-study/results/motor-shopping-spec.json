@@ -90,7 +90,8 @@
       "shaft_w_target6k_tin30_f0_25_ua1_heat25pct": 676.648568733275
     }
   ],
-  "turkey_online_donor_listings": [
+  "turkey_online_motor_listings": [],
+  "excluded_air_tools": [
     {
       "name": "WUFU WFD-1050S",
       "url": "https://www.hirdavatburada.com/urun/wufu-wfd-1050s-kabzali-havali-matkap-10mm-sag-sol",
@@ -102,7 +103,8 @@
       "listed_weight_kg": 1.16,
       "conditional_g_s_if_free_continuous": 2.82,
       "checked": "2026-10-28",
-      "category": "Complete pneumatic drill; experimental motor donor, not a bare expander",
+      "category": "Excluded complete air drill; not a standalone motor",
+      "selection_status": "excluded_by_user_scope",
       "cart_status": "Sepete Ekle and Hemen Al visible; add-to-cart control enabled; no purchase made",
       "stock_status": "Physical inventory and delivery date not confirmed; checkout not completed",
       "technical_status": "Retail listing only. Shaft power absent; pressure and continuous/average airflow basis unresolved. No thermal qualification.",
@@ -119,7 +121,8 @@
       "listed_weight_kg": 0.92,
       "conditional_g_s_if_free_continuous": 2.26,
       "checked": "2026-10-28",
-      "category": "Complete pneumatic drill; experimental motor donor, not a bare expander",
+      "category": "Excluded complete air drill; not a standalone motor",
+      "selection_status": "excluded_by_user_scope",
       "cart_status": "Sepete Ekle and Hemen Al visible; add-to-cart control enabled; no purchase made",
       "stock_status": "Physical inventory and delivery date not confirmed; checkout not completed",
       "technical_status": "Retail listing only. Shaft power absent; pressure and continuous/average airflow basis unresolved. No thermal qualification.",
@@ -129,7 +132,8 @@
   "qualified_bare_motor_below_100_usd_found": false,
   "qualified_bare_motor_turkey_online_checkout_found": false,
   "requirements": [
-    "Continuous rotary vane or piston motor; not impact wrench, cylinder, oscillating actuator or electric compressor motor",
+    "Complete standalone continuous rotary pneumatic motor with its own shaft and inlet/exhaust ports; no drills or other complete air tools",
+    "Vane or piston motor; not impact wrench, cylinder, oscillating actuator or electric compressor motor",
     "Loaded power, rpm and continuous free-air use at the same running inlet/exhaust pressures; no arbitrary pairing of headline maxima",
     "Suitable guarded shaft coupling and controlled load rated for the selected power/speed; all calculations require shaft extraction",
     "Collectable exhaust with low manufacturer-approved backpressure",
@@ -140,8 +144,7 @@
     "No motor wattage alone establishes the outdoor area-temperature target; nozzle dilution, area, distance, startup and heat pickup matter",
     "20/30 K motor drops, alpha=25%, UA and f are design assumptions, not measured bounds",
     "Motor inlet temperature differs from cylinder temperature",
-    "Cheap drill air use might be averaged/intermittent. Conditional 2.82/2.26 g/s conversions are not continuous-flow ratings",
-    "No shaft-power data for the WUFU donors; no exhaust-temperature or outdoor cooling prediction is justified",
+    "Complete air drills are excluded from motor candidates. Their listing records are retained only as exclusions",
     "Visible cart controls do not establish dispatch date or final checkout availability",
     "Budget excludes load, coupling, regulator, collector, sensors and any added freight/tax",
     "No new CFD, Lean proof or motor/CAD fit verification"
