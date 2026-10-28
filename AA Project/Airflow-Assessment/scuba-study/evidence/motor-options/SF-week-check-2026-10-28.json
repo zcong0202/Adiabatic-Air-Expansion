@@ -1,0 +1,60 @@
+{
+  "checked_on": "2026-10-28",
+  "destination": "San Francisco, CA",
+  "requested_arrival_by": "2026-11-04",
+  "standalone_motors_only": true,
+  "confirmed_delivery_options": [],
+  "under_100_usd_qualified_options": [],
+  "price_basis": "Previously observed listing prices; not refreshed in this check. Tax and delivery excluded.",
+  "candidates": [
+    {
+      "model": "Gast 1AM-NRV-39A",
+      "last_observed_price_usd": 256.99,
+      "last_observed_on": "2026-10-28",
+      "url": "https://www.zoro.com/gast-stock-36skid-1am-nrv-39a-air-motor-1am-nrv-39a/i/G0602738/",
+      "delivery": "Unconfirmed"
+    },
+    {
+      "model": "Gast 2AM-NCC-16",
+      "last_observed_price_usd": 313.99,
+      "last_observed_on": "2026-10-24",
+      "url": "https://www.zoro.com/gast-stock-40skid-2am-ncc-16-air-motor-2am-ncc-16/i/G0602747/",
+      "delivery": "Unconfirmed"
+    }
+  ],
+  "checks": [
+    {
+      "site": "Zoro 1AM product and search",
+      "result": "403; price/stock/delivery could not be refreshed."
+    },
+    {
+      "site": "Grainger",
+      "result": "Technical difficulty page; no product or delivery result."
+    },
+    {
+      "site": "MSC",
+      "result": "403; no inventory result."
+    },
+    {
+      "site": "Radwell 1AM",
+      "result": "403; no price/inventory result."
+    },
+    {
+      "site": "eBay US Gast search",
+      "result": "403; no qualified used listing."
+    },
+    {
+      "site": "Surplus Center air motor search",
+      "result": "Search page loaded; displayed electric compressor/fan motors. No qualified standalone pneumatic motor in displayed results."
+    },
+    {
+      "site": "Bing",
+      "result": "Queries returned unrelated results; discarded."
+    },
+    {
+      "site": "Yahoo / DuckDuckGo",
+      "result": "Search failed; no usable results."
+    }
+  ],
+  "interpretation": "No delivery within seven days verified. This is not evidence that no suitable stock exists. No contact or order placed. No new CFD or hardware validation."
+}
