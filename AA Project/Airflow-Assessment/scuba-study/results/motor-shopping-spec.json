@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-28",
+  "status": "Conditional shopping screen, not hardware qualification",
+  "target": ">6 K average air-temperature drop over 5 x 5 cm at 20 cm; assess 50 cm; still air + gravity; spray <=10 s",
+  "equations": {
+    "motor": "DeltaTmotor=(Pshaft-Qinto)/(mdot cp)",
+    "shopping": "Pshaft=mdot cp DeltaTmotor/(1-alpha)",
+    "target": "DeltaTtarget=f (Ta-Tnozzle)",
+    "path": "Tnozzle=Ta+(Tin-(1-alpha)Pshaft/(mdot cp)-Ta) exp(-UA/(mdot cp))"
+  },
+  "assumptions": {
+    "cp_j_kg_k": 1006.0,
+    "ambient_c": 30.0,
+    "motor_inlet_c": [
+      22,
+      30
+    ],
+    "motor_drop_screen_k": [
+      20,
+      30
+    ],
+    "heat_return_fraction": 0.25,
+    "path_ua_w_k": 1.0,
+    "retained_temperature_fraction_at_target": 0.25,
+    "free_air_reference_density_kg_m3": 1.2
+  },
+  "preferred_shopping_band": {
+    "continuous_g_s": [
+      10,
+      20
+    ],
+    "free_l_min": [
+      500,
+      1000
+    ],
+    "paired_shaft_w_approx": [
+      300,
+      800
+    ],
+    "pressure_bar_g": [
+      5.5,
+      6.3
+    ],
+    "scope": "Practical design band, not a proven minimum or guarantee. Match power to flow; prefer upper drop band for warm inlet."
+  },
+  "rows": [
+    {
+      "flow_g_s": 2,
+      "free_l_min_assumed_rho1_2": 100.0,
+      "net_power_for20k_w": 40.24,
+      "shaft_power_for20k_with25pct_heat_return_w": 53.653333333333336,
+      "shaft_power_for30k_with25pct_heat_return_w": 80.48,
+      "shaft_w_target6k_tin22_f0_25_ua1_heat25pct": 84.37385400634186,
+      "shaft_w_target6k_tin30_f0_25_ua1_heat25pct": 105.83518733967519
+    },
+    {
+      "flow_g_s": 5,
+      "free_l_min_assumed_rho1_2": 250.00000000000003,
+      "net_power_for20k_w": 100.60000000000001,
+      "shaft_power_for20k_with25pct_heat_return_w": 134.13333333333335,
+      "shaft_power_for30k_with25pct_heat_return_w": 201.20000000000002,
+      "shaft_w_target6k_tin22_f0_25_ua1_heat25pct": 142.70928510136392,
+      "shaft_w_target6k_tin30_f0_25_ua1_heat25pct": 196.36261843469723
+    },
+    {
+      "flow_g_s": 10,
+      "free_l_min_assumed_rho1_2": 500.00000000000006,
+      "net_power_for20k_w": 201.20000000000002,
+      "shaft_power_for20k_with25pct_heat_return_w": 268.2666666666667,
+      "shaft_power_for30k_with25pct_heat_return_w": 402.40000000000003,
+      "shaft_w_target6k_tin22_f0_25_ua1_heat25pct": 248.2578257295729,
+      "shaft_w_target6k_tin30_f0_25_ua1_heat25pct": 355.56449239623953
+    },
+    {
+      "flow_g_s": 15,
+      "free_l_min_assumed_rho1_2": 750.0,
+      "net_power_for20k_w": 301.8,
+      "shaft_power_for20k_with25pct_heat_return_w": 402.40000000000003,
+      "shaft_power_for30k_with25pct_heat_return_w": 603.6,
+      "shaft_w_target6k_tin22_f0_25_ua1_heat25pct": 355.00411987196645,
+      "shaft_w_target6k_tin30_f0_25_ua1_heat25pct": 515.9641198719664
+    },
+    {
+      "flow_g_s": 20,
+      "free_l_min_assumed_rho1_2": 1000.0000000000001,
+      "net_power_for20k_w": 402.40000000000003,
+      "shaft_power_for20k_with25pct_heat_return_w": 536.5333333333334,
+      "shaft_power_for30k_with25pct_heat_return_w": 804.8000000000001,
+      "shaft_w_target6k_tin22_f0_25_ua1_heat25pct": 462.0352353999417,
+      "shaft_w_target6k_tin30_f0_25_ua1_heat25pct": 676.648568733275
+    }
+  ],
+  "turkey_online_donor_listings": [
+    {
+      "name": "WUFU WFD-1050S",
+      "url": "https://www.hirdavatburada.com/urun/wufu-wfd-1050s-kabzali-havali-matkap-10mm-sag-sol",
+      "listed_usd_ex_vat": 39,
+      "listed_tl": 2340,
+      "listed_rpm": 1800,
+      "listed_air_l_min": 141,
+      "listed_inlet": "1/4 inch; thread standard not specified",
+      "listed_weight_kg": 1.16,
+      "conditional_g_s_if_free_continuous": 2.82,
+      "checked": "2026-10-28",
+      "category": "Complete pneumatic drill; experimental motor donor, not a bare expander",
+      "cart_status": "Sepete Ekle and Hemen Al visible; add-to-cart control enabled; no purchase made",
+      "stock_status": "Physical inventory and delivery date not confirmed; checkout not completed",
+      "technical_status": "Retail listing only. Shaft power absent; pressure and continuous/average airflow basis unresolved. No thermal qualification.",
+      "exhaust_status": "Capture geometry, backpressure, lubrication and temperature limits unresolved"
+    },
+    {
+      "name": "WUFU WFD-3050",
+      "url": "https://www.hirdavatburada.com/urun/wufu-wfd-3050-kompozit-govdeli-havali-matkap-10mm-sag-sol",
+      "listed_usd_ex_vat": 44,
+      "listed_tl": 2640,
+      "listed_rpm": 1800,
+      "listed_air_l_min": 113,
+      "listed_inlet": "1/4 inch; thread standard not specified",
+      "listed_weight_kg": 0.92,
+      "conditional_g_s_if_free_continuous": 2.26,
+      "checked": "2026-10-28",
+      "category": "Complete pneumatic drill; experimental motor donor, not a bare expander",
+      "cart_status": "Sepete Ekle and Hemen Al visible; add-to-cart control enabled; no purchase made",
+      "stock_status": "Physical inventory and delivery date not confirmed; checkout not completed",
+      "technical_status": "Retail listing only. Shaft power absent; pressure and continuous/average airflow basis unresolved. No thermal qualification.",
+      "exhaust_status": "Capture geometry, backpressure, lubrication and temperature limits unresolved"
+    }
+  ],
+  "qualified_bare_motor_below_100_usd_found": false,
+  "qualified_bare_motor_turkey_online_checkout_found": false,
+  "requirements": [
+    "Continuous rotary vane or piston motor; not impact wrench, cylinder, oscillating actuator or electric compressor motor",
+    "Loaded power, rpm and continuous free-air use at the same running inlet/exhaust pressures; no arbitrary pairing of headline maxima",
+    "Suitable guarded shaft coupling and controlled load rated for the selected power/speed; all calculations require shaft extraction",
+    "Collectable exhaust with low manufacturer-approved backpressure",
+    "Oil-free preferred for person-facing use; lubricated models confined to bench testing with exhaust containment",
+    "Manufacturer-approved temperatures; 1/4 NPT convenient but thread size is not a cooling criterion"
+  ],
+  "limits": [
+    "No motor wattage alone establishes the outdoor area-temperature target; nozzle dilution, area, distance, startup and heat pickup matter",
+    "20/30 K motor drops, alpha=25%, UA and f are design assumptions, not measured bounds",
+    "Motor inlet temperature differs from cylinder temperature",
+    "Cheap drill air use might be averaged/intermittent. Conditional 2.82/2.26 g/s conversions are not continuous-flow ratings",
+    "No shaft-power data for the WUFU donors; no exhaust-temperature or outdoor cooling prediction is justified",
+    "Visible cart controls do not establish dispatch date or final checkout availability",
+    "Budget excludes load, coupling, regulator, collector, sensors and any added freight/tax",
+    "No new CFD, Lean proof or motor/CAD fit verification"
+  ]
+}

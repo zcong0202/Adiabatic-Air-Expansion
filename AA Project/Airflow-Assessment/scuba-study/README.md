@@ -217,3 +217,29 @@ is +10.70 C. Neither UA nor the 25% heat-return scenario is measured.
 These steady budgets support conditional bench POC potential. They do not
 establish startup performance, approved subzero operation, or a >6 K area
 average at 20–50 cm. Existing CFD retains its original source and motor.
+
+
+### Wider motor shopping screen · 28 October
+
+`motor_shopping.py` adds a coupled power/flow screen, with JSON/CSV exports.
+For a 20–30 K motor drop and an assumed heat pickup equal to 25% of shaft
+power, 10 / 15 / 20 g/s need about 268–402 / 402–604 / 537–805 W of shaft
+load. A practical 10–20 g/s shopping band is not a demonstrated minimum.
+The 6 K target screen also assumes a short path UA=1 W/K and retained
+temperature-deficit fraction f=0.25; neither is measured or guaranteed.
+A warm 30 C motor inlet needs more work than a controlled 22 C motor inlet.
+
+Hirdavatburada lists WUFU WFD-1050S at $39 + VAT / 2,340 TL and WFD-3050
+at $44 + VAT / 2,640 TL. Both showed enabled cart links on 28 October.
+They are complete pneumatic drills, not bare motor replacements. No shaft
+power is listed. Their 141/113 L/min air ratings have no established
+continuous free-air basis; conversions to 2.82/2.26 g/s are conditional only.
+No outdoor temperature prediction or motor qualification is made for them.
+Exhaust capture, backpressure, lubrication and temperature limits remain open.
+
+No qualified bare motor under $100, or qualified Turkish bare-motor online
+checkout, was verified in this search. Several marketplaces blocked browsing;
+this is a search limitation, not proof that no product exists. RS Turkey
+home/search was accessible; a generic online store/cart does not establish
+that it sells a suitable stocked pneumatic motor. Cheap donor prices do not
+include the load fixture, coupling, regulator, collector or sensors.

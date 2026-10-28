@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checks": 20,
+  "items": [
+    "2 g/s / inlet 22 C: target/path first-law closure",
+    "2 g/s / inlet 30 C: target/path first-law closure",
+    "2 g/s: 20 K net motor-energy closure",
+    "2 g/s: 30 K net motor-energy closure",
+    "5 g/s / inlet 22 C: target/path first-law closure",
+    "5 g/s / inlet 30 C: target/path first-law closure",
+    "5 g/s: 20 K net motor-energy closure",
+    "5 g/s: 30 K net motor-energy closure",
+    "10 g/s / inlet 22 C: target/path first-law closure",
+    "10 g/s / inlet 30 C: target/path first-law closure",
+    "10 g/s: 20 K net motor-energy closure",
+    "10 g/s: 30 K net motor-energy closure",
+    "15 g/s / inlet 22 C: target/path first-law closure",
+    "15 g/s / inlet 30 C: target/path first-law closure",
+    "15 g/s: 20 K net motor-energy closure",
+    "15 g/s: 30 K net motor-energy closure",
+    "20 g/s / inlet 22 C: target/path first-law closure",
+    "20 g/s / inlet 30 C: target/path first-law closure",
+    "20 g/s: 20 K net motor-energy closure",
+    "20 g/s: 30 K net motor-energy closure"
+  ],
+  "scope": "Conditional energy/path/mixing closure only; not qualification of a cheap motor"
+}

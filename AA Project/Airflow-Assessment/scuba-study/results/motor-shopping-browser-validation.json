@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-28",
+  "status": "passed",
+  "shopping_details_auto_open": true,
+  "unqualified_donor_label_present": true,
+  "no_qualified_bare_motor_statement_present": true,
+  "external_product_links": 2,
+  "local_report_links_checked_by_generator": true,
+  "scope": "DOM and report verification; no checkout, inventory, shipping or motor thermal qualification"
+}

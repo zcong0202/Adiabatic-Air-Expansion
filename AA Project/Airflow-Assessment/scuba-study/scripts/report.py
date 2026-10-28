@@ -58,7 +58,7 @@ def report():
     if animation.exists():main.append(H.fragment_fromstring('<details class="card compact-details"><summary>Native cooling animation / download</summary><a href="'+animation.name+'" download>Download GIF</a><img loading="lazy" style="width:100%;height:auto;margin-top:12px" src="'+animation.name+'" alt="Native single-nozzle CFD: saved 20/50 cm sections and cold-air volume over ten seconds"></details>'))
     foot=tree.xpath('//footer')[0];foot.text='Conditional source · native 3D CFD · hardware unqualified';foot.getparent().remove(foot);main.append(foot)
     for src in ['data.js','viewer.js']:tree.append(H.Element('script',src=src))
-    reveal=H.Element('script');reveal.text="function revealLoad22(){if(location.hash==='#shaft-load-22')document.getElementById('shaft-load-22').open=true;}window.addEventListener('hashchange',revealLoad22);revealLoad22();";tree.append(reveal)
+    reveal=H.Element('script');reveal.text="function revealLoad22(){for(const id of ['shaft-load-22','motor-shopping'])if(location.hash==='#'+id)document.getElementById(id).open=true;}window.addEventListener('hashchange',revealLoad22);revealLoad22();";tree.append(reveal)
     (OUT/'index.html').write_text('<!doctype html>\n'+H.tostring(tree,encoding='unicode',method='html'))
     import csv
     with (OUT/'comparison.csv').open('w') as f:
