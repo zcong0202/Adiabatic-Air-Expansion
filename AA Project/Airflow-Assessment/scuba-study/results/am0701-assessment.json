@@ -1,0 +1,92 @@
+{
+  "model": "Cosmostar AM0701",
+  "assessed_on": "2026-11-02",
+  "verdict": "Credible standalone motor for instrumented bench POC. Outdoor target and direct exhaust/nozzle compatibility unqualified.",
+  "manufacturer_url": "https://www.cosmostar.net/product/air-motor-and-agitator/255-am0701-0-9-hp-air-operated-vane-type-air-motor",
+  "manufacturer_specs": {
+    "power_max_hp": 0.9,
+    "power_max_w": 671.1298844240432,
+    "pressure_range_bar_as_published": [
+      1,
+      7
+    ],
+    "rotation_max_rpm": 3000,
+    "torque_max_nm": 3,
+    "air_consumption_max_l_min": 750,
+    "consumption_condition": "6 bar, 3000 RPM",
+    "mass_kg": 2.61
+  },
+  "missing": [
+    "Free-air/standard versus compressed-volume basis for 750 L/min",
+    "Paired loaded shaft power, RPM and flow curve",
+    "Pressure gauge/absolute basis confirmation",
+    "Inlet and exhaust thread/dimensions and collected-exhaust routing",
+    "Lubrication/oil carryover requirements",
+    "Permitted exhaust backpressure and low-temperature/icing limits"
+  ],
+  "listing_conflict": "Amazon bullets say 1.2 N m and 1100 RPM; manufacturer and title say 3 N m and 3000 RPM. Separate maxima cannot be multiplied into a rated point.",
+  "conditional_assumptions": {
+    "all_max_power_and_flow_simultaneous": true,
+    "flow_is_free_air": true,
+    "reference_air_density_kg_m3": 1.2,
+    "mass_flow_kg_s": 0.015,
+    "cp_j_kg_k": 1006.0,
+    "motor_inlet_c": 22,
+    "ambient_c": 30,
+    "steady_state": true,
+    "negligible_kinetic_potential_energy_change": true,
+    "heat_fraction_025": "Sensitivity only, not measured",
+    "path_ua": "Both sensitivities unmeasured"
+  },
+  "formula": "motor drop = (shaft power - heat entering motor)/(mass flow * cp)",
+  "sensitivities": [
+    {
+      "heat_into_fraction_of_shaft": 0.0,
+      "motor_drop_k": 44.47514144625866,
+      "motor_exhaust_c": -22.47514144625866,
+      "assumed_path_ua_w_k": 1.0,
+      "nozzle_c": -19.110384473744332,
+      "required_cold_origin_fraction_for_6k": 0.12217375335775987
+    },
+    {
+      "heat_into_fraction_of_shaft": 0.0,
+      "motor_drop_k": 44.47514144625866,
+      "motor_exhaust_c": -22.47514144625866,
+      "assumed_path_ua_w_k": 10.0737206593,
+      "nozzle_c": 3.0828497438787146,
+      "required_cold_origin_fraction_for_6k": 0.22290621194699195
+    },
+    {
+      "heat_into_fraction_of_shaft": 0.25,
+      "motor_drop_k": 33.356356084694,
+      "motor_exhaust_c": -11.356356084694,
+      "assumed_path_ua_w_k": 1.0,
+      "nozzle_c": -8.704546415228478,
+      "required_cold_origin_fraction_for_6k": 0.15502054811936183
+    },
+    {
+      "heat_into_fraction_of_shaft": 0.25,
+      "motor_drop_k": 33.356356084694,
+      "motor_exhaust_c": -11.356356084694,
+      "assumed_path_ua_w_k": 10.0737206593,
+      "nozzle_c": 8.786236299764521,
+      "required_cold_origin_fraction_for_6k": 0.2828352424767227
+    }
+  ],
+  "procurement": {
+    "amazon_url": "https://www.amazon.com/dp/B08L6BXZBT",
+    "amazon_usd": 295,
+    "amazon_seller": "Cosmostar Tech Ltd",
+    "amazon_fulfilment": "Amazon",
+    "amazon_stock_display": 8,
+    "amazon_display_destination": "Oakland 94621, not exact SF address",
+    "amazon_regular_delivery_display": "2026-11-07",
+    "amazon_prime_delivery_display": "2026-11-03",
+    "exact_sf_delivery_confirmed": false,
+    "manufacturer_store_url": "https://cosmostar.store/products/cosmostar-am0701-0-9-hp-vanetype-air-motor",
+    "store_usd": 259,
+    "store_evidence": "Enabled Add to cart and product structured data InStock; full page text also contains Sold out (likely hidden template). Checkout not tested.",
+    "store_delivery_display": "Nov 05\u201309; destination-specific date not verified"
+  },
+  "validation": "Numeric conversion and algebra checks only. No new CFD, Lean proof or hardware measurement."
+}
