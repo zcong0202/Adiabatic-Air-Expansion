@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-11-02",
+  "desktop": {
+    "title": "Scuba motor POC assembly",
+    "diagram_loaded": true,
+    "motor_rows": 2,
+    "page_overflow": false
+  },
+  "mobile": {
+    "viewport_width": 390,
+    "document_width": 390,
+    "page_overflow": false
+  },
+  "local_links_checked": 12,
+  "missing_local_links": [],
+  "scope": "Layout and asset checks only. Pressure hardware and physical cooling unqualified."
+}

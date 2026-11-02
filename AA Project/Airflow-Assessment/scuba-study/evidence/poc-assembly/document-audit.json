@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-11-02",
+  "scope": "Document text audit, not physical hardware verification",
+  "slides": [
+    {
+      "file": "AA Project/Project-Documents/0730.pptx",
+      "part": "ppt/slides/slide7.xml",
+      "text": "EXPERIMENTAL\n \nSETUP\nScuba\n \nTank\n200\n \nbar/3000\n \npsi\n1st\n \nPressure\n  \nRegulator\n130-150\n \npsi\n \nShut-off\n \nvalve\n600\n \npsi\n \nmax\n \ninlet\n2st\n \nPressure\n  \nRegulator\n250\n \npsi\n \nmax\n \ninlet\nNozzles\nPressure\n \nGauge\nAir\n \nhose\n \n/adapter\nAir\n \nhose\n \nAir\n \nhose\n \n/adapter\nTemporary nozzle; to be replaced by an iteratively optimized, 3D-printed design\n \nfor\n \ndemonstration\n.",
+      "sha256": "6e3957ddf77267e46c82bb34ddb00b6949ef553d3f9b6a7547c6cbb04087d979"
+    },
+    {
+      "file": "AA Project/Project-Documents/0730.pptx",
+      "part": "ppt/slides/slide8.xml",
+      "text": "EQUIPMENT\n \nLIST\nItem\nAmazon\n \nLinks\nPrice\nScuba\n \nTank\n/\nDive Regulator Set, Aluminum Alloy 1 First Stage 2 Second Stages Regulator Pressure Gauges with 2 Hoses\nhttps://\nwww.amazon.ae\n/\ngp\n/product/B0H4R9CMD1/ref=ox_sc_act_title_4?smid=A2AUIR039IRKW9&psc=1\nAED\n \n678.82\n10Pack 1/4\" x 1/4\" NPT Coupler\nhttps://\nwww.amazon.ae\n/\ngp\n/product/B0FWQLFMWL/ref=ox_sc_act_image_2?smid=APJNOR2MA132I&psc=1\nAED \n68.88\nScuba Choice Scuba Diving Male 9/16-18 TO Male 1/4\"NPT Adaptor\nhttps://\nwww.amazon.ae\n/\ngp\n/product/B077MZXSV3/ref=ox_sc_act_title_3?smid=A2QUTRSO1ZHRN9&psc=1\nAED \n51.6\n3 Pcs 1/4\" NPT Male x 1/4\" NPT Female Brass Mini Ball Valve Shut-Off Valve 600 Psi\nhttps://\nwww.amazon.ae\n/\ngp\n/product/B0CSHXZ7W8/ref=ox_sc_act_title_5?smid=A2QUTRSO1ZHRN9&th=1\nAED \n54.34\n2 Pack Air Compressor Hose, 1/2\" X 15\" Air Hose, 300 PSI Max Working Pressure, 1/4\" Male NPT To 1/4\" Male NPT Connections\nhttps://\nwww.amazon.ae\n/\ngp\n/product/B0GJS4HXJR/ref=ox_sc_act_title_1?smid=AH08NLCR9D0HL&psc=1\nAED \n69.9\nARO R37121-600-VS Air Regulator 1/4\" NPT, w/ Gauge - 250 psi Max Inlet\namazon.ae\n/\ngp\n/product/B0057D8LMY/ref=ox_sc_act_image_1?smid=A2QUTRSO1ZHRN9&psc=1\nAED \n148.93\nPack of 4 wind jet air nozzles, round wind jet air blower air spray nozzle\nhttps://\nwww.amazon.ae\n/\ngp\n/product/B0FSS14MC9/ref=ox_sc_act_title_12?smid=A1PABCCOBLLZB5&th=1\nAED\n \n57.51\nTotal\nAED\n \n1129.98",
+      "sha256": "6e3957ddf77267e46c82bb34ddb00b6949ef553d3f9b6a7547c6cbb04087d979"
+    },
+    {
+      "file": "AA Project/1008.pptx",
+      "part": "ppt/slides/slide5.xml",
+      "text": "200 bar cylinder\n8–10 bar\n8–10 bar\n6.9\n bar\n（\n100psi\n）\nNozzle\nNozzle\nVortex\n  \nTube\n2\nnd\n \nRegulator\n1\nst\n  \nRegulator\nTwo experimental \ncompress\n \nair paths ",
+      "sha256": "58649341171127b15bc071e5c63a5a45fd9a856292a8cb3615a3e24b89b72602"
+    },
+    {
+      "file": "AA Project/1008.pptx",
+      "part": "ppt/slides/slide24.xml",
+      "text": "Current scuba route: \nM\nain Joule–Thomson throttling\nThe first stage performs the main Joule–Thomson throttling step; downstream heat gain and mixing erode the delivered signal\nPressure and energy path\nCylinder\n≈200 bar\nRegulator\n≈\n6\n–10 bar(g)\nNozzle\nto ≈1 bar\nM\nain Joule–Thomson throttling\nEnthalpy\n \nh₀ ≈ constant\nFULL\n \n \nPATH\n25 → 21°C\nat nozzle outlet\n25 → 24°C\nat 0.5 m\nLong LP hose after the first stage\nSHORT PATH\n25 → 16°C\nat nozzle outlet\n25 → 23°C\nat 0.5 m\nNozzle placed close to the first-stage outlet\nWhat the \ntesting\n supports\nThe tests show a measurable Joule–Thomson cooling effect, but downstream hose length erodes the temperature drop. \nLocating the main throttle close to the outlet preserves more cooling.\nFurther enthalpy reduction should be evaluated. \nNozzle geometry and fan-assisted flow spreading will determine how effectively the cooled air reaches the target distance.",
+      "sha256": "58649341171127b15bc071e5c63a5a45fd9a856292a8cb3615a3e24b89b72602"
+    },
+    {
+      "file": "AA Project/1008.pptx",
+      "part": "ppt/slides/slide25.xml",
+      "text": "Two ways to reduce delivered-air enthalpy\nVortex separation is purchasable now; a turboexpander is more efficient in principle but requires a custom matched system\n03\n1 · VORTEX TUBE\nCold / hot stream separation\nNo shaft work\nThe inlet enthalpy is redistributed: a low-enthalpy cold fraction is delivered while a hotter fraction is rejected.\nAdvantages\n•\nNo moving parts; compact and immediately testable.\n•\nEXAIR 3208 reference: 6.9 bar(g), 227 SLPM.\nLimitations\n•\nRejects a hot stream and consumes substantial compressed air.\n•\nNeeds clean, dry air; outlet temperature depends on cold fraction and inlet state.\nUAE PURCHASE: AVAILABLE\nAmazon UAE · AED 257.47 · delivery shown 5–6 Oct\namazon.ae\n/\ndp\n/B094HTCQP8\nManufacturer: international.exair.com/vortextubes-spotcooling\n2 · TURBOEXPANDER\nNear-isentropic expansion\nShaft work is extracted\nThe expanding gas drives a rotor or generator, reducing total enthalpy and total temperature across the whole flow.\nAdvantages\n•\nPotentially higher thermodynamic effectiveness; all outlet flow can be cold.\n•\nCan recover mechanical or electrical work.\nLimitations\n•\nRequires a matched pressure–flow map, load, bearings and overspeed control.\n•\nCondensation and multistage pressure letdown may require engineered auxiliaries.\n \nUAE PURCHASE: CUSTOM RFQ ONLY\nAmazon UAE · no matched cooling turboexpander verified\nManufacturer RFQ: hsturbo.de/en/produkte/turboexpander.html\nUAE sourcing inquiry: \nstcoil.com\n/\nMechanical.html\n · delivery unconfirmed\nAvailability checked 29 Sep 2026. Amazon vortex listing was deliverable to Dubai; turbine delivery, price and technical match remain unconfirmed.\n6.9 bar(g) inlet · 8 SCFM / 227 SLPM\n162 W (550 Btu/h) cooling · 76 dBA*\nSmall body · 1/4 NPT female inlet\n,\n \n80%/20%\n \ncold/hot\n \nair\nMinimum flow: 10 Nm³/h (≈167 NL/min)\nExpansion ratio ≤≈3 · 100–500 W\nSpeed ≤600,000 rpm · motor/generator integrated",
+      "sha256": "58649341171127b15bc071e5c63a5a45fd9a856292a8cb3615a3e24b89b72602"
+    }
+  ],
+  "controller_bom": {
+    "path": "AA Project/Controller-App/dist/AA Controller Mac/BoM - Procurement List.pdf",
+    "sha256": "224b507dda33bbc7251de287abd60be42f536a67fe2139238e82ac9c15313ae5",
+    "excerpt": "Owned component: U.S. Solid USS-PSV00041, 12 V DC, normally closed, 1/4 in NPT, 0–0.8 MPa, Cv 0.23; excluded\n     from the total.\n     Pricing: The Walfront VL53L1X page showed free delivery to Dubai Al Barsha on 2 October 2026 and only thr",
+    "page": 6
+  },
+  "findings": {
+    "tank_fill_pressure_bar": 200,
+    "first_stage_pressure": "130–150 psi in 0730, about 9–10 bar in later deck",
+    "first_stage": "Dive regulator set, ASIN B0H4R9CMD1; no primary manufacturer/model or flow map verified",
+    "secondary_regulator": "ARO R37121-600-VS; quarter-inch NPT; 250 psi maximum inlet in deck",
+    "owned_solenoid": "U.S. Solid USS-PSV00041, 12 V normally closed, quarter-inch NPT, max 8 bar, Cv 0.23 per controller BoM",
+    "cylinder_volume_l": null,
+    "cylinder_volume_note": "No volume found in inspected source decks/documents. 12 L comes from meeting context/reference model, not a verified cylinder stamp.",
+    "flow_map_verified": false,
+    "first_stage_8_to_10_bar_motor_direct_connection": "Exceeds published 7 bar motor range. Secondary regulated pressure required."
+  }
+}

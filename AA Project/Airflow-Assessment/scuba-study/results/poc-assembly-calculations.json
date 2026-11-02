@@ -1,0 +1,115 @@
+{
+  "checked_on": "2026-11-02",
+  "status": "Concept assembly; hardware flow remains unqualified",
+  "tank_reference": {
+    "volume_l": 12,
+    "volume_status": "Assumed from meeting/reference, not confirmed by source documents",
+    "fill_bar_g": 200,
+    "initial_c": 22,
+    "cutoff_bar_g": 20,
+    "cutoff_status": "Planning assumption; actual regulator dropout depends on flow",
+    "usable_mass_kg": {
+      "adiabatic": 2.091064512000863,
+      "isothermal": 2.46882300895497
+    }
+  },
+  "motors": [
+    {
+      "model": "AM0701",
+      "power_screen_w": 671.1298844240432,
+      "assumed_mass_g_s": 15.0,
+      "assumed_free_air_l_min": 750,
+      "assumed_free_air_scfm": 26.48600004111644,
+      "mass_10s_g": 150.0,
+      "inventory_only_s": {
+        "adiabatic": 139.40430080005754,
+        "isothermal": 164.588200596998
+      },
+      "complete_10s_pulses": {
+        "adiabatic": 13,
+        "isothermal": 16
+      },
+      "torque_if_screen_power_at_3000rpm_nm": 2.136272771255578,
+      "load_heat_10s_kj": 6.711298844240432,
+      "illustrative_flywheel_spinup_s": 0.36764881992847603
+    },
+    {
+      "model": "AM0706",
+      "power_screen_w": 2684.519537696173,
+      "assumed_mass_g_s": 74.0,
+      "assumed_free_air_l_min": 3700,
+      "assumed_free_air_scfm": 130.66426686950777,
+      "mass_10s_g": 740.0,
+      "inventory_only_s": {
+        "adiabatic": 28.2576285405522,
+        "isothermal": 33.36247309398608
+      },
+      "complete_10s_pulses": {
+        "adiabatic": 2,
+        "isothermal": 3
+      },
+      "torque_if_screen_power_at_3000rpm_nm": 8.545091085022312,
+      "load_heat_10s_kj": 26.84519537696173,
+      "illustrative_flywheel_spinup_s": 0.09191220498211901
+    }
+  ],
+  "flow_assumptions": [
+    "Both motor volume ratings treated as free air at 1.2 kg/m3",
+    "Maximum shaft power and airflow are screening combinations, not confirmed paired points",
+    "Inventory scenarios exclude purging, warm-up, leaks, pressure droop and icing",
+    "Tank temperature does not set motor inlet temperature"
+  ],
+  "existing_supply": {
+    "first_stage": "Documented ~9\u201310 bar; generic diving set, flow map unknown",
+    "secondary": "ARO R37121-600-VS",
+    "secondary_listed_scfm": 59,
+    "secondary_rating_basis": "Retail listing; reference pressure/drop not verified",
+    "solenoid": "USS-PSV00041",
+    "solenoid_cv": 0.23,
+    "solenoid_max_bar": 8,
+    "exact_motor_supply_pass": false
+  },
+  "valve_screen": {
+    "model": "Ideal-gas orifice analogy from water Cv, not IEC/ISA vendor sizing",
+    "pressure_upstream_bar_g": 6,
+    "temperature_c": 22,
+    "choked_mass_g_s": 6.446955266978515,
+    "meaning": "About 6.45 g/s only with a large pressure loss. This does not deliver 6 bar downstream. Actual gas expansion factors/geometry require vendor data.",
+    "full_flow_15_or_74_g_s_supported_by_existing_valve": false
+  },
+  "flywheel": {
+    "illustrative_mass_kg": 1,
+    "illustrative_radius_m": 0.1,
+    "illustrative_speed_rpm": 3000,
+    "inertia_kg_m2": 0.005000000000000001,
+    "stored_energy_j": 246.740110027234,
+    "meaning": "Absorbs energy only while accelerating. A steady-speed flywheel is not a continuous load. Not a build prescription."
+  },
+  "equations": {
+    "shaft": "Pshaft = torque * omega",
+    "flywheel": "Pstorage = I * omega * domega/dt; E = I*omega^2/2",
+    "motor": "T0_in - T0_out = (Pshaft - Qinto)/(mdot*cp)",
+    "tank": "time_inventory = usable_mass / mdot"
+  },
+  "assembly": [
+    "Restrained cylinder and compatible rated diving first stage",
+    "Manual isolation; secondary pressure control and overpressure protection within lowest downstream rating",
+    "Supplier-required air preparation, suitably rated flowmeter and full-flow test valve; automatic fail-closed valve for controller integration",
+    "Motor inlet pressure and bulk-temperature measurement, under running flow",
+    "One motor at a time, rigidly mounted; shaft coupling and guard to rated dynamometer or matched generator/load bank",
+    "Manufacturer-approved exhaust collector; pressure/temperature measurement",
+    "Short insulated large-bore exhaust path; low-backpressure passive nozzle",
+    "Bench target with 20 cm and 50 cm temperature/velocity measurement"
+  ],
+  "gates": [
+    "Do not connect 200 bar or documented 9\u201310 bar first-stage outlet directly to a 1\u20137 bar motor",
+    "Replace/re-size Cv 0.23 valve for full screened motor flow; pressure rating and thread size do not establish flow capacity",
+    "AM0706 full-flow screen exceeds listed 59 SCFM secondary-regulator rating; replace/re-size regulator and verify first-stage capacity",
+    "AM0701 demand is below secondary catalogue figure, but actual droop, first-stage flow and valve/line losses remain unqualified",
+    "Confirm exact shaft/port sizes, collected exhaust, lubrication, cold-temperature and backpressure limits before fitted assembly",
+    "Keep POC exhaust away from people until oil carryover and delivered temperature are qualified",
+    "Guard rotating parts; provide rated brake/load cooling and shut off air on loss of load or overspeed"
+  ],
+  "vortex": "A powered vortex tube is a separate comparison branch from regulated compressed air. Do not put it in the near-atmospheric motor exhaust. A passive swirl tip is a different nozzle and must be assessed for backpressure/mixing.",
+  "validation": "Numerical EOS and algebra checks only. No new CFD or Lean proof."
+}
