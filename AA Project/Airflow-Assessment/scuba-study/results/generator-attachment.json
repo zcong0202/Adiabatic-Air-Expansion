@@ -1,0 +1,39 @@
+{
+  "status": "Assembly concept; coupling bore and bracket not selected or qualified",
+  "source_urls": [
+    "https://www.amazon.com/dp/B0G4PH83D3",
+    "https://www.cosmostar.net/product/air-motor-and-agitator/255-am0701-0-9-hp-air-operated-vane-type-air-motor"
+  ],
+  "verified_listing_features": [
+    "MY1020 has mounting base and 11-tooth sprocket",
+    "AM0701 manufacturer lists maximum 3 N m and 3000 rpm"
+  ],
+  "application": "AM0701 generator-conversion candidate. Not a qualified full-power AM0706 load.",
+  "connection": "Aligned shafts, two correctly bored coupling hubs and elastomer spider, common rigid base, guard",
+  "shaft_a_bore_mm": null,
+  "shaft_generator_bore_mm": null,
+  "unknown_interfaces": [
+    "Both actual shaft diameters and tolerances",
+    "Straight usable engagement length",
+    "Keyway, flat, thread and retention details",
+    "MY1020 sprocket removal method and suitable coupling land",
+    "AM0701 mounting flange/bracket dimensions"
+  ],
+  "coupling_requirements": [
+    "Continuous torque above motor maximum with manufacturer-selected service factor",
+    "Allowed speed at least 3000 rpm and correct balance",
+    "Hubs matched to actual shaft profiles and sufficient engagement",
+    "Correct axial gap and angular/radial alignment per coupling instructions",
+    "Complete guard and rigid supported mounting"
+  ],
+  "example_only": {
+    "shaft_w": 671.1298844240432,
+    "rpm": 3000,
+    "shaft_torque_nm": 2.136272771255578,
+    "note": "Illustration only. Maximum power at 3000 rpm has not been established."
+  },
+  "electrical": "MY1020 terminals to suitably protected/metered resistor load; verify permanent-magnet construction and generator voltage/current/thermal limits. Open circuit produces little sustained external load.",
+  "limitation": "No coupling SKU selected. Do not force-fit bores or clamp a standard smooth-bore hub onto an unsuitable thread. A compatible hub/adapter or different transmission needs supplier approval.",
+  "deadline": "Last exact-ZIP quote for this MY1020 was Prime Nov 5 to 94107, after required Nov 4. Fixture/coupling assembly is additional.",
+  "validation": "Concept and torque conversion only. No physical fit or load qualification, new CFD or Lean proof."
+}
