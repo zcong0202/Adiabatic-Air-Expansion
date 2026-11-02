@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-11-02",
+  "timezone": "America/Los_Angeles",
+  "destination": {
+    "city": "San Francisco",
+    "region": "CA",
+    "zip": "94107"
+  },
+  "deadline": "2026-11-04",
+  "deadline_is_hard": true,
+  "zip_entered_and_applied_in_amazon_ui": true,
+  "quote_context": "Unsigned Amazon product-page estimates. Prime offers require eligibility. No purchase, checkout or seller contact. Same-day cutoffs are time-sensitive.",
+  "qualified_ready_to_attach_motor_loads_by_deadline": [],
+  "items": [
+    {
+      "item": "AM0701 bare air motor",
+      "asin": "B08L6BXZBT",
+      "url": "https://www.amazon.com/dp/B08L6BXZBT",
+      "usd": 295,
+      "prime_earliest_displayed": "2026-11-02 same-day, time-sensitive cutoff",
+      "regular_displayed": "2026-11-07",
+      "is_load": false,
+      "qualification": "Bare motor only; source and load assembly still required."
+    },
+    {
+      "item": "AM0706 bare air motor",
+      "asin": "B08L93K9NV",
+      "url": "https://www.amazon.com/dp/B08L93K9NV",
+      "usd": 380,
+      "prime_earliest_displayed": "2026-11-04",
+      "regular_displayed": "2026-11-08",
+      "is_load": false,
+      "qualification": "Bare motor only; higher-flow supply and rated load still required."
+    },
+    {
+      "item": "MY1020 generator-conversion motor",
+      "asin": "B0G4PH83D3",
+      "url": "https://www.amazon.com/dp/B0G4PH83D3",
+      "usd": 89.99,
+      "prime_earliest_displayed": "2026-11-05",
+      "regular_displayed": "2026-11-07",
+      "is_load": false,
+      "deadline_met": false,
+      "qualification": "Conversion component, not a complete load station; also misses deadline."
+    },
+    {
+      "item": "Factory M0701 motor/shaft/paddle/clamp package",
+      "asin": "B08LQ11GPB",
+      "url": "https://www.amazon.com/dp/B08LQ11GPB",
+      "usd": 475,
+      "earliest_displayed": "2026-11-13 through 2026-11-17",
+      "deadline_met": false,
+      "qualification": "Includes the selected AM0701 motor; not a load add-on. Reviewed only as preassembled package, not a substitute recommendation. Does not establish calibrated water-load power or exhaust suitability."
+    }
+  ],
+  "brake_search": "Relevant magnetic/hysteresis motor brakes/test benches showed dates after Nov4; hand-grip dynamometers were excluded as unrelated. Exact shaft coupling, power/speed/torque qualification not established.",
+  "local_bench_option": {
+    "status": "Loan/rental availability and cost unverified",
+    "small_motor_example": "Magtrol HD-710 with controller/blower and guarded matched fixture",
+    "both_motor_example": "Magtrol HD-810 with controller/blower and guarded matched fixture"
+  },
+  "decision": "No verified ready-to-attach purchase option meets all requirements by Nov4. Seek an already assembled local test bench if motor POC deadline is fixed. Motor delivery alone does not establish test readiness.",
+  "scientific_status": "Procurement check only. No new CFD, motor map or hardware validation."
+}
