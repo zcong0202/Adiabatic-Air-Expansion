@@ -1,0 +1,68 @@
+{
+  "model": "Cosmostar AM0706",
+  "assessed_on": "2026-11-02",
+  "manufacturer_url": "https://www.cosmostar.net/product/air-motor-and-agitator/264-am0706-air-operated-agitator",
+  "manufacturer_specs": {
+    "max_power_hp": 3.6,
+    "max_power_w": 2684.519537696173,
+    "pressure_range_bar_as_published": [
+      1,
+      7
+    ],
+    "max_torque_nm": 13,
+    "max_speed_rpm": 3000,
+    "max_air_consumption_l_min": 3700,
+    "consumption_reference_conditions": "Not specified on reviewed manufacturer page",
+    "weight_kg": 3.33
+  },
+  "assumptions": [
+    "3700 L/min means free air at reference density 1.2 kg/m3",
+    "Maximum power and air consumption occur together",
+    "Steady motor state and negligible kinetic/potential energy change",
+    "25% shaft-power heat return is a sensitivity, not a measurement",
+    "22 C is motor inlet, not necessarily scuba tank-to-regulator outlet"
+  ],
+  "conditional_results": {
+    "mass_flow_g_s": 74.0,
+    "motor_drop_no_heat_k": 36.06092549696648,
+    "motor_drop_heat25_k": 27.04569412272486,
+    "motor_exhaust_if_inlet22_heat25_c": -5.045694122724861,
+    "mass_per_10s_g": 740.0,
+    "mass_ratio_to_am0701": 4.933333333333334,
+    "shaft_power_ratio_to_am0701": 4,
+    "inventory_only_runtime_s": {
+      "adiabatic": 27.401741028114454,
+      "isothermal": 32.24827691891096
+    },
+    "tank_reference": "Existing 12 L / 200 bar gauge / 30 C initial tank, 20 bar gauge cutoff; adiabatic and isothermal scenarios. Not qualified full-flow runtime.",
+    "complete_10s_pulses": {
+      "adiabatic": 2,
+      "isothermal": 3
+    }
+  },
+  "limitations": [
+    "No paired loaded power/RPM/flow curve",
+    "Free-air basis unconfirmed",
+    "Higher full-flow regulator/hoses capacity unqualified",
+    "Exhaust capture, thread sizes, lubrication, low-temperature and exhaust-backpressure limits unconfirmed",
+    "Continuous shaft load up to about 2.7 kW required to reach the screened power",
+    "No new nozzle source boundary or CFD validation; do not reuse 77 g/s study as this motor result"
+  ],
+  "listing_conflict": "Amazon bullets say 6.3 N m while title/manufacturer imply 13 N m. Use official model data; confirm exact supplied variant.",
+  "procurement": {
+    "amazon_url": "https://www.amazon.com/dp/B08L93K9NV",
+    "amazon_usd": 380,
+    "seller": "Cosmostar Tech Ltd",
+    "ships_from": "Amazon",
+    "displayed_stock": 8,
+    "displayed_destination": "Oakland 94621",
+    "regular_delivery": "2026-11-07",
+    "prime_delivery": "2026-11-04",
+    "sf_checkout_confirmed": false,
+    "manufacturer_shop_url": "https://cosmostar.store/products/cosmostar-am0706-3-6-hp-vane-type-air-motor",
+    "manufacturer_shop_usd": 339,
+    "shop_add_to_cart_enabled": true,
+    "shop_delivery_display": "Nov 5\u20139; checkout/destination not verified"
+  },
+  "decision": "Credible higher-mass-flow POC candidate if rated supply and continuous shaft load can support it. AM0701 remains simpler for first instrumented bench demonstration. No guaranteed >6 K at 20\u201350 cm."
+}
