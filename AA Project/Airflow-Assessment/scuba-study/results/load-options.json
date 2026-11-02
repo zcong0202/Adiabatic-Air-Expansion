@@ -1,0 +1,164 @@
+{
+  "checked_on": "2026-11-02",
+  "status": "Priced component candidates; no complete cheap load qualified for either full motor point",
+  "options": [
+    {
+      "type": "Water agitation load",
+      "priority": "Lowest-cost mechanical POC concept",
+      "links": [
+        {
+          "item": "EX6S12 blade only, 12 mm bore",
+          "usd": 39,
+          "url": "https://cosmostar.store/products/copy-of-cosmostar-stainless-steel-mixing-expandable-blade-55-gallon-paint-mixer-stirring-propeller-tools"
+        },
+        {
+          "item": "Two 3.94-inch blades and 12 mm shaft",
+          "usd": 109,
+          "url": "https://cosmostar.store/products/cosmostar-stainless-steel-mixing-gear-blade-55-gallon-paint-mixer-stirring-propeller-tools-for-paint-epoxy-resin-silicone-stirrer-paddle-with-0-47-shaft-rod-gear-3-94-in-propeller-g10s12?variant=45988974068032"
+        }
+      ],
+      "complete_station_price_usd": null,
+      "qualifications_missing": [
+        "Exact motor shaft connection and supplier-approved speed/bearing limits",
+        "Stable torque absorption at chosen RPM in actual vessel",
+        "Rigid covered vessel/mount/guard and torque/RPM measurement"
+      ],
+      "thermal_note": "Water can receive work as heat. Heat capacity alone does not prove a paddle can absorb the required shaft power.",
+      "stock_delivery": "Manufacturer shop cart enabled; Nov 5\u20139 banner, destination checkout not verified"
+    },
+    {
+      "type": "Brushed PMDC motor used as generator plus resistor bank",
+      "priority": "Reusable low-cost engineering candidate for AM0701",
+      "links": [
+        {
+          "item": "Ytrica MY1020 48 V / 1000 W / 3000 rpm brushed motor",
+          "usd": 89.99,
+          "url": "https://www.amazon.com/dp/B0G4PH83D3"
+        },
+        {
+          "item": "uxcell advertised 1000 W / 3 ohm braking resistor",
+          "usd": 30.09,
+          "url": "https://www.amazon.com/dp/B008DGC4WA"
+        }
+      ],
+      "advertised_component_subtotal_usd": 120.08,
+      "complete_station_price_usd": null,
+      "qualifications_missing": [
+        "Confirm permanent-magnet construction; inferred from reversible two-wire motor type, not explicitly verified by manufacturer",
+        "Motor listing is not a generator absorption/thermal rating",
+        "Generated voltage/current versus speed and load, losses, temperature and commutation",
+        "Resistance selection from loaded voltage and target power; 3 ohm is a cost example, not a fixed specification",
+        "Resistor heatsink/cooling and derating conditions",
+        "Exact shaft coupling, base, guard, DC switching, wiring protection and metering"
+      ],
+      "limit": "Not a qualified AM0706 2.68 kW full-power load. An unloaded generator or a scooter drive controller does not supply the intended resistive load.",
+      "stock_delivery": "Motor: 20 displayed, Oakland Nov 7 / Prime Nov 5. Resistor: in stock, Oakland Nov 7 conditional free shipping / Prime Nov 3. Exact SF checkout unverified."
+    },
+    {
+      "type": "Rated brake/dynamometer, preferably borrowed or rented",
+      "priority": "Best controlled test if an existing lab unit is accessible",
+      "links": [
+        {
+          "item": "Magtrol HD Series manufacturer data",
+          "url": "https://www.magtrol.com/product/hysteresis-dynamometers-hd-series/"
+        }
+      ],
+      "complete_station_price_usd": null,
+      "verified_rating_examples": [
+        {
+          "model": "HD-710",
+          "max_torque_nm": 3.1,
+          "continuous_absorption_w": 935,
+          "scope": "AM0701 screen at 3000 rpm; blower and controller required"
+        },
+        {
+          "model": "HD-810",
+          "max_torque_nm": 14,
+          "continuous_absorption_w": 3000,
+          "scope": "Both motor screening points at 3000 rpm; blower and controller required"
+        }
+      ],
+      "rating_source": "Magtrol HD datasheet page 4. Ratings are not local availability or complete-installation qualification.",
+      "qualifications_missing": [
+        "Specific unit, price/stock/rental not verified",
+        "Torque, speed, continuous/slip-power or 10-second energy/duty rating and controller match"
+      ],
+      "required_shared_station": "About 3 kW mechanical absorption and >=8.55 N m at 3000 rpm for the AM0706 screening point; actual loaded map must set final limits"
+    }
+  ],
+  "requirements": [
+    {
+      "model": "AM0701",
+      "screened_shaft_power_w": 671.1298844240432,
+      "torque_if_power_at_3000rpm_nm": 2.136272771255578,
+      "energy_10s_kj": 6.711298844240432,
+      "ideal_water_warming_10kg_10s_k": 0.16055738861819216,
+      "electrical_load_if_generator_efficiency_080_w": 536.9039075392346,
+      "generator_efficiency_status": "80% illustration, not measured"
+    },
+    {
+      "model": "AM0706",
+      "screened_shaft_power_w": 2684.519537696173,
+      "torque_if_power_at_3000rpm_nm": 8.545091085022312,
+      "energy_10s_kj": 26.84519537696173,
+      "ideal_water_warming_10kg_10s_k": 0.6422295544727686,
+      "electrical_load_if_generator_efficiency_080_w": 2147.6156301569386,
+      "generator_efficiency_status": "80% illustration, not measured"
+    }
+  ],
+  "fixed_flow_sensitivities": [
+    {
+      "assumed_shaft_w": 200,
+      "assumed_mass_g_s": 15.0,
+      "assumed_heat_return_fraction": 0.25,
+      "motor_drop_k": 9.940357852882704,
+      "basis": "Independent fixed-flow sensitivity, not an actual load/flow operating point"
+    },
+    {
+      "assumed_shaft_w": 400,
+      "assumed_mass_g_s": 15.0,
+      "assumed_heat_return_fraction": 0.25,
+      "motor_drop_k": 19.880715705765407,
+      "basis": "Independent fixed-flow sensitivity, not an actual load/flow operating point"
+    },
+    {
+      "assumed_shaft_w": 671.1298844240432,
+      "assumed_mass_g_s": 15.0,
+      "assumed_heat_return_fraction": 0.25,
+      "motor_drop_k": 33.356356084694,
+      "basis": "Independent fixed-flow sensitivity, not an actual load/flow operating point"
+    },
+    {
+      "assumed_shaft_w": 200,
+      "assumed_mass_g_s": 7.5,
+      "assumed_heat_return_fraction": 0.25,
+      "motor_drop_k": 19.880715705765407,
+      "basis": "Independent fixed-flow sensitivity, not an actual load/flow operating point"
+    }
+  ],
+  "electrical_resistor_examples": [
+    {
+      "assumed_terminal_v": 36,
+      "resistance_ohm": 3,
+      "electrical_power_w": 432.0,
+      "current_a": 12.0
+    },
+    {
+      "assumed_terminal_v": 48,
+      "resistance_ohm": 3,
+      "electrical_power_w": 768.0,
+      "current_a": 16.0
+    }
+  ],
+  "mechanism": {
+    "rotor": "I*domega/dt = torque_air - torque_load - torque_friction",
+    "steady": "torque_air = torque_load + torque_friction",
+    "shaft": "Pshaft = torque_load*omega",
+    "motor": "Delta T = (Pshaft-Qinto)/(mdot*cp)",
+    "outlet_speed": "U = mdot/(rho*A)",
+    "pressure": "A sufficient regulator may hold inlet pressure while speed/flow change. Exhaust pressure depends on outlet resistance, normally near ambient for this concept.",
+    "unknown": "Neither loaded 15 nor 74 g/s is established without the motor map and actual supply test."
+  },
+  "recommendation": "Use AM0701 first. Obtain a supplier-matched paddle/shaft load for the cheapest mechanical POC, or qualify the PMDC generator/resistor route for repeatable work recovery. Do not claim full-power capacity from watt labels. Higher-power AM0706 needs upgraded air supply and a separately rated load.",
+  "validation": "Arithmetic only. No physical motor map, generator thermal test, new CFD or Lean proof."
+}

@@ -13,5 +13,12 @@
   },
   "local_links_checked": 12,
   "missing_local_links": [],
-  "scope": "Layout and asset checks only. Pressure hardware and physical cooling unqualified."
+  "scope": "Layout and asset checks only. Pressure hardware and physical cooling unqualified.",
+  "load_options": {
+    "present": true,
+    "option_rows": 3,
+    "qualification_notice": true,
+    "local_links_checked": 14,
+    "missing_local_links": []
+  }
 }

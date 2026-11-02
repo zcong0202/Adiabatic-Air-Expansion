@@ -1,0 +1,263 @@
+Home / Motor Test Equipment / Dynamometers / HD Series – Hysteresis Dynamometers
+HD Series – Hysteresis Dynamometers
+
+Support & Downloads
+Product Brochure
+Product Manual
+Product Datasheet
+Description
+Specifications and Drawings
+Applications
+System Options
+Dynamometer Selection
+Product Description
+
+Hysteresis Brake Dynamometers (HD Series) are versatile and ideal for testing in the low to medium power range (maximum 14 kW intermittent duty).  With a Hysteresis Braking system, the Dynamometers do not require speed to create torque, and therefore can provide a full motor ramp from free-run to locked rotor.  Brake cooling is provided by convection (no external source), by compressed air or by dedicated blower, depending on the model.  All Magtrol Hysteresis Dynamometers have accuracy ratings of ± 0.25% full scale — depending on size and system configuration.
+
+Features
+16 Standard Models with Maximum Torque from 2.5 oz·in to 500 lb·in (18 mN·m to 56.5 N·m)
+Hysteresis Braking System: Provides precise torque loading independent of shaft speed
+Motor Testing from No Load to Locked Rotor
+Accuracy: ±0.25% (Full Scale)
+Air Flow Sensor: For protection against overheating and operator error
+Standard Torque Units: English, Metric and SI
+Custom Dynamometers: for special torque and speed requirements
+Easy Calibration
+The Hysteresis Braking System
+
+All Magtrol Hysteresis Dynamometers absorb power with a unique Hysteresis Braking System which provides frictionless torque loading independent of shaft speed. The Hysteresis Brake provides torque by the use of two basic components – a reticulated pole structure and a specialty steel rotor/shaft assembly – fitted together but not in physical contact. Until the pole structure is energized, the drag cup can spin freely on its shaft bearings. When a magnetizing force from the field coil is applied to the pole structure, the air gap becomes a flux field and the rotor is magnetically restrained, providing a braking action between the pole structure and rotor.
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Related Products
+M-TEST 7 – Motor Testing Software
+DSP 7010 Series – Dynamometer Controller
+AMF Series – Adjustable Motor Fixtures
+Get more information about HD Series - Hysteresis Dynamometers
+After submitting this request a member of our team will be in touch to provide more information
+0 of 50 max characters
+Country to be used in*
+Country to be used in *
+United States
+Switzerland
+France
+Germany
+Afghanistan
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Antigua and Barbuda
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Colombia
+Comoros
+Congo, Democratic Republic of the
+Congo, Republic of the
+Costa Rica
+Côte d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Faroe Islands
+Fiji
+Finland
+French Polynesia
+Gabon
+Gambia
+Georgia
+Ghana
+Greece
+Greenland
+Grenada
+Guam
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+North Korea
+South Korea
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine, State of
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Puerto Rico
+Qatar
+Romania
+Russia
+Rwanda
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+Spain
+Sri Lanka
+Sudan
+Sudan, South
+Suriname
+Swaziland
+Sweden
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Virgin Islands, British
+Virgin Islands, U.S.
+Yemen
+Zambia
+Zimbabwe
+Provide quote?
+Yes
+No
