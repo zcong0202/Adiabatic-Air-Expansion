@@ -24,6 +24,10 @@ def build():
       'listing_conflict':'Amazon bullets say 6.3 N m while title/manufacturer imply 13 N m. Use official model data; confirm exact supplied variant.',
       'procurement':{'amazon_url':'https://www.amazon.com/dp/B08L93K9NV','amazon_usd':380,'seller':'Cosmostar Tech Ltd','ships_from':'Amazon','displayed_stock':8,'displayed_destination':'Oakland 94621','regular_delivery':'2026-11-07','prime_delivery':'2026-11-04','sf_checkout_confirmed':False,'manufacturer_shop_url':'https://cosmostar.store/products/cosmostar-am0706-3-6-hp-vane-type-air-motor','manufacturer_shop_usd':339,'shop_add_to_cart_enabled':True,'shop_delivery_display':'Nov 5–9; checkout/destination not verified'},
       'decision':'Credible higher-mass-flow POC candidate if rated supply and continuous shaft load can support it. AM0701 remains simpler for first instrumented bench demonstration. No guaranteed >6 K at 20–50 cm.'}
+    inlet_check=STUDY/'results/am0706-inlet-check.json'
+    if inlet_check.exists():
+        result['connection_and_variant_audit']=json.loads(inlet_check.read_text())
+        result['decision']='Hold purchase/connection selection pending resolution of 1.7 versus 3.6 HP listing conflict and exact inlet/exhaust drawing. Earlier numerical screen remains conditional, not supplied-hardware validation.'
     (STUDY/'results/am0706-assessment.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result['conditional_results']))
 if __name__=='__main__':build()

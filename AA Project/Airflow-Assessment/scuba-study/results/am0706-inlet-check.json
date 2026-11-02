@@ -1,0 +1,46 @@
+{
+  "model": "Cosmostar AM0706",
+  "checked_on": "2026-11-02",
+  "inlet_thread": null,
+  "inlet_thread_standard": null,
+  "inlet_port_gender": null,
+  "hose_id": null,
+  "status": "No verified inlet thread or fitted hose specification obtained from reviewed public sources. Do not assume quarter-inch NPT or transfer another motor family interface.",
+  "sources": [
+    {
+      "url": "https://www.amazon.com/dp/B08L93K9NV",
+      "title_rating_hp": 3.6,
+      "bullet_torque_nm": 6.3,
+      "gallery_image_1p7hp_url": "https://m.media-amazon.com/images/I/51hVyyW3IgL._SX522_.jpg",
+      "gallery_image_label": "AM0706 1.7HP",
+      "gallery_specification_torque_nm": 6.3,
+      "gallery_specification_image_url": "https://m.media-amazon.com/images/I/41Nu5H4wxnL._SX522_.jpg"
+    },
+    {
+      "url": "https://www.cosmostar.net/product/air-motor-and-agitator/264-am0706-air-operated-agitator",
+      "published_max_hp": 3.6,
+      "published_max_torque_nm": 13,
+      "published_pressure_range_bar": [
+        1,
+        7
+      ],
+      "published_max_air_l_min": 3700
+    },
+    {
+      "url": "https://cosmostar.store/products/cosmostar-am0706-3-6-hp-vane-type-air-motor",
+      "published_max_hp": 3.6,
+      "published_max_torque_nm": 13
+    }
+  ],
+  "variant_conflict": "Amazon image says 1.7 HP and 6.3 N m; title/manufacturer page say 3.6 HP and 13 N m. The supplied variant cannot be established from this inconsistent listing. Do not infer which rating is correct.",
+  "prior_calculations": "The 74 g/s and 2.68 kW figures remain conditional on the 3.6 HP / 3700 free-air L/min version and a coincident loaded point. They are not verified for the Amazon-supplied hardware.",
+  "required_confirmation": [
+    "Exact supplied model/nameplate and matched power/airflow curve",
+    "Air inlet and exhaust thread sizes, standards and gender",
+    "Pressure rating, allowed backpressure and lubrication",
+    "Hose bore selected using actual flow, length and allowable pressure loss"
+  ],
+  "decision": "Hold fitted-connection selection and AM0706 purchase recommendation until the exact version and interfaces are confirmed.",
+  "contact_or_order_placed": false,
+  "scientific_status": "Source audit only; no new motor performance, CFD or Lean validation."
+}
