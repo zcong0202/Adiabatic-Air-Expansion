@@ -1,0 +1,19 @@
+Use case: scientific-educational.
+Asset: wide high-resolution assembled hardware concept illustration for an internal engineering presentation.
+Draw one scuba cylinder feeding TWO PARALLEL, independently controlled pneumatic branches: exactly ONE Cosmostar AM0701 vane air motor with a separate friction brake, and exactly ONE small Jeanoko-type vortex tube. This is an illustrative concept, not exact manufacturer geometry or fitted CAD.
+
+Composition: clean three-quarter isometric view on a white/light-grey studio background. Cylinder and common supply at left; two branch lanes at right, upper motor lane and lower vortex lane. Simple physically plausible hoses with clear arrows. Show the whole apparatus with no cropped components. No people. Concise readable black sans-serif callout labels.
+
+Connectivity is critical:
+1. One secured upright silver scuba cylinder labelled "SCUBA" with tank valve and diving first-stage regulator. One common intermediate-pressure hose feeds a compact distribution manifold and manual master shutoff. Label "First stage + manifold".
+2. Upper branch from manifold: secondary regulator with pressure gauge and full-flow pulse valve, labelled "Motor regulator + valve"; grey compressed-air hose goes into the AM0701 motor inlet.
+3. Exactly one compact cylindrical horizontal air motor bolted on a base, labelled "1 x AM0701". Its shaft couples to an independently supported balanced brake disc and caliper on the SAME base, behind a clear/mesh safety guard. Label "Guarded friction brake". No generator, second motor or propeller. A subtle orange heat symbol belongs at this brake only, away from the cold nozzle.
+4. The MOTOR AIR EXHAUST is a different connection from the mechanical shaft. Show a separate exhaust collector and short insulated blue hose to a wide-slot passive nozzle on a small stand. Label "Motor cold outlet". The mechanical shaft must never be drawn as an air hose. Do not connect motor exhaust to the vortex tube.
+5. Lower branch from common manifold: its OWN secondary regulator with gauge and independent pulse valve, labelled "Vortex regulator + valve". A grey compressed-air hose feeds the SIDE inlet of a small tubular vortex tube mounted on its magnetic base. Label "Vortex tube".
+6. Vortex tube has TWO distinct exhaust ends. Its cold end connects to one short blue cold-nozzle hose labelled "Vortex cold outlet"; its opposite hot end has an orange arrow venting rearward, clearly away from both cold outlets. Label "Hot exhaust away". Never plug the hot end. Do not join either exhaust into the compressed-air supply or into the other cold outlet.
+7. Put the two distinct cold nozzles near the front-right, pointing outward in parallel. Use tiny pale-blue arrows as explanatory airflow symbols, not a large fog cloud or CFD rendering. A small proximity sensor and controller, labelled "Sensor + 10 s timer", uses dotted control wires to both branch pulse valves. Mechanical load guard and master shutoff remain obvious.
+
+Title verbatim: "ONE MOTOR + VORTEX TUBE"
+Subtitle verbatim: "Parallel branches from one regulated scuba source"
+Small footer verbatim: "Concept only. Fittings, exhaust collection and combined flow require verification."
+Do not show promised temperatures, measured performance, nozzle range, pressure settings, thread sizes or dimensional fit. No brand logos, no recovered electricity, no buffer tank, no compressor, no second cylinder. Do not imply the vortex adds cooling to motor exhaust in series. Keep labels separated from hardware and all hoses visually traceable.

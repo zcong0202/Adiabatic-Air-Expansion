@@ -1,0 +1,28 @@
+{
+  "created_on": "2026-11-10",
+  "tool": "built-in image_gen.imagegen",
+  "prompt": "motor-vortex-prompt.txt",
+  "image": "motor-vortex-assembly.png",
+  "sha256": "4486d8ce0f348c7e6a4197883f0b7b6c806d27dd73c4d083c7c805cfdfc82d7f",
+  "status": "AI-generated assembled concept, not CAD, CFD, measured cooling or qualified installation. Generic geometry does not establish exact ports, shaft fit or exhaust routing.",
+  "inventory": "One AM0701 motor confirmed by user. Jeanoko vortex tube assumed from earlier setup; current physical inventory not re-inspected.",
+  "topology": "One scuba first stage and common shutoff/manifold, with separate secondary pressure-control and pulse-valve branches to motor and vortex tube. Motor shaft drives friction brake. Cold outlets remain separate. Vortex hot end vents away.",
+  "flow_equations": [
+    "tank mass flow = motor mass flow + vortex inlet mass flow",
+    "vortex inlet mass flow = vortex cold mass flow + vortex hot mass flow",
+    "delivered cold mass flow = motor exhaust mass flow + vortex cold mass flow"
+  ],
+  "limits": [
+    "Do not connect near-atmospheric motor exhaust to the compressed-air vortex inlet.",
+    "Shared first stage, regulator paths and valves must sustain combined measured demand.",
+    "Separate outlet control avoids backpressure/crossflow between the branches.",
+    "Vortex flow basis/cold fraction and exact pressure rating remain unknown; do not transfer EXAIR ratings to Jeanoko.",
+    "Keep brake heat/dust and vortex hot exhaust away from cold probes and outlets.",
+    "Confirm exhaust collection, lubrication/oil carryover and cold limits before person-facing use."
+  ],
+  "reference": {
+    "url": "https://www.exair.com/vt.html",
+    "checked_on": "2026-11-10",
+    "supports": "Generic compressed-air vortex tube principle: distinct hot and cold streams. Not Jeanoko specifications."
+  }
+}
