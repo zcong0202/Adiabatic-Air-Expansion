@@ -1,0 +1,21 @@
+Use case: scientific-educational. New assembled concept image, wide landscape, realistic isometric technical product illustration on white. This is a SERIES topology, not parallel. Exactly one scuba tank, one air motor, one separate guarded friction brake, and one vortex tube. Generic hardware shapes only; no claim of fitted CAD or hardware qualification.
+
+Title verbatim: "MOTOR → VORTEX TUBE: SERIES CONCEPT"
+Subtitle verbatim: "Both stages share the available pressure drop"
+
+Draw one unambiguous continuous pneumatic path from left to right:
+secured upright silver scuba cylinder with diving first-stage regulator → secondary pressure-control regulator with gauge and one pulse valve → exactly ONE compact cylindrical AM0701 vane air motor on a rigid mounting base → separate PRESSURIZED motor exhaust collector → short insulated pressure-rated interstage hose → SIDE compressed-air inlet of one tubular vortex tube → final cold outlet nozzle.
+There is NO distribution manifold, no split before the motor, no second supply hose to the vortex, and no bypass. Every air molecule entering the vortex must have first passed through the motor. Show clear directional arrows along this path.
+
+The motor shaft is separate from the air outlet. Couple its shaft mechanically to an independently supported disc/caliper friction brake within a mesh guard, on the same rigid base. Place this load toward the rear of the bench so the compressed-air interstage hose is visually distinct and unobstructed. Label "1 x AM0701" and "Guarded friction brake". No generator, propeller, second motor or heavy exposed flywheel.
+
+Use two clear measurement callouts: "P1: motor inlet" at the motor supply gauge, and "P2: motor exhaust / vortex inlet" at a pressure tap/gauge on the interstage hose. A small prominent boxed note must read "P1 > P2 > ambient". Another note: "P2 must satisfy vortex inlet pressure". Do not show numerical pressures or temperature claims.
+
+The vortex tube is shown with exactly three pneumatic connections: side inlet from motor exhaust; one axial cold end with the final passive nozzle labelled "Final cold outlet"; opposite axial hot end with an orange arrow pointing rearward and away from the nozzle, labelled "Hot exhaust away". Do not cap the hot end. Show subtle pale-blue arrows only at the final nozzle; no fog cloud, ice, frost or CFD-like temperature field. The motor does NOT have a second cold nozzle in this series image.
+
+Include one small sensor and controller box labelled "Sensor + 10 s timer". Its dotted wire goes only to the one pulse valve upstream of the motor. No control wire drawn as pneumatic hose. The cylinder and piping assembly also show an accessible manual master shutoff; pressure protection is represented schematically without a numerical setting.
+
+Use concise black sans-serif callouts with clear leader lines. Show the complete assembly, not cropped. Neutral grey upstream/interstage hoses; blue final cold outlet; orange hot exhaust and a small heat symbol at brake. No logos. No people. No output storage tank. Components must be visually separated so the series connections can be traced.
+
+Footer verbatim: "Pressure-budget study only. Motor backpressure and vortex performance are unverified."
+Small secondary footer: "Illustrative geometry, not a build drawing."

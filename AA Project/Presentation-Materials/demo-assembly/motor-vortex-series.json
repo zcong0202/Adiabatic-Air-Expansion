@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-10",
+  "user_correction": "Series, not parallel. Image shows motor -> vortex.",
+  "mode": "Built-in imagegen generation plus targeted edit",
+  "prompt_files": [
+    "motor-vortex-series-prompt.txt",
+    "motor-vortex-series-edit-prompt.txt"
+  ],
+  "image": "motor-vortex-series.png",
+  "sha256": "3c421f864d7edbde4cf3d5dafc2021360a335e974b227cda4dbd0ee8dee53a76",
+  "status": "Pressure-budget concept only, not fitted CAD or qualified installation.",
+  "flow_path": "Scuba -> first stage -> secondary pressure protection/regulator -> pulse valve -> AM0701 -> approved pressurized exhaust collector -> interstage line -> vortex SIDE inlet -> cold nozzle, with separate vortex hot exhaust. Shaft drives separate guarded friction brake.",
+  "governing_constraints": [
+    "P_motor_in > P_motor_out = P_vortex_in + line_loss > ambient",
+    "Motor and vortex mass flows must match at an actual coupled operating point.",
+    "Final cold mass flow = vortex cold fraction * motor flow; hot stream rejects the rest.",
+    "Previous 671 W / 15 g/s and ambient-exhaust thermal screen does not apply to pressurized motor exhaust.",
+    "Motor exhaust backpressure limit and pressurized collection are unverified.",
+    "Do not raise motor inlet beyond its actual nameplate/manual rating."
+  ],
+  "ideal_reference": {
+    "formula": "DeltaT_ideal=Tin_K*(1-(Pout_abs/Pin_abs)^((gamma-1)/gamma))",
+    "cp_j_kg_k": 1006,
+    "gamma": 1.4,
+    "samples": [
+      {
+        "assumed_motor_inlet_abs_bar": 7,
+        "assumed_motor_outlet_abs_bar": 1,
+        "assumed_motor_inlet_c": 22,
+        "ideal_motor_drop_k": 125.87757939051723,
+        "ideal_air_power_w_if_15g_s": 1899.492673002905
+      },
+      {
+        "assumed_motor_inlet_abs_bar": 7,
+        "assumed_motor_outlet_abs_bar": 5,
+        "assumed_motor_inlet_c": 22,
+        "ideal_motor_drop_k": 27.053021015317224,
+        "ideal_air_power_w_if_15g_s": 408.23008712113693
+      },
+      {
+        "assumed_motor_inlet_abs_bar": 7,
+        "assumed_motor_outlet_abs_bar": 6.5,
+        "assumed_motor_inlet_c": 22,
+        "ideal_motor_drop_k": 6.183722238692785,
+        "ideal_air_power_w_if_15g_s": 93.31236858187413
+      }
+    ],
+    "status": "Ideal-gas reversible adiabatic comparison at fixed illustrative flow; not an AM0701 prediction or a Jeanoko requirement."
+  },
+  "primary_source": {
+    "url": "https://www.exair.com/knowledgebase/faq/index/?catid=403",
+    "checked_on": "2026-11-10",
+    "exair_normal_inlet_psig": [
+      80,
+      100
+    ],
+    "exair_normal_inlet_bar_g": [
+      5.5,
+      6.9
+    ],
+    "exair_cold_backpressure_notes": "FAQ says up to 2 psig causes no change and 5 psig affects cooling; restrictions above 5 psig are discouraged.",
+    "transfer_limit": "EXAIR reference only. Jeanoko exact pressure/flow/backpressure curves are unknown."
+  },
+  "reverse_order": "Vortex -> motor requires backpressure at the vortex cold outlet to drive the motor; ordinary vortex performance is sensitive to that backpressure. No qualified reverse series point identified.",
+  "decision": "Do not treat this as a drop-in improvement. Need motor loaded flow/work/backpressure map and exact vortex inlet/cold-fraction curves before recommendation.",
+  "validation": "Arithmetic ideal benchmark only. No new CFD, Lean proof or hardware validation."
+}
