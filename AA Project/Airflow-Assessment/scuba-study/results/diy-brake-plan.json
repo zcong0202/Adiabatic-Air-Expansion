@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-10",
+  "status": "Hybrid DIY concept; no fitted CAD or qualified rotating assembly.",
+  "user_constraints": {
+    "printer": "Bambu H2S, PLA, 0.4 mm nozzle from earlier session",
+    "rotor_radius_envelope_m": 0.2,
+    "motor_shaft": "User reports approximately 4 cm; which dimension is not established. Do not use as coupling bore.",
+    "workshop": "Thin-metal drilling and a small workshop available."
+  },
+  "decision": "Metal brake/load path with printed nonstructural accessories. First measured-load target 100-200 W, then consider 400 W after limits are established.",
+  "buy_or_fabricate_metal": [
+    "Steel rotor or drum plus matched friction lining/caliper",
+    "Separate shaft supported by two bearings",
+    "Mechanically retained metal rotor hub/adapter and matched coupling",
+    "Rigid metal base, motor mount and caliper/reaction support",
+    "Metal protective enclosure; access/control outside rotation",
+    "Brake actuation cable/adjuster and accessible air shutoff"
+  ],
+  "print_only": [
+    "Motor/shaft alignment template and drilling guides removed before operation",
+    "Non-load-bearing sensor holder away from hot surfaces",
+    "Controller/load-cell electronics enclosure",
+    "Cable routing clips outside the hot/rotating zone"
+  ],
+  "do_not_print_in_pla": [
+    "Brake rotor/drum/flywheel or friction pad",
+    "Torque-transmitting hub or coupling",
+    "Caliper bracket/reaction arm or bearing load support",
+    "Sole fragment-containment guard",
+    "Compressed-air pressure fittings"
+  ],
+  "measurement": [
+    "Optical RPM tachometer",
+    "Calibrated force/load cell on a properly constrained torque-reaction arm; not brake-cable force",
+    "Continuous readout/controller for HX711 candidate",
+    "Temperature monitoring of brake/supports",
+    "Actual air mass flow and motor inlet/exhaust temperatures from main POC plan"
+  ],
+  "equation": "Pshaft = F_perpendicular * L_arm * 2*pi*rpm/60",
+  "target_sensitivities": [
+    {
+      "target_shaft_w": 100,
+      "illustrative_rpm": 1500,
+      "torque_nm": 0.6366197723675814,
+      "reaction_arm_m": 0.1,
+      "perpendicular_reaction_force_n": 6.366197723675813,
+      "scale_equivalent_kgf": 0.6491715033855407,
+      "pulse_10s_energy_j": 1000,
+      "conditional_motor_drop_k_if_15g_s_and_beta025": 4.970178926441352
+    },
+    {
+      "target_shaft_w": 200,
+      "illustrative_rpm": 1500,
+      "torque_nm": 1.2732395447351628,
+      "reaction_arm_m": 0.1,
+      "perpendicular_reaction_force_n": 12.732395447351626,
+      "scale_equivalent_kgf": 1.2983430067710815,
+      "pulse_10s_energy_j": 2000,
+      "conditional_motor_drop_k_if_15g_s_and_beta025": 9.940357852882704
+    },
+    {
+      "target_shaft_w": 400,
+      "illustrative_rpm": 1500,
+      "torque_nm": 2.5464790894703255,
+      "reaction_arm_m": 0.1,
+      "perpendicular_reaction_force_n": 25.464790894703253,
+      "scale_equivalent_kgf": 2.596686013542163,
+      "pulse_10s_energy_j": 4000,
+      "conditional_motor_drop_k_if_15g_s_and_beta025": 19.880715705765407
+    }
+  ],
+  "thermal_example": {
+    "assumed_rotor_mass_kg": 0.15,
+    "assumed_steel_cp_j_kg_k": 500,
+    "shaft_w": 400,
+    "pulse_s": 10,
+    "ideal_uniform_rise_k": 53.333333333333336,
+    "status": "Heat-capacity illustration only, not an actual Clarks rotor mass or brake rating. Local contact may be hotter."
+  },
+  "shopping_candidates": [
+    {
+      "item": "Clarks CMD-23 160/160 mm calipers/rotors set",
+      "url": "https://www.amazon.ae/dp/B08RPBLC55",
+      "price_aed": 136.22,
+      "delivery_display": "11 Nov; fastest 10 Nov late evening",
+      "destination": "Amazon header Dubai Al Barsha, not exact address checkout",
+      "scope": "Rotor/caliper/pads/bolts per listing, not shaft/hub/coupling/base/complete dynamometer",
+      "qualification_gap": "No maximum shaft RPM or continuous/pulse power absorption rating found; bicycle ISO claim is not dynamometer qualification."
+    },
+    {
+      "item": "UNI-T UT373 optical tachometer",
+      "url": "https://www.amazon.ae/dp/B07BKQVRPB",
+      "price_aed": 80,
+      "delivery_aed": 10,
+      "delivery_display": "12 Nov",
+      "scope": "Retailer observation; accuracy/calibration not independently verified"
+    },
+    {
+      "item": "NOYITO 10 kg load cell + HX711 selected listing",
+      "url": "https://www.amazon.ae/dp/B07CN1VDC4",
+      "price_aed": 32.12,
+      "delivery_aed": 26.42,
+      "delivery_display": "18 Nov",
+      "scope": "Component kit, not standalone force readout; MCU/power/code/calibration/mounting needed. 1/5/10/20kg variants must be checked."
+    }
+  ],
+  "priced_component_subtotal_aed": 248.34,
+  "subtotal_excludes": "Shipping, controller, temperature sensor, shaft, bearings, hub, coupling, mounts, guard and workshop work; not an installed budget.",
+  "primary_material_source": {
+    "url": "https://help.prusa3d.com/article/pla_2062",
+    "supports": "PLA softens/deforms above about 60 C and has weak layer/impact properties; not suitable as hot friction or rotor material."
+  },
+  "next_steps": [
+    "Workshop measures shaft diameter, exposed usable length, key/flat/thread, retention and motor mounting holes.",
+    "Choose exact brake/hub and establish safe speed, balance, thermal/duty limits. Include any necessary speed reduction; all transmission parts must be rated.",
+    "Design metal load path and reaction-force fixture. Then design printed jigs/accessories around measured geometry.",
+    "Calibrate force and RPM, then instrumented initial pulses within established component limits."
+  ],
+  "limits": "1500 rpm in the table is an arithmetic example, not an approved rotor speed or proven motor point. Full-load 15 g/s and 25% heat return remain assumptions. No new CFD/Lean/hardware result."
+}
