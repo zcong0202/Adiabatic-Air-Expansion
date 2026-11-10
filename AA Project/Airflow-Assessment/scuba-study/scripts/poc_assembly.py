@@ -166,6 +166,8 @@ def write_html(result):
     load_section=OUT/'load-options-section.html'
     if load_section.exists():
         html=html.replace('<h2>First experiment</h2>', load_section.read_text()+'<h2>First experiment</h2>')
+    if (OUT/'friction-fan-load.html').exists():
+        html=html.replace('<h1>Scuba motor POC assembly</h1>', '<h1>Scuba motor POC assembly</h1><p><strong>10 Nov: AM0701 received. User selected friction or fan loading instead of a generator.</strong> First candidate: adjustable guarded friction brake, measured 200 W then 400 W. Maximum available radius 20 cm. Motor shaft drawing and loaded operating point remain unverified. <a href="friction-fan-load.html">Brake forces, fan comparison and cooling calculator →</a></p>')
     (OUT/'poc-assembly.html').write_text(html)
 
 

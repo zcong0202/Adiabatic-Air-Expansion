@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "numeric_checks": {
+    "brake_balance_rows": 60,
+    "target_inverse_checks": 12,
+    "status": "pass"
+  },
+  "browser": {
+    "calculator_default": "1.91 Nm / 19.1 N tangential / 63.7 N total normal / 4 kJ / 19.9 K",
+    "changed_radius_20cm": "1.91 Nm / 9.5 N tangential / 31.8 N total normal",
+    "desktop_page_overflow": false,
+    "mobile_390_page_overflow": false,
+    "source_links": "Manufacturer and UIUC links resolve to intended sources"
+  },
+  "scope": "Numerical/DOM checks only; no physical measurement, fitted CAD, new CFD or Lean proof."
+}
