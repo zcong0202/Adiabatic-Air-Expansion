@@ -1,0 +1,32 @@
+{
+  "reviewed_on": "2026-11-10",
+  "sources": [
+    {
+      "path": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/AA Storyboard - SCL Open 26.docx",
+      "bytes": 13115808,
+      "sha256": "328ac94d1bc308f94c6b0b51373bf87b41046327308a5ca7e3eeee248f4cf9c4"
+    },
+    {
+      "path": "/Users/egedoganay/Desktop/Ege Doganay SCL/AA Project/aa-preview.mp4",
+      "bytes": 6250855,
+      "sha256": "7dbeb23ad03059bb6644b2e92cd2ff26aa16b35f9c6e77b0cdd54221b69648e5"
+    }
+  ],
+  "review_method": {
+    "storyboard": "All text and 17 embedded reference panels inspected; original unchanged. No document layout audit.",
+    "video": "32-second preview sampled visually at 2-second intervals, with individual 18 s / 26 s frames inspected. Audio not transcribed."
+  },
+  "intent": "Central compressed-air storage/distribution, local expansion and proximity-triggered pedestrian cooling; modeled work/heat recovery at system scale.",
+  "demo_alignment": {
+    "shots_8_10": "One scuba source, regulated AM0701, external measured friction brake, proximity/pulse control, one cold exhaust/nozzle, actual temperature/flow measurements.",
+    "shots_11_13": "Nozzle and jet visualization. Label CFD source conditions and hardware. Do not treat unmatched vortex probes as motor validation.",
+    "shots_14_16": "Future system and modeled recovery; friction brake dumps shaft work and provides no recovered electricity."
+  },
+  "open_items": [
+    "Show shaft brake explicitly in demo setup shot",
+    "Motor thermal data not yet measured; vortex trial is a separately labelled stand-in",
+    "Distinguish ideal turbine model, real vane motor, CFD source and measurements",
+    "Urban network, cooling COP and heat recovery remain modeled concepts"
+  ],
+  "source_storage": "New files reside in the sibling AA Project workspace folder. Linked in overview; not copied into the Git repository."
+}
