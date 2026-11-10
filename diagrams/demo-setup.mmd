@@ -1,0 +1,28 @@
+%% Demo architecture. Not a qualified pressure-system or fabrication drawing.
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Arial','fontSize':'18px','primaryColor':'#ffffff','primaryTextColor':'#17212b','primaryBorderColor':'#667580','lineColor':'#667580','clusterBkg':'#f7f9fa','clusterBorder':'#b8c2c9'},'flowchart':{'htmlLabels':false,'curve':'linear','nodeSpacing':32,'rankSpacing':45}}}%%
+graph TD
+  subgraph SUPPLY["1  SCUBA SUPPLY / PRESSURE CONTROL"]
+    direction LR
+    TANK["Secured scuba cylinder\n200 bar reference\n12 L volume assumed"] --> FIRST["Diving first stage\nApprox. 9-10 bar in documents\nExact model / flow: verify"]
+    FIRST --> REG["Secondary pressure control\nAbout 6 bar at motor while flowing\nGauge + rated pressure relief"]
+    REG --> VALVE["Full-flow shutoff / pulse valve\nManual emergency shutoff\nPulse at most 10 seconds"]
+  end
+  subgraph BENCH["2  MOTOR + MEASURED SHAFT LOAD / COMMON RIGID BASE"]
+    direction LR
+    M["Cosmostar AM0701\nMeasure inlet pressure / temperature\nMeasure actual mass flow"] ==>|"Supported, aligned coupling\nGuard all rotation"| BRAKE["Adjustable friction brake\nStart light; seek 200 then 400 W\nMeasure torque and RPM"]
+    BRAKE --> HEAT["Reject brake heat away from jet\n400 W for 10 s = 4 kJ\n20 cm maximum contact radius"]
+  end
+  subgraph OUTLET["3  COLD EXHAUST / ONE OUTLET AT A TIME"]
+    direction LR
+    COL["Collect motor exhaust\nVerify port / lubrication / oil carryover\nMeasure exhaust temperature + pressure"] --> HOSE["Short insulated, large-bore hose\nMeasure nozzle temperature\nCheck motor exhaust backpressure"]
+    HOSE --> NZ["Interchangeable passive nozzle\nExisting wide slot or round control\nMount on a separate stand"]
+    NZ --> TARGET["5 x 5 cm temperature grid\n20 cm and 50 cm from outlet\nStill air first; no enclosure"]
+  end
+  SUPPLY -->|"Regulated air to motor inlet"| BENCH
+  BENCH -->|"Motor exhaust to collector; separate from shaft load"| OUTLET
+  classDef blue fill:#eef7fb,stroke:#21759b,color:#123548;
+  classDef orange fill:#fff4e6,stroke:#bd7417,color:#643a06;
+  classDef grey fill:#f4f5f6,stroke:#73818b,color:#17212b;
+  class COL,HOSE,NZ,TARGET blue;
+  class BRAKE,HEAT orange;
+  class TANK,FIRST,REG,VALVE,M grey;
