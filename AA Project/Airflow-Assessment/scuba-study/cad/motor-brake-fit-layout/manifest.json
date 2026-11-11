@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-11",
+  "status": "Static fit-check concept only; not fitted or powered-use CAD.",
+  "actual_measurements": {
+    "motor_body_diameter_mm": null,
+    "motor_mount_pattern_mm": null,
+    "motor_shaft_diameter_mm": null,
+    "motor_shaft_usable_length_mm": null,
+    "shaft_key_flat_thread": null,
+    "brake_model": null,
+    "bearing_dimensions": null
+  },
+  "example_geometry_only": {
+    "base_mm": [
+      300,
+      180,
+      8
+    ],
+    "motor_body_diameter_mm": 80,
+    "shaft_axis_height_mm": 100,
+    "disc_diameter_mm": 160,
+    "coupler_envelope_diameter_mm": 36,
+    "coupler_envelope_length_mm": 34
+  },
+  "files": [
+    {
+      "name": "01-base-FIT-ONLY",
+      "watertight": true,
+      "volume_mm3": 426692.9520443566,
+      "bounds_mm": [
+        300.0,
+        180.0,
+        8.0
+      ]
+    },
+    {
+      "name": "02-cradle-EXAMPLE-80mm-body",
+      "watertight": true,
+      "volume_mm3": 145013.36138018087,
+      "bounds_mm": [
+        36.0,
+        140.0,
+        100.0
+      ]
+    },
+    {
+      "name": "03-bearing-support-BLANK",
+      "watertight": true,
+      "volume_mm3": 117220.95195167128,
+      "bounds_mm": [
+        36.0,
+        140.0,
+        100.0
+      ]
+    },
+    {
+      "name": "04-brake-adapter-BLANK",
+      "watertight": true,
+      "volume_mm3": 58516.95193373177,
+      "bounds_mm": [
+        36.0,
+        60.0,
+        110.0
+      ]
+    }
+  ],
+  "coupler_stl_exported": false,
+  "coupler_status": "Envelope shown for layout; no torque-transmitting coupler released without measured interfaces and mechanical/thermal validation.",
+  "mesh_validation": "Closed positive-volume meshes only. Does not establish fit, strength, heat resistance, balance, speed rating or containment.",
+  "pressure_source": "https://www.cosmostar.net/product/air-motor-and-agitator/255-am0701-0-9-hp-air-operated-vane-type-air-motor",
+  "published_motor_pressure_bar": [
+    1,
+    7
+  ],
+  "reference_tank_bar": 200,
+  "pressure_decision": "No regulator bypass. Use pressure control/protection and qualified full-flow supply within actual nameplate limits.",
+  "open_items": [
+    "Exact measured hardware interfaces",
+    "Brake type and bearing geometry",
+    "Regulated inlet pressure/flow point",
+    "Printed load-path and coupler validation; hot brake isolation; guarding"
+  ]
+}
