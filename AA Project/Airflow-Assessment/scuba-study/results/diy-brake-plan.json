@@ -85,7 +85,8 @@
       "delivery_display": "11 Nov; fastest 10 Nov late evening",
       "destination": "Amazon header Dubai Al Barsha, not exact address checkout",
       "scope": "Rotor/caliper/pads/bolts per listing, not shaft/hub/coupling/base/complete dynamometer",
-      "qualification_gap": "No maximum shaft RPM or continuous/pulse power absorption rating found; bicycle ISO claim is not dynamometer qualification."
+      "qualification_gap": "No maximum shaft RPM or continuous/pulse power absorption rating found; bicycle ISO claim is not dynamometer qualification.",
+      "delivery_display_rechecked_2026_11_11": "Regular 13 Nov; fastest Today 9 PM - 12 AM, 20-minute cutoff displayed. Dubai Al Barsha header; exact-address checkout unverified."
     },
     {
       "item": "UNI-T UT373 optical tachometer",
@@ -116,5 +117,11 @@
     "Design metal load path and reaction-force fixture. Then design printed jigs/accessories around measured geometry.",
     "Calibrate force and RPM, then instrumented initial pulses within established component limits."
   ],
-  "limits": "1500 rpm in the table is an arithmetic example, not an approved rotor speed or proven motor point. Full-load 15 g/s and 25% heat return remain assumptions. No new CFD/Lean/hardware result."
+  "limits": "1500 rpm in the table is an arithmetic example, not an approved rotor speed or proven motor point. Full-load 15 g/s and 25% heat return remain assumptions. No new CFD/Lean/hardware result.",
+  "selected_brake": {
+    "model": "Clarks CMD-23 160/160 mm kit",
+    "asin": "B08RPBLC55",
+    "user_selected_on": "2026-11-11",
+    "status": "User selection, not purchase or receipt confirmation."
+  }
 }

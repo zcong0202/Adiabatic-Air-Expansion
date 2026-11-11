@@ -16,7 +16,7 @@ Cradle quantity: 2. Bearing-blank quantity: 2. No bearing seats or brake mountin
 
 ## Why powered use is not established
 
-Actual shaft diameter, protrusion, retention and key/flat/thread are unknown. The previous “4 cm” estimate does not identify these dimensions. Motor body/mount geometry and brake selection are also unknown.
+Actual shaft diameter, protrusion, retention and key/flat/thread are unknown. The previous “4 cm” estimate does not identify these dimensions. Motor body/mount geometry and brake interfaces are also unknown. User selected the Clarks CMD-23 160/160 mm kit (Amazon UAE B08RPBLC55); no receipt or physical measurements are confirmed.
 
 PLA brake supports/couplers need strength, temperature, creep, fatigue, retention, alignment and speed evaluation. Mesh closure is not this evaluation. The earlier 400 W cooling budget is not an operating rating for these parts. No rotating containment is supplied.
 
@@ -25,7 +25,7 @@ The exported 80 mm-body cradle is a labelled example, not an AM0701 fitting. Do 
 ## Next inputs
 
 1. Workshop measurements: body, shaft and mount interfaces.
-2. Selected brake and separate shaft/bearing geometry.
+2. Clarks caliper/rotor interfaces and separate shaft/bearing geometry.
 3. Confirmed regulated pressure/flow point within nameplate limits.
 4. Material, print process and mechanical/thermal qualification for any proposed printed torque or brake support part.
 

@@ -66,7 +66,7 @@ def build():
     ax.set_xlabel('Layout x (mm)');ax.set_ylabel('Layout y (mm)');ax.set_zlabel('Height (mm)')
     ax.text(64,0,151,'Motor envelope\nNOT MEASURED',ha='center',fontsize=9)
     fig.text(.5,.845,'Blue sleeve = spacing envelope only; no powered coupler supplied.',ha='center',fontsize=11,color='#12647d')
-    ax.text(262,65,165,'160 mm disc envelope\nBrake not selected',ha='center',fontsize=9,color='#895b24')
+    ax.text(262,65,165,'Clarks 160 mm disc envelope\nMount interfaces unmeasured',ha='center',fontsize=9,color='#895b24')
     fig.suptitle('Motor + brake: static fit-check layout',fontsize=20,y=.96)
     fig.text(.5,.895,'Example dimensions. No pressure fittings. No powered-use rating.',ha='center',fontsize=12)
     fig.text(.5,.025,'Regulated supply required. Do not connect the AM0701 directly to a scuba cylinder.',ha='center',fontsize=12,color='#963c31')
@@ -74,7 +74,8 @@ def build():
     status={'date':'2026-11-11','status':'Static fit-check concept only; not fitted or powered-use CAD.',
             'actual_measurements':{'motor_body_diameter_mm':None,'motor_mount_pattern_mm':None,
                                    'motor_shaft_diameter_mm':None,'motor_shaft_usable_length_mm':None,
-                                   'shaft_key_flat_thread':None,'brake_model':None,'bearing_dimensions':None},
+                                   'shaft_key_flat_thread':None,'brake_caliper_mount_pattern_mm':None,'bearing_dimensions':None},
+            'selected_brake':{'model':'Clarks CMD-23 160/160 mm kit','asin':'B08RPBLC55','url':'https://www.amazon.ae/dp/B08RPBLC55','user_selected_on':'2026-11-11','status':'Selected reference; receipt, measurements, speed and thermal rating unverified'},
             'example_geometry_only':{'base_mm':[300,180,8],'motor_body_diameter_mm':80,'shaft_axis_height_mm':100,
                                      'disc_diameter_mm':160,'coupler_envelope_diameter_mm':36,'coupler_envelope_length_mm':34},
             'files':checks,'coupler_stl_exported':False,
@@ -83,7 +84,7 @@ def build():
             'pressure_source':'https://www.cosmostar.net/product/air-motor-and-agitator/255-am0701-0-9-hp-air-operated-vane-type-air-motor',
             'published_motor_pressure_bar':[1,7],'reference_tank_bar':200,
             'pressure_decision':'No regulator bypass. Use pressure control/protection and qualified full-flow supply within actual nameplate limits.',
-            'open_items':['Exact measured hardware interfaces','Brake type and bearing geometry','Regulated inlet pressure/flow point','Printed load-path and coupler validation; hot brake isolation; guarding']}
+            'open_items':['Exact measured hardware interfaces','Clarks caliper/rotor interfaces and bearing geometry','Regulated inlet pressure/flow point','Printed load-path and coupler validation; hot brake isolation; guarding']}
     (OUT/'manifest.json').write_text(json.dumps(status,indent=2)+'\n')
     with zipfile.ZipFile(OUT/'static-fit-layout.zip','w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted(OUT.iterdir()):

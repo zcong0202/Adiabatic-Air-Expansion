@@ -7,8 +7,15 @@
     "motor_shaft_diameter_mm": null,
     "motor_shaft_usable_length_mm": null,
     "shaft_key_flat_thread": null,
-    "brake_model": null,
+    "brake_caliper_mount_pattern_mm": null,
     "bearing_dimensions": null
+  },
+  "selected_brake": {
+    "model": "Clarks CMD-23 160/160 mm kit",
+    "asin": "B08RPBLC55",
+    "url": "https://www.amazon.ae/dp/B08RPBLC55",
+    "user_selected_on": "2026-11-11",
+    "status": "Selected reference; receipt, measurements, speed and thermal rating unverified"
   },
   "example_geometry_only": {
     "base_mm": [
@@ -76,7 +83,7 @@
   "pressure_decision": "No regulator bypass. Use pressure control/protection and qualified full-flow supply within actual nameplate limits.",
   "open_items": [
     "Exact measured hardware interfaces",
-    "Brake type and bearing geometry",
+    "Clarks caliper/rotor interfaces and bearing geometry",
     "Regulated inlet pressure/flow point",
     "Printed load-path and coupler validation; hot brake isolation; guarding"
   ]
