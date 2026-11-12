@@ -1,4 +1,4 @@
-# Motor-mounted brake · R02
+# Motor-mounted brake · R03
 
 12 Nov 2026. **Static fit prototype only. Not fitted to the user's hardware.**
 
@@ -12,7 +12,7 @@ The rotor sits on a hub directly on the motor shaft. There is no second shaft, c
 
 ## Files
 
-- `rear-FIT-ONLY.stl`: motor adapter, example mounting pattern.
+- `rear-FIT-ONLY.stl`: motor adapter, two-hole pattern derived from user estimates.
 - `carrier-FIT-ONLY.stl`: caliper carrier, example mounting pattern.
 - `shell-FIT-ONLY.stl`: brake chamber with cable access.
 - `lid-FIT-ONLY.stl`: vented cover.
@@ -29,8 +29,9 @@ Disc, hub, motor, caliper, pads and metal screws are reference geometry in the v
 
 Case Ø248 × 51 mm. Rear 6 mm; chamber 40 mm; lid 5 mm.
 Selected Clarks disc diameter 160 mm. Disc thickness 1.8 mm and six-hole 44 mm pitch circle are assumptions, not checked Clarks dimensions.
-Motor envelope now uses Cosmostar’s published 108 mm width and 122 mm overall length, including shaft. The cylinder shape is schematic. Body extent is derived from the assumed shaft protrusion, not a verified body drawing. Shaft Ø12 × 32 mm remains an example, not a measurement. The user's earlier “4 cm” does not establish a shaft diameter.
-Example motor holes: (±24, ±24), Ø6.5 mm clearance. No motor thread is specified.
+User estimates: shaft Ø12 × 25 mm exposed; raised boss Ø35 × 15 mm. The shaft starts at z=15 and ends at z=40, measured from the mounting face. The hub envelope starts at z=16, leaving 1 mm axial clearance from the boss.
+Two motor holes, vertically aligned: x=0, y=+44 and −39 mm. Derivation: outer span 90 minus hole diameter 7 gives 83 mm centre spacing. Upper-hole top tangent to boss bottom tangent is 65 mm, so upper centre is 65−17.5−3.5=44 mm. Lower centre is 44−83=−39 mm. Do not force symmetry. The Ø7 motor opening is an estimate; plate holes use provisional Ø7.5 clearance. Neither dimension establishes a thread size.
+User confirmed main motor body Ø108 × 48 mm, excluding boss and shaft. The modeled main-body + boss + shaft stack is 48 + 15 + 25 = 88 mm. The manufacturer’s 122 mm whole-unit reference is retained as evidence only; rear accessories/caps are not modeled or inferred from the difference.
 Example caliper holes: (94, ±28), Ø6.5 mm. The actual Clarks tabs may require a different carrier and orientation.
 
 `parameters.json` controls case, motor-hole and shaft/rotor dimensions. The caliper envelope and carrier base are illustrative fixed geometry in `build.py`; a real caliper drawing requires revising those solids. Parameter edits require rebuilding; the viewer does not silently alter the download meshes.
@@ -49,7 +50,7 @@ This casing contains no pneumatic path. Keep motor inlet and exhaust accessible;
 
 ## Validation and rebuild
 
-Generated meshes have closed positive volume. Ten selected pairs have no positive-volume interference in the example assembly. This is geometry screening only, not a complete interference, tolerance, strength, heat, speed or hardware qualification.
+Generated meshes have closed positive volume. Fourteen selected pairs have no positive-volume interference in the example assembly. This is geometry screening only, not a complete interference, tolerance, strength, heat, speed or hardware qualification.
 
 Run `build.py` with Python containing numpy, trimesh and manifold3d. Viewer bundle uses Three.js 0.170.0 and esbuild 0.24.0. Bundle with `esbuild viewer.js --bundle --format=iife --minify --outfile=viewer.bundle.js` using those dependencies. Re-run `build.py` after bundling to refresh the ZIP. Three.js license included.
 
@@ -62,3 +63,7 @@ See `dimension-audit.json`. The selected [Clarks kit](https://www.amazon.ae/dp/B
 Motor dimension source: https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946
 
 Before fitted CAD, the workshop must provide: mounting face and hole coordinates/threads/depths; shaft diameter/protrusion/key or pin and retention; rotor and caliper/bracket interfaces. Photos alone must not be scaled into precision manufacturing dimensions.
+
+## R03 estimate update
+
+See `user-estimates.json` and `mount-pattern.svg`. CAD uses estimated dimensions, not fit-verified hardware measurements. Motor diameter108 and main-body thickness48 were confirmed by the user. Actual fit tolerances, threads, retention and brake interfaces remain unresolved.

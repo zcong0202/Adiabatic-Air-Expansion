@@ -1,5 +1,5 @@
 {
-  "status": "UNFITTED CONCEPT. Only overall motor envelope and rotor diameter sourced. Shaft, mounting and brake interface dimensions remain placeholders.",
+  "status": "User-estimate fit prototype. Tangent references clarified; thread, retention, brake interfaces and powered use remain unverified.",
   "units": "mm",
   "case_outer_radius": 124,
   "case_inner_radius": 110,
@@ -10,34 +10,26 @@
   "closure_clearance_diameter": 5.6,
   "motor_mount_xy": [
     [
-      -24,
-      -24
+      0,
+      44
     ],
     [
-      -24,
-      24
-    ],
-    [
-      24,
-      -24
-    ],
-    [
-      24,
-      24
+      0,
+      -39
     ]
   ],
-  "motor_mount_clearance_diameter": 6.5,
+  "motor_mount_clearance_diameter": 7.5,
   "motor_nose_clearance_diameter": 40,
   "motor_body_diameter": 108,
-  "motor_body_length": 88,
+  "motor_body_length": 48,
   "shaft_diameter": 12,
-  "shaft_exposed_length": 32,
+  "shaft_exposed_length": 25,
   "rotor_diameter": 160,
   "rotor_thickness": 1.8,
   "rotor_plane": 22,
   "hub_outer_diameter": 36,
   "hub_length": 20,
-  "hub_back_z": 9,
+  "hub_back_z": 16,
   "rotor_bolt_pitch_diameter": 44,
   "rotor_bolt_clearance_diameter": 5.3,
   "caliper_mount_xy": [
@@ -52,10 +44,36 @@
   ],
   "caliper_mount_clearance_diameter": 6.5,
   "measured_parameters": [],
-  "motor_overall_length": 122,
+  "motor_overall_length": 88,
   "dimension_sources": {
     "motor_overall_width_mm": 108,
     "motor_overall_length_mm": 122,
-    "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946"
-  }
+    "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
+    "manufacturer_overall_length_note": "Published nominal whole-unit length122 retained as reference only; user front body/boss/shaft stack totals88, rear appendages unmodeled."
+  },
+  "revision": "R03",
+  "motor_boss_diameter": 35,
+  "motor_boss_projection": 15,
+  "motor_hole_opening_diameter": 7,
+  "motor_holes_outer_span": 90,
+  "upper_hole_top_to_boss_bottom": 65,
+  "estimated_parameters": [
+    "shaft_diameter",
+    "shaft_exposed_length",
+    "motor_boss_diameter",
+    "motor_boss_projection",
+    "motor_hole_opening_diameter",
+    "motor_holes_outer_span",
+    "upper_hole_top_to_boss_bottom",
+    "motor_body_diameter",
+    "motor_body_length"
+  ],
+  "mount_derivation": {
+    "centre_spacing": "90 - 7 = 83 mm",
+    "upper_y": "65 - 35/2 - 7/2 = +44 mm",
+    "lower_y": "44 - 83 = -39 mm",
+    "datum": "Boss/shaft centre at (0,0), +y toward upper hole; both holes x=0",
+    "plate_clearance": "7.5 mm is a provisional printed clearance, not a measured motor hole or thread."
+  },
+  "motor_body_thickness_datum": "Main round body only; excludes forward boss and shaft. Rear accessories not modeled."
 }

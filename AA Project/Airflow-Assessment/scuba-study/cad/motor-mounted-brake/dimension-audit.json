@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "fit_release": false,
-  "verdict": "Not dimensionally fitted to AM0701 or CMD-23. Do not manufacture as a fitted assembly.",
+  "verdict": "Motor interfaces updated from user estimates and clarified tangent datums. Physical fit and powered-use qualification remain incomplete.",
   "verified": {
     "motor_overall_width_mm": 108,
     "motor_overall_length_including_shaft_mm": 122,
@@ -23,36 +23,14 @@
     "delivery": "Page showed regular 13 Nov and faster same-day option. Exact address/checkout not verified."
   },
   "unknown_critical_dimensions": [
-    "Motor mounting face and number/location of holes",
+    "Precision/tolerance check of user-estimated motor interfaces",
     "Motor thread diameter/pitch and available engagement depth",
-    "Motor shaft diameter, protrusion, key/flat/pin and axial retention",
+    "Shaft key/flat/pin and axial retention; actual shaft fit tolerance",
     "Motor bearing/shaft overhung-load limits",
     "Caliper and supplied bracket geometry/offset/hole orientation",
     "Rotor thickness, center bore, bolt circle and bolt sizes"
   ],
   "current_placeholders": {
-    "shaft_mm": [
-      12,
-      32
-    ],
-    "motor_mount_xy_mm": [
-      [
-        -24,
-        -24
-      ],
-      [
-        -24,
-        24
-      ],
-      [
-        24,
-        -24
-      ],
-      [
-        24,
-        24
-      ]
-    ],
     "caliper_mount_xy_mm": [
       [
         94,
@@ -66,11 +44,36 @@
     "rotor_thickness_mm": 1.8,
     "rotor_bolt_pitch_mm": 44
   },
-  "correction": "Replace 80 mm motor envelope width with published 108 mm. Overall model length now 122 mm. Cylindrical silhouette is approximate. Axial body extent derives from still-assumed 32 mm shaft; not a published shaft length.",
+  "correction": "R03 uses user-confirmed diameter108/body48; boss35x15; shaft12x25; two aligned openings estimated7, y+44/-39 from outer tangents. Model stack88 excludes rear accessories, rather than forcing whole-unit manufacturer nominal122 onto the front interface.",
   "manual_review": "CMD-23 fitting sheet and bracket specification reviewed. They show the actual bracket/washer arrangement but do not supply a complete dimensioned motor-adapter or caliper CAD interface. Current carrier is a schematic block, not the supplied bracket.",
   "resources": [
     "evidence/CMD23-fitting.pdf",
     "evidence/Clarks-brackets.pdf"
   ],
-  "next": "Obtain workshop measurements or manufacturer dimensioned drawing before final fitted CAD. No supplier contact sent."
+  "next": "Check estimated dimensions with calipers, identify thread and retention, and measure actual Clarks mounting interfaces before fitted assembly.",
+  "revision": "R03",
+  "user_estimates": "user-estimates.json",
+  "estimate_based_dimensions": {
+    "shaft_mm": [
+      12,
+      25
+    ],
+    "boss_mm": [
+      35,
+      15
+    ],
+    "mount_openings_mm": 7,
+    "motor_mount_xy_mm": [
+      [
+        0,
+        44
+      ],
+      [
+        0,
+        -39
+      ]
+    ],
+    "motor_body_diameter_mm": 108,
+    "motor_body_thickness_mm": 48
+  }
 }

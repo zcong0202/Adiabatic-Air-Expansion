@@ -15,12 +15,17 @@
     "No horizontal overflow at 1440px and 390px",
     "R02 corrected envelope and source metadata present",
     "Clarks purchase link present",
-    "R02 assembly and explode render"
+    "R02 assembly and explode render",
+    "R03 two-hole geometry and part label present",
+    "R03 exploded view rendered",
+    "R03 outer tangent and shaft/hub bounds assertions passed",
+    "R03 final body108x48 and shaft/boss dimensions read from rendered page",
+    "R03 final assembled and exploded previews visually checked"
   ],
   "limits": [
     "WebGL path not visually verified in headless browser",
     "Software painter can show depth-order artifacts on thin faces; WebGL uses depth buffer",
     "No real hardware fit, loading or printing tested"
   ],
-  "revision": "R02"
+  "revision": "R03"
 }
