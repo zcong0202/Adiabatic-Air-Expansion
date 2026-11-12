@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-12",
+  "renderer": "SVG fallback in gstack Chromium",
+  "default_visible": [
+    "single-piece-mount",
+    "hub"
+  ],
+  "full_assembly_visible_groups": 19,
+  "exploded_button_value": 1,
+  "reset_restores_mount_only": true,
+  "console_messages": 0,
+  "no_plate_joint_hardware_in_assembly": true,
+  "note": "UI checks do not validate mechanical performance."
+}

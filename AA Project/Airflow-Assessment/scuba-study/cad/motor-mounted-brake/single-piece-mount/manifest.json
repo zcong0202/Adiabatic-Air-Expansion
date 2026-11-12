@@ -1,0 +1,204 @@
+{
+  "variant": "OPEN-02-SINGLE",
+  "basis": "R07 motor datums and R06 image-estimated CMD23. Two-piece OPEN-01 and enclosed R07 retained separately.",
+  "status": "Static fit prototype; no powered-use or containment rating.",
+  "prints": [
+    {
+      "part": "single-piece-mount",
+      "extents_mm": [
+        189.0,
+        152.0,
+        28.0
+      ],
+      "single_closed_solid": true,
+      "H2S_bed_fit": true
+    }
+  ],
+  "collar": "Reference only; not a functioning torque/retention design.",
+  "selected_interference_checks": [
+    {
+      "parts": [
+        "hub",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "shaft",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor-bolts",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "is-bolts",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "adapter",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "rotor",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor-bolts",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "caliper",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pads",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-pivot",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pm-bolts",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-wire",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "washers",
+        "single-piece-mount"
+      ],
+      "overlap_mm3": 0.0
+    }
+  ],
+  "allowance_checks": [
+    {
+      "envelope": "caliper",
+      "target": "single-piece-mount",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "barrel-adjuster",
+      "target": "single-piece-mount",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-adjuster",
+      "target": "single-piece-mount",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "brake-pivot",
+      "target": "single-piece-mount",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "arm-envelope",
+      "target": "single-piece-mount",
+      "overlap_mm3": 0
+    }
+  ],
+  "nominal_geometry_pass": true,
+  "real_fit_verified": false,
+  "shaft_z_mm": [
+    15,
+    40
+  ],
+  "hub_z_mm": [
+    18,
+    38
+  ],
+  "rotor_z_mm": 28,
+  "motor_mount_xy_mm": [
+    [
+      0,
+      44
+    ],
+    [
+      0,
+      -39
+    ]
+  ],
+  "IS_pitch_mm": 51,
+  "print_orientation": "Motor plate front face on bed. Local supports required below offset brake arms/ring. No support-free claim.",
+  "integral_connections": 5,
+  "plate_joint_hardware_removed": true,
+  "open_items": [
+    "Actual motor threads and ports",
+    "Actual brake/adapter dimensions and cable motion",
+    "Functional metal shaft hub and disc bolt retention",
+    "Hot strength, bearings, speed, brake duty and guard for powered tests"
+  ]
+}
