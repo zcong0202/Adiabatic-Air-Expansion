@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-12",
+  "browser": "gstack Chromium",
+  "renderer": "SVG fallback; WebGL unavailable in headless check",
+  "default_visible": [
+    "open-frame",
+    "motor-plate",
+    "hub"
+  ],
+  "full_assembly_visible_groups": 23,
+  "explosion_button_value": 1,
+  "select_hidden_caliper_switches_to_full_assembly": true,
+  "isolate_caliper_visible": [
+    "caliper"
+  ],
+  "reset_restores_mount_only": true,
+  "console_messages": 0,
+  "local_links_exist": true,
+  "note": "Raster previews use exact mesh triangles with depth buffering. UI rendering and control checks do not validate hardware fit."
+}

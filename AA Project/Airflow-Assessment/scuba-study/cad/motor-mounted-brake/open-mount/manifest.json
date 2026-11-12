@@ -1,0 +1,411 @@
+{
+  "variant": "OPEN-01",
+  "basis": "R07 motor datums and R06 image-estimated CMD23. Enclosed R07 retained separately.",
+  "status": "Static fit prototype; no powered-use or containment rating.",
+  "prints": [
+    {
+      "part": "open-frame",
+      "extents_mm": [
+        189.0,
+        152.0,
+        18.0
+      ],
+      "single_closed_solid": true,
+      "H2S_bed_fit": true
+    },
+    {
+      "part": "motor-plate",
+      "extents_mm": [
+        136.0,
+        152.0,
+        10.0
+      ],
+      "single_closed_solid": true,
+      "H2S_bed_fit": true
+    }
+  ],
+  "collar": "Reference only; not a functioning torque/retention design.",
+  "selected_interference_checks": [
+    {
+      "parts": [
+        "hub",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "hub",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "shaft",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "shaft",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor-bolts",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor-bolts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "plate-bolts",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "plate-bolts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "plate-nuts",
+        "open-frame"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "plate-nuts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "plate-sleeves",
+        "open-frame"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "plate-sleeves",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "is-bolts",
+        "open-frame"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "is-bolts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "adapter",
+        "open-frame"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "adapter",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor-bolts",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor-bolts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "caliper",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "caliper",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pads",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pads",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-pivot",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-pivot",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pm-bolts",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pm-bolts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-wire",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-wire",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "washers",
+        "open-frame"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "washers",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "open-frame",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    }
+  ],
+  "allowance_checks": [
+    {
+      "envelope": "caliper",
+      "target": "open-frame",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "caliper",
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "barrel-adjuster",
+      "target": "open-frame",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "barrel-adjuster",
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-adjuster",
+      "target": "open-frame",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-adjuster",
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "brake-pivot",
+      "target": "open-frame",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "brake-pivot",
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "arm-envelope",
+      "target": "open-frame",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "arm-envelope",
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    }
+  ],
+  "nominal_geometry_pass": true,
+  "real_fit_verified": false,
+  "shaft_z_mm": [
+    15,
+    40
+  ],
+  "hub_z_mm": [
+    18,
+    38
+  ],
+  "rotor_z_mm": 28,
+  "motor_mount_xy_mm": [
+    [
+      0,
+      44
+    ],
+    [
+      0,
+      -39
+    ]
+  ],
+  "IS_pitch_mm": 51,
+  "open_items": [
+    "Actual motor threads and ports",
+    "Actual brake/adapter dimensions and cable motion",
+    "Functional metal shaft hub and disc bolt retention",
+    "Hot strength, bearings, speed, brake duty and guard for powered tests"
+  ]
+}
