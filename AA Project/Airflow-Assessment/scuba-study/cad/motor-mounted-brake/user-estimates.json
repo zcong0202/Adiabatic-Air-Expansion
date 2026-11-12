@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-12",
+  "source": "evidence/IMG_5063-user-estimates.jpg",
+  "sha256": "e37ecc77554f0a43d24e0256bc8ce1cb7fa01d263bc8524f4e5f0855e7122994",
+  "status": "User supplied estimates. Interpretation pending for mounting offsets. Not precision measurements.",
+  "readings_mm": {
+    "shaft_diameter": 12,
+    "shaft_exposed_length_from_boss": 25,
+    "boss_diameter": 35,
+    "boss_projection_from_mount_face": 15,
+    "mount_hole_opening_about": 7,
+    "mount_hole_count": 2
+  },
+  "pending_confirmation": {
+    "dimension_90": "Hole centre-to-centre distance or motor/front face diameter?",
+    "dimension_65": "Upper-hole centre to lower edge of boss, or another datum?"
+  },
+  "not_inferred": [
+    "Thread size from 7 mm opening",
+    "Hole symmetry about shaft centre",
+    "Shaft retention method",
+    "Measurement tolerance",
+    "Clarks caliper dimensions"
+  ],
+  "cad_consequence": "Prior four-hole pattern is superseded as a hardware assumption. Hole coordinates must wait for datum clarification. Shaft starts at raised boss end; do not put hub through the boss.",
+  "current_model": "R02 remains previous unfitted concept until dimension interpretation is resolved."
+}
