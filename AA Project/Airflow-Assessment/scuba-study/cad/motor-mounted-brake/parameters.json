@@ -1,5 +1,5 @@
 {
-  "status": "EXAMPLE DIMENSIONS. Static fit prototype only. No motor or brake interfaces measured.",
+  "status": "UNFITTED CONCEPT. Only overall motor envelope and rotor diameter sourced. Shaft, mounting and brake interface dimensions remain placeholders.",
   "units": "mm",
   "case_outer_radius": 124,
   "case_inner_radius": 110,
@@ -8,11 +8,28 @@
   "lid_thickness": 5,
   "closure_pitch_radius": 117,
   "closure_clearance_diameter": 5.6,
-  "motor_mount_xy": [[-24,-24],[-24,24],[24,-24],[24,24]],
+  "motor_mount_xy": [
+    [
+      -24,
+      -24
+    ],
+    [
+      -24,
+      24
+    ],
+    [
+      24,
+      -24
+    ],
+    [
+      24,
+      24
+    ]
+  ],
   "motor_mount_clearance_diameter": 6.5,
   "motor_nose_clearance_diameter": 40,
-  "motor_body_diameter": 80,
-  "motor_body_length": 90,
+  "motor_body_diameter": 108,
+  "motor_body_length": 88,
   "shaft_diameter": 12,
   "shaft_exposed_length": 32,
   "rotor_diameter": 160,
@@ -23,7 +40,22 @@
   "hub_back_z": 9,
   "rotor_bolt_pitch_diameter": 44,
   "rotor_bolt_clearance_diameter": 5.3,
-  "caliper_mount_xy": [[94,-28],[94,28]],
+  "caliper_mount_xy": [
+    [
+      94,
+      -28
+    ],
+    [
+      94,
+      28
+    ]
+  ],
   "caliper_mount_clearance_diameter": 6.5,
-  "measured_parameters": []
+  "measured_parameters": [],
+  "motor_overall_length": 122,
+  "dimension_sources": {
+    "motor_overall_width_mm": 108,
+    "motor_overall_length_mm": 122,
+    "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946"
+  }
 }

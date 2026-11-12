@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-12",
+  "fit_release": false,
+  "verdict": "Not dimensionally fitted to AM0701 or CMD-23. Do not manufacture as a fitted assembly.",
+  "verified": {
+    "motor_overall_width_mm": 108,
+    "motor_overall_length_including_shaft_mm": 122,
+    "motor_dimension_source": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
+    "brake_rotor_diameter_mm": 160,
+    "brake_model": "Clarks CMD-23 160/160 mm kit",
+    "brake_mount_compatibility": [
+      "IS",
+      "Post Mount"
+    ],
+    "brake_source": "https://www.clarkscyclesystems.com/mechanical-disc-brake-sets-1/cmd-23"
+  },
+  "purchase": {
+    "url": "https://www.amazon.ae/dp/B08RPBLC55",
+    "price_aed": 136.22,
+    "displayed_stock": 3,
+    "checked_date": "2026-11-12",
+    "contents": "2 calipers, 2 x 160 mm rotors, 12 rotor bolts, applicable brackets; pads fitted",
+    "delivery": "Page showed regular 13 Nov and faster same-day option. Exact address/checkout not verified."
+  },
+  "unknown_critical_dimensions": [
+    "Motor mounting face and number/location of holes",
+    "Motor thread diameter/pitch and available engagement depth",
+    "Motor shaft diameter, protrusion, key/flat/pin and axial retention",
+    "Motor bearing/shaft overhung-load limits",
+    "Caliper and supplied bracket geometry/offset/hole orientation",
+    "Rotor thickness, center bore, bolt circle and bolt sizes"
+  ],
+  "current_placeholders": {
+    "shaft_mm": [
+      12,
+      32
+    ],
+    "motor_mount_xy_mm": [
+      [
+        -24,
+        -24
+      ],
+      [
+        -24,
+        24
+      ],
+      [
+        24,
+        -24
+      ],
+      [
+        24,
+        24
+      ]
+    ],
+    "caliper_mount_xy_mm": [
+      [
+        94,
+        -28
+      ],
+      [
+        94,
+        28
+      ]
+    ],
+    "rotor_thickness_mm": 1.8,
+    "rotor_bolt_pitch_mm": 44
+  },
+  "correction": "Replace 80 mm motor envelope width with published 108 mm. Overall model length now 122 mm. Cylindrical silhouette is approximate. Axial body extent derives from still-assumed 32 mm shaft; not a published shaft length.",
+  "manual_review": "CMD-23 fitting sheet and bracket specification reviewed. They show the actual bracket/washer arrangement but do not supply a complete dimensioned motor-adapter or caliper CAD interface. Current carrier is a schematic block, not the supplied bracket.",
+  "resources": [
+    "evidence/CMD23-fitting.pdf",
+    "evidence/Clarks-brackets.pdf"
+  ],
+  "next": "Obtain workshop measurements or manufacturer dimensioned drawing before final fitted CAD. No supplier contact sent."
+}

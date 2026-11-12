@@ -41,7 +41,9 @@ lid = cut(cyl(R,L,[0,0,B+D+L/2]),*holes(closure,P['closure_clearance_diameter'],
 # Caliper geometry is an envelope, NOT a manufacturer's drawing.
 carrier = union(box([18,76,6],[94,0,9]),*[cyl(10,6,[x,y,15]) for x,y in P['caliper_mount_xy']])
 carrier = cut(carrier,*holes(P['caliper_mount_xy'],P['caliper_mount_clearance_diameter'],16,12))
-motor = joined([cyl(P['motor_body_diameter']/2,P['motor_body_length'],[0,0,-P['motor_body_length']/2-2]),cyl(19,4,[0,0,-2])])
+# Overall 122 mm is sourced; axial split still depends on assumed shaft protrusion.
+body_length=P['motor_overall_length']-P['shaft_exposed_length']-2
+motor = joined([cyl(P['motor_body_diameter']/2,body_length,[0,0,-body_length/2-2]),cyl(19,4,[0,0,-2])])
 shaft = cyl(P['shaft_diameter']/2,P['shaft_exposed_length'],[0,0,P['shaft_exposed_length']/2])
 hub = union(ring(P['hub_outer_diameter']/2,P['shaft_diameter']/2+.2,P['hub_length'],P['hub_back_z']+P['hub_length']/2),ring(29,P['shaft_diameter']/2+.2,4,Z-2.9))
 rotor_pattern = [[P['rotor_bolt_pitch_diameter']/2*math.cos(a*math.pi/3),P['rotor_bolt_pitch_diameter']/2*math.sin(a*math.pi/3)] for a in range(6)]
@@ -63,7 +65,7 @@ caliper_bolts = joined([joined([cyl(3,28,[x,y,10],24),cyl(5,4,[x,y,24],24)]) for
 rotor_bolts = joined([joined([cyl(2.4,7,[x,y,Z-1],24),cyl(4.3,2,[x,y,Z+2],24)]) for x,y in rotor_pattern])
 
 items = [
- ('motor','Motor envelope',motor,'#6b7782','hardware',[0,0,-75],False,'AM0701 placeholder body. Mounting face and holes unmeasured.'),
+ ('motor','Motor envelope',motor,'#6b7782','hardware',[0,0,-75],False,'AM0701 envelope corrected to published 108 mm width and 122 mm overall length including shaft. Shape, shaft length and holes remain unmeasured.'),
  ('shaft','Motor shaft',shaft,'#a3aab2','hardware',[0,0,-75],False,'Example Ø12 × 32 mm, not measured. Bearing and shaft load limits unknown.'),
  ('rear','01 · Motor adapter',rear,'#b9d2d1','printed',[0,0,-30],True,'Bolts to four example motor holes. No external base. Hole pattern must be replaced with measurements.'),
  ('motor-bolts','Motor screws × 4',motor_bolts,'#8e97a1','fastener',[0,0,0],False,'Metal fasteners. Example M6 clearance; real motor thread and engagement unknown.'),
@@ -96,7 +98,8 @@ for a,b in clearance_pairs:
     v=float(overlap.volume) if not overlap.is_empty else 0
     intersections.append(dict(parts=[a,b],overlap_mm3=round(v,6)))
     assert v<.01,(a,b,v)
-manifest=dict(date='2026-11-12',status='STATIC FIT PROTOTYPE. Not fitted or released for powered operation.',
+assert abs(joined([motor,shaft]).extents[2]-P['motor_overall_length'])<1e-6
+manifest=dict(dimension_audit='dimension-audit.json',date='2026-11-12',status='STATIC FIT PROTOTYPE. Not fitted or released for powered operation.',
               architecture='Motor mounting holes support the enclosure. Rotor hub directly on motor shaft. No base, second shaft or coupling.',
               parameters=P,checks=checks,clearance_checks=intersections,
               scope='Mesh closure and listed interference checks only. Not structural, thermal, balance, bearing-load, rotor-speed or containment validation.',
@@ -108,6 +111,6 @@ manifest=dict(date='2026-11-12',status='STATIC FIT PROTOTYPE. Not fitted or rele
 template=(ROOT/'viewer.template.html').read_text()
 (ROOT/'index.html').write_text(template.replace('__ASSEMBLY__',json.dumps(out,separators=(',',':'))).replace('__PARAMETERS__',json.dumps(P)))
 with zipfile.ZipFile(ROOT/'motor-mounted-brake-fit.zip','w',zipfile.ZIP_DEFLATED) as z:
-    for f in sorted(ROOT.iterdir()):
-        if f.suffix in ['.stl','.json','.py','.html','.js','.md','.scad','.txt','.png'] and f.name!='assembly.json':z.write(f,f.name)
+    for f in sorted(ROOT.rglob('*')):
+        if f.is_file() and f.suffix in ['.stl','.json','.py','.html','.js','.md','.scad','.txt','.png','.jpg','.pdf'] and f.name!='assembly.json':z.write(f,f.relative_to(ROOT))
 print(json.dumps({'parts':len(checks),'print_meshes':4,'clearance_pairs':len(intersections),'status':manifest['status']}))

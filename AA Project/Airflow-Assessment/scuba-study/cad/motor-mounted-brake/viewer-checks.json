@@ -12,11 +12,15 @@
     "Hide fasteners",
     "Show opaque shell",
     "Reset",
-    "No horizontal overflow at 1440px and 390px"
+    "No horizontal overflow at 1440px and 390px",
+    "R02 corrected envelope and source metadata present",
+    "Clarks purchase link present",
+    "R02 assembly and explode render"
   ],
   "limits": [
     "WebGL path not visually verified in headless browser",
     "Software painter can show depth-order artifacts on thin faces; WebGL uses depth buffer",
     "No real hardware fit, loading or printing tested"
-  ]
+  ],
+  "revision": "R02"
 }

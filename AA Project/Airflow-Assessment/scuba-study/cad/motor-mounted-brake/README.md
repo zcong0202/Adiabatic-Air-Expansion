@@ -1,4 +1,4 @@
-# Motor-mounted brake · R01
+# Motor-mounted brake · R02
 
 12 Nov 2026. **Static fit prototype only. Not fitted to the user's hardware.**
 
@@ -29,7 +29,7 @@ Disc, hub, motor, caliper, pads and metal screws are reference geometry in the v
 
 Case Ø248 × 51 mm. Rear 6 mm; chamber 40 mm; lid 5 mm.
 Selected Clarks disc diameter 160 mm. Disc thickness 1.8 mm and six-hole 44 mm pitch circle are assumptions, not checked Clarks dimensions.
-Motor envelope Ø80 × 90 mm. Shaft Ø12 × 32 mm is an example, not a measurement. The user's earlier “4 cm” does not establish a shaft diameter.
+Motor envelope now uses Cosmostar’s published 108 mm width and 122 mm overall length, including shaft. The cylinder shape is schematic. Body extent is derived from the assumed shaft protrusion, not a verified body drawing. Shaft Ø12 × 32 mm remains an example, not a measurement. The user's earlier “4 cm” does not establish a shaft diameter.
 Example motor holes: (±24, ±24), Ø6.5 mm clearance. No motor thread is specified.
 Example caliper holes: (94, ±28), Ø6.5 mm. The actual Clarks tabs may require a different carrier and orientation.
 
@@ -54,3 +54,11 @@ Generated meshes have closed positive volume. Ten selected pairs have no positiv
 Run `build.py` with Python containing numpy, trimesh and manifold3d. Viewer bundle uses Three.js 0.170.0 and esbuild 0.24.0. Bundle with `esbuild viewer.js --bundle --format=iife --minify --outfile=viewer.bundle.js` using those dependencies. Re-run `build.py` after bundling to refresh the ZIP. Three.js license included.
 
 References: [AM0701 manufacturer](https://www.cosmostar.net/product/air-motor-and-agitator/255-am0701-0-9-hp-air-operated-vane-type-air-motor), [selected Clarks kit](https://www.amazon.ae/dp/B08RPBLC55), [prior load calculations](../../results/friction-fan-load.html), [prior brake plan](../../results/diy-brake-plan.html).
+
+## Dimension audit · 12 Nov
+
+See `dimension-audit.json`. The selected [Clarks kit](https://www.amazon.ae/dp/B08RPBLC55) was listed at AED 136.22 with three displayed in stock. Checkout delivery was not confirmed. Official CMD-23 fitting and bracket sheets are saved in `evidence/`. They do not supply the full interface dimensions required for this mount. The schematic carrier is not a CAD copy of the supplied Clarks bracket.
+
+Motor dimension source: https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946
+
+Before fitted CAD, the workshop must provide: mounting face and hole coordinates/threads/depths; shaft diameter/protrusion/key or pin and retention; rotor and caliper/bracket interfaces. Photos alone must not be scaled into precision manufacturing dimensions.
