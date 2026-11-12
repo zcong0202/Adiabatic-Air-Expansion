@@ -13,7 +13,7 @@ The rotor sits on a hub directly on the motor shaft. There is no second shaft, c
 ## Files
 
 - `rear-FIT-ONLY.stl`: motor adapter, two-hole pattern derived from user estimates.
-- `carrier-FIT-ONLY.stl`: caliper carrier, example mounting pattern.
+- Caliper carrier STL withheld: previous 56 mm pattern does not match standard IS51 or PM74.17. Viewer retains the superseded reference shape for context. An older local file may remain, but is excluded from current downloads.
 - `shell-FIT-ONLY.stl`: brake chamber with cable access.
 - `lid-FIT-ONLY.stl`: vented cover.
 - `parameters.json`: editable dimensions, all in mm.
@@ -21,7 +21,7 @@ The rotor sits on a hub directly on the motor shaft. There is no second shaft, c
 - `manifest.json`: checks, dimensions and unresolved interfaces.
 - `viewer.js`, `viewer.template.html`, `viewer.bundle.js`: editable and bundled viewer.
 
-The four STL meshes are flat-faced print candidates for a **non-powered fit check**. Orient the rear, carrier and lid with their broad rear faces on the bed. Stand the chamber on its end face; inspect support needs at the cable opening in the slicer. No printer profile or physical fit is validated. Metal bolts/nuts are required for assembly; printed threads are not provided.
+The three current STL meshes are flat-faced print candidates for a **non-powered fit check**. Orient the rear and lid with their broad rear faces on the bed. Stand the chamber on its end face; inspect support needs at the cable opening in the slicer. No printer profile or physical fit is validated. Metal bolts/nuts are required for assembly; printed threads are not provided.
 
 Disc, hub, motor, caliper, pads and metal screws are reference geometry in the viewer. They are not production CAD or printable operating parts. No functional rotor/hub STL is released. The assembly is therefore **not an all-printed operating brake**.
 
@@ -67,3 +67,9 @@ Before fitted CAD, the workshop must provide: mounting face and hole coordinates
 ## R03 estimate update
 
 See `user-estimates.json` and `mount-pattern.svg`. CAD uses estimated dimensions, not fit-verified hardware measurements. Motor diameter108 and main-body thickness48 were confirmed by the user. Actual fit tolerances, threads, retention and brake interfaces remain unresolved.
+
+## Brake interface check · 12 Nov
+
+Amazon confirms CMD-23-F&R-160,160 mm and IS/PM compatibility, but supplies no full dimensioned caliper drawing. All seven listing images were checked. Hope’s manufacturer drawing establishes IS51 mm centres and Post Mount74.17 mm centres (rounded74.2 in its identification view), with M6 Post Mount bosses. For160 mm PM, the chart shows A55.9 and B7.1 mm, each ±0.10 in that drawing. Use the diagram orientation; these numbers alone do not define our full three-dimensional mount.
+
+The earlier56 mm carrier is invalid for those standard interfaces. Its STL is withheld from the new pack and viewer. Keep the correct included Clarks metal bracket and its bolt/washer stack for an IS-based redesign; do not equate IS51 with the caliper’s own PM holes. Axial alignment and actual caliper clearance remain unverified. See `brake-interface-audit.json` and `evidence/Hope-BrakeMountIdentification-2021.pdf`.

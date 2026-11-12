@@ -1,4 +1,6 @@
 {
+  "brake_interface_audit": "brake-interface-audit.json",
+  "carrier_export_withheld": true,
   "revision": "R03",
   "mount_derivation": {
     "centre_spacing": "90 - 7 = 83 mm",
@@ -149,7 +151,7 @@
         76.0,
         12.0
       ],
-      "export": "carrier-FIT-ONLY.stl"
+      "export": null
     },
     {
       "part": "hub",

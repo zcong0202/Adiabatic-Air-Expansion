@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-12",
+  "status": "Standard interfaces sourced; actual caliper enclosure and alignment not yet fitted.",
+  "amazon": {
+    "url": "https://www.amazon.ae/dp/B08RPBLC55",
+    "model": "CMD-23-F&R-160",
+    "confirmed": [
+      "160 mm rotors",
+      "IS and Post Mount compatibility",
+      "Two calipers, two rotors, bolts and mounting brackets"
+    ],
+    "dimensions_missing": [
+      "Caliper length, width and height",
+      "Rotor thickness and bolt circle dimensions",
+      "Full bracket offsets relative to rotor plane"
+    ],
+    "review": "Listing text, technical rows and all seven gallery images inspected. No full dimensioned drawing found. Technical included-components field mentions levers/hoses, conflicting with mechanical-kit body text; not used as procurement evidence."
+  },
+  "primary_sources": {
+    "clarks_compatibility": "https://www.clarkscyclesystems.com/mechanical-disc-brake-sets-1/cmd-23",
+    "hope_chart": "https://www.hopetech.com/_repository/1/documents/BrakeMountIdentificationChart2021.pdf",
+    "hope_mounts": "https://www.hopetech.com/products/brakes/accessories/brake-mounts/"
+  },
+  "standard_dimensions_mm": {
+    "post_mount_pitch_detailed": 74.17,
+    "post_mount_pitch_identification_rounded": 74.2,
+    "post_mount_threads": "2 x M6 on frame/fork mounting bosses",
+    "IS_pitch": 51,
+    "IS_holes": "2 x nominal diameter6 holes on frame/fork tabs",
+    "PM160_A": 55.9,
+    "PM160_B": 7.1,
+    "PM160_A_B_tolerance_in_chart": 0.1
+  },
+  "interpretation": "These are manufacturer-documented frame/fork interfaces. Applying them to CMD-23 is inferred from Clarks published IS/PM compatibility. The chart does not establish the full Clarks caliper body, its washer stack, or a complete axial alignment CAD datum.",
+  "design_correction": "Existing carrier hole spacing56 mm is neither IS51 nor PM74.17. Carrier remains visible only as a superseded layout reference. Withheld carrier STL from new package and viewer download; it is not a fitted Clarks carrier.",
+  "recommended_route": "Reuse the appropriate included metal Clarks IS adapter and reproduce its 51 mm frame-side interface; preserve the stock caliper bolts and washer stack. Front and rear adapters differ. Alternatively use correct PM74.17 geometry. Either route still requires correct rotor-plane and radial alignment, plus clearance for caliper adjustment and cable.",
+  "not_established": [
+    "Actual rotor thickness and 44 mm bolt circle",
+    "Clarks caliper outer envelope and adjustment/cable sweep",
+    "Exact included bracket casting offsets",
+    "Bicycle brake speed/thermal rating for motor operation"
+  ]
+}

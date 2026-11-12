@@ -78,7 +78,7 @@ items = [
  ('shaft','Motor shaft',shaft,'#a3aab2','hardware',[0,0,-75],False,'User estimate Ø12 × 25 mm exposed from raised boss. Shaft spans z15–40 mm. Retention and bearing limits unknown.'),
  ('rear','01 · Motor adapter',rear,'#b9d2d1','printed',[0,0,-30],True,'Two aligned holes at x0, y+44/-39 mm, derived from user outer-tangent estimates. Plate Ø7.5 clearance is provisional. No external base.'),
  ('motor-bolts','Motor screws × 2',motor_bolts,'#8e97a1','fastener',[0,0,0],False,'Two Ø6 screw envelopes only. An estimated Ø7 opening does not identify the thread. Actual screw size and engagement unknown.'),
- ('carrier','02 · Caliper carrier',carrier,'#62a9a5','printed',[70,0,35],True,'Separate bolted carrier. Example mounting coordinates, not a Clarks drawing. Fit-only polymer part.'),
+ ('carrier','02 · Carrier (superseded)',carrier,'#62a9a5','printed',[70,0,35],False,'Superseded 56 mm layout. Standard IS is51 mm; Post Mount74.17 mm. This carrier does not match those interfaces. No STL download; redesign pending alignment.'),
  ('hub','Direct shaft hub',hub,'#d89a58','hardware',[0,0,25],False,'Metal hub required for operation. Bore, key, clamping and axial retention unresolved; no functional hub STL released.'),
  ('rotor','160 mm brake disc',rotor,'#bec6cf','hardware',[0,0,65],False,'Selected Clarks size. Hole circle/thickness/window shape are provisional. Metal reference mesh only.'),
  ('rotor-bolts','Rotor screws × 6',rotor_bolts,'#7a8791','fastener',[0,0,85],False,'Metal screw envelopes; exact rotor interface and engagement unverified.'),
@@ -112,7 +112,7 @@ assert abs(mounts[0][1]+hole_d/2+P['motor_boss_diameter']/2-P['upper_hole_top_to
 assert P['hub_back_z']>=boss_h
 assert P['hub_back_z']+P['hub_length']<=boss_h+P['shaft_exposed_length']
 assert abs(joined([motor,shaft]).extents[2]-P['motor_overall_length'])<1e-6
-manifest=dict(revision='R03',mount_derivation=P['mount_derivation'],dimension_audit='dimension-audit.json',date='2026-11-12',status='STATIC FIT PROTOTYPE. Not fitted or released for powered operation.',
+manifest=dict(brake_interface_audit='brake-interface-audit.json',carrier_export_withheld=True,revision='R03',mount_derivation=P['mount_derivation'],dimension_audit='dimension-audit.json',date='2026-11-12',status='STATIC FIT PROTOTYPE. Not fitted or released for powered operation.',
               architecture='Motor mounting holes support the enclosure. Rotor hub directly on motor shaft. No base, second shaft or coupling.',
               parameters=P,checks=checks,clearance_checks=intersections,
               scope='Mesh closure and listed interference checks only. Not structural, thermal, balance, bearing-load, rotor-speed or containment validation.',
@@ -125,5 +125,5 @@ template=(ROOT/'viewer.template.html').read_text()
 (ROOT/'index.html').write_text(template.replace('__ASSEMBLY__',json.dumps(out,separators=(',',':'))).replace('__PARAMETERS__',json.dumps(P)))
 with zipfile.ZipFile(ROOT/'motor-mounted-brake-fit.zip','w',zipfile.ZIP_DEFLATED) as z:
     for f in sorted(ROOT.rglob('*')):
-        if f.is_file() and f.suffix in ['.stl','.json','.py','.html','.js','.md','.scad','.txt','.png','.jpg','.pdf','.svg'] and f.name!='assembly.json':z.write(f,f.relative_to(ROOT))
-print(json.dumps({'parts':len(checks),'print_meshes':4,'clearance_pairs':len(intersections),'status':manifest['status']}))
+        if f.is_file() and f.name!='carrier-FIT-ONLY.stl' and f.suffix in ['.stl','.json','.py','.html','.js','.md','.scad','.txt','.png','.jpg','.pdf','.svg'] and f.name!='assembly.json':z.write(f,f.relative_to(ROOT))
+print(json.dumps({'parts':len(checks),'print_meshes':sum(1 for c in checks if c['export']),'clearance_pairs':len(intersections),'status':manifest['status']}))

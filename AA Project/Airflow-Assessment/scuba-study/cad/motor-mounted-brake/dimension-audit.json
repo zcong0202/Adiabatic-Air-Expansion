@@ -42,7 +42,8 @@
       ]
     ],
     "rotor_thickness_mm": 1.8,
-    "rotor_bolt_pitch_mm": 44
+    "rotor_bolt_pitch_mm": 44,
+    "caliper_mount_xy_mm_status": "56 mm layout superseded; carrier export withheld. IS51/PM74.17 standards now sourced."
   },
   "correction": "R03 uses user-confirmed diameter108/body48; boss35x15; shaft12x25; two aligned openings estimated7, y+44/-39 from outer tangents. Model stack88 excludes rear accessories, rather than forcing whole-unit manufacturer nominal122 onto the front interface.",
   "manual_review": "CMD-23 fitting sheet and bracket specification reviewed. They show the actual bracket/washer arrangement but do not supply a complete dimensioned motor-adapter or caliper CAD interface. Current carrier is a schematic block, not the supplied bracket.",
@@ -75,5 +76,6 @@
     ],
     "motor_body_diameter_mm": 108,
     "motor_body_thickness_mm": 48
-  }
+  },
+  "brake_interface_update": "brake-interface-audit.json"
 }
