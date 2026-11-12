@@ -1,19 +1,15 @@
 {
-  "revision": "R04",
-  "date": "2026-11-12",
-  "browser": "gstack Chromium, SVG fallback",
+  "revision": "R05",
+  "browser": "gstack Chromium SVG fallback",
   "checks": {
     "offline_file_load": true,
-    "parts": 20,
-    "print_downloads": 4,
-    "explode_button_sets_100_percent": true,
-    "casing_visibility_toggle": true,
-    "carrier_selection_download": "carrier-FIT-ONLY.stl",
-    "isolate_shows_only_carrier": true,
-    "screenshots_inspected": [
-      "assembled-preview.png",
-      "exploded-preview.png"
-    ]
+    "parts": 17,
+    "print_downloads": 2,
+    "exploded_button": true,
+    "housing_selection_download": "housing-FIT-ONLY.stl",
+    "isolate_housing": true,
+    "closed_default": true
   },
-  "limits": "WebGL path not tested in this run. No physical fit or structural verification."
+  "preview": "assembled-preview.png and exploded-preview.png generated from exact assembly triangles by render_preview.py with a CPU depth buffer. Visually inspected.",
+  "limits": "SVG fallback depth ordering can show artifacts; native WebGL path not checked in this run. No physical qualification."
 }

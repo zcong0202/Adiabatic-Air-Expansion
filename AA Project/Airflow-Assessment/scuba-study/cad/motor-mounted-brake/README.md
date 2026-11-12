@@ -1,57 +1,54 @@
-# Motor-mounted brake · R04
+# Motor-mounted brake · R05
 
-12 Nov 2026. **Ribbed static fit prototype. Not released for powered operation.**
+**Gearbox-style fit prototype. No powered-use rating.**
 
-Open `index.html`. Orbit, select parts, hide the case or use the explode slider. Offline Three.js viewer; SVG fallback when WebGL is unavailable. Software rendering may show triangle depth-order artifacts.
+Open `index.html`. The viewer starts with a closed case. Use **Open cover**, **Exploded**, orbit and part selection to inspect the arrangement.
 
-## Changes
+## Form and integration
 
-- 264 × 244 mm rounded rectangular cassette. Total forward depth74 mm, including lid ribs.
-- 10 mm rear plate, 6 mm local ribs and reinforced motor-hole lands.
-- Wide44 × 108 mm caliper saddle. 8 mm deck, locally recessed for caliper clearance. Two8 mm triangular webs and an outer spine replace the old narrow pedestal.
-- Four M6 reference anchors attach the saddle to the plate. Wide metal washers; no printed threads.
-- Eight M6 reference closure bolts and54 mm metal compression sleeves. Shell wall6 mm; lid6 mm with4 mm ribs.
-- Stock Clarks metal IS adapter retained as the interface route. IS51 mm slots allow±4 mm radial adjustment. Exact radial/axial position and adapter envelope are still assumptions.
+Two printed parts replace the R04 four-part cassette:
 
-The brake reaction follows caliper → stock adapter → saddle → rear plate → motor mounting holes. The closure sleeves reduce shell compression under bolt preload. They do **not** create a qualified metal torque path. The case has no pneumatic pressure path and no fragment-containment rating.
+- `housing-FIT-ONLY.stl`: one cup with rounded circular body, smooth caliper bulge, internal adapter lands, internal gussets, rear motor plate and recessed rear nut pockets.
+- `lid-FIT-ONLY.stl`: matching chamfered cover with recessed screw heads, a shallow circular face detail and five small caliper-side vents.
 
-## Printable files
+The housing follows the rotor and caliper envelope, like a gearbox cover. There is no separate printed caliper saddle or external bracket. The real brake stays inside. Eight metal through-bolts and metal compression sleeves close the assembly. The commercial caliper and correct Clarks IS adapter attach to lands inside the cup. These lands carry reaction into the rear plate and two motor mounting holes.
 
-Four updated files: `rear-FIT-ONLY.stl`, `carrier-FIT-ONLY.stl`, `shell-FIT-ONLY.stl`, `lid-FIT-ONLY.stl`. Each is a connected, watertight positive-volume solid in millimetres. Each is translated onto z=0 for printing. Viewer geometry retains assembly coordinates.
+Envelope238 ×200 ×58 mm, versus R04's264 ×244 ×74 mm. Rear plate10 mm, wall8 mm, lid10 mm with recessed head seats. These are geometry changes, not proven strength increases. Brake and motor interfaces remain estimate-based.
 
-The R04 carrier replaces the superseded R03 56 mm carrier. IS51 is the frame-side interface for the stock adapter; it is **not** the caliper's native Post Mount74.17 interface. Do not use any older exported carrier.
+## Printing
 
-Largest footprint264 × 244 mm fits the [H2S340 × 320 × 340 mm volume](https://us.store.bambulab.com/products/h2s). Start a **fit print** with0.4 mm nozzle,0.20 mm layers,8 wall loops,8 top/bottom layers,40% general infill and local solid regions around holes/webs. Rear, carrier and lid print flat underside down; shell stands on its end. Inspect bridging and supports at cable/vent openings in Bambu Studio. No sliced profile/G-code or print test is supplied.
+Both STLs are single connected, watertight solids in millimetres, with minimum z=0. Each fits the Bambu H2S340 ×320 ×340 mm bed. Print the cup with the motor mounting face on the bed, opening upward. Print the lid flat underside down. Inspect supports/bridges at the radial cable opening and cover slots in Bambu Studio.
 
-PLA remains for **non-powered fit checks** here. [PLA material limits](https://help.prusa3d.com/article/pla_2062) include brittleness and low heat resistance. H2S supports engineering materials such as PC, but material choice alone does not qualify the brake. Actual layer adhesion, hot strength, creep and fastener clamp relaxation require tests.
+For a static PLA fit print:0.4 mm nozzle,0.20 mm layers,8 wall loops,8 top/bottom layers,40% general infill and solid modifiers around motor holes, adapter lands and bolt bosses. Use the actual filament profile. No G-code or physical print validation is supplied.
 
-## Motor fit retained
+Older R04 `rear`, `carrier` and `shell` STL files may remain locally for history. They are excluded from the R05 pack and viewer. Do not combine them with the R05 cover. Current pack contains **two STLs only**.
 
-User estimates: bodyØ108 ×48; bossØ35 ×15; shaftØ12 ×25 exposed. Two approximatelyØ7 openings are vertically aligned.90 mm outer span minus7 gives83 mm centres.65 mm upper-hole-top to boss-bottom gives upper centre+44 mm and lower−39 mm relative to shaft centre. Printed motor clearanceØ7.5 is provisional; it establishes no thread size.
+## Fit assumptions
 
-Motor front face is z0. Shaft z15–40. Hub envelope z18–38. Rotor centre plane z28. Motor front stack88 mm excludes rear accessories; manufacturer overall122 mm reference remains historical evidence. No shaft key, retention or functional hub is designed by this envelope.
+User estimates remain: motor bodyØ108 ×48 mm, bossØ35 ×15, shaftØ12 ×25 exposed. Hole openings≈Ø7, centre pitch83, centres(0,+44) and(0,−39). Motor plate clearanceØ7.5 does not establish thread size.
 
-Metal rotor, retained metal hub, caliper, stock adapter, spacers, sleeves, washers and bolts remain hardware. Their viewer envelopes are **not purchase drawings**. Rotor thickness1.8 and bolt circle44 mm remain unverified. Stock adapter geometry, washer stack, PM screws, cable sweep and motor ports are not fully modeled. Adapter-spacer length4 mm is provisional; it is not a thermal insulator.
+Motor front face z0; shaft z15–40; hub envelope z18–38; rotor centre plane z28. Stock adapter IS51 slots allow±4 mm radial adjustment. Spacer4 mm, adapter shape and rotor-plane alignment are provisional. Exact PM hardware, washer stack, motor ports and cable sweep are not fully modeled. Confirm actual cable exit before final printing.
 
-## Calculations and verification
+RotorØ160 is the selected size. Thickness1.8 and bolt circle44 mm are unverified. The hub envelope does not specify keying, clamping or axial retention. Rotor, retained hub, caliper, stock adapter and fasteners remain metal. No functional printed rotating parts are supplied.
 
-`load-screen.html` explains the conditional statics. `load-screen.json` stores inputs and results. Run `calculate_loads.py` to recompute the numeric record; the HTML report is the fixed R04 presentation.3 N·m reference torque gives42.9 N tangential pad force at assumed70 mm radius.9 N·m is a sensitivity input, not a measured peak or certified safety factor.400 W for10 s deposits4 kJ in the brake system. Separate motor torque/RPM maxima must not be multiplied into a claimed operating point.
+## Evidence and limits
 
-`manifest.json` records closed meshes, single-solid print checks, printer envelope and selected interference checks. These checks establish geometry consistency only. They do not establish structural, thermal, fatigue, bearing, balancing, brake speed or guard performance. Bolt envelopes are illustrative; omitted stock hardware can still interfere.
+`manifest.json`: closed meshes, connected print solids, H2S envelope and selected non-interference pairs. This is geometry screening only, not full tolerance analysis, FEA or a hardware rating.
 
-`build.py` regenerates solids, assembly data, STLs, viewer and ZIP. Requires Python with numpy, trimesh and manifold3d. `parameters.json` holds main dimensions; structural topology and illustrative caliper shape are in the script. Viewer bundle uses Three.js0.170.0 and esbuild0.24.0. Rebuild bundle after viewer.js changes, then run build.py. Sources and license are packaged.
+`load-screen.html` and `load-screen.json`: conditional torque and heat budgets.3 N·m at assumed70 mm pad radius gives42.9 N tangential force.9 N·m is a sensitivity input, not a certified safety factor.400 W for10 seconds gives4 kJ brake heat. A smoother enclosed case does not establish adequate cooling.
 
-## Before powered operation
+PLA remains for non-powered fit checks. Hot material strength, creep, preload, shaft/bearing loads, brake speed/heat duty, balance and fragment containment remain unqualified. A powered version needs a suitable material, verified hardware, metal backup load path and a suitable rotor guard. The case is not a pressure vessel. Keep the scuba supply regulated within the confirmed motor rating.
 
-Confirm real brake offset/clearance and motor threads/engagement. Verify shaft bearing and case mounting loads. Use a retained metal hub with measured runout/balance. Establish actual motor torque-speed-flow conditions, stall/transient torque and brake speed/heat rating. Qualify a metal backup load path, suitable rotor guard and hot structural material. The current PLA casing is not an approved dynamometer.
+## Rebuild
 
-Use a regulated, protected motor supply within its confirmed rating. Never connect the scuba cylinder directly to the motor. High flow does not imply high allowable motor pressure. No pneumatic components are redesigned here.
+Run `build.py` with numpy, trimesh and manifold3d. Main dimensions are in `parameters.json`; the R05 outline and integrated land topology are in the script. Run `calculate_loads.py` to refresh numeric load records. The HTML report is a fixed revision presentation.
 
-## Evidence
+Viewer uses Three.js0.170.0 and esbuild0.24.0. Rebundle `viewer.js` after edits, then rebuild to update the ZIP. The fallback software view may show triangle ordering artifacts; the saved CPU-rendered preview uses a depth buffer. Source mesh geometry is the same.
 
-- `user-estimates.json`, `mount-pattern.svg`: user motor dimensions and tangent derivation.
-- `brake-interface-audit.json`, `evidence/`: standard interface and Clarks source records. Earlier R03 references in these audit records are historical.
-- [Selected Clarks CMD-23 kit](https://www.amazon.ae/dp/B08RPBLC55).
-- [Clarks manufacturer](https://www.clarkscyclesystems.com/mechanical-disc-brake-sets-1/cmd-23).
-- [Motor manufacturer](https://www.cosmostar.net/product/air-motor-and-agitator/255-am0701-0-9-hp-air-operated-vane-type-air-motor).
-- [Load screen](load-screen.html) and [geometry manifest](manifest.json).
+## Sources
+
+- `user-estimates.json`, `mount-pattern.svg`: motor dimension derivation.
+- `brake-interface-audit.json`, `evidence/`: Clarks and standard-interface evidence; older revision references are historical.
+- [Clarks kit](https://www.amazon.ae/dp/B08RPBLC55).
+- [H2S specifications](https://us.store.bambulab.com/products/h2s).
+- [PLA material limits](https://help.prusa3d.com/article/pla_2062).

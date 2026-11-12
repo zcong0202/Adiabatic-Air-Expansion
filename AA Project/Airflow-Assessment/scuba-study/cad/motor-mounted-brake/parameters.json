@@ -1,9 +1,9 @@
 {
-  "status": "Ribbed static fit prototype. No powered-use rating.",
+  "status": "Integrated gearbox-style fit prototype. No powered-use rating.",
   "units": "mm",
   "back_thickness": 10,
-  "chamber_depth": 54,
-  "lid_thickness": 6,
+  "chamber_depth": 38,
+  "lid_thickness": 10,
   "closure_clearance_diameter": 6.6,
   "motor_mount_xy": [
     [
@@ -37,7 +37,7 @@
     "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
     "manufacturer_overall_length_note": "Published nominal whole-unit length122 retained as reference only; user front body/boss/shaft stack totals88, rear appendages unmodeled."
   },
-  "revision": "R04",
+  "revision": "R05",
   "motor_boss_diameter": 35,
   "motor_boss_projection": 15,
   "motor_hole_opening_diameter": 7,
@@ -62,60 +62,41 @@
     "plate_clearance": "7.5 mm is a provisional printed clearance, not a measured motor hole or thread."
   },
   "motor_body_thickness_datum": "Main round body only; excludes forward boss and shaft. Rear accessories not modeled.",
-  "case_width": 264,
-  "case_height": 244,
-  "case_corner_radius": 20,
-  "shell_wall": 6,
+  "case_width": 238,
+  "case_height": 200,
+  "shell_wall": 8,
   "closure_xy": [
     [
-      -112,
-      -102
+      64.34672,
+      64.34672
     ],
     [
-      -112,
-      102
+      0.0,
+      91.0
     ],
     [
-      112,
-      -102
+      -64.34672,
+      64.34672
     ],
     [
-      112,
-      102
+      -91.0,
+      0.0
     ],
     [
-      -50,
-      -112
+      -64.34672,
+      -64.34672
     ],
     [
-      50,
-      -112
+      -0.0,
+      -91.0
     ],
     [
-      -50,
-      112
+      64.34672,
+      -64.34672
     ],
     [
-      50,
-      112
-    ]
-  ],
-  "carrier_anchor_xy": [
-    [
-      90,
-      -44
-    ],
-    [
-      114,
-      -44
-    ],
-    [
-      90,
-      44
-    ],
-    [
-      114,
-      44
+      129,
+      0
     ]
   ],
   "is_adapter_xy": [
@@ -132,5 +113,8 @@
   "is_clearance_diameter": 6.6,
   "adapter_mount_plane": 26,
   "reference_torque_Nm": 3,
-  "screening_torque_Nm": 9
+  "screening_torque_Nm": 9,
+  "case_main_radius": 100,
+  "case_pod_radius": 50,
+  "case_pod_offset": 88
 }
