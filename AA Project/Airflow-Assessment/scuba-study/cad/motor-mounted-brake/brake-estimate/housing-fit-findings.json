@@ -1,0 +1,58 @@
+{
+  "case_revision": "R05",
+  "brake_revision": "R06-estimate",
+  "fit_pass": false,
+  "pose_assumed": true,
+  "conflicts": [
+    {
+      "parts": [
+        "caliper",
+        "housing"
+      ],
+      "overlap_mm3": 8011.075081
+    },
+    {
+      "parts": [
+        "caliper",
+        "lid"
+      ],
+      "overlap_mm3": 464.405747
+    },
+    {
+      "parts": [
+        "adapter",
+        "housing"
+      ],
+      "overlap_mm3": 12943.926753
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "lid"
+      ],
+      "overlap_mm3": 5478.42197
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "housing"
+      ],
+      "overlap_mm3": 404.307343
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "lid"
+      ],
+      "overlap_mm3": 940.838323
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "housing"
+      ],
+      "overlap_mm3": 1879.577144
+    }
+  ],
+  "interpretation": "These are intersections of inferred shapes at an assumed pose. They are not measurements of real hardware. R05 is not a fitted housing."
+}

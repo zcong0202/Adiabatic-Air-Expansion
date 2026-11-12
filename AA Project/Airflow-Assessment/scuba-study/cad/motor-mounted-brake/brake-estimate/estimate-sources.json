@@ -1,0 +1,87 @@
+{
+  "revision": "R06-estimate",
+  "status": "Image-based layout estimate. Not measured CAD or confirmed fit.",
+  "product": "Clarks CMD-23-F&R-160, ASIN B08RPBLC55",
+  "sources": [
+    {
+      "url": "https://www.amazon.ae/dp/B08RPBLC55",
+      "review": "All seven gallery images, listing features and specification rows. Black/aluminum listing;160mm item diameter is rotor diameter, not caliper size. No body dimensions. Included-components row conflicts with mechanical kit description and is not used."
+    },
+    {
+      "url": "https://www.clarkscyclesystems.com/mechanical-disc-brake-sets-1/cmd-23",
+      "review": "Mechanical brake, organic pads, MTB/hybrid, IS/PM, two160mm rotors and mounting brackets. No caliper dimension drawing."
+    },
+    {
+      "local": "../evidence/CMD23-fitting.pdf",
+      "review": "Multiple fitted and disassembled views, cable arm, rear adjuster, washer stack and35/40mm caliper bolts."
+    },
+    {
+      "local": "../evidence/Clarks-brackets.pdf",
+      "review": "A2 front160/rear140 versus A3 front180/rear160. M6\u00d718 bracket bolt references. Offset geometry not dimensioned."
+    },
+    {
+      "local": "../evidence/Hope-BrakeMountIdentification-2021.pdf",
+      "review": "IS51, PM74.17 standards. Not a Clarks casting drawing."
+    }
+  ],
+  "standard_anchors_mm": {
+    "IS_pitch": 51,
+    "PM_pitch": 74.17,
+    "rotor_diameter": 160,
+    "caliper_bolt_lengths_shown": [
+      35,
+      40
+    ]
+  },
+  "method": {
+    "description": "Manual visual reconstruction using multiple photographs and standard interfaces. Not photogrammetry or a scan. Perspective and edited marketing image scales are uncontrolled.",
+    "same_panel_scale_check": {
+      "image": "../evidence/CMD23-fitting-detail.png",
+      "40mm_shank_approx_pixels": 118,
+      "35mm_shank_approx_pixels": 101,
+      "caliper_long_axis_approx_pixels": 333,
+      "inferred_long_axis_mm": [
+        112.9,
+        115.4
+      ],
+      "limitations": "Manual endpoints, shank/head boundary and photo perspective uncertain. Used only to select a roughly110mm layout envelope; not hole-location metrology."
+    },
+    "axial_depth": "Least constrained. Selected60mm with a broad45\u201375mm planning range from oblique/fitted views; no defensible direct axial scale."
+  },
+  "planning_dimensions_mm": {
+    "tangential_including_controls": {
+      "nominal": 110,
+      "range": [
+        95,
+        125
+      ]
+    },
+    "radial": {
+      "nominal": 55,
+      "range": [
+        45,
+        65
+      ]
+    },
+    "axial_including_adjusters": {
+      "nominal": 60,
+      "range": [
+        45,
+        75
+      ]
+    }
+  },
+  "uncertainty_note": "Ranges are engineering allowances, not measured tolerance bounds or statistical confidence intervals. Real hardware can fall outside them.",
+  "assumptions": {
+    "rotor_plane_world_z_mm": 28,
+    "arm_motion_degrees": [
+      0,
+      30
+    ],
+    "cable_straight_lead_mm": 45,
+    "mounting_pose": "PM axes radial; IS axes shaft-parallel. Exact bracket offset and axial pose are inferred, unverified.",
+    "rear_pad_adjuster_and_arm": "Included in body envelope; tool clearance is additional.",
+    "internal_mechanism": "Not modeled; no working spring, pad mechanism, bearing or thread designs."
+  },
+  "excluded": "No brake force, speed, heat-duty or motor cooling validation."
+}

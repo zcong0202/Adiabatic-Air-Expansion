@@ -2,7 +2,7 @@
   "load_screen": "load-screen.json",
   "brake_interface_audit": "brake-interface-audit.json",
   "carrier_export_withheld": true,
-  "revision": "R05",
+  "revision": "R06-estimate",
   "mount_derivation": {
     "centre_spacing": "90 - 7 = 83 mm",
     "upper_y": "65 - 35/2 - 7/2 = +44 mm",
@@ -12,10 +12,10 @@
   },
   "dimension_audit": "dimension-audit.json",
   "date": "2026-11-12",
-  "status": "STATIC FIT PROTOTYPE. Not fitted or released for powered operation.",
+  "status": "FIT REVIEW: source-based brake estimate conflicts with R05 housing. Printable assembly release withheld.",
   "architecture": "Two printed pieces: integrated brake cup and matching cover. Internal IS adapter support is part of the cup. Motor-mounted; no separate carrier, base or coupling.",
   "parameters": {
-    "status": "Integrated gearbox-style fit prototype. No powered-use rating.",
+    "status": "Fit review: estimated CMD-23 conflicts with retained R05 housing; printable assembly withheld.",
     "units": "mm",
     "back_thickness": 10,
     "chamber_depth": 38,
@@ -53,7 +53,7 @@
       "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
       "manufacturer_overall_length_note": "Published nominal whole-unit length122 retained as reference only; user front body/boss/shaft stack totals88, rear appendages unmodeled."
     },
-    "revision": "R05",
+    "revision": "R06-estimate",
     "motor_boss_diameter": 35,
     "motor_boss_projection": 15,
     "motor_hole_opening_diameter": 7,
@@ -132,7 +132,8 @@
     "screening_torque_Nm": 9,
     "case_main_radius": 100,
     "case_pod_radius": 50,
-    "case_pod_offset": 88
+    "case_pod_offset": 88,
+    "housing_geometry_revision": "R05"
   },
   "checks": [
     {
@@ -173,9 +174,9 @@
         200.0,
         48.0
       ],
-      "export": "housing-FIT-ONLY.stl",
-      "connected_print_solid": true,
-      "fits_H2S_bed": true
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
     },
     {
       "part": "motor-bolts",
@@ -195,25 +196,11 @@
       "part": "adapter",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 5712.06,
+      "volume_mm3": 17016.38,
       "extents_mm": [
-        22.0,
-        68.0,
-        4.0
-      ],
-      "export": null,
-      "connected_print_solid": null,
-      "fits_H2S_bed": null
-    },
-    {
-      "part": "spacers",
-      "watertight": true,
-      "positive_volume": true,
-      "volume_mm3": 628.4,
-      "extents_mm": [
-        12.0,
-        63.0,
-        4.0
+        28.0,
+        90.17,
+        27.0
       ],
       "export": null,
       "connected_print_solid": null,
@@ -293,11 +280,11 @@
       "part": "caliper",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 18360.0,
+      "volume_mm3": 85807.42,
       "extents_mm": [
-        35.0,
-        34.0,
-        22.0
+        53.5,
+        90.17,
+        44.715
       ],
       "export": null,
       "connected_print_solid": null,
@@ -307,25 +294,11 @@
       "part": "pads",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 1320.0,
+      "volume_mm3": 1056.0,
       "extents_mm": [
-        10.0,
+        12.0,
         22.0,
-        9.0
-      ],
-      "export": null,
-      "connected_print_solid": null,
-      "fits_H2S_bed": null
-    },
-    {
-      "part": "caliper-bolts",
-      "watertight": true,
-      "positive_volume": true,
-      "volume_mm3": 2641.31,
-      "extents_mm": [
-        11.0,
-        60.526,
-        40.0
+        8.0
       ],
       "export": null,
       "connected_print_solid": null,
@@ -341,9 +314,9 @@
         200.0,
         10.0
       ],
-      "export": "lid-FIT-ONLY.stl",
-      "connected_print_solid": true,
-      "fits_H2S_bed": true
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
     },
     {
       "part": "closure-bolts",
@@ -367,6 +340,104 @@
       "extents_mm": [
         231.4,
         191.873,
+        5.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "brake-arm",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 5744.02,
+      "extents_mm": [
+        29.0,
+        51.0,
+        15.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "barrel-adjuster",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 3247.91,
+      "extents_mm": [
+        12.0,
+        30.0,
+        12.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "rear-adjuster",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 1879.58,
+      "extents_mm": [
+        20.0,
+        20.0,
+        6.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "brake-pivot",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 129.9,
+      "extents_mm": [
+        10.0,
+        8.66,
+        2.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "pm-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 2897.68,
+      "extents_mm": [
+        45.0,
+        84.17,
+        10.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "brake-wire",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 111.11,
+      "extents_mm": [
+        16.362,
+        71.323,
+        9.386
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "cable-lead",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 873.51,
+      "extents_mm": [
+        5.0,
+        45.0,
         5.0
       ],
       "export": null,
@@ -415,14 +486,14 @@
         "caliper",
         "housing"
       ],
-      "overlap_mm3": 0
+      "overlap_mm3": 8011.075081
     },
     {
       "parts": [
         "caliper",
         "lid"
       ],
-      "overlap_mm3": 0
+      "overlap_mm3": 464.405747
     },
     {
       "parts": [
@@ -464,7 +535,7 @@
         "adapter",
         "housing"
       ],
-      "overlap_mm3": 0
+      "overlap_mm3": 12943.926753
     },
     {
       "parts": [
@@ -479,13 +550,6 @@
         "lid"
       ],
       "overlap_mm3": 0.0
-    },
-    {
-      "parts": [
-        "caliper-bolts",
-        "housing"
-      ],
-      "overlap_mm3": 0
     },
     {
       "parts": [
@@ -521,8 +585,94 @@
         "lid"
       ],
       "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "lid"
+      ],
+      "overlap_mm3": 5478.42197
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "rotor"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "housing"
+      ],
+      "overlap_mm3": 404.307343
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "lid"
+      ],
+      "overlap_mm3": 940.838323
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "rotor"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "housing"
+      ],
+      "overlap_mm3": 1879.577144
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "rotor"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "rotor"
+      ],
+      "overlap_mm3": 0
     }
   ],
+  "fit_pass": false,
+  "brake_estimate_report": "brake-estimate/estimate-report.html",
   "scope": "Mesh closure and listed interference checks only. Not structural, thermal, balance, bearing-load, rotor-speed or containment validation.",
   "open_items": [
     "Verify user-estimated dimensions/tolerances; determine thread and safe engagement",

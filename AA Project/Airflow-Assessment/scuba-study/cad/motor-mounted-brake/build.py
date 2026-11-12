@@ -105,25 +105,39 @@ caliper_bolts=joined([joined([cyl(3,36,[x,y,12],24),cyl(5.5,4,[x,y,32],6)]) for 
 washers=joined([cut(cyl(6,1,[x,y,53],32),cyl(3.3,3,[x,y,53],24)) for x,y in closure]+[cut(cyl(12,1,[x,y,16.5],32),cyl(3.75,3,[x,y,16.5],24)) for x,y in mounts])
 rotor_bolts = joined([joined([cyl(2.4,7,[x,y,Z-1],24),cyl(4.3,2,[x,y,Z+2],24)]) for x,y in rotor_pattern])
 
+# Replace the old box placeholder with the source-based estimate.
+from brake_estimate import make_brake
+brake_parts,arm_sweep,brake_physical=make_brake(Z)
+caliper=brake_parts['caliper'];adapter=brake_parts['adapter'];pads=brake_parts['pads']
+# R05 housing is retained for fit review. Its print release is withdrawn while collisions remain.
+
 items = [
  ('motor','Motor envelope',motor,'#6b7782','hardware',[0,0,-75],False,'User-estimated body Ø108 × 48 mm; boss Ø35 × 15; shaft Ø12 × 25. Front stack88 mm. Rear accessories not modeled. Casting outline, threads and fit tolerances unverified.'),
  ('shaft','Motor shaft',shaft,'#a3aab2','hardware',[0,0,-75],False,'User estimate Ø12 × 25 mm exposed from raised boss. Shaft spans z15–40 mm. Retention and bearing limits unknown.'),
- ('housing','01 · Integrated brake housing',housing,'#535e65','printed',[0,0,-35],True,'One-piece cup with internal caliper lands and gussets. Smooth circular case with a caliper bulge. 10 mm rear, 8 mm walls. Stock-adapter alignment remains provisional.'),
+ ('housing','01 · Integrated brake housing',housing,'#535e65','printed',[0,0,-35],False,'R05 housing retained for comparison. Estimated CMD-23 controls and body conflict with this case. Housing download withheld pending redesign and real fit checks.'),
  ('motor-bolts','Motor screws × 2',motor_bolts,'#8e97a1','fastener',[0,0,0],False,'Ø6 reference screws only; actual motor thread and engagement remain unknown.'),
- ('adapter','Stock IS adapter · envelope',adapter,'#7d858b','hardware',[55,0,45],False,'Reuse the correct Clarks metal IS adapter. IS51 slots are internal to the case. Actual adapter shape, PM hardware and offset remain unverified.'),
- ('spacers','Adapter spacers · reference',spacers,'#b2b8be','hardware',[55,0,32],False,'4 mm metal spacer references; select after alignment. Not thermal insulation.'),
+ ('adapter','Stock IS adapter · envelope',adapter,'#7d858b','hardware',[55,0,45],False,'Estimated stepped IS-to-PM bracket. IS51 axes along shaft; PM74.17 axes radial. Casting offsets and pose inferred, not certified. Does not align with R05 lands.'),
  ('sleeves','Closure sleeves × 8',closure_sleeves,'#9aa6ae','hardware',[0,0,45],False,'38 mm metal compression sleeves, OD10 / ID6.6 references. Not a qualified metal torque skeleton.'),
  ('washers','Metal washers',washers,'#aeb6bc','fastener',[0,0,110],False,'Ø12 at recessed closure heads; Ø24 at motor lands. Reference hardware.'),
  ('hub','Direct shaft hub',hub,'#d89a58','hardware',[0,0,25],False,'Metal hub required for operation. Bore, key, clamping and axial retention unresolved; no functional hub STL released.'),
  ('rotor','160 mm brake disc',rotor,'#bec6cf','hardware',[0,0,65],False,'Selected Clarks size. Hole circle/thickness/window shape are provisional. Metal reference mesh only.'),
  ('rotor-bolts','Rotor screws × 6',rotor_bolts,'#7a8791','fastener',[0,0,85],False,'Metal screw envelopes; exact rotor interface and engagement unverified.'),
- ('caliper','Bike brake caliper',caliper,'#4a555f','hardware',[95,0,65],False,'Clarks CMD-23 reference envelope only. Not scanned or dimensioned. Cable actuation through side opening.'),
+ ('caliper','Bike brake caliper',caliper,'#4a555f','hardware',[95,0,65],False,'CMD-23 image-based body estimate. Overall body and controls about55 ×110 ×60 mm (radial/tangential/axial). Not measured manufacturer CAD; see source and uncertainty report.'),
  ('pads','Brake pads',pads,'#514745','hardware',[95,0,65],False,'Friction parts remain metal-backed commercial pads. Shown with clearance, not compressed.'),
- ('caliper-bolts','IS adapter screws × 2',caliper_bolts,'#89949e','fastener',[70,0,85],False,'M6 reference screws through IS adapter and slotted saddle. Actual stock adapter, washer stack and clearances pending.'),
- ('lid','02 · Recessed face cover',lid,'#a5afb3','printed',[0,0,140],True,'Matching chamfered lid, recessed screw heads, shallow circular face and small vents over the caliper. Cover is not a rated fragment guard.'),
+ ('lid','02 · Recessed face cover',lid,'#a5afb3','printed',[0,0,140],False,'R05 cover retained for fit review. Nominal estimated brake conflicts with the lid. Not released for printing as a fitted assembly.'),
  ('closure-bolts','Closure screws × 8',closure_bolts,'#919ca5','fastener',[0,0,180],False,'Illustrative M6 through-bolts. Final length, washers and nuts must match measured stack.'),
  ('nuts','Closure nuts × 8',closure_nuts,'#919ca5','fastener',[0,0,-55],False,'Metal nuts, not printed threads.')
 ]
+for ident,label,color,note in [
+ ('brake-arm','Cable actuation arm','#354047','Shape estimated from photos. Travel unmeasured; separate sweep assumes 0–30 degrees.'),
+ ('barrel-adjuster','Cable barrel adjuster','#59636b','Estimated30 mm long, Ø12 reference. Thread and cable bend radius unverified.'),
+ ('rear-adjuster','Rear pad adjuster','#59636b','Estimated projection behind the rotor; needs tool access.'),
+ ('brake-pivot','Arm pivot screw','#b94843','Illustrative pivot cap, not a functional fastener design.'),
+ ('pm-bolts','PM fastener references','#adb5bb','35/40 mm lengths shown by Clarks fitting sheet. Actual stack and installation still unverified.'),
+ ('brake-wire','Brake inner cable','#8e979b','Illustrative cable line. Routing and actuation clearance not validated.'),
+ ('cable-lead','Cable entry allowance','#343e45','45 mm straight lead reference only. Not a specified bend radius.')]:
+ items.append((ident,label,brake_parts[ident],color,'hardware',[55,0,65],False,note))
+
 out=[];checks=[]
 for ident,label,m,col,kind,explode,export,note in items:
     assert m.is_watertight and m.is_volume,(ident,'invalid mesh')
@@ -136,22 +150,25 @@ for ident,label,m,col,kind,explode,export,note in items:
                     vertices=np.round(m.vertices,5).tolist(),faces=m.faces.tolist()))
     checks.append(dict(part=ident,watertight=bool(m.is_watertight),positive_volume=bool(m.is_volume),volume_mm3=round(float(m.volume),2),extents_mm=np.round(m.extents,3).tolist(),export=name,connected_print_solid=(len(m.split())==1 if export else None),fits_H2S_bed=(bool(m.extents[0]<340 and m.extents[1]<320 and m.extents[2]<340) if export else None)))
 # Check actual mesh intersections for the assembly. Intended contact faces are zero-volume.
-clearance_pairs=[('rotor','housing'),('rotor','caliper'),('rotor','lid'),('hub','housing'),('hub','caliper'),('caliper','housing'),('caliper','lid'),('motor','housing'),('motor','hub'),('motor','rotor'),('shaft','lid'),('adapter','rotor'),('adapter','housing'),('sleeves','rotor'),('housing','lid'),('caliper-bolts','housing'),('motor-bolts','rotor'),('closure-bolts','housing'),('closure-bolts','lid'),('nuts','housing'),('washers','lid')]
+clearance_pairs=[('rotor','housing'),('rotor','caliper'),('rotor','lid'),('hub','housing'),('hub','caliper'),('caliper','housing'),('caliper','lid'),('motor','housing'),('motor','hub'),('motor','rotor'),('shaft','lid'),('adapter','rotor'),('adapter','housing'),('sleeves','rotor'),('housing','lid'),('motor-bolts','rotor'),('closure-bolts','housing'),('closure-bolts','lid'),('nuts','housing'),('washers','lid')]
+clearance_pairs += [(part,target) for part in ['brake-arm','barrel-adjuster','rear-adjuster','cable-lead'] for target in ['housing','lid','rotor']]
 meshes={i[0]:i[2] for i in items}
 intersections=[]
 for a,b in clearance_pairs:
     overlap=tm.boolean.intersection([meshes[a],meshes[b]],engine='manifold')
     v=float(overlap.volume) if not overlap.is_empty else 0
     intersections.append(dict(parts=[a,b],overlap_mm3=round(v,6)))
-    assert v<.01,(a,b,v)
+    # Preserve detected hardware/case conflicts as evidence, not a passed fit check.
+    if not (a in ['caliper','adapter','brake-arm','barrel-adjuster','rear-adjuster','cable-lead'] and b in ['housing','lid']):
+        assert v<.01,(a,b,v)
 assert abs((mounts[0][1]+hole_d/2)-(mounts[1][1]-hole_d/2)-P['motor_holes_outer_span'])<1e-6
 assert abs(mounts[0][1]+hole_d/2+P['motor_boss_diameter']/2-P['upper_hole_top_to_boss_bottom'])<1e-6
 assert P['hub_back_z']>=boss_h
 assert P['hub_back_z']+P['hub_length']<=boss_h+P['shaft_exposed_length']
 assert abs(joined([motor,shaft]).extents[2]-P['motor_overall_length'])<1e-6
-manifest=dict(load_screen='load-screen.json',brake_interface_audit='brake-interface-audit.json',carrier_export_withheld=True,revision='R05',mount_derivation=P['mount_derivation'],dimension_audit='dimension-audit.json',date='2026-11-12',status='STATIC FIT PROTOTYPE. Not fitted or released for powered operation.',
+manifest=dict(load_screen='load-screen.json',brake_interface_audit='brake-interface-audit.json',carrier_export_withheld=True,revision='R06-estimate',mount_derivation=P['mount_derivation'],dimension_audit='dimension-audit.json',date='2026-11-12',status='FIT REVIEW: source-based brake estimate conflicts with R05 housing. Printable assembly release withheld.',
               architecture='Two printed pieces: integrated brake cup and matching cover. Internal IS adapter support is part of the cup. Motor-mounted; no separate carrier, base or coupling.',
-              parameters=P,checks=checks,clearance_checks=intersections,
+              parameters=P,checks=checks,clearance_checks=intersections,fit_pass=False,brake_estimate_report='brake-estimate/estimate-report.html',
               scope='Mesh closure and listed interference checks only. Not structural, thermal, balance, bearing-load, rotor-speed or containment validation.',
               open_items=['Verify user-estimated dimensions/tolerances; determine thread and safe engagement','Verify shaft fit, key/flat/pin and axial retention','Clarks caliper dimensions and mounting orientation','Rotor thickness and bolt pattern','Motor overhung-load and mounting-load ratings','Brake speed/thermal rating; metal load path and guard for powered tests'],
               excluded='No pressure components; no functional rotor or hub STL. Use regulated motor supply within confirmed rating.')
@@ -162,5 +179,5 @@ template=(ROOT/'viewer.template.html').read_text()
 (ROOT/'index.html').write_text(template.replace('__ASSEMBLY__',json.dumps(out,separators=(',',':'))).replace('__PARAMETERS__',json.dumps(P)))
 with zipfile.ZipFile(ROOT/'motor-mounted-brake-fit.zip','w',zipfile.ZIP_DEFLATED) as z:
     for f in sorted(ROOT.rglob('*')):
-        if f.is_file() and (f.suffix!='.stl' or f.name in [c['export'] for c in checks if c['export']]) and f.suffix in ['.stl','.json','.py','.html','.js','.md','.scad','.txt','.png','.jpg','.pdf','.svg'] and f.name!='assembly.json':z.write(f,f.relative_to(ROOT))
+        if f.is_file() and (f.suffix!='.stl' or f.parent.name=='brake-estimate' or f.name in [c['export'] for c in checks if c['export']]) and f.suffix in ['.stl','.json','.py','.html','.js','.md','.scad','.txt','.png','.jpg','.pdf','.svg','.glb'] and f.name!='assembly.json':z.write(f,f.relative_to(ROOT))
 print(json.dumps({'parts':len(checks),'print_meshes':sum(1 for c in checks if c['export']),'clearance_pairs':len(intersections),'status':manifest['status']}))

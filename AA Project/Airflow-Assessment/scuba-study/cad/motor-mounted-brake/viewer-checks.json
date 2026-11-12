@@ -1,15 +1,14 @@
 {
-  "revision": "R05",
-  "browser": "gstack Chromium SVG fallback",
+  "revision": "R06-estimate",
+  "browser": "gstack Chromium, SVG fallback",
   "checks": {
-    "offline_file_load": true,
-    "parts": 17,
-    "print_downloads": 2,
-    "exploded_button": true,
-    "housing_selection_download": "housing-FIT-ONLY.stl",
-    "isolate_housing": true,
-    "closed_default": true
+    "brake_only_load": true,
+    "reference_parts": 10,
+    "main_assembly_parts": 22,
+    "select_and_reference_download": true,
+    "isolate_caliper": true,
+    "explode_and_reset": true,
+    "no_horizontal_overflow": true
   },
-  "preview": "assembled-preview.png and exploded-preview.png generated from exact assembly triangles by render_preview.py with a CPU depth buffer. Visually inspected.",
-  "limits": "SVG fallback depth ordering can show artifacts; native WebGL path not checked in this run. No physical qualification."
+  "limits": "Native WebGL not tested. SVG depth ordering can show artifacts. CPU preview uses depth-buffer rendering of the same triangles. No physical fit validation."
 }

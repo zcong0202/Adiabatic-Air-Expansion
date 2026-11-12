@@ -1,0 +1,185 @@
+{
+  "status": "Image-based reference geometry, not functional printable brake parts.",
+  "axis_order": "x radial, y tangential, z shaft",
+  "caliper_body_and_controls_extents_mm": [
+    53.5,
+    110.08,
+    59.0
+  ],
+  "arm_motion_assumed_deg": [
+    0,
+    30
+  ],
+  "parts": [
+    {
+      "part": "caliper",
+      "bounds_mm": [
+        [
+          58.0,
+          -45.08,
+          10.0
+        ],
+        [
+          111.5,
+          45.08,
+          54.72
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 85807.42
+    },
+    {
+      "part": "brake-arm",
+      "bounds_mm": [
+        [
+          66.0,
+          -10.0,
+          48.0
+        ],
+        [
+          95.0,
+          41.0,
+          63.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 5744.02
+    },
+    {
+      "part": "barrel-adjuster",
+      "bounds_mm": [
+        [
+          98.0,
+          -65.0,
+          43.0
+        ],
+        [
+          110.0,
+          -35.0,
+          55.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 3247.91
+    },
+    {
+      "part": "rear-adjuster",
+      "bounds_mm": [
+        [
+          66.0,
+          -10.0,
+          4.0
+        ],
+        [
+          86.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 1879.58
+    },
+    {
+      "part": "brake-pivot",
+      "bounds_mm": [
+        [
+          71.0,
+          -4.33,
+          58.0
+        ],
+        [
+          81.0,
+          4.33,
+          60.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 129.9
+    },
+    {
+      "part": "adapter",
+      "bounds_mm": [
+        [
+          93.0,
+          -45.08,
+          -1.0
+        ],
+        [
+          121.0,
+          45.08,
+          26.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 17016.38
+    },
+    {
+      "part": "pm-bolts",
+      "bounds_mm": [
+        [
+          78.5,
+          -42.08,
+          13.0
+        ],
+        [
+          123.5,
+          42.08,
+          23.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 2897.68
+    },
+    {
+      "part": "pads",
+      "bounds_mm": [
+        [
+          68.0,
+          -11.0,
+          24.0
+        ],
+        [
+          80.0,
+          11.0,
+          32.0
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 1056.0
+    },
+    {
+      "part": "brake-wire",
+      "bounds_mm": [
+        [
+          88.32,
+          -36.16,
+          48.31
+        ],
+        [
+          104.68,
+          35.16,
+          57.69
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 111.11
+    },
+    {
+      "part": "cable-lead",
+      "bounds_mm": [
+        [
+          101.5,
+          -110.0,
+          46.5
+        ],
+        [
+          106.5,
+          -65.0,
+          51.5
+        ]
+      ],
+      "watertight": true,
+      "volume_mm3": 873.51
+    }
+  ]
+}

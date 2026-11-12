@@ -1,4 +1,14 @@
-# Motor-mounted brake · R05
+# R06 · Source-based brake fit review
+
+The CMD-23 placeholder is replaced by an image-based estimate. See `brake-estimate/index.html`, `brake-estimate/estimate-report.html` and `brake_estimate.py`.
+
+Nominal body + controls envelope: approximately55 ×110 ×60 mm (radial, tangential, axial). These are inferred dimensions, not manufacturer measurements. Planning ranges and provenance are in `brake-estimate/estimate-sources.json`.
+
+The estimate conflicts with the retained R05 housing and lid. The source-case geometry is unchanged. R05 printed-body downloads are withheld from the current pack. Older STL files may remain locally; do not treat them as fitted parts. The pack now contains reference brake meshes only. No operating brake or hub is supplied.
+
+Build order: `brake_estimate.py`, then `build.py`. Manifest collision volumes are findings, not passed checks. Some assumed brake controls collide with the old case; this is deliberately retained for review. See the report before changing dimensions.
+
+# Historical R05 housing notes
 
 **Gearbox-style fit prototype. No powered-use rating.**
 
