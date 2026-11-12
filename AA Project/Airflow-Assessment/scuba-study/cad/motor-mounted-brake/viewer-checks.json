@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-12",
+  "browser": "gstack browse / Chromium",
+  "render_path_tested": "Three.js SVGRenderer software fallback. WebGL unavailable in headless browser.",
+  "passed": [
+    "Page loads from file URL with no server",
+    "15 assembly groups rendered",
+    "Explode button",
+    "Assemble button",
+    "45 percent slider setting",
+    "Carrier selection and isolation",
+    "Hide fasteners",
+    "Show opaque shell",
+    "Reset",
+    "No horizontal overflow at 1440px and 390px"
+  ],
+  "limits": [
+    "WebGL path not visually verified in headless browser",
+    "Software painter can show depth-order artifacts on thin faces; WebGL uses depth buffer",
+    "No real hardware fit, loading or printing tested"
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-12",
+  "status": "STATIC FIT PROTOTYPE. Not fitted or released for powered operation.",
+  "architecture": "Motor mounting holes support the enclosure. Rotor hub directly on motor shaft. No base, second shaft or coupling.",
+  "parameters": {
+    "status": "EXAMPLE DIMENSIONS. Static fit prototype only. No motor or brake interfaces measured.",
+    "units": "mm",
+    "case_outer_radius": 124,
+    "case_inner_radius": 110,
+    "back_thickness": 6,
+    "chamber_depth": 40,
+    "lid_thickness": 5,
+    "closure_pitch_radius": 117,
+    "closure_clearance_diameter": 5.6,
+    "motor_mount_xy": [
+      [
+        -24,
+        -24
+      ],
+      [
+        -24,
+        24
+      ],
+      [
+        24,
+        -24
+      ],
+      [
+        24,
+        24
+      ]
+    ],
+    "motor_mount_clearance_diameter": 6.5,
+    "motor_nose_clearance_diameter": 40,
+    "motor_body_diameter": 80,
+    "motor_body_length": 90,
+    "shaft_diameter": 12,
+    "shaft_exposed_length": 32,
+    "rotor_diameter": 160,
+    "rotor_thickness": 1.8,
+    "rotor_plane": 22,
+    "hub_outer_diameter": 36,
+    "hub_length": 20,
+    "hub_back_z": 9,
+    "rotor_bolt_pitch_diameter": 44,
+    "rotor_bolt_clearance_diameter": 5.3,
+    "caliper_mount_xy": [
+      [
+        94,
+        -28
+      ],
+      [
+        94,
+        28
+      ]
+    ],
+    "caliper_mount_clearance_diameter": 6.5,
+    "measured_parameters": []
+  },
+  "checks": [
+    {
+      "part": "motor",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 456192.16,
+      "extents_mm": [
+        80.0,
+        80.0,
+        92.0
+      ],
+      "export": null
+    },
+    {
+      "part": "shaft",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 3613.3,
+      "extents_mm": [
+        12.0,
+        12.0,
+        32.0
+      ],
+      "export": null
+    },
+    {
+      "part": "rear",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 279769.78,
+      "extents_mm": [
+        248.0,
+        248.0,
+        6.0
+      ],
+      "export": "rear-FIT-ONLY.stl"
+    },
+    {
+      "part": "motor-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 2919.48,
+      "extents_mm": [
+        58.0,
+        58.0,
+        18.0
+      ],
+      "export": null
+    },
+    {
+      "part": "carrier",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 11180.57,
+      "extents_mm": [
+        20.0,
+        76.0,
+        12.0
+      ],
+      "export": "carrier-FIT-ONLY.stl"
+    },
+    {
+      "part": "hub",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 23873.75,
+      "extents_mm": [
+        58.0,
+        58.0,
+        20.0
+      ],
+      "export": null
+    },
+    {
+      "part": "rotor",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 26512.02,
+      "extents_mm": [
+        160.0,
+        160.0,
+        1.8
+      ],
+      "export": null
+    },
+    {
+      "part": "rotor-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 1440.48,
+      "extents_mm": [
+        52.6,
+        46.705,
+        7.5
+      ],
+      "export": null
+    },
+    {
+      "part": "caliper",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 20328.31,
+      "extents_mm": [
+        37.0,
+        74.0,
+        22.0
+      ],
+      "export": null
+    },
+    {
+      "part": "pads",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 1320.0,
+      "extents_mm": [
+        10.0,
+        22.0,
+        9.0
+      ],
+      "export": null
+    },
+    {
+      "part": "caliper-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 2186.5,
+      "extents_mm": [
+        10.0,
+        66.0,
+        30.0
+      ],
+      "export": null
+    },
+    {
+      "part": "shell",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 403559.22,
+      "extents_mm": [
+        248.0,
+        248.0,
+        40.0
+      ],
+      "export": "shell-FIT-ONLY.stl"
+    },
+    {
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 221153.69,
+      "extents_mm": [
+        248.0,
+        248.0,
+        5.0
+      ],
+      "export": "lid-FIT-ONLY.stl"
+    },
+    {
+      "part": "closure-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 8134.31,
+      "extents_mm": [
+        211.65,
+        241.794,
+        59.0
+      ],
+      "export": null
+    },
+    {
+      "part": "nuts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 873.51,
+      "extents_mm": [
+        212.05,
+        242.141,
+        4.0
+      ],
+      "export": null
+    }
+  ],
+  "clearance_checks": [
+    {
+      "parts": [
+        "rotor",
+        "rear"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor",
+        "carrier"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor",
+        "caliper"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor",
+        "shell"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rotor",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "hub",
+        "rear"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "hub",
+        "caliper"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "caliper",
+        "shell"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "caliper",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "carrier",
+        "shell"
+      ],
+      "overlap_mm3": 0
+    }
+  ],
+  "scope": "Mesh closure and listed interference checks only. Not structural, thermal, balance, bearing-load, rotor-speed or containment validation.",
+  "open_items": [
+    "Motor mounting face, hole coordinates, thread and safe engagement",
+    "Shaft diameter, exposed length, key/flat and axial retention",
+    "Clarks caliper dimensions and mounting orientation",
+    "Rotor thickness and bolt pattern",
+    "Motor overhung-load and mounting-load ratings",
+    "Brake speed/thermal rating; metal load path and guard for powered tests"
+  ],
+  "excluded": "No pressure components; no functional rotor or hub STL. Use regulated motor supply within confirmed rating."
+}
