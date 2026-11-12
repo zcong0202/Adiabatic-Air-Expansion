@@ -4,7 +4,7 @@ import json
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 R=Path(__file__).resolve().parent
-parts=json.loads((R/'assembly.json').read_text())
+parts=[d for d in json.loads((R/'assembly.json').read_text()) if d['kind']!='clearance']
 W,H=1500,1100
 forward=np.array([.85,.42,1.]);forward/=np.linalg.norm(forward)
 right=np.cross([0,1,0],forward);right/=np.linalg.norm(right)
@@ -42,8 +42,8 @@ def render(explosion,path):
             brightness=.43+.57*max(0,float(normal@light))
             pixels[y0:y1+1,x0:x1+1][mask]=np.clip(color*brightness,0,255).astype(np.uint8)
     im=Image.fromarray(pixels);draw=ImageDraw.Draw(im)
-    draw.text((48,30),'R05  /  INTEGRATED BRAKE HOUSING',font=font,fill='#263139')
-    draw.text((48,H-70),'Exploded arrangement' if explosion else '238 × 200 × 58 mm  ·  two printed pieces',font=font,fill='#263139')
+    draw.text((48,30),'R07  /  RECESSED BRAKE HOUSING',font=font,fill='#263139')
+    draw.text((48,H-70),'Exploded arrangement' if explosion else '279 × 210 × 103 mm  ·  three flat-print pieces',font=font,fill='#263139')
     draw.text((48,H-35),'Exact CAD mesh render. Estimate-based fit prototype; no powered-use rating.',font=small,fill='#627077')
     im.save(R/path)
 render(0,'assembled-preview.png')

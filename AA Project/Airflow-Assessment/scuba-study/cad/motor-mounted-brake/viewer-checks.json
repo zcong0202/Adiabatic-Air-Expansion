@@ -1,14 +1,19 @@
 {
-  "revision": "R06-estimate",
+  "revision": "R07",
   "browser": "gstack Chromium, SVG fallback",
   "checks": {
-    "brake_only_load": true,
-    "reference_parts": 10,
-    "main_assembly_parts": 22,
-    "select_and_reference_download": true,
-    "isolate_caliper": true,
-    "explode_and_reset": true,
+    "offline_file_load": true,
+    "parts": 28,
+    "initial_closed": true,
+    "open_cover": true,
+    "assumed_arm_envelope_toggle": true,
+    "rear_view": true,
+    "isolate_motor_plate": true,
+    "motor_plate_STL_link": true,
+    "explode": true,
+    "reset": true,
     "no_horizontal_overflow": true
   },
-  "limits": "Native WebGL not tested. SVG depth ordering can show artifacts. CPU preview uses depth-buffer rendering of the same triangles. No physical fit validation."
+  "preview": "Current assembled/exploded PNGs rendered from the exact CAD triangles with a CPU depth buffer and visually inspected.",
+  "limits": "Native WebGL not tested. SVG fallback has painter-order artifacts; use CAD render for a clean static view. No physical fit verification."
 }

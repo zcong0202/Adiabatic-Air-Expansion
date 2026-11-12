@@ -1,8 +1,8 @@
 {
-  "status": "Fit review: estimated CMD-23 conflicts with retained R05 housing; printable assembly withheld.",
+  "status": "Estimate-based three-part housing. Static fit prototype; not qualified for powered use.",
   "units": "mm",
   "back_thickness": 10,
-  "chamber_depth": 38,
+  "chamber_depth": 65,
   "lid_thickness": 10,
   "closure_clearance_diameter": 6.6,
   "motor_mount_xy": [
@@ -37,7 +37,7 @@
     "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
     "manufacturer_overall_length_note": "Published nominal whole-unit length122 retained as reference only; user front body/boss/shaft stack totals88, rear appendages unmodeled."
   },
-  "revision": "R06-estimate",
+  "revision": "R07",
   "motor_boss_diameter": 35,
   "motor_boss_projection": 15,
   "motor_hole_opening_diameter": 7,
@@ -62,40 +62,40 @@
     "plate_clearance": "7.5 mm is a provisional printed clearance, not a measured motor hole or thread."
   },
   "motor_body_thickness_datum": "Main round body only; excludes forward boss and shaft. Rear accessories not modeled.",
-  "case_width": 238,
-  "case_height": 200,
+  "case_width": 279,
+  "case_height": 210,
   "shell_wall": 8,
   "closure_xy": [
     [
-      64.34672,
-      64.34672
+      67.88225,
+      67.88225
     ],
     [
       0.0,
-      91.0
+      96.0
     ],
     [
-      -64.34672,
-      64.34672
+      -67.88225,
+      67.88225
     ],
     [
-      -91.0,
+      -96.0,
       0.0
     ],
     [
-      -64.34672,
-      -64.34672
+      -67.88225,
+      -67.88225
     ],
     [
       -0.0,
-      -91.0
+      -96.0
     ],
     [
-      64.34672,
-      -64.34672
+      67.88225,
+      -67.88225
     ],
     [
-      129,
+      165,
       0
     ]
   ],
@@ -111,11 +111,41 @@
   ],
   "is_slot_travel": 8,
   "is_clearance_diameter": 6.6,
-  "adapter_mount_plane": 26,
+  "adapter_mount_plane": -1,
   "reference_torque_Nm": 3,
   "screening_torque_Nm": 9,
-  "case_main_radius": 100,
-  "case_pod_radius": 50,
-  "case_pod_offset": 88,
-  "housing_geometry_revision": "R05"
+  "case_main_radius": 105,
+  "case_pod_radius": 84,
+  "case_pod_offset": 90,
+  "housing_geometry_revision": "R07",
+  "rear_case_z": -18,
+  "motor_plate_radius": 76,
+  "motor_plate_flat_x": 60,
+  "motor_recess_radius": 62,
+  "local_clearance_mm": 3,
+  "cable_exit_axis": "negative y",
+  "cable_exit_x": 104,
+  "cable_exit_z": 49,
+  "plate_bolt_xy": [
+    [
+      33.0,
+      57.15768
+    ],
+    [
+      -33.0,
+      57.15768
+    ],
+    [
+      -66.0,
+      0.0
+    ],
+    [
+      -33.0,
+      -57.15768
+    ],
+    [
+      33.0,
+      -57.15768
+    ]
+  ]
 }

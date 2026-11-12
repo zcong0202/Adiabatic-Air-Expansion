@@ -40,5 +40,5 @@
     "Exact included bracket casting offsets",
     "Bicycle brake speed/thermal rating for motor operation"
   ],
-  "latest_followup": "R06 adds image-based body/controls and stepped adapter. Inferred shape conflicts with R05 housing; see brake-estimate/estimate-report.html. Earlier R03 statements in this record are historical."
+  "latest_followup": "R07 housing follows the R06 estimated adapter pose and clears declared nominal geometry/allowances. Actual Clarks dimensions and powered duty remain unverified. See redesign-report.html."
 }

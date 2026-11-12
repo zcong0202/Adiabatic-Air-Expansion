@@ -2,7 +2,7 @@
   "load_screen": "load-screen.json",
   "brake_interface_audit": "brake-interface-audit.json",
   "carrier_export_withheld": true,
-  "revision": "R06-estimate",
+  "revision": "R07",
   "mount_derivation": {
     "centre_spacing": "90 - 7 = 83 mm",
     "upper_y": "65 - 35/2 - 7/2 = +44 mm",
@@ -12,13 +12,13 @@
   },
   "dimension_audit": "dimension-audit.json",
   "date": "2026-11-12",
-  "status": "FIT REVIEW: source-based brake estimate conflicts with R05 housing. Printable assembly release withheld.",
-  "architecture": "Two printed pieces: integrated brake cup and matching cover. Internal IS adapter support is part of the cup. Motor-mounted; no separate carrier, base or coupling.",
+  "status": "STATIC FIT PROTOTYPE. Checked against nominal R06 brake estimate and declared allowances; real fit and powered use unverified.",
+  "architecture": "Three flat-print parts: recessed cup, D-shaped motor adapter plate and cover. Motor face/shaft/rotor datums unchanged; no external base or second shaft.",
   "parameters": {
-    "status": "Fit review: estimated CMD-23 conflicts with retained R05 housing; printable assembly withheld.",
+    "status": "Estimate-based three-part housing. Static fit prototype; not qualified for powered use.",
     "units": "mm",
     "back_thickness": 10,
-    "chamber_depth": 38,
+    "chamber_depth": 65,
     "lid_thickness": 10,
     "closure_clearance_diameter": 6.6,
     "motor_mount_xy": [
@@ -53,7 +53,7 @@
       "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
       "manufacturer_overall_length_note": "Published nominal whole-unit length122 retained as reference only; user front body/boss/shaft stack totals88, rear appendages unmodeled."
     },
-    "revision": "R06-estimate",
+    "revision": "R07",
     "motor_boss_diameter": 35,
     "motor_boss_projection": 15,
     "motor_hole_opening_diameter": 7,
@@ -78,40 +78,40 @@
       "plate_clearance": "7.5 mm is a provisional printed clearance, not a measured motor hole or thread."
     },
     "motor_body_thickness_datum": "Main round body only; excludes forward boss and shaft. Rear accessories not modeled.",
-    "case_width": 238,
-    "case_height": 200,
+    "case_width": 279,
+    "case_height": 210,
     "shell_wall": 8,
     "closure_xy": [
       [
-        64.34672,
-        64.34672
+        67.88225,
+        67.88225
       ],
       [
         0.0,
-        91.0
+        96.0
       ],
       [
-        -64.34672,
-        64.34672
+        -67.88225,
+        67.88225
       ],
       [
-        -91.0,
+        -96.0,
         0.0
       ],
       [
-        -64.34672,
-        -64.34672
+        -67.88225,
+        -67.88225
       ],
       [
         -0.0,
-        -91.0
+        -96.0
       ],
       [
-        64.34672,
-        -64.34672
+        67.88225,
+        -67.88225
       ],
       [
-        129,
+        165,
         0
       ]
     ],
@@ -127,13 +127,43 @@
     ],
     "is_slot_travel": 8,
     "is_clearance_diameter": 6.6,
-    "adapter_mount_plane": 26,
+    "adapter_mount_plane": -1,
     "reference_torque_Nm": 3,
     "screening_torque_Nm": 9,
-    "case_main_radius": 100,
-    "case_pod_radius": 50,
-    "case_pod_offset": 88,
-    "housing_geometry_revision": "R05"
+    "case_main_radius": 105,
+    "case_pod_radius": 84,
+    "case_pod_offset": 90,
+    "housing_geometry_revision": "R07",
+    "rear_case_z": -18,
+    "motor_plate_radius": 76,
+    "motor_plate_flat_x": 60,
+    "motor_recess_radius": 62,
+    "local_clearance_mm": 3,
+    "cable_exit_axis": "negative y",
+    "cable_exit_x": 104,
+    "cable_exit_z": 49,
+    "plate_bolt_xy": [
+      [
+        33.0,
+        57.15768
+      ],
+      [
+        -33.0,
+        57.15768
+      ],
+      [
+        -66.0,
+        0.0
+      ],
+      [
+        -33.0,
+        -57.15768
+      ],
+      [
+        33.0,
+        -57.15768
+      ]
+    ]
   },
   "checks": [
     {
@@ -168,11 +198,81 @@
       "part": "housing",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 583193.85,
+      "volume_mm3": 891884.09,
       "extents_mm": [
-        238.0,
-        200.0,
-        48.0
+        279.0,
+        210.0,
+        93.0
+      ],
+      "export": "housing-FIT-ONLY.stl",
+      "connected_print_solid": true,
+      "fits_H2S_bed": true
+    },
+    {
+      "part": "motor-plate",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 155135.34,
+      "extents_mm": [
+        136.0,
+        152.0,
+        10.0
+      ],
+      "export": "motor-plate-FIT-ONLY.stl",
+      "connected_print_solid": true,
+      "fits_H2S_bed": true
+    },
+    {
+      "part": "plate-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 3215.59,
+      "extents_mm": [
+        108.0,
+        122.11,
+        28.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "plate-nuts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 727.92,
+      "extents_mm": [
+        108.4,
+        122.456,
+        4.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "plate-sleeves",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 1023.74,
+      "extents_mm": [
+        107.0,
+        122.315,
+        8.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
+    },
+    {
+      "part": "is-bolts",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 1938.04,
+      "extents_mm": [
+        10.0,
+        61.0,
+        24.0
       ],
       "export": null,
       "connected_print_solid": null,
@@ -182,11 +282,11 @@
       "part": "motor-bolts",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 2292.1,
+      "volume_mm3": 1900.77,
       "extents_mm": [
         12.0,
         95.0,
-        29.0
+        22.0
       ],
       "export": null,
       "connected_print_solid": null,
@@ -210,11 +310,11 @@
       "part": "sleeves",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 13440.95,
+      "volume_mm3": 29357.86,
       "extents_mm": [
-        230.0,
-        192.0,
-        38.0
+        271.0,
+        202.0,
+        83.0
       ],
       "export": null,
       "connected_print_solid": null,
@@ -224,11 +324,11 @@
       "part": "washers",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 1440.02,
+      "volume_mm3": 1708.45,
       "extents_mm": [
-        232.0,
-        194.0,
-        37.5
+        273.0,
+        204.0,
+        74.5
       ],
       "export": null,
       "connected_print_solid": null,
@@ -308,25 +408,25 @@
       "part": "lid",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 324871.46,
+      "volume_mm3": 432372.72,
       "extents_mm": [
-        238.0,
-        200.0,
+        279.0,
+        210.0,
         10.0
       ],
-      "export": null,
-      "connected_print_solid": null,
-      "fits_H2S_bed": null
+      "export": "lid-FIT-ONLY.stl",
+      "connected_print_solid": true,
+      "fits_H2S_bed": true
     },
     {
       "part": "closure-bolts",
       "watertight": true,
       "positive_volume": true,
-      "volume_mm3": 14254.97,
+      "volume_mm3": 24317.85,
       "extents_mm": [
-        231.0,
-        191.526,
-        56.5
+        272.0,
+        201.526,
+        101.5
       ],
       "export": null,
       "connected_print_solid": null,
@@ -338,8 +438,8 @@
       "positive_volume": true,
       "volume_mm3": 2182.58,
       "extents_mm": [
-        231.4,
-        191.873,
+        272.4,
+        201.873,
         5.0
       ],
       "export": null,
@@ -443,6 +543,20 @@
       "export": null,
       "connected_print_solid": null,
       "fits_H2S_bed": null
+    },
+    {
+      "part": "arm-envelope",
+      "watertight": true,
+      "positive_volume": true,
+      "volume_mm3": 31793.42,
+      "extents_mm": [
+        37.242,
+        59.33,
+        21.0
+      ],
+      "export": null,
+      "connected_print_solid": null,
+      "fits_H2S_bed": null
     }
   ],
   "clearance_checks": [
@@ -456,7 +570,7 @@
     {
       "parts": [
         "rotor",
-        "caliper"
+        "motor-plate"
       ],
       "overlap_mm3": 0
     },
@@ -477,7 +591,56 @@
     {
       "parts": [
         "hub",
-        "caliper"
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "hub",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "motor",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "motor",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "shaft",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "shaft",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "shaft",
+        "lid"
       ],
       "overlap_mm3": 0
     },
@@ -486,21 +649,231 @@
         "caliper",
         "housing"
       ],
-      "overlap_mm3": 8011.075081
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "caliper",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
     },
     {
       "parts": [
         "caliper",
         "lid"
       ],
-      "overlap_mm3": 464.405747
+      "overlap_mm3": 0
     },
     {
       "parts": [
-        "motor",
+        "adapter",
         "housing"
       ],
       "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "adapter",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "adapter",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pads",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pads",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pads",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-arm",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "barrel-adjuster",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "rear-adjuster",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-pivot",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-pivot",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-pivot",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pm-bolts",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pm-bolts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "pm-bolts",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-wire",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-wire",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "brake-wire",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "cable-lead",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "housing",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "housing",
+        "lid"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "motor-plate",
+        "lid"
+      ],
+      "overlap_mm3": 0
     },
     {
       "parts": [
@@ -518,38 +891,24 @@
     },
     {
       "parts": [
-        "shaft",
-        "lid"
+        "hub",
+        "caliper"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "adapter",
-        "rotor"
+        "rotor",
+        "caliper"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "adapter",
-        "housing"
-      ],
-      "overlap_mm3": 12943.926753
-    },
-    {
-      "parts": [
-        "sleeves",
-        "rotor"
+        "rotor",
+        "sleeves"
       ],
       "overlap_mm3": 0
-    },
-    {
-      "parts": [
-        "housing",
-        "lid"
-      ],
-      "overlap_mm3": 0.0
     },
     {
       "parts": [
@@ -562,6 +921,13 @@
       "parts": [
         "closure-bolts",
         "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "closure-bolts",
+        "motor-plate"
       ],
       "overlap_mm3": 0
     },
@@ -581,6 +947,34 @@
     },
     {
       "parts": [
+        "nuts",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "nuts",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "washers",
+        "housing"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "washers",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
         "washers",
         "lid"
       ],
@@ -588,90 +982,201 @@
     },
     {
       "parts": [
-        "brake-arm",
+        "plate-bolts",
         "housing"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "brake-arm",
-        "lid"
-      ],
-      "overlap_mm3": 5478.42197
-    },
-    {
-      "parts": [
-        "brake-arm",
-        "rotor"
+        "plate-bolts",
+        "motor-plate"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "barrel-adjuster",
+        "plate-bolts",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "plate-nuts",
         "housing"
       ],
-      "overlap_mm3": 404.307343
+      "overlap_mm3": 0.0
     },
     {
       "parts": [
-        "barrel-adjuster",
-        "lid"
-      ],
-      "overlap_mm3": 940.838323
-    },
-    {
-      "parts": [
-        "barrel-adjuster",
-        "rotor"
+        "plate-nuts",
+        "motor-plate"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "rear-adjuster",
+        "plate-nuts",
+        "lid"
+      ],
+      "overlap_mm3": 0
+    },
+    {
+      "parts": [
+        "plate-sleeves",
         "housing"
       ],
-      "overlap_mm3": 1879.577144
+      "overlap_mm3": 0.0
     },
     {
       "parts": [
-        "rear-adjuster",
+        "plate-sleeves",
+        "motor-plate"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "plate-sleeves",
         "lid"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "rear-adjuster",
-        "rotor"
-      ],
-      "overlap_mm3": 0
-    },
-    {
-      "parts": [
-        "cable-lead",
+        "is-bolts",
         "housing"
       ],
-      "overlap_mm3": 0
+      "overlap_mm3": 0.0
     },
     {
       "parts": [
-        "cable-lead",
-        "lid"
+        "is-bolts",
+        "motor-plate"
       ],
       "overlap_mm3": 0
     },
     {
       "parts": [
-        "cable-lead",
-        "rotor"
+        "is-bolts",
+        "lid"
       ],
       "overlap_mm3": 0
     }
   ],
-  "fit_pass": false,
+  "allowance_checks": [
+    {
+      "envelope": "arm-sweep",
+      "margin_mm": 3,
+      "target": "housing",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "arm-sweep",
+      "margin_mm": 3,
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "arm-sweep",
+      "margin_mm": 3,
+      "target": "lid",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "caliper",
+      "margin_mm": 3,
+      "target": "housing",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "caliper",
+      "margin_mm": 3,
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "caliper",
+      "margin_mm": 3,
+      "target": "lid",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "barrel-adjuster",
+      "margin_mm": 3,
+      "target": "housing",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "barrel-adjuster",
+      "margin_mm": 3,
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "barrel-adjuster",
+      "margin_mm": 3,
+      "target": "lid",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-adjuster",
+      "margin_mm": 3,
+      "target": "housing",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-adjuster",
+      "margin_mm": 3,
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-adjuster",
+      "margin_mm": 3,
+      "target": "lid",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "brake-pivot",
+      "margin_mm": 3,
+      "target": "housing",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "brake-pivot",
+      "margin_mm": 3,
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "brake-pivot",
+      "margin_mm": 3,
+      "target": "lid",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-tool-access",
+      "margin_mm": 0,
+      "target": "housing",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-tool-access",
+      "margin_mm": 0,
+      "target": "motor-plate",
+      "overlap_mm3": 0
+    },
+    {
+      "envelope": "rear-tool-access",
+      "margin_mm": 0,
+      "target": "lid",
+      "overlap_mm3": 0
+    }
+  ],
+  "nominal_geometry_pass": true,
+  "fit_pass": null,
   "brake_estimate_report": "brake-estimate/estimate-report.html",
   "scope": "Mesh closure and listed interference checks only. Not structural, thermal, balance, bearing-load, rotor-speed or containment validation.",
   "open_items": [

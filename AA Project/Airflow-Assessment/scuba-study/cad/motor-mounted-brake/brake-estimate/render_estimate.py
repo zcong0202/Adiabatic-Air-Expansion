@@ -4,7 +4,7 @@ import json
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 R=Path(__file__).resolve().parent
-parts=json.loads((R/'assembly.json').read_text())
+parts=[d for d in json.loads((R/'assembly.json').read_text()) if d['kind']!='clearance']
 W,H=1500,1100
 forward=np.array([.85,.42,1.]);forward/=np.linalg.norm(forward)
 right=np.cross([0,1,0],forward);right/=np.linalg.norm(right)

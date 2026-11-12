@@ -1,64 +1,58 @@
-# R06 · Source-based brake fit review
+# Motor-mounted brake housing · R07
 
-The CMD-23 placeholder is replaced by an image-based estimate. See `brake-estimate/index.html`, `brake-estimate/estimate-report.html` and `brake_estimate.py`.
+**Estimate-based static fit prototype. No powered-use qualification.**
 
-Nominal body + controls envelope: approximately55 ×110 ×60 mm (radial, tangential, axial). These are inferred dimensions, not manufacturer measurements. Planning ranges and provenance are in `brake-estimate/estimate-sources.json`.
+R07 replaces the R05 case that conflicted with the R06 image-based CMD-23 model. The brake estimate remains unchanged. Open `index.html`; use Open cover, Rear, Exploded, Assumed arm envelope and part selection.
 
-The estimate conflicts with the retained R05 housing and lid. The source-case geometry is unchanged. R05 printed-body downloads are withheld from the current pack. Older STL files may remain locally; do not treat them as fitted parts. The pack now contains reference brake meshes only. No operating brake or hub is supplied.
+## Arrangement
 
-Build order: `brake_estimate.py`, then `build.py`. Manifest collision volumes are findings, not passed checks. Some assumed brake controls collide with the old case; this is deliberately retained for review. See the report before changing dimensions.
+Three flat-print pieces: recessed case, D-shaped motor adapter plate and smooth cover. The case supports the stock brake adapter on two short internal lands. Five M5 reference bolts attach the case to the motor plate. Two motor mounting holes attach the plate to the motor. No external base, second shaft or shaft extension is added.
 
-# Historical R05 housing notes
+The motor face remains z0, rotor plane z28, shaft z15–40 and hub envelope z18–38. To make room behind the rotor, the case back moves to z−18; its floor inner face is z−8. The cover inner face is z75 and outer front z85. The case envelope is279 ×210 ×103 mm, excluding motor, cable and fastener protrusions.
 
-**Gearbox-style fit prototype. No powered-use rating.**
+The central rear opening isØ124 around the estimatedØ108 motor. This leaves8 mm radial space in that section; motor inlet/exhaust fittings remain unmodeled. Confirm their clearance. The separate plate lets all three printed parts sit flat on the H2S bed. It also keeps the motor mounting face at its previous datum.
 
-Open `index.html`. The viewer starts with a closed case. Use **Open cover**, **Exploded**, orbit and part selection to inspect the arrangement.
+## Printable parts
 
-## Form and integration
+- `housing-FIT-ONLY.stl`:279 ×210 ×93 mm cup. Flat outer rear face on bed, open face upward.
+- `motor-plate-FIT-ONLY.stl`: D-shaped plate, clipped at x60;10 mm thick. Flat underside on bed.
+- `lid-FIT-ONLY.stl`:279 ×210 ×10 mm. Flat inner face on bed.
 
-Two printed parts replace the R04 four-part cassette:
+Each STL has minimum z0 and one connected closed solid. The viewer uses assembly coordinates. All fit the H2S340 ×320 ×340 mm build volume.
 
-- `housing-FIT-ONLY.stl`: one cup with rounded circular body, smooth caliper bulge, internal adapter lands, internal gussets, rear motor plate and recessed rear nut pockets.
-- `lid-FIT-ONLY.stl`: matching chamfered cover with recessed screw heads, a shallow circular face detail and five small caliper-side vents.
+For a non-powered fit print:0.4 mm nozzle,0.20 mm layers,8 wall loops,8 top/bottom layers,40% general infill and solid modifiers around mounting lands, posts and holes. Inspect support needs at the cable tunnel and nut-pocket roofs in Bambu Studio. Do not fill the sleeve bores with supports that cannot be removed. Use the actual filament profile. No G-code, print test or material strength validation is supplied.
 
-The housing follows the rotor and caliper envelope, like a gearbox cover. There is no separate printed caliper saddle or external bracket. The real brake stays inside. Eight metal through-bolts and metal compression sleeves close the assembly. The commercial caliper and correct Clarks IS adapter attach to lands inside the cup. These lands carry reaction into the rear plate and two motor mounting holes.
+PLA remains for static fit checks. Closed geometry, thicker walls and metal sleeves do not establish hot strength or fragment containment.
 
-Envelope238 ×200 ×58 mm, versus R04's264 ×244 ×74 mm. Rear plate10 mm, wall8 mm, lid10 mm with recessed head seats. These are geometry changes, not proven strength increases. Brake and motor interfaces remain estimate-based.
+## Clearance changes
 
-## Printing
+- Wider smooth caliper bulge;8 mm nominal wall.
+- Rear brake pocket clears the pad adjuster and the assumed stepped IS adapter.
+- Two IS51 lands at z−1 follow the estimated adapter rear face. Slots allow±4 mm radial travel.
+- Cable entry follows the estimated negative-y cable direction. It does not specify a safe cable bend radius.
+- Ø14 rear service opening gives straight access to the rear pad adjuster, without removing the case. Tool shape and actual screw orientation still need checking.
+- Cover removes for caliper/rotor service. No separate printed caliper saddle.
 
-Both STLs are single connected, watertight solids in millimetres, with minimum z=0. Each fits the Bambu H2S340 ×320 ×340 mm bed. Print the cup with the motor mounting face on the bed, opening upward. Print the lid flat underside down. Inspect supports/bridges at the radial cable opening and cover slots in Bambu Studio.
+`manifest.json` records72 selected interference pairs and18 allowance/access checks. All must pass for the build to finish. The0–30° arm sweep is an assumption. Conservative convex envelopes add3 mm in each axis to the body, controls and sampled sweep. This is a local layout allowance, not a measured tolerance or a guarantee that the full uncertainty ranges of the image model fit.
 
-For a static PLA fit print:0.4 mm nozzle,0.20 mm layers,8 wall loops,8 top/bottom layers,40% general infill and solid modifiers around motor holes, adapter lands and bolt bosses. Use the actual filament profile. No G-code or physical print validation is supplied.
+## Reference hardware
 
-Older R04 `rear`, `carrier` and `shell` STL files may remain locally for history. They are excluded from the R05 pack and viewer. Do not combine them with the R05 cover. Current pack contains **two STLs only**.
+Eight M6 cover bolts/nuts, eight83 mm metal compression sleeves (OD10/ID6.6); five M5 motor-plate bolts/nuts, five8 mm sleeves (OD8/ID5.6); two M6×18 IS screw references inserted from the rear into the metal adapter. Motor mounting screw threads and safe engagement remain unknown. Viewer screw heads, washers and lengths are illustrative; match the actual selected hardware before a final print.
 
-## Fit assumptions
+The disc, caliper, adapter and shaft hub stay metal. The existing hub is **still an envelope**: shaft clamping/keying/retention and disc-bolt thread engagement are not resolved. No functional printed hub or rotor is provided. The housing redesign does not complete the shaft coupling.
 
-User estimates remain: motor bodyØ108 ×48 mm, bossØ35 ×15, shaftØ12 ×25 exposed. Hole openings≈Ø7, centre pitch83, centres(0,+44) and(0,−39). Motor plate clearanceØ7.5 does not establish thread size.
+## Qualification still required
 
-Motor front face z0; shaft z15–40; hub envelope z18–38; rotor centre plane z28. Stock adapter IS51 slots allow±4 mm radial adjustment. Spacer4 mm, adapter shape and rotor-plane alignment are provisional. Exact PM hardware, washer stack, motor ports and cable sweep are not fully modeled. Confirm actual cable exit before final printing.
+Actual brake/adapter dimensions and cable travel; motor threads, ports and bearing loads; retained metal hub, balance and disc runout; brake speed/heat duty; hot printed strength, creep and preload; suitable metal load path/guard for powered use. At400 W for10 s, the brake absorbs4 kJ. Vent slots are not a validated cooling system. Regulated, protected motor supply remains required; this enclosure is not a pressure vessel.
 
-RotorØ160 is the selected size. Thickness1.8 and bolt circle44 mm are unverified. The hub envelope does not specify keying, clamping or axial retention. Rotor, retained hub, caliper, stock adapter and fasteners remain metal. No functional printed rotating parts are supplied.
+## Rebuild and evidence
 
-## Evidence and limits
+1. `brake_estimate.py` regenerates reference brake meshes.
+2. `build.py` creates case geometry, performs checks and writes the main viewer.
+3. `build_brake_viewer.py` refreshes the brake-only viewer.
+4. `render_preview.py` renders current assembly previews from the exact triangles.
+5. Re-run `build.py` after documentation/preview updates to refresh the ZIP.
 
-`manifest.json`: closed meshes, connected print solids, H2S envelope and selected non-interference pairs. This is geometry screening only, not full tolerance analysis, FEA or a hardware rating.
+Python requires numpy, trimesh, manifold3d and Pillow for previews. Three.js/esbuild versions remain in the project. Rebundle viewer.js after changes. Primary dimensions are in parameters.json; topology is in build.py.
 
-`load-screen.html` and `load-screen.json`: conditional torque and heat budgets.3 N·m at assumed70 mm pad radius gives42.9 N tangential force.9 N·m is a sensitivity input, not a certified safety factor.400 W for10 seconds gives4 kJ brake heat. A smoother enclosed case does not establish adequate cooling.
-
-PLA remains for non-powered fit checks. Hot material strength, creep, preload, shaft/bearing loads, brake speed/heat duty, balance and fragment containment remain unqualified. A powered version needs a suitable material, verified hardware, metal backup load path and a suitable rotor guard. The case is not a pressure vessel. Keep the scuba supply regulated within the confirmed motor rating.
-
-## Rebuild
-
-Run `build.py` with numpy, trimesh and manifold3d. Main dimensions are in `parameters.json`; the R05 outline and integrated land topology are in the script. Run `calculate_loads.py` to refresh numeric load records. The HTML report is a fixed revision presentation.
-
-Viewer uses Three.js0.170.0 and esbuild0.24.0. Rebundle `viewer.js` after edits, then rebuild to update the ZIP. The fallback software view may show triangle ordering artifacts; the saved CPU-rendered preview uses a depth buffer. Source mesh geometry is the same.
-
-## Sources
-
-- `user-estimates.json`, `mount-pattern.svg`: motor dimension derivation.
-- `brake-interface-audit.json`, `evidence/`: Clarks and standard-interface evidence; older revision references are historical.
-- [Clarks kit](https://www.amazon.ae/dp/B08RPBLC55).
-- [H2S specifications](https://us.store.bambulab.com/products/h2s).
-- [PLA material limits](https://help.prusa3d.com/article/pla_2062).
+`redesign-report.html` gives R07 changes and limits. `brake-estimate/estimate-report.html` retains the R06 image-source record. Its R05 collision findings are historical. `load-screen.html` retains conditional torque/heat budgets, not structural approval. Old rear/carrier/shell STL files are excluded from the current pack; do not combine them with R07.
