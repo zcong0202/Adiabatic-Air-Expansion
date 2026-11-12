@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-12",
+  "revision": "R04",
+  "sources": [
+    {
+      "url": "https://us.store.bambulab.com/products/h2s",
+      "observed": "340\u00d7320\u00d7340 mm build volume. Product page supports PLA/PETG through PC/PPA. Individual nozzle and filament profile compatibility still needs selection."
+    },
+    {
+      "url": "https://help.prusa3d.com/article/pla_2062",
+      "observed": "PLA described as brittle and unsuitable for high mechanical/heat resistance; softens/deforms above approximately60\u00b0C."
+    }
+  ],
+  "motor_load_source": "Published3 N\u00b7m maximum used as provisional reference only; not an established stall/transient limit. Existing manufacturer records remain in project."
+}

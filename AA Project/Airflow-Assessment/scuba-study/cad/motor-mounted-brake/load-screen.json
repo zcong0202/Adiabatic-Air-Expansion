@@ -1,0 +1,69 @@
+{
+  "revision": "R04",
+  "status": "Conditional statics and heat budget only. No FEA or load rating.",
+  "assumptions": {
+    "reference_torque_Nm": 3,
+    "sensitivity_torque_Nm": 9,
+    "effective_pad_radius_m": 0.07,
+    "motor_hole_pitch_m": 0.083,
+    "IS_hole_pitch_m": 0.051,
+    "duration_s": 10,
+    "example_power_W": 400
+  },
+  "cases": [
+    {
+      "torque_Nm": 3,
+      "pad_tangential_force_N": 42.86,
+      "ideal_motor_hole_couple_force_N": 36.14,
+      "ideal_IS_hole_couple_force_N": 58.82,
+      "scope": "Ideal force/couple only. Net force, eccentric bending, preload and dynamics excluded."
+    },
+    {
+      "torque_Nm": 9,
+      "pad_tangential_force_N": 128.57,
+      "ideal_motor_hole_couple_force_N": 108.43,
+      "ideal_IS_hole_couple_force_N": 176.47,
+      "scope": "Ideal force/couple only. Net force, eccentric bending, preload and dynamics excluded."
+    }
+  ],
+  "thermal": {
+    "energy_J": 4000,
+    "formula": "E = P * t",
+    "rotor_temperature_rise": "Unknown: rotor mass, heat capacity, split into pads/caliper and convection not measured."
+  },
+  "plate_comparison": {
+    "formula": "Equal material, width and span: bending stiffness ratio = (10/6)^3",
+    "ratio": 4.63,
+    "scope": "Plate section only. Different whole assembly, joints, printing and temperature not validated."
+  },
+  "printer": {
+    "model": "Bambu H2S",
+    "nozzle_mm": 0.4,
+    "build_volume_mm": [
+      340,
+      320,
+      340
+    ],
+    "source": "https://us.store.bambulab.com/products/h2s"
+  },
+  "material": {
+    "PLA": "Static fit only for this brake concept. Brittle; heat and creep unresolved.",
+    "candidate_upgrade": "H2S supports PC; a suitable engineering filament is a test candidate, not a load rating. Check exact filament, drying, nozzle and printing profile.",
+    "source": "https://help.prusa3d.com/article/pla_2062"
+  },
+  "open_items": [
+    "Actual Clarks adapter geometry and rotor-plane alignment",
+    "Motor hole threads/engagement and housing load limit",
+    "Shaft hub torque transmission, axial retention, overhung load and runout",
+    "Motor torque-speed-flow map, stall and transient torque",
+    "Brake speed and thermal duty rating",
+    "Printed material, orientation, creep, clamp relaxation and hot strength",
+    "Metal backup load path and suitable rotor guard for powered operation"
+  ],
+  "power_consistency": {
+    "rated_max_power_reference_W": 671.1300000000001,
+    "power_at_3Nm_2000rpm_W": 628.3,
+    "power_at_3Nm_3000rpm_W": 942.5,
+    "note": "3 Nm and 3000 rpm must not be combined as a verified rated point. 9 Nm is a sensitivity case, not a measured peak or certified safety factor."
+  }
+}

@@ -1,31 +1,19 @@
 {
+  "revision": "R04",
   "date": "2026-11-12",
-  "browser": "gstack browse / Chromium",
-  "render_path_tested": "Three.js SVGRenderer software fallback. WebGL unavailable in headless browser.",
-  "passed": [
-    "Page loads from file URL with no server",
-    "15 assembly groups rendered",
-    "Explode button",
-    "Assemble button",
-    "45 percent slider setting",
-    "Carrier selection and isolation",
-    "Hide fasteners",
-    "Show opaque shell",
-    "Reset",
-    "No horizontal overflow at 1440px and 390px",
-    "R02 corrected envelope and source metadata present",
-    "Clarks purchase link present",
-    "R02 assembly and explode render",
-    "R03 two-hole geometry and part label present",
-    "R03 exploded view rendered",
-    "R03 outer tangent and shaft/hub bounds assertions passed",
-    "R03 final body108x48 and shaft/boss dimensions read from rendered page",
-    "R03 final assembled and exploded previews visually checked"
-  ],
-  "limits": [
-    "WebGL path not visually verified in headless browser",
-    "Software painter can show depth-order artifacts on thin faces; WebGL uses depth buffer",
-    "No real hardware fit, loading or printing tested"
-  ],
-  "revision": "R03"
+  "browser": "gstack Chromium, SVG fallback",
+  "checks": {
+    "offline_file_load": true,
+    "parts": 20,
+    "print_downloads": 4,
+    "explode_button_sets_100_percent": true,
+    "casing_visibility_toggle": true,
+    "carrier_selection_download": "carrier-FIT-ONLY.stl",
+    "isolate_shows_only_carrier": true,
+    "screenshots_inspected": [
+      "assembled-preview.png",
+      "exploded-preview.png"
+    ]
+  },
+  "limits": "WebGL path not tested in this run. No physical fit or structural verification."
 }

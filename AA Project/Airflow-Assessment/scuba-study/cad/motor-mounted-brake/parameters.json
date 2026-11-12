@@ -1,13 +1,10 @@
 {
-  "status": "User-estimate fit prototype. Tangent references clarified; thread, retention, brake interfaces and powered use remain unverified.",
+  "status": "Ribbed static fit prototype. No powered-use rating.",
   "units": "mm",
-  "case_outer_radius": 124,
-  "case_inner_radius": 110,
-  "back_thickness": 6,
-  "chamber_depth": 40,
-  "lid_thickness": 5,
-  "closure_pitch_radius": 117,
-  "closure_clearance_diameter": 5.6,
+  "back_thickness": 10,
+  "chamber_depth": 54,
+  "lid_thickness": 6,
+  "closure_clearance_diameter": 6.6,
   "motor_mount_xy": [
     [
       0,
@@ -26,23 +23,12 @@
   "shaft_exposed_length": 25,
   "rotor_diameter": 160,
   "rotor_thickness": 1.8,
-  "rotor_plane": 22,
+  "rotor_plane": 28,
   "hub_outer_diameter": 36,
   "hub_length": 20,
-  "hub_back_z": 16,
+  "hub_back_z": 18,
   "rotor_bolt_pitch_diameter": 44,
   "rotor_bolt_clearance_diameter": 5.3,
-  "caliper_mount_xy": [
-    [
-      94,
-      -28
-    ],
-    [
-      94,
-      28
-    ]
-  ],
-  "caliper_mount_clearance_diameter": 6.5,
   "measured_parameters": [],
   "motor_overall_length": 88,
   "dimension_sources": {
@@ -51,7 +37,7 @@
     "url": "https://cosmostar.store/cdn/shop/files/2206-ProductSlide_AirMotorAM0701-19.jpg?v=1691292853&width=1946",
     "manufacturer_overall_length_note": "Published nominal whole-unit length122 retained as reference only; user front body/boss/shaft stack totals88, rear appendages unmodeled."
   },
-  "revision": "R03",
+  "revision": "R04",
   "motor_boss_diameter": 35,
   "motor_boss_projection": 15,
   "motor_hole_opening_diameter": 7,
@@ -75,5 +61,76 @@
     "datum": "Boss/shaft centre at (0,0), +y toward upper hole; both holes x=0",
     "plate_clearance": "7.5 mm is a provisional printed clearance, not a measured motor hole or thread."
   },
-  "motor_body_thickness_datum": "Main round body only; excludes forward boss and shaft. Rear accessories not modeled."
+  "motor_body_thickness_datum": "Main round body only; excludes forward boss and shaft. Rear accessories not modeled.",
+  "case_width": 264,
+  "case_height": 244,
+  "case_corner_radius": 20,
+  "shell_wall": 6,
+  "closure_xy": [
+    [
+      -112,
+      -102
+    ],
+    [
+      -112,
+      102
+    ],
+    [
+      112,
+      -102
+    ],
+    [
+      112,
+      102
+    ],
+    [
+      -50,
+      -112
+    ],
+    [
+      50,
+      -112
+    ],
+    [
+      -50,
+      112
+    ],
+    [
+      50,
+      112
+    ]
+  ],
+  "carrier_anchor_xy": [
+    [
+      90,
+      -44
+    ],
+    [
+      114,
+      -44
+    ],
+    [
+      90,
+      44
+    ],
+    [
+      114,
+      44
+    ]
+  ],
+  "is_adapter_xy": [
+    [
+      101,
+      -25.5
+    ],
+    [
+      101,
+      25.5
+    ]
+  ],
+  "is_slot_travel": 8,
+  "is_clearance_diameter": 6.6,
+  "adapter_mount_plane": 26,
+  "reference_torque_Nm": 3,
+  "screening_torque_Nm": 9
 }
